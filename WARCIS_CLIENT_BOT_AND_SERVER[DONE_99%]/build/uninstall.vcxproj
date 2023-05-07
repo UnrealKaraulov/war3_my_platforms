@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{11BE8FC3-EFE2-3FBD-A04A-2B739EC5FFB1}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>uninstall</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141_xp</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\pvpgn-magic\source\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Projects/pvpgn-magic/source/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Projects\pvpgn-magic\module\cmake\bin\cmake.exe -HC:/Projects/pvpgn-magic/source -BC:/Projects/pvpgn-magic/build --check-stamp-file C:\Projects\pvpgn-magic\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Projects/pvpgn-magic/source/CMakeLists.txt;C:\Projects\pvpgn-magic\source\CMakeLists.txt;C:\Projects\pvpgn-magic\build\CMakeFiles\3.7.1\CMakeSystem.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CMakeSystemSpecificInitialize.cmake;C:\Projects\pvpgn-magic\build\CMakeFiles\3.7.1\CMakeCXXCompiler.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CMakeSystemSpecificInformation.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CMakeGenericSystem.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\Platform\Windows.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\Platform\WindowsPaths.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CMakeCXXInformation.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\Compiler\MSVC-CXX.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;C:\Projects\pvpgn-magic\build\CMakeFiles\3.7.1\CMakeRCCompiler.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CMakeRCInformation.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;C:\Projects\pvpgn-magic\source\ConfigureChecks.cmake;C:\Projects\pvpgn-magic\source\cmake\Modules\DefineInstallationPaths.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CheckIncludeFileCXX.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CheckFunctionExists.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CheckSymbolExists.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CheckLibraryExists.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CheckCXXCompilerFlag.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CheckCXXSourceCompiles.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CheckCXXSourceCompiles.cmake;C:\Projects\pvpgn-magic\source\cmake\Modules\CheckMkdirArgs.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CheckIncludeFiles.cmake;C:\Projects\pvpgn-magic\build\CMakeFiles\3.7.1\CMakeCCompiler.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CMakeCInformation.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\Platform\Windows-MSVC-C.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;C:\Projects\pvpgn-magic\source\cmake\Modules\FindZLIB.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CMakeConfigurableFile.in;C:\Projects\pvpgn-magic\source\config.h.cmake;C:\Projects\pvpgn-magic\source\cmake\Modules\cmake_uninstall.cmake.in;C:\Projects\pvpgn-magic\source\cmake\Modules\cmake_purge.cmake.in;C:\Projects\pvpgn-magic\source\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\pvpgn-magic\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Projects/pvpgn-magic/source/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Projects\pvpgn-magic\module\cmake\bin\cmake.exe -HC:/Projects/pvpgn-magic/source -BC:/Projects/pvpgn-magic/build --check-stamp-file C:\Projects\pvpgn-magic\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Projects/pvpgn-magic/source/CMakeLists.txt;C:\Projects\pvpgn-magic\source\CMakeLists.txt;C:\Projects\pvpgn-magic\build\CMakeFiles\3.7.1\CMakeSystem.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CMakeSystemSpecificInitialize.cmake;C:\Projects\pvpgn-magic\build\CMakeFiles\3.7.1\CMakeCXXCompiler.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CMakeSystemSpecificInformation.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CMakeGenericSystem.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\Platform\Windows.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\Platform\WindowsPaths.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CMakeCXXInformation.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\Compiler\MSVC-CXX.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;C:\Projects\pvpgn-magic\build\CMakeFiles\3.7.1\CMakeRCCompiler.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CMakeRCInformation.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;C:\Projects\pvpgn-magic\source\ConfigureChecks.cmake;C:\Projects\pvpgn-magic\source\cmake\Modules\DefineInstallationPaths.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CheckIncludeFileCXX.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CheckFunctionExists.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CheckSymbolExists.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CheckLibraryExists.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CheckCXXCompilerFlag.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CheckCXXSourceCompiles.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CheckCXXSourceCompiles.cmake;C:\Projects\pvpgn-magic\source\cmake\Modules\CheckMkdirArgs.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CheckIncludeFiles.cmake;C:\Projects\pvpgn-magic\build\CMakeFiles\3.7.1\CMakeCCompiler.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CMakeCInformation.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\Platform\Windows-MSVC-C.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;C:\Projects\pvpgn-magic\source\cmake\Modules\FindZLIB.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CMakeConfigurableFile.in;C:\Projects\pvpgn-magic\source\config.h.cmake;C:\Projects\pvpgn-magic\source\cmake\Modules\cmake_uninstall.cmake.in;C:\Projects\pvpgn-magic\source\cmake\Modules\cmake_purge.cmake.in;C:\Projects\pvpgn-magic\source\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\pvpgn-magic\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Projects/pvpgn-magic/source/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Projects\pvpgn-magic\module\cmake\bin\cmake.exe -HC:/Projects/pvpgn-magic/source -BC:/Projects/pvpgn-magic/build --check-stamp-file C:\Projects\pvpgn-magic\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Projects/pvpgn-magic/source/CMakeLists.txt;C:\Projects\pvpgn-magic\source\CMakeLists.txt;C:\Projects\pvpgn-magic\build\CMakeFiles\3.7.1\CMakeSystem.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CMakeSystemSpecificInitialize.cmake;C:\Projects\pvpgn-magic\build\CMakeFiles\3.7.1\CMakeCXXCompiler.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CMakeSystemSpecificInformation.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CMakeGenericSystem.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\Platform\Windows.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\Platform\WindowsPaths.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CMakeCXXInformation.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\Compiler\MSVC-CXX.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;C:\Projects\pvpgn-magic\build\CMakeFiles\3.7.1\CMakeRCCompiler.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CMakeRCInformation.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;C:\Projects\pvpgn-magic\source\ConfigureChecks.cmake;C:\Projects\pvpgn-magic\source\cmake\Modules\DefineInstallationPaths.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CheckIncludeFileCXX.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CheckFunctionExists.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CheckSymbolExists.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CheckLibraryExists.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CheckCXXCompilerFlag.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CheckCXXSourceCompiles.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CheckCXXSourceCompiles.cmake;C:\Projects\pvpgn-magic\source\cmake\Modules\CheckMkdirArgs.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CheckIncludeFiles.cmake;C:\Projects\pvpgn-magic\build\CMakeFiles\3.7.1\CMakeCCompiler.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CMakeCInformation.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\Platform\Windows-MSVC-C.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;C:\Projects\pvpgn-magic\source\cmake\Modules\FindZLIB.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CMakeConfigurableFile.in;C:\Projects\pvpgn-magic\source\config.h.cmake;C:\Projects\pvpgn-magic\source\cmake\Modules\cmake_uninstall.cmake.in;C:\Projects\pvpgn-magic\source\cmake\Modules\cmake_purge.cmake.in;C:\Projects\pvpgn-magic\source\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\pvpgn-magic\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Projects/pvpgn-magic/source/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Projects\pvpgn-magic\module\cmake\bin\cmake.exe -HC:/Projects/pvpgn-magic/source -BC:/Projects/pvpgn-magic/build --check-stamp-file C:\Projects\pvpgn-magic\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Projects/pvpgn-magic/source/CMakeLists.txt;C:\Projects\pvpgn-magic\source\CMakeLists.txt;C:\Projects\pvpgn-magic\build\CMakeFiles\3.7.1\CMakeSystem.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CMakeSystemSpecificInitialize.cmake;C:\Projects\pvpgn-magic\build\CMakeFiles\3.7.1\CMakeCXXCompiler.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CMakeSystemSpecificInformation.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CMakeGenericSystem.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\Platform\Windows.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\Platform\WindowsPaths.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CMakeCXXInformation.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\Compiler\MSVC-CXX.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;C:\Projects\pvpgn-magic\build\CMakeFiles\3.7.1\CMakeRCCompiler.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CMakeRCInformation.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;C:\Projects\pvpgn-magic\source\ConfigureChecks.cmake;C:\Projects\pvpgn-magic\source\cmake\Modules\DefineInstallationPaths.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CheckIncludeFileCXX.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CheckFunctionExists.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CheckSymbolExists.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CheckLibraryExists.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CheckCXXCompilerFlag.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CheckCXXSourceCompiles.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CheckCXXSourceCompiles.cmake;C:\Projects\pvpgn-magic\source\cmake\Modules\CheckMkdirArgs.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CheckIncludeFiles.cmake;C:\Projects\pvpgn-magic\build\CMakeFiles\3.7.1\CMakeCCompiler.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CMakeCInformation.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\Platform\Windows-MSVC-C.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;C:\Projects\pvpgn-magic\source\cmake\Modules\FindZLIB.cmake;C:\Projects\pvpgn-magic\module\cmake\share\cmake-3.7\Modules\CMakeConfigurableFile.in;C:\Projects\pvpgn-magic\source\config.h.cmake;C:\Projects\pvpgn-magic\source\cmake\Modules\cmake_uninstall.cmake.in;C:\Projects\pvpgn-magic\source\cmake\Modules\cmake_purge.cmake.in;C:\Projects\pvpgn-magic\source\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\pvpgn-magic\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\pvpgn-magic\build\CMakeFiles\287251e307ebe502e3cb5838044b7028\uninstall.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Projects\pvpgn-magic\module\cmake\bin\cmake.exe -P C:/Projects/pvpgn-magic/source/cmake/Modules/cmake_uninstall.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Projects/pvpgn-magic/build/CMakeFiles/287251e307ebe502e3cb5838044b7028/uninstall.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\pvpgn-magic\build\CMakeFiles\uninstall</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Projects\pvpgn-magic\module\cmake\bin\cmake.exe -P C:/Projects/pvpgn-magic/source/cmake/Modules/cmake_uninstall.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Projects/pvpgn-magic/build/CMakeFiles/287251e307ebe502e3cb5838044b7028/uninstall.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\pvpgn-magic\build\CMakeFiles\uninstall</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Projects\pvpgn-magic\module\cmake\bin\cmake.exe -P C:/Projects/pvpgn-magic/source/cmake/Modules/cmake_uninstall.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Projects/pvpgn-magic/build/CMakeFiles/287251e307ebe502e3cb5838044b7028/uninstall.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\pvpgn-magic\build\CMakeFiles\uninstall</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Projects\pvpgn-magic\module\cmake\bin\cmake.exe -P C:/Projects/pvpgn-magic/source/cmake/Modules/cmake_uninstall.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Projects/pvpgn-magic/build/CMakeFiles/287251e307ebe502e3cb5838044b7028/uninstall.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\pvpgn-magic\build\CMakeFiles\uninstall</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Projects\pvpgn-magic\build\CMakeFiles\uninstall" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/Projects/pvpgn-magic/build/ZERO_CHECK.vcxproj">
+      <Project>BE4FD3F4-F316-3F5A-A067-FAF962FF7566</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

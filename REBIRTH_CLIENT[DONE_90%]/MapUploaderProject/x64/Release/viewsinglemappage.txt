@@ -1,0 +1,46 @@
+﻿<html>
+<head>
+<meta charset="utf-8"/>
+<title>Map uploader</title>
+</head>
+<body bgcolor="Black">
+	<div style="position: relative; width:45%; height:70%;  margin:0 auto; background-color:DarkGray;">
+		<form action="/download" method="get">
+		<input type="hidden" name="id" value="[INSERTMAPID]"/>
+		<button style="position:absolute;right:0;bottom:0;"  type="submit"><h4>DOWNLOAD THIS MAP<h4></button>
+		</form>
+		<form  style="position:absolute;left:0;bottom:0;" action="/delete" method="get">
+			<input type="hidden" name="id" value="[INSERTMAPID]"/>
+			<div><p>Delete password:</p>
+			<input align="top" type="text" name="password"/></div>
+			<button align="bottom" type="submit"><h4>DELETE THIS MAP</h4></button>
+			
+		</form>
+		<div align="center">
+		<h2>[INSERTMAPNAME] <small>(by [INSERTMAPAUTHOR])</small></h2>
+		</div>
+		<div align="center">
+		<img src="[INSERTPREVIEW]" alt="PREVIEW">
+		<img src="[INSERTMINIMAP]" alt="MINIMAP">
+		</div>
+		<div align="center">
+		<font color="Black"><b>Description:</b></font><br><font color="Yellow">[INSERTDESCRIPTION]</font><br>
+		<font color="Black"><b>Downloads:</b></font><br><font color="Yellow">[INSERTDOWNLOADS]</font><br>
+		<font color="Black"><b>Downloads:</b></font><br><font color="Yellow">[INSERTRATING]</font><br>
+		</div>
+		<form action="/rateup" method="get">
+		<input type="hidden" name="id" value="[INSERTMAPID]"/>
+		<button style="position:absolute;left:33%;bottom:0;" type="submit"><small>RATE UP</small></button>
+		</form>
+		<form action="/ratedown" method="get">
+		<input type="hidden" name="id" value="[INSERTMAPID]"/>
+		<button style="position:absolute;right:33%;bottom:0;" type="submit"><small>RATE DOWN</small></button>
+		</form>
+	</div>  
+	<form action="/" method="get">
+	<button style="position:absolute;right:0;bottom:0;" type="submit"><h4>UPLOAD<h4></button>
+	</form>
+	<form action="/maplist" method="get">
+	<button style="position:absolute;left:0;bottom:0;" type="submit"><h4>MAPLIST</h4></button>
+	</form>
+</body></html>

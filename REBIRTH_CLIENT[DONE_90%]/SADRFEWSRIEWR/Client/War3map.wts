@@ -1,0 +1,6338 @@
+STRING 1
+{
+Player 1
+}
+STRING 3
+{
+Element TD Survivor 4.3b
+}
+STRING 4
+{
+1-8
+}
+STRING 5
+{
+|cffC40000Fire|r, |cff00C400Nature|r, |cffD4880FEarth|r, |cffE5DE23Light|r, |cff8433C8Darkness|r, and |cff01A2FFWater|r elements come together in this survivor TD focused on combinations.
+
+Visit the site at |cff7a7ecchttp://www.eletd.com|r
+}
+STRING 6
+{
+Karawasa & mrchak
+}
+STRING 8
+{
+Nature Tower
+}
+STRING 9
+{
+Ice Tower
+}
+STRING 10
+{
+Lightning Tower
+}
+STRING 12
+{
+Life Tower
+}
+STRING 13
+{
+Magic Tower
+}
+STRING 19
+{
+Death Tower
+}
+STRING 20
+{
+Sun Tower
+}
+STRING 24
+{
+Spring Tower
+}
+STRING 31
+{
+Water Tower
+}
+STRING 34
+{
+Fire Tower
+}
+STRING 35
+{
+Darkness Tower
+}
+STRING 36
+{
+Earth Tower
+}
+STRING 39
+{
+Light Tower
+}
+STRING 49
+{
+Laser Tower
+}
+STRING 50
+{
+Eternal Tower
+}
+STRING 53
+{
+Freezing Tower
+}
+STRING 54
+{
+Drowning Tower
+}
+STRING 57
+{
+Flamethrower Tower
+}
+STRING 70
+{
+Solar Tower
+}
+STRING 71
+{
+Vapor Tower
+}
+STRING 72
+{
+Waterfall Tower
+}
+STRING 73
+{
+Sorcery Tower
+}
+STRING 76
+{
+Energy Tower
+}
+STRING 84
+{
+Arrow Tower
+}
+STRING 85
+{
+Advanced Arrow Tower
+}
+STRING 86
+{
+Super Arrow Tower
+}
+STRING 87
+{
+Cannon Tower
+}
+STRING 88
+{
+Advanced Cannon Tower
+}
+STRING 89
+{
+Super Cannon Tower
+}
+STRING 110
+{
+Builder
+}
+STRING 185
+{
+W
+}
+STRING 186
+{
+W
+}
+STRING 187
+{
+W
+}
+STRING 194
+{
+D
+}
+STRING 195
+{
+D
+}
+STRING 196
+{
+D
+}
+STRING 200
+{
+E
+}
+STRING 201
+{
+E
+}
+STRING 202
+{
+E
+}
+STRING 203
+{
+F
+}
+STRING 204
+{
+F
+}
+STRING 205
+{
+F
+}
+STRING 209
+{
+L
+}
+STRING 210
+{
+L
+}
+STRING 211
+{
+L
+}
+STRING 215
+{
+N
+}
+STRING 216
+{
+N
+}
+STRING 217
+{
+N
+}
+STRING 236
+{
+Sell Tower
+}
+STRING 237
+{
+X
+}
+STRING 238
+{
+Sell Tower
+}
+STRING 310
+{
+Spring Forward
+}
+STRING 314
+{
+|cffc3dbffRight-click to activate auto-casting.|r
+}
+STRING 315
+{
+|cffc3dbffRight-click to deactivate auto-casting.|r
+}
+STRING 317
+{
+F
+}
+STRING 318
+{
+F
+}
+STRING 319
+{
+Spring Forward
+}
+STRING 320
+{
+Player 2
+}
+STRING 321
+{
+Player 3
+}
+STRING 322
+{
+Player 4
+}
+STRING 323
+{
+Player 5
+}
+STRING 324
+{
+Player 6
+}
+STRING 325
+{
+Player 7
+}
+STRING 326
+{
+Player 8
+}
+STRING 328
+{
+Players
+}
+STRING 438
+{
+W
+}
+STRING 439
+{
+W
+}
+STRING 440
+{
+W
+}
+STRING 441
+{
+D
+}
+STRING 442
+{
+D
+}
+STRING 443
+{
+D
+}
+STRING 444
+{
+E
+}
+STRING 445
+{
+F
+}
+STRING 446
+{
+F
+}
+STRING 447
+{
+F
+}
+STRING 448
+{
+L
+}
+STRING 449
+{
+N
+}
+STRING 450
+{
+N
+}
+STRING 462
+{
+Spew Acid
+}
+STRING 465
+{
+Acid
+}
+STRING 596
+{
+Instant Death
+}
+STRING 614
+{
+Elemental Summoning Center
+}
+STRING 615
+{
+Summon Elementals. When you destroy an elemental you gain the ability to infuse buildings with its power.
+}
+STRING 617
+{
+(Elemental)
+}
+STRING 619
+{
+X
+}
+STRING 621
+{
+Gives you back 100% of the resources spent on building and upgrading the tower. |n|n(100% return only for non-elemental towers)
+}
+STRING 622
+{
+(Basic)
+}
+STRING 654
+{
+Dreadlord
+}
+STRING 660
+{
+C
+}
+STRING 661
+{
+C
+}
+STRING 662
+{
+C
+}
+STRING 663
+{
+W
+}
+STRING 666
+{
+E
+}
+STRING 668
+{
+F
+}
+STRING 669
+{
+L
+}
+STRING 670
+{
+L
+}
+STRING 671
+{
+N
+}
+STRING 673
+{
+Tip
+}
+STRING 675
+{
+Click for a hint.
+}
+STRING 688
+{
+Pure Water
+}
+STRING 691
+{
+Pure Nature
+}
+STRING 694
+{
+Pure Darkness
+}
+STRING 697
+{
+Pure Earth
+}
+STRING 700
+{
+Pure Fire
+}
+STRING 703
+{
+Pure Light
+}
+STRING 730
+{
+Element Query
+}
+STRING 732
+{
+Click to get a summary of your elemental powers.
+}
+STRING 771
+{
+Admiral
+}
+STRING 772
+{
+49
+}
+STRING 774
+{
+58
+}
+STRING 775
+{
+Glaive Thrower
+}
+STRING 776
+{
+55
+}
+STRING 778
+{
+53
+}
+STRING 780
+{
+43
+}
+STRING 782
+{
+44
+}
+STRING 784
+{
+45
+}
+STRING 786
+{
+57
+}
+STRING 788
+{
+51
+}
+STRING 790
+{
+48
+}
+STRING 792
+{
+46
+}
+STRING 793
+{
+Goblin Shredder
+}
+STRING 794
+{
+47
+}
+STRING 796
+{
+60
+}
+STRING 797
+{
+Evil Child
+}
+STRING 798
+{
+50
+}
+STRING 800
+{
+56
+}
+STRING 802
+{
+42
+}
+STRING 804
+{
+54
+}
+STRING 806
+{
+52
+}
+STRING 808
+{
+59
+}
+STRING 869
+{
+Phasor Tower
+}
+STRING 870
+{
+Monsoon Tower
+}
+STRING 919
+{
+Well Tower
+}
+STRING 923
+{
+Electricity Tower
+}
+STRING 936
+{
+Hydrochloric Tower
+}
+STRING 964
+{
+(Level 1)
+}
+STRING 965
+{
+(Level 2)
+}
+STRING 981
+{
+|cffc3dbffRight-click to activate auto-casting.|r
+}
+STRING 982
+{
+|cffc3dbffRight-click to deactivate auto-casting.|r
+}
+STRING 995
+{
+ (Tornado Level 2)
+}
+STRING 996
+{
+ (Tornado Level 1)
+}
+STRING 1083
+{
+Afterlife
+}
+STRING 1098
+{
+F
+}
+STRING 1114
+{
+Pure Element+
+}
+STRING 1115
+{
+Pure Element+
+}
+STRING 1147
+{
+Tauren Chieftain
+}
+STRING 1151
+{
+Naga Sea Witch
+}
+STRING 1153
+{
+L
+}
+STRING 1156
+{
+Pit Lord
+}
+STRING 1158
+{
+L
+}
+STRING 1161
+{
+Keeper of the Grove
+}
+STRING 1166
+{
+Firelord
+}
+STRING 1177
+{
+Elemental Essence
+}
+STRING 1178
+{
+Allows the construction of a pure elemental
+}
+STRING 1180
+{
+Extra Investment
+}
+STRING 1314
+{
+Random
+}
+STRING 1316
+{
+Random Spawns Fool!
+}
+STRING 1329
+{
+Dark Minion
+}
+STRING 1340
+{
+Focused Light Tower
+}
+STRING 1343
+{
+Focused Darkness Tower
+}
+STRING 1346
+{
+Focused Water Tower
+}
+STRING 1349
+{
+Focused Earth Tower
+}
+STRING 1352
+{
+Focused Fire Tower
+}
+STRING 1355
+{
+Focused Nature Tower
+}
+STRING 1359
+{
+Amplified Water Tower
+}
+STRING 1362
+{
+Amplified Earth Tower
+}
+STRING 1368
+{
+Amplified Darkness Tower
+}
+STRING 1371
+{
+Amplified Fire Tower
+}
+STRING 1375
+{
+Amplified Light Tower
+}
+STRING 1381
+{
+Refined Darkness Tower
+}
+STRING 1384
+{
+Refined Earth Tower
+}
+STRING 1387
+{
+Refined Fire Tower
+}
+STRING 1390
+{
+Refined Light Tower
+}
+STRING 1393
+{
+Refined Nature Tower
+}
+STRING 1396
+{
+Refined Water Tower
+}
+STRING 1426
+{
+Living Waters
+}
+STRING 1427
+{
+Void Walker
+}
+STRING 1430
+{
+Spirit Owl
+}
+STRING 1431
+{
+Enraged Wildkin
+}
+STRING 1434
+{
+Earth Golem
+}
+STRING 1436
+{
+Treant
+}
+STRING 1442
+{
+Living Flame
+}
+STRING 1485
+{
+Amplified Nature Tower
+}
+STRING 1509
+{
+26
+}
+STRING 1510
+{
+25
+}
+STRING 1511
+{
+17
+}
+STRING 1512
+{
+37
+}
+STRING 1513
+{
+12
+}
+STRING 1514
+{
+5
+}
+STRING 1515
+{
+13
+}
+STRING 1516
+{
+38
+}
+STRING 1517
+{
+18
+}
+STRING 1518
+{
+4
+}
+STRING 1519
+{
+15
+}
+STRING 1520
+{
+6
+}
+STRING 1521
+{
+27
+}
+STRING 1522
+{
+2
+}
+STRING 1523
+{
+8
+}
+STRING 1524
+{
+23
+}
+STRING 1525
+{
+30
+}
+STRING 1526
+{
+Corrupted Treant
+}
+STRING 1527
+{
+31
+}
+STRING 1529
+{
+29
+}
+STRING 1531
+{
+16
+}
+STRING 1532
+{
+24
+}
+STRING 1533
+{
+14
+}
+STRING 1534
+{
+22
+}
+STRING 1535
+{
+20
+}
+STRING 1536
+{
+35
+}
+STRING 1537
+{
+28
+}
+STRING 1538
+{
+10
+}
+STRING 1539
+{
+7
+}
+STRING 1540
+{
+9
+}
+STRING 1541
+{
+36
+}
+STRING 1542
+{
+11
+}
+STRING 1543
+{
+32
+}
+STRING 1544
+{
+19
+}
+STRING 1545
+{
+3
+}
+STRING 1546
+{
+1
+}
+STRING 1547
+{
+21
+}
+STRING 1548
+{
+34
+}
+STRING 1549
+{
+33
+}
+STRING 1550
+{
+40
+}
+STRING 1551
+{
+39
+}
+STRING 1553
+{
+Shadow Wolf
+}
+STRING 1554
+{
+Wagon
+}
+STRING 1555
+{
+Battle Golem
+}
+STRING 1557
+{
+Harpy Rogue
+}
+STRING 1563
+{
+Clockwerk Goblin
+}
+STRING 1564
+{
+Troll Batrider
+}
+STRING 1565
+{
+Albatross
+}
+STRING 1567
+{
+Crystal Arachnid
+}
+STRING 1568
+{
+Demolisher
+}
+STRING 1572
+{
+Watery Minion
+}
+STRING 1580
+{
+Thunder Lizard
+}
+STRING 1581
+{
+41
+}
+STRING 1582
+{
+Green Dragon
+}
+STRING 1585
+{
+Giant Spider
+}
+STRING 1589
+{
+Siege Tank
+}
+STRING 1590
+{
+Doom Guard
+}
+STRING 1614
+{
+Pure Elementals
+}
+STRING 1615
+{
+You cannot buy pure elemental essence until you have achieved level 3 in one element.
+}
+STRING 1616
+{
+You cannot buy pure elemental essence until you have achieved level 3 in one element.
+}
+STRING 1722
+{
+Spring Forward
+}
+STRING 1768
+{
+Phoenix
+}
+STRING 1794
+{
+F
+}
+STRING 1887
+{
+E
+}
+STRING 1888
+{
+E
+}
+STRING 1982
+{
+Build |cffffcc00N|rature Tower
+}
+STRING 1989
+{
+Build |cffffcc00W|rater Tower
+}
+STRING 1992
+{
+Build |cffffcc00F|rire Tower
+}
+STRING 1993
+{
+Build |cffffcc00D|rarkness Tower
+}
+STRING 1994
+{
+Build |cffffcc00E|rarth Tower
+}
+STRING 1997
+{
+Build |cffffcc00L|right Tower
+}
+STRING 2012
+{
+W
+}
+STRING 2015
+{
+D
+}
+STRING 2016
+{
+D
+}
+STRING 2017
+{
+D
+}
+STRING 2018
+{
+E
+}
+STRING 2024
+{
+N
+}
+STRING 2232
+{
+Furbolg Tracker
+}
+STRING 2233
+{
+Spirit of Vengeance
+}
+STRING 2234
+{
+Forest Troll
+}
+STRING 2235
+{
+Kobold Shoveler
+}
+STRING 2236
+{
+Fire Revenant
+}
+STRING 2237
+{
+Sludge Minion
+}
+STRING 2238
+{
+Ghoul
+}
+STRING 2239
+{
+Succubus
+}
+STRING 2240
+{
+Quillboar
+}
+STRING 2241
+{
+Bandit
+}
+STRING 2242
+{
+Ghost
+}
+STRING 2245
+{
+Sea Revenant
+}
+STRING 2246
+{
+Wisp
+}
+STRING 2248
+{
+Fel Beast
+}
+STRING 2249
+{
+Infernal Contraption
+}
+STRING 2252
+{
+Draenei Protector
+}
+STRING 2253
+{
+Snowy Owl
+}
+STRING 2254
+{
+Dune Worm
+}
+STRING 2255
+{
+Centaur
+}
+STRING 2256
+{
+Archmage
+}
+STRING 2257
+{
+Red Dragon
+}
+STRING 2258
+{
+Fel Guard
+}
+STRING 2259
+{
+Paladin
+}
+STRING 2260
+{
+Black Drake
+}
+STRING 2261
+{
+Plague Rat
+}
+STRING 2262
+{
+Hydra
+}
+STRING 2278
+{
+Spawn Armor Bonus
+}
+STRING 2455
+{
+Periodic Tower of the Elements
+}
+STRING 2670
+{
+I like to build towers!
+}
+STRING 2671
+{
+Builder
+}
+STRING 2683
+{
+Sub-Zero Tower
+}
+STRING 2695
+{
+Extra Investment
+}
+STRING 2697
+{
+Elemental Essence
+}
+STRING 2698
+{
+Random
+}
+STRING 2746
+{
+|cff01A2FFWater Elemental|r - Level 1
+}
+STRING 2747
+{
+|cff00C400Nature Elemental|r - Level 3
+}
+STRING 2749
+{
+|cffD4880FEarth Elemental|r - Level 3
+}
+STRING 2751
+{
+|cffD4880FEarth Elemental|r - Level 1
+}
+STRING 2752
+{
+|cff01A2FFWater Elemental|r - Level 3
+}
+STRING 2753
+{
+|cff00C400Nature Elemental|r - Level 1
+}
+STRING 2755
+{
+|cffC40000Fire Elemental|r - Level 2
+}
+STRING 2756
+{
+|cffD4880FEarth Elemental|r - Level 2
+}
+STRING 2757
+{
+|cff01A2FFWater Elemental|r - Level 2
+}
+STRING 2758
+{
+|cff00C400Nature Elemental|r - Level 2
+}
+STRING 2760
+{
+|cffC40000Fire Elemental|r - Level 1
+}
+STRING 2796
+{
+Build |cffffcc00C|rannon Tower
+}
+STRING 2802
+{
+|cffC40000Fire Elemental|r - Level 3
+}
+STRING 2815
+{
+|cffc3dbffRight-click to activate auto-casting.|r
+}
+STRING 2816
+{
+|cffc3dbffRight-click to deactivate auto-casting.|r
+}
+STRING 2817
+{
+|cffc3dbffRight-click to activate auto-casting.|r
+}
+STRING 2818
+{
+|cffc3dbffRight-click to deactivate auto-casting.|r
+}
+STRING 2955
+{
+R
+}
+STRING 2957
+{
+R
+}
+STRING 2966
+{
+Spawns
+}
+STRING 3208
+{
+Darkness Arrow Tower
+}
+STRING 3209
+{
+Upgrade to |cffffcc00D|rarkness Arrow Tower
+}
+STRING 3211
+{
+Darkness Cannon Tower
+}
+STRING 3213
+{
+Upgrade to |cffffcc00D|rarkness Cannon Tower
+}
+STRING 3214
+{
+Earth Arrow Tower
+}
+STRING 3215
+{
+Upgrade to |cffffcc00E|rarth Arrow Tower
+}
+STRING 3217
+{
+Earth Cannon Tower
+}
+STRING 3219
+{
+Upgrade to |cffffcc00E|rarth Cannon Tower
+}
+STRING 3220
+{
+Fire Arrow Tower
+}
+STRING 3221
+{
+Upgrade to |cffffcc00F|rire Arrow Tower
+}
+STRING 3223
+{
+Fire Cannon Tower
+}
+STRING 3225
+{
+Upgrade to |cffffcc00F|rire Cannon Tower
+}
+STRING 3226
+{
+Light Arrow Tower
+}
+STRING 3227
+{
+Upgrade to |cffffcc00L|right Arrow Tower
+}
+STRING 3229
+{
+Light Cannon Tower
+}
+STRING 3231
+{
+Upgrade to |cffffcc00L|right Cannon Tower
+}
+STRING 3232
+{
+Nature Arrow Tower
+}
+STRING 3233
+{
+Upgrade to |cffffcc00N|rature Arrow Tower
+}
+STRING 3235
+{
+Nature Cannon Tower
+}
+STRING 3237
+{
+Upgrade to |cffffcc00N|rature Cannon Tower
+}
+STRING 3238
+{
+Water Arrow Tower
+}
+STRING 3239
+{
+Upgrade to |cffffcc00W|rater Arrow Tower
+}
+STRING 3241
+{
+Water Cannon Tower
+}
+STRING 3243
+{
+Upgrade to |cffffcc00W|rater Cannon Tower
+}
+STRING 3347
+{
+Hail Tower
+}
+STRING 3350
+{
+Comet Tower
+}
+STRING 3354
+{
+Nova Tower
+}
+STRING 3356
+{
+Supernova Tower
+}
+STRING 3392
+{
+Explode
+}
+STRING 3393
+{
+Explode
+}
+STRING 3548
+{
+Instant Death - [|cffffcc00Level 2|r]
+}
+STRING 3549
+{
+Instant Death - [|cffffcc00Level 3|r]
+}
+STRING 3550
+{
+Gives a chance to kill attacked creeps (does not affect undead or mechanical units)|nHas reduced affect as level of creeps increases, and increased effectiveness as the unit's health is lowered.
+}
+STRING 3755
+{
+O
+}
+STRING 3784
+{
+T
+}
+STRING 3799
+{
+I
+}
+STRING 3921
+{
+Karawasa
+}
+STRING 3923
+{
+Karawasa
+}
+STRING 3930
+{
+Persian Knight
+}
+STRING 4102
+{
+Dark Elf
+}
+STRING 4103
+{
+Lava Runner
+}
+STRING 4104
+{
+Mountain Giant
+}
+STRING 4142
+{
+Resurrection
+}
+STRING 4143
+{
+Resurrection
+}
+STRING 4152
+{
+|cff888888(No Element)|r |n|cff9497CCDamage:|r 18 |n|cff9497CCType:|r |cff888888Composite|r |n|cff9497CCAoE:|r None |n|cff9497CCSpeed:|r 1 |n|cff9497CCRange:|r 600 |n|cff9497CCAbility:|r None
+}
+STRING 4153
+{
+|cff888888(No Element)|r |n|cff9497CCDamage:|r 54 |n|cff9497CCType:|r |cff888888Composite|r |n|cff9497CCAoE:|r None |n|cff9497CCSpeed:|r 1 |n|cff9497CCRange:|r 600 |n|cff9497CCAbility:|r None
+}
+STRING 4154
+{
+|cff888888(No Element)|r |n|cff9497CCDamage:|r 162 |n|cff9497CCType:|r |cff888888Composite|r |n|cff9497CCAoE:|r None |n|cff9497CCSpeed:|r 1 |n|cff9497CCRange:|r 600 |n|cff9497CCAbility:|r None
+}
+STRING 4164
+{
+(|cff8433C8Darkness|r) |n|cff9497CCDamage:|r 486 |n|cff9497CCType:|r |cff8433C8Darkness|r |n|cff9497CCAoE:|r None |n|cff9497CCSpeed:|r 1 |n|cff9497CCRange:|r 600 |n|cff9497CCAbility:|r None
+}
+STRING 4165
+{
+(|cffD4880FEarth|r) |n|cff9497CCDamage:|r 486 |n|cff9497CCType:|r |cffD4880FEarth|r |n|cff9497CCAoE:|r None |n|cff9497CCSpeed:|r 1 |n|cff9497CCRange:|r 600 |n|cff9497CCAbility:|r None
+}
+STRING 4166
+{
+(|cffC40000Fire|r) |n|cff9497CCDamage:|r 486 |n|cff9497CCType:|r |cffC40000Fire|r |n|cff9497CCAoE:|r None |n|cff9497CCSpeed:|r 1 |n|cff9497CCRange:|r 600 |n|cff9497CCAbility:|r None
+}
+STRING 4167
+{
+(|cffE5DE23Light|r) |n|cff9497CCDamage:|r 486 |n|cff9497CCType:|r |cffE5DE23Light|r |n|cff9497CCAoE:|r None |n|cff9497CCSpeed:|r 1 |n|cff9497CCRange:|r 600 |n|cff9497CCAbility:|r None
+}
+STRING 4168
+{
+(|cff00C400Nature|r) |n|cff9497CCDamage:|r 486 |n|cff9497CCType:|r |cff00C400Nature|r |n|cff9497CCAoE:|r None |n|cff9497CCSpeed:|r 1 |n|cff9497CCRange:|r 600 |n|cff9497CCAbility:|r None
+}
+STRING 4169
+{
+(|cff01A2FFWater|r) |n|cff9497CCDamage:|r 486 |n|cff9497CCType:|r |cff01A2FFWater|r |n|cff9497CCAoE:|r None |n|cff9497CCSpeed:|r 1 |n|cff9497CCRange:|r 600 |n|cff9497CCAbility:|r None
+}
+STRING 4205
+{
+I like to build towers!
+}
+STRING 4206
+{
+Cisz
+}
+STRING 4207
+{
+I like to build towers!
+}
+STRING 4208
+{
+Cisz
+}
+STRING 4210
+{
+I like to build towers!
+}
+STRING 4212
+{
+emjlr3
+}
+STRING 4213
+{
+emjlr3
+}
+STRING 4215
+{
+I like to build towers!
+}
+STRING 4219
+{
+Mirage Tower
+}
+STRING 4221
+{
+Eidolon Tower
+}
+STRING 4229
+{
+Gunpowder Tower
+}
+STRING 4231
+{
+Mortar Tower
+}
+STRING 4237
+{
+Vulcan Tower
+}
+STRING 4241
+{
+Hydro Tower
+}
+STRING 4243
+{
+Spout Tower
+}
+STRING 4245
+{
+Geyser Tower
+}
+STRING 4255
+{
+Blacksmith Tower
+}
+STRING 4257
+{
+Forge Tower
+}
+STRING 4271
+{
+Necromancy Tower
+}
+STRING 4291
+{
+Voodoo Tower
+}
+STRING 4377
+{
+Trickery Tower
+}
+STRING 4379
+{
+Poison Tower
+}
+STRING 4381
+{
+Flame Tower
+}
+STRING 4383
+{
+Pollution Tower
+}
+STRING 4385
+{
+Soul Catcher Tower
+}
+STRING 4387
+{
+Polar Tower
+}
+STRING 4391
+{
+Windstorm Tower
+}
+STRING 4393
+{
+Tidal Tower
+}
+STRING 4395
+{
+Tsunami Tower
+}
+STRING 4397
+{
+Ice Age Tower
+}
+STRING 4399
+{
+Gold Tower
+}
+STRING 4401
+{
+Wealth Tower
+}
+STRING 4403
+{
+Corrosion Tower
+}
+STRING 4405
+{
+Enchantment Tower
+}
+STRING 4406
+{
+Incantation Tower
+}
+STRING 4408
+{
+Quaker Tower
+}
+STRING 4410
+{
+Muck Tower
+}
+STRING 4412
+{
+Roots Tower
+}
+STRING 4416
+{
+Kraken Tower
+}
+STRING 4418
+{
+Witchcraft Tower
+}
+STRING 4420
+{
+Thorns Tower
+}
+STRING 4422
+{
+Earthshaker Tower
+}
+STRING 4426
+{
+Mire Tower
+}
+STRING 4430
+{
+Caster Dummy
+}
+STRING 4431
+{
+Caster Dummy
+}
+STRING 4432
+{
+Dummy Orb Ability
+}
+STRING 4433
+{
+Dummy Orb Ability
+}
+STRING 4435
+{
+This unit has taken damage.
+}
+STRING 4443
+{
+Frostbite
+}
+STRING 4446
+{
+Impetus
+}
+STRING 4530
+{
+|cffc3dbffRight-click to activate auto-casting.|r
+}
+STRING 4531
+{
+|cffc3dbffRight-click to deactivate auto-casting.|r
+}
+STRING 4534
+{
+Fire Up
+}
+STRING 4535
+{
+Explode
+}
+STRING 4536
+{
+This unit has been hit by an explosion; its movement speed is reduced.
+}
+STRING 4541
+{
+Fire Up
+}
+STRING 4542
+{
+Fire Up
+}
+STRING 4554
+{
+Liquid Fire
+}
+STRING 4556
+{
+Flings a volatile liquid that causes buildings to take damage over time. Buildings that are currently taking damage from Liquid Fire cannot be repaired, and have their attack rate reduced by <Aliq,DataC1,%>%.
+}
+STRING 4557
+{
+Sludge
+}
+STRING 4562
+{
+This unit has been hit by sludge; its movement speed has been reduced.
+}
+STRING 4563
+{
+Contamination
+}
+STRING 4565
+{
+Contamination - [|cffffcc00Level 3|r]
+}
+STRING 4567
+{
+Sends out a massive wave of filth that does 8750 damage in a line.
+}
+STRING 4573
+{
+Napalm
+}
+STRING 4617
+{
+Douse
+}
+STRING 4618
+{
+S|cffffcc00p|rlash - [|cffffcc00Level 4|r]
+}
+STRING 4619
+{
+S|cffffcc00p|rlash - [|cffffcc00Level 5|r]
+}
+STRING 4620
+{
+S|cffffcc00p|rlash - [|cffffcc00Level 6|r]
+}
+STRING 4621
+{
+S|cffffcc00p|rlash - [|cffffcc00Level 7|r]
+}
+STRING 4622
+{
+S|cffffcc00p|rlash - [|cffffcc00Level 8|r]
+}
+STRING 4623
+{
+S|cffffcc00p|rlash - [|cffffcc00Level 9|r]
+}
+STRING 4624
+{
+S|cffffcc00p|rlash - [|cffffcc00Level 10|r]
+}
+STRING 4633
+{
+P
+}
+STRING 4635
+{
+S|cffffcc00p|rlash - [|cffffcc00Level 2|r]
+}
+STRING 4636
+{
+S|cffffcc00p|rlash - [|cffffcc00Level 3|r]
+}
+STRING 4668
+{
+G
+}
+STRING 4680
+{
+P
+}
+STRING 4681
+{
+Shockwave Dummy 2
+}
+STRING 4684
+{
+Shockwave Dummy 1
+}
+STRING 4693
+{
+This unit is entangled in vines; it moves slower and takes damage over time.
+}
+STRING 4748
+{
+Raccoon
+}
+STRING 4749
+{
+Battleship
+}
+STRING 4753
+{
+Splashes the area in water. Units within 500 AoE of the tower take <A00L,DataA3> damage.
+}
+STRING 4754
+{
+Splashes the area in water. Units within 500 AoE of the tower take <A00L,DataA4> damage.
+}
+STRING 4755
+{
+Splashes the area in water. Units within 500 AoE of the tower take <A00L,DataA5> damage.
+}
+STRING 4756
+{
+Splashes the area in water. Units within 500 AoE of the tower take <A00L,DataA6> damage.
+}
+STRING 4757
+{
+Splashes the area in water. Units within 500 AoE of the tower take <A00L,DataA7> damage.
+}
+STRING 4758
+{
+Splashes the area in water. Units within 500 AoE of the tower take <A00L,DataA8> damage.
+}
+STRING 4759
+{
+Splashes the area in water. Units within 500 AoE of the tower take <A00L,DataA9> damage.
+}
+STRING 4760
+{
+Splashes the area in water. Units within 500 AoE of the tower take <A00L,DataA10> damage.
+}
+STRING 4771
+{
+|cffffcc00C|ronjure Lightning - [|cffffcc00Level 2|r]
+}
+STRING 4772
+{
+|cffffcc00C|ronjure Lightning - [|cffffcc00Level 3|r]
+}
+STRING 4776
+{
+|cffffcc00C|ronjure Lightning - [|cffffcc00Level 1|r]
+}
+STRING 4777
+{
+Conjure Lightning
+}
+STRING 4808
+{
+P
+}
+STRING 4825
+{
+Oblivion Tower
+}
+STRING 4827
+{
+Impulse Tower
+}
+STRING 4831
+{
+Fanatic Tower
+}
+STRING 4842
+{
+Maledict
+}
+STRING 4845
+{
+(Level 2)
+}
+STRING 4847
+{
+(Level 1)
+}
+STRING 4851
+{
+Force Field
+}
+STRING 4852
+{
+Force Field
+}
+STRING 4853
+{
+Force Field
+}
+STRING 4856
+{
+This unit is protected by a field of energy.
+}
+STRING 4858
+{
+I like to build towers!
+}
+STRING 4865
+{
+Slo|cffffcc00w|r
+}
+STRING 4867
+{
+Slows a target enemy unit's attack rate by <Aslo,DataB1,%>% and movement speed by <Aslo,DataA1,%>%. |nLasts <Aslo,Dur1> seconds.
+}
+STRING 4869
+{
+|cffc3dbffRight-click to activate auto-casting.|r
+}
+STRING 4870
+{
+|cffc3dbffRight-click to activate auto-casting.|r
+}
+STRING 4871
+{
+|cffc3dbffRight-click to deactivate auto-casting.|r
+}
+STRING 4872
+{
+|cffc3dbffRight-click to deactivate auto-casting.|r
+}
+STRING 4874
+{
+Sunburn
+}
+STRING 4875
+{
+Sunburn
+}
+STRING 4908
+{
+Sunburn
+}
+STRING 4909
+{
+Erupt
+}
+STRING 4916
+{
+Conjure
+}
+STRING 4918
+{
+Upgrade to |cffffcc00T|rrickery Tower
+}
+STRING 4919
+{
+Upgrade to |cffffcc00I|rce Tower
+}
+STRING 4920
+{
+Upgrade to |cffffcc00E|rlectricity Tower
+}
+STRING 4921
+{
+Q
+}
+STRING 4923
+{
+Upgrade to |cffffcc00L|rife Tower
+}
+STRING 4924
+{
+M
+}
+STRING 4925
+{
+Upgrade to |cffffcc00M|ragic Tower
+}
+STRING 4926
+{
+Upgrade to |cffffcc00G|runpowder Tower
+}
+STRING 4927
+{
+B
+}
+STRING 4928
+{
+Upgrade to |cffffcc00B|rlacksmith Tower
+}
+STRING 4929
+{
+Upgrade to |cffffcc00P|roison Tower
+}
+STRING 4932
+{
+Upgrade to |cffffcc00H|rydro Tower
+}
+STRING 4933
+{
+H
+}
+STRING 4935
+{
+Upgrade to |cffffcc00F|rlame Tower
+}
+STRING 4937
+{
+Upgrade to |cffffcc00W|rell Tower
+}
+STRING 4939
+{
+T
+}
+STRING 4940
+{
+I
+}
+STRING 4941
+{
+P
+}
+STRING 4947
+{
+U
+}
+STRING 4948
+{
+|cffffcc00U|rpgrade to Spout Tower
+}
+STRING 4950
+{
+U
+}
+STRING 4951
+{
+U
+}
+STRING 4953
+{
+U
+}
+STRING 4954
+{
+|cffffcc00U|rpgrade to Mortar Tower
+}
+STRING 4955
+{
+U
+}
+STRING 4956
+{
+|cffffcc00U|rpgrade to Eternal Tower
+}
+STRING 4957
+{
+U
+}
+STRING 4958
+{
+|cffffcc00U|rpgrade to Freezing Tower
+}
+STRING 4959
+{
+U
+}
+STRING 4960
+{
+|cffffcc00U|rpgrade to Forge Tower
+}
+STRING 4961
+{
+U
+}
+STRING 4962
+{
+|cffffcc00U|rpgrade to Solar Tower
+}
+STRING 4963
+{
+U
+}
+STRING 4965
+{
+U
+}
+STRING 4966
+{
+|cffffcc00U|rpgrade to Spring Tower
+}
+STRING 4967
+{
+U
+}
+STRING 4968
+{
+|cffffcc00U|rpgrade to Sorcery Tower
+}
+STRING 4969
+{
+U
+}
+STRING 4970
+{
+|cffffcc00U|rpgrade to Pollution Tower
+}
+STRING 4971
+{
+U
+}
+STRING 4972
+{
+|cffffcc00U|rpgrade to Mirage Tower
+}
+STRING 4973
+{
+U
+}
+STRING 4974
+{
+|cffffcc00U|rpgrade to Lightning Tower
+}
+STRING 4975
+{
+U
+}
+STRING 4977
+{
+U
+}
+STRING 4978
+{
+|cffffcc00U|rpgrade to Waterfall Tower
+}
+STRING 4980
+{
+U
+}
+STRING 4981
+{
+U
+}
+STRING 4982
+{
+|cffffcc00U|rpgrade to Energy Tower
+}
+STRING 4983
+{
+U
+}
+STRING 4985
+{
+U
+}
+STRING 4986
+{
+|cffffcc00U|rpgrade to Soul Catcher Tower
+}
+STRING 4987
+{
+U
+}
+STRING 4988
+{
+|cffffcc00U|rpgrade to Sub-Zero Tower
+}
+STRING 4989
+{
+U
+}
+STRING 4991
+{
+U
+}
+STRING 4992
+{
+|cffffcc00U|rpgrade to Geyser Tower
+}
+STRING 4993
+{
+U
+}
+STRING 4994
+{
+|cffffcc00U|rpgrade to Eidolon Tower
+}
+STRING 4995
+{
+U
+}
+STRING 4997
+{
+U
+}
+STRING 4998
+{
+|cffffcc00U|rpgrade to Vulcan Tower
+}
+STRING 4999
+{
+U
+}
+STRING 5000
+{
+|cffffcc00U|rpgrade to Sun Tower
+}
+STRING 5001
+{
+U
+}
+STRING 5003
+{
+U
+}
+STRING 5005
+{
+U
+}
+STRING 5007
+{
+|cffffcc00U|rpgrade to Necromancy Tower
+}
+STRING 5008
+{
+|cffffcc00U|rpgrade to Comet Tower
+}
+STRING 5009
+{
+|cffffcc00U|rpgrade to Kraken Tower
+}
+STRING 5011
+{
+|cffffcc00U|rpgrade to Witchcraft Tower
+}
+STRING 5012
+{
+|cffffcc00U|rpgrade to Thorns Tower
+}
+STRING 5014
+{
+|cffffcc00U|rpgrade to Tsunami Tower
+}
+STRING 5015
+{
+|cffffcc00U|rpgrade to Hydrochloric Tower
+}
+STRING 5016
+{
+|cffffcc00U|rpgrade to Earthshaker Tower
+}
+STRING 5018
+{
+|cffffcc00U|rpgrade to Incantation Tower
+}
+STRING 5019
+{
+|cffffcc00U|rpgrade to Supernova Tower
+}
+STRING 5021
+{
+|cffffcc00U|rpgrade to Fanatic Tower
+}
+STRING 5022
+{
+U
+}
+STRING 5023
+{
+|cffffcc00U|rpgrade to Phasor Tower
+}
+STRING 5024
+{
+U
+}
+STRING 5025
+{
+|cffffcc00U|rpgrade to Monsoon Tower
+}
+STRING 5026
+{
+U
+}
+STRING 5027
+{
+|cffffcc00U|rpgrade to Mire Tower
+}
+STRING 5028
+{
+U
+}
+STRING 5029
+{
+|cffffcc00U|rpgrade to Wealth Tower
+}
+STRING 5030
+{
+U
+}
+STRING 5031
+{
+|cffffcc00U|rpgrade to Ice Age Tower
+}
+STRING 5032
+{
+U
+}
+STRING 5033
+{
+U
+}
+STRING 5034
+{
+U
+}
+STRING 5035
+{
+U
+}
+STRING 5036
+{
+U
+}
+STRING 5037
+{
+U
+}
+STRING 5038
+{
+U
+}
+STRING 5039
+{
+U
+}
+STRING 5040
+{
+U
+}
+STRING 5041
+{
+U
+}
+STRING 5042
+{
+U
+}
+STRING 5043
+{
+U
+}
+STRING 5044
+{
+U
+}
+STRING 5045
+{
+U
+}
+STRING 5046
+{
+U
+}
+STRING 5047
+{
+Build |cffffcc00A|rrrow Tower
+}
+STRING 5048
+{
+A
+}
+STRING 5049
+{
+|cffffcc00U|rpgrade to Advanced Arrow Tower
+}
+STRING 5050
+{
+|cffffcc00U|rpgrade to Super Arrow Tower
+}
+STRING 5051
+{
+|cffffcc00U|rpgrade to Advanced Cannon Tower
+}
+STRING 5052
+{
+|cffffcc00U|rpgrade to Super Cannon Tower
+}
+STRING 5053
+{
+U
+}
+STRING 5054
+{
+U
+}
+STRING 5055
+{
+U
+}
+STRING 5056
+{
+U
+}
+STRING 5057
+{
+|cffffcc00U|rpgrade to Focused Light Tower
+}
+STRING 5058
+{
+|cffffcc00U|rpgrade to Focused Darkness Tower
+}
+STRING 5059
+{
+|cffffcc00U|rpgrade to Focused Water Tower
+}
+STRING 5060
+{
+|cffffcc00U|rpgrade to Focused Earth Tower
+}
+STRING 5061
+{
+|cffffcc00U|rpgrade to Focused Fire Tower
+}
+STRING 5062
+{
+|cffffcc00U|rpgrade to Focused Nature Tower
+}
+STRING 5063
+{
+|cffffcc00U|rpgrade to Amplified Water Tower
+}
+STRING 5064
+{
+|cffffcc00U|rpgrade to Amplified Earth Tower
+}
+STRING 5065
+{
+|cffffcc00U|rpgrade to Amplified Darkness Tower
+}
+STRING 5066
+{
+|cffffcc00U|rpgrade to Amplified Fire Tower
+}
+STRING 5067
+{
+|cffffcc00U|rpgrade to Amplified Light Tower
+}
+STRING 5068
+{
+|cffffcc00U|rpgrade to Amplified Nature Tower
+}
+STRING 5069
+{
+|cffffcc00U|rpgrade to Refined Darkness Tower
+}
+STRING 5070
+{
+|cffffcc00U|rpgrade to Refined Earth Tower
+}
+STRING 5071
+{
+|cffffcc00U|rpgrade to Refined Fire Tower
+}
+STRING 5072
+{
+|cffffcc00U|rpgrade to Refined Light Tower
+}
+STRING 5073
+{
+|cffffcc00U|rpgrade to Refined Nature Tower
+}
+STRING 5074
+{
+|cffffcc00U|rpgrade to Refined Water Tower
+}
+STRING 5075
+{
+|cffffcc00U|rpgrade to Pure Water
+}
+STRING 5076
+{
+|cffffcc00U|rpgrade to Pure Nature
+}
+STRING 5077
+{
+|cffffcc00U|rpgrade to Pure Darkness
+}
+STRING 5078
+{
+|cffffcc00U|rpgrade to Pure Earth
+}
+STRING 5079
+{
+|cffffcc00U|rpgrade to Pure Fire
+}
+STRING 5080
+{
+|cffffcc00U|rpgrade to Pure Light
+}
+STRING 5081
+{
+U
+}
+STRING 5082
+{
+U
+}
+STRING 5083
+{
+U
+}
+STRING 5084
+{
+U
+}
+STRING 5085
+{
+U
+}
+STRING 5086
+{
+U
+}
+STRING 5087
+{
+U
+}
+STRING 5088
+{
+U
+}
+STRING 5089
+{
+U
+}
+STRING 5090
+{
+U
+}
+STRING 5091
+{
+U
+}
+STRING 5092
+{
+U
+}
+STRING 5093
+{
+U
+}
+STRING 5094
+{
+U
+}
+STRING 5095
+{
+U
+}
+STRING 5096
+{
+U
+}
+STRING 5097
+{
+U
+}
+STRING 5098
+{
+U
+}
+STRING 5099
+{
+U
+}
+STRING 5102
+{
+Z
+}
+STRING 5104
+{
+Upgrade to |cffffcc00Q|ruaker Tower
+}
+STRING 5105
+{
+Q
+}
+STRING 5106
+{
+Upgrade to |cffffcc00L|raser Tower
+}
+STRING 5107
+{
+Upgrade to |cffffcc00O|rblivion Tower
+}
+STRING 5108
+{
+Upgrade to |cffffcc00P|rolar Tower
+}
+STRING 5109
+{
+Upgrade to |cffffcc00D|rrowning Tower
+}
+STRING 5112
+{
+Upgrade to |cffffcc00F|rlamethrower Tower
+}
+STRING 5113
+{
+V
+}
+STRING 5114
+{
+Upgrade to |cffffcc00V|roodoo Tower
+}
+STRING 5115
+{
+M
+}
+STRING 5116
+{
+Upgrade to |cffffcc00M|ruck Tower
+}
+STRING 5117
+{
+Upgrade to |cffffcc00C|rorrosion Tower
+}
+STRING 5118
+{
+Upgrade to |cffffcc00R|roots Tower
+}
+STRING 5119
+{
+Upgrade to |cffffcc00N|rova Tower
+}
+STRING 5120
+{
+Upgrade to |cffffcc00G|rold Tower
+}
+STRING 5121
+{
+Upgrade to |cffffcc00W|rindstorm Tower
+}
+STRING 5122
+{
+H
+}
+STRING 5123
+{
+Upgrade to |cffffcc00H|rail Tower
+}
+STRING 5124
+{
+Upgrade to |cffffcc00T|ridal Tower
+}
+STRING 5125
+{
+Upgrade to |cffffcc00E|rnchantment Tower
+}
+STRING 5126
+{
+Upgrade to |cffffcc00I|rmpulse Tower
+}
+STRING 5129
+{
+T
+}
+STRING 5166
+{
+T
+}
+STRING 5170
+{
+R
+}
+STRING 5171
+{
+R
+}
+STRING 5182
+{
+IAS Dummy
+}
+STRING 5183
+{
+(Custom)
+}
+STRING 5218
+{
+(Custom)
+}
+STRING 5223
+{
+P
+}
+STRING 5224
+{
+Gaia's Wrath
+}
+STRING 5247
+{
+Wrath
+}
+STRING 5251
+{
+|cffffcc00C|rripple
+}
+STRING 5252
+{
+Reduces movement speed by <ACcr,DataA1,%>%, attack rate by <ACcr,DataB1,%>%, and damage by <ACcr,DataC1,%>% of a target enemy unit. |nLasts <ACcr,Dur1> seconds.
+}
+STRING 5257
+{
+Explode Dummy 1
+}
+STRING 5258
+{
+Explode Dummy 2
+}
+STRING 5259
+{
+|cffffcc00C|rripple
+}
+STRING 5260
+{
+Reduces movement speed by <ACcr,DataA1,%>%, attack rate by <ACcr,DataB1,%>%, and damage by <ACcr,DataC1,%>% of a target enemy unit. |nLasts <ACcr,Dur1> seconds.
+}
+STRING 5261
+{
+S|cffffcc00p|rlash - [|cffffcc00Level 4|r]
+}
+STRING 5262
+{
+S|cffffcc00p|rlash - [|cffffcc00Level 5|r]
+}
+STRING 5263
+{
+S|cffffcc00p|rlash - [|cffffcc00Level 6|r]
+}
+STRING 5264
+{
+S|cffffcc00p|rlash - [|cffffcc00Level 7|r]
+}
+STRING 5265
+{
+S|cffffcc00p|rlash - [|cffffcc00Level 8|r]
+}
+STRING 5266
+{
+S|cffffcc00p|rlash - [|cffffcc00Level 9|r]
+}
+STRING 5267
+{
+S|cffffcc00p|rlash - [|cffffcc00Level 10|r]
+}
+STRING 5277
+{
+S|cffffcc00p|rlash - [|cffffcc00Level 3|r]
+}
+STRING 5282
+{
+Ronald McDonald
+}
+STRING 5293
+{
+|cff8433C8Darkness Elemental|r - Level 3
+}
+STRING 5294
+{
+|cff8433C8Darkness Elemental|r - Level 1
+}
+STRING 5295
+{
+|cffE5DE23Light Elemental|r - Level 1
+}
+STRING 5296
+{
+|cffE5DE23Light Elemental|r - Level 3
+}
+STRING 5297
+{
+|cffE5DE23Light Elemental|r - Level 2
+}
+STRING 5298
+{
+|cff8433C8Darkness Elemental|r - Level 2
+}
+STRING 5299
+{
+Lag Prevention
+}
+STRING 5308
+{
+Frostbite
+}
+STRING 5309
+{
+Frostbite
+}
+STRING 5310
+{
+This unit has felt the bite of coldness; its movement speed is reduced.
+}
+STRING 5315
+{
+Velocity Tower
+}
+STRING 5316
+{
+|cffffcc00U|rpgrade to Velocity Tower
+}
+STRING 5501
+{
+E
+}
+STRING 5502
+{
+M
+}
+STRING 5511
+{
+Build |cffffcc00P|reriodic Tower of the Elements
+}
+STRING 5571
+{
+(Level 1)
+}
+STRING 5572
+{
+Fire Up
+}
+STRING 5573
+{
+Fire Up
+}
+STRING 5575
+{
+(Level 2)
+}
+STRING 5576
+{
+Fire Up
+}
+STRING 5577
+{
+Fire Up
+}
+STRING 5579
+{
+(Level 3)
+}
+STRING 5587
+{
+Magic Damage
+}
+STRING 5599
+{
+Death Knight
+}
+STRING 5600
+{
+Priest
+}
+STRING 5656
+{
+Entangle
+}
+STRING 5657
+{
+Entangle
+}
+STRING 5731
+{
+Every three units this tower kills adds one life. If you have full life, it will take nine units.
+}
+STRING 5732
+{
+Every two units this tower kills adds one life. If you have full life, it will take six units.
+}
+STRING 5733
+{
+Every unit this tower kills adds one life. If you have full life, it will take three units.
+}
+STRING 5735
+{
+Gives a chance to kill attacked creeps.|n|nChance to kill is 15000/Current HP.
+}
+STRING 5757
+{
+Reduces a target enemy unit's armor by <A00J,DataA2>. |n|nLasts <A00J,Dur2> seconds.
+}
+STRING 5758
+{
+Reduces a target enemy unit's armor by <A00J,DataA1>. |n|nLasts <A00J,Dur1> seconds.
+}
+STRING 5886
+{
+|cffffff00+++++++++++++++++++
+Interest Rate Increased.
++++++++++++++++++++|r
+
+}
+STRING 5887
+{
+|c0000AA00+++++++++++++++++++
+An Elemental has been randomly summoned for you.
++++++++++++++++++++|r
+}
+STRING 5888
+{
+|c0000AA00+++++++++++++++++++
+You've just received 1 lumber. 
+You can use it to summon an Elemental to gain its power.
++++++++++++++++++++|r
+}
+STRING 5889
+{
+|cffffaacc+++++++++++++++++++
+You can now build +1 Pure Elemental Tower
++++++++++++++++++++|r
+
+}
+STRING 5891
+{
+|cffff0000RANDOM MODE|r
+From now on you do not have any control on which elementals will be summoned every five levels. However, elemental towers will now give 100% refunds when you sell them.
+}
+STRING 5902
+{
+Ronald has finally prevailed on you!
+
+|cffFF8000Visit|r |cff9497cchttp://forums.eletd.com|r |cffFF8000to compete with other players for most Ronalds killed.|r
+}
+STRING 5903
+{
+Nobody had the cojones to survive the onslaught!? 
+I'm ashamed of you. Better luck next time.
+
+|cffFF8000Visit|r |cff9497cchttp://forums.eletd.com|r |cffFF8000for strategies and replays to help improve your game.|r
+}
+STRING 6047
+{
+Arbitrage
+}
+STRING 6049
+{
+Every kill gives 50% more bounty.
+}
+STRING 6051
+{
+Every kill gives 100% more bounty.
+}
+STRING 6060
+{
+(Level 1)
+}
+STRING 6061
+{
+(Level 2)
+}
+STRING 6073
+{
+Foundry Tower
+}
+STRING 6074
+{
+|cffffcc00U|rpgrade to Foundry Tower
+}
+STRING 6075
+{
+Makrura Deepseer
+}
+STRING 6175
+{
+Armor
+}
+STRING 6176
+{
+Armor
+}
+STRING 6178
+{
+Frenzy
+}
+STRING 6179
+{
+Frenzy
+}
+STRING 6182
+{
+Sludge
+}
+STRING 6183
+{
+Sludge
+}
+STRING 6348
+{
+Impact
+}
+STRING 6349
+{
+Impact
+}
+STRING 6351
+{
+(Hail)
+}
+STRING 6355
+{
+(Comet)
+}
+STRING 6356
+{
+S
+}
+STRING 6357
+{
+Storm
+}
+STRING 6365
+{
+Splashes the area in water. Units within 750 AoE of the tower take 2200 damage.
+}
+STRING 6366
+{
+Splashes the area in water. Units within 750 AoE of the tower take 3640 damage.
+}
+STRING 6367
+{
+Splashes the area in water. Units within 750 AoE of the tower take 5368 damage.
+}
+STRING 6368
+{
+Splashes the area in water. Units within 750 AoE of the tower take 7441 damage.
+}
+STRING 6369
+{
+Splashes the area in water. Units within 750 AoE of the tower take 9929 damage.
+}
+STRING 6370
+{
+Splashes the area in water. Units within 750 AoE of the tower take 12915 damage.
+}
+STRING 6371
+{
+Splashes the area in water. Units within 750 AoE of the tower take 16499 damage.
+}
+STRING 6372
+{
+Splashes the area in water. Units within 750 AoE of the tower take 20798 damage.
+}
+STRING 6373
+{
+Splashes the area in water. Units within 750 AoE of the tower take 1000 damage.
+}
+STRING 6398
+{
+(Level 1)
+}
+STRING 6399
+{
+(Level 2)
+}
+STRING 6401
+{
+Acid
+}
+STRING 6409
+{
+Entangle
+}
+STRING 6410
+{
+This unit is entangled in vines; it moves slower and takes damage over time.
+}
+STRING 6411
+{
+Entangle
+}
+STRING 6563
+{
+Quark Tower
+}
+STRING 6564
+{
+Upgrade to |cffffcc00Q|ruark Tower
+}
+STRING 6565
+{
+Atom Tower
+}
+STRING 6566
+{
+|cffffcc00U|rpgrade to Atom Tower
+}
+STRING 6567
+{
+Electron Tower
+}
+STRING 6568
+{
+|cffffcc00U|rpgrade to Electron Tower
+}
+STRING 6575
+{
+Mushroom Tower
+}
+STRING 6576
+{
+Upgrade to |cffffcc00M|rushroom Tower
+}
+STRING 6577
+{
+Fungus Tower
+}
+STRING 6578
+{
+|cffffcc00U|rpgrade to Fungus Tower
+}
+STRING 6581
+{
+Spore Cloud
+}
+STRING 6584
+{
+M
+}
+STRING 6588
+{
+Wizardry Tower
+}
+STRING 6589
+{
+|cffffcc00U|rpgrade to Wizardry Tower
+}
+STRING 6590
+{
+Disease Tower
+}
+STRING 6591
+{
+Upgrade to |cffffcc00D|risease Tower
+}
+STRING 6592
+{
+Zealot Tower
+}
+STRING 6593
+{
+Upgrade to |cffffcc00Z|realot Tower
+}
+STRING 6594
+{
+Decay Tower
+}
+STRING 6595
+{
+|cffffcc00U|rpgrade to Decay Tower
+}
+STRING 6598
+{
+|cffffcc00U|rpgrade to Death Tower
+}
+STRING 6615
+{
+Toadstool Tower
+}
+STRING 6616
+{
+|cffffcc00U|rpgrade to Toadstool Tower
+}
+STRING 6643
+{
+|cffff0000SAME-RANDOM MODE (SR)|r
+Host has decided that everyone will play on random mode! From now on you do not have any control on which elementals will be summoned every five levels. Everyone will get the same elementals. However, elemental towers will now give 100% refunds when you sell them.
+}
+STRING 6647
+{
+|cffff0000CHAOS MODE (CM)|r
+The creep order has been randomized. You're going to need a new build!!
+}
+STRING 6648
+{
+|cffff0000EXTREME MODE (EX)|r
+You've got one life, and there is no time between rounds. Good luck; you're going to need it!!
+}
+STRING 6656
+{
+Gives you back 75% of the resources spent on building and upgrading the tower. |n|n(100% return if you are on random mode)
+}
+STRING 6660
+{
+Hurls a bolt of lightning that bounces up to 3 times, dealing 2500 damage to the primary target. Each jump deals 10% more damage.
+}
+STRING 6661
+{
+Hurls a bolt of lightning that bounces up to 3 times, dealing 12500 damage to the primary target. Each jump deals 10% more damage.
+}
+STRING 6662
+{
+Hurls a bolt of lightning that bounces up to 3 times, dealing 500 damage to the primary target. Each jump deals 10% more damage.
+}
+STRING 6663
+{
+Pestilence Tower
+}
+STRING 6664
+{
+|cffffcc00U|rpgrade to Pestilence Tower
+}
+STRING 6665
+{
+Upgrade to |cffffcc00F|rlesh Golem
+}
+STRING 6666
+{
+Patchwork Abomination
+}
+STRING 6667
+{
+|cffffcc00U|rpgrade to Patchwork Abomination
+}
+STRING 6671
+{
+Pandaren Brewmaster
+}
+STRING 6674
+{
+This unit has Spring Forward; its attack rate is increased.
+}
+STRING 6680
+{
+Flings a volatile liquid that reduces movement speed by 30% for units within 500 AoE. |n|nLasts 5 seconds.
+}
+STRING 6683
+{
+Lightning Dummy
+}
+STRING 6701
+{
+Contamination Dummy
+}
+STRING 6714
+{
+This unit has Fire Up; its damage is increased.
+}
+STRING 6715
+{
+This unit has Fire Up; its damage is increased.
+}
+STRING 6716
+{
+This unit has Fire Up; its damage is increased.
+}
+STRING 6774
+{
+Shrapnade
+}
+STRING 6781
+{
+Shrapnade Dummy
+}
+STRING 6794
+{
+Authorization code not entered!
+}
+STRING 6795
+{
+Game authorized, enjoy!
+}
+STRING 6869
+{
+Helix Dummy
+}
+STRING 6870
+{
+Helix Dummy
+}
+STRING 6871
+{
+Quantum Beam
+}
+STRING 6915
+{
+Summons an armorer that shields nearby enemy creeps. Grants 9 additional armor. |n|nLasts 30 seconds.
+}
+STRING 6919
+{
+Summons an inciter that frenzies nearby enemy creeps. Grants 20% increased movement speed. |n|nLasts 30 seconds.
+}
+STRING 6953
+{
+Heal
+}
+STRING 6954
+{
+|cffffcc00H|real
+}
+STRING 6955
+{
+Heals creeps for 33% of their maximum HP.
+}
+STRING 6976
+{
+|c0000AA00+++++++++++++++++++
+Your Elementals have been randomly summoned for you.
++++++++++++++++++++|r
+}
+STRING 6977
+{
+Helix Dummy
+}
+STRING 6979
+{
+Frost Helix
+}
+STRING 7007
+{
+I like to build towers!
+}
+STRING 7009
+{
+Focus
+}
+STRING 7012
+{
+Theft
+}
+STRING 7013
+{
+|cffffcc00T|rheft
+}
+STRING 7015
+{
+Puts a target builder to sleep for 5 seconds.
+}
+STRING 7027
+{
+Autocast
+}
+STRING 7032
+{
+Conjure
+}
+STRING 7033
+{
+Conjure
+}
+STRING 7035
+{
+Autocast
+}
+STRING 7036
+{
+Autocast
+}
+STRING 7037
+{
+This unit is autocasting.
+}
+STRING 7038
+{
+Autocast (Caster)
+}
+STRING 7039
+{
+Clone
+}
+STRING 7055
+{
+(Level 1)
+}
+STRING 7056
+{
+Spring Forward
+}
+STRING 7057
+{
+Spring Forward
+}
+STRING 7058
+{
+This unit has Spring Forward; its attack rate is increased.
+}
+STRING 7059
+{
+(Level 2)
+}
+STRING 7060
+{
+Spring Forward
+}
+STRING 7061
+{
+Spring Forward
+}
+STRING 7062
+{
+This unit has Spring Forward; its attack rate is increased.
+}
+STRING 7063
+{
+(Level 3)
+}
+STRING 7086
+{
+C
+}
+STRING 7093
+{
+Orbit Dummy
+}
+STRING 7094
+{
+Orbit Dummy
+}
+STRING 7095
+{
+Orbit
+}
+STRING 7096
+{
+(Jinx)
+}
+STRING 7119
+{
+Orbit
+}
+STRING 7120
+{
+(Hex)
+}
+STRING 7158
+{
+Expand
+}
+STRING 7164
+{
+Contract
+}
+STRING 7183
+{
+Tornado
+}
+STRING 7185
+{
+Tornado
+}
+STRING 7234
+{
+E
+}
+STRING 7278
+{
+This unit is caught within a Tornado; its movement speed has been reduced and it takes damage over time.
+}
+STRING 7279
+{
+This unit is caught within a Tornado; its movement speed has been reduced and it takes damage over time.
+}
+STRING 7352
+{
+Tower Query (Triples)
+}
+STRING 7354
+{
+Click to get a summary of your available triple towers.
+}
+STRING 7355
+{
+Tower Query (Duals)
+}
+STRING 7357
+{
+Click to get a summary of your available dual towers.
+}
+STRING 7406
+{
+Increases the radius by 50. Maximum radius is 1100.
+}
+STRING 7423
+{
+Curses enemy units in 300 AoE. Every 2.5 seconds, cursed units will take damage equal to 30% of the HP they have lost since being cursed. This damage ignores armor. |n|nLasts 5 seconds.
+}
+STRING 7500
+{
+Each attack hurls a bolt of lightning that bounces up to 3 times, dealing 333 damage to the primary target. Each jump deals 10% more damage.
+}
+STRING 7501
+{
+Each attack hurls a bolt of lightning that bounces up to 3 times, dealing 1665 damage to the primary target. Each jump deals 10% more damage.
+}
+STRING 7502
+{
+Each attack hurls a bolt of lightning that bounces up to 3 times, dealing 8325 damage to the primary target. Each jump deals 10% more damage.
+}
+STRING 7507
+{
+|cff888888(No Element)|r |n|cff9497CCDamage:|r 9 |n|cff9497CCType:|r |cff888888Composite|r |n|cff9497CCAoE:|r 100 Full/200 Half |n|cff9497CCSpeed:|r 1 |n|cff9497CCRange:|r 600 |n|cff9497CCAbility:|r None
+}
+STRING 7508
+{
+|cff888888(No Element)|r |n|cff9497CCDamage:|r 27 |n|cff9497CCType:|r |cff888888Composite|r |n|cff9497CCAoE:|r 100 Full/200 Half |n|cff9497CCSpeed:|r 1 |n|cff9497CCRange:|r 600 |n|cff9497CCAbility:|r None
+}
+STRING 7509
+{
+|cff888888(No Element)|r |n|cff9497CCDamage:|r 81 |n|cff9497CCType:|r |cff888888Composite|r |n|cff9497CCAoE:|r 100 Full/200 Half |n|cff9497CCSpeed:|r 1 |n|cff9497CCRange:|r 600 |n|cff9497CCAbility:|r None
+}
+STRING 7510
+{
+(|cff8433C8Darkness|r) |n|cff9497CCDamage:|r 243 |n|cff9497CCType:|r |cff8433C8Darkness|r |n|cff9497CCAoE:|r 100 Full/200 Half |n|cff9497CCSpeed:|r 1 |n|cff9497CCRange:|r 600 |n|cff9497CCAbility:|r None
+}
+STRING 7511
+{
+(|cffD4880FEarth|r) |n|cff9497CCDamage:|r 243 |n|cff9497CCType:|r |cffD4880FEarth|r |n|cff9497CCAoE:|r 100 Full/200 Half |n|cff9497CCSpeed:|r 1 |n|cff9497CCRange:|r 600 |n|cff9497CCAbility:|r None
+}
+STRING 7512
+{
+(|cffC40000Fire|r) |n|cff9497CCDamage:|r 243 |n|cff9497CCType:|r |cffC40000Fire|r |n|cff9497CCAoE:|r 100 Full/200 Half |n|cff9497CCSpeed:|r 1 |n|cff9497CCRange:|r 600 |n|cff9497CCAbility:|r None
+}
+STRING 7513
+{
+(|cffE5DE23Light|r) |n|cff9497CCDamage:|r 243 |n|cff9497CCType:|r |cffE5DE23Light|r |n|cff9497CCAoE:|r 100 Full/200 Half |n|cff9497CCSpeed:|r 1 |n|cff9497CCRange:|r 600 |n|cff9497CCAbility:|r None
+}
+STRING 7514
+{
+(|cff00C400Nature|r) |n|cff9497CCDamage:|r 243 |n|cff9497CCType:|r |cff00C400Nature|r |n|cff9497CCAoE:|r 100 Full/200 Half |n|cff9497CCSpeed:|r 1 |n|cff9497CCRange:|r 600 |n|cff9497CCAbility:|r None
+}
+STRING 7515
+{
+(|cff01A2FFWater|r) |n|cff9497CCDamage:|r 243 |n|cff9497CCType:|r |cff01A2FFWater|r |n|cff9497CCAoE:|r 100 Full/200 Half |n|cff9497CCSpeed:|r 1 |n|cff9497CCRange:|r 600 |n|cff9497CCAbility:|r None
+}
+STRING 7518
+{
+(|cffC40000Fire|r) |n|cff9497CCDamage:|r 275 |n|cff9497CCType:|r |cffC40000Fire|r |n|cff9497CCAoE:|r 150 Full/300 Half |n|cff9497CCSpeed:|r 0.31 |n|cff9497CCRange:|r 500 |n|cff9497CCAbility:|r None
+}
+STRING 7522
+{
+(|cffC40000Fire|r) |n|cff9497CCDamage:|r 11 |n|cff9497CCType:|r |cffC40000Fire|r |n|cff9497CCAoE:|r 150 Full/300 Half |n|cff9497CCSpeed:|r 0.31 |n|cff9497CCRange:|r 500 |n|cff9497CCAbility:|r None
+}
+STRING 7524
+{
+(|cffC40000Fire|r) |n|cff9497CCDamage:|r 55 |n|cff9497CCType:|r |cffC40000Fire|r |n|cff9497CCAoE:|r 150 Full/300 Half |n|cff9497CCSpeed:|r 0.31 |n|cff9497CCRange:|r 500 |n|cff9497CCAbility:|r None
+}
+STRING 7526
+{
+(|cffC40000Fire|r) |n|cff9497CCDamage:|r 1375 |n|cff9497CCType:|r |cffC40000Fire|r |n|cff9497CCAoE:|r 150 Full/300 Half |n|cff9497CCSpeed:|r 0.31 |n|cff9497CCRange:|r 500 |n|cff9497CCAbility:|r None
+}
+STRING 7546
+{
+Leak
+}
+STRING 7547
+{
+Leak
+}
+STRING 7557
+{
+This unit has been drenched in solar energy; it takes damage every second in an AoE.
+}
+STRING 7685
+{
+Decreases the radius by 50. Minimum radius is 400.
+}
+STRING 7769
+{
+W
+}
+STRING 7773
+{
+R
+}
+STRING 7780
+{
+|cff9497CCAfterlife|r - [|cffffcc00Level 2|r]
+}
+STRING 7781
+{
+|cff9497CCAfterlife|r - [|cffffcc00Level 1|r]
+}
+STRING 7782
+{
+|cff9497CCAfterlife|r - [|cffffcc00Level 3|r]
+}
+STRING 7783
+{
+|cff9497CCConjure Lightning|r - [|cffffcc00Level 1|r]
+}
+STRING 7784
+{
+|cff9497CCConjure Lightning|r - [|cffffcc00Level 2|r]
+}
+STRING 7785
+{
+|cff9497CCConjure Lightning|r - [|cffffcc00Level 3|r]
+}
+STRING 7786
+{
+|cff9497CCSell Tower|r |cffffcc00(X)|r
+}
+STRING 7787
+{
+|cff9497CCSpring Fo|r|cffffcc00r|r|cff9497CCward|r - [|cffffcc00Level 1|r]
+}
+STRING 7788
+{
+|cff9497CCSpring Fo|r|cffffcc00r|r|cff9497CCward|r - [|cffffcc00Level 2|r]
+}
+STRING 7789
+{
+|cff9497CCSpring Fo|r|cffffcc00r|r|cff9497CCward|r - [|cffffcc00Level 3|r]
+}
+STRING 7790
+{
+|cff9497CCS|r|cffffcc00p|r|cff9497CCew Acid|r - [|cffffcc00Level 1|r]
+}
+STRING 7791
+{
+|cff9497CCS|r|cffffcc00p|r|cff9497CCew Acid|r - [|cffffcc00Level 2|r]
+}
+STRING 7792
+{
+|cffffcc00T|r|cff9497CCornado|r - [|cffffcc00Level 2|r]
+}
+STRING 7793
+{
+|cffffcc00T|r|cff9497CCornado|r - [|cffffcc00Level 1|r]
+}
+STRING 7794
+{
+|cff9497CCSell Tower|r |cffffcc00(X)|r
+}
+STRING 7795
+{
+|cff9497CCPulverize|r - [|cffffcc00Level 2|r]
+}
+STRING 7796
+{
+|cff9497CCPulverize|r - [|cffffcc00Level 1|r]
+}
+STRING 7797
+{
+|cff9497CCInstant Death|r
+}
+STRING 7798
+{
+|cff9497CCImpetus|r - [|cffffcc00Level 1|r]
+}
+STRING 7799
+{
+|cff9497CCImpetus|r - [|cffffcc00Level 2|r]
+}
+STRING 7800
+{
+|cff9497CCFi|r|cffffcc00r|r|cff9497CCe Up|r - [|cffffcc00Level 2|r]
+}
+STRING 7801
+{
+|cff9497CCFi|r|cffffcc00r|r|cff9497CCe Up|r - [|cffffcc00Level 3|r]
+}
+STRING 7802
+{
+|cff9497CCFi|r|cffffcc00r|r|cff9497CCe Up|r - [|cffffcc00Level 1|r]
+}
+STRING 7803
+{
+|cff9497CCSludge|r - [|cffffcc00Level 2|r]
+}
+STRING 7804
+{
+|cff9497CCSludge|r - [|cffffcc00Level 1|r]
+}
+STRING 7815
+{
+|cffffcc00D|r|cff9497CCouse|r - [|cffffcc00Level 4|r]
+}
+STRING 7816
+{
+|cffffcc00D|r|cff9497CCouse|r - [|cffffcc00Level 5|r]
+}
+STRING 7817
+{
+|cffffcc00D|r|cff9497CCouse|r - [|cffffcc00Level 6|r]
+}
+STRING 7818
+{
+|cffffcc00D|r|cff9497CCouse|r - [|cffffcc00Level 7|r]
+}
+STRING 7819
+{
+|cffffcc00D|r|cff9497CCouse|r - [|cffffcc00Level 8|r]
+}
+STRING 7820
+{
+|cffffcc00D|r|cff9497CCouse|r - [|cffffcc00Level 9|r]
+}
+STRING 7821
+{
+|cffffcc00D|r|cff9497CCouse|r - [|cffffcc00Level 10|r]
+}
+STRING 7822
+{
+|cffffcc00D|r|cff9497CCouse|r - [|cffffcc00Level 1|r]
+}
+STRING 7823
+{
+|cffffcc00D|r|cff9497CCouse|r - [|cffffcc00Level 2|r]
+}
+STRING 7824
+{
+|cffffcc00D|r|cff9497CCouse|r - [|cffffcc00Level 3|r]
+}
+STRING 7827
+{
+|cffffcc00G|r|cff9497CCaia's Wrath|r - [|cffffcc00Level 2|r]
+}
+STRING 7828
+{
+|cffffcc00G|r|cff9497CCaia's Wrath|r - [|cffffcc00Level 1|r]
+}
+STRING 7829
+{
+|cff9497CCErupt|r - [|cffffcc00Level 2|r]
+}
+STRING 7830
+{
+|cff9497CCErupt|r - [|cffffcc00Level 3|r]
+}
+STRING 7831
+{
+|cff9497CCErupt|r - [|cffffcc00Level 1|r]
+}
+STRING 7832
+{
+|cffffcc00F|r|cff9497CCrostbite|r - [|cffffcc00Level 2|r]
+}
+STRING 7833
+{
+|cffffcc00F|r|cff9497CCrostbite|r - [|cffffcc00Level 1|r]
+}
+STRING 7834
+{
+|cff9497CCSunburn|r - [|cffffcc00Level 2|r]
+}
+STRING 7835
+{
+|cff9497CCSunburn|r - [|cffffcc00Level 3|r]
+}
+STRING 7836
+{
+|cff9497CCSunburn|r - [|cffffcc00Level 1|r]
+}
+STRING 7837
+{
+|cff9497CCFae|r|cffffcc00r|r|cff9497CCie Fire|r - [|cffffcc00Level 2|r]
+}
+STRING 7838
+{
+|cff9497CCFae|r|cffffcc00r|r|cff9497CCie Fire|r - [|cffffcc00Level 1|r]
+}
+STRING 7840
+{
+|cff9497CCWrath|r
+}
+STRING 7841
+{
+|cffffcc00E|r|cff9497CCxplode|r - [|cffffcc00Level 1|r]
+}
+STRING 7842
+{
+|cffffcc00E|r|cff9497CCxplode|r - [|cffffcc00Level 2|r]
+}
+STRING 7843
+{
+|cffffcc00M|r|cff9497CCaledict|r - [|cffffcc00Level 1|r]
+}
+STRING 7844
+{
+|cffffcc00M|r|cff9497CCaledict|r - [|cffffcc00Level 2|r]
+}
+STRING 7845
+{
+|cff9497CCFocus|r - [|cffffcc00Level 1|r]
+}
+STRING 7846
+{
+|cff9497CCFocus|r - [|cffffcc00Level 2|r]
+}
+STRING 7847
+{
+|cff9497CCArbitrage|r - [|cffffcc00Level 1|r]
+}
+STRING 7848
+{
+|cff9497CCArbitrage|r - [|cffffcc00Level 2|r]
+}
+STRING 7849
+{
+|cff9497CCImpact|r
+}
+STRING 7850
+{
+|cff9497CCImpact|r
+}
+STRING 7851
+{
+|cffffcc00S|r|cff9497CCtorm|r
+}
+STRING 7855
+{
+|cff9497CCNapalm|r - [|cffffcc00Level 1|r]
+}
+STRING 7856
+{
+|cff9497CCNapalm|r - [|cffffcc00Level 2|r]
+}
+STRING 7857
+{
+|cff9497CCContamination|r - [|cffffcc00Level 1|r]
+}
+STRING 7858
+{
+|cff9497CCContamination|r - [|cffffcc00Level 2|r]
+}
+STRING 7859
+{
+|cff9497CCContamination|r - [|cffffcc00Level 3|r]
+}
+STRING 7860
+{
+|cffffcc00M|r|cff9497CCagic Damage|r
+}
+STRING 7865
+{
+|cff9497CCShrapnade|r - [|cffffcc00Level 1|r]
+}
+STRING 7866
+{
+|cff9497CCShrapnade|r - [|cffffcc00Level 2|r]
+}
+STRING 7867
+{
+|cff9497CCShrapnade|r - [|cffffcc00Level 3|r]
+}
+STRING 7868
+{
+|cff9497CCQuantum Beam|r
+}
+STRING 7870
+{
+|cff9497CCFrost Helix|r - [|cffffcc00Level 1|r]
+}
+STRING 7871
+{
+|cff9497CCFrost Helix|r - [|cffffcc00Level 2|r]
+}
+STRING 7872
+{
+|cff9497CCFrost Helix|r - [|cffffcc00Level 3|r]
+}
+STRING 7873
+{
+|cffffcc00C|r|cff9497CConjure|r - [|cffffcc00Level 2|r]
+}
+STRING 7874
+{
+|cffffcc00C|r|cff9497CConjure|r - [|cffffcc00Level 3|r]
+}
+STRING 7875
+{
+|cffffcc00C|r|cff9497CConjure|r - [|cffffcc00Level 1|r]
+}
+STRING 7876
+{
+|cff9497CCActivate Autocast|r
+}
+STRING 7877
+{
+|cff9497CCDeactivate Autocast|r
+}
+STRING 7878
+{
+|cffffcc00E|r|cff9497CCxpand|r
+}
+STRING 7879
+{
+|cffffcc00C|r|cff9497CContract|r
+}
+STRING 7884
+{
+|cff9497CCClone|r
+}
+STRING 7885
+{
+|cff9497CCOrbit|r - [|cffffcc00Radius 400|r]
+}
+STRING 7886
+{
+|cff9497CCOrbit|r - [|cffffcc00Radius 450|r]
+}
+STRING 7887
+{
+|cff9497CCOrbit|r - [|cffffcc00Radius 500|r]
+}
+STRING 7888
+{
+|cff9497CCOrbit|r - [|cffffcc00Radius 550|r]
+}
+STRING 7889
+{
+|cff9497CCOrbit|r - [|cffffcc00Radius 600|r]
+}
+STRING 7890
+{
+|cff9497CCOrbit|r - [|cffffcc00Radius 650|r]
+}
+STRING 7891
+{
+|cff9497CCOrbit|r - [|cffffcc00Radius 700|r]
+}
+STRING 7892
+{
+|cff9497CCOrbit|r - [|cffffcc00Radius 750|r]
+}
+STRING 7893
+{
+|cff9497CCOrbit|r - [|cffffcc00Radius 800|r]
+}
+STRING 7894
+{
+|cff9497CCOrbit|r - [|cffffcc00Radius 850|r]
+}
+STRING 7895
+{
+|cff9497CCOrbit|r - [|cffffcc00Radius 900|r]
+}
+STRING 7896
+{
+|cff9497CCOrbit|r - [|cffffcc00Radius 950|r]
+}
+STRING 7897
+{
+|cff9497CCOrbit|r - [|cffffcc00Radius 1000|r]
+}
+STRING 7898
+{
+|cff9497CCOrbit|r - [|cffffcc00Radius 1050|r]
+}
+STRING 7900
+{
+|cff9497CCOrbit|r - [|cffffcc00Radius 400|r]
+}
+STRING 7901
+{
+|cff9497CCOrbit|r - [|cffffcc00Radius 450|r]
+}
+STRING 7902
+{
+|cff9497CCOrbit|r - [|cffffcc00Radius 500|r]
+}
+STRING 7903
+{
+|cff9497CCOrbit|r - [|cffffcc00Radius 550|r]
+}
+STRING 7904
+{
+|cff9497CCOrbit|r - [|cffffcc00Radius 600|r]
+}
+STRING 7905
+{
+|cff9497CCOrbit|r - [|cffffcc00Radius 650|r]
+}
+STRING 7906
+{
+|cff9497CCOrbit|r - [|cffffcc00Radius 700|r]
+}
+STRING 7907
+{
+|cff9497CCOrbit|r - [|cffffcc00Radius 750|r]
+}
+STRING 7908
+{
+|cff9497CCOrbit|r - [|cffffcc00Radius 800|r]
+}
+STRING 7909
+{
+|cff9497CCOrbit|r - [|cffffcc00Radius 850|r]
+}
+STRING 7910
+{
+|cff9497CCOrbit|r - [|cffffcc00Radius 900|r]
+}
+STRING 7911
+{
+|cff9497CCOrbit|r - [|cffffcc00Radius 950|r]
+}
+STRING 7912
+{
+|cff9497CCOrbit|r - [|cffffcc00Radius 1000|r]
+}
+STRING 7913
+{
+|cff9497CCOrbit|r - [|cffffcc00Radius 1050|r]
+}
+STRING 7915
+{
+Summon Living Waters
+}
+STRING 7916
+{
+Summon Eredar Diabolist
+}
+STRING 7917
+{
+Summon Void Walker
+}
+STRING 7918
+{
+Summon Spirit Owl
+}
+STRING 7919
+{
+Summon Enraged Wildkin
+}
+STRING 7920
+{
+Summon Magnataur Destroyer
+}
+STRING 7921
+{
+Summon Earth Golem
+}
+STRING 7922
+{
+Summon Treant
+}
+STRING 7923
+{
+Summon Pandaren Brewmaster
+}
+STRING 7924
+{
+Summon Fire Lord
+}
+STRING 7925
+{
+Summon Tauren Chieftan
+}
+STRING 7926
+{
+Summon Naga Sea Witch
+}
+STRING 7927
+{
+Summon Pit Lord
+}
+STRING 7928
+{
+Summon Keeper of the Grove
+}
+STRING 7929
+{
+Summon Phoenix
+}
+STRING 7930
+{
+Summon Living Flame
+}
+STRING 7944
+{
+Flamespewer Tower
+}
+STRING 7945
+{
+|cffffcc00U|rpgrade to Flamespewer Tower
+}
+STRING 7960
+{
+Each attack sends out a helix of frost. Units that get hit by part of this helix take 250 damage, double if hit by both parts. The helix will also do 250 damage in 250 AoE at its end. 
+}
+STRING 7961
+{
+Each attack sends out a helix of frost. Units that get hit by part of this helix take 1250 damage, double if hit by both parts. The helix will also do 1250 damage in 250 AoE at its end. 
+}
+STRING 7962
+{
+Each attack sends out a helix of frost. Units that get hit by part of this helix take 6250 damage, double if hit by both parts. The helix will also do 6250 damage in 250 AoE at its end. 
+}
+STRING 7986
+{
+|cffff0000RACE ELIMINATION (RE)|r
+The player that finishes the round first gets a point. At the end of level 60 the player with the most points wins.
+}
+STRING 8010
+{
+This unit has increased armor!
+}
+STRING 8013
+{
+This unit has increased movement speed!
+}
+STRING 8014
+{
+(SW)
+}
+STRING 8015
+{
+Forces the sale of target tower. Owner will be refunded fully.
+}
+STRING 8016
+{
+Radius Tower
+}
+STRING 8017
+{
+Upgrade to |cffffcc00R|radius Tower
+}
+STRING 8020
+{
+Orbit Tower
+}
+STRING 8021
+{
+|cffffcc00U|rpgrade to Orbit Tower
+}
+STRING 8061
+{
+(|cffd4880fEarth|r) |n|cff9497ccDamage:|r 725 |n|cff9497ccType:|r |cffd4880fEarth|r |n|cff9497ccAoE:|r 150 Full/300 Half |n|cff9497ccSpeed:|r 1 |n|cff9497ccRange:|r 700 |n|cff9497ccAbility:|r None
+}
+STRING 8062
+{
+(|cffd4880fEarth|r) |n|cff9497ccDamage:|r 145 |n|cff9497ccType:|r |cffd4880fEarth|r |n|cff9497ccAoE:|r 150 Full/300 Half |n|cff9497ccSpeed:|r 1 |n|cff9497ccRange:|r 700 |n|cff9497ccAbility:|r None
+}
+STRING 8064
+{
+(|cffd4880fEarth|r) |n|cff9497ccDamage:|r 29 |n|cff9497ccType:|r |cffd4880fEarth|r |n|cff9497ccAoE:|r 150 Full/300 Half |n|cff9497ccSpeed:|r 1 |n|cff9497ccRange:|r 700 |n|cff9497ccAbility:|r None
+}
+STRING 8067
+{
+(|cffd4880fEarth|r) |n|cff9497ccDamage:|r 3625 |n|cff9497ccType:|r |cffd4880fEarth|r |n|cff9497ccAoE:|r 150 Full/300 Half |n|cff9497ccSpeed:|r 1 |n|cff9497ccRange:|r 700 |n|cff9497ccAbility:|r None
+}
+STRING 8122
+{
+Dolly!
+}
+STRING 8137
+{
+This unit is a clone. It can't be upgraded, cloned, nor sold.
+}
+STRING 8148
+{
+|cffff0000ALL-RANDOM MODE (AR)|r
+Host has decided that everyone will play on random mode! From now on you do not have any control on which elementals will be summoned every five levels. However, elemental towers will now give 100% refunds when you sell them.
+}
+STRING 8150
+{
+mrchak
+}
+STRING 8151
+{
+mrchak
+}
+STRING 8154
+{
+(|cffe5de23Light|r) |n|cff9497ccDamage:|r 1425 |n|cff9497ccType:|r |cffe5de23Light|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 0.66 |n|cff9497ccRange:|r 1500 |n|cff9497ccAbility:|r None
+}
+STRING 8158
+{
+(|cffe5de23Light|r) |n|cff9497ccDamage:|r 57 |n|cff9497ccType:|r |cffe5de23Light|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 0.66 |n|cff9497ccRange:|r 1500 |n|cff9497ccAbility:|r None
+}
+STRING 8159
+{
+(|cffe5de23Light|r) |n|cff9497ccDamage:|r 285 |n|cff9497ccType:|r |cffe5de23Light|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 0.66 |n|cff9497ccRange:|r 1500 |n|cff9497ccAbility:|r None
+}
+STRING 8161
+{
+(|cffe5de23Light|r) |n|cff9497ccDamage:|r 7125 |n|cff9497ccType:|r |cffe5de23Light|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 0.66 |n|cff9497ccRange:|r 1500 |n|cff9497ccAbility:|r None
+}
+STRING 8164
+{
+(|cff00c400Nature|r) |n|cff9497ccDamage:|r 80 |n|cff9497ccType:|r |cff00c400Nature|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 0.66 |n|cff9497ccRange:|r 900 |n|cff9497ccAbility:|r None
+}
+STRING 8165
+{
+(|cff01a2ffWater|r) |n|cff9497ccDamage:|r 450 |n|cff9497ccType:|r |cff01a2ffWater|r |n|cff9497ccAoE:|r 100 Full/200 Half |n|cff9497ccSpeed:|r 0.31 |n|cff9497ccRange:|r 700 |n|cff9497ccAbility:|r None
+}
+STRING 8166
+{
+(|cff00c400Nature|r) |n|cff9497ccDamage:|r 2000 |n|cff9497ccType:|r |cff00c400Nature|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 0.66 |n|cff9497ccRange:|r 900 |n|cff9497ccAbility:|r None
+}
+STRING 8167
+{
+(|cff01a2ffWater|r) |n|cff9497ccDamage:|r 18 |n|cff9497ccType:|r |cff01a2ffWater|r |n|cff9497ccAoE:|r 100 Full/200 Half |n|cff9497ccSpeed:|r 0.31 |n|cff9497ccRange:|r 700 |n|cff9497ccAbility:|r None
+}
+STRING 8168
+{
+(|cff01a2ffWater|r) |n|cff9497ccDamage:|r 90 |n|cff9497ccType:|r |cff01a2ffWater|r |n|cff9497ccAoE:|r 100 Full/200 Half |n|cff9497ccSpeed:|r 0.31 |n|cff9497ccRange:|r 700 |n|cff9497ccAbility:|r None
+}
+STRING 8169
+{
+(|cff00c400Nature|r) |n|cff9497ccDamage:|r 400 |n|cff9497ccType:|r |cff00c400Nature|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 0.66 |n|cff9497ccRange:|r 900 |n|cff9497ccAbility:|r None
+}
+STRING 8170
+{
+(|cff00c400Nature|r) |n|cff9497ccDamage:|r 10000 |n|cff9497ccType:|r |cff00c400Nature|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 0.66 |n|cff9497ccRange:|r 900 |n|cff9497ccAbility:|r None
+}
+STRING 8171
+{
+(|cff01a2ffWater|r) |n|cff9497ccDamage:|r 2250 |n|cff9497ccType:|r |cff01a2ffWater|r |n|cff9497ccAoE:|r 100 Full/200 Half |n|cff9497ccSpeed:|r 0.31 |n|cff9497ccRange:|r 700 |n|cff9497ccAbility:|r None
+}
+STRING 8185
+{
+(|cffc40000Fire|r + |cff8433c8Darkness|r) |n|cff9497ccDamage:|r 400 |n|cff9497ccType:|r |cff8433c8Darkness|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 0.31 |n|cff9497ccRange:|r 900 |n|cff9497ccAbility:|r Increases this tower's damage by 200%.
+}
+STRING 8193
+{
+(|cffc40000Fire|r + |cff8433c8Darkness|r) |n|cff9497ccDamage:|r 2000|n|cff9497ccType:|r |cff8433c8Darkness|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 0.31 |n|cff9497ccRange:|r 900 |n|cff9497ccAbility:|r Increases this tower's damage by 200%.
+}
+STRING 8199
+{
+(|cffc40000Fire|r + |cff8433c8Darkness|r) |n|cff9497ccDamage:|r 10000 |n|cff9497ccType:|r |cff8433c8Darkness|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 0.31 |n|cff9497ccRange:|r 900 |n|cff9497ccAbility:|r Increases this tower's damage by 200%.
+}
+STRING 8213
+{
+(|cff01a2ffWater|r + |cffd4880fEarth|r + |cff8433c8Darkness|r) |n|cff9497ccDamage:|r 7500 |n|cff9497ccType:|r |cffd4880fEarth|r |n|cff9497ccAoE:|r 150 Full/300 Half |n|cff9497ccSpeed:|r 1 |n|cff9497ccRange:|r 700 |n|cff9497ccAbility:|r Each attack slows creeps by 30% in 500 AoE.
+}
+STRING 8214
+{
+(|cff01a2ffWater|r + |cffe5de23Light|r + |cffd4880fEarth|r) |n|cff9497ccDamage:|r 30000 |n|cff9497ccType:|r |cffd4880fEarth|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 1 |n|cff9497ccRange:|r 900 |n|cff9497ccAbility:|r Temporarily takes away 30% of current HP, and increases damage dealt during this time by 15%.
+}
+STRING 8221
+{
+(|cffd4880fEarth|r + |cff8433c8Darkness|r + |cff00c400Nature|r) |n|cff9497ccDamage:|r None |n|cff9497ccType:|r |cff00c400Nature|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 1 |n|cff9497ccRange:|r 700 |n|cff9497ccAbility:|r Sends out a wave with 375 AoE that slows creeps by 30% and deals 11250 damage over a short duration.
+}
+STRING 8223
+{
+(|cffe5de23Light|r + |cffc40000Fire|r + |cff00c400Nature|r) |n|cff9497ccDamage:|r None |n|cff9497ccType:|r |cffe5de23Light|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 1.5 |n|cff9497ccRange:|r None |n|cff9497ccAbility:|r Slows creeps by 30% and deals 4000 damage in 700 AoE.
+}
+STRING 8224
+{
+(|cff01a2ffWater|r + |cffe5de23Light|r + |cffc40000Fire|r) |n|cff9497ccDamage:|r None |n|cff9497ccType:|r |cff01a2ffWater|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 1 |n|cff9497ccRange:|r 700 |n|cff9497ccAbility:|r Summons a tornado that slows by 30% and deals 2165 damage per second in 700 AoE.
+}
+STRING 8226
+{
+Summons a fierce controllable Tornado that slows enemy units' movement speed by 30%, and does 2165 damage per second in 700 AoE. |n|nLasts 30 seconds.
+}
+STRING 8230
+{
+Explodes, dealing 4000 damage to all units within 700 AoE. Also slows movement by 30%.  |n|nLasts 3 seconds.
+}
+STRING 8240
+{
+(|cff01a2ffWater|r + |cff8433c8Darkness|r + |cff00c400Nature|r) |n|cff9497ccDamage:|r 3300 |n|cff9497ccType:|r |cff01a2ffWater|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 0.66 |n|cff9497ccRange:|r 700 |n|cff9497ccAbility:|r Each attack gives a chance to kill equal to Damage Dealt/Current HP.
+}
+STRING 8244
+{
+(|cff01a2ffWater|r + |cffc40000Fire|r + |cff00c400Nature|r) |n|cff9497ccDamage:|r None |n|cff9497ccType:|r |cff00c400Nature|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 0.66 |n|cff9497ccRange:|r 1500 |n|cff9497ccAbility:|r Attacks deal damage equal to (distance/1000)*4200.
+}
+STRING 8246
+{
+(|cff01a2ffWater|r + |cff8433c8Darkness|r + |cff00c400Nature|r) |n|cff9497ccDamage:|r 16500 |n|cff9497ccType:|r |cff01a2ffWater|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 0.66 |n|cff9497ccRange:|r 700 |n|cff9497ccAbility:|r Each attack gives a chance to kill equal to Damage Dealt/Current HP.
+}
+STRING 8247
+{
+(|cff01a2ffWater|r + |cffc40000Fire|r + |cff00c400Nature|r) |n|cff9497ccDamage:|r None |n|cff9497ccType:|r |cff00c400Nature|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 0.66 |n|cff9497ccRange:|r 1500 |n|cff9497ccAbility:|r Attacks deal damage equal to (distance/1000)*21000.
+}
+STRING 8303
+{
+(|cffc40000Fire|r + |cffd4880fEarth|r + |cff00c400Nature|r) |n|cff9497ccDamage:|r 2000 |n|cff9497ccType:|r |cffd4880fEarth|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 0.66 |n|cff9497ccRange:|r 500 |n|cff9497ccAbility:|r 33% chance per attack to deal 3000 damage in 500 AoE.
+}
+STRING 8304
+{
+(|cffc40000Fire|r + |cffd4880fEarth|r + |cff00c400Nature|r) |n|cff9497ccDamage:|r 10000 |n|cff9497ccType:|r |cffd4880fEarth|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 0.66 |n|cff9497ccRange:|r 500 |n|cff9497ccAbility:|r 33% chance per attack to deal 15000 damage in 500 AoE.
+}
+STRING 8315
+{
+|cff9497CCTip|r
+}
+STRING 8316
+{
+|cff9497CCElement Query|r
+}
+STRING 8318
+{
+Player Commands
+}
+STRING 8319
+{
+|cffff0000Player Commands|r
+}
+STRING 8323
+{
+Website Ad
+}
+STRING 8327
+{
+Steals 4% of current gold from the owner of target builder.
+}
+STRING 8338
+{
+(|cff01A2FFWater|r + |cffE5DE23Light|r) |n|cff9497CCDamage:|r None |n|cff9497ccType:|r |cffe5de23Light|r |n|cff9497CCAoE:|r None |n|cff9497CCSpeed:|r 1.5 |n|cff9497CCRange:|r 900 |n|cff9497CCAbility:|r Each attack sends out a helix that deals 250 damage to units in its path, double damage to units that get hit by both parts. Helix explodes at end dealing 250 damage in 250 AoE.
+}
+STRING 8340
+{
+(|cff01A2FFWater|r + |cffE5DE23Light|r) |n|cff9497CCDamage:|r None |n|cff9497ccType:|r |cffe5de23Light|r |n|cff9497CCAoE:|r None |n|cff9497CCSpeed:|r 1.5 |n|cff9497CCRange:|r 900 |n|cff9497CCAbility:|r Each attack sends out a helix that deals 1250 damage to units in its path, double damage to units that get hit by both parts. Helix explodes at end dealing 1250 damage in 250 AoE.
+}
+STRING 8343
+{
+(|cff01A2FFWater|r + |cffE5DE23Light|r) |n|cff9497CCDamage:|r None |n|cff9497ccType:|r |cffe5de23Light|r |n|cff9497CCAoE:|r None |n|cff9497CCSpeed:|r 1.5 |n|cff9497CCRange:|r 900 |n|cff9497CCAbility:|r Each attack sends out a helix that deals 6250 damage to units in its path, double damage to units that get hit by both parts. Helix explodes at end dealing 6250 damage in 250 AoE.
+}
+STRING 8344
+{
+Upgrade to |cffffcc00V|rapor Tower
+}
+STRING 8346
+{
+V
+}
+STRING 8347
+{
+Mist Tower
+}
+STRING 8348
+{
+|cffffcc00U|rpgrade to Mist Tower
+}
+STRING 8350
+{
+Steam Tower
+}
+STRING 8351
+{
+|cffffcc00U|rpgrade to Steam Tower
+}
+STRING 8354
+{
+(|cff01a2ffWater|r + |cffd4880fEarth|r) |n|cff9497ccDamage:|r 1000 |n|cff9497ccType:|r |cffd4880fEarth|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 1 |n|cff9497ccRange:|r 700 |n|cff9497ccAbility:|r 33% chance per attack to shoot target into the air, dealing 1000 damage in 250 AoE upon landing.
+}
+STRING 8357
+{
+(|cff01a2ffWater|r + |cffd4880fEarth|r) |n|cff9497ccDamage:|r 5000 |n|cff9497ccType:|r |cffd4880fEarth|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 1 |n|cff9497ccRange:|r 700 |n|cff9497ccAbility:|r 33% chance per attack to shoot target into the air, dealing 5000 damage in 250 AoE upon landing.
+}
+STRING 8370
+{
+(|cff01a2ffWater|r + |cffd4880fEarth|r) |n|cff9497ccDamage:|r 25000 |n|cff9497ccType:|r |cffd4880fEarth|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 1 |n|cff9497ccRange:|r 700 |n|cff9497ccAbility:|r 33% chance per attack to shoot target into the air, dealing 25000 damage in 250 AoE upon landing.
+}
+STRING 8381
+{
+Each time this tower attacks, it will spawn two orbs opposite each other. These orbs will make one full orbit around the tower, dealing 425 damage to any units in their way.
+}
+STRING 8382
+{
+Each time this tower attacks, it will spawn two orbs opposite each other. These orbs will make one full orbit around the tower, dealing 425 damage to any units in their way.
+}
+STRING 8383
+{
+Each time this tower attacks, it will spawn two orbs opposite each other. These orbs will make one full orbit around the tower, dealing 425 damage to any units in their way.
+}
+STRING 8384
+{
+Each time this tower attacks, it will spawn two orbs opposite each other. These orbs will make one full orbit around the tower, dealing 425 damage to any units in their way.
+}
+STRING 8385
+{
+Each time this tower attacks, it will spawn two orbs opposite each other. These orbs will make one full orbit around the tower, dealing 425 damage to any units in their way.
+}
+STRING 8386
+{
+Each time this tower attacks, it will spawn two orbs opposite each other. These orbs will make one full orbit around the tower, dealing 425 damage to any units in their way.
+}
+STRING 8387
+{
+Each time this tower attacks, it will spawn two orbs opposite each other. These orbs will make one full orbit around the tower, dealing 425 damage to any units in their way.
+}
+STRING 8388
+{
+Each time this tower attacks, it will spawn two orbs opposite each other. These orbs will make one full orbit around the tower, dealing 425 damage to any units in their way.
+}
+STRING 8389
+{
+Each time this tower attacks, it will spawn two orbs opposite each other. These orbs will make one full orbit around the tower, dealing 425 damage to any units in their way.
+}
+STRING 8390
+{
+Each time this tower attacks, it will spawn two orbs opposite each other. These orbs will make one full orbit around the tower, dealing 425 damage to any units in their way.
+}
+STRING 8391
+{
+Each time this tower attacks, it will spawn two orbs opposite each other. These orbs will make one full orbit around the tower, dealing 425 damage to any units in their way.
+}
+STRING 8392
+{
+Each time this tower attacks, it will spawn two orbs opposite each other. These orbs will make one full orbit around the tower, dealing 425 damage to any units in their way.
+}
+STRING 8393
+{
+Each time this tower attacks, it will spawn two orbs opposite each other. These orbs will make one full orbit around the tower, dealing 425 damage to any units in their way.
+}
+STRING 8394
+{
+Each time this tower attacks, it will spawn two orbs opposite each other. These orbs will make one full orbit around the tower, dealing 425 damage to any units in their way.
+}
+STRING 8395
+{
+Each time this tower attacks, it will spawn two orbs opposite each other. These orbs will make one full orbit around the tower, dealing 425 damage to any units in their way.
+}
+STRING 8396
+{
+Each time this tower attacks, it will spawn two orbs opposite each other. These orbs will make one full orbit around the tower, dealing 2125 damage to any units in their way.
+}
+STRING 8420
+{
+Douses the area in water. Units within 700 AoE of the tower take 10450 damage.
+}
+STRING 8421
+{
+Douses the area in water. Units within 700 AoE of the tower take 17290 damage.
+}
+STRING 8422
+{
+Douses the area in water. Units within 700 AoE of the tower take 25498 damage.
+}
+STRING 8423
+{
+Douses the area in water. Units within 700 AoE of the tower take 35347 damage.
+}
+STRING 8424
+{
+Douses the area in water. Units within 700 AoE of the tower take 47167 damage.
+}
+STRING 8425
+{
+Douses the area in water. Units within 700 AoE of the tower take 61350 damage.
+}
+STRING 8426
+{
+Douses the area in water. Units within 700 AoE of the tower take 78370 damage.
+}
+STRING 8427
+{
+Douses the area in water. Units within 700 AoE of the tower take 98794 damage.
+}
+STRING 8428
+{
+Douses the area in water. Units within 700 AoE of the tower take 4750 damage.
+}
+STRING 8432
+{
+Q
+}
+STRING 8438
+{
+Demonic Hands
+}
+STRING 8442
+{
+|cff9497CCEvaporate|r - [|cffffcc00Level 1|r]
+}
+STRING 8443
+{
+|cff9497CCEvaporate|r - [|cffffcc00Level 2|r]
+}
+STRING 8444
+{
+|cff9497CCEvaporate|r - [|cffffcc00Level 3|r]
+}
+STRING 8445
+{
+|cff9497CCTower Query|r |cffffcc00(Triples)|r
+}
+STRING 8446
+{
+Gives a 33% chance that an attack will launch the target into the air for 1.5 seconds, causing 5000 damage in 250 AoE when it lands.
+}
+STRING 8447
+{
+Gives a 33% chance that an attack will launch the target into the air for 1.5 seconds, causing 25000 damage in 250 AoE when it lands.
+}
+STRING 8448
+{
+Gives a 33% chance that an attack will launch the target into the air for 1.5 seconds, causing 1000 damage in 250 AoE when it lands.
+}
+STRING 8449
+{
+|cff9497CCTower Query|r |cffffcc00(Duals)|r
+}
+STRING 8450
+{
+|cffff0000www.EleTD.com|r
+}
+STRING 8451
+{
+(|cffe5de23Light|r + |cff8433c8Darkness|r) |n|cff9497ccDamage:|r 1000 |n|cff9497ccType:|r |cffe5de23Light|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 1 |n|cff9497ccRange:|r 700 |n|cff9497ccAbility:|r Clones any tower and lasts 10 seconds.
+}
+STRING 8452
+{
+(|cffc40000Fire|r + |cffd4880fEarth|r) |n|cff9497ccDamage:|r 1000 |n|cff9497ccType:|r |cffc40000Fire|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 1 |n|cff9497ccRange:|r 700 |n|cff9497ccAbility:|r Increases a tower's damage by 15%.
+}
+STRING 8453
+{
+(|cff01a2ffWater|r + |cff00c400Nature|r) |n|cff9497ccDamage:|r 1000 |n|cff9497ccType:|r |cff01a2ffWater|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 1 |n|cff9497ccRange:|r 700 |n|cff9497ccAbility:|r Increases a tower's attack speed by 15%.
+}
+STRING 8455
+{
+(|cffc40000Fire|r + |cffd4880fEarth|r) |n|cff9497ccDamage:|r 5000 |n|cff9497ccType:|r |cffc40000Fire|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 1 |n|cff9497ccRange:|r 700 |n|cff9497ccAbility:|r Increases a tower's damage by 30%.
+}
+STRING 8463
+{
+(|cff01a2ffWater|r + |cff00c400Nature|r) |n|cff9497ccDamage:|r 5000 |n|cff9497ccType:|r |cff01a2ffWater|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 1 |n|cff9497ccRange:|r 700 |n|cff9497ccAbility:|r Increases a tower's attack speed by 30%.
+}
+STRING 8464
+{
+(|cffe5de23Light|r + |cff8433c8Darkness|r) |n|cff9497ccDamage:|r 5000 |n|cff9497ccType:|r |cffe5de23Light|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 1 |n|cff9497ccRange:|r 700 |n|cff9497ccAbility:|r Clones any tower and lasts 20 seconds.
+}
+STRING 8468
+{
+Increases a tower's (non-support) attack rate by 30%. |n|nLasts 60 seconds.
+}
+STRING 8469
+{
+Increases a tower's (non-support) attack rate by 15%. |n|nLasts 60 seconds.
+}
+STRING 8474
+{
+Increases a tower's (non-support) attack & ability damage by 30%. |n|nLasts 60 seconds.
+}
+STRING 8476
+{
+Increases a tower's (non-support) attack & ability damage by 15%. |n|nLasts 60 seconds.
+}
+STRING 8522
+{
+Fast
+}
+STRING 8523
+{
+(|cff01a2ffWater|r) |n|cff9497ccDamage:|r 33750 |n|cff9497ccType:|r |cff01a2ffWater|r |n|cff9497ccAoE:|r 100 Full/200 Half |n|cff9497ccSpeed:|r 0.31 |n|cff9497ccRange:|r 700 |n|cff9497ccAbility:|r None
+}
+STRING 8524
+{
+(|cff00c400Nature|r) |n|cff9497ccDamage:|r 150000 |n|cff9497ccType:|r |cff00c400Nature|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 0.66 |n|cff9497ccRange:|r 900 |n|cff9497ccAbility:|r None
+}
+STRING 8526
+{
+(|cffd4880fEarth|r) |n|cff9497ccDamage:|r 54375 |n|cff9497ccType:|r |cffd4880fEarth|r |n|cff9497ccAoE:|r 150 Full/300 Half |n|cff9497ccSpeed:|r 1 |n|cff9497ccRange:|r 700 |n|cff9497ccAbility:|r None
+}
+STRING 8527
+{
+(|cffc40000Fire|r) |n|cff9497ccDamage:|r 20625 |n|cff9497ccType:|r |cffc40000Fire|r |n|cff9497ccAoE:|r 150 Full/300 Half |n|cff9497ccSpeed:|r 0.31 |n|cff9497ccRange:|r 500 |n|cff9497ccAbility:|r None
+}
+STRING 8528
+{
+(|cffe5de23Light|r) |n|cff9497ccDamage:|r 106875 |n|cff9497ccType:|r |cffe5de23Light|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 0.66 |n|cff9497ccRange:|r 1500 |n|cff9497ccAbility:|r None
+}
+STRING 8529
+{
+(|cff8433c8Darkness|r + |cffc40000Fire|r + |cffd4880fEarth|r + |cffe5de23Light|r + |cff00c400Nature|r + |cff01a2ffWater|r)  |n|cff9497ccDamage:|r 78750 |n|cff9497ccType:|r |cff888888Composite|r |n|cff9497ccAoE:|r 100 Full/200 Half |n|cff9497ccSpeed:|r 1 |n|cff9497ccRange:|r 900 |n|cff9497ccAbility:|r None
+}
+STRING 8535
+{
+|cffffaacc+++++++++++++++++++
+You can now build +1 Pure Elemental Tower
++++++++++++++++++++|r
+
+}
+STRING 8536
+{
+|cffdda0ddPure Essence|r
+}
+STRING 8537
+{
+Karawasa's Essence
+}
+STRING 8538
+{
+Summon Karawasa's Essence
+}
+STRING 8540
+{
+|cffff0000DRAFT-PICK MODE (DP)|r
+Host has decided that everyone will play on draft mode! The draft for towers and elements in play begins soon. You have full control over your element picks. However, elemental towers will only give 75% refunds when you sell them.
+}
+STRING 8541
+{
+|cffff0000SHORT MODE (SM)|r
+The game starts at level 16, and you start with 1000 gold and 3 lumber. All first level elementals summoned before level 16 starts will be killed for you instantly.
+}
+STRING 8542
+{
+|cffff0000EXTRA SHORT MODE (EM)|r
+The game starts at level 31, and you start with 6000 gold and 6 lumber. All first and second level elementals summoned before level 31 starts will be killed for you instantly.
+}
+STRING 8543
+{
+Douses the area in water. Units within 700 AoE of the tower take 2090 damage.
+}
+STRING 8544
+{
+Douses the area in water. Units within 700 AoE of the tower take 3548 damage.
+}
+STRING 8545
+{
+Douses the area in water. Units within 700 AoE of the tower take 5099 damage.
+}
+STRING 8546
+{
+Douses the area in water. Units within 700 AoE of the tower take 7069 damage.
+}
+STRING 8547
+{
+Douses the area in water. Units within 700 AoE of the tower take 9433 damage.
+}
+STRING 8548
+{
+Douses the area in water. Units within 700 AoE of the tower take 12270 damage.
+}
+STRING 8549
+{
+Douses the area in water. Units within 700 AoE of the tower take 15674 damage.
+}
+STRING 8550
+{
+Douses the area in water. Units within 700 AoE of the tower take 19758 damage.
+}
+STRING 8551
+{
+Douses the area in water. Units within 700 AoE of the tower take 950 damage.
+}
+STRING 8552
+{
+(Tidal)
+}
+STRING 8553
+{
+|cffffcc00D|r|cff9497CCouse|r - [|cffffcc00Level 4|r]
+}
+STRING 8554
+{
+|cffffcc00D|r|cff9497CCouse|r - [|cffffcc00Level 5|r]
+}
+STRING 8555
+{
+|cffffcc00D|r|cff9497CCouse|r - [|cffffcc00Level 6|r]
+}
+STRING 8556
+{
+|cffffcc00D|r|cff9497CCouse|r - [|cffffcc00Level 7|r]
+}
+STRING 8557
+{
+|cffffcc00D|r|cff9497CCouse|r - [|cffffcc00Level 8|r]
+}
+STRING 8558
+{
+|cffffcc00D|r|cff9497CCouse|r - [|cffffcc00Level 9|r]
+}
+STRING 8559
+{
+|cffffcc00D|r|cff9497CCouse|r - [|cffffcc00Level 10|r]
+}
+STRING 8560
+{
+Douse
+}
+STRING 8561
+{
+|cffffcc00D|r|cff9497CCouse|r - [|cffffcc00Level 1|r]
+}
+STRING 8562
+{
+|cffffcc00D|r|cff9497CCouse|r - [|cffffcc00Level 2|r]
+}
+STRING 8563
+{
+|cffffcc00D|r|cff9497CCouse|r - [|cffffcc00Level 3|r]
+}
+STRING 8564
+{
+(Tsunami)
+}
+STRING 8565
+{
+Locomote
+}
+STRING 8568
+{
+Tower Select
+}
+STRING 8569
+{
+Select This Tower (Q)
+}
+STRING 8570
+{
+Click on this button to instantly select this tower.
+}
+STRING 8571
+{
+Select a Random Tower (W)
+}
+STRING 8572
+{
+Click this button to let a random tower be chosen for you.
+}
+STRING 8573
+{
+Random Tower
+}
+STRING 8574
+{
+|cffc3dbffRight-click to activate auto-casting.|r
+}
+STRING 8575
+{
+|cffc3dbffRight-click to deactivate auto-casting.|r
+}
+STRING 8576
+{
+|cffc3dbffRight-click to activate auto-casting.|r
+}
+STRING 8577
+{
+|cffc3dbffRight-click to deactivate auto-casting.|r
+}
+STRING 8578
+{
+|cffc3dbffRight-click to activate auto-casting.|r
+}
+STRING 8579
+{
+|cffc3dbffRight-click to deactivate auto-casting.|r
+}
+STRING 8580
+{
+|cffc3dbffRight-click to activate auto-casting.|r
+}
+STRING 8581
+{
+|cffc3dbffRight-click to deactivate auto-casting.|r
+}
+STRING 8582
+{
+Flesh Golem
+}
+STRING 8583
+{
+Enraged Jungle Stalker
+}
+STRING 8584
+{
+Eredar Diabolist
+}
+STRING 8585
+{
+Magnataur Destroyer
+}
+STRING 8586
+{
+Satyr
+}
+STRING 8587
+{
+Sea Giant Behemoth
+}
+STRING 8588
+{
+Tornado Aura
+}
+STRING 8589
+{
+Tornado Aura
+}
+STRING 8590
+{
+Faerie Fire
+}
+STRING 8592
+{
+Sleep
+}
+STRING 8593
+{
+|cffffcc00S|rleep
+}
+STRING 8594
+{
+S
+}
+STRING 8595
+{
+|cffff0000ALL-PICK MODE (AP)|r
+Host has decided that everyone will play on pick mode! You have full control over your element picks. However, elemental towers will only give 75% refunds when you sell them.
+}
+STRING 8596
+{
+jolin012
+}
+STRING 8597
+{
+jolin012
+}
+STRING 8639
+{
+This ability needs to be charged before you can use it. Every 3 attacks will level it up, increasing damage dealt in the AoE. |n|nTen levels.
+}
+STRING 8640
+{
+This ability needs to be charged before you can use it. Every 3 attacks will level it up, increasing damage dealt in the AoE. |n|nTen levels.
+}
+STRING 8641
+{
+Tornado Aura Dummy
+}
+STRING 8642
+{
+(Tornado Level 1)
+}
+STRING 8644
+{
+|cff9497CCTornado Aura|r - [|cffffcc00Level 1|r]
+}
+STRING 8645
+{
+Tornado Aura Dummy
+}
+STRING 8646
+{
+(Tornado Level 2)
+}
+STRING 8647
+{
+Slows enemies by 30% and does 2165 damage per second in a 700 AoE.
+}
+STRING 8648
+{
+|cff9497CCTornado Aura|r - [|cffffcc00Level 2|r]
+}
+STRING 8649
+{
+For|cffffcc00c|re Sell
+}
+STRING 8651
+{
+E
+}
+STRING 8656
+{
+Evaporate
+}
+STRING 8669
+{
+200% from |cffE5DE23Light|r
+50% from |cff01A2FFWater|r
+100% from all other attack types
+}
+STRING 8670
+{
+200% from |cffC40000Fire|r
+50% from |cffD4880FEarth|r
+100% from all other attack types
+}
+STRING 8671
+{
+200% from |cff01A2FFWater|r
+50% from |cff00C400Nature|r
+100% from all other attack types
+}
+STRING 8672
+{
+200% from |cffD4880FEarth|r
+50% from |cff8433C8Darkness|r
+100% from all other attack types
+}
+STRING 8673
+{
+200% from |cff8433C8Darkness|r
+50% from |cffC40000Fire|r
+100% from all other attack types
+}
+STRING 8674
+{
+200% from |cff00C400Nature|r
+50% from |cffE5DE23Light|r
+100% from all other attack types
+}
+STRING 8675
+{
+100% from |cff888888Composite|r
+80% from all other attack types
+}
+STRING 8676
+{
+200% from |cffE5DE23Light|r
+50% from |cff01A2FFWater|r
+100% from all other attack types
+}
+STRING 8677
+{
+200% from |cffC40000Fire|r
+50% from |cffD4880FEarth|r
+100% from all other attack types
+}
+STRING 8678
+{
+200% from |cff8433C8Darkness|r
+50% from |cffC40000Fire|r
+100% from all other attack types
+}
+STRING 8679
+{
+200% from |cff00C400Nature|r
+50% from |cffE5DE23Light|r
+100% from all other attack types
+}
+STRING 8680
+{
+100% from |cff888888Composite|r
+80% from all other attack types
+}
+STRING 8681
+{
+200% from |cffE5DE23Light|r
+50% from |cff01A2FFWater|r
+100% from all other attack types
+}
+STRING 8682
+{
+200% from |cffC40000Fire|r
+50% from |cffD4880FEarth|r
+100% from all other attack types
+}
+STRING 8683
+{
+200% from |cff01A2FFWater|r
+50% from |cff00C400Nature|r
+100% from all other attack types
+}
+STRING 8684
+{
+200% from |cff8433C8Darkness|r
+50% from |cffC40000Fire|r
+100% from all other attack types
+}
+STRING 8685
+{
+200% from |cff00C400Nature|r
+50% from |cffE5DE23Light|r
+100% from all other attack types
+}
+STRING 8686
+{
+100% from |cff888888Composite|r
+80% from all other attack types
+}
+STRING 8687
+{
+200% to |cff00C400Nature|r
+80% to |cff888888Composite|r
+50% to |cff01A2FFWater|r
+100% to all other elements
+}
+STRING 8688
+{
+200% to |cffE5DE23Light|r
+80% to |cff888888Composite|r
+50% to |cff00C400Nature|r
+100% to all other elements
+}
+STRING 8689
+{
+200% to |cffD4880FEarth|r
+80% to |cff888888Composite|r
+50% to |cffC40000Fire|r
+100% to all other elements
+}
+STRING 8690
+{
+200% to |cff8433C8Darkness|r
+80% to |cff888888Composite|r
+50% to |cffD4880FEarth|r
+100% to all other elements
+}
+STRING 8691
+{
+200% to |cffC40000Fire|r
+80% to |cff888888Composite|r
+50% to |cff8433C8Darkness|r
+100% to all other elements
+}
+STRING 8692
+{
+200% to |cff01A2FFWater|r
+80% to |cff888888Composite|r
+50% to |cffE5DE23Light|r
+100% to all other elements
+}
+STRING 8693
+{
+200% to |cff00C400Nature|r
+80% to |cff888888Composite|r
+50% to |cff01A2FFWater|r
+100% to all other elements
+}
+STRING 8694
+{
+200% to |cffE5DE23Light|r
+80% to |cff888888Composite|r
+50% to |cff00C400Nature|r
+100% to all other elements
+}
+STRING 8695
+{
+200% to |cffD4880FEarth|r
+80% to |cff888888Composite|r
+50% to |cffC40000Fire|r
+100% to all other elements
+}
+STRING 8696
+{
+200% to |cff8433C8Darkness|r
+80% to |cff888888Composite|r
+50% to |cffD4880FEarth|r
+100% to all other elements
+}
+STRING 8697
+{
+200% to |cffC40000Fire|r
+80% to |cff888888Composite|r
+50% to |cff8433C8Darkness|r
+100% to all other elements
+}
+STRING 8698
+{
+200% to |cff01A2FFWater|r
+80% to |cff888888Composite|r
+50% to |cffE5DE23Light|r
+100% to all other elements
+}
+STRING 8699
+{
+200% to |cff00C400Nature|r
+80% to |cff888888Composite|r
+50% to |cff01A2FFWater|r
+100% to all other elements
+}
+STRING 8700
+{
+200% to |cffE5DE23Light|r
+80% to |cff888888Composite|r
+50% to |cff00C400Nature|r
+100% to all other elements
+}
+STRING 8701
+{
+200% to |cffD4880FEarth|r
+80% to |cff888888Composite|r
+50% to |cffC40000Fire|r
+100% to all other elements
+}
+STRING 8702
+{
+200% to |cff8433C8Darkness|r
+80% to |cff888888Composite|r
+50% to |cffD4880FEarth|r
+100% to all other elements
+}
+STRING 8703
+{
+200% to |cffC40000Fire|r
+80% to |cff888888Composite|r
+50% to |cff8433C8Darkness|r
+100% to all other elements
+}
+STRING 8704
+{
+200% to |cff01A2FFWater|r
+80% to |cff888888Composite|r
+50% to |cffE5DE23Light|r
+100% to all other elements
+}
+STRING 8764
+{
+Contributor
+}
+STRING 8765
+{
+I like to build towers!
+}
+STRING 8766
+{
+Contributor
+}
+STRING 8768
+{
+Increases a player's interest rate by 1.0%
+}
+STRING 8772
+{
+Leader
+}
+STRING 8773
+{
+Leader
+}
+STRING 8777
+{
+(|cff01a2ffWater|r + |cffc40000Fire|r + |cff8433c8Darkness|r) |n|cff9497ccDamage:|r None |n|cff9497ccType:|r |cffc40000Fire|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 1 |n|cff9497ccRange:|r 700 |n|cff9497ccAbility:|r Each attack reduces armor by 8 and does 12500 damage over a short duration. Has an AoE of 250.
+}
+STRING 8778
+{
+Unleashes a shockwave of energy that entangles units within 375 range of its path. Entangled units will be slowed by 30% and will take 2250 damage per second. |n|nLasts 5 seconds.
+}
+STRING 8786
+{
+Spews acid at a target, covering units in a 250 AoE. Acid decreases armor by 8; deals 2500 damage per second. |n|nLasts 5 seconds.
+}
+STRING 8787
+{
+Gives a 33% chance that an attack will deal 15000 damage to units within 500 AoE of the tower.
+}
+STRING 8788
+{
+Gives a 33% chance that an attack will deal 3000 damage to units within 500 AoE of the tower.
+}
+STRING 8789
+{
+Gives a chance to instantly kill the attacked creep. Chance is equal to tower's damage/creep's current health.
+}
+STRING 8790
+{
+Gives strength to attacks, causing them to deal damage based on distance of projectile travel. Damage dealt is equal to (distance/1000)*4200.
+}
+STRING 8791
+{
+Gives strength to attacks, causing them to deal damage based on distance of projectile travel. Damage dealt is equal to (distance/1000)*21000.
+}
+STRING 8792
+{
+Bites enemies with bitter coldness, temporarily taking away 30% of current HP. Damage done during this time is amplified by 15%. |n|nLasts 15 seconds.
+}
+STRING 8817
+{
+(|cff01a2ffWater|r + |cffe5de23Light|r + |cffd4880fEarth|r) |n|cff9497ccDamage:|r 6000 |n|cff9497ccType:|r |cffd4880fEarth|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 1 |n|cff9497ccRange:|r 900 |n|cff9497ccAbility:|r Temporarily takes away 10% of current HP, and increases damage dealt during this time by 5%.
+}
+STRING 8819
+{
+(|cff01a2ffWater|r + |cffd4880fEarth|r + |cff8433c8Darkness|r) |n|cff9497ccDamage:|r 1500 |n|cff9497ccType:|r |cffd4880fEarth|r |n|cff9497ccAoE:|r 150 Full/300 Half |n|cff9497ccSpeed:|r 1 |n|cff9497ccRange:|r 700 |n|cff9497ccAbility:|r Each attack slows creeps by 10% in 500 AoE.
+}
+STRING 8820
+{
+(|cffd4880fEarth|r + |cff8433c8Darkness|r + |cff00c400Nature|r) |n|cff9497ccDamage:|r None |n|cff9497ccType:|r |cff00c400Nature|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 1 |n|cff9497ccRange:|r 700 |n|cff9497ccAbility:|r Sends out a wave with 375 AoE that slows creeps by 10% and deals 2250 damage over a short duration.
+}
+STRING 8821
+{
+(|cffe5de23Light|r + |cffc40000Fire|r + |cff00c400Nature|r) |n|cff9497ccDamage:|r None |n|cff9497ccType:|r |cffe5de23Light|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 1.5 |n|cff9497ccRange:|r 700 |n|cff9497ccAbility:|r Slows creeps by 10% and deals 800 damage in 700 AoE.
+}
+STRING 8822
+{
+(|cff01a2ffWater|r + |cffe5de23Light|r + |cffc40000Fire|r) |n|cff9497ccDamage:|r None |n|cff9497ccType:|r |cff01a2ffWater|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 1 |n|cff9497ccRange:|r 700 |n|cff9497ccAbility:|r Summons a tornado that slows by 10% and deals 433 damage per second in 700 AoE.
+}
+STRING 8823
+{
+Summons a fierce controllable Tornado that slows enemy units' movement speed by 10%, and does 433 damage per second in 700 AoE. |n|nLasts 30 seconds.
+}
+STRING 8824
+{
+Flings a volatile liquid that reduces movement speed by 10% for units within 500 AoE. |n|nLasts 5 seconds.
+}
+STRING 8825
+{
+Unleashes a shockwave of energy that entangles units within 375 range of its path. Entangled units will be slowed by 10% and will take 450 damage per second. |n|nLasts 5 seconds.
+}
+STRING 8826
+{
+Bites enemies with bitter coldness, temporarily taking away 10% of current HP. Damage done during this time is amplified by 5%. |n|nLasts 15 seconds.
+}
+STRING 8827
+{
+Explodes, dealing 800 damage to all units within 700 AoE. Also slows movement by 10%.  |n|nLasts 3 seconds.
+}
+STRING 8828
+{
+Curses enemy units in 300 AoE. Every 2.5 seconds, cursed units will take damage equal to 10% of the HP they have lost since being cursed. This damage ignores armor. |n|nLasts 5 seconds.
+}
+STRING 8829
+{
+Slows enemies by 10% and does 433 damage per second in a 700 AoE.
+}
+STRING 8830
+{
+(|cffc40000Fire|r + |cff8433c8Darkness|r + |cff00c400Nature|r) |n|cff9497ccDamage:|r 6600 |n|cff9497ccType:|r |cff8433c8Darkness|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 1 |n|cff9497ccRange:|r 700 |n|cff9497ccAbility:|r Each attack amplifies damage dealt by 10% in 300 AoE.
+}
+STRING 8831
+{
+(|cffc40000Fire|r + |cff8433c8Darkness|r + |cff00c400Nature|r) |n|cff9497ccDamage:|r 33000 |n|cff9497ccType:|r |cff8433c8Darkness|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 1 |n|cff9497ccRange:|r 700 |n|cff9497ccAbility:|r Each attack amplifies damage dealt by 30% in 300 AoE.
+}
+STRING 8832
+{
+Stop autocasting so you can manually use it.
+}
+STRING 8833
+{
+Start autocasting so you don't have to micro.
+}
+STRING 8835
+{
+Dummy Orb
+}
+STRING 8836
+{
+Magic
+}
+STRING 8837
+{
+|cff9497CCMagic|r
+}
+STRING 8838
+{
+Provides 200% bonus damage.
+}
+STRING 8839
+{
+S
+}
+STRING 8840
+{
+Causes this unit to deal 200% more damage. |n|nLasts 3 seconds.
+}
+STRING 8841
+{
+|cff9497ccLocomote|r
+}
+STRING 8842
+{
+Instant Death - [|cffffcc00Level 2|r]
+}
+STRING 8843
+{
+Allows this unit to move freely.
+}
+STRING 8844
+{
+Gives a chance to kill attacked creeps.|n|nChance to kill is 15000/Current HP.
+}
+STRING 8845
+{
+Gives a chance to kill attacked creeps (does not affect undead or mechanical units)|nHas reduced affect as level of creeps increases, and increased effectiveness as the unit's health is lowered.
+}
+STRING 8846
+{
+Instant Death - [|cffffcc00Level 3|r]
+}
+STRING 8847
+{
+(|cff01a2ffWater|r + |cffe5de23Light|r + |cff00c400Nature|r) |n|cff9497ccDamage:|r 1240 |n|cff9497ccType:|r |cff01a2ffWater|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 0.31 |n|cff9497ccRange:|r 700 |n|cff9497ccAbility:|r Every 10 attacks charges up a powerful AoE ability. Has 10 levels.
+}
+STRING 8848
+{
+(|cff01a2ffWater|r + |cffe5de23Light|r + |cff00c400Nature|r) |n|cff9497ccDamage:|r 6200 |n|cff9497ccType:|r |cff01a2ffWater|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 0.31 |n|cff9497ccRange:|r 700 |n|cff9497ccAbility:|r Every 10 attacks charges up a powerful AoE ability. Has 10 levels.
+}
+STRING 8851
+{
+Each time this tower attacks, it will gain 11% attack speed. Speed resets after 4 seconds of not attacking. |n|nMaxes out after 20 attacks.
+}
+STRING 8852
+{
+(|cffe5de23Light|r + |cffd4880fEarth|r + |cff8433c8Darkness|r) |n|cff9497ccDamage:|r None |n|cff9497ccType:|r |cffe5de23Light|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 0.31 |n|cff9497ccRange:|r 700 |n|cff9497ccAbility:|r Attacks deal damage equal to (600/distance)*2120.
+}
+STRING 8853
+{
+(|cffe5de23Light|r + |cffd4880fEarth|r + |cff8433c8Darkness|r) |n|cff9497ccDamage:|r None |n|cff9497ccType:|r |cffe5de23Light|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 0.31 |n|cff9497ccRange:|r 700 |n|cff9497ccAbility:|r Attacks deal damage equal to (600/distance)*10600.
+}
+STRING 8854
+{
+(|cffc40000Fire|r + |cff00c400Nature|r) |n|cff9497ccDamage:|r None |n|cff9497ccType:|r |cffc40000Fire|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 0.66 |n|cff9497ccRange:|r 700 |n|cff9497ccAbility:|r Each attack burns a unit dealing 500 damage over a short period in 250 AoE.
+}
+STRING 8855
+{
+(|cffc40000Fire|r + |cff00c400Nature|r) |n|cff9497ccDamage:|r None |n|cff9497ccType:|r |cffc40000Fire|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 0.66 |n|cff9497ccRange:|r 700 |n|cff9497ccAbility:|r Each attack burns a unit dealing 2500 damage over a short period in 250 AoE.
+}
+STRING 8856
+{
+(|cffc40000Fire|r + |cff00c400Nature|r) |n|cff9497ccDamage:|r None |n|cff9497ccType:|r |cffc40000Fire|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 0.66|n|cff9497ccRange:|r 700 |n|cff9497ccAbility:|r Each attack burns a unit dealing 12500 damage over a short period in 250 AoE.
+}
+STRING 8857
+{
+Eliminated
+}
+STRING 8858
+{
+Display Eliminated Towers (E)
+}
+STRING 8859
+{
+Click on this button to instantly display eliminated towers.
+}
+STRING 8861
+{
+(|cffe5de23Light|r + |cffd4880fEarth|r) |n|cff9497ccDamage:|r 280 |n|cff9497ccType:|r |cffe5de23Light|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 0.31 |n|cff9497ccRange:|r 500 |n|cff9497ccAbility:|r Every attack against the same target increases attack damage by 50%.
+}
+STRING 8862
+{
+(|cffe5de23Light|r + |cffd4880fEarth|r) |n|cff9497ccDamage:|r 1400 |n|cff9497ccType:|r |cffe5de23Light|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 0.31 |n|cff9497ccRange:|r 500 |n|cff9497ccAbility:|r Every attack against the same target increases attack damage by 50%.
+}
+STRING 8865
+{
+(|cffe5de23Light|r + |cffd4880fEarth|r) |n|cff9497ccDamage:|r 7000 |n|cff9497ccType:|r |cffe5de23Light|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 0.31 |n|cff9497ccRange:|r 500 |n|cff9497ccAbility:|r Every attack against the same target increases attack damage by 50%.
+}
+STRING 8866
+{
+Each time this tower attacks the same target, it will gain 50% attack damage. Damage resets when you switch targets.
+}
+STRING 8867
+{
+(|cff01a2ffWater|r + |cff00c400Nature|r) |n|cff9497ccDamage:|r 25000 |n|cff9497ccType:|r |cff01a2ffWater|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 1 |n|cff9497ccRange:|r 700 |n|cff9497ccAbility:|r Increases a tower's attack speed by 120%.
+}
+STRING 8868
+{
+(|cffc40000Fire|r + |cffd4880fEarth|r) |n|cff9497ccDamage:|r 25000 |n|cff9497ccType:|r |cffc40000Fire|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 1 |n|cff9497ccRange:|r 700 |n|cff9497ccAbility:|r Increases a tower's damage by 120%.
+}
+STRING 8869
+{
+Increases a tower's (non-support) attack rate by 120%. |n|nLasts 60 seconds.
+}
+STRING 8870
+{
+Increases a tower's (non-support) attack & ability damage by 120%. |n|nLasts 60 seconds.
+}
+STRING 8871
+{
+Creates a clone of the (non-support) tower you target. Clones cannot sell (for $) or upgrade. May only clone a tower if you haven't targeted it with Conjure in the last 60 seconds. |n|nLasts 20 seconds. When you sell/upgrade/cancel a tower that has been recently cloned, you will lose a random clone of that tower type.
+}
+STRING 8872
+{
+Creates a clone of the (non-support) tower you target. Clones cannot sell (for $) or upgrade. May only clone a tower if you haven't targeted it with Conjure in the last 60 seconds. |n|nLasts 80 seconds. When you sell/upgrade/cancel a tower that has been recently cloned, you will lose a random clone of that tower type.
+}
+STRING 8873
+{
+Creates a clone of the (non-support) tower you target. Clones cannot sell (for $) or upgrade. May only clone a tower if you haven't targeted it with Conjure in the last 60 seconds. |n|nLasts 10 seconds. When you sell/upgrade/cancel a tower that has been recently cloned, you will lose a random clone of that tower type.
+}
+STRING 8874
+{
+(|cffe5de23Light|r + |cff8433c8Darkness|r) |n|cff9497ccDamage:|r 25000 |n|cff9497ccType:|r |cffe5de23Light|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 1 |n|cff9497ccRange:|r 700 |n|cff9497ccAbility:|r Clones any tower and lasts 80 seconds.
+}
+STRING 8879
+{
+(|cffe5de23Light|r + |cffc40000Fire|r) |n|cff9497ccDamage:|r None |n|cff9497ccType:|r |cffc40000Fire|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 1 |n|cff9497ccRange:|r 1125 |n|cff9497ccAbility:|r Hurls chain lightning that can bounce 3 times, dealing 333 damage initially and 10% more per bounce.
+}
+STRING 8882
+{
+(|cff8433c8Darkness|r) |n|cff9497ccDamage:|r 3925 |n|cff9497ccType:|r |cff8433c8Darkness|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 1.5 |n|cff9497ccRange:|r 1125 |n|cff9497ccAbility:|r None
+}
+STRING 8883
+{
+(|cff8433c8Darkness|r) |n|cff9497ccDamage:|r 157 |n|cff9497ccType:|r |cff8433c8Darkness|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 1.5 |n|cff9497ccRange:|r 1125 |n|cff9497ccAbility:|r None
+}
+STRING 8884
+{
+(|cff8433c8Darkness|r) |n|cff9497ccDamage:|r 785 |n|cff9497ccType:|r |cff8433c8Darkness|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 1.5 |n|cff9497ccRange:|r 1125 |n|cff9497ccAbility:|r None
+}
+STRING 8886
+{
+(|cffe5de23Light|r + |cffc40000Fire|r + |cff8433c8Darkness|r) |n|cff9497ccDamage:|r None |n|cff9497ccType:|r |cff8433c8Darkness|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 1.5 |n|cff9497ccRange:|r 1125 |n|cff9497ccAbility:|r Each attack spawns two orbs opposite each other. These orbs will make one full orbit around the tower, dealing 425 damage to any units in their way.
+}
+STRING 8887
+{
+(|cffe5de23Light|r + |cffc40000Fire|r + |cffd4880fEarth|r) |n|cff9497ccDamage:|r 10000 |n|cff9497ccType:|r |cffd4880fEarth|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 1.5 |n|cff9497ccRange:|r 1125 |n|cff9497ccAbility:|r Kills made by this tower give 50% more bounty.
+}
+STRING 8888
+{
+(|cffe5de23Light|r + |cffc40000Fire|r) |n|cff9497ccDamage:|r None |n|cff9497ccType:|r |cffc40000Fire|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 1 |n|cff9497ccRange:|r 1125 |n|cff9497ccAbility:|r Hurls chain lightning that can bounce 3 times, dealing 1665 damage initially and 10% more per bounce.
+}
+STRING 8890
+{
+(|cff8433c8Darkness|r) |n|cff9497ccDamage:|r 19625 |n|cff9497ccType:|r |cff8433c8Darkness|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 1.5 |n|cff9497ccRange:|r 1125 |n|cff9497ccAbility:|r None
+}
+STRING 8891
+{
+(|cff8433c8Darkness|r) |n|cff9497ccDamage:|r 294375 |n|cff9497ccType:|r |cff8433c8Darkness|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 1.5 |n|cff9497ccRange:|r 1125 |n|cff9497ccAbility:|r None
+}
+STRING 8892
+{
+(|cffe5de23Light|r + |cffc40000Fire|r + |cff8433c8Darkness|r) |n|cff9497ccDamage:|r None |n|cff9497ccType:|r |cff8433c8Darkness|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 1.5 |n|cff9497ccRange:|r 1125 |n|cff9497ccAbility:|r Each attack spawns two orbs opposite each other. These orbs will make one full orbit around the tower, dealing 2125 damage to any units in their way.
+}
+STRING 8893
+{
+(|cffe5de23Light|r + |cffc40000Fire|r + |cffd4880fEarth|r) |n|cff9497ccDamage:|r 50000 |n|cff9497ccType:|r |cffd4880fEarth|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 1.5 |n|cff9497ccRange:|r 1125 |n|cff9497ccAbility:|r Kills made by this tower give 100% more bounty.
+}
+STRING 8894
+{
+(|cffe5de23Light|r + |cffc40000Fire|r) |n|cff9497ccDamage:|r None |n|cff9497ccType:|r |cffc40000Fire|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 1 |n|cff9497ccRange:|r 1125 |n|cff9497ccAbility:|r Hurls chain lightning that can bounce 3 times, dealing 8325 damage initially and 10% more per bounce.
+}
+STRING 8897
+{
+Each attack adds napalm to the target. A napalm addition will do 1000 damage in 250 AoE when the unit dies. Each addition lasts 3 seconds.
+}
+STRING 8898
+{
+Each attack adds napalm to the target. A napalm addition will do 5000 damage in 250 AoE when the unit dies. Each addition lasts 3 seconds.
+}
+STRING 8899
+{
+|cff9497CCOrbit|r - [|cffffcc00Radius 1125|r]
+}
+STRING 8900
+{
+|cff9497CCOrbit|r - [|cffffcc00Radius 1125|r]
+}
+STRING 8901
+{
+|cffffcc00C|ronjure Lightning - [|cffffcc00Level 2|r]
+}
+STRING 8902
+{
+|cffffcc00C|ronjure Lightning - [|cffffcc00Level 3|r]
+}
+STRING 8903
+{
+Hurls a bolt of lightning that bounces up to 3 times, dealing 2500 damage to the primary target. Each jump deals 10% more damage.
+}
+STRING 8904
+{
+Hurls a bolt of lightning that bounces up to 3 times, dealing 12500 damage to the primary target. Each jump deals 10% more damage.
+}
+STRING 8905
+{
+Hurls a bolt of lightning that bounces up to 3 times, dealing 500 damage to the primary target. Each jump deals 10% more damage.
+}
+STRING 8906
+{
+|cffffcc00C|ronjure Lightning - [|cffffcc00Level 1|r]
+}
+STRING 8907
+{
+Boomerang Dummy
+}
+STRING 8918
+{
+(|cffc40000Fire|r + |cff8b4513Earth|r + |cff8433c8Darkness|r) |n|cff9497ccDamage:|r 1800 |n|cff9497ccType:|r |cffc40000Fire|r |n|cff9497ccAoE:|r 150 Full/300 Half |n|cff9497ccSpeed:|r 1 |n|cff9497ccRange:|r 900 |n|cff9497ccAbility:|r Adds napalm to a unit causing it to deal 1000 damage in 250 AoE upon death for each unit of napalm.
+}
+STRING 8920
+{
+(|cffc40000Fire|r + |cff8b4513Earth|r + |cff8433c8Darkness|r) |n|cff9497ccDamage:|r 9000 |n|cff9497ccType:|r |cffc40000Fire|r |n|cff9497ccAoE:|r 150 Full/300 Half |n|cff9497ccSpeed:|r 1 |n|cff9497ccRange:|r 900 |n|cff9497ccAbility:|r Adds napalm to a unit causing it to deal 5000 damage in 250 AoE upon death for each unit of napalm.
+}
+STRING 8922
+{
+Each attack drenches the target in burning sunlight that deals 500 damage per second in 250 AoE. |n|nEffect lasts 5 seconds. This effect stacks.
+}
+STRING 8923
+{
+Each attack drenches the target in burning sunlight that deals 2500 damage per second in 250 AoE. |n|nEffect lasts 5 seconds. This effect stacks.
+}
+STRING 8924
+{
+Each attack drenches the target in burning sunlight that deals 100 damage per second in 250 AoE. |n|nEffect lasts 5 seconds. This effect stacks.
+}
+STRING 8926
+{
+Each time this tower attacks, it will spawn two orbs opposite each other. These orbs will make one full orbit around the tower, dealing 2125 damage to any units in their way.
+}
+STRING 8927
+{
+Each time this tower attacks, it will spawn two orbs opposite each other. These orbs will make one full orbit around the tower, dealing 2125 damage to any units in their way.
+}
+STRING 8928
+{
+Each time this tower attacks, it will spawn two orbs opposite each other. These orbs will make one full orbit around the tower, dealing 2125 damage to any units in their way.
+}
+STRING 8929
+{
+Each time this tower attacks, it will spawn two orbs opposite each other. These orbs will make one full orbit around the tower, dealing 2125 damage to any units in their way.
+}
+STRING 8930
+{
+Each time this tower attacks, it will spawn two orbs opposite each other. These orbs will make one full orbit around the tower, dealing 2125 damage to any units in their way.
+}
+STRING 8931
+{
+Each time this tower attacks, it will spawn two orbs opposite each other. These orbs will make one full orbit around the tower, dealing 2125 damage to any units in their way.
+}
+STRING 8932
+{
+Each time this tower attacks, it will spawn two orbs opposite each other. These orbs will make one full orbit around the tower, dealing 2125 damage to any units in their way.
+}
+STRING 8933
+{
+Each time this tower attacks, it will spawn two orbs opposite each other. These orbs will make one full orbit around the tower, dealing 2125 damage to any units in their way.
+}
+STRING 8934
+{
+Each time this tower attacks, it will spawn two orbs opposite each other. These orbs will make one full orbit around the tower, dealing 2125 damage to any units in their way.
+}
+STRING 8935
+{
+Each time this tower attacks, it will spawn two orbs opposite each other. These orbs will make one full orbit around the tower, dealing 2125 damage to any units in their way.
+}
+STRING 8936
+{
+Each time this tower attacks, it will spawn two orbs opposite each other. These orbs will make one full orbit around the tower, dealing 2125 damage to any units in their way.
+}
+STRING 8937
+{
+Each time this tower attacks, it will spawn two orbs opposite each other. These orbs will make one full orbit around the tower, dealing 2125 damage to any units in their way.
+}
+STRING 8938
+{
+Each time this tower attacks, it will spawn two orbs opposite each other. These orbs will make one full orbit around the tower, dealing 2125 damage to any units in their way.
+}
+STRING 8939
+{
+Each time this tower attacks, it will spawn two orbs opposite each other. These orbs will make one full orbit around the tower, dealing 2125 damage to any units in their way.
+}
+STRING 8953
+{
+holepercent
+}
+STRING 8954
+{
+I like to build towers!
+}
+STRING 8955
+{
+holepercent
+}
+STRING 8962
+{
+(|cff01a2ffWater|r + |cffc40000Fire|r + |cffd4880fEarth|r) |n|cff9497ccDamage:|r 3000 |n|cff9497ccType:|r |cffc40000Fire|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 1 |n|cff9497ccRange:|r 900 |n|cff9497ccAbility:|r Every attack increases attack speed by 11%.
+}
+STRING 8964
+{
+(|cff01a2ffWater|r + |cffd4880fEarth|r + |cff00c400Nature|r) |n|cff9497ccDamage:|r 9000 |n|cff9497ccType:|r |cff00c400Nature|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 1 |n|cff9497ccRange:|r 500 |n|cff9497ccAbility:|r Can move freely.
+}
+STRING 8966
+{
+(|cff01a2ffWater|r + |cffd4880fEarth|r + |cff00c400Nature|r) |n|cff9497ccDamage:|r 45000 |n|cff9497ccType:|r |cff00c400Nature|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 1 |n|cff9497ccRange:|r 500 |n|cff9497ccAbility:|r Can move freely.
+}
+STRING 8967
+{
+(|cff01a2ffWater|r + |cffc40000Fire|r + |cffd4880fEarth|r) |n|cff9497ccDamage:|r 15000 |n|cff9497ccType:|r |cffc40000Fire|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 1 |n|cff9497ccRange:|r 900 |n|cff9497ccAbility:|r Every attack increases attack speed by 11%.
+}
+STRING 8968
+{
+Attacks are infused with energy, causing them to deal damage based on distance of projectile travel. Damage dealt is equal to (600/distance)*2120.
+}
+STRING 8969
+{
+Attacks are infused with energy, causing them to deal damage based on distance of projectile travel. Damage dealt is equal to (600/distance)*10600.
+}
+STRING 8970
+{
+Allows this tower to attack up to 3 targets at once.
+}
+STRING 8971
+{
+Allows this tower to attack up to 3 targets at once.
+}
+STRING 8972
+{
+Causes this tower to attack up to 3 targets at once. |n|nLasts 6 seconds.
+}
+STRING 8993
+{
+|cff9497CCGrim Reaper|r - [|cffffcc00Level 1|r]
+}
+STRING 8994
+{
+|cff9497CCGrim Reaper|r - [|cffffcc00Level 2|r]
+}
+STRING 8995
+{
+|cff9497CCGrim Reaper|r - [|cffffcc00Level 3|r]
+}
+STRING 8996
+{
+Grim Reaper
+}
+STRING 9003
+{
+Click to get a summary of towers eliminated and elements in play.
+}
+STRING 9004
+{
+|cff9497CCDraft Query|r
+}
+STRING 9005
+{
+Draft Query
+}
+STRING 9023
+{
+(|cff01a2ffWater|r + |cffc40000Fire|r + |cff8433c8Darkness|r) |n|cff9497ccDamage:|r None |n|cff9497ccType:|r |cffc40000Fire|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 1 |n|cff9497ccRange:|r 700 |n|cff9497ccAbility:|r Each attack reduces armor by 3 and does 2500 damage over a short duration. Has an AoE of 250.
+}
+STRING 9024
+{
+(|cffe5de23Light|r + |cffd4880fEarth|r + |cff00c400Nature|r) |n|cff9497ccDamage:|r 930 |n|cff9497ccType:|r |cff00c400Nature|r |n|cff9497ccAoE:|r 100 Full/200 Half |n|cff9497ccSpeed:|r 0.31 |n|cff9497ccRange:|r 900 |n|cff9497ccAbility:|r Reduces armor by 3.
+}
+STRING 9025
+{
+Spews acid at a target, covering units in a 250 AoE. Acid decreases armor by 3; deals 500 damage per second. |n|nLasts 5 seconds.
+}
+STRING 9028
+{
+Faerie Fire
+}
+STRING 9029
+{
+This unit has Faerie Fire; it has reduced armor.
+}
+STRING 9030
+{
+(Custom)
+}
+STRING 9035
+{
+(|cff8433c8Darkness|r + |cff00c400Nature|r) |n|cff9497ccDamage:|r None |n|cff9497ccType:|r |cff8433c8Darkness|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 0.31 |n|cff9497ccRange:|r 500 |n|cff9497ccAbility:|r Attacks deal damage equal to (Max HP/Current HP)*500.
+}
+STRING 9036
+{
+(|cff8433c8Darkness|r + |cff00c400Nature|r) |n|cff9497ccDamage:|r None |n|cff9497ccType:|r |cff8433c8Darkness|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 0.31 |n|cff9497ccRange:|r 500 |n|cff9497ccAbility:|r Attacks deal damage equal to (Max HP/Current HP)*2500.
+}
+STRING 9037
+{
+(|cff8433c8Darkness|r + |cff00c400Nature|r) |n|cff9497ccDamage:|r None |n|cff9497ccType:|r |cff8433c8Darkness|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 0.31 |n|cff9497ccRange:|r 500 |n|cff9497ccAbility:|r Attacks deal damage equal to (Max HP/Current HP)*12500.
+}
+STRING 9038
+{
+Preys on the life force of enemies, causing this tower to deal damage based on percent of HP left. Damage dealt is equal to (Max HP/Current HP)*500.
+}
+STRING 9039
+{
+Preys on the life force of enemies, causing this tower to deal damage based on percent of HP left. Damage dealt is equal to (Max HP/Current HP)*2500.
+}
+STRING 9040
+{
+Preys on the life force of enemies, causing this tower to deal damage based on percent of HP left. Damage dealt is equal to (Max HP/Current HP)*12500.
+}
+STRING 9041
+{
+Hurls a bolt of lightning that bounces up to 3 times, dealing 2500 damage to the primary target. Each jump deals 10% more damage.
+}
+STRING 9042
+{
+Hurls a bolt of lightning that bounces up to 3 times, dealing 12500 damage to the primary target. Each jump deals 10% more damage.
+}
+STRING 9043
+{
+Hurls a bolt of lightning that bounces up to 3 times, dealing 500 damage to the primary target. Each jump deals 10% more damage.
+}
+STRING 9044
+{
+|cffffcc00C|ronjure Lightning - [|cffffcc00Level 2|r]
+}
+STRING 9045
+{
+|cffffcc00C|ronjure Lightning - [|cffffcc00Level 3|r]
+}
+STRING 9046
+{
+|cffffcc00C|ronjure Lightning - [|cffffcc00Level 1|r]
+}
+STRING 9053
+{
+NatureOrb Dummy
+}
+STRING 9063
+{
+(|cffe5de23Light|r + |cffd4880fEarth|r + |cff00c400Nature|r) |n|cff9497ccDamage:|r 4650 |n|cff9497ccType:|r |cff00c400Nature|r |n|cff9497ccAoE:|r 100 Full/200 Half |n|cff9497ccSpeed:|r 0.31 |n|cff9497ccRange:|r 900 |n|cff9497ccAbility:|r Reduces armor by 8.
+}
+STRING 9066
+{
+(|cffd4880fEarth|r + |cff8433c8Darkness|r) |n|cff9497ccDamage:|r None |n|cff9497ccType:|r |cffd4880fEarth|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 0.66 |n|cff9497ccRange:|r 1500 |n|cff9497ccAbility:|r Lobs an explosive bomb towards the target which explodes and fragments into 2 other bombs. Each bomb deals 150 damage in 250 AoE.
+}
+STRING 9067
+{
+(|cffd4880fEarth|r + |cff8433c8Darkness|r) |n|cff9497ccDamage:|r None |n|cff9497ccType:|r |cffd4880fEarth|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 0.66 |n|cff9497ccRange:|r 1500 |n|cff9497ccAbility:|r Lobs an explosive bomb towards the target which explodes and fragments into 2 other bombs. Each bomb deals 750 damage in 250 AoE.
+}
+STRING 9068
+{
+(|cffd4880fEarth|r + |cff8433c8Darkness|r) |n|cff9497ccDamage:|r None |n|cff9497ccType:|r |cffd4880fEarth|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 0.66 |n|cff9497ccRange:|r 1500 |n|cff9497ccAbility:|r Lobs an explosive bomb towards the target which explodes and fragments into 2 other bombs. Each bomb deals 3750 damage in 250 AoE.
+}
+STRING 9069
+{
+Each attack lobs an explosive bomb towards the target which explodes and fragments into 2 other bombs upon landing. Each bomb deals 150 damage in 250 AoE.
+}
+STRING 9070
+{
+Each attack lobs an explosive bomb towards the target which explodes and fragments into 2 other bombs upon landing. Each bomb deals 750 damage in 250 AoE.
+}
+STRING 9071
+{
+Each attack lobs an explosive bomb towards the target which explodes and fragments into 2 other bombs upon landing. Each bomb deals 3750 damage in 250 AoE.
+}
+STRING 9116
+{
+This unit is covered with acid. It has reduced armor; and is being damaged over time.
+}
+STRING 9117
+{
+This unit is covered with acid. It has reduced armor; and is being damaged over time.
+}
+STRING 9121
+{
+|cff9497CCCondense|r - [|cffffcc00Level 1|r]
+}
+STRING 9122
+{
+|cff9497CCCondense|r - [|cffffcc00Level 2|r]
+}
+STRING 9123
+{
+|cff9497CCCondense|r - [|cffffcc00Level 3|r]
+}
+STRING 9124
+{
+Condense
+}
+STRING 9128
+{
+|cff9497CCSpore Cloud|r - [|cffffcc00Level 1|r]
+}
+STRING 9129
+{
+|cff9497CCSpore Cloud|r - [|cffffcc00Level 2|r]
+}
+STRING 9130
+{
+|cff9497CCSpore Cloud|r - [|cffffcc00Level 3|r]
+}
+STRING 9141
+{
+-kick (player name/number)|n-random|n-range (x)|n-zoom (x)|n-weather|n-ma|n-this|n-next|n-(classification)|n-(element)
+}
+STRING 9148
+{
+Scalds closer enemy units for greater damage. Damage dealt is equal to (600/distance)*150 with 900 AoE.|n|nDamage from multiple towers stack.
+}
+STRING 9149
+{
+Scalds closer enemy units for greater damage. Damage dealt is equal to (600/distance)*750 with 900 AoE.|n|nDamage from multiple towers stack.
+}
+STRING 9150
+{
+Scalds closer enemy units for greater damage. Damage dealt is equal to (600/distance)*3750 with 900 AoE.|n|nDamage from multiple towers stack.
+}
+STRING 9163
+{
+Naga Royal Guard
+}
+STRING 9164
+{
+Deaod
+}
+STRING 9165
+{
+I like to build towers!
+}
+STRING 9166
+{
+Deaod
+}
+STRING 9170
+{
+(-1)
+}
+STRING 9171
+{
+UnitMaxState - Life
+}
+STRING 9172
+{
+(-2)
+}
+STRING 9173
+{
+UnitMaxState - Life
+}
+STRING 9174
+{
+(-3)
+}
+STRING 9175
+{
+UnitMaxState - Life
+}
+STRING 9176
+{
+(-4)
+}
+STRING 9177
+{
+UnitMaxState - Life
+}
+STRING 9178
+{
+(-5)
+}
+STRING 9179
+{
+UnitMaxState - Life
+}
+STRING 9180
+{
+(-6)
+}
+STRING 9181
+{
+UnitMaxState - Life
+}
+STRING 9182
+{
+(-7)
+}
+STRING 9183
+{
+UnitMaxState - Life
+}
+STRING 9184
+{
+(-8)
+}
+STRING 9185
+{
+UnitMaxState - Life
+}
+STRING 9186
+{
+(+1)
+}
+STRING 9187
+{
+UnitMaxState - Life
+}
+STRING 9188
+{
+(+2)
+}
+STRING 9189
+{
+UnitMaxState - Life
+}
+STRING 9190
+{
+(+3)
+}
+STRING 9191
+{
+UnitMaxState - Life
+}
+STRING 9192
+{
+(+4)
+}
+STRING 9193
+{
+UnitMaxState - Life
+}
+STRING 9194
+{
+(+5)
+}
+STRING 9195
+{
+UnitMaxState - Life
+}
+STRING 9196
+{
+(+6)
+}
+STRING 9197
+{
+UnitMaxState - Life
+}
+STRING 9198
+{
+(+7)
+}
+STRING 9199
+{
+UnitMaxState - Life
+}
+STRING 9200
+{
+(+8)
+}
+STRING 9201
+{
+UnitMaxState - Life
+}
+STRING 9214
+{
+Leave Detect
+}
+STRING 9218
+{
+Visit the website at |cffFF8000http://www.eletd.com|r for the latest updates, information, strategies, and more. |n|nStop by the forums at |cffFF8000http://forums.eletd.com|r and join the community. |n|nCheck out the shop at |cffFF8000http://store.eletd.com |rand purchase a variety of Element TD merchandise!
+}
+STRING 9220
+{
+|c00FFFF00Element TD is a survivor TD.|r 
+Depending on your difficulty level, creeps have more or less HP and Armor. If they leak they walk around again with their current health.
+After any player has defeated all of the creeps in his area, the next round will begin for all players.
+
+You get 1 lumber each 5 rounds. Spend it at the Elemental Summoning Center - summon an elemental and you can then infuse its element into towers. By mixing elements you can create towers with special abilities. By focusing on one element you can build strong pure elemental towers. To build level 5 single elemental towers you need to support it with an elemental essence, which costs 1 lumber. 
+
+Most spawned creeps have elemental armor. Each element is strong against one armor type and weak against another. See the tower descriptions for specifics.
+
+Every 15 seconds you get extra cash based on your unspent gold (interest). Your interest rate starts at 2.0% and you can spend lumber to increase it.
+
+You can sell towers too. 100% refund for non-elemental towers, 75% for elemental towers.
+
+Type "-random" before the end of level 5 to have your lumber randomly spent for you. Not for the inexperienced.
+}
+STRING 9224
+{
+|cffff0000Player Commands:|r
+-kick <player name/number>: Will start a vote kick process against the person you select. 
+-random: Typed before level five ends will put you on random mode.
+-range <x>: Displays the specified range (x) on selected unit.
+-zoom <x>: Changes the zoom to specified range (x).
+-weather: Displays available weather options.
+-ma: Displays vital information on all living players.
+-this: Tells you what type of spawns are in this level.
+-next: Tells you what type of spawns will be in next level.
+-<classification>: Tells you what levels will be that type. Classifications are "Mechanical, Undead, Fast, Healing, Image."
+-<element>: Tells you what levels will have this armor. Elements are "Water, Darkness, Earth, Fire, Light, Nature, Composite."
+}
+STRING 9226
+{
+-Karawasa for the updates
+-mrchak for his blessing and ideas
+-emjlr3 for his vJASS coding
+-Deaod for his vJASS coding
+-Cisz, holepercent, and jolin012 for their invaluable contributions
+-MagicalHacker, cohadar, and meateor for their programming
+-Oni Kinew for the loading screen
+-Void for the current terrain
+-Sancdar, 0rb3r, Twilice, Kaini, and lesher for their support
+}
+STRING 9228
+{
+-Vexorian for WC3 Map Optimizer
+-PitzerMike for Widgetizer
+-Denu for Azmodan, Lord of Sin skin
+-ImmolatusBurn for GetRange, TCS library
+-Crazyrussian for Build/Sell icons
+-XS-Archangel for Ronald skin remake
+-Mc ! for Orc Warlock skin
+-Rising_Dusk for Shrapnade spell
+-Anitarf for Spirit Helix, Slash spells
+-Strilanc for MMD library
+}
+STRING 9230
+{
+|cff8433C8Darkness|r - Slow attack but high, long range damage. Contaminates water (200% damage), but is weakened by light armor (50% damage).
+|cffdB9513Earth|r - Average speed, large splash damage. Earth obscures the light (200% damage to light armor), but is broken up by nature (50% damage).
+|cffff0000Fire|r - Fast attack, low range medium splash damage. Burns up nature armor (200% damage) but is extinguished by water (50% damage).
+|cffE5DE23Light|r - Fast speed, long range. Attacks the Darkness (200% damage!) but is clouded up by earth (50% damage).
+|cff00ff00Nature|r - Fast speed, medium range, pretty good damage. Breaks up the earth (200% damage), but is burned by fire armor (50% damage).
+|cff5555ffWater|r - Very fast speed, good range with small splash. Extinguishes fire (200% damage), but is weakened when attacking darkness (50% damage).
+}
+STRING 9233
+{
+Gunpowder (|cff8433C8D|r+|cffD4880FE|r) |cffD4880FEarth Damage|r
+Magic (|cff8433C8D|r+|cffC40000F|r) |cff8433C8Darkness Damage|r
+Trickery (|cff8433C8D|r+|cffE5DE23L|r) |cffE5DE23Light Damage|r
+Disease (|cff8433C8D|r+|cff00C400N|r) |cff8433C8Darkness Damage|r
+Poison (|cff8433C8D|r+|cff01A2FFW|r) |cff01A2FFWater Damage|r
+Blacksmith (|cffD4880FE|r+|cffC40000F|r) |cffC40000Fire Damage|r
+Quark (|cffD4880FE|r+|cffE5DE23L|r) |cffE5DE23Light Damage|r
+Mushroom (|cffD4880FE|r+|cff00C400N|r) |cff00C400Nature Damage|r
+Hydro (|cffD4880FE|r+|cff01A2FFW|r) |cffD4880FEarth Damage|r
+Electricity (|cffC40000F|r+|cffE5DE23L|r) |cffC40000Fire Damage|r
+Flame (|cffC40000F|r+|cff00C400N|r) |cffC40000Fire Damage|r
+Vapor (|cffC40000F|r+|cff01A2FFW|r) |cff01A2FFWater Damage|r
+Life (|cffE5DE23L|r+|cff00C400N|r) |cff00C400Nature Damage|r
+Ice (|cff01A2FFW|r+|cffE5DE23L|r) |cffE5DE23Light Damage|r
+Well (|cff00C400N|r+|cff01A2FFW|r) |cff01A2FFWater Damage|r
+}
+STRING 9236
+{
+Flamethrower (|cff8433C8D|r+|cffD4880FE|r+|cffC40000F|r) |cffC40000Fire Damage|r
+Laser (|cff8433C8D|r+|cffD4880FE|r+|cffE5DE23L|r) |cffE5DE23Light Damage|r
+Roots (|cff8433C8D|r+|cffD4880FE|r+|cff00C400N|r) |cff00C400Nature Damage|r
+Muck (|cff8433C8D|r+|cffD4880FE|r+|cff01A2FFW|r) |cffD4880FEarth Damage|r
+Radius (|cff8433C8D|r+|cffC40000F|r+|cffE5DE23L|r) |cff8433C8Darkness Damage|r
+Voodoo (|cff8433C8D|r+|cffC40000F|r+|cff00C400N|r) |cff8433C8Darkness Damage|r
+Corrosion (|cff8433C8D|r+|cffC40000F|r+|cff01A2FFW|r) |cffC40000Fire Damage|r
+Oblivion (|cff8433C8D|r+|cffE5DE23L|r+|cff00C400N|r) |cff8433C8Darkness Damage|r
+Hail (|cff8433C8D|r+|cffE5DE23L|r+|cff01A2FFW|r) |cffE5DE23Light Damage|r
+Drowning (|cff8433C8D|r+|cff00C400N|r+|cff01A2FFW|r) |cff01A2FFWater Damage|r
+Gold (|cffD4880FE|r+|cffC40000F|r+|cffE5DE23L|r) |cffD4880FEarth Damage|r
+Quaker (|cffD4880FE|r+|cffC40000F|r+|cff00C400N|r) |cffD4880FEarth Damage|r
+Zealot (|cffD4880FE|r+|cffC40000F|r+|cff01A2FFW|r) |cffC40000Fire Damage|r
+Enchantment (|cffD4880FE|r+|cffE5DE23L|r+|cff00C400N|r) |cff00C400Nature Damage|r
+Polar (|cffD4880FE|r+|cffE5DE23L|r+|cff01A2FFW|r) |cffD4880FEarth Damage|r
+Flesh Golem (|cffD4880FE|r+|cff00C400N|r+|cff01A2FFW|r) |cff00C400Nature Damage|r
+Nova (|cffC40000F|r+|cffE5DE23L|r+|cff00C400N|r) |cffE5DE23Light Damage|r
+Windstorm (|cffC40000F|r+|cffE5DE23L|r+|cff01A2FFW|r) |cff01A2FFWater Damage|r
+Impulse (|cffC40000F|r+|cff00C400N|r+|cff01A2FFW|r) |cff00C400Nature Damage|r
+Tidal (|cffE5DE23L|r+|cff00C400N|r+|cff01A2FFW|r) |cff01A2FFWater Damage|r
+}
+STRING 9241
+{
+Fast
+}
+STRING 9242
+{
+Faster.
+}
+STRING 9243
+{
+Fast
+}
+STRING 9244
+{
+Fast
+}
+STRING 9245
+{
+This unit is on the go.
+}
+STRING 9246
+{
+Transmute
+}
+STRING 9247
+{
+Causes targeted tower to be instantly sold. Owner gets a full refund.
+}
+STRING 9248
+{
+Incite
+}
+STRING 9250
+{
+Protect
+}
+STRING 9253
+{
+Puts target builder to sleep. |nLasts 5 seconds.
+}
+STRING 9254
+{
+Steals 4% of current gold from target builder.
+}
+STRING 9255
+{
+Transmute
+}
+STRING 9256
+{
+Theft
+}
+STRING 9257
+{
+Sleep
+}
+STRING 9258
+{
+Protect
+}
+STRING 9259
+{
+Protect
+}
+STRING 9260
+{
+Incite
+}
+STRING 9261
+{
+Incite
+}
+STRING 9262
+{
+Heal
+}
+STRING 9263
+{
+Bloodlust Dummy
+}
+STRING 9264
+{
+Armor Dummy
+}
+STRING 9265
+{
+(SW)
+}
+STRING 9270
+{
+Assman!
+}
+STRING 9271
+{
+Fuck Face!
+}
+STRING 9272
+{
+Split
+}
+STRING 9273
+{
+|cffff0000Super Weapons (SW)|r
+All builders have been armed. Watch your back!
+}
+STRING 9274
+{
+Causes creeps within 500 range of the targeted area to move at max speed. |nLasts 5 seconds.
+}
+STRING 9275
+{
+Causes creeps within 500 range of the targeted area to not take damage. |nLasts 5 seconds.
+}
+STRING 9276
+{
+Causes creeps within 500 range of the targeted area to regenerate 25% of maximum HP instantly.
+}
+STRING 9277
+{
+(|cffe5de23Light|r + |cff00c400Nature|r) |n|cff9497ccDamage:|r 1500 |n|cff9497ccType:|r |cff00c400Nature|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 1.5 |n|cff9497ccRange:|r 1125 |n|cff9497ccAbility:|r Every 3 kills made by this tower adds a life.
+}
+STRING 9278
+{
+(|cffe5de23Light|r + |cff00c400Nature|r) |n|cff9497ccDamage:|r 7500 |n|cff9497ccType:|r |cff00c400Nature|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 1.5 |n|cff9497ccRange:|r 1125 |n|cff9497ccAbility:|r Every 2 kills made by this tower adds a life.
+}
+STRING 9279
+{
+(|cffe5de23Light|r + |cff00c400Nature|r) |n|cff9497ccDamage:|r 37500 |n|cff9497ccType:|r |cff00c400Nature|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 1.5 |n|cff9497ccRange:|r 1125 |n|cff9497ccAbility:|r Every kill made by this tower adds a life.
+}
+STRING 9280
+{
+(|cff01a2ffWater|r + |cffe5de23Light|r + |cff8433c8Darkness|r) |n|cff9497ccDamage:|r 1140 |n|cff9497ccType:|r |cffe5de23Light|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 0.31 |n|cff9497ccRange:|r 1125|n|cff9497ccAbility:|r Allows this tower to attack up to 3 targets at once.
+}
+STRING 9281
+{
+(|cff01a2ffWater|r + |cffe5de23Light|r + |cff8433c8Darkness|r) |n|cff9497ccDamage:|r 5700|n|cff9497ccType:|r |cffe5de23Light|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 0.31 |n|cff9497ccRange:|r 1125 |n|cff9497ccAbility:|r Allows this tower to attack up to 3 targets at once.
+}
+STRING 9288
+{
+(|cff01a2ffWater|r + |cffc40000Fire|r) |n|cff9497ccDamage:|r None |n|cff9497ccType:|r |cff01a2ffWater|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 1 |n|cff9497ccRange:|r 700 |n|cff9497ccAbility:|r Every attack deals 200 damage in 700 AoE. Aftershock explosions do 100 damage in 350 AoE.
+}
+STRING 9289
+{
+(|cff01a2ffWater|r + |cffc40000Fire|r) |n|cff9497ccDamage:|r None |n|cff9497ccType:|r |cff01a2ffWater|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 1 |n|cff9497ccRange:|r 700 |n|cff9497ccAbility:|r Every attack deals 1000 damage in 700 AoE. Aftershock explosions do 500 damage in 350 AoE.
+}
+STRING 9290
+{
+(|cff01a2ffWater|r + |cffc40000Fire|r) |n|cff9497ccDamage:|r None |n|cff9497ccType:|r |cff01a2ffWater|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 1 |n|cff9497ccRange:|r 700 |n|cff9497ccAbility:|r Every attack deals 5000 damage in 700 AoE. Aftershock explosions do 2500 damage in 350 AoE.
+}
+STRING 9291
+{
+Scalds the immediate area. Units within 700 AoE of the tower will take 200 damage. An additional aftershock hits each unit. Units within 350 AoE of the aftershocks will take 100 damage.
+}
+STRING 9292
+{
+Scalds the immediate area. Units within 700 AoE of the tower will take 1000 damage. An additional aftershock hits each unit. Units within 350 AoE of the aftershocks will take 500 damage.
+}
+STRING 9293
+{
+Scalds the immediate area. Units within 700 AoE of the tower will take 5000 damage. An additional aftershock hits each unit. Units within 350 AoE of the aftershocks will take 2500 damage.
+}
+STRING 9294
+{
+(|cffd4880fEarth|r + |cff00c400Nature|r) |n|cff9497ccDamage:|r None |n|cff9497ccType:|r |cff00c400Nature|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 1.5 |n|cff9497ccRange:|r 900 |n|cff9497ccAbility:|r Sends out a boomerang that deals 600 damage.
+}
+STRING 9295
+{
+(|cffd4880fEarth|r + |cff00c400Nature|r) |n|cff9497ccDamage:|r None |n|cff9497ccType:|r |cff00c400Nature|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 1.5 |n|cff9497ccRange:|r 900 |n|cff9497ccAbility:|r Sends out a boomerang that deals 3000 damage.
+}
+STRING 9296
+{
+(|cffd4880fEarth|r + |cff00c400Nature|r) |n|cff9497ccDamage:|r None |n|cff9497ccType:|r |cff00c400Nature|r |n|cff9497ccAoE:|r None |n|cff9497ccSpeed:|r 1.5 |n|cff9497ccRange:|r 900 |n|cff9497ccAbility:|r Sends out a boomerang that deals 15000 damage.
+}
+STRING 9297
+{
+Each attack sends out a boomerang that travels to the attacked creep and returns. Creeps may be hit along both ways for double damage. Damage dealt is 600.
+}
+STRING 9298
+{
+Each attack sends out a boomerang that travels to the attacked creep and returns. Creeps may be hit along both ways for double damage. Damage dealt is 3000.
+}
+STRING 9299
+{
+Each attack sends out a boomerang that travels to the attacked creep and returns. Creeps may be hit along both ways for double damage. Damage dealt is 15000.
+}
+STRING 9306
+{
+(|cff01a2ffWater|r + |cff8433c8Darkness|r) |n|cff9497ccDamage:|r 400 |n|cff9497ccType:|r |cff01a2ffWater|r |n|cff9497ccAoE:|r Varies |n|cff9497ccSpeed:|r 1 |n|cff9497ccRange:|r 1125 |n|cff9497ccAbility:|r Each attack on the same creep increases the AoE of damage.
+}
+STRING 9307
+{
+(|cff01a2ffWater|r + |cff8433c8Darkness|r) |n|cff9497ccDamage:|r 2000 |n|cff9497ccType:|r |cff01a2ffWater|r |n|cff9497ccAoE:|r Varies|n|cff9497ccSpeed:|r 1 |n|cff9497ccRange:|r 1125 |n|cff9497ccAbility:|r Each attack on the same creep increases the AoE of damage.
+}
+STRING 9308
+{
+(|cff01a2ffWater|r + |cff8433c8Darkness|r) |n|cff9497ccDamage:|r 10000 |n|cff9497ccType:|r |cff01a2ffWater|r |n|cff9497ccAoE:|r Varies |n|cff9497ccSpeed:|r 1 |n|cff9497ccRange:|r 1125 |n|cff9497ccAbility:|r Each attack on the same creep increases the AoE of damage.
+}
+STRING 9309
+{
+Each attack on the same unit increases the AoE of the splash damage. Does 400 damage. Cap of 7 attacks.
+}
+STRING 9310
+{
+Each attack on the same unit increases the AoE of the splash damage. Does 2000 damage. Cap of 7 attacks.
+}
+STRING 9311
+{
+Each attack on the same unit increases the AoE of the splash damage. Does 10000 damage. Cap of 7 attacks.
+}
+STRING 9312
+{
+(|cffe5de23Light|r + |cff8433c8Darkness|r + |cff00c400Nature|r) |n|cff9497ccDamage:|r 10000|n|cff9497ccType:|r |cff8433c8Darkness|r |n|cff9497ccAoE:|r 100/200 |n|cff9497ccSpeed:|r 1 |n|cff9497ccRange:|r 1125|n|cff9497ccAbility:|r Reloads ammo every 7 shots. Manual reload is faster.
+}
+STRING 9313
+{
+(|cffe5de23Light|r + |cff8433c8Darkness|r + |cff00c400Nature|r) |n|cff9497ccDamage:|r 50000|n|cff9497ccType:|r |cff8433c8Darkness|r |n|cff9497ccAoE:|r 100/200 |n|cff9497ccSpeed:|r 1 |n|cff9497ccRange:|r 1125|n|cff9497ccAbility:|r Reloads ammo every 7 shots. Manual reload is faster.
+}
+STRING 9314
+{
+Splashes the area in water. Units within 750 AoE of the tower take 2200 damage.
+}
+STRING 9315
+{
+Splashes the area in water. Units within 750 AoE of the tower take 3640 damage.
+}
+STRING 9316
+{
+Splashes the area in water. Units within 750 AoE of the tower take 5368 damage.
+}
+STRING 9317
+{
+Splashes the area in water. Units within 750 AoE of the tower take 7441 damage.
+}
+STRING 9318
+{
+Splashes the area in water. Units within 750 AoE of the tower take 9929 damage.
+}
+STRING 9319
+{
+Splashes the area in water. Units within 750 AoE of the tower take 12915 damage.
+}
+STRING 9320
+{
+Splashes the area in water. Units within 750 AoE of the tower take 16499 damage.
+}
+STRING 9321
+{
+Splashes the area in water. Units within 750 AoE of the tower take 20798 damage.
+}
+STRING 9322
+{
+Reload your weapon on demand. Takes 3 seconds.
+}
+STRING 9323
+{
+Splashes the area in water. Units within 750 AoE of the tower take 1000 damage.
+}
+STRING 9324
+{
+S|cffffcc00p|rlash - [|cffffcc00Level 4|r]
+}
+STRING 9325
+{
+S|cffffcc00p|rlash - [|cffffcc00Level 5|r]
+}
+STRING 9326
+{
+S|cffffcc00p|rlash - [|cffffcc00Level 6|r]
+}
+STRING 9327
+{
+S|cffffcc00p|rlash - [|cffffcc00Level 7|r]
+}
+STRING 9328
+{
+S|cffffcc00p|rlash - [|cffffcc00Level 8|r]
+}
+STRING 9329
+{
+S|cffffcc00p|rlash - [|cffffcc00Level 9|r]
+}
+STRING 9330
+{
+S|cffffcc00p|rlash - [|cffffcc00Level 10|r]
+}
+STRING 9332
+{
+S|cffffcc00p|rlash - [|cffffcc00Level 2|r]
+}
+STRING 9333
+{
+S|cffffcc00p|rlash - [|cffffcc00Level 3|r]
+}
+STRING 9334
+{
+Reload
+}
+STRING 9335
+{
+R
+}
+STRING 9336
+{
+(Manual)
+}
+STRING 9337
+{
+Reloads your weapon when it runs out of ammo. Takes 5 seconds.
+}
+STRING 9338
+{
+|cffffcc00R|r|cff9497cceload (Auto)|r
+}
+STRING 9339
+{
+Reload
+}
+STRING 9340
+{
+(Auto)
+}
+STRING 9341
+{
+|cffffcc00R|r|cff9497CCeload|r
+}

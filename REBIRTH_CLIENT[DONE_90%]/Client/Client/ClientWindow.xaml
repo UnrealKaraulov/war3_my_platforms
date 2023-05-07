@@ -1,0 +1,57 @@
+﻿<Window
+    xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+       
+         x:Class="Client.ClientWindow"
+       
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:local="clr-namespace:Client"
+    xmlns:exrich="clr-namespace:DemoApp"
+        mc:Ignorable="d"
+        Title="Rebirth client. No channel selected." Name="ThisIsClientWindow" Height="350" MinHeight="480" Width="641"  MinWidth="640" Loaded="Window_Loaded"  Closed="MetroWindow_Closed" >
+    <Window.Background>
+        <ImageBrush Stretch="Fill" ImageSource="Resources/LoginPage_Background.png" />
+    </Window.Background>
+    <Grid x:Name="MainGrid" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="28"/>
+        </Grid.RowDefinitions>
+        <exrich:RichTextBoxExt Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" BorderThickness="1,1,1,1"  HorizontalScrollBarVisibility="Visible"  HorizontalAlignment="Stretch" VerticalScrollBarVisibility="Visible"  x:Name="ChatBox"  IsReadOnly="True" MinHeight="200" MinWidth="200" FontSize="14" Block.LineHeight="6" AcceptsReturn="False" IsUndoEnabled="False" TextOptions.TextFormattingMode="Display" TextOptions.TextHintingMode="Fixed" FontFamily="Verdana"  IsDocumentEnabled="True" Width="Auto" Background="{x:Null}">
+            <exrich:RichTextBoxExt.Emoticons>
+                <exrich:EmoticonMapper Text=":)" Icon="Smileys/1.png"/>
+                <exrich:EmoticonMapper Text=":-c" Icon="Smileys/101.png"/>
+                <exrich:EmoticonMapper Text="B-)" Icon="Smileys/16.png"/>
+                <exrich:EmoticonMapper Text=":D" Icon="Smileys/4.png"/>
+                <exrich:EmoticonMapper Text=":(" Icon="Smileys/2.png"/>
+            </exrich:RichTextBoxExt.Emoticons>
+            <FlowDocument>
+            </FlowDocument>
+        </exrich:RichTextBoxExt>
+        <ListBox BorderThickness="1,1,1,1"  Name="UsersInThisChannel" Grid.Row="1" Grid.Column="1" FontSize="18" HorizontalAlignment="Right" VerticalContentAlignment="Top" MinWidth="156" MaxWidth="200" Width="171" Background="{x:Null}"/>
+        
+        <Grid Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"  HorizontalAlignment="Stretch" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <TextBox  Grid.Column="0" BorderThickness="1,1,1,1"  Foreground="White" Name="ChatInputTextBox" FontSize="18"  MinWidth="388"  KeyUp="RichTextBox_KeyUp" Background="{x:Null}" />
+            <StackPanel Grid.Column="1" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"  Orientation="Horizontal"  >
+                <Button  BorderThickness="1,1,1,1"  Foreground="White" Content="Send" MinWidth="75" Width="Auto" MaxWidth="75"  Click="Button_Click" HorizontalAlignment="Stretch" Background="{x:Null}" />
+                <Button  x:Name="CreateGameButton" BorderThickness="1,1,1,1"  Foreground="White" Content="Create game" MinWidth="85" Width="75" MaxWidth="85" Click="Button_Click_1" HorizontalAlignment="Stretch" Background="{x:Null}"  />
+                <Button  x:Name="GameListButton" BorderThickness="1,1,1,1"  Foreground="White" Content="Games" MinWidth="75" Width="Auto"  MaxWidth="75" Click="Button_Click_2" HorizontalAlignment="Stretch" Background="{x:Null}" />
+            </StackPanel>
+        </Grid>
+
+    </Grid>
+  
+    
+</Window>

@@ -1,0 +1,230 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOGEX 0, 0, 198, 169
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION " Voice Chat - Client"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "C&lose",IDCANCEL,152,151,40,11
+    CONTROL         105,1096,"Static",SS_BITMAP,24,5,133,32,
+                    WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    GROUPBOX        "",1097,15,40,145,59
+    LTEXT           " Server :",1098,20,50,29,10
+    EDITTEXT        IDC_EDIT1,54,49,85,12,ES_AUTOHSCROLL
+    LTEXT           " Port :",1099,20,65,29,9
+    EDITTEXT        IDC_EDIT2,54,63,54,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           " User :",1086,20,78,29,10
+    EDITTEXT        IDC_EDIT3,54,78,54,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Connect",IDC_BUTTON1,111,85,46,11
+    COMBOBOX        IDC_COMBO1,66,59,81,13,CBS_DROPDOWN | CBS_SORT | NOT 
+                    WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Save",IDC_BUTTON2,53,150,42,12
+    LTEXT           " Message  :",1071,14,107,46,12
+    GROUPBOX        "Send To",1075,13,44,146,54,NOT WS_VISIBLE
+    CONTROL         "User",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | NOT 
+                    WS_VISIBLE,27,59,32,10
+    CONTROL         " All",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON | NOT 
+                    WS_VISIBLE,27,74,26,10
+    PUSHBUTTON      "&Volume",IDC_BUTTON3,6,151,40,11
+    CONTROL         "Animate1",IDC_ANIMATE1,"SysAnimate32",WS_BORDER,164,11,
+                    28,25,WS_EX_TRANSPARENT
+    PUSHBUTTON      "&Play",IDC_BUTTON4,102,150,40,12
+    PUSHBUTTON      "S&tart",IDC_BUTTON5,117,78,39,11,NOT WS_VISIBLE
+    PUSHBUTTON      "S&top",IDC_BUTTON6,117,78,39,11,NOT WS_VISIBLE
+    LTEXT           "",6051,24,122,156,21,0,WS_EX_DLGMODALFRAME
+    CONTROL         "Animate2",IDC_ANIMATE2,"SysAnimate32",ACS_CENTER | NOT 
+                    WS_VISIBLE | WS_BORDER | WS_TABSTOP,163,11,29,21
+END
+
+IDD_DIALOG2 DIALOG DISCARDABLE  0, 0, 181, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION " About Voice Chat"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,60,75,50,14
+    LTEXT           "Voice Chat is a Free Software designed by :",2091,66,7,
+                    108,20
+    LTEXT           " Nagareshwar  Y.  Talekar  Karunakar  K.H.                 NITK  College , Surathkal  Karnataka.",
+                    2094,68,29,84,35
+    CONTROL         103,3092,"Static",SS_BITMAP,7,16,48,48
+END
+
+IDD_DIALOG3 DIALOG DISCARDABLE  0, 0, 160, 99
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "  Volume Settings"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,112,78,41,14
+    GROUPBOX        "Recording",4441,21,14,119,28
+    CONTROL         "Slider1",IDC_SLIDER1,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,29,26,105,10
+    GROUPBOX        "Playing",4442,21,48,119,28
+    CONTROL         "Slider1",IDC_SLIDER2,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,30,59,105,10
+END
+
+IDD_DIALOG4 DIALOG DISCARDABLE  0, 0, 186, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION " Save  Voice"
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "&Close",IDCANCEL,129,75,44,13
+    PUSHBUTTON      "&Start",IDC_BUTTON1,7,75,45,13
+    PUSHBUTTON      "S&top",IDC_BUTTON2,68,75,45,13
+    LTEXT           " Filename :",4051,13,7,39,9
+    EDITTEXT        IDC_EDIT1,60,7,98,12,ES_AUTOHSCROLL
+    CONTROL         109,7041,"Static",SS_BITMAP,48,28,85,40
+END
+
+IDD_DIALOG5 DIALOG DISCARDABLE  0, 0, 186, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Broadcast Message"
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "S&top",IDC_BUTTON2,71,66,50,14
+    PUSHBUTTON      "&Start",IDC_BUTTON1,14,66,48,14
+    PUSHBUTTON      " &Close",IDCANCEL,132,66,47,14
+    CONTROL         110,7042,"Static",SS_BITMAP,29,14,111,51
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 192
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 162
+        HORZGUIDE, 65
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 174
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 89
+    END
+
+    IDD_DIALOG3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 153
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 92
+    END
+
+    IDD_DIALOG4, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_DIALOG5, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        VERTGUIDE, 168
+        VERTGUIDE, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "bitmap1.bmp"
+IDB_BITMAP2             BITMAP  DISCARDABLE     "bitmap2.bmp"
+IDB_BITMAP3             BITMAP  DISCARDABLE     "bitmap3.bmp"
+IDB_BITMAP4             BITMAP  DISCARDABLE     "bitmap4.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON    DISCARDABLE     "icon1.ico"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

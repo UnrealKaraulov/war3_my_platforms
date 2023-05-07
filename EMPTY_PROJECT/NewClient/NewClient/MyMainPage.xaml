@@ -1,0 +1,21 @@
+﻿<Window x:Class="NewClient.MyMainPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NewClient"
+        mc:Ignorable="d"
+        Title="Тут будет все" Height="450" Width="800">
+    <Grid>
+        <ListBox Name="ChatBox" HorizontalAlignment="Left" Height="306" Margin="42,32,0,0" VerticalAlignment="Top" Width="446">
+
+        </ListBox>
+        <ListBox Name="ChannelUsers" HorizontalAlignment="Left" Height="303" Margin="552,35,0,0" VerticalAlignment="Top" Width="182"/>
+        <Label Name="Channel" Content="Канал !" HorizontalAlignment="Left" Margin="42,6,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.701,0.197"/>
+        <Label Content="Человеков:" HorizontalAlignment="Left" Margin="552,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.701,0.197"/>
+        <TextBox Name="Message" HorizontalAlignment="Left" Height="35" Margin="42,357,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="446" KeyDown="TextBox_KeyDown"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="511,357,0,0" VerticalAlignment="Top" Width="113" Height="35" Click="Button_Click"/>
+        <Button Content="Button 2" HorizontalAlignment="Left" Margin="656,357,0,0" VerticalAlignment="Top" Width="114" Height="35" Click="Button2_Click"/>
+
+    </Grid>
+</Window>

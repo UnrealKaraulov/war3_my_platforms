@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<options>
+  <option option_id="warcis_maps_for_stats" edit_format="textbox" data_type="string">
+    <default_value/>
+    <relation group_id="warcis_stats_type" display_order="1"/>
+  </option>
+</options>

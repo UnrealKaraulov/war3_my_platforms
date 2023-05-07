@@ -1,0 +1,15 @@
+﻿<html><head>
+<meta charset="utf-8">
+<title>Map uploader</title>
+</head>
+<body bgcolor="Black">
+	<div style="position: absolute; width:70%; left:15%; background-color:BurlyWood;">
+		[INSERTMAPLISTITEMHERE]
+	</div>  
+	<form action="/" method="get">
+	<button style="position:absolute;right:0;bottom:0;" type="submit"><h4>UPLOAD</h4><h4></h4></button>
+	</form>
+	<form action="/maplist" method="get">
+	<button style="position:absolute;left:0;bottom:0;" type="submit"><h4>MAPLIST</h4></button>
+	</form>
+</body></html>

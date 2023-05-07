@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<template_modifications>
+   <modification type="public" template="register_form" modification_key="warcis_register" description="Warcis Nickname Field in Register Page" execution_order="10" enabled="1" action="preg_replace">
+    <find><![CDATA[#<xf:macro template="register_macros" name="email_row"(.*?)/>#s]]></find>
+    <replace><![CDATA[
+			<xf:macro template="register_macros" name="nickname_row"
+				arg-fieldName="{{ $regForm.getFieldName('nickname') }}"
+				arg-value="{$fields.nickname}" />
+$0]]></replace>
+
+  </modification>
+  
+  <modification type="public" template="register_macros" modification_key="warcis_register_macros" description="Warcis Nickname Field in Register Page" execution_order="10" enabled="1" action="preg_replace">
+    <find><![CDATA[#<xf:macro name="email_row"(.*?)</xf:macro>#s]]></find>
+    <replace><![CDATA[<xf:macro name="nickname_row"
+	arg-fieldName="nickname"
+	arg-value=""
+	arg-autoFocus="{{ true }}">
+
+	<xf:textboxrow name="nickname" value="{$value}" autocomplete="off"
+		autofocus="{{ $autoFocus ? 'autofocus' : false }}"
+		maxlength="15"
+		label="{{ phrase('nick_name') }}"
+		explain="{{ phrase('nick_name_label') }}" />
+</xf:macro>
+$0]]></replace> 
+
+ </modification>
+  
+<modification type="public" template="account_visitor_menu" modification_key="warcis_visitor_menu" description="Warcis Nickname Field in Account Page" execution_order="10" enabled="1" action="preg_replace">
+    <find><![CDATA[#<xf:usertitle user(.*?)</div>#s]]></find>
+    <replace><![CDATA[
+	<xf:if is="$xf.visitor.nickname">
+	<a href="{{ link('members', $xf.visitor) }}warcraft"><h3 class="contentRow-header">Warcraft III: {$xf.visitor.nickname}</h3></a>
+	<xf:else />
+	<h3 class="contentRow-header">Warcraft III: NO USERNAME</h3>
+	</xf:if>
+		
+$0]]></replace>  </modification>
+
+<modification type="public" template="member_view" modification_key="warcis_member_view" description="Warcis Nickname Field in Member View Page" execution_order="10" enabled="1" action="preg_replace">
+    <find><![CDATA[#<xf:username user(.*?)/>#s]]></find>
+    <replace><![CDATA[
+	$0
+	<xf:if is="$user.nickname">
+	<a href="{{ link('members', $user) }}warcraft"><h3 class="contentRow-header">Warcraft III: {$user.nickname}</h3></a>
+	<xf:else />
+	<h3 class="contentRow-header">Warcraft III: NO USERNAME</h3>
+	</xf:if>
+
+	]]></replace>  </modification>
+
+
+<modification type="public" template="member_tooltip" modification_key="warcis_member_tooltip" description="Warcis Nickname Field in Member Tooltip Page" execution_order="10" enabled="1" action="preg_replace">
+    <find><![CDATA[#<xf:username user(.*?)/>#s]]></find>
+    <replace><![CDATA[
+	$0
+	<xf:if is="$user.nickname">
+	<a href="{{ link('members', $user) }}warcraft"><h3 class="contentRow-header">Warcraft III: {$user.nickname}</h3></a>
+	<xf:else />
+	<h3 class="contentRow-header">Warcraft III: NO USERNAME</h3>
+	</xf:if>
+	]]></replace>  </modification>
+
+
+<modification type="public" template="account_details" modification_key="warcis_account_details" description="Warcis Nickname Field in account details" execution_order="10" enabled="1" action="preg_replace">
+    <find><![CDATA[#<xf:formrow rowtype="button"(.*?)</xf:formrow>#s]]></find>
+    <replace><![CDATA[
+	
+	<hr class="formRowSep" />
+
+	<xf:if is="$xf.visitor.nickname">
+		<xf:inforow rowtype="confirm">
+		<h3 class="contentRow-header">Warcraft III: {$xf.visitor.nickname}</h3>
+		</xf:inforow>
+	<xf:else />
+		<xf:inforow rowtype="confirm">
+		<h3 class="contentRow-header">Warcraft III: NO USERNAME</h3>
+		</xf:inforow>
+		<xf:textboxrow name="nickname" value="{$xf.visitor.nickname}"
+		maxlength="15"
+		label="{{ phrase('nick_name') }}"
+		explain="{{ phrase('bad_nickname') }}" />
+	</xf:if>
+	<hr class="formRowSep" />
+	
+	$0
+	]]></replace>  </modification>
+
+	<!--<modification type="public" template="PAGE_CONTAINER" modification_key="warcis_additional_actions" description="Add admin actions to forum header" execution_order="10" enabled="1" action="preg_replace">
+    <find><![CDATA[#<div class="p-staffBar">(.*?)moderator_tools(.*?)</h4>#s]]></find>
+    <replace><![CDATA[$0
+	<xf:if is="$xf.visitor.is_moderator">
+		<a href="/index.php?map-list/update" class="menu-linkRow" title="Update map list">Force update maps</a>
+	</xf:if>
+	<xf:if is="$xf.visitor.is_moderator">
+		<a href="/index.php?members/recreateallaccounts" class="menu-linkRow" title="Recreate all accounts!">Recreate accounts</a>
+	</xf:if>
+	]]></replace>  </modification>-->
+
+
+
+
+</template_modifications>

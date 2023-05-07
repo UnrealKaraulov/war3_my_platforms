@@ -1,0 +1,17 @@
+.msg_container {
+    color:  #000;
+     font-size: 15px;
+    font-family: Calibri, Verdana;
+}
+
+.msg_container .time {
+    color: #555;
+}
+
+.msg_container .author{
+    font-weight: bold; 
+}
+
+.msg_container .message{
+    color: #555;
+}

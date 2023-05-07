@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2016
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RichTextBlockSample", "RichTextBlockSample.csproj", "{01E1D2F7-EB95-45A4-92CE-1DCE0097E5DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp1", "WpfApp1\WpfApp1.csproj", "{B07F0A52-FDA8-4B88-B7D3-06DCA24C9AC5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{01E1D2F7-EB95-45A4-92CE-1DCE0097E5DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01E1D2F7-EB95-45A4-92CE-1DCE0097E5DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01E1D2F7-EB95-45A4-92CE-1DCE0097E5DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01E1D2F7-EB95-45A4-92CE-1DCE0097E5DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B07F0A52-FDA8-4B88-B7D3-06DCA24C9AC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B07F0A52-FDA8-4B88-B7D3-06DCA24C9AC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B07F0A52-FDA8-4B88-B7D3-06DCA24C9AC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B07F0A52-FDA8-4B88-B7D3-06DCA24C9AC5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DC344480-53E2-4903-8A5C-B9C1A27F5D27}
+	EndGlobalSection
+EndGlobal

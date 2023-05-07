@@ -1,0 +1,39 @@
+<html><title>Warcis wc3 map upload</title><head></head><body>
+
+
+<div><a href="PrintMapList.php"><font size="5">Show maplist</font></a>
+</div> <div>.</div> <div>.</div>
+<form action="MapUpload.php" method="post" enctype="multipart/form-data">
+	
+    <div>Select map file to upload:</div>
+    <input type="file" name="fileToUpload" id="fileToUpload" accept=".w3x,.w3m">
+	<div>Or URL</div>
+	<input type="text" name="URLADDR" />
+    <div>Enter code for host (pattern="[-_A-Za-z0-9]+"):</div>
+	<input type="text" value="Enter code here" name="hostcode"  pattern="[-_A-Za-z0-9]{2,20}">
+	<div>Select map category: Anime | Moba | ...
+	<select name="mapCategory">
+		<option value="Other">Other</option>
+		<option value="Melee">Melee</option>
+		<option value="Hero_Defense">Hero Defense</option>
+		<option value="Hero_Arena">Hero Arena</option>
+		<option value="Tower_Defense">Tower Defense</option>
+		<option value="Castle_Defense">Tower Defense (Survivor)</option>
+		<option selected value="MOBA">MOBA</option>
+		<option value="RPG">Role Playing (RPG)</option>
+		<option value="Anime">Anime</option>
+		<option value="Escape">Escape</option>
+	</select>
+	</div>
+	<div>Press button for upload map to server and bots:</div>
+	<input type="submit" value="Upload Map" name="submit">
+	<div>Enter code for map update:(len>6 only digitals, доступны только цифры)</div>
+	<input type="text" name="UpdateCode"  pattern="[0-9]{6,30}" />
+	<div><div>.</div> <div>.</div> <div>.</div> <div>.</div> <div>.</div> Enter secret map upload code for upload maps with memhack:</div>
+	<input type="text" name="SECRETCODE"  pattern="[A-Za-z0-9]+" />
+</form>
+</body>
+</html>
+
+
+</body></html>

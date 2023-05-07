@@ -1,0 +1,84 @@
+==============================
+GHost++ Custom Build Changelog
+==============================
+Version 3.7 (xxxx-xx-xx)
+Based on GHost++ 17.1 (rev ?)
+ - added command aliases for !statsdota (!dotastats, !sd, !ds) and !stats (!s)
+
+Version 3.6 (2010-06-09)
+Based on GHost++ 17.1 (rev 512)
+ - updated ghost dynamic configurator
+ - modified game refresh using code from Fire86 (http://codelain.com/forum/index.php?topic=11373.msg88767#msg88767)
+ - added SmokeMonster's GHost Curses mod (by Destroya03)
+ - Fixed rehost bug with AutoSetHCL (by Destroya03)
+ - All changes from the forums thanks to DantX (by Destroya03)
+
+Version 3.5 (2010-04-07)
+Based on GHost++ 17.0 (rev 419)
+ - changed the bot_usenormalcountdown default to avoid problems with the !start command
+ - updated to GHost++ rev 408
+ - updated readme.txt
+ - ghost.cfg is now default.cfg, ghost.cfg will overwrite all values that are also in default.cfg.
+ - set default.cfg to read only.
+ - applied update by HardwareBug to ghost dynamic configurator (v1.2)
+ - removed changes from r37
+ - updated to GHost++ rev 419
+    - there are new config values for maps which may break old configurations, read the included map config for more inforamtion.
+ - added a blank template map config file "#template.cfg"
+ 
+Version 3.4 (2010-03-18)
+Based on GHost++ 17.0 (rev 402)
+ - updated to GHost revision 402
+	- added new config value bnet*_locale
+
+Version 3.3 (2010-03-13)
+Based on GHost++ 17.0 (rev 401)
+ - updated to GHost++ 17.0, plus added modifications not yet released by Varlock:
+	- the bot now sends chat messages from the fake player if one exists
+	- fixed a bug where GProxy++ users would desync upon reconnection when load-in-game was enabled
+
+Version 3.3 (xxxx-xx-xx)
+Based on GHost++ 16.2 (rev 384)
+ - added support for $BOTNAME$ in motd.txt (by Shade0o)
+ - confirmed fix for the !start command displaying 'countdown aborted' when starting, fixed a problem with it not starting at all
+ - reverted code that affected the admin game creation back to original ghost code
+ - added support for 'no password' in admin game (no login required)
+ 
+Version 3.2 (2010-01-05)
+Based on GHost++ 16.2 (rev 384)
+ - removed the WTV addon due to linux incompatibility
+ - added feature to reset allow/disallow downloads after a game starts (suggested by Alex)
+ - added feature to hide all admin commands, semi-reintegration [ghost.cfg - bot_hideadmincommands]
+ - added ghost.cfg value [bot_whisperresponses]
+ - added feature to disable admingame password (mostly by Smaug)
+ - modified bot_banmethod when it is set to 1, it will also warn when a player joins who has a banned IP address.
+
+Version 3.1 (2009-11-27)
+Based on GHost++ 16.2 (rev 384)
+ - reworked the LAN admins options, improved detection
+ - optimized the !start command.  Now works similar to !autostart #
+
+Version 3.0 (2009-11-26)
+Based on GHost++ 16.2 (rev 384)
+ - added ghost.cfg value [bot_lanadmins]
+ - added !emote by Shade0o
+ - tweaked the !say command to restrict using battle.net commands "/" unless root_admin, submitted by Shade0o.
+ - added !start now (alias to !startn) suggested by Shade0o.
+ - added the standard WC3 countdown by Damianakos & Varlock.
+
+Version 3.0 Beta (2009-11-20)
+ - added !startn
+*note* all custom commands that are added are marked in the comment text as " *(GCBC)* " for GHost Custom Build Commmand.
+ - added the From Country Enforcer by Vunutus
+ - added Map HCL Rotation by disturbed_oc 
+ - added motd improvements by Shade0o
+ - added the auto-detect dota map type feature by Instinct121, Senkin, and AlienLifeForm
+ 
+ 
+Version 3.0 Alpha (2009-11-19)
+ - removed all custom modifications, updated to GHost++ 16.2 (rev 384)
+ - Somewhat a misleading version, because code has been reset to GHost++ 16.2, and previous additions are added from this point on.
+
+
+Version 2.7 (2009-09-13)
+ - Located in the old repository: http://ghostcustom.googlecode.com

@@ -1,0 +1,166 @@
+Index: ghost/game_base.cpp
+===================================================================
+--- ghost/game_base.cpp	(revision 536)
++++ ghost/game_base.cpp	(working copy)
+@@ -458,6 +458,7 @@
+ 		// see the !sendlan code later in this file for some more information about how this works
+ 		// todotodo: should we send a game cancel message somewhere? we'll need to implement a host counter for it to work
+ 
++
+ 		if( !m_CountDownStarted )
+ 		{
+ 			// construct a fixed host counter which will be used to identify players from this "realm" (i.e. LAN)
+@@ -475,23 +476,59 @@
+ 
+ 				uint32_t MapGameType = MAPGAMETYPE_SAVEDGAME;
+ 				BYTEARRAY MapWidth;
+-				MapWidth.push_back( 0 );
+-				MapWidth.push_back( 0 );
+ 				BYTEARRAY MapHeight;
+-				MapHeight.push_back( 0 );
+-				MapHeight.push_back( 0 );
+-				m_GHost->m_UDPSocket->Broadcast( 6112, m_Protocol->SEND_W3GS_GAMEINFO( m_GHost->m_TFT, m_GHost->m_LANWar3Version, UTIL_CreateByteArray( MapGameType, false ), m_Map->GetMapGameFlags( ), MapWidth, MapHeight, m_GameName, "Varlock", GetTime( ) - m_CreationTime, "Save\\Multiplayer\\" + m_SaveGame->GetFileNameNoPath( ), m_SaveGame->GetMagicNumber( ), 12, 12, m_HostPort, FixedHostCounter ) );
++				if ( m_GHost->m_Reconnect )
++				{
++					MapWidth.push_back( 192 );
++					MapWidth.push_back( 7 );
++
++					MapHeight.push_back( 192 );
++					MapHeight.push_back( 7 );
++				}
++				else
++				{
++					MapWidth.push_back( 0 );
++					MapWidth.push_back( 0 );
++
++					MapHeight.push_back( 0 );
++					MapHeight.push_back( 0 );
++				}
++
++				BYTEARRAY data = m_Protocol->SEND_W3GS_GAMEINFO( m_GHost->m_TFT, m_GHost->m_LANWar3Version, UTIL_CreateByteArray( MapGameType, false ), m_Map->GetMapGameFlags( ), MapWidth, MapHeight, m_GameName, "Varlock", GetTime( ) - m_CreationTime, "Save\\Multiplayer\\" + m_SaveGame->GetFileNameNoPath( ), m_SaveGame->GetMagicNumber( ), 12, 12, m_HostPort, FixedHostCounter );
++				m_GHost->m_UDPSocket->Broadcast( 6112, data );
++				for(vector<CTCPSocket * >::iterator i = m_GHost->m_GameBroadcasters.begin( ); i!= m_GHost->m_GameBroadcasters.end( ); i++ )
++				{
++					(*i)->PutBytes( data );
++				}
+ 			}
+ 			else
+ 			{
+ 				// note: the PrivateGame flag is not set when broadcasting to LAN (as you might expect)
+ 				// note: we do not use m_Map->GetMapGameType because none of the filters are set when broadcasting to LAN (also as you might expect)
++				uint32_t MapGameType = MAPGAMETYPE_UNKNOWN0;
++				BYTEARRAY MapWidth;
++				BYTEARRAY MapHeight;
++				if ( m_GHost->m_Reconnect )
++				{
++					MapWidth.push_back( 192 );
++					MapWidth.push_back( 7 );
+ 
+-				uint32_t MapGameType = MAPGAMETYPE_UNKNOWN0;
+-				m_GHost->m_UDPSocket->Broadcast( 6112, m_Protocol->SEND_W3GS_GAMEINFO( m_GHost->m_TFT, m_GHost->m_LANWar3Version, UTIL_CreateByteArray( MapGameType, false ), m_Map->GetMapGameFlags( ), m_Map->GetMapWidth( ), m_Map->GetMapHeight( ), m_GameName, "Varlock", GetTime( ) - m_CreationTime, m_Map->GetMapPath( ), m_Map->GetMapCRC( ), 12, 12, m_HostPort, FixedHostCounter ) );
++					MapHeight.push_back( 192 );
++					MapHeight.push_back( 7 );
++				}
++				else
++				{
++					MapWidth = m_Map->GetMapWidth( );
++					MapHeight = m_Map->GetMapHeight( );
++				}
++				BYTEARRAY data = m_Protocol->SEND_W3GS_GAMEINFO( m_GHost->m_TFT, m_GHost->m_LANWar3Version, UTIL_CreateByteArray( MapGameType, false ), m_Map->GetMapGameFlags( ), MapWidth, MapHeight, m_GameName, "Varlock", GetTime( ) - m_CreationTime, m_Map->GetMapPath( ), m_Map->GetMapCRC( ), 12, 12, m_HostPort, FixedHostCounter );
++				m_GHost->m_UDPSocket->Broadcast( 6112, data );
++				for(vector<CTCPSocket * >::iterator i = m_GHost->m_GameBroadcasters.begin( ); i!= m_GHost->m_GameBroadcasters.end( ); i++ )
++				{
++					(*i)->PutBytes( data );
++				}
+ 			}
+ 		}
+-
+ 		m_LastPingTime = GetTime( );
+ 	}
+ 
+Index: ghost/ghost.cpp
+===================================================================
+--- ghost/ghost.cpp	(revision 536)
++++ ghost/ghost.cpp	(working copy)
+@@ -678,6 +678,14 @@
+ 	else
+ 		m_AdminGame = NULL;
+ 
++		// create the listening socket for broadcasters;
++	
++	int Port = CFG->GetInt("bot_broadcasters_port", 6969 );
++	m_GameBroadcastersListener = new CTCPServer( );
++	m_GameBroadcastersListener->Listen( string( ),Port );
++	CONSOLE_Print( "[GHOST] Listening for game broadcasters on port [" + UTIL_ToString( Port ) +"]" );
++
++
+ 	if( m_BNETs.empty( ) && !m_AdminGame )
+ 		CONSOLE_Print( "[GHOST] warning - no battle.net connections found and no admin game created" );
+ 
+@@ -880,7 +888,21 @@
+ 		(*i)->SetFD( &fd, &send_fd, &nfds );
+ 		NumFDs++;
+ 	}
++	// 6. the Game Broadcasters
++	for(vector<CTCPSocket * >::iterator i = m_GameBroadcasters.begin( ); i!= m_GameBroadcasters.end( ); i++ )
++	{
++		if ( (*i)->GetConnected( ) && !(*i)->HasError( ) )
++		{
++			(*i)->SetFD( &fd, &send_fd, &nfds );
++			NumFDs++;
++		}
++	}
+ 
++	// 7. the listener for game broadcasters
++	m_GameBroadcastersListener->SetFD( &fd, &send_fd,&nfds );
++	NumFDs++;
++
++
+ 	// before we call select we need to determine how long to block for
+ 	// previously we just blocked for a maximum of the passed usecBlock microseconds
+ 	// however, in an effort to make game updates happen closer to the desired latency setting we now use a dynamic block interval
+@@ -1171,6 +1193,31 @@
+ 		m_LastAutoHostTime = GetTime( );
+ 	}
+ 
++	CTCPSocket *NewSocket = m_GameBroadcastersListener->Accept( &fd );
++	if ( NewSocket )
++	{
++		m_GameBroadcasters.push_back( NewSocket );
++		CONSOLE_Print("[GHOST] Game Broadcaster [" + NewSocket->GetIPString( ) +"] connected" );
++		//BYTEARRAY info;
++	 //   UTIL_AppendByteArray( info, m_AdminGamePort,false );
++		//UTIL_AppendByteArray( info, m_HostPort, false );
++		//NewSocket->PutBytes( info );
++	}
++	for(vector<CTCPSocket * >::iterator i = m_GameBroadcasters.begin( ); i!= m_GameBroadcasters.end( ); )
++	{
++		if ( (*i)->HasError( ) || !(*i)->GetConnected( ) )
++		{
++			CONSOLE_Print("[GHOST] Game Broadcaster [" + (*i)->GetIPString( ) +"] disconnected");
++			delete *i;
++			i = m_GameBroadcasters.erase( i );
++			continue;
++		}
++		//(*i)->DoRecv( &fd );
++		(*i)->DoSend( &send_fd );
++		i++;
++	}
++
++
+ 	return m_Exiting || AdminExit || BNETExit;
+ }
+ 
+Index: ghost/ghost.h
+===================================================================
+--- ghost/ghost.h	(revision 536)
++++ ghost/ghost.h	(working copy)
+@@ -133,6 +133,8 @@
+ 	uint32_t m_ReplayBuildNumber;			// config value: replay build number (for saving replays)
+ 	bool m_TCPNoDelay;						// config value: use Nagle's algorithm or not
+ 	uint32_t m_MatchMakingMethod;			// config value: the matchmaking method
++	CTCPServer *m_GameBroadcastersListener; // listening socket for game broadcasters
++	vector<CTCPSocket *> m_GameBroadcasters;// vector of sockets that broadcast the games
+ 
+ 	CGHost( CConfig *CFG );
+ 	~CGHost( );

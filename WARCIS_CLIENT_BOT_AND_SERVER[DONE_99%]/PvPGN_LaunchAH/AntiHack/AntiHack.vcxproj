@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B5A4F019-3B66-4F22-97A6-F42986FC7EAD}</ProjectGuid>
+    <RootNamespace>AntiHack</RootNamespace>
+    <WindowsTargetPlatformVersion>7.0</WindowsTargetPlatformVersion>
+    <ProjectName>AMH</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>.\..\Release;.\..\MinHook;.\..\JPEG;.\..\..\DreamDota\Public Release;.\..\;.\..\StormLib\bin\stormlib_dll\win32\release;.\..\pa_snapshot\portaudio\build\msvc\Win32\Release;$(LibraryPath)</LibraryPath>
+    <IncludePath>.\..\..\DreamDota\Library\include\;.\..\..\DreamDota\DreamWarcraft;.\..\MinHook;.\..\JPEG;.\..\StormLib\src;.\..\imagestone\lib\;.\..\pa_snapshot\portaudio\include\;.\..\d3d8to9\;$(IncludePath)</IncludePath>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+    <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Custom</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_NDEBUG;_USING_V110_SDK71_;_HAS_EXCEPTIONS=0;_HAS_AUTO_PTR_ETC=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <OmitFramePointers>false</OmitFramePointers>
+      <FloatingPointModel>
+      </FloatingPointModel>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <LanguageStandard>
+      </LanguageStandard>
+      <CallingConvention>VectorCall</CallingConvention>
+      <StringPooling>false</StringPooling>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ControlFlowGuard>Guard</ControlFlowGuard>
+      <FloatingPointExceptions>true</FloatingPointExceptions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>Source.def</ModuleDefinitionFile>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SetChecksum>
+      </SetChecksum>
+      <SectionAlignment>
+      </SectionAlignment>
+      <TurnOffAssemblyGeneration>
+      </TurnOffAssemblyGeneration>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateMapFile>true</GenerateMapFile>
+      <AdditionalDependencies>version.lib;d3d8.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImageHasSafeExceptionHandlers>
+      </ImageHasSafeExceptionHandlers>
+      <HeapReserveSize>8388608</HeapReserveSize>
+      <HeapCommitSize>409600</HeapCommitSize>
+      <StackReserveSize>8388608</StackReserveSize>
+      <StackCommitSize>409600</StackCommitSize>
+    </Link>
+    <PostBuildEvent>
+      <Command>::signtool sign /f ./../WarcisRoot.pfx /p Venmade1Warcis2Cert3 /t http://timestamp.globalsign.com/scripts/timstamp.dll $(SolutionDir)$(Configuration)\$(ProjectName).dll</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Antihack.cpp" />
+    <ClCompile Include="bcrypt.c" />
+    <ClCompile Include="BlpReadWrite.cpp" />
+    <ClCompile Include="ChatHelper.cpp" />
+    <ClCompile Include="CheckFileSign.cpp" />
+    <ClCompile Include="commandpacket.cpp" />
+    <ClCompile Include="crc32.cpp" />
+    <ClCompile Include="CustomFeatures.cpp" />
+    <ClCompile Include="DotaMPBarHelper.cpp" />
+    <ClCompile Include="gameprotocol.cpp" />
+    <ClCompile Include="NewJassNatives.cpp" />
+    <ClCompile Include="quantizer.cpp" />
+    <ClCompile Include="Spammmm.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Storm.cpp" />
+    <ClCompile Include="tga_reader.c" />
+    <ClCompile Include="UnitAndItem.cpp" />
+    <ClCompile Include="VoiceClient.cpp" />
+    <ClCompile Include="WarcraftFrameHelper.cpp" />
+    <ClCompile Include="warcis_reconnector.cpp" />
+    <ClCompile Include="gpsprotocol.cpp" />
+    <ClCompile Include="SimpleCrash.cpp" />
+    <ClCompile Include="socket.cpp" />
+    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="util.cpp" />
+    <ClCompile Include="xxhash.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Source.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Antihack.h" />
+    <ClInclude Include="bcrypt.h" />
+    <ClInclude Include="BlpReadWrite.h" />
+    <ClInclude Include="buffer.h" />
+    <ClInclude Include="commandpacket.h" />
+    <ClInclude Include="crc32.h" />
+    <ClInclude Include="CustomFeatures.h" />
+    <ClInclude Include="FunctionTemplate.h" />
+    <ClInclude Include="gameprotocol.h" />
+    <ClInclude Include="quantizer.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Storm.h" />
+    <ClInclude Include="tga_reader.h" />
+    <ClInclude Include="tclWinPort.h" />
+    <ClInclude Include="voiceheaders.h" />
+    <ClInclude Include="warcis_reconnector.h" />
+    <ClInclude Include="gpsprotocol.h" />
+    <ClInclude Include="ms_stdint.h" />
+    <ClInclude Include="SimpleCrash.h" />
+    <ClInclude Include="socket.h" />
+    <ClInclude Include="util.h" />
+    <ClInclude Include="WarcraftFrameHelper.h" />
+    <ClInclude Include="xxhash.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="C:\Projects\pvpgn-magic\PvPGN_LaunchAH\packages\CrashRpt.CPP.2.0.18.0\build\native\CrashRpt.CPP.targets" Condition="Exists('C:\Projects\pvpgn-magic\PvPGN_LaunchAH\packages\CrashRpt.CPP.2.0.18.0\build\native\CrashRpt.CPP.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Данный проект ссылается на пакеты NuGet, отсутствующие на этом компьютере. Используйте восстановление пакетов NuGet, чтобы скачать их.  Дополнительную информацию см. по адресу: http://go.microsoft.com/fwlink/?LinkID=322105. Отсутствует следующий файл: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('C:\Projects\pvpgn-magic\PvPGN_LaunchAH\packages\CrashRpt.CPP.2.0.18.0\build\native\CrashRpt.CPP.targets')" Text="$([System.String]::Format('$(ErrorText)', 'C:\Projects\pvpgn-magic\PvPGN_LaunchAH\packages\CrashRpt.CPP.2.0.18.0\build\native\CrashRpt.CPP.targets'))" />
+  </Target>
+</Project>

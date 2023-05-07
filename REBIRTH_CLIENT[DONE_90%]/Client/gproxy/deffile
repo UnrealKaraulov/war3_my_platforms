@@ -1,0 +1,17 @@
+LIBRARY
+EXPORTS
+InitializeClientProxy
+LoginStatus
+ResetLoginStatus
+JoinChannelCommand
+GetLogData
+SendClientPacket
+SetVars
+ProcessCommand
+SetCommandsCallback
+Renew
+TerminateProxy
+readblp
+LogMessage
+GetFileChecksum
+AddFakeGame

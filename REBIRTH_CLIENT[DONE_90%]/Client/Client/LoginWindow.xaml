@@ -1,0 +1,41 @@
+﻿<Window
+    xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+        x:Class="Client.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:local="clr-namespace:Client"
+        mc:Ignorable="d"
+        Loaded="MetroWindow_Loaded"
+        Closed="MetroWindow_Closed"
+        Title="Log in Rebirth " Height="393"  Width="256" 
+        WindowStartupLocation="CenterScreen"  
+        ResizeMode="NoResize" 
+        BorderThickness="0" 
+        UseLayoutRounding="False"                         
+        ShowActivated="True" 
+        >
+    <Window.Background>
+        <ImageBrush Stretch="Fill" ImageSource="Resources/LoginPage_Background.png" />
+    </Window.Background>
+    <Grid ScrollViewer.VerticalScrollBarVisibility="Disabled">
+        <TextBox  Name="UsernameInput" HorizontalAlignment="Left" Height="26" Margin="46,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="169" BorderThickness="0" ClipToBounds="True" TextChanged="UsernameInput_TextChanged" Background="#FF232323" Foreground="White"/>
+        <PasswordBox Name="PasswordInput" HorizontalAlignment="Left" Margin="46,135,0,0" VerticalAlignment="Top" Width="169" Height="26" BorderThickness="0" ClipToBounds="True" PasswordChanged="PasswordInput_PasswordChanged" Background="#FF2E2E2E" Foreground="White" />
+        <Button Name="LoginWindowLoginButton" Content="Login" HorizontalAlignment="Left" Margin="25,252,0,0" VerticalAlignment="Top" Width="101" RenderTransformOrigin="0.508,-0.161" Click="Button_Click" Height="27" Background="#FF2F2F2F" BorderThickness="0" ClipToBounds="True" Foreground="White"/>
+        <Button Name="LoginWindowSettingsButton" Content="Settings" HorizontalAlignment="Left" Margin="140,252,0,0" VerticalAlignment="Top" Width="97" RenderTransformOrigin="0.508,-0.161" Click="Button_Click_2"  Height="27" Background="#FF2F2F2F" BorderThickness="0" ClipToBounds="True" Foreground="White"/>
+        <Label Name="LoginWindowUsernameLabel" Content="Username" HorizontalAlignment="Left" Margin="46,53,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label Name="LoginWindowPasswordLabel" Content="Password" HorizontalAlignment="Left" Margin="46,111,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label Name="LoginWindowVersionLabel" Content="Version 15" HorizontalAlignment="Left" Margin="10,333,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label Name="PlatformLabel" Content="Rebirth!" HorizontalAlignment="Center"  VerticalAlignment="Top" FontSize="20" FontStretch="UltraExpanded" TextOptions.TextFormattingMode="Display" TextOptions.TextHintingMode="Animated" HorizontalContentAlignment="Center" FontWeight="ExtraBlack" Width="236" FontStyle="Italic" Background="#00000000" Foreground="#FFFF9700"/>
+        <CheckBox  Name="LoginWindowRememberCheckbox" Content="Save password" HorizontalAlignment="Left" Margin="60,177,0,0" VerticalAlignment="Top" Checked="LoginWindowRememberCheckbox_Checked"   Unchecked="LoginWindowRememberCheckbox_Checked" />
+
+        <ComboBox Name="LoginWindowRegionChange" HorizontalAlignment="Center" Margin="10,212,10,0" VerticalAlignment="Top" Width="236" SelectionChanged="LoginWindowRegionChange_SelectionChanged" Foreground="White" >
+  
+        </ComboBox>
+        <Button Name="LoginWindowRegisterButton" Content="Register" HorizontalAlignment="Left" Margin="25,284,0,0" VerticalAlignment="Top" Width="101" RenderTransformOrigin="0.508,-0.161" Click="RegisterButtonClick" Height="27" Background="#FF2F2F2F" BorderThickness="0" ClipToBounds="True" Foreground="White"/>
+        <Button Name="LoginWindowWebsiteButton" Content="WEBSITE" HorizontalAlignment="Left" Margin="140,284,0,0" VerticalAlignment="Top" Width="97" RenderTransformOrigin="0.508,-0.161" Click="WebsiteButtonClick" Height="27" Background="#FF2F2F2F" BorderThickness="0" ClipToBounds="True" Foreground="White"/>
+    </Grid>
+    
+</Window >

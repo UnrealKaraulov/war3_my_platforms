@@ -1,0 +1,67 @@
+﻿<html>
+<head>
+<meta charset="utf-8"/>
+<title>Map uploader</title>
+</head>
+<body bgcolor="DimGray">
+	<div style="width:55%; margin:0 auto;background-color:DarkKhaki;">
+	<form enctype="multipart/form-data" method="post" action="/uploadmap">
+			<div>
+			<h2 align="center">Map uploader</h2>
+			<p align="center">Выберите жанр для карты. Введите пароль для обновления/удаления.</p>
+			</div>						
+			<ul>
+				<label>Жанр</label>
+				<div>
+				<select name="mapcategory" > 
+					<option value="RPG (Roleplay)" selected disabled hidden>RPG (Roleplay)</option>
+					<option value="RPG (Roleplay)">RPG (Roleplay)</option>
+					<option value="Strategy">Strategy</option>
+					<option value="AoS (MOBA)">AoS (MOBA)</option>
+					<option value="Castle Defense">Castle Defense</option>
+					<option value="Hero Defense">Hero Defense</option>
+					<option value="Hero Arena">Hero Arena</option>
+					<option value="Tag">Tag</option>
+					<option value="Tower Defense">Tower Defense</option>
+					<option value="Tower Wars">Tower Wars</option>
+					<option value="Mini-Game/Sport">Mini-Game/Sport</option>
+					<option value="Survival">Survival</option>
+					<option value="Anime">Anime</option>
+					<option value="Offense">Offense</option>
+					<option value="Escape">Escape</option>
+					<option value="Melee">Melee</option>
+					<option value="Other/misc">Other/misc</option>
+				</select><small> -- - - - Выберите жанр для загружаемой карты!</small> 	
+				</div>
+					<br></br>
+					<br></br>
+				<label>Выберите w3x или w3m файл карты</label>
+				<div>
+					<input type="file" name="file" accept=".w3x,.w3m" value="Select map file">
+				</div>  
+					<br></br>
+				<label>Пароль для удаления/обновления карты</label>
+				<div>
+				<input name="mapuploadpassword" type="text" maxlength="255" value=""> <small> - - Введите пароль для вашей карты. Вы сможете удалить или обновить ее в любое время!</small>
+				</div>
+				<input type="checkbox" name="haspatches" value="Upload map">
+				<label>Требуется ли установка патчей для игры?</label>
+				<br></br>
+				<input type="submit" name="submit" value="Upload map">
+				<br></br>
+				<br></br>
+				<br></br>
+				<label>Если карта содержит MemHack введите секретный пароль </label>
+				<div>
+					<input  name="memhackuploadpassword" type="text" maxlength="255" value=""> 
+				</div><p><small>Секретный пароль знают только знающие секретный пароль!</small></p> 
+			</ul>
+	</form>	
+	</div>  
+	<form action="/" method="get">
+	<button style="position:absolute;right:0;bottom:0;" type="submit" formaction="/"><small>ENGLISH/АНГЛИЙСКИЙ</small></button>
+	</form>
+	<form action="/" method="get">
+	<button style="position:absolute;left:0;bottom:0;" type="submit" formaction="/maplist"><h3>СПИСОК КАРТ</h3></button>
+	</form>
+</body></html>

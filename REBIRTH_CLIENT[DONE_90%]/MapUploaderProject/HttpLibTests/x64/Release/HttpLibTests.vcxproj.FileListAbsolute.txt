@@ -1,0 +1,2 @@
+C:\Projects\AnotherWarcraftServer\MapUploaderProject\x64\Release\HttpLibTests.exe.lastcodeanalysissucceeded
+c:\Projects\AnotherWarcraftServer\MapUploaderProject\HttpLibTests\x64\Release\NativeCodeAnalysis.read.1.tlog

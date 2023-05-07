@@ -1,0 +1,25 @@
+You are currently running PvPGN 1.99.7.1.1-PRO
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+If you need support:
+ * Create an issue at https://github.com/pvpgn/pvpgn-server
+
+Server is now running.
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Added new server:163.172.212.176 with login:venblog_gh2 and port : 5406
+connecting to database server
+connected
+Load Games Duration Stats..
+game duration found! row size:2
+Added game with rank:1. Duration:51
+Added game with rank:1. Duration:63
+Added game with rank:1. Duration:32
+Added game with rank:1. Duration:26
+Added game with rank:1. Duration:44
+Added game with rank:1. Duration:54
+gameid 29 found
+Player list:
+Player:test2, left:591, rating:1165
+(Scourge)
+Player:unryze, left:595(new player), rating:1043
+(Sentinel)
+ Game time (full) :595 ---   Game time (ingame) :476

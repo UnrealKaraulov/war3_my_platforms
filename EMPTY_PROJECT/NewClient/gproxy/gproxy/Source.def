@@ -1,0 +1,8 @@
+LIBRARY
+EXPORTS
+InitializeW3Proxy
+GetLoginStatus
+RegisterNewAccount
+SetCmdCallback
+SendServerChatMessage
+

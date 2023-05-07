@@ -1,0 +1,13 @@
+Warcis Gaming Chat Help Commands
+
+Game hosting:
+
+/maplist - map list
+/host [mapcode] [args] - host game
+example: /host dota 5x5 ap go go , create game dota map, with player count: 5x5 ,  ap mode, and go go name
+
+
+Check stats:
+/cstats [mapcode] [username] - show stats for map
+
+For show commands enter /help

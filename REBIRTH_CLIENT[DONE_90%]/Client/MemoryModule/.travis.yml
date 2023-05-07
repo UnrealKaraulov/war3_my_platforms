@@ -1,0 +1,98 @@
+sudo: true
+
+matrix:
+  include:
+    - env: PLATFORM=x86_64 UNICODE=  CMAKE=
+      addons:
+        apt:
+          packages:
+            - binutils-mingw-w64-x86-64
+            - mingw-w64-x86-64-dev
+            - g++-mingw-w64-x86-64
+            - gcc-mingw-w64-x86-64
+            - wine:amd64
+    - env: PLATFORM=i686   UNICODE=  CMAKE=
+      addons:
+        apt:
+          packages:
+            - binutils-mingw-w64-i686
+            - mingw-w64-i686-dev
+            - g++-mingw-w64-i686
+            - gcc-mingw-w64-i686
+            - wine:i386
+    - env: PLATFORM=x86_64 UNICODE=1 CMAKE=
+      addons:
+        apt:
+          packages:
+            - binutils-mingw-w64-x86-64
+            - mingw-w64-x86-64-dev
+            - g++-mingw-w64-x86-64
+            - gcc-mingw-w64-x86-64
+            - wine:amd64
+    - env: PLATFORM=i686   UNICODE=1 CMAKE=
+      addons:
+        apt:
+          packages:
+            - binutils-mingw-w64-i686
+            - mingw-w64-i686-dev
+            - g++-mingw-w64-i686
+            - gcc-mingw-w64-i686
+            - wine:i386
+    - env: PLATFORM=x86_64 UNICODE=  CMAKE=1
+      addons:
+        apt:
+          packages:
+            - binutils-mingw-w64-x86-64
+            - mingw-w64-x86-64-dev
+            - g++-mingw-w64-x86-64
+            - gcc-mingw-w64-x86-64
+            - wine:amd64
+    - env: PLATFORM=i686   UNICODE=  CMAKE=1
+      addons:
+        apt:
+          packages:
+            - binutils-mingw-w64-i686
+            - cmake
+            - mingw-w64-i686-dev
+            - g++-mingw-w64-i686
+            - gcc-mingw-w64-i686
+            - wine:i386
+    - env: PLATFORM=x86_64 UNICODE=1 CMAKE=1
+      addons:
+        apt:
+          packages:
+            - binutils-mingw-w64-x86-64
+            - cmake
+            - mingw-w64-x86-64-dev
+            - g++-mingw-w64-x86-64
+            - gcc-mingw-w64-x86-64
+            - wine:amd64
+    - env: PLATFORM=i686   UNICODE=1 CMAKE=1
+      addons:
+        apt:
+          packages:
+            - binutils-mingw-w64-i686
+            - cmake
+            - mingw-w64-i686-dev
+            - g++-mingw-w64-i686
+            - gcc-mingw-w64-i686
+            - wine:i386
+
+language: cpp
+
+cache:
+  - apt
+  - ccache
+
+before_script:
+  - if [ ! -z "$CMAKE" ]; then cmake -DPLATFORM=$PLATFORM -DUNICODE=$UNICODE -DTESTSUITE=ON -H. -B.; fi
+
+script:
+  - if [ -z "$CMAKE" ]; then make PLATFORM=$PLATFORM UNICODE=$UNICODE; fi
+  - if [ -z "$CMAKE" ]; then make test PLATFORM=$PLATFORM UNICODE=$UNICODE; fi
+  - if [ ! -z "$CMAKE" ]; then cmake --build .; fi
+  - cd example/DllLoader
+  - ../../tests/runwine.sh $PLATFORM ./DllLoader.exe
+  - ../../tests/runwine.sh $PLATFORM ./DllLoaderLoader.exe
+  - cd ../../tests
+  - ./runwine.sh $PLATFORM ./TestSuite.exe

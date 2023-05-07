@@ -1,0 +1,24 @@
+﻿<div style="position: relative; width:90%; margin:0 auto; background-color:DarkGray;">
+	<div align="center">
+	<h2>[INSERTMAPNAME]
+	<small>(by [INSERTMAPAUTHOR])</small></h2>
+	</div>
+	<div>
+	<img src="[INSERTPREVIEW]" alt="PREVIEW">
+	<img src="[INSERTMINIMAP]" alt="MINIMAP">
+	</div>
+	<div style="position:absolute;right:0;top:15%" >
+	
+	<font color="Black"><b>Downloads:</b></font><br><font color="Yellow">[INSERTDOWNLOADS]</font><br>
+	<font color="Black"><b>Rating:</b></font><br><font color="Yellow">[INSERTRATING]</font><br>
+	
+	<form action="/download" method="get">
+		<input type="hidden" name="id" value="[INSERTMAPID]">
+		<button type="submit"><h4>DOWNLOAD</h4><h4></h4></button>
+	</form>
+	<form  action="/viewmap" method="get">
+		<input type="hidden" name="id" value="[INSERTMAPID]">
+		<button align="bottom" type="submit"><h4>VIEW INFO</h4></button>
+	</form>
+	</div>
+</div>  

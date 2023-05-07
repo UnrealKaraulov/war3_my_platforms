@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<phrases>
+  <phrase title="nick_name" version_id="10" version_string="1.0"><![CDATA[Nick name]]></phrase>
+  <phrase title="bad_nickname" version_id="10" version_string="1.0"><![CDATA[Please enter valid nickname]]></phrase>
+  <phrase title="check_acc_error" version_id="10" version_string="1.0"><![CDATA[Failed to register nickname:]]></phrase>
+  <phrase title="nav.mapList" version_id="10" version_string="1.0"><![CDATA[Maps]]></phrase>
+  <phrase title="nav.mymapList" version_id="10" version_string="1.0"><![CDATA[My maps]]></phrase>
+  <phrase title="nav.uploadmapList" version_id="10" version_string="1.0"><![CDATA[Upload map]]></phrase>
+  <phrase title="nav.statsmapList" version_id="10" version_string="1.0"><![CDATA[Stats maps]]></phrase>
+  <phrase title="nav.allmapList" version_id="10" version_string="1.0"><![CDATA[All maps]]></phrase>
+  <phrase title="nav.userStats" version_id="10" version_string="1.0"><![CDATA[Stats]]></phrase>
+  <phrase title="nick_name_label" version_id="10" version_string="1.0"><![CDATA[Enter valid nickname for Warcis Server]]></phrase>
+</phrases>

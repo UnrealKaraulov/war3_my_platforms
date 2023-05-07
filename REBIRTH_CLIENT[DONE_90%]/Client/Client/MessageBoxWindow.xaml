@@ -1,0 +1,31 @@
+﻿<Window
+    xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+    x:Class="Client.MessageBoxWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client"
+        mc:Ignorable="d"
+    Loaded="Window_Loaded"
+     
+        Title="MessageBoxWindow" Height="200" MaxHeight="400" Width="350" MaxWidth="400" WindowStyle="None">
+    <Window.Background>
+        <ImageBrush Stretch="Fill" ImageSource="Resources/LoginPage_Background.png" />
+    </Window.Background>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <TextBox BorderThickness="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Name="MessageBoxText" TextWrapping="Wrap"  IsReadOnly="True" Grid.Row="0"  Grid.ColumnSpan="2" AcceptsReturn="True"  VerticalScrollBarVisibility="Visible"  HorizontalScrollBarVisibility="Auto" MinHeight="40" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" ScrollViewer.CanContentScroll="True" Background="{x:Null}"/>
+      
+        <Grid VerticalAlignment="Bottom" HorizontalAlignment="Center" Grid.Row="1">
+            <Button BorderThickness="2" BorderBrush="Gray" Content="Close" MinWidth="75" Width="Auto" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="Button_Click" Background="{x:Null}" />
+            <!--<Button Grid.Column="1" Content="Create game" MinWidth="75" MaxWidth="85" Click="Button_Click_1" Margin="0,5,0,0" Height="27" HorizontalAlignment="Center" VerticalAlignment="Bottom" RenderTransformOrigin="0.45,0.519"  />
+            <Button Grid.Column="2" Content="Games" MinWidth="75" MaxWidth="85" Click="Button_Click_2" Margin="0,5,0,0" Height="27" HorizontalAlignment="Center" VerticalAlignment="Bottom"  />-->
+
+        </Grid>
+
+    </Grid>
+</Window>

@@ -1,0 +1,951 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates>
+<template type="public" title="allmaplist" version_id="10" version_string="1.0"><![CDATA[<style type="text/css">
+
+.mymaplistflex-container {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.mymaplistrow {
+    width: 170px;
+    height: 170px;
+    overflow: hidden;
+    word-wrap: break-word;
+	background: #f5f5f5;
+	border-right: 1px solid #d8d8d8;
+	min-width: 0;
+}
+
+.mymaplistrow2 {
+    width: 170px;
+    height: 170px;
+    overflow: hidden;
+    word-wrap: break-word;
+	background: #fefefe;
+	border-right: 1px solid #d8d8d8;
+	min-width: 0;
+}
+
+.mymaplistrow3 {
+    width: 350px;
+    height: 170px;
+    overflow: hidden;
+    word-wrap: break-word;
+	background: #fafafa;
+	border-right: 1px solid #d8d8d8;
+	min-width: 0;
+}
+
+.mymaplistrow_header {
+    width: 170px;
+    height: 28px;
+	position: relative;
+	background: #f5f5f5;
+	border-right: 1px solid #d8d8d8;
+	min-width: 0;
+}
+
+.mymaplistrow2_header {
+    width: 170px;
+    height: 28px;
+	background: #fefefe;
+	border-right: 1px solid #d8d8d8;
+	min-width: 0;
+}
+
+.mymaplistrow3_header {
+    width: 350px;
+    height: 28px;
+	background: #fafafa;
+	border-right: 1px solid #d8d8d8;
+	min-width: 0;
+}
+
+</style>
+<!--<div class="block-container">
+	<h3 class="block-header">
+		Uploaded maps
+	</h3>
+	<div class="block">
+		<div class="block-container">-->
+			<ol class="block-body">
+				
+				<li>
+				<div class="mymaplistflex-container">
+							<div class="mymaplistrow_header">
+								<h1 class="menu-header">
+									Preview
+								</h1>
+							</div>
+							<div class="mymaplistrow_header">
+								<h1 class="menu-header">
+									Minimap
+								</h1>
+							</div>
+							
+							<div class="mymaplistrow2_header">
+								<h1 class="menu-header">
+									Info
+								</h1>
+							</div>
+							<div class="mymaplistrow3_header">
+								<h1 class="menu-header">
+									Description
+								</h1>
+							</div>
+							<div class="mymaplistrow_header">
+								<h1 class="menu-header">
+									Action
+								</h1>
+							</div>
+				</div>
+				</li>
+				<xf:foreach loop="$maps" value="$map">
+					<li class="block-row">
+					
+						<div class="mymaplistflex-container">
+							<div class="mymaplistrow">
+								<div><a href="/src/addons/Warcis/ServerNickName/MapFiles/MapList/{$map.filename}Preview.jpg" data-lighter><img src="/src/addons/Warcis/ServerNickName/MapFiles/MapList/{$map.filename}Preview.jpg" alt="" style="max-width: 100%; max-height: 160px; display: block; margin: auto" /></a></div>
+							</div>
+							<div class="mymaplistrow">
+								<div><a href="/src/addons/Warcis/ServerNickName/MapFiles/MapList/{$map.filename}Minimap.jpg" data-lighter><img src="/src/addons/Warcis/ServerNickName/MapFiles/MapList/{$map.filename}Minimap.jpg" alt="" style="max-width: 100%; max-height: 160px; display: block; margin: auto" /></a></div>
+							</div>
+							
+							
+							<div class="mymaplistrow2">
+							<div>Uploader:{$map.username}</div>
+							<div>Host cmd:{$map.hostcmd}</div>
+							<div>Name:{$map.name}</div>
+							</div>
+							<div class="mymaplistrow3">"{$map.description}"</div>
+							<div class="mymaplistrow">
+							<xf:form action="{{ link('map-list/download', null, {'type': $type, 'hash': $hash, 'context': $context}) }}" class="block" upload="true" >
+									<input type="hidden" name="mapid" value="{$map.id}" />
+									<div class="menu-footer">
+									<span class="menu-footer-controls">
+									<xf:if is="$xf.visitor.is_moderator">
+										<xf:button type="submit" name="approvemap" icon="add">Approve map</xf:button>
+										<div style="align:left;"/>
+										<xf:button type="submit" name="deletemap" icon="delete">Delete map</xf:button>
+										<div style="align:left;"/>
+									</xf:if>
+									<xf:if is="$xf.visitor.user_id">
+									<xf:button type="submit" name="downloadmap" icon="save">Download map</xf:button>
+									<div style="align:left;"/>
+									</xf:if>
+									<xf:button type="submit" name="previewmap" icon="preview">Preview map</xf:button>
+									</span>
+									</div>
+								
+							</xf:form>
+							</div>
+						</div>
+					</li>
+				</xf:foreach>
+				<li>
+				<div class="mymaplistflex-container">
+				<xf:foreach loop="$startpages" value="$page">
+					<a href="/map-list/allmapList/?page={$page}">{{ {$page} + 1 }}</a>
+				</xf:foreach>
+				<xf:if is="$lastpage > 0" >
+					...
+					<a href="/map-list/allmapList/?page={$lastpage}">{{ {$lastpage} + 1 }}</a>
+				</xf:if>
+				</div>
+				{$OutContext}
+				</li>
+			</ol>
+		<!--</div>
+	</div>
+</div>-->
+]]></template>
+<template type="public" title="maplistdownload" version_id="10" version_string="1.0"><![CDATA[
+<div>MAP DOWNLOAD HERE</div>
+<xf:if is="$mapid">
+<div> Map id: {$mapid}</div>
+<xf:else/>
+<div> No map for download!</div>
+</xf:if>
+{$OutContext}]]></template>
+
+<template type="public" title="warcraft_simple_stats" version_id="10" version_string="1.0"><![CDATA[
+<style type="text/css">
+.zui-table {
+    border: solid 1px #DDEEEE;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font: normal 13px Arial, sans-serif;
+}
+.zui-table thead th {
+    background-color: #DDEFEF;
+    border: solid 1px #DDEEEE;
+    color: #336B6B;
+    padding: 10px;
+    text-align: left;
+    text-shadow: 1px 1px 1px #fff;
+}
+.zui-table tbody td {
+    border: solid 1px #DDEEEE;
+    color: #333;
+    padding: 10px;
+    text-shadow: 1px 1px 1px #fff;
+}
+</style>
+
+
+
+<div class="block-container">
+	<h3 class="block-header">
+		<div>{$nickname} STATS</div>
+	</h3>
+	
+	<table class="zui-table">
+    <thead>
+        <tr>
+            <th width="350">State</th>
+            <th width="850">Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Аккаунт заблокирован:</td>
+			<xf:if is="$acctlocked > 0" >
+            <td>ДА</td>
+			<xf:else />
+			<td>НЕТ</td>
+			</xf:if>
+        </tr>
+        <tr>
+            <td>Запрещено писать сообщения:</td>
+			<xf:if is="$acctmuted > 0" >
+            <td>ДА</td>
+			<xf:else />
+			<td>НЕТ</td>
+			</xf:if>
+        </tr>
+		<tr>
+			<td>Количество минут проведенных в игре:</td>
+            <td>{$minutesingame}</td>
+        </tr>
+		<tr>
+			<td>Количество минут проведенных на канале:</td>
+            <td>{$minutesinwarcraft}</td>
+        </tr>
+		<tr>
+			<td>Общее время проведенное на сервере:</td>
+            <td>{$totaltimeatserver}</td>
+        </tr>
+		<tr>
+            <td>Количество созданных игр:</td>
+            <td>{$hostedgames}</td>
+        </tr>
+		<tr>
+            <td>Количество обнаруженных мапхаков:</td>
+            <td>{$acctbans}</td>
+        </tr>
+		<tr>
+            <td>Количество отправленных личных сообщений:</td>
+            <td>{$sendprivatemessages}</td>
+        </tr>
+		<tr>
+            <td>Количество полученных личных сообщений:</td>
+            <td>{$recvprivatemessages}</td>
+        </tr>
+		<tr>
+            <td>Количество отправленных команд(сервера):</td>
+            <td>{$sendcommands}</td>
+        </tr>
+		<tr>
+            <td>Количество отправленных сообщений(на канале):</td>
+            <td>{$sendchannelmessages}</td>
+        </tr>
+		<tr>
+            <td>Сейчас играет в:</td>
+			<xf:if is="$playingmap is not empty" >
+            <td>{$playingmap}</td>
+			<xf:else />
+			<td> Нет в игре </td>
+			</xf:if>
+        </tr>
+    </tbody>
+</table>
+</div>
+]]></template>
+
+<template type="public" title="mymaplist" version_id="10" version_string="1.0"><![CDATA[
+<style type="text/css">
+
+.mymaplistflex-container {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.mymaplistrow {
+    width: 170px;
+    height: 170px;
+    overflow: hidden;
+    word-wrap: break-word;
+	background: #f5f5f5;
+	border-right: 1px solid #d8d8d8;
+	min-width: 0;
+}
+
+.mymaplistrow2 {
+    width: 170px;
+    height: 170px;
+    overflow: hidden;
+    word-wrap: break-word;
+	background: #fefefe;
+	border-right: 1px solid #d8d8d8;
+	min-width: 0;
+}
+
+.mymaplistrow3 {
+    width: 350px;
+    height: 170px;
+    overflow: hidden;
+    word-wrap: break-word;
+	background: #fafafa;
+	border-right: 1px solid #d8d8d8;
+	min-width: 0;
+}
+
+.mymaplistrow_header {
+    width: 170px;
+    height: 28px;
+	position: relative;
+	background: #f5f5f5;
+	border-right: 1px solid #d8d8d8;
+	min-width: 0;
+}
+
+.mymaplistrow2_header {
+    width: 170px;
+    height: 28px;
+	background: #fefefe;
+	border-right: 1px solid #d8d8d8;
+	min-width: 0;
+}
+
+.mymaplistrow3_header {
+    width: 350px;
+    height: 28px;
+	background: #fafafa;
+	border-right: 1px solid #d8d8d8;
+	min-width: 0;
+}
+
+</style>
+<!--<div class="block-container">
+	<h3 class="block-header">
+		Uploaded maps
+	</h3>
+	<div class="block">
+		<div class="block-container">-->
+			<ol class="block-body">
+				<li>
+				<div class="mymaplistflex-container">
+							<div class="mymaplistrow_header">
+								<h1 class="menu-header">
+									Preview
+								</h1>
+							</div>
+							<div class="mymaplistrow_header">
+								<h1 class="menu-header">
+									Minimap
+								</h1>
+							</div>
+							
+							<div class="mymaplistrow2_header">
+								<h1 class="menu-header">
+									Info
+								</h1>
+							</div>
+							<div class="mymaplistrow3_header">
+								<h1 class="menu-header">
+									Description
+								</h1>
+							</div>
+							<div class="mymaplistrow_header">
+								<h1 class="menu-header">
+									Action
+								</h1>
+							</div>
+						</div>
+					</li>
+				<xf:foreach loop="$maps" value="$map">
+					
+					
+					<li class="block-row">
+					
+						<div class="mymaplistflex-container">
+							<div class="mymaplistrow">
+								<div><a href="/src/addons/Warcis/ServerNickName/MapFiles/MapList/{$map.filename}Preview.jpg" data-lighter><img src="/src/addons/Warcis/ServerNickName/MapFiles/MapList/{$map.filename}Preview.jpg" alt="" style="max-width: 100%; max-height: 160px; display: block; margin: auto" /></a></div>
+							</div>
+							<div class="mymaplistrow">
+								<div><a href="/src/addons/Warcis/ServerNickName/MapFiles/MapList/{$map.filename}Minimap.jpg" data-lighter><img src="/src/addons/Warcis/ServerNickName/MapFiles/MapList/{$map.filename}Minimap.jpg" alt="" style="max-width: 100%; max-height: 160px; display: block; margin: auto" /></a></div>
+							</div>
+							
+							<div class="mymaplistrow2">	
+								<div>Host cmd:{$map.hostcmd}</div>
+								<div>Name:{$map.name}</div>
+							</div>
+							<div class="mymaplistrow3">"{$map.description}"</div>
+							<div class="mymaplistrow">
+							<xf:form action="{{ link('map-list/download', null, {'type': $type, 'hash': $hash, 'context': $context}) }}" class="block" upload="true" >
+									<input type="hidden" name="mapid" value="{$map.id}" />
+									<div class="menu-footer">
+									<span class="menu-footer-controls">
+									<xf:if is="$xf.visitor.is_moderator">
+										<xf:button type="submit" name="approvemap" icon="add">Approve map</xf:button>
+										<div style="align:left;"/>
+									</xf:if>
+									<xf:button type="submit" name="deletemap" icon="delete">Delete map</xf:button>
+									<div style="align:left;"/>
+									<xf:button type="submit" name="downloadmap" icon="save">Download map</xf:button>
+									<div style="align:left;"/>
+									<xf:button type="submit" name="previewmap" icon="preview">Preview map</xf:button>
+									</span>
+									</div>
+								
+							</xf:form>
+							</div>
+						</div>
+					</li>
+				</xf:foreach>
+				<li>
+				<div class="mymaplistflex-container">
+				<xf:foreach loop="$startpages" value="$page">
+					<a href="/map-list/mymapList/?page={$page}">{{ {$page} + 1 }}</a>
+				</xf:foreach>
+				<xf:if is="$lastpage > 0" >
+					...
+					<a href="/map-list/mymapList/?page={$lastpage}">{{ {$lastpage} + 1 }}</a>
+				</xf:if>
+				</div>
+				{$OutContext}
+				</li>
+			</ol>
+		<!--</div>
+	</div>
+</div>-->]]></template>
+
+
+<template type="public" title="statsmaplist" version_id="10" version_string="1.0"><![CDATA[
+<div>STATS MAP LIST HERE</div>
+{$OutContext}]]></template>
+
+<template type="public" title="uploadmaplist" version_id="10" version_string="1.0"><![CDATA[
+
+<div class="block-container">
+				<h3 class="block-header">
+					UPLOAD NEW MAP HERE
+				</h3>
+<xf:if is="$notuploaded">
+<xf:form action="{{ link('map-list/uploadmapList', null, {'type': $type, 'hash': $hash, 'context': $context}) }}" class="block" upload="true" >
+
+	<div class="block-body">
+	<xf:formrow label="Upload file">
+	<div>{$OutContext}</div>
+	<!--<div>Select map file to upload:</div>-->
+	<input type="file" name="fileToUpload" id="fileToUpload" accept=".w3x,.w3m">
+	<div>Or URL</div>
+	<!--<input type="text" name="URLADDR" />-->
+	
+
+	<xf:textbox name="URLADDR" value=""
+						label="Enter URL" />
+				
+	</xf:formrow>
+	
+	<xf:textboxrow name="hostcode" value=""
+						label="Enter host code" />
+								
+
+	<!--<div >Enter code for host (pattern="[-_A-Za-z0-9]+"):</div>-->
+	<!--<input type="text" value="Enter code here" name="hostcode"  pattern="[-_A-Za-z0-9]{2,20}">-->
+	<!--<div>Select map category: Anime | Moba | ...
+	<select name="mapCategory">
+		<option value="Other">Other</option>
+		<option value="Melee">Melee</option>
+		<option value="Hero_Defense">Hero Defense</option>
+		<option value="Hero_Arena">Hero Arena</option>
+		<option value="Tower_Defense">Tower Defense</option>
+		<option value="Castle_Defense">Tower Defense (Survivor)</option>
+		<option selected value="MOBA">MOBA</option>
+		<option value="RPG">Role Playing (RPG)</option>
+		<option value="Anime">Anime</option>
+		<option value="Escape">Escape</option>
+	</select>
+	</div>
+	-->
+	<hr class="formRowSep" />
+
+	<xf:selectrow name="mapCategory" value="MOBA" label="Select map category: Anime | Moba | ...">
+		
+		<xf:option value="Other">Other</xf:option>
+		<xf:option value="Melee">Melee</xf:option>
+		<xf:option value="Hero_Defense">Hero Defense</xf:option>
+		<xf:option value="Hero_Arena">Hero Arena</xf:option>
+		<xf:option value="Tower_Defense">Tower Defense</xf:option>
+		<xf:option value="Castle_Defense">Tower Defense (Survivor)</xf:option>
+		<xf:option value="MOBA">MOBA</xf:option>
+		<xf:option value="RPG">Role Playing (RPG)</xf:option>
+		<xf:option value="Anime">Anime</xf:option>
+		<xf:option value="Escape">Escape</xf:option>
+	</xf:selectrow>
+
+	
+	<!--<div>Press button for upload map to server and bots:</div>
+	<xf:button type="submit" name="submit" class="button--primary">Upload map</xf:button>
+	<input type="submit" value="Upload Map" name="submit">-->
+	</div>
+	
+	<xf:submitrow rowtype="simple" >
+			<xf:html>
+				<xf:button type="submit" name="submit" icon="upload">Upload map</xf:button>
+			</xf:html>
+	</xf:submitrow>
+	
+</xf:form>
+<xf:elseif is="$error" />
+
+<xf:form action="{{ link('map-list/uploadmapList', null, {'type': $type, 'hash': $hash, 'context': $context}) }}" class="block">
+
+	<div class="block-body">
+	<h3>{$ErrorContext}</h3>
+	</div>
+	
+	<xf:submitrow rowtype="simple" >
+			<xf:html>
+				<xf:button type="submit" name="tryagain" icon="save">Try again</xf:button>
+			</xf:html>
+	</xf:submitrow>
+</xf:form>	
+<xf:else />	
+<xf:form action="{{ link('map-list/uploadmapList', null, {'type': $type, 'hash': $hash, 'context': $context}) }}" class="block">
+
+
+<xf:formrow
+					label="Upload file">
+					<div>{$OutContext}</div>
+</xf:formrow>
+	<xf:submitrow rowtype="simple" >
+	<xf:html>
+	<xf:button type="submit" name="returnback" icon="save">OK</xf:button>
+	</xf:html>
+	</xf:submitrow>
+</xf:form>	
+</xf:if>
+
+
+</div>
+	]]></template>
+<template type="public" title="userstats" version_id="10" version_string="1.0"><![CDATA[
+<style type="text/css">
+
+ .itemcircle {
+    border: 0.1em solid grey;
+    border-radius: 100%;
+    height: 1.8em;
+    width: 1.8em;
+    text-align: center;
+}
+
+.itemcircle p {
+	margin-top: 0.05em;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: grey;
+}
+
+.smytable {
+   display: table;
+   border: 1px solid #B0B0B0;
+}
+.smytable .th {
+   display: table-row;
+   background-color: #60A1CF;
+   color: #FFF0F0;
+   font-weight: bold;
+}
+.smytable .tr:nth-child(odd) {
+ background-color: #E9E9E9;
+}
+.smytable .tr{
+  display: table-row;
+  border-bottom: 1px solid #000;
+}
+.smytable .td {
+  display: table-cell;
+  padding: 15px;
+  border-bottom: 1px solid #40A1F5;
+}
+.smytable .tr:last-child .td{
+  border: 0;
+}
+
+.ccclear {
+  clear: both;
+}
+
+</style>
+
+{$OutContext}
+
+<div style="align:left;">
+<div class="smytable">
+<div class="th">Maps stats::</div>
+</div>
+<div class="smytable">
+ <div class="th">
+    <div class="td">Map Name</div>
+    <div class="td">File</div>
+	<div class="td">Host Cmd</div>
+    <div class="td">Users</div>
+  </div>
+  <xf:foreach loop="$MAPS_STATS" key="$curmapcode"  value="$curmap">
+		<div class="tr">
+		   <div class="td">Map Name</div>
+		   <div class="td">Map File</div>
+		   <div class="td">{$curmapcode}</div>
+		   <div class="td">Users</div>
+	    </div>
+  </xf:foreach>
+</div>
+
+<div class="smytable" >
+<div class="th">TOP 10 DOTA88 MMR:</div>
+</div>
+<div class="smytable">
+ <div class="th">
+    <div class="td">TOP</div>
+    <div class="td">Nickname</div>
+    <div class="td">Username</div>
+    <div class="td">MMR</div>	
+    <div class="ccclear"></div>
+  </div>
+	<xf:foreach loop="$TOP_MMR_DOTA88" value="$playinguser" i="$i" >
+		  <div class="tr">
+			<div class="td"><div class="itemcircle"><p>{$i}</p></div></div>
+			<div class="td">{$playinguser.acct_username}</div>
+			<div class="td">{$playinguser.acct_username_forum}</div>
+			<div class="td">{$playinguser.acct_st_dota88_mmr}</div>
+			<div style="ccclear: both;"></div>
+		  </div>
+	</xf:foreach>
+</div>
+</div> 
+
+
+<div class="smytable">
+<div class="th">TOP 10 DOTA83 MMR:</div>
+</div>
+<div class="smytable">
+ <div class="th">
+    <div class="td">TOP</div>
+    <div class="td">Nickname</div>
+    <div class="td">Username</div>
+    <div class="td">MMR</div>
+  </div>
+	<xf:foreach loop="$TOP_MMR_DOTA" value="$playinguser" i="$i">
+		  <div class="tr">
+			<div class="td"><div class="itemcircle"><p>{$i}</p></div></div>
+			<div class="td">{$playinguser.acct_username}</div>
+			<div class="td">{$playinguser.acct_username_forum}</div>
+			<div class="td">{$playinguser.acct_st_dota_mmr}</div>
+		  </div>
+	</xf:foreach>
+</div>
+
+<div class="smytable">
+<div class="th">TOP 10 DOTALOD MMR:</div>
+</div>
+<div class="smytable">
+  <div class="th">
+    <div class="td">TOP</div>
+    <div class="td">Nickname</div>
+    <div class="td">Username</div>
+    <div class="td">MMR</div>
+  </div>
+	<xf:foreach loop="$TOP_MMR_DOTALOD" value="$playinguser" i="$i">
+		  <div class="tr">
+			<div class="td"><div class="itemcircle"><p>{$i}</p></div></div>
+			<div class="td">{$playinguser.acct_username}</div>
+			<div class="td">{$playinguser.acct_username_forum}</div>
+			<div class="td">{$playinguser.acct_st_dotalod_mmr}</div>
+		  </div>
+	</xf:foreach>
+</div>
+
+
+]]></template>
+
+<template type="public" title="maplistpreview" version_id="10" version_string="1.0"><![CDATA[<style type="text/css">
+
+.mymaplistflex-container {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.mymaplistrow {
+    width: 170px;
+    height: 170px;
+    overflow: hidden;
+    word-wrap: break-word;
+	background: #f5f5f5;
+	border-right: 1px solid #d8d8d8;
+	min-width: 0;
+}
+
+.mymaplistrow2 {
+    width: 170px;
+    height: 170px;
+    overflow: hidden;
+    word-wrap: break-word;
+	background: #fefefe;
+	border-right: 1px solid #d8d8d8;
+	min-width: 0;
+}
+
+.mymaplistrow3 {
+    width: 350px;
+    height: 170px;
+    overflow: hidden;
+    word-wrap: break-word;
+	background: #fafafa;
+	border-right: 1px solid #d8d8d8;
+	min-width: 0;
+}
+
+.mymaplistrow_header {
+    width: 170px;
+    height: 28px;
+	position: relative;
+	background: #f5f5f5;
+	border-right: 1px solid #d8d8d8;
+	min-width: 0;
+}
+
+.mymaplistrow2_header {
+    width: 170px;
+    height: 28px;
+	background: #fefefe;
+	border-right: 1px solid #d8d8d8;
+	min-width: 0;
+}
+
+.mymaplistrow3_header {
+    width: 350px;
+    height: 28px;
+	background: #fafafa;
+	border-right: 1px solid #d8d8d8;
+	min-width: 0;
+}
+
+</style>
+<!--<div class="block-container">
+	<h3 class="block-header">
+		Uploaded maps
+	</h3>
+	<div class="block">
+		<div class="block-container">-->
+			<ol class="block-body">
+				
+				<li>
+				<div class="mymaplistflex-container">
+							<div class="mymaplistrow_header">
+								<h1 class="menu-header">
+									Preview
+								</h1>
+							</div>
+							<div class="mymaplistrow_header">
+								<h1 class="menu-header">
+									Minimap
+								</h1>
+							</div>
+							
+							<div class="mymaplistrow2_header">
+								<h1 class="menu-header">
+									Info
+								</h1>
+							</div>
+							<div class="mymaplistrow3_header">
+								<h1 class="menu-header">
+									Description
+								</h1>
+							</div>
+							<div class="mymaplistrow_header">
+								<h1 class="menu-header">
+									Action
+								</h1>
+							</div>
+				</div>
+				</li>
+				
+					<li class="block-row">
+					
+						<div class="mymaplistflex-container">
+							<div class="mymaplistrow">
+								<div><a href="/src/addons/Warcis/ServerNickName/MapFiles/MapList/{$map.filename}Preview.jpg" data-lighter><img src="/src/addons/Warcis/ServerNickName/MapFiles/MapList/{$map.filename}Preview.jpg" alt="" style="max-width: 100%; max-height: 160px; display: block; margin: auto" /></a></div>
+							</div>
+							<div class="mymaplistrow">
+								<div><a href="/src/addons/Warcis/ServerNickName/MapFiles/MapList/{$map.filename}Minimap.jpg" data-lighter><img src="/src/addons/Warcis/ServerNickName/MapFiles/MapList/{$map.filename}Minimap.jpg" alt="" style="max-width: 100%; max-height: 160px; display: block; margin: auto" /></a></div>
+							</div>
+							
+							
+							<div class="mymaplistrow2">
+							<div>Uploader:{$map.username}</div>
+							<div>Host cmd:{$map.hostcmd}</div>
+							<div>Name:{$map.name}</div>
+							</div>
+							<div class="mymaplistrow3">"{$map.description}"</div>
+							<div class="mymaplistrow">
+							<xf:form action="{{ link('map-list/download', null, {'type': $type, 'hash': $hash, 'context': $context}) }}" class="block" upload="true" >
+									<input type="hidden" name="mapid" value="{$map.id}" />
+									<div class="menu-footer">
+									<span class="menu-footer-controls">
+									<xf:if is="$xf.visitor.is_moderator">
+										<xf:button type="submit" name="approvemap" icon="add">Approve map</xf:button>
+										<div style="align:left;"/>
+										<xf:button type="submit" name="deletemap" icon="delete">Delete map</xf:button>
+										<div style="align:left;"/>
+									</xf:if>
+									<xf:if is="$xf.visitor.user_id">
+									<xf:button type="submit" name="downloadmap" icon="save">Download map</xf:button>
+									<div style="align:left;"/>
+									</xf:if>
+									<xf:button type="submit" name="previewmap" icon="preview">Preview map</xf:button>
+									</span>
+									</div>
+								
+							</xf:form>
+							</div>
+						</div>
+					</li>
+					
+					
+						<li class="block-row">
+					
+						<div class="mymaplistflex-container">
+							<h4>Players playing this map:</h4>
+							<xf:foreach loop="$usersplayingmap" value="$playinguser">
+								<div>{$playinguser.acct_username}</div>
+							</xf:foreach>
+							
+						</div>
+						</li>
+				
+				<li>
+				
+				{$OutContext}
+				</li>
+			</ol>
+		<!--</div>
+	</div>
+</div>-->
+]]></template>
+
+<template type="public" title="amh_crc_update" version_id="10" version_string="1.0"><![CDATA[
+<div>Added new crc32:</div>
+{$OutContext}]]></template>
+
+
+<template type="admin" title="warcis_options" version_id="10" version_string="1.0"><![CDATA[
+
+<div class="block-container">
+				<div>
+				<h3 class="block-header">
+					WARCIS АДМИН КОМАНДЫ! НЕ ИСПОЛЬЗОВАТЬ БЕЗ НЕОБХОДИМОСТИ. 
+				</h3>
+				</div>
+				<div class="block-body">
+					<xf:formrow rowtype="button"
+						label="Force update maps">
+						<xf:button href="/index.php?map-list/update"> UPDATE MAPS </xf:button>
+					</xf:formrow>
+					
+		
+					<hr class="menu-separator" />
+	
+				
+					<xf:form action="/index.php?members/warcisantihackcrc" class="block" ajax="false">
+
+						<xf:textboxrow name="crc32" value="0"
+							maxlength="10"
+							label="Enter new AMH.dll crc32"
+							explain="Введите новый crc32 AMH.dll что бы получить доступ к входу на сервер" />
+
+						<xf:formrow rowtype="button">
+						<xf:button type="submit">Add new AMH.dll crc32 to whitelist.</xf:button>
+						</xf:formrow>
+					</xf:form>
+					
+					<hr class="menu-separator" />
+					<xf:form action="/index.php?members/renamenickname" class="block" ajax="false">
+
+						<xf:textboxrow name="oldname" value=""
+							maxlength="16"
+							label="Enter old nickname"
+							explain="Введите старый никнейм игрока" />
+						<xf:textboxrow name="newname" value=""
+							maxlength="16"
+							label="Enter new nickname"
+							explain="Введите новый никнейм игрока" />
+
+						<xf:formrow rowtype="button">
+						<xf:button type="submit">Переименовать игрока</xf:button>
+						</xf:formrow>
+					</xf:form>
+					
+					<hr class="menu-separator" />
+				</div>
+				<div>
+
+					<h3 class="block-header">
+						Внимание. Перерегистрация может занять очень много времени. Не нажимать без необходимости!
+					</h3>
+				</div>
+				<div class="block-body">
+					<xf:formrow rowtype="button"
+						label="Force recreate accounts">
+						<xf:button href="/index.php?members/recreateallaccounts"> UPDATE ACCOUNTS </xf:button>
+					</xf:formrow>
+				</div>
+				<div>
+					<hr class="formRowSep" />
+
+					<h3 class="block-header">
+						Внимание. Перерегистрация может занять очень много времени. Не нажимать без необходимости!
+					</h3>
+				</div>
+</div>
+]]></template>
+
+</templates>

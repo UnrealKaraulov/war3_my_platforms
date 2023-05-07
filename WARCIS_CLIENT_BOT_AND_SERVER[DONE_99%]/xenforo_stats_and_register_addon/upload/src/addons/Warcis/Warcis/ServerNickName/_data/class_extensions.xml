@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class_extensions>
+  <extension from_class="XF\Pub\Controller\Register" to_class="Warcis\ServerNickName\Pub\Controller\Register" execute_order="10" active="1"/>
+  <extension from_class="XF\Pub\Controller\Account" to_class="Warcis\ServerNickName\Pub\Controller\Account" execute_order="10" active="1"/>
+  <extension from_class="XF\Pub\Controller\Member" to_class="Warcis\ServerNickName\Pub\Controller\Member" execute_order="10" active="1"/>
+  <extension from_class="XF\Entity\User" to_class="Warcis\ServerNickName\Pub\Entity\User" execute_order="10" active="1"/>
+  <extension from_class="XF\Service\User\EmailConfirmation" to_class="Warcis\ServerNickName\Service\User\EmailConfirmation" execute_order="10" active="1"/>
+  <extension from_class="XF\Service\User\Registration" to_class="Warcis\ServerNickName\Service\User\Registration" execute_order="10" active="1"/>
+  <extension from_class="XF\ApprovalQueue\User" to_class="Warcis\ServerNickName\ApprovalQueue\User" execute_order="10" active="1"/>
+  <extension from_class="XF\Admin\Controller\User" to_class="Warcis\ServerNickName\Admin\Controller\User" execute_order="10" active="1"/>
+  <extension from_class="XF\Admin\Controller\Option" to_class="Warcis\ServerNickName\Admin\Controller\Option" execute_order="10" active="1"/>
+</class_extensions>

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\tinycdb\cdb_find.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\tinycdb\cdb_findnext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\tinycdb\cdb_hash.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\tinycdb\cdb_init.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\tinycdb\cdb_make_add.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\tinycdb\cdb_make.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\tinycdb\cdb_make_find.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\tinycdb\cdb_make_put.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\tinycdb\cdb_seek.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\tinycdb\cdb_seq.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\tinycdb\cdb_unpack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\tinycdb\cdb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\tinycdb\cdb_int.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\pvpgn-magic\source\src\tinycdb\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{3F8449CB-A52F-3B7E-8D95-A8A3C7171D04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{F13C2840-6F8D-367E-9025-F54D6B20BE6A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

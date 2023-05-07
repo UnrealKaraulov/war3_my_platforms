@@ -1,0 +1,18 @@
+﻿<Window
+    xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+        x:Class="Client.SelectChannelOrCreaateNew"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client"
+        mc:Ignorable="d"
+        Loaded="Window_Loaded"
+        Title="SelectChannelOrCreaateNew" Height="300" Width="480" MinHeight="300" MinWidth="480">
+    <Window.Background>
+        <ImageBrush Stretch="Fill" ImageSource="Resources/LoginPage_Background.png" />
+    </Window.Background>
+    <Grid>
+        
+    </Grid>
+</Window>

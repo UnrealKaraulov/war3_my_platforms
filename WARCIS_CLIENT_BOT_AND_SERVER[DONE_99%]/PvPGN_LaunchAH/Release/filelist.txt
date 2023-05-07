@@ -1,0 +1,7 @@
+﻿warcis.mpq,123412341234
+Launcher.exe,123412341234
+ClientUpdater.exe,123412341234
+War3Injector.dll,123412341234
+INIFileParser.dll,123412341234
+OtherInfo.dll,123412341234
+AMH.dll,123412341234

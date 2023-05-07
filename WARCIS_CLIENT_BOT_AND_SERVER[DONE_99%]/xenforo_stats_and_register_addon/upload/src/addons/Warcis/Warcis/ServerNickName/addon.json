@@ -1,0 +1,8 @@
+{
+    "title": "Warcis Server Nickname Add-on",
+    "description": "Add-on for add Nickname register at Warcis server",
+    "version_string": "1.0.0 Alpha",
+    "version_id": 1000010,
+    "dev": "Karaulov",
+    "icon": "fa-code"
+}

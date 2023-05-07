@@ -1,0 +1,39 @@
+sudo: required
+dist: trusty
+
+language: cpp
+os: linux
+compiler: gcc
+  
+branches:
+  only:
+    - master
+    - develop
+
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - gcc-5
+      - g++-5
+      - zlib1g-dev
+      - build-essential
+      - libmysqlclient-dev
+      - liblua5.1-0-dev
+      - cmake
+
+before_install:
+  - export CXX="g++-5" CC="gcc-5"
+  
+before_script:
+  - mkdir build
+  - cd build
+  - cmake -D WITH_MYSQL=true -D WITH_LUA=true ../
+
+script:
+  - make
+
+after_script:
+  - sudo make install
+  - sudo make uninstall

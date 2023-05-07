@@ -1,0 +1,28 @@
+﻿<Window x:Class="NewClient.MainPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NewClient"
+        mc:Ignorable="d"
+        Title="MainPage" Height="506.471" Width="800">
+    <Grid>
+        <ListView HorizontalAlignment="Left" Height="385" Margin="26,24,0,0" VerticalAlignment="Top" Width="236" Background="#FF9C6363">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <ListView HorizontalAlignment="Left" Height="385" Margin="291,24,0,0" VerticalAlignment="Top" Width="464" Background="#FF9C6363">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <TextBox HorizontalAlignment="Left" Height="37" Margin="26,428,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="597" Background="#FF9C6363" FontSize="14"/>
+        <Button Content="ВАТАКУ!" HorizontalAlignment="Left" Margin="661,445,0,0" VerticalAlignment="Top" Width="75"/>
+
+    </Grid>
+</Window>

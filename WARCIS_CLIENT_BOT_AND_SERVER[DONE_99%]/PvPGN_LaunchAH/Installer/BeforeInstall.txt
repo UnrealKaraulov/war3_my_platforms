@@ -1,0 +1,4 @@
+Если у вас не установлен .NET FRAMEWORK 4.0
+установка будет запущена автоматически если 
+этого не произодет, установите .NET FRAMEWORK
+по ссылке: https://www.microsoft.com/en-us/download/details.aspx?id=17851

@@ -1,0 +1,163 @@
+<?php
+
+namespace Warcis\ServerNickName;
+
+
+// Bot login for PvPGN example
+// (c) 2009,2015 HarpyWar
+
+// set script execution timeout
+set_time_limit(7);
+
+// exec when execution time exceed or exception occured
+//function handle_timeout()
+//{ 
+//    $error = error_get_last();
+//
+//    if ($error['type'] === E_ERROR) {
+//		// do something to handle it
+//		echo "error catched!";
+ //   }
+//}
+
+//register_shutdown_function('handle_timeout');
+
+
+
+class PvPGNBot 
+{
+	private $fp ;
+	public $stream;
+	public $resultstring = '';
+	private $patterns=array(
+		'*"*',
+		'/*\n/'
+	);
+
+	// sequence of chat commands to be executed after login
+	public $commands = array(
+		"/exit"
+	);
+	
+	function __destruct() { 
+		print("Destruct bot");
+		if (isset($this->fp))
+		{
+			fwrite($this->fp,"/quit\r\n");
+			fclose($this->fp);
+			unset($this->fp);
+		}
+	}
+	
+	public function bnbot2array($raw_protocol) {
+        $output = array();
+        $linenum = 0;
+        foreach ($raw_protocol as $line) {
+            $inquotes = false;
+            $stage = 0;
+            $line = trim($line);
+            if ($line == "") continue;
+            for ($x=0;$x<strlen($line);$x++) {
+                $strip = false;
+                if ($stage == 4 && $output[$linenum][0] == '1005') {
+                }
+                if ($line{$x} == ' ' && !$inquotes) {
+                    $stage++;
+                } elseif ($line{$x} == '"') {
+                    if ($stage == 4 && $output[$linenum][0] == '1005') {
+                        $strip = 4;
+                        $inquotes = true;
+                        if (isset($output[$linenum][$stage])) {
+                            $output[$linenum][$stage] .= $line{$x};
+                        } else {
+                            $output[$linenum][$stage] = $line{$x};
+                        }
+                    } elseif ($stage == 2 && strstr($output[$linenum][0],'101')) {
+                        $strip = 2;
+                        $inquotes = true;
+                        if (isset($output[$linenum][$stage])) {
+                            $output[$linenum][$stage] .= $line{$x};
+                        } else {
+                            $output[$linenum][$stage] = $line{$x};
+                        }
+                    } else {
+                        if ($inquotes)
+                            $inquotes = false;
+                        else
+                            $inquotes = true;
+                    }
+                } else {
+                    if (isset($output[$linenum][$stage])) {
+                        $output[$linenum][$stage] .= $line{$x};
+                    } else {
+                        $output[$linenum][$stage] = $line{$x};                
+                    }
+                }
+            }
+            if ($strip) {
+                $output[$linenum][$strip] = substr($output[$linenum][$strip],1,-1);
+            }
+            $linenum++;
+        }
+        return $output;
+    }
+
+	public function Start($server,$port,$login,$password)
+	{
+		$this->fp = @fsockopen($server, $port, $errno, $errstr, 5);
+		if (!$this->fp) {
+			die ("ERROR: Can't connect to $server:$port. $errno - $errstr"); //na?aa? auee??ai
+		}
+		// login to server
+		$cmdline = "\x03\x04{$login}\v{$password}\x0d".password_hash($password,PASSWORD_BCRYPT)."\r\n";
+		// append commands
+		//foreach ($this->commands as $cmd)
+		//	$cmdline .= $cmd . "\n";
+
+		$this->sendLine($cmdline);
+		
+		//fclose($this->fp);
+	}
+	
+	public function SendCmd($cmd)
+	{
+		$this->sendLine($cmdline."\r\n");
+	}
+	
+	private function sendLine($str)
+	{
+		fwrite ($this->fp, $str); 
+		stream_set_timeout($this->fp, 2);
+
+		while (!feof($this->fp))
+		{
+			$data = trim( fread($this->fp,4096 ) );
+			if ( $data != null && strlen($data) > 0)
+				$this->stream[] = $data;
+			if (strstr($data,'BOTCMDHANDLEEND'))
+			{
+				break;
+			}
+		}
+		//print_r($this->stream); # print buffer output
+		 # print buffer output
+	}
+
+	public function SendCommand( $command )
+	{
+		$this->stream = [];
+		if (!isset($this->fp))
+		{
+			print("bot connection...");
+			$server="193.19.118.57";
+			$port="6112";
+			$login='WarcisCmdBot';
+			$password='bottest2bottest';
+			$this->Start($server,$port,$login,$password);
+			$this->SendCmd("/join The Void");
+		}
+		$this->SendCmd($command);
+		return $this->bnbot2array($this->stream);
+	}
+}
+

@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" InitialTargets="CrashRpt_CPP_init">
+  <PropertyGroup>
+    <BuildTimePath>$(MSBuildThisFileDirectory)../../\tools</BuildTimePath>
+  </PropertyGroup>
+  <PropertyGroup Label="Default initializers for properties">
+    <Linkage-CrashRpt_CPP Condition="'$(Linkage-CrashRpt_CPP)' == ''">dynamic</Linkage-CrashRpt_CPP>
+    <CallingConvention-CrashRpt_CPP Condition="'$(CallingConvention-CrashRpt_CPP)' == ''">cdecl</CallingConvention-CrashRpt_CPP>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)../..//build/native/include/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)../..//build/native/include/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup Label="Win32" Condition="'$(Platform.ToLower())' == 'win32'">
+    <None Include="$(MSBuildThisFileDirectory)../..//build/native/bin/Win32\crashrpt.dll" Condition="(('$(AppContainerApplication.ToLower())' == 'true')) OR (('$(TargetPlatformIdentifier.ToLower())' == 'windows phone' And '$(TargetPlatformVersion)' == '8.0'))">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)../..//build/native/bin/Win32\dbghelp.dll" Condition="(('$(AppContainerApplication.ToLower())' == 'true')) OR (('$(TargetPlatformIdentifier.ToLower())' == 'windows phone' And '$(TargetPlatformVersion)' == '8.0'))">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)../..//build/native/bin/Win32\sendrpt.exe" Condition="(('$(AppContainerApplication.ToLower())' == 'true')) OR (('$(TargetPlatformIdentifier.ToLower())' == 'windows phone' And '$(TargetPlatformVersion)' == '8.0'))">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+  </ItemGroup>
+  <ItemGroup Label="x64" Condition="'$(Platform.ToLower())' == 'x64'">
+    <None Include="$(MSBuildThisFileDirectory)../..//build/native/bin/x64\crashrpt.dll" Condition="(('$(AppContainerApplication.ToLower())' == 'true')) OR (('$(TargetPlatformIdentifier.ToLower())' == 'windows phone' And '$(TargetPlatformVersion)' == '8.0'))">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)../..//build/native/bin/x64\dbghelp.dll" Condition="(('$(AppContainerApplication.ToLower())' == 'true')) OR (('$(TargetPlatformIdentifier.ToLower())' == 'windows phone' And '$(TargetPlatformVersion)' == '8.0'))">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)../..//build/native/bin/x64\sendrpt.exe" Condition="(('$(AppContainerApplication.ToLower())' == 'true')) OR (('$(TargetPlatformIdentifier.ToLower())' == 'windows phone' And '$(TargetPlatformVersion)' == '8.0'))">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <PropertyPageSchema Include="$(MSBuildThisFileDirectory)\default-propertiesui.xml" />
+  </ItemGroup>
+  <Target Name="CrashRpt_CPP_AfterBuild" AfterTargets="AfterBuild" />
+  <Target Name="CrashRpt_CPP_AfterBuild_Win32" Label="Win32" Condition="'$(Platform.ToLower())' == 'win32'" AfterTargets="CrashRpt_CPP_AfterBuild">
+    <Copy SourceFiles="$(MSBuildThisFileDirectory)../..//build/native/bin/Win32\sendrpt.exe" DestinationFolder="$(TargetDir)" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="$(MSBuildThisFileDirectory)../..//build/native/bin/Win32\crashrpt.dll" DestinationFolder="$(TargetDir)" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="$(MSBuildThisFileDirectory)../..//build/native/bin/Win32\dbghelp.dll" DestinationFolder="$(TargetDir)" SkipUnchangedFiles="true" />
+  </Target>
+  <Target Name="CrashRpt_CPP_AfterBuild_x64" Label="x64" Condition="'$(Platform.ToLower())' == 'x64'" AfterTargets="CrashRpt_CPP_AfterBuild">
+    <Copy SourceFiles="$(MSBuildThisFileDirectory)../..//build/native/bin/x64\sendrpt.exe" DestinationFolder="$(TargetDir)" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="$(MSBuildThisFileDirectory)../..//build/native/bin/x64\crashrpt.dll" DestinationFolder="$(TargetDir)" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="$(MSBuildThisFileDirectory)../..//build/native/bin/x64\dbghelp.dll" DestinationFolder="$(TargetDir)" SkipUnchangedFiles="true" />
+  </Target>
+  <UsingTask TaskName="CrashRpt_CPP_Contains" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll" TaskFactory="CodeTaskFactory">
+    <ParameterGroup>
+      <Text Output="false" ParameterType="System.String" />
+      <Library Output="false" Required="true" ParameterType="System.String" />
+      <Value Output="false" Required="true" ParameterType="System.String" />
+      <Result Output="true" ParameterType="System.String" />
+    </ParameterGroup>
+    <Task>
+      <Code>Result = ((Text ?? "").Split(';').Contains(Library) ) ? Value : String.Empty;</Code>
+    </Task>
+  </UsingTask>
+  <Target Name="CrashRpt_CPP_init">
+    <CrashRpt_CPP_Contains Text="Linkage-dynamic" Library="CrashRpt_CPP" Value="dynamic" Condition="'$(Linkage-CrashRpt_CPP)'==''">
+      <Output TaskParameter="Result" PropertyName="Linkage-CrashRpt_CPP" />
+    </CrashRpt_CPP_Contains>
+    <CrashRpt_CPP_Contains Text="Linkage-static" Library="CrashRpt_CPP" Value="static" Condition="'$(Linkage-CrashRpt_CPP)'==''">
+      <Output TaskParameter="Result" PropertyName="Linkage-CrashRpt_CPP" />
+    </CrashRpt_CPP_Contains>
+    <CrashRpt_CPP_Contains Text="Linkage-ltcg" Library="CrashRpt_CPP" Value="ltcg" Condition="'$(Linkage-CrashRpt_CPP)'==''">
+      <Output TaskParameter="Result" PropertyName="Linkage-CrashRpt_CPP" />
+    </CrashRpt_CPP_Contains>
+    <CrashRpt_CPP_Contains Text="Linkage-sxs" Library="CrashRpt_CPP" Value="sxs" Condition="'$(Linkage-CrashRpt_CPP)'==''">
+      <Output TaskParameter="Result" PropertyName="Linkage-CrashRpt_CPP" />
+    </CrashRpt_CPP_Contains>
+    <CrashRpt_CPP_Contains Text="CallingConvention-cdecl" Library="CrashRpt_CPP" Value="cdecl" Condition="'$(CallingConvention-CrashRpt_CPP)'==''">
+      <Output TaskParameter="Result" PropertyName="CallingConvention-CrashRpt_CPP" />
+    </CrashRpt_CPP_Contains>
+    <CrashRpt_CPP_Contains Text="CallingConvention-stdcall" Library="CrashRpt_CPP" Value="stdcall" Condition="'$(CallingConvention-CrashRpt_CPP)'==''">
+      <Output TaskParameter="Result" PropertyName="CallingConvention-CrashRpt_CPP" />
+    </CrashRpt_CPP_Contains>
+    <CrashRpt_CPP_Contains Text="CallingConvention-fastcall" Library="CrashRpt_CPP" Value="fastcall" Condition="'$(CallingConvention-CrashRpt_CPP)'==''">
+      <Output TaskParameter="Result" PropertyName="CallingConvention-CrashRpt_CPP" />
+    </CrashRpt_CPP_Contains>
+    <CrashRpt_CPP_Contains Text="CallingConvention-thiscall" Library="CrashRpt_CPP" Value="thiscall" Condition="'$(CallingConvention-CrashRpt_CPP)'==''">
+      <Output TaskParameter="Result" PropertyName="CallingConvention-CrashRpt_CPP" />
+    </CrashRpt_CPP_Contains>
+    <CrashRpt_CPP_Contains Text="CallingConvention-clrcall" Library="CrashRpt_CPP" Value="clrcall" Condition="'$(CallingConvention-CrashRpt_CPP)'==''">
+      <Output TaskParameter="Result" PropertyName="CallingConvention-CrashRpt_CPP" />
+    </CrashRpt_CPP_Contains>
+  </Target>
+</Project>

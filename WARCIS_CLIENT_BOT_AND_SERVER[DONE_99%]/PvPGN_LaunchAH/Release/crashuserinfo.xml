@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UserInfo>
+<CommandLine>"C:\Projects\pvpgn-magic\PvPGN_LaunchAH\Release\ClientUpdater\WC3.exe"  -window</CommandLine>
+<CrashThreadId>AE0(NAME:ANTIHACK THREAD)</CrashThreadId>
+<CrashThreadStartAddress>Module path: C:\Projects\pvpgn-magic\PvPGN_LaunchAH\Release\ClientUpdater\AMH.dll. Module start address:67930000. Thread start address:67937D00</CrashThreadStartAddress>
+<Current game menu:>MAIN_MENU</Current game menu:>
+<LastError_0A58_000>struct HINSTANCE__ *__stdcall GetModuleFromAddress(int)(756):(GPROXY THREAD)</LastError_0A58_000>
+<LastError_0A58_001>struct HINSTANCE__ *__stdcall GetModuleFromAddress(int)(764):(GPROXY THREAD)</LastError_0A58_001>
+<LastError_0A58_002>struct HINSTANCE__ *__stdcall GetModuleFromAddress(int)(773):(GPROXY THREAD)</LastError_0A58_002>
+<LastError_0A58_003>int __stdcall GetFoundWhiteListMapValue(void)(113):(GPROXY THREAD)</LastError_0A58_003>
+<LastError_0A58_004>struct HINSTANCE__ *__stdcall GetModuleFromAddress(int)(756):(GPROXY THREAD)</LastError_0A58_004>
+<LastError_0A58_005>struct HINSTANCE__ *__stdcall GetModuleFromAddress(int)(764):(GPROXY THREAD)</LastError_0A58_005>
+<LastError_0A58_006>struct HINSTANCE__ *__stdcall GetModuleFromAddress(int)(773):(GPROXY THREAD)</LastError_0A58_006>
+<LastError_0A58_007>int __stdcall GetFoundWhiteListMapValue(void)(113):(GPROXY THREAD)</LastError_0A58_007>
+<LastError_0A58_008>struct HINSTANCE__ *__stdcall GetModuleFromAddress(int)(756):(GPROXY THREAD)</LastError_0A58_008>
+<LastError_0A58_009>struct HINSTANCE__ *__stdcall GetModuleFromAddress(int)(764):(GPROXY THREAD)</LastError_0A58_009>
+<LastError_0A58_00A>struct HINSTANCE__ *__stdcall GetModuleFromAddress(int)(773):(GPROXY THREAD)</LastError_0A58_00A>
+<LastError_0A58_00B>void __stdcall CONSOLE_Print(const class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > &)(0):(GPROXY THREAD)</LastError_0A58_00B>
+<LastError_0A58_00C>bool __thiscall CGProxy::Update(long)(0):(GPROXY THREAD)</LastError_0A58_00C>
+<LastError_0AE0_01C>unsigned int __stdcall GetXXHash(const char *,unsigned int)(3247):(ANTIHACK THREAD)</LastError_0AE0_01C>
+<LastError_0AE0_01D>unsigned int __stdcall GetXXHash(const char *,unsigned int)(3247):(ANTIHACK THREAD)</LastError_0AE0_01D>
+<LastError_1884_00D>int __stdcall GetFoundWhiteListMapValue(void)(113):( INIT MAP INFOS THREAD)</LastError_1884_00D>
+<LastError_1884_00E>struct HINSTANCE__ *__stdcall GetModuleFromAddress(int)(756):( INIT MAP INFOS THREAD)</LastError_1884_00E>
+<LastError_1884_00F>int __stdcall FreeLibrary_my(struct HINSTANCE__ *)(1593):( INIT MAP INFOS THREAD)</LastError_1884_00F>
+<LastError_1884_010>int __stdcall GetFoundWhiteListMapValue(void)(113):( INIT MAP INFOS THREAD)</LastError_1884_010>
+<LastError_1884_011>struct HINSTANCE__ *__stdcall GetModuleFromAddress(int)(756):( INIT MAP INFOS THREAD)</LastError_1884_011>
+<LastError_1884_012>struct HINSTANCE__ *__stdcall GetModuleFromAddress(int)(764):( INIT MAP INFOS THREAD)</LastError_1884_012>
+<LastError_1884_013>struct HINSTANCE__ *__stdcall GetModuleFromAddress(int)(773):( INIT MAP INFOS THREAD)</LastError_1884_013>
+<LastError_1884_014>struct HINSTANCE__ *__stdcall GetModuleFromAddress(int)(756):( INIT MAP INFOS THREAD)</LastError_1884_014>
+<LastError_1884_015>int __stdcall GetFoundWhiteListMapValue(void)(113):( INIT MAP INFOS THREAD)</LastError_1884_015>
+<LastError_1884_016>struct HINSTANCE__ *__stdcall GetModuleFromAddress(int)(756):( INIT MAP INFOS THREAD)</LastError_1884_016>
+<LastError_1884_017>int __stdcall FreeLibrary_my(struct HINSTANCE__ *)(1593):( INIT MAP INFOS THREAD)</LastError_1884_017>
+<LastError_1884_018>struct HINSTANCE__ *__stdcall GetModuleFromAddress(int)(756):( INIT MAP INFOS THREAD)</LastError_1884_018>
+<LastError_1884_019>int __stdcall GetFoundWhiteListMapValue(void)(113):( INIT MAP INFOS THREAD)</LastError_1884_019>
+<LastError_1884_01A>struct HINSTANCE__ *__stdcall GetModuleFromAddress(int)(756):( INIT MAP INFOS THREAD)</LastError_1884_01A>
+<LastError_1884_01B>int __stdcall FreeLibrary_my(struct HINSTANCE__ *)(1593):( INIT MAP INFOS THREAD)</LastError_1884_01B>
+</UserInfo>

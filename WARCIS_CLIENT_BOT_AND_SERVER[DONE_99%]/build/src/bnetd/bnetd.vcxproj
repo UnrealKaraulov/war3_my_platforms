@@ -1,0 +1,476 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{50B6BA22-0BBC-32E7-AE94-890C425F90C5}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>bnetd</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141_xp</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\..\..\Users\Karaulov\Desktop\PVPGN_SERV</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">bnetd.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">bnetd</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">c:\Users\Karaulov\Desktop\PVPGN_SERV\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">bnetd.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">bnetd</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\pvpgn-magic\build\src\bnetd\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">bnetd.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">bnetd</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\pvpgn-magic\build\src\bnetd\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">bnetd.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">bnetd</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>.\..\..\..\source\lib\;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Projects\pvpgn-magic\build;C:\Projects\pvpgn-magic\source\src;c:\Projects\pvpgn-magic\module\include\zlib\1.2.8;c:\Projects\pvpgn-magic\module\include\mysql\5.7.13;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;HAVE_CONFIG_H;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;HAVE_CONFIG_H;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Projects\pvpgn-magic\build;C:\Projects\pvpgn-magic\source\src;c:\Projects\pvpgn-magic\module\include\zlib\1.2.8;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Projects\pvpgn-magic\build;C:\Projects\pvpgn-magic\source\src;c:\Projects\pvpgn-magic\module\include\zlib\1.2.8;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\common\Debug\common.lib;..\compat\Debug\compat.lib;..\win32\Debug\win32.lib;..\tinycdb\Debug\tinycdb.lib;ws2_32.lib;C:\Projects\pvpgn-magic\module\include\zlib\1.2.8\zdll.lib;c:\Projects\pvpgn-magic\module\include\mysql\5.7.13\libmysql.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Projects/pvpgn-magic/build/src/common;C:/Projects/pvpgn-magic/build/src/common/$(Configuration);C:/Projects/pvpgn-magic/build/src/compat;C:/Projects/pvpgn-magic/build/src/compat/$(Configuration);C:/Projects/pvpgn-magic/build/src/win32;C:/Projects/pvpgn-magic/build/src/win32/$(Configuration);C:/Projects/pvpgn-magic/build/src/tinycdb;C:/Projects/pvpgn-magic/build/src/tinycdb/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Projects/pvpgn-magic/build/src/bnetd/Debug/bnetd.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Projects/pvpgn-magic/build/src/bnetd/Debug/bnetd.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Projects\pvpgn-magic\build;C:\Projects\pvpgn-magic\source\src;c:\Projects\pvpgn-magic\module\include\zlib\1.2.8;c:\Projects\pvpgn-magic\module\include\mysql\5.7.13\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_HAS_AUTO_PTR_ETC;WITH_SQL_MYSQL;WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;HAVE_CONFIG_H;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <SupportJustMyCode>false</SupportJustMyCode>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;HAVE_CONFIG_H;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Projects\pvpgn-magic\build;C:\Projects\pvpgn-magic\source\src;c:\Projects\pvpgn-magic\module\include\zlib\1.2.8;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Projects\pvpgn-magic\build;C:\Projects\pvpgn-magic\source\src;c:\Projects\pvpgn-magic\module\include\zlib\1.2.8;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\common\Release\common.lib;..\compat\Release\compat.lib;..\win32\Release\win32.lib;..\tinycdb\Release\tinycdb.lib;ws2_32.lib;C:\Projects\pvpgn-magic\module\include\zlib\1.2.8\zdll.lib;c:\Projects\pvpgn-magic\module\include\mysql\5.7.13\libmysql.lib;c:\Projects\pvpgn-magic\build\Release\fmt.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Projects/pvpgn-magic/build/src/common;C:/Projects/pvpgn-magic/build/src/common/$(Configuration);C:/Projects/pvpgn-magic/build/src/compat;C:/Projects/pvpgn-magic/build/src/compat/$(Configuration);C:/Projects/pvpgn-magic/build/src/win32;C:/Projects/pvpgn-magic/build/src/win32/$(Configuration);C:/Projects/pvpgn-magic/build/src/tinycdb;C:/Projects/pvpgn-magic/build/src/tinycdb/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Projects/pvpgn-magic/build/src/bnetd/Release/bnetd.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:\Projects\pvpgn-magic\Release\bnetd.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+      <AssemblyDebug>true</AssemblyDebug>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Projects\pvpgn-magic\build;C:\Projects\pvpgn-magic\source\src;c:\Projects\pvpgn-magic\module\include\zlib\1.2.8;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;HAVE_CONFIG_H;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;HAVE_CONFIG_H;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Projects\pvpgn-magic\build;C:\Projects\pvpgn-magic\source\src;c:\Projects\pvpgn-magic\module\include\zlib\1.2.8;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Projects\pvpgn-magic\build;C:\Projects\pvpgn-magic\source\src;c:\Projects\pvpgn-magic\module\include\zlib\1.2.8;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\common\MinSizeRel\common.lib;..\compat\MinSizeRel\compat.lib;..\win32\MinSizeRel\win32.lib;..\tinycdb\MinSizeRel\tinycdb.lib;ws2_32.lib;C:\Projects\pvpgn-magic\module\include\zlib\1.2.8\zdll.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Projects/pvpgn-magic/build/src/common;C:/Projects/pvpgn-magic/build/src/common/$(Configuration);C:/Projects/pvpgn-magic/build/src/compat;C:/Projects/pvpgn-magic/build/src/compat/$(Configuration);C:/Projects/pvpgn-magic/build/src/win32;C:/Projects/pvpgn-magic/build/src/win32/$(Configuration);C:/Projects/pvpgn-magic/build/src/tinycdb;C:/Projects/pvpgn-magic/build/src/tinycdb/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Projects/pvpgn-magic/build/src/bnetd/MinSizeRel/bnetd.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Projects/pvpgn-magic/build/src/bnetd/MinSizeRel/bnetd.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Projects\pvpgn-magic\build;C:\Projects\pvpgn-magic\source\src;c:\Projects\pvpgn-magic\module\include\zlib\1.2.8;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;HAVE_CONFIG_H;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;HAVE_CONFIG_H;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Projects\pvpgn-magic\build;C:\Projects\pvpgn-magic\source\src;c:\Projects\pvpgn-magic\module\include\zlib\1.2.8;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Projects\pvpgn-magic\build;C:\Projects\pvpgn-magic\source\src;c:\Projects\pvpgn-magic\module\include\zlib\1.2.8;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\common\RelWithDebInfo\common.lib;..\compat\RelWithDebInfo\compat.lib;..\win32\RelWithDebInfo\win32.lib;..\tinycdb\RelWithDebInfo\tinycdb.lib;ws2_32.lib;C:\Projects\pvpgn-magic\module\include\zlib\1.2.8\zdll.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Projects/pvpgn-magic/build/src/common;C:/Projects/pvpgn-magic/build/src/common/$(Configuration);C:/Projects/pvpgn-magic/build/src/compat;C:/Projects/pvpgn-magic/build/src/compat/$(Configuration);C:/Projects/pvpgn-magic/build/src/win32;C:/Projects/pvpgn-magic/build/src/win32/$(Configuration);C:/Projects/pvpgn-magic/build/src/tinycdb;C:/Projects/pvpgn-magic/build/src/tinycdb/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Projects/pvpgn-magic/build/src/bnetd/RelWithDebInfo/bnetd.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Projects/pvpgn-magic/build/src/bnetd/RelWithDebInfo/bnetd.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\source\src\bnetd\bcrypt.h" />
+    <ClInclude Include="..\..\..\source\src\bnetd\BlockingSocket.h" />
+    <ClInclude Include="..\..\..\source\src\bnetd\Definements.h" />
+    <ClInclude Include="..\..\..\source\src\bnetd\FTPClient.h" />
+    <ClInclude Include="..\..\..\source\src\bnetd\FTPDataTypes.h" />
+    <ClInclude Include="..\..\..\source\src\bnetd\FTPFileStatus.h" />
+    <ClInclude Include="..\..\..\source\src\bnetd\FTPListParse.h" />
+    <ClInclude Include="..\..\..\source\src\bnetd\httplib.h" />
+    <ClInclude Include="..\..\..\source\src\bnetd\smart_ptr.h" />
+    <ClInclude Include="..\..\..\source\src\win32\windump.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\account.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\account_wrap.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\adbanner.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\alias_command.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\anongame_gameresult.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\anongame.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\anongame_infos.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\anongame_maplists.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\attrgroup.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\attr.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\attrlayer.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\autoupdate.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\channel_conv.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\channel.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\character.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\clan.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\cmdline.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\command_groups.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\command.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\connection.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\file_cdb.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\file.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\file_plain.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\friends.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\game_conv.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\game.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\handle_anongame.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\handle_apireg.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\handle_bnet.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\handle_bot.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\handle_d2cs.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\handle_file.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\handle_init.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\handle_irc_common.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\handle_irc.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\handlers.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\handle_telnet.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\handle_udp.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\handle_wol.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\handle_wol_gameres.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\helpfile.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\ini.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\ipban.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\irc.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\ladder_calc.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\ladder.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\mail.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\message.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\news.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\output.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\prefs.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\quota.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\realm.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\runprog.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\server.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\sql_common.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\sql_dbcreator.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\sql_mysql.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\sql_odbc.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\sql_pgsql.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\sql_sqlite3.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\storage_file.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\storage.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\storage_sql.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\support.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\team.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\tick.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\timer.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\topic.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\tournament.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\icons.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\tracker.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\udptest_send.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\versioncheck.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\watch.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\anongame_wol.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\handle_wserv.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\luafunctions.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\luainterface.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\luaobjects.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\luawrapper.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\i18n.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\bnetd\userlog.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\win32\winmain.h" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\json\json.hpp" />
+    <ClInclude Include="C:\Projects\pvpgn-magic\source\src\win32\console_resource.h" />
+    <ClCompile Include="..\..\..\source\src\bnetd\bcrypt.c" />
+    <ClCompile Include="..\..\..\source\src\bnetd\BlockingSocket.cpp" />
+    <ClCompile Include="..\..\..\source\src\bnetd\FTPClient.cpp" />
+    <ClCompile Include="..\..\..\source\src\bnetd\FTPDataTypes.cpp" />
+    <ClCompile Include="..\..\..\source\src\bnetd\FTPFileStatus.cpp" />
+    <ClCompile Include="..\..\..\source\src\bnetd\FTPListParse.cpp" />
+    <ClCompile Include="..\..\..\source\src\win32\windump.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\account.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\account_wrap.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\adbanner.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\alias_command.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\anongame.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\anongame_gameresult.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\anongame_infos.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\anongame_maplists.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\attrgroup.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\attrlayer.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\autoupdate.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\channel_conv.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\channel.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\character.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\clan.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\cmdline.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\command.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\command_groups.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\connection.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\file_cdb.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\file.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\file_plain.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\friends.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\game_conv.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\game.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\handle_anongame.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\handle_apireg.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\handle_bnet.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\handle_bot.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\handle_d2cs.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\handle_file.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\handle_init.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\handle_irc_common.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\handle_irc.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\handle_telnet.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\handle_udp.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\handle_wol.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\handle_wol_gameres.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\helpfile.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\ini.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\ipban.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\irc.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\ladder_calc.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\ladder.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\mail.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\main.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\message.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\news.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\output.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\prefs.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\realm.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\runprog.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\update_dota_stats.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\server.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\sql_common.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\sql_dbcreator.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\sql_mysql.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\sql_odbc.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\sql_pgsql.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\sql_sqlite3.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\storage.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\storage_file.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\storage_sql.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\support.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\team.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\tick.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\timer.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\topic.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\tournament.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\icons.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\tracker.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\udptest_send.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\versioncheck.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\watch.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\anongame_wol.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\handle_wserv.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\luafunctions.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\luainterface.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\luaobjects.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\luawrapper.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\i18n.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\bnetd\userlog.cpp" />
+    <ClCompile Include="C:\Projects\pvpgn-magic\source\src\win32\winmain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/Projects/pvpgn-magic/build/src/common/common.vcxproj">
+      <Project>17912ABF-A739-3729-A210-6F2DE48C45EC</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Projects/pvpgn-magic/build/src/compat/compat.vcxproj">
+      <Project>8C1A8DD7-D5E7-320D-9364-63E7FF8198B9</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Projects/pvpgn-magic/build/src/tinycdb/tinycdb.vcxproj">
+      <Project>D0A1FEB9-8867-3BEF-95BA-CC3E40491C8D</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

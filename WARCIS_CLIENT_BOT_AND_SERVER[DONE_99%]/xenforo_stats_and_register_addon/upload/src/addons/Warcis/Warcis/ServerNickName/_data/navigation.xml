@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation>
+  <navigation_entry navigation_id="mapList" display_order="400" navigation_type_id="basic" enabled="1"><![CDATA[{"link":"{{ link('map-list') }}","display_condition":"","extra_attributes":[]}]]></navigation_entry>
+  <navigation_entry navigation_id="mymapList" parent_navigation_id="mapList" display_order="100" navigation_type_id="basic" enabled="1"><![CDATA[{"link":"{{ link('map-list\/mymapList') }}","display_condition":"","extra_attributes":{"rel":"nofollow"}}]]></navigation_entry>
+  <navigation_entry navigation_id="statsmapList" parent_navigation_id="mapList" display_order="200" navigation_type_id="basic" enabled="1"><![CDATA[{"link":"{{ link('map-list\/statsmapList') }}","display_condition":"","extra_attributes":{"rel":"nofollow"}}]]></navigation_entry>
+  <navigation_entry navigation_id="allmapList" parent_navigation_id="mapList" display_order="300" navigation_type_id="basic" enabled="1"><![CDATA[{"link":"{{ link('map-list\/allmapList') }}","display_condition":"","extra_attributes":{"rel":"nofollow"}}]]></navigation_entry>
+  <navigation_entry navigation_id="uploadmapList" parent_navigation_id="mapList" display_order="400" navigation_type_id="basic" enabled="1"><![CDATA[{"link":"{{ link('map-list\/uploadmapList') }}","display_condition":"","extra_attributes":{"rel":"nofollow"}}]]></navigation_entry>
+
+  <navigation_entry navigation_id="userStats" display_order="410" navigation_type_id="basic" enabled="1"><![CDATA[{"link":"{{ link('user-stats') }}","display_condition":"","extra_attributes":[]}]]></navigation_entry>
+  
+  </navigation>

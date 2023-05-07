@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<routes>
+<route route_type="public" route_prefix="map-list" controller="Warcis\ServerNickName\Pub\Controller\MapListPrint" format=":int&lt;user_id,username&gt;/" context="mapList" />
+<route route_type="public" route_prefix="map-list" sub_name="mymaplist" action_prefix="mymaplist" controller="Warcis\ServerNickName\Pub\Controller\MapListPrint" format=":int&lt;user_id,username&gt;/" context="mapList"/>
+<route route_type="public" route_prefix="map-list" sub_name="statsmaplist" action_prefix="statsmaplist" controller="Warcis\ServerNickName\Pub\Controller\MapListPrint" format=":int&lt;user_id,username&gt;/"  context="mapList"/>
+<route route_type="public" route_prefix="map-list" sub_name="allmaplist" action_prefix="allmaplist" controller="Warcis\ServerNickName\Pub\Controller\MapListPrint" format=":int&lt;user_id,username&gt;/"  context="mapList"/>
+<route route_type="public" route_prefix="map-list" sub_name="uploadmaplist" action_prefix="uploadmaplist" controller="Warcis\ServerNickName\Pub\Controller\MapListPrint" format=":int&lt;user_id,username&gt;/"  context="mapList"/>
+
+
+<route route_type="public" route_prefix="user-stats" controller="Warcis\ServerNickName\Pub\Controller\UserStats" format=":int&lt;user_id,username&gt;/" context="userStats" />
+
+</routes>

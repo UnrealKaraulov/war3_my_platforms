@@ -1,0 +1,10 @@
+^C:\PROJECTS\PVPGN-MAGIC\SOURCE\SRC\TINYCDB\CMAKELISTS.TXT
+setlocal
+C:\Projects\pvpgn-magic\module\cmake\bin\cmake.exe -HC:/Projects/pvpgn-magic/source -BC:/Projects/pvpgn-magic/build --check-stamp-file C:\Projects\pvpgn-magic\build\src\tinycdb\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,1 @@
+c:\Projects\pvpgn-magic\ghostcb_no_boost\bncsutil\vc8_build\Release MySQL\BNCSutil.dll

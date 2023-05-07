@@ -1,0 +1,100 @@
+[Sat Aug  8 08:06:28 2020] Broadcast game:GAMEID0000000047(0/0)
+[Sat Aug  8 08:06:28 2020] Broadcast game:GAMEID0000000047(0/0)
+[Sat Aug  8 08:06:29 2020] Broadcast game:GAMEID0000000047(0/0)
+[Sat Aug  8 08:06:29 2020] Broadcast game:GAMEID0000000047(0/0)
+[Sat Aug  8 08:06:29 2020] [Rebirth_Rec] test2 command:1053957
+[Sat Aug  8 08:06:29 2020] [Rebirth_Rec] test2 command:1
+[Sat Aug  8 08:06:29 2020] [Rebirth_Rec] test2 command:5
+[Sat Aug  8 08:06:29 2020] [Rebirth_Rec] test2 command:2
+[Sat Aug  8 08:06:29 2020] [Rebirth_Rec] test2 command:3
+[Sat Aug  8 08:06:29 2020] Broadcast game:GAMEID0000000047(0/0)
+[Sat Aug  8 08:06:29 2020] Broadcast game:GAMEID0000000047(0/0)
+[Sat Aug  8 08:06:30 2020] Broadcast game:GAMEID0000000047(0/0)
+[Sat Aug  8 08:06:30 2020] Broadcast game:GAMEID0000000047(0/0)
+[Sat Aug  8 08:06:30 2020] Broadcast game:GAMEID0000000047(0/0)
+[Sat Aug  8 08:06:31 2020] Broadcast game:GAMEID0000000047(0/0)
+[Sat Aug  8 08:06:31 2020] Broadcast game:GAMEID0000000047(0/0)
+[Sat Aug  8 08:06:31 2020] Broadcast game:GAMEID0000000047(0/0)
+[Sat Aug  8 08:06:31 2020] Broadcast game:GAMEID0000000047(0/0)
+[Sat Aug  8 08:06:32 2020] Broadcast game:GAMEID0000000047(0/0)
+[Sat Aug  8 08:06:32 2020] Broadcast game:GAMEID0000000047(0/0)
+[Sat Aug  8 08:06:32 2020] Broadcast game:GAMEID0000000047(0/0)
+[Sat Aug  8 08:06:33 2020] Broadcast game:GAMEID0000000047(0/0)
+[Sat Aug  8 08:06:33 2020] Broadcast game:GAMEID0000000047(0/0)
+[Sat Aug  8 08:06:33 2020] Broadcast game:GAMEID0000000047(0/0)
+[Sat Aug  8 08:06:33 2020] RECEIVE_SID_AH_PACKET:1
+[Sat Aug  8 08:06:33 2020] AH RESULT OK
+[Sat Aug  8 08:06:33 2020] [Rebirth_Rec] test2 command:1
+[Sat Aug  8 08:06:33 2020] [Rebirth_Rec] test2 command:5
+[Sat Aug  8 08:06:33 2020] [Rebirth_Rec] test2 command:2
+[Sat Aug  8 08:06:33 2020] [Rebirth_Rec] test2 command:3
+[Sat Aug  8 08:06:33 2020] Broadcast game:GAMEID0000000047(0/0)
+[Sat Aug  8 08:06:34 2020] Broadcast game:GAMEID0000000047(0/0)
+[Sat Aug  8 08:06:34 2020] Broadcast game:GAMEID0000000047(0/0)
+[Sat Aug  8 08:06:34 2020] [Rebirth_Rec] test2 command:1053957
+[Sat Aug  8 08:06:34 2020] [Rebirth_Rec] test2 command:1
+[Sat Aug  8 08:06:34 2020] [Rebirth_Rec] test2 command:5
+[Sat Aug  8 08:06:34 2020] [Rebirth_Rec] test2 command:2
+[Sat Aug  8 08:06:34 2020] [Rebirth_Rec] test2 command:3
+[Sat Aug  8 08:06:34 2020] Broadcast game:GAMEID0000000047(0/0)
+[Sat Aug  8 08:06:35 2020] Broadcast game:GAMEID0000000047(0/0)
+[Sat Aug  8 08:06:35 2020] [Client] shutting down
+[Sat Aug  8 08:06:35 2020] [Client] shutting down winsock
+[Sat Aug  8 08:07:49 2020] [Client] starting up with username:Karaulov999
+[Sat Aug  8 08:07:49 2020] [Client] starting winsock
+[Sat Aug  8 08:07:49 2020] [Client] setting critical process priority
+[Sat Aug  8 08:07:49 2020]   Type /help at any time for help.
+[Sat Aug  8 08:07:49 2020]   Press any key to continue.
+[Sat Aug  8 08:07:49 2020] 
+[Sat Aug  8 08:07:49 2020] [UDPSOCKET] using broadcast target [127.0.0.1]
+[Sat Aug  8 08:07:49 2020] [Client] War3Lan Version Karaulov. Custom build. 2018
+[Sat Aug  8 08:07:49 2020] [SERVER] connecting to server [109.248.207.194] on port 6112
+[Sat Aug  8 08:07:49 2020] [SERVER] resolved and cached server IP address 109.248.207.194
+[Sat Aug  8 08:07:49 2020] [SERVER] connected
+[Sat Aug  8 08:07:50 2020] [SERVER] attempting to auth as Warcraft III: The Frozen Throne
+[Sat Aug  8 08:07:50 2020] [SERVER] cd keys accepted
+[Sat Aug  8 08:07:50 2020] RECEIVE_SID_AH_PACKET:2
+[Sat Aug  8 08:07:50 2020] MVAL: 6618
+[Sat Aug  8 08:07:50 2020] RECEIVE_SID_AH_PACKET:1
+[Sat Aug  8 08:07:50 2020] AH RESULT OK
+[Sat Aug  8 08:07:50 2020] [Rebirth_Rec] test2 command:1
+[Sat Aug  8 08:07:50 2020] [Rebirth_Rec] test2 command:5
+[Sat Aug  8 08:07:50 2020] [Rebirth_Rec] test2 command:2
+[Sat Aug  8 08:07:50 2020] [Rebirth_Rec] test2 command:3
+[Sat Aug  8 08:07:50 2020] RECEIVE_SID_AH_PACKET:21
+[Sat Aug  8 08:07:56 2020] RECEIVE_SID_AH_PACKET:22
+[Sat Aug  8 08:07:58 2020] RECEIVE_SID_AH_PACKET:22
+[Sat Aug  8 08:07:59 2020] RECEIVE_SID_AH_PACKET:22
+[Sat Aug  8 08:08:00 2020] RECEIVE_SID_AH_PACKET:22
+[Sat Aug  8 08:08:00 2020] RECEIVE_SID_AH_PACKET:22
+[Sat Aug  8 08:08:00 2020] RECEIVE_SID_AH_PACKET:22
+[Sat Aug  8 08:08:00 2020] RECEIVE_SID_AH_PACKET:22
+[Sat Aug  8 08:08:00 2020] RECEIVE_SID_AH_PACKET:16167
+[Sat Aug  8 08:08:00 2020] RECEIVE_SID_AH_PACKET:16168
+[Sat Aug  8 08:08:00 2020] RECEIVE_SID_AH_PACKET:16168
+[Sat Aug  8 08:08:00 2020] RECEIVE_SID_AH_PACKET:16168
+[Sat Aug  8 08:08:00 2020] RECEIVE_SID_AH_PACKET:16168
+[Sat Aug  8 08:08:00 2020] RECEIVE_SID_AH_PACKET:16168
+[Sat Aug  8 08:08:00 2020] RECEIVE_SID_AH_PACKET:16168
+[Sat Aug  8 08:08:00 2020] RECEIVE_SID_AH_PACKET:16168
+[Sat Aug  8 08:08:00 2020] [SERVER] username [Karaulov999] accepted
+[Sat Aug  8 08:08:01 2020] [Rebirth_Rec] test2 command:1
+[Sat Aug  8 08:08:01 2020] [Rebirth_Rec] test2 command:5
+[Sat Aug  8 08:08:01 2020] [Rebirth_Rec] test2 command:2
+[Sat Aug  8 08:08:01 2020] [Rebirth_Rec] test2 command:3
+[Sat Aug  8 08:08:01 2020] [Rebirth_Rec] test2 command:1053957
+[Sat Aug  8 08:08:01 2020] [Rebirth_Rec] test2 command:43981
+[Sat Aug  8 08:08:01 2020] [SERVER] using pvpgn logon type (for pvpgn servers only)
+[Sat Aug  8 08:08:01 2020] RECEIVE_SID_AH_PACKET:1
+[Sat Aug  8 08:08:01 2020] AH RESULT OK
+[Sat Aug  8 08:08:01 2020] [Rebirth_Rec] test2 command:1
+[Sat Aug  8 08:08:01 2020] [Rebirth_Rec] test2 command:5
+[Sat Aug  8 08:08:01 2020] [Rebirth_Rec] test2 command:2
+[Sat Aug  8 08:08:01 2020] [Rebirth_Rec] test2 command:3
+[Sat Aug  8 08:08:01 2020] [SERVER] logon successful
+[Sat Aug  8 08:08:01 2020] RECEIVE_SID_AH_PACKET:1
+[Sat Aug  8 08:08:01 2020] AH RESULT OK
+[Sat Aug  8 08:08:01 2020] [Rebirth_Rec] test2 command:1
+[Sat Aug  8 08:08:01 2020] [Rebirth_Rec] test2 command:5
+[Sat Aug  8 08:08:01 2020] [Rebirth_Rec] test2 command:2
+[Sat Aug  8 08:08:01 2020] [Rebirth_Rec] test2 command:3

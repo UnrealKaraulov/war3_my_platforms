@@ -1,0 +1,26 @@
+﻿<Window x:Class="NewClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NewClient"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="511.446" Width="814.458" Closing="Window_Closing">
+    <Grid>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="230,103,0,0" TextWrapping="Wrap" Text="Login" VerticalAlignment="Top" Width="150" Name="MyLogin"/>
+        <PasswordBox HorizontalAlignment="Left" Height="25" Margin="230,131,0,0" VerticalAlignment="Top" Width="146" Name="MyPassword"/>
+        <TextBox IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="230,169,0,0" TextWrapping="Wrap" Text="84.201.151.100" VerticalAlignment="Top" Width="150" Name="MyServer">
+
+            <TextBox.Effect>
+                <BlurEffect Radius="5"></BlurEffect>
+            </TextBox.Effect>
+
+        </TextBox>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="260,211,0,0" TextWrapping="Wrap" Text="Channel" VerticalAlignment="Top" Width="120" Name="MyChannel"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="68,264,0,0" TextWrapping="Wrap" Text="d:\Games\Warcraft III\" VerticalAlignment="Top" Width="521" Name="MyWar3Path"/>
+        <Button Name="LoginButton" Content="В АТАКУ!" HorizontalAlignment="Left" Margin="301,321,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button Name="RegisterButton" Content="ЗАРЕГАТЬ АККАУНТ!" HorizontalAlignment="Left" Margin="614,150,0,0" VerticalAlignment="Top" Width="120" Click="ButtonReg_Click" Height="28" RenderTransformOrigin="0.468,-1.142"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="424,103,0,0" TextWrapping="Wrap" Text="Email@mail.mail" VerticalAlignment="Top" Width="150" Name="MyEmail"/>
+
+    </Grid>
+</Window>
