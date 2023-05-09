@@ -1,8 +1,4 @@
 /*
-* This is an independent project of an individual developer. Dear PVS-Studio, please check it.
-* PVS-Studio Static Code Analyzer for C, C++ and C#: http://www.viva64.com
-*/
-/*
  * Class that implements the SRP-3 based authentication schema
  * used by Blizzards WarCraft 3. Implementations is based upon
  * public information available under

@@ -1,7 +1,3 @@
-/*
-* This is an independent project of an individual developer. Dear PVS-Studio, please check it.
-* PVS-Studio Static Code Analyzer for C, C++ and C#: http://www.viva64.com
-*/
 /* "advanced" cdb_make_put routine
  *
  * This file is a part of tinycdb package by Michael Tokarev, mjt@corpit.ru.

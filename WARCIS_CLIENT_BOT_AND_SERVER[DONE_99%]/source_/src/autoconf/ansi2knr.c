@@ -1,7 +1,3 @@
-/*
-* This is an independent project of an individual developer. Dear PVS-Studio, please check it.
-* PVS-Studio Static Code Analyzer for C, C++ and C#: http://www.viva64.com
-*/
 /* Copyright (C) 1989, 2000 Aladdin Enterprises.  All rights reserved. */
 
 /*$Id: ansi2knr.c,v 1.2 2005/02/10 08:31:08 pandaemonium Exp $*/

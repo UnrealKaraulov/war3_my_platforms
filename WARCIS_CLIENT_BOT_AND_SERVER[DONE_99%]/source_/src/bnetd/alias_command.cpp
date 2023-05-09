@@ -1,8 +1,4 @@
 /*
-* This is an independent project of an individual developer. Dear PVS-Studio, please check it.
-* PVS-Studio Static Code Analyzer for C, C++ and C#: http://www.viva64.com
-*/
-/*
  * Copyright (C) 2000  Onlyer (onlyer@263.net)
  * Copyright (C) 2002  Ross Combs (rocombs@cs.nmsu.edu)
  *

@@ -1,8 +1,4 @@
 /*
-* This is an independent project of an individual developer. Dear PVS-Studio, please check it.
-* PVS-Studio Static Code Analyzer for C, C++ and C#: http://www.viva64.com
-*/
-/*
  * Class for simple, arbitrary size unsigned integer math.
  * Note that some method implementations might lack features that weren't required so far!
  *
