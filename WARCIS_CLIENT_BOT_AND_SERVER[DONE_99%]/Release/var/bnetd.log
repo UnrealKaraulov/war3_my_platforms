@@ -1,0 +1,7 @@
+May 09 17:06:11 [info ] eventlog_startup: logging event levels: fatal,error,warn,info
+May 09 17:06:11 [error] pvpgn::bnetd::InitHostBotList: [WHITELIST] added WarcisHostBot
+May 09 17:06:11 [error] pvpgn::bnetd::InitCrcWhiteList: [CRCWHITELIST] added 3816578313
+May 09 17:06:11 [info ] pvpgn_greeting: Warcis Server 2.00.BETA process 432
+May 09 17:06:11 [info ] pvpgn_greeting: running on Windows 10 (10.0 Build 25290, x86)
+May 09 17:06:11 [info ] pvpgn::bnetd::storage_init: initializing storage layer (available drivers: file, sql)
+May 09 17:06:11 [info ] pvpgn::bnetd::sql_mysql_init: Successfully turned on MYSQL_OPT_RECONNECT.
