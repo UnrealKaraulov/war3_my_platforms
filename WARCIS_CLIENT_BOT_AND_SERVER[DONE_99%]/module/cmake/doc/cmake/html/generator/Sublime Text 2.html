@@ -1,36 +1,32 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
+<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-  <title>Sublime Text 2 &mdash; CMake 3.7.1 Documentation</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
+  <title>Sublime Text 2 &mdash; CMake 3.27.3 Documentation</title>
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/cmake.css" />
     
-    <link rel="stylesheet" href="../_static/cmake.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
     
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '../',
-        VERSION:     '3.7.1',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
-      };
-    </script>
-    <script type="text/javascript" src="../_static/jquery.js"></script>
-    <script type="text/javascript" src="../_static/underscore.js"></script>
-    <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="shortcut icon" href="../_static/cmake-favicon.ico"/>
-    <link rel="top" title="CMake 3.7.1 Documentation" href="../index.html" />
-    <link rel="up" title="cmake-generators(7)" href="../manual/cmake-generators.7.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="cmake-language(7)" href="../manual/cmake-language.7.html" />
-    <link rel="prev" title="Kate" href="Kate.html" /> 
-  </head>
-  <body role="document">
+    <link rel="prev" title="Kate" href="Kate.html" />
+ 
+
+  </head><body>
+
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
@@ -48,13 +44,14 @@
          style="vertical-align: middle; margin-top: -2px" />
   </li>
   <li>
-    <a href="https://cmake.org/">CMake</a> &raquo;
+    <a href="https://cmake.org/">CMake</a> &#187;
   </li>
   <li>
-    <a href="../index.html">3.7.1 Documentation</a> &raquo;
+    <a href="../index.html">3.27.3 Documentation</a> &#187;
   </li>
 
-          <li class="nav-item nav-item-1"><a href="../manual/cmake-generators.7.html" accesskey="U">cmake-generators(7)</a> &raquo;</li> 
+          <li class="nav-item nav-item-1"><a href="../manual/cmake-generators.7.html" accesskey="U">cmake-generators(7)</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Sublime Text 2</a></li> 
       </ul>
     </div>  
 
@@ -63,60 +60,67 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="sublime-text-2">
-<span id="generator:Sublime Text 2"></span><h1>Sublime Text 2<a class="headerlink" href="#sublime-text-2" title="Permalink to this headline">¶</a></h1>
+  <section id="sublime-text-2">
+<span id="generator:Sublime Text 2"></span><h1>Sublime Text 2<a class="headerlink" href="#sublime-text-2" title="Permalink to this heading">¶</a></h1>
+<div class="deprecated">
+<p><span class="versionmodified deprecated">Deprecated since version 3.27: </span>Support for <a class="reference internal" href="../manual/cmake-generators.7.html#extra-generators"><span class="std std-ref">Extra Generators</span></a> is deprecated and will be removed from
+a future version of CMake.  IDEs may use the <span class="target" id="index-0-manual:cmake-file-api(7)"></span><a class="reference internal" href="../manual/cmake-file-api.7.html#manual:cmake-file-api(7)" title="cmake-file-api(7)"><code class="xref cmake cmake-manual docutils literal notranslate"><span class="pre">cmake-file-api(7)</span></code></a>
+to view CMake-generated project build trees.</p>
+</div>
 <p>Generates Sublime Text 2 project files.</p>
 <p>Project files for Sublime Text 2 will be created in the top directory
-and in every subdirectory which features a CMakeLists.txt file
-containing a PROJECT() call.  Additionally Makefiles (or build.ninja
-files) are generated into the build tree.  The appropriate make
-program can build the project through the default make target.  A
-&#8220;make install&#8221; target is also provided.</p>
-<p>This &#8220;extra&#8221; generator may be specified as:</p>
-<dl class="docutils">
-<dt><code class="docutils literal"><span class="pre">Sublime</span> <span class="pre">Text</span> <span class="pre">2</span> <span class="pre">-</span> <span class="pre">MinGW</span> <span class="pre">Makefiles</span></code></dt>
-<dd>Generate with <span class="target" id="index-0-generator:MinGW Makefiles"></span><a class="reference internal" href="MinGW Makefiles.html#generator:MinGW Makefiles" title="MinGW Makefiles"><code class="xref cmake cmake-generator docutils literal"><span class="pre">MinGW</span> <span class="pre">Makefiles</span></code></a>.</dd>
-<dt><code class="docutils literal"><span class="pre">Sublime</span> <span class="pre">Text</span> <span class="pre">2</span> <span class="pre">-</span> <span class="pre">NMake</span> <span class="pre">Makefiles</span></code></dt>
-<dd>Generate with <span class="target" id="index-0-generator:NMake Makefiles"></span><a class="reference internal" href="NMake Makefiles.html#generator:NMake Makefiles" title="NMake Makefiles"><code class="xref cmake cmake-generator docutils literal"><span class="pre">NMake</span> <span class="pre">Makefiles</span></code></a>.</dd>
-<dt><code class="docutils literal"><span class="pre">Sublime</span> <span class="pre">Text</span> <span class="pre">2</span> <span class="pre">-</span> <span class="pre">Ninja</span></code></dt>
-<dd>Generate with <span class="target" id="index-0-generator:Ninja"></span><a class="reference internal" href="Ninja.html#generator:Ninja" title="Ninja"><code class="xref cmake cmake-generator docutils literal"><span class="pre">Ninja</span></code></a>.</dd>
-<dt><code class="docutils literal"><span class="pre">Sublime</span> <span class="pre">Text</span> <span class="pre">2</span> <span class="pre">-</span> <span class="pre">Unix</span> <span class="pre">Makefiles</span></code></dt>
-<dd>Generate with <span class="target" id="index-0-generator:Unix Makefiles"></span><a class="reference internal" href="Unix Makefiles.html#generator:Unix Makefiles" title="Unix Makefiles"><code class="xref cmake cmake-generator docutils literal"><span class="pre">Unix</span> <span class="pre">Makefiles</span></code></a>.</dd>
+and in every subdirectory which features a <code class="docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code> file
+containing a <span class="target" id="index-0-command:project"></span><a class="reference internal" href="../command/project.html#command:project" title="project"><code class="xref cmake cmake-command docutils literal notranslate"><span class="pre">project()</span></code></a> call.  Additionally <code class="docutils literal notranslate"><span class="pre">Makefiles</span></code>
+(or <code class="docutils literal notranslate"><span class="pre">build.ninja</span></code> files) are generated into the build tree.
+The appropriate make program can build the project through the default <code class="docutils literal notranslate"><span class="pre">all</span></code>
+target.  An <code class="docutils literal notranslate"><span class="pre">install</span></code> target is also provided.</p>
+<p>This &quot;extra&quot; generator may be specified as:</p>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">Sublime</span> <span class="pre">Text</span> <span class="pre">2</span> <span class="pre">-</span> <span class="pre">MinGW</span> <span class="pre">Makefiles</span></code></dt><dd><p>Generate with <span class="target" id="index-0-generator:MinGW Makefiles"></span><a class="reference internal" href="MinGW%20Makefiles.html#generator:MinGW Makefiles" title="MinGW Makefiles"><code class="xref cmake cmake-generator docutils literal notranslate"><span class="pre">MinGW</span> <span class="pre">Makefiles</span></code></a>.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">Sublime</span> <span class="pre">Text</span> <span class="pre">2</span> <span class="pre">-</span> <span class="pre">NMake</span> <span class="pre">Makefiles</span></code></dt><dd><p>Generate with <span class="target" id="index-0-generator:NMake Makefiles"></span><a class="reference internal" href="NMake%20Makefiles.html#generator:NMake Makefiles" title="NMake Makefiles"><code class="xref cmake cmake-generator docutils literal notranslate"><span class="pre">NMake</span> <span class="pre">Makefiles</span></code></a>.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">Sublime</span> <span class="pre">Text</span> <span class="pre">2</span> <span class="pre">-</span> <span class="pre">Ninja</span></code></dt><dd><p>Generate with <span class="target" id="index-0-generator:Ninja"></span><a class="reference internal" href="Ninja.html#generator:Ninja" title="Ninja"><code class="xref cmake cmake-generator docutils literal notranslate"><span class="pre">Ninja</span></code></a>.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">Sublime</span> <span class="pre">Text</span> <span class="pre">2</span> <span class="pre">-</span> <span class="pre">Unix</span> <span class="pre">Makefiles</span></code></dt><dd><p>Generate with <span class="target" id="index-0-generator:Unix Makefiles"></span><a class="reference internal" href="Unix%20Makefiles.html#generator:Unix Makefiles" title="Unix Makefiles"><code class="xref cmake cmake-generator docutils literal notranslate"><span class="pre">Unix</span> <span class="pre">Makefiles</span></code></a>.</p>
+</dd>
 </dl>
-</div>
+</section>
 
 
+            <div class="clearer"></div>
           </div>
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="Kate.html"
-                        title="previous chapter">Kate</a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="../manual/cmake-language.7.html"
-                        title="next chapter">cmake-language(7)</a></p>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="Kate.html"
+                          title="previous chapter">Kate</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="../manual/cmake-language.7.html"
+                          title="next chapter">cmake-language(7)</a></p>
+  </div>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="../_sources/generator/Sublime Text 2.txt"
+      <li><a href="../_sources/generator/Sublime Text 2.rst.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div>
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
       <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
+    </div>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -138,18 +142,20 @@ program can build the project through the default make target.  A
          style="vertical-align: middle; margin-top: -2px" />
   </li>
   <li>
-    <a href="https://cmake.org/">CMake</a> &raquo;
+    <a href="https://cmake.org/">CMake</a> &#187;
   </li>
   <li>
-    <a href="../index.html">3.7.1 Documentation</a> &raquo;
+    <a href="../index.html">3.27.3 Documentation</a> &#187;
   </li>
 
-          <li class="nav-item nav-item-1"><a href="../manual/cmake-generators.7.html" >cmake-generators(7)</a> &raquo;</li> 
+          <li class="nav-item nav-item-1"><a href="../manual/cmake-generators.7.html" >cmake-generators(7)</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Sublime Text 2</a></li> 
       </ul>
     </div>
+
     <div class="footer" role="contentinfo">
-        &copy; Copyright 2000-2016 Kitware, Inc. and Contributors.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4a0+.
+        &#169; Copyright 2000-2023 Kitware, Inc. and Contributors.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.3.0.
     </div>
   </body>
 </html>

@@ -1,35 +1,32 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
+<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-  <title>cpack(1) &mdash; CMake 3.7.1 Documentation</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
+  <title>cpack(1) &mdash; CMake 3.27.3 Documentation</title>
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/cmake.css" />
     
-    <link rel="stylesheet" href="../_static/cmake.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
     
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '../',
-        VERSION:     '3.7.1',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
-      };
-    </script>
-    <script type="text/javascript" src="../_static/jquery.js"></script>
-    <script type="text/javascript" src="../_static/underscore.js"></script>
-    <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="shortcut icon" href="../_static/cmake-favicon.ico"/>
-    <link rel="top" title="CMake 3.7.1 Documentation" href="../index.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="cmake-gui(1)" href="cmake-gui.1.html" />
-    <link rel="prev" title="ctest(1)" href="ctest.1.html" /> 
-  </head>
-  <body role="document">
+    <link rel="prev" title="ctest(1)" href="ctest.1.html" />
+ 
+
+  </head><body>
+
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
@@ -47,12 +44,13 @@
          style="vertical-align: middle; margin-top: -2px" />
   </li>
   <li>
-    <a href="https://cmake.org/">CMake</a> &raquo;
+    <a href="https://cmake.org/">CMake</a> &#187;
   </li>
   <li>
-    <a href="../index.html">3.7.1 Documentation</a> &raquo;
+    <a href="../index.html">3.27.3 Documentation</a> &#187;
   </li>
- 
+
+        <li class="nav-item nav-item-this"><a href="">cpack(1)</a></li> 
       </ul>
     </div>  
 
@@ -61,236 +59,353 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <span class="target" id="manual:cpack(1)"></span><div class="section" id="cpack-1">
-<h1>cpack(1)<a class="headerlink" href="#cpack-1" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="synopsis">
-<h2>Synopsis<a class="headerlink" href="#synopsis" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python"><div class="highlight"><pre><span></span>cpack -G &lt;generator&gt; [&lt;options&gt;]
+  <span class="target" id="manual:cpack(1)"></span><section id="cpack-1">
+<h1>cpack(1)<a class="headerlink" href="#cpack-1" title="Permalink to this heading">¶</a></h1>
+<section id="synopsis">
+<h2>Synopsis<a class="headerlink" href="#synopsis" title="Permalink to this heading">¶</a></h2>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>cpack [&lt;options&gt;]
 </pre></div>
 </div>
-</div>
-<div class="section" id="description">
-<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
-<p>The &#8220;cpack&#8221; executable is the CMake packaging program.
-CMake-generated build trees created for projects that use the
-INSTALL_* commands have packaging support.  This program will generate
-the package.</p>
-<p>CMake is a cross-platform build system generator.  Projects specify
-their build process with platform-independent CMake listfiles included
-in each directory of a source tree with the name CMakeLists.txt.
-Users build a project by using CMake to generate a build system for a
-native tool on their platform.</p>
-</div>
-<div class="section" id="options">
-<h2>Options<a class="headerlink" href="#options" title="Permalink to this headline">¶</a></h2>
-<dl class="docutils">
-<dt><code class="docutils literal"><span class="pre">-G</span> <span class="pre">&lt;generator&gt;</span></code></dt>
-<dd><p class="first">Use the specified generator to generate package.</p>
-<p class="last">CPack may support multiple native packaging systems on certain
-platforms.  A generator is responsible for generating input files
-for particular system and invoking that systems.  Possible generator
-names are specified in the Generators section.</p>
-</dd>
-<dt><code class="docutils literal"><span class="pre">-C</span> <span class="pre">&lt;Configuration&gt;</span></code></dt>
-<dd><p class="first">Specify the project configuration</p>
-<p class="last">This option specifies the configuration that the project was build
-with, for example &#8216;Debug&#8217;, &#8216;Release&#8217;.</p>
-</dd>
-<dt><code class="docutils literal"><span class="pre">-D</span> <span class="pre">&lt;var&gt;=&lt;value&gt;</span></code></dt>
-<dd><p class="first">Set a CPack variable.</p>
-<p class="last">Set a variable that can be used by the generator.</p>
-</dd>
-<dt><code class="docutils literal"><span class="pre">--config</span> <span class="pre">&lt;config</span> <span class="pre">file&gt;</span></code></dt>
-<dd><p class="first">Specify the config file.</p>
-<p class="last">Specify the config file to use to create the package.  By default
-CPackConfig.cmake in the current directory will be used.</p>
-</dd>
-<dt><code class="docutils literal"><span class="pre">--verbose,-V</span></code></dt>
-<dd><p class="first">enable verbose output</p>
-<p class="last">Run cpack with verbose output.</p>
-</dd>
-<dt><code class="docutils literal"><span class="pre">--debug</span></code></dt>
-<dd><p class="first">enable debug output (for CPack developers)</p>
-<p class="last">Run cpack with debug output (for CPack developers).</p>
-</dd>
-<dt><code class="docutils literal"><span class="pre">-P</span> <span class="pre">&lt;package</span> <span class="pre">name&gt;</span></code></dt>
-<dd><p class="first">override/define CPACK_PACKAGE_NAME</p>
-<p class="last">If the package name is not specified on cpack command line
-thenCPack.cmake defines it as CMAKE_PROJECT_NAME</p>
-</dd>
-<dt><code class="docutils literal"><span class="pre">-R</span> <span class="pre">&lt;package</span> <span class="pre">version&gt;</span></code></dt>
-<dd><p class="first">override/define CPACK_PACKAGE_VERSION</p>
-<p class="last">If version is not specified on cpack command line thenCPack.cmake
-defines it from CPACK_PACKAGE_VERSION_[MAJOR|MINOR|PATCH]look into
-CPack.cmake for detail</p>
-</dd>
-<dt><code class="docutils literal"><span class="pre">-B</span> <span class="pre">&lt;package</span> <span class="pre">directory&gt;</span></code></dt>
-<dd><p class="first">override/define CPACK_PACKAGE_DIRECTORY</p>
-<p class="last">The directory where CPack will be doing its packaging work.The
-resulting package will be found there.  Inside this directoryCPack
-creates &#8216;_CPack_Packages&#8217; sub-directory which is theCPack temporary
-directory.</p>
-</dd>
-<dt><code class="docutils literal"><span class="pre">--vendor</span> <span class="pre">&lt;vendor</span> <span class="pre">name&gt;</span></code></dt>
-<dd><p class="first">override/define CPACK_PACKAGE_VENDOR</p>
-<p class="last">If vendor is not specified on cpack command line (or inside
-CMakeLists.txt) thenCPack.cmake defines it with a default value</p>
-</dd>
-</dl>
-<dl class="docutils">
-<dt><code class="docutils literal"><span class="pre">--help,-help,-usage,-h,-H,/?</span></code></dt>
-<dd><p class="first">Print usage information and exit.</p>
-<p class="last">Usage describes the basic command line interface and its options.</p>
-</dd>
-<dt><code class="docutils literal"><span class="pre">--version,-version,/V</span> <span class="pre">[&lt;f&gt;]</span></code></dt>
-<dd><p class="first">Show program name/version banner and exit.</p>
-<p class="last">If a file is specified, the version is written into it.
-The help is printed to a named &lt;f&gt;ile if given.</p>
-</dd>
-<dt><code class="docutils literal"><span class="pre">--help-full</span> <span class="pre">[&lt;f&gt;]</span></code></dt>
-<dd><p class="first">Print all help manuals and exit.</p>
-<p class="last">All manuals are printed in a human-readable text format.
-The help is printed to a named &lt;f&gt;ile if given.</p>
-</dd>
-<dt><code class="docutils literal"><span class="pre">--help-manual</span> <span class="pre">&lt;man&gt;</span> <span class="pre">[&lt;f&gt;]</span></code></dt>
-<dd><p class="first">Print one help manual and exit.</p>
-<p class="last">The specified manual is printed in a human-readable text format.
-The help is printed to a named &lt;f&gt;ile if given.</p>
-</dd>
-<dt><code class="docutils literal"><span class="pre">--help-manual-list</span> <span class="pre">[&lt;f&gt;]</span></code></dt>
-<dd><p class="first">List help manuals available and exit.</p>
-<p class="last">The list contains all manuals for which help may be obtained by
-using the <code class="docutils literal"><span class="pre">--help-manual</span></code> option followed by a manual name.
-The help is printed to a named &lt;f&gt;ile if given.</p>
-</dd>
-<dt><code class="docutils literal"><span class="pre">--help-command</span> <span class="pre">&lt;cmd&gt;</span> <span class="pre">[&lt;f&gt;]</span></code></dt>
-<dd><p class="first">Print help for one command and exit.</p>
-<p class="last">The <span class="target" id="index-0-manual:cmake-commands(7)"></span><a class="reference internal" href="cmake-commands.7.html#manual:cmake-commands(7)" title="cmake-commands(7)"><code class="xref cmake cmake-manual docutils literal"><span class="pre">cmake-commands(7)</span></code></a> manual entry for <code class="docutils literal"><span class="pre">&lt;cmd&gt;</span></code> is
+</section>
+<section id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this heading">¶</a></h2>
+<p>The <strong class="program">cpack</strong> executable is the CMake packaging program.  It generates
+installers and source packages in a variety of formats.</p>
+<p>For each installer or package format, <strong class="program">cpack</strong> has a specific backend,
+called &quot;generator&quot;. A generator is responsible for generating the required
+inputs and invoking the specific package creation tools. These installer
+or package generators are not to be confused with the makefile generators
+of the <span class="target" id="index-0-manual:cmake(1)"></span><a class="reference internal" href="cmake.1.html#manual:cmake(1)" title="cmake(1)"><code class="xref cmake cmake-manual docutils literal notranslate"><span class="pre">cmake</span></code></a> command.</p>
+<p>All supported generators are specified in the <span class="target" id="index-0-manual:cpack-generators(7)"></span><a class="reference internal" href="cpack-generators.7.html#manual:cpack-generators(7)" title="cpack-generators(7)"><code class="xref cmake cmake-manual docutils literal notranslate"><span class="pre">cpack-generators</span></code></a> manual.  The command <code class="docutils literal notranslate"><span class="pre">cpack</span> <span class="pre">--help</span></code> prints a
+list of generators supported for the target platform.  Which of them are
+to be used can be selected through the <span class="target" id="index-0-variable:CPACK_GENERATOR"></span><a class="reference internal" href="../module/CPack.html#variable:CPACK_GENERATOR" title="CPACK_GENERATOR"><code class="xref cmake cmake-variable docutils literal notranslate"><span class="pre">CPACK_GENERATOR</span></code></a> variable
+or through the command-line option <a class="reference internal" href="#cmdoption-cpack-G"><code class="xref std std-option docutils literal notranslate"><span class="pre">-G</span></code></a>.</p>
+<p>The <strong class="program">cpack</strong> program is steered by a configuration file written in the
+<span class="target" id="index-0-manual:cmake-language(7)"></span><a class="reference internal" href="cmake-language.7.html#manual:cmake-language(7)" title="cmake-language(7)"><code class="xref cmake cmake-manual docutils literal notranslate"><span class="pre">CMake</span> <span class="pre">language</span></code></a>. Unless chosen differently
+through the command-line option <a class="reference internal" href="#cmdoption-cpack-config"><code class="xref std std-option docutils literal notranslate"><span class="pre">--config</span></code></a>, the
+file <code class="docutils literal notranslate"><span class="pre">CPackConfig.cmake</span></code> in the current directory is used.</p>
+<p>In the standard CMake workflow, the file <code class="docutils literal notranslate"><span class="pre">CPackConfig.cmake</span></code> is generated
+by the <span class="target" id="index-1-manual:cmake(1)"></span><a class="reference internal" href="cmake.1.html#manual:cmake(1)" title="cmake(1)"><code class="xref cmake cmake-manual docutils literal notranslate"><span class="pre">cmake</span></code></a> executable, provided the <span class="target" id="index-0-module:CPack"></span><a class="reference internal" href="../module/CPack.html#module:CPack" title="CPack"><code class="xref cmake cmake-module docutils literal notranslate"><span class="pre">CPack</span></code></a>
+module is included by the project's <code class="docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code> file.</p>
+</section>
+<section id="options">
+<h2>Options<a class="headerlink" href="#options" title="Permalink to this heading">¶</a></h2>
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cpack-G">
+<span id="cmdoption-cpack-g"></span><span class="sig-name descname"><span class="pre">-G</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;generators&gt;</span></span><a class="headerlink" href="#cmdoption-cpack-G" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">&lt;generators&gt;</span></code> is a <a class="reference internal" href="cmake-language.7.html#cmake-language-lists"><span class="std std-ref">semicolon-separated list</span></a>
+of generator names.  <strong class="program">cpack</strong> will iterate through this list and produce
+package(s) in that generator's format according to the details provided in
+the <code class="docutils literal notranslate"><span class="pre">CPackConfig.cmake</span></code> configuration file.  If this option is not given,
+the <span class="target" id="index-1-variable:CPACK_GENERATOR"></span><a class="reference internal" href="../module/CPack.html#variable:CPACK_GENERATOR" title="CPACK_GENERATOR"><code class="xref cmake cmake-variable docutils literal notranslate"><span class="pre">CPACK_GENERATOR</span></code></a> variable determines the default set of
+generators that will be used.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cpack-C">
+<span id="cmdoption-cpack-c"></span><span class="sig-name descname"><span class="pre">-C</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;configs&gt;</span></span><a class="headerlink" href="#cmdoption-cpack-C" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specify the project configuration(s) to be packaged (e.g. <code class="docutils literal notranslate"><span class="pre">Debug</span></code>,
+<code class="docutils literal notranslate"><span class="pre">Release</span></code>, etc.), where <code class="docutils literal notranslate"><span class="pre">&lt;configs&gt;</span></code> is a
+<a class="reference internal" href="cmake-language.7.html#cmake-language-lists"><span class="std std-ref">semicolon-separated list</span></a>.
+When the CMake project uses a multi-configuration
+generator such as Xcode or Visual Studio, this option is needed to tell
+<strong class="program">cpack</strong> which built executables to include in the package.
+The user is responsible for ensuring that the configuration(s) listed
+have already been built before invoking <strong class="program">cpack</strong>.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cpack-D">
+<span id="cmdoption-cpack-d"></span><span class="sig-name descname"><span class="pre">-D</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;var&gt;=&lt;value&gt;</span></span><a class="headerlink" href="#cmdoption-cpack-D" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set a CPack variable.  This will override any value set for <code class="docutils literal notranslate"><span class="pre">&lt;var&gt;</span></code> in the
+input file read by <strong class="program">cpack</strong>.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cpack-config">
+<span class="sig-name descname"><span class="pre">--config</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;configFile&gt;</span></span><a class="headerlink" href="#cmdoption-cpack-config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specify the configuration file read by <strong class="program">cpack</strong> to provide the packaging
+details.  By default, <code class="docutils literal notranslate"><span class="pre">CPackConfig.cmake</span></code> in the current directory will
+be used.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cpack-V">
+<span id="cmdoption-cpack-v"></span><span id="cmdoption-cpack-verbose"></span><span class="sig-name descname"><span class="pre">-V</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--verbose</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-cpack-V" title="Permalink to this definition">¶</a></dt>
+<dd><p>Run <strong class="program">cpack</strong> with verbose output.  This can be used to show more details
+from the package generation tools and is suitable for project developers.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cpack-debug">
+<span class="sig-name descname"><span class="pre">--debug</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-cpack-debug" title="Permalink to this definition">¶</a></dt>
+<dd><p>Run <strong class="program">cpack</strong> with debug output.  This option is intended mainly for the
+developers of <strong class="program">cpack</strong> itself and is not normally needed by project
+developers.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cpack-trace">
+<span class="sig-name descname"><span class="pre">--trace</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-cpack-trace" title="Permalink to this definition">¶</a></dt>
+<dd><p>Put the underlying cmake scripts in trace mode.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cpack-trace-expand">
+<span class="sig-name descname"><span class="pre">--trace-expand</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-cpack-trace-expand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Put the underlying cmake scripts in expanded trace mode.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cpack-P">
+<span id="cmdoption-cpack-p"></span><span class="sig-name descname"><span class="pre">-P</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;packageName&gt;</span></span><a class="headerlink" href="#cmdoption-cpack-P" title="Permalink to this definition">¶</a></dt>
+<dd><p>Override/define the value of the <span class="target" id="index-0-variable:CPACK_PACKAGE_NAME"></span><a class="reference internal" href="../module/CPack.html#variable:CPACK_PACKAGE_NAME" title="CPACK_PACKAGE_NAME"><code class="xref cmake cmake-variable docutils literal notranslate"><span class="pre">CPACK_PACKAGE_NAME</span></code></a> variable used
+for packaging.  Any value set for this variable in the <code class="docutils literal notranslate"><span class="pre">CPackConfig.cmake</span></code>
+file will then be ignored.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cpack-R">
+<span id="cmdoption-cpack-r"></span><span class="sig-name descname"><span class="pre">-R</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;packageVersion&gt;</span></span><a class="headerlink" href="#cmdoption-cpack-R" title="Permalink to this definition">¶</a></dt>
+<dd><p>Override/define the value of the <span class="target" id="index-0-variable:CPACK_PACKAGE_VERSION"></span><a class="reference internal" href="../module/CPack.html#variable:CPACK_PACKAGE_VERSION" title="CPACK_PACKAGE_VERSION"><code class="xref cmake cmake-variable docutils literal notranslate"><span class="pre">CPACK_PACKAGE_VERSION</span></code></a>
+variable used for packaging.  It will override a value set in the
+<code class="docutils literal notranslate"><span class="pre">CPackConfig.cmake</span></code> file or one automatically computed from
+<span class="target" id="index-0-variable:CPACK_PACKAGE_VERSION_MAJOR"></span><a class="reference internal" href="../module/CPack.html#variable:CPACK_PACKAGE_VERSION_MAJOR" title="CPACK_PACKAGE_VERSION_MAJOR"><code class="xref cmake cmake-variable docutils literal notranslate"><span class="pre">CPACK_PACKAGE_VERSION_MAJOR</span></code></a>,
+<span class="target" id="index-0-variable:CPACK_PACKAGE_VERSION_MINOR"></span><a class="reference internal" href="../module/CPack.html#variable:CPACK_PACKAGE_VERSION_MINOR" title="CPACK_PACKAGE_VERSION_MINOR"><code class="xref cmake cmake-variable docutils literal notranslate"><span class="pre">CPACK_PACKAGE_VERSION_MINOR</span></code></a> and
+<span class="target" id="index-0-variable:CPACK_PACKAGE_VERSION_PATCH"></span><a class="reference internal" href="../module/CPack.html#variable:CPACK_PACKAGE_VERSION_PATCH" title="CPACK_PACKAGE_VERSION_PATCH"><code class="xref cmake cmake-variable docutils literal notranslate"><span class="pre">CPACK_PACKAGE_VERSION_PATCH</span></code></a>.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cpack-B">
+<span id="cmdoption-cpack-b"></span><span class="sig-name descname"><span class="pre">-B</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;packageDirectory&gt;</span></span><a class="headerlink" href="#cmdoption-cpack-B" title="Permalink to this definition">¶</a></dt>
+<dd><p>Override/define <span class="target" id="index-0-variable:CPACK_PACKAGE_DIRECTORY"></span><a class="reference internal" href="../module/CPack.html#variable:CPACK_PACKAGE_DIRECTORY" title="CPACK_PACKAGE_DIRECTORY"><code class="xref cmake cmake-variable docutils literal notranslate"><span class="pre">CPACK_PACKAGE_DIRECTORY</span></code></a>, which controls the
+directory where CPack will perform its packaging work.  The resultant
+package(s) will be created at this location by default and a
+<code class="docutils literal notranslate"><span class="pre">_CPack_Packages</span></code> subdirectory will also be created below this directory to
+use as a working area during package creation.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cpack-vendor">
+<span class="sig-name descname"><span class="pre">--vendor</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;vendorName&gt;</span></span><a class="headerlink" href="#cmdoption-cpack-vendor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Override/define <span class="target" id="index-0-variable:CPACK_PACKAGE_VENDOR"></span><a class="reference internal" href="../module/CPack.html#variable:CPACK_PACKAGE_VENDOR" title="CPACK_PACKAGE_VENDOR"><code class="xref cmake cmake-variable docutils literal notranslate"><span class="pre">CPACK_PACKAGE_VENDOR</span></code></a>.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cpack-preset">
+<span class="sig-name descname"><span class="pre">--preset</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;presetName&gt;</span></span><a class="headerlink" href="#cmdoption-cpack-preset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use a preset from <span class="target" id="index-0-manual:cmake-presets(7)"></span><a class="reference internal" href="cmake-presets.7.html#manual:cmake-presets(7)" title="cmake-presets(7)"><code class="xref cmake cmake-manual docutils literal notranslate"><span class="pre">cmake-presets(7)</span></code></a>.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cpack-list-presets">
+<span class="sig-name descname"><span class="pre">--list-presets</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-cpack-list-presets" title="Permalink to this definition">¶</a></dt>
+<dd><p>List presets from <span class="target" id="index-1-manual:cmake-presets(7)"></span><a class="reference internal" href="cmake-presets.7.html#manual:cmake-presets(7)" title="cmake-presets(7)"><code class="xref cmake cmake-manual docutils literal notranslate"><span class="pre">cmake-presets(7)</span></code></a>.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cpack-version">
+<span id="cmdoption-cpack-version"></span><span id="cmdoption-cpack-0"></span><span class="sig-name descname"><span class="pre">-version</span></span><span class="sig-prename descclassname"> <span class="pre">[&lt;file&gt;]</span></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--version</span></span><span class="sig-prename descclassname"> <span class="pre">[&lt;file&gt;]</span></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">/V</span></span><span class="sig-prename descclassname"> <span class="pre">[&lt;file&gt;]</span></span><a class="headerlink" href="#cmdoption-cpack-version" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show program name/version banner and exit.
+The output is printed to a named <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> if given.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cpack-h">
+<span id="cmdoption-cpack-H"></span><span id="cmdoption-cpack-help"></span><span id="cmdoption-cpack-help"></span><span id="cmdoption-cpack-usage"></span><span id="cmdoption-cpack-1"></span><span id="cmdoption-cpack"></span><span class="sig-name descname"><span class="pre">-h</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">-H</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--help</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">-help</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">-usage</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">/?</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-cpack-h" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print usage information and exit.</p>
+<p>Usage describes the basic command line interface and its options.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cpack-help-full">
+<span class="sig-name descname"><span class="pre">--help-full</span></span><span class="sig-prename descclassname"> <span class="pre">[&lt;file&gt;]</span></span><a class="headerlink" href="#cmdoption-cpack-help-full" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print all help manuals and exit.</p>
+<p>All manuals are printed in a human-readable text format.
+The output is printed to a named <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> if given.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cpack-help-manual">
+<span class="sig-name descname"><span class="pre">--help-manual</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;man&gt;</span> <span class="pre">[&lt;file&gt;]</span></span><a class="headerlink" href="#cmdoption-cpack-help-manual" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print one help manual and exit.</p>
+<p>The specified manual is printed in a human-readable text format.
+The output is printed to a named <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> if given.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cpack-help-manual-list">
+<span class="sig-name descname"><span class="pre">--help-manual-list</span></span><span class="sig-prename descclassname"> <span class="pre">[&lt;file&gt;]</span></span><a class="headerlink" href="#cmdoption-cpack-help-manual-list" title="Permalink to this definition">¶</a></dt>
+<dd><p>List help manuals available and exit.</p>
+<p>The list contains all manuals for which help may be obtained by
+using the <code class="docutils literal notranslate"><span class="pre">--help-manual</span></code> option followed by a manual name.
+The output is printed to a named <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> if given.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cpack-help-command">
+<span class="sig-name descname"><span class="pre">--help-command</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;cmd&gt;</span> <span class="pre">[&lt;file&gt;]</span></span><a class="headerlink" href="#cmdoption-cpack-help-command" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print help for one command and exit.</p>
+<p>The <span class="target" id="index-0-manual:cmake-commands(7)"></span><a class="reference internal" href="cmake-commands.7.html#manual:cmake-commands(7)" title="cmake-commands(7)"><code class="xref cmake cmake-manual docutils literal notranslate"><span class="pre">cmake-commands(7)</span></code></a> manual entry for <code class="docutils literal notranslate"><span class="pre">&lt;cmd&gt;</span></code> is
 printed in a human-readable text format.
-The help is printed to a named &lt;f&gt;ile if given.</p>
-</dd>
-<dt><code class="docutils literal"><span class="pre">--help-command-list</span> <span class="pre">[&lt;f&gt;]</span></code></dt>
-<dd><p class="first">List commands with help available and exit.</p>
-<p class="last">The list contains all commands for which help may be obtained by
-using the <code class="docutils literal"><span class="pre">--help-command</span></code> option followed by a command name.
-The help is printed to a named &lt;f&gt;ile if given.</p>
-</dd>
-<dt><code class="docutils literal"><span class="pre">--help-commands</span> <span class="pre">[&lt;f&gt;]</span></code></dt>
-<dd><p class="first">Print cmake-commands manual and exit.</p>
-<p class="last">The <span class="target" id="index-1-manual:cmake-commands(7)"></span><a class="reference internal" href="cmake-commands.7.html#manual:cmake-commands(7)" title="cmake-commands(7)"><code class="xref cmake cmake-manual docutils literal"><span class="pre">cmake-commands(7)</span></code></a> manual is printed in a
+The output is printed to a named <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> if given.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cpack-help-command-list">
+<span class="sig-name descname"><span class="pre">--help-command-list</span></span><span class="sig-prename descclassname"> <span class="pre">[&lt;file&gt;]</span></span><a class="headerlink" href="#cmdoption-cpack-help-command-list" title="Permalink to this definition">¶</a></dt>
+<dd><p>List commands with help available and exit.</p>
+<p>The list contains all commands for which help may be obtained by
+using the <code class="docutils literal notranslate"><span class="pre">--help-command</span></code> option followed by a command name.
+The output is printed to a named <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> if given.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cpack-help-commands">
+<span class="sig-name descname"><span class="pre">--help-commands</span></span><span class="sig-prename descclassname"> <span class="pre">[&lt;file&gt;]</span></span><a class="headerlink" href="#cmdoption-cpack-help-commands" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print cmake-commands manual and exit.</p>
+<p>The <span class="target" id="index-1-manual:cmake-commands(7)"></span><a class="reference internal" href="cmake-commands.7.html#manual:cmake-commands(7)" title="cmake-commands(7)"><code class="xref cmake cmake-manual docutils literal notranslate"><span class="pre">cmake-commands(7)</span></code></a> manual is printed in a
 human-readable text format.
-The help is printed to a named &lt;f&gt;ile if given.</p>
-</dd>
-<dt><code class="docutils literal"><span class="pre">--help-module</span> <span class="pre">&lt;mod&gt;</span> <span class="pre">[&lt;f&gt;]</span></code></dt>
-<dd><p class="first">Print help for one module and exit.</p>
-<p class="last">The <span class="target" id="index-0-manual:cmake-modules(7)"></span><a class="reference internal" href="cmake-modules.7.html#manual:cmake-modules(7)" title="cmake-modules(7)"><code class="xref cmake cmake-manual docutils literal"><span class="pre">cmake-modules(7)</span></code></a> manual entry for <code class="docutils literal"><span class="pre">&lt;mod&gt;</span></code> is printed
+The output is printed to a named <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> if given.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cpack-help-module">
+<span class="sig-name descname"><span class="pre">--help-module</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;mod&gt;</span> <span class="pre">[&lt;file&gt;]</span></span><a class="headerlink" href="#cmdoption-cpack-help-module" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print help for one module and exit.</p>
+<p>The <span class="target" id="index-0-manual:cmake-modules(7)"></span><a class="reference internal" href="cmake-modules.7.html#manual:cmake-modules(7)" title="cmake-modules(7)"><code class="xref cmake cmake-manual docutils literal notranslate"><span class="pre">cmake-modules(7)</span></code></a> manual entry for <code class="docutils literal notranslate"><span class="pre">&lt;mod&gt;</span></code> is printed
 in a human-readable text format.
-The help is printed to a named &lt;f&gt;ile if given.</p>
-</dd>
-<dt><code class="docutils literal"><span class="pre">--help-module-list</span> <span class="pre">[&lt;f&gt;]</span></code></dt>
-<dd><p class="first">List modules with help available and exit.</p>
-<p class="last">The list contains all modules for which help may be obtained by
-using the <code class="docutils literal"><span class="pre">--help-module</span></code> option followed by a module name.
-The help is printed to a named &lt;f&gt;ile if given.</p>
-</dd>
-<dt><code class="docutils literal"><span class="pre">--help-modules</span> <span class="pre">[&lt;f&gt;]</span></code></dt>
-<dd><p class="first">Print cmake-modules manual and exit.</p>
-<p class="last">The <span class="target" id="index-1-manual:cmake-modules(7)"></span><a class="reference internal" href="cmake-modules.7.html#manual:cmake-modules(7)" title="cmake-modules(7)"><code class="xref cmake cmake-manual docutils literal"><span class="pre">cmake-modules(7)</span></code></a> manual is printed in a human-readable
+The output is printed to a named <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> if given.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cpack-help-module-list">
+<span class="sig-name descname"><span class="pre">--help-module-list</span></span><span class="sig-prename descclassname"> <span class="pre">[&lt;file&gt;]</span></span><a class="headerlink" href="#cmdoption-cpack-help-module-list" title="Permalink to this definition">¶</a></dt>
+<dd><p>List modules with help available and exit.</p>
+<p>The list contains all modules for which help may be obtained by
+using the <code class="docutils literal notranslate"><span class="pre">--help-module</span></code> option followed by a module name.
+The output is printed to a named <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> if given.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cpack-help-modules">
+<span class="sig-name descname"><span class="pre">--help-modules</span></span><span class="sig-prename descclassname"> <span class="pre">[&lt;file&gt;]</span></span><a class="headerlink" href="#cmdoption-cpack-help-modules" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print cmake-modules manual and exit.</p>
+<p>The <span class="target" id="index-1-manual:cmake-modules(7)"></span><a class="reference internal" href="cmake-modules.7.html#manual:cmake-modules(7)" title="cmake-modules(7)"><code class="xref cmake cmake-manual docutils literal notranslate"><span class="pre">cmake-modules(7)</span></code></a> manual is printed in a human-readable
 text format.
-The help is printed to a named &lt;f&gt;ile if given.</p>
-</dd>
-<dt><code class="docutils literal"><span class="pre">--help-policy</span> <span class="pre">&lt;cmp&gt;</span> <span class="pre">[&lt;f&gt;]</span></code></dt>
-<dd><p class="first">Print help for one policy and exit.</p>
-<p class="last">The <span class="target" id="index-0-manual:cmake-policies(7)"></span><a class="reference internal" href="cmake-policies.7.html#manual:cmake-policies(7)" title="cmake-policies(7)"><code class="xref cmake cmake-manual docutils literal"><span class="pre">cmake-policies(7)</span></code></a> manual entry for <code class="docutils literal"><span class="pre">&lt;cmp&gt;</span></code> is
+The output is printed to a named <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> if given.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cpack-help-policy">
+<span class="sig-name descname"><span class="pre">--help-policy</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;cmp&gt;</span> <span class="pre">[&lt;file&gt;]</span></span><a class="headerlink" href="#cmdoption-cpack-help-policy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print help for one policy and exit.</p>
+<p>The <span class="target" id="index-0-manual:cmake-policies(7)"></span><a class="reference internal" href="cmake-policies.7.html#manual:cmake-policies(7)" title="cmake-policies(7)"><code class="xref cmake cmake-manual docutils literal notranslate"><span class="pre">cmake-policies(7)</span></code></a> manual entry for <code class="docutils literal notranslate"><span class="pre">&lt;cmp&gt;</span></code> is
 printed in a human-readable text format.
-The help is printed to a named &lt;f&gt;ile if given.</p>
-</dd>
-<dt><code class="docutils literal"><span class="pre">--help-policy-list</span> <span class="pre">[&lt;f&gt;]</span></code></dt>
-<dd><p class="first">List policies with help available and exit.</p>
-<p class="last">The list contains all policies for which help may be obtained by
-using the <code class="docutils literal"><span class="pre">--help-policy</span></code> option followed by a policy name.
-The help is printed to a named &lt;f&gt;ile if given.</p>
-</dd>
-<dt><code class="docutils literal"><span class="pre">--help-policies</span> <span class="pre">[&lt;f&gt;]</span></code></dt>
-<dd><p class="first">Print cmake-policies manual and exit.</p>
-<p class="last">The <span class="target" id="index-1-manual:cmake-policies(7)"></span><a class="reference internal" href="cmake-policies.7.html#manual:cmake-policies(7)" title="cmake-policies(7)"><code class="xref cmake cmake-manual docutils literal"><span class="pre">cmake-policies(7)</span></code></a> manual is printed in a
+The output is printed to a named <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> if given.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cpack-help-policy-list">
+<span class="sig-name descname"><span class="pre">--help-policy-list</span></span><span class="sig-prename descclassname"> <span class="pre">[&lt;file&gt;]</span></span><a class="headerlink" href="#cmdoption-cpack-help-policy-list" title="Permalink to this definition">¶</a></dt>
+<dd><p>List policies with help available and exit.</p>
+<p>The list contains all policies for which help may be obtained by
+using the <code class="docutils literal notranslate"><span class="pre">--help-policy</span></code> option followed by a policy name.
+The output is printed to a named <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> if given.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cpack-help-policies">
+<span class="sig-name descname"><span class="pre">--help-policies</span></span><span class="sig-prename descclassname"> <span class="pre">[&lt;file&gt;]</span></span><a class="headerlink" href="#cmdoption-cpack-help-policies" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print cmake-policies manual and exit.</p>
+<p>The <span class="target" id="index-1-manual:cmake-policies(7)"></span><a class="reference internal" href="cmake-policies.7.html#manual:cmake-policies(7)" title="cmake-policies(7)"><code class="xref cmake cmake-manual docutils literal notranslate"><span class="pre">cmake-policies(7)</span></code></a> manual is printed in a
 human-readable text format.
-The help is printed to a named &lt;f&gt;ile if given.</p>
-</dd>
-<dt><code class="docutils literal"><span class="pre">--help-property</span> <span class="pre">&lt;prop&gt;</span> <span class="pre">[&lt;f&gt;]</span></code></dt>
-<dd><p class="first">Print help for one property and exit.</p>
-<p class="last">The <span class="target" id="index-0-manual:cmake-properties(7)"></span><a class="reference internal" href="cmake-properties.7.html#manual:cmake-properties(7)" title="cmake-properties(7)"><code class="xref cmake cmake-manual docutils literal"><span class="pre">cmake-properties(7)</span></code></a> manual entries for <code class="docutils literal"><span class="pre">&lt;prop&gt;</span></code> are
+The output is printed to a named <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> if given.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cpack-help-property">
+<span class="sig-name descname"><span class="pre">--help-property</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;prop&gt;</span> <span class="pre">[&lt;file&gt;]</span></span><a class="headerlink" href="#cmdoption-cpack-help-property" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print help for one property and exit.</p>
+<p>The <span class="target" id="index-0-manual:cmake-properties(7)"></span><a class="reference internal" href="cmake-properties.7.html#manual:cmake-properties(7)" title="cmake-properties(7)"><code class="xref cmake cmake-manual docutils literal notranslate"><span class="pre">cmake-properties(7)</span></code></a> manual entries for <code class="docutils literal notranslate"><span class="pre">&lt;prop&gt;</span></code> are
 printed in a human-readable text format.
-The help is printed to a named &lt;f&gt;ile if given.</p>
-</dd>
-<dt><code class="docutils literal"><span class="pre">--help-property-list</span> <span class="pre">[&lt;f&gt;]</span></code></dt>
-<dd><p class="first">List properties with help available and exit.</p>
-<p class="last">The list contains all properties for which help may be obtained by
-using the <code class="docutils literal"><span class="pre">--help-property</span></code> option followed by a property name.
-The help is printed to a named &lt;f&gt;ile if given.</p>
-</dd>
-<dt><code class="docutils literal"><span class="pre">--help-properties</span> <span class="pre">[&lt;f&gt;]</span></code></dt>
-<dd><p class="first">Print cmake-properties manual and exit.</p>
-<p class="last">The <span class="target" id="index-1-manual:cmake-properties(7)"></span><a class="reference internal" href="cmake-properties.7.html#manual:cmake-properties(7)" title="cmake-properties(7)"><code class="xref cmake cmake-manual docutils literal"><span class="pre">cmake-properties(7)</span></code></a> manual is printed in a
+The output is printed to a named <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> if given.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cpack-help-property-list">
+<span class="sig-name descname"><span class="pre">--help-property-list</span></span><span class="sig-prename descclassname"> <span class="pre">[&lt;file&gt;]</span></span><a class="headerlink" href="#cmdoption-cpack-help-property-list" title="Permalink to this definition">¶</a></dt>
+<dd><p>List properties with help available and exit.</p>
+<p>The list contains all properties for which help may be obtained by
+using the <code class="docutils literal notranslate"><span class="pre">--help-property</span></code> option followed by a property name.
+The output is printed to a named <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> if given.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cpack-help-properties">
+<span class="sig-name descname"><span class="pre">--help-properties</span></span><span class="sig-prename descclassname"> <span class="pre">[&lt;file&gt;]</span></span><a class="headerlink" href="#cmdoption-cpack-help-properties" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print cmake-properties manual and exit.</p>
+<p>The <span class="target" id="index-1-manual:cmake-properties(7)"></span><a class="reference internal" href="cmake-properties.7.html#manual:cmake-properties(7)" title="cmake-properties(7)"><code class="xref cmake cmake-manual docutils literal notranslate"><span class="pre">cmake-properties(7)</span></code></a> manual is printed in a
 human-readable text format.
-The help is printed to a named &lt;f&gt;ile if given.</p>
-</dd>
-<dt><code class="docutils literal"><span class="pre">--help-variable</span> <span class="pre">&lt;var&gt;</span> <span class="pre">[&lt;f&gt;]</span></code></dt>
-<dd><p class="first">Print help for one variable and exit.</p>
-<p class="last">The <span class="target" id="index-0-manual:cmake-variables(7)"></span><a class="reference internal" href="cmake-variables.7.html#manual:cmake-variables(7)" title="cmake-variables(7)"><code class="xref cmake cmake-manual docutils literal"><span class="pre">cmake-variables(7)</span></code></a> manual entry for <code class="docutils literal"><span class="pre">&lt;var&gt;</span></code> is
+The output is printed to a named <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> if given.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cpack-help-variable">
+<span class="sig-name descname"><span class="pre">--help-variable</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;var&gt;</span> <span class="pre">[&lt;file&gt;]</span></span><a class="headerlink" href="#cmdoption-cpack-help-variable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print help for one variable and exit.</p>
+<p>The <span class="target" id="index-0-manual:cmake-variables(7)"></span><a class="reference internal" href="cmake-variables.7.html#manual:cmake-variables(7)" title="cmake-variables(7)"><code class="xref cmake cmake-manual docutils literal notranslate"><span class="pre">cmake-variables(7)</span></code></a> manual entry for <code class="docutils literal notranslate"><span class="pre">&lt;var&gt;</span></code> is
 printed in a human-readable text format.
-The help is printed to a named &lt;f&gt;ile if given.</p>
-</dd>
-<dt><code class="docutils literal"><span class="pre">--help-variable-list</span> <span class="pre">[&lt;f&gt;]</span></code></dt>
-<dd><p class="first">List variables with help available and exit.</p>
-<p class="last">The list contains all variables for which help may be obtained by
-using the <code class="docutils literal"><span class="pre">--help-variable</span></code> option followed by a variable name.
-The help is printed to a named &lt;f&gt;ile if given.</p>
-</dd>
-<dt><code class="docutils literal"><span class="pre">--help-variables</span> <span class="pre">[&lt;f&gt;]</span></code></dt>
-<dd><p class="first">Print cmake-variables manual and exit.</p>
-<p class="last">The <span class="target" id="index-1-manual:cmake-variables(7)"></span><a class="reference internal" href="cmake-variables.7.html#manual:cmake-variables(7)" title="cmake-variables(7)"><code class="xref cmake cmake-manual docutils literal"><span class="pre">cmake-variables(7)</span></code></a> manual is printed in a
+The output is printed to a named <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> if given.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cpack-help-variable-list">
+<span class="sig-name descname"><span class="pre">--help-variable-list</span></span><span class="sig-prename descclassname"> <span class="pre">[&lt;file&gt;]</span></span><a class="headerlink" href="#cmdoption-cpack-help-variable-list" title="Permalink to this definition">¶</a></dt>
+<dd><p>List variables with help available and exit.</p>
+<p>The list contains all variables for which help may be obtained by
+using the <code class="docutils literal notranslate"><span class="pre">--help-variable</span></code> option followed by a variable name.
+The output is printed to a named <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> if given.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cpack-help-variables">
+<span class="sig-name descname"><span class="pre">--help-variables</span></span><span class="sig-prename descclassname"> <span class="pre">[&lt;file&gt;]</span></span><a class="headerlink" href="#cmdoption-cpack-help-variables" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print cmake-variables manual and exit.</p>
+<p>The <span class="target" id="index-1-manual:cmake-variables(7)"></span><a class="reference internal" href="cmake-variables.7.html#manual:cmake-variables(7)" title="cmake-variables(7)"><code class="xref cmake cmake-manual docutils literal notranslate"><span class="pre">cmake-variables(7)</span></code></a> manual is printed in a
 human-readable text format.
-The help is printed to a named &lt;f&gt;ile if given.</p>
-</dd>
-</dl>
-</div>
-<div class="section" id="see-also">
-<h2>See Also<a class="headerlink" href="#see-also" title="Permalink to this headline">¶</a></h2>
+The output is printed to a named <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> if given.</p>
+</dd></dl>
+
+</section>
+<section id="see-also">
+<h2>See Also<a class="headerlink" href="#see-also" title="Permalink to this heading">¶</a></h2>
 <p>The following resources are available to get help using CMake:</p>
-<dl class="docutils">
-<dt>Home Page</dt>
-<dd><p class="first"><a class="reference external" href="https://cmake.org">https://cmake.org</a></p>
-<p class="last">The primary starting point for learning about CMake.</p>
+<dl>
+<dt>Home Page</dt><dd><p><a class="reference external" href="https://cmake.org">https://cmake.org</a></p>
+<p>The primary starting point for learning about CMake.</p>
 </dd>
-<dt>Frequently Asked Questions</dt>
-<dd><p class="first"><a class="reference external" href="https://cmake.org/Wiki/CMake_FAQ">https://cmake.org/Wiki/CMake_FAQ</a></p>
-<p class="last">A Wiki is provided containing answers to frequently asked questions.</p>
+<dt>Online Documentation and Community Resources</dt><dd><p><a class="reference external" href="https://cmake.org/documentation">https://cmake.org/documentation</a></p>
+<p>Links to available documentation and community resources may be
+found on this web page.</p>
 </dd>
-<dt>Online Documentation</dt>
-<dd><p class="first"><a class="reference external" href="https://cmake.org/documentation">https://cmake.org/documentation</a></p>
-<p class="last">Links to available documentation may be found on this web page.</p>
-</dd>
-<dt>Mailing List</dt>
-<dd><p class="first"><a class="reference external" href="https://cmake.org/mailing-lists">https://cmake.org/mailing-lists</a></p>
-<p class="last">For help and discussion about using cmake, a mailing list is
-provided at <a class="reference external" href="mailto:cmake&#37;&#52;&#48;cmake&#46;org">cmake<span>&#64;</span>cmake<span>&#46;</span>org</a>.  The list is member-post-only but one
-may sign up on the CMake web page.  Please first read the full
-documentation at <a class="reference external" href="https://cmake.org">https://cmake.org</a> before posting questions to
-the list.</p>
+<dt>Discourse Forum</dt><dd><p><a class="reference external" href="https://discourse.cmake.org">https://discourse.cmake.org</a></p>
+<p>The Discourse Forum hosts discussion and questions about CMake.</p>
 </dd>
 </dl>
-</div>
-</div>
+</section>
+</section>
 
 
+            <div class="clearer"></div>
           </div>
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-  <h3><a href="../index.html">Table Of Contents</a></h3>
-  <ul>
+  <div>
+    <h3><a href="../index.html">Table of Contents</a></h3>
+    <ul>
 <li><a class="reference internal" href="#">cpack(1)</a><ul>
 <li><a class="reference internal" href="#synopsis">Synopsis</a></li>
 <li><a class="reference internal" href="#description">Description</a></li>
@@ -300,32 +415,34 @@ the list.</p>
 </li>
 </ul>
 
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="ctest.1.html"
-                        title="previous chapter">ctest(1)</a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="cmake-gui.1.html"
-                        title="next chapter">cmake-gui(1)</a></p>
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="ctest.1.html"
+                          title="previous chapter">ctest(1)</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="cmake-gui.1.html"
+                          title="next chapter">cmake-gui(1)</a></p>
+  </div>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="../_sources/manual/cpack.1.txt"
+      <li><a href="../_sources/manual/cpack.1.rst.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div>
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
       <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
+    </div>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -347,17 +464,19 @@ the list.</p>
          style="vertical-align: middle; margin-top: -2px" />
   </li>
   <li>
-    <a href="https://cmake.org/">CMake</a> &raquo;
+    <a href="https://cmake.org/">CMake</a> &#187;
   </li>
   <li>
-    <a href="../index.html">3.7.1 Documentation</a> &raquo;
+    <a href="../index.html">3.27.3 Documentation</a> &#187;
   </li>
- 
+
+        <li class="nav-item nav-item-this"><a href="">cpack(1)</a></li> 
       </ul>
     </div>
+
     <div class="footer" role="contentinfo">
-        &copy; Copyright 2000-2016 Kitware, Inc. and Contributors.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4a0+.
+        &#169; Copyright 2000-2023 Kitware, Inc. and Contributors.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.3.0.
     </div>
   </body>
 </html>

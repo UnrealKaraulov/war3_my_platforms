@@ -1,36 +1,32 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
+<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-  <title>CheckIncludeFile &mdash; CMake 3.7.1 Documentation</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
+  <title>CheckIncludeFile &mdash; CMake 3.27.3 Documentation</title>
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/cmake.css" />
     
-    <link rel="stylesheet" href="../_static/cmake.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
     
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '../',
-        VERSION:     '3.7.1',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
-      };
-    </script>
-    <script type="text/javascript" src="../_static/jquery.js"></script>
-    <script type="text/javascript" src="../_static/underscore.js"></script>
-    <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="shortcut icon" href="../_static/cmake-favicon.ico"/>
-    <link rel="top" title="CMake 3.7.1 Documentation" href="../index.html" />
-    <link rel="up" title="cmake-modules(7)" href="../manual/cmake-modules.7.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="CheckIncludeFiles" href="CheckIncludeFiles.html" />
-    <link rel="prev" title="CheckIncludeFileCXX" href="CheckIncludeFileCXX.html" /> 
-  </head>
-  <body role="document">
+    <link rel="prev" title="CheckIncludeFileCXX" href="CheckIncludeFileCXX.html" />
+ 
+
+  </head><body>
+
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
@@ -48,13 +44,14 @@
          style="vertical-align: middle; margin-top: -2px" />
   </li>
   <li>
-    <a href="https://cmake.org/">CMake</a> &raquo;
+    <a href="https://cmake.org/">CMake</a> &#187;
   </li>
   <li>
-    <a href="../index.html">3.7.1 Documentation</a> &raquo;
+    <a href="../index.html">3.27.3 Documentation</a> &#187;
   </li>
 
-          <li class="nav-item nav-item-1"><a href="../manual/cmake-modules.7.html" accesskey="U">cmake-modules(7)</a> &raquo;</li> 
+          <li class="nav-item nav-item-1"><a href="../manual/cmake-modules.7.html" accesskey="U">cmake-modules(7)</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">CheckIncludeFile</a></li> 
       </ul>
     </div>  
 
@@ -63,70 +60,117 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="checkincludefile">
-<span id="module:CheckIncludeFile"></span><h1>CheckIncludeFile<a class="headerlink" href="#checkincludefile" title="Permalink to this headline">¶</a></h1>
-<p>Provides a macro to check if a header file can be included in <code class="docutils literal"><span class="pre">C</span></code>.</p>
-<dl class="command">
-<dt id="command:check_include_file">
-<code class="descname">CHECK_INCLUDE_FILE</code><a class="headerlink" href="#command:check_include_file" title="Permalink to this definition">¶</a></dt>
-<dd><div class="highlight-python"><div class="highlight"><pre><span></span>CHECK_INCLUDE_FILE(&lt;include&gt; &lt;variable&gt; [&lt;flags&gt;])
+  <section id="checkincludefile">
+<span id="module:CheckIncludeFile"></span><h1>CheckIncludeFile<a class="headerlink" href="#checkincludefile" title="Permalink to this heading">¶</a></h1>
+<p>Provides a macro to check if a header file can be included in <code class="docutils literal notranslate"><span class="pre">C</span></code>.</p>
+<dl class="cmake command">
+<dt class="sig sig-object cmake" id="command:check_include_file">
+<span class="sig-name descname"><span class="pre">CHECK_INCLUDE_FILE</span></span><a class="headerlink" href="#command:check_include_file" title="Permalink to this definition">¶</a></dt>
+<dd><div class="highlight-cmake notranslate"><div class="highlight"><pre><span></span><span class="nf">CHECK_INCLUDE_FILE(</span><span class="nv">&lt;include&gt;</span><span class="w"> </span><span class="nv">&lt;variable&gt;</span><span class="w"> </span><span class="p">[</span><span class="nv">&lt;flags&gt;</span><span class="p">]</span><span class="nf">)</span>
 </pre></div>
 </div>
-<p>Check if the given <code class="docutils literal"><span class="pre">&lt;include&gt;</span></code> file may be included in a <code class="docutils literal"><span class="pre">C</span></code>
+<p>Check if the given <code class="docutils literal notranslate"><span class="pre">&lt;include&gt;</span></code> file may be included in a <code class="docutils literal notranslate"><span class="pre">C</span></code>
 source file and store the result in an internal cache entry named
-<code class="docutils literal"><span class="pre">&lt;variable&gt;</span></code>.  The optional third argument may be used to add
-compilation flags to the check (or use <code class="docutils literal"><span class="pre">CMAKE_REQUIRED_FLAGS</span></code> below).</p>
+<code class="docutils literal notranslate"><span class="pre">&lt;variable&gt;</span></code>.  The optional third argument may be used to add
+compilation flags to the check (or use <code class="docutils literal notranslate"><span class="pre">CMAKE_REQUIRED_FLAGS</span></code> below).</p>
 </dd></dl>
 
 <p>The following variables may be set before calling this macro to modify
 the way the check is run:</p>
-<dl class="docutils">
-<dt><code class="docutils literal"><span class="pre">CMAKE_REQUIRED_FLAGS</span></code></dt>
-<dd>string of compile command line flags</dd>
-<dt><code class="docutils literal"><span class="pre">CMAKE_REQUIRED_DEFINITIONS</span></code></dt>
-<dd>list of macros to define (-DFOO=bar)</dd>
-<dt><code class="docutils literal"><span class="pre">CMAKE_REQUIRED_INCLUDES</span></code></dt>
-<dd>list of include directories</dd>
-<dt><code class="docutils literal"><span class="pre">CMAKE_REQUIRED_QUIET</span></code></dt>
-<dd>execute quietly without messages</dd>
+<blockquote>
+<div><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">CMAKE_REQUIRED_FLAGS</span></code></dt><dd><p>String of additional flags to pass to the compiler. The string must be
+space-delimited--a <a class="reference internal" href="../manual/cmake-language.7.html#cmake-language-lists"><span class="std std-ref">;-list</span></a> will not work.
+The contents of <span class="target" id="index-0-variable:CMAKE_&lt;LANG&gt;_FLAGS"></span><a class="reference internal" href="../variable/CMAKE_LANG_FLAGS.html#variable:CMAKE_&lt;LANG&gt;_FLAGS" title="CMAKE_&lt;LANG&gt;_FLAGS"><code class="xref cmake cmake-variable docutils literal notranslate"><span class="pre">CMAKE_&lt;LANG&gt;_FLAGS</span></code></a> and
+its associated configuration-specific variable are automatically added
+to the compiler command before the contents of <code class="docutils literal notranslate"><span class="pre">CMAKE_REQUIRED_FLAGS</span></code>.</p>
+</dd>
 </dl>
-<p>See the <span class="target" id="index-0-module:CheckIncludeFiles"></span><a class="reference internal" href="CheckIncludeFiles.html#module:CheckIncludeFiles" title="CheckIncludeFiles"><code class="xref cmake cmake-module docutils literal"><span class="pre">CheckIncludeFiles</span></code></a> module to check for multiple headers
-at once.  See the <span class="target" id="index-0-module:CheckIncludeFileCXX"></span><a class="reference internal" href="CheckIncludeFileCXX.html#module:CheckIncludeFileCXX" title="CheckIncludeFileCXX"><code class="xref cmake cmake-module docutils literal"><span class="pre">CheckIncludeFileCXX</span></code></a> module to check for headers
-using the <code class="docutils literal"><span class="pre">CXX</span></code> language.</p>
+</div></blockquote>
+<blockquote>
+<div><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">CMAKE_REQUIRED_DEFINITIONS</span></code></dt><dd><p>A <a class="reference internal" href="../manual/cmake-language.7.html#cmake-language-lists"><span class="std std-ref">;-list</span></a> of compiler definitions of the form
+<code class="docutils literal notranslate"><span class="pre">-DFOO</span></code> or <code class="docutils literal notranslate"><span class="pre">-DFOO=bar</span></code>. A definition for the name specified by
+<code class="docutils literal notranslate"><span class="pre">&lt;resultVar&gt;</span></code> will also be added automatically.</p>
+</dd>
+</dl>
+</div></blockquote>
+<blockquote>
+<div><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">CMAKE_REQUIRED_INCLUDES</span></code></dt><dd><p>A <a class="reference internal" href="../manual/cmake-language.7.html#cmake-language-lists"><span class="std std-ref">;-list</span></a> of header search paths to pass to
+the compiler. These will be the only header search paths used--the contents
+of the <span class="target" id="index-0-prop_dir:INCLUDE_DIRECTORIES"></span><a class="reference internal" href="../prop_dir/INCLUDE_DIRECTORIES.html#prop_dir:INCLUDE_DIRECTORIES" title="INCLUDE_DIRECTORIES"><code class="xref cmake cmake-prop_dir docutils literal notranslate"><span class="pre">INCLUDE_DIRECTORIES</span></code></a> directory property will be ignored.</p>
+</dd>
+</dl>
+</div></blockquote>
+<blockquote>
+<div><dl>
+<dt><code class="docutils literal notranslate"><span class="pre">CMAKE_REQUIRED_LINK_OPTIONS</span></code></dt><dd><div class="versionadded">
+<p><span class="versionmodified added">New in version 3.14.</span></p>
 </div>
+<p>A <a class="reference internal" href="../manual/cmake-language.7.html#cmake-language-lists"><span class="std std-ref">;-list</span></a> of options to add to the link
+command (see <span class="target" id="index-0-command:try_compile"></span><a class="reference internal" href="../command/try_compile.html#command:try_compile" title="try_compile"><code class="xref cmake cmake-command docutils literal notranslate"><span class="pre">try_compile()</span></code></a> for further details).</p>
+</dd>
+</dl>
+</div></blockquote>
+<blockquote>
+<div><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">CMAKE_REQUIRED_LIBRARIES</span></code></dt><dd><p>A <a class="reference internal" href="../manual/cmake-language.7.html#cmake-language-lists"><span class="std std-ref">;-list</span></a> of libraries to add to the link
+command. These can be the name of system libraries or they can be
+<a class="reference internal" href="../manual/cmake-buildsystem.7.html#imported-targets"><span class="std std-ref">Imported Targets</span></a> (see <span class="target" id="index-1-command:try_compile"></span><a class="reference internal" href="../command/try_compile.html#command:try_compile" title="try_compile"><code class="xref cmake cmake-command docutils literal notranslate"><span class="pre">try_compile()</span></code></a> for
+further details).</p>
+</dd>
+</dl>
+</div></blockquote>
+<blockquote>
+<div><dl>
+<dt><code class="docutils literal notranslate"><span class="pre">CMAKE_REQUIRED_QUIET</span></code></dt><dd><div class="versionadded">
+<p><span class="versionmodified added">New in version 3.1.</span></p>
+</div>
+<p>If this variable evaluates to a boolean true value, all status messages
+associated with the check will be suppressed.</p>
+</dd>
+</dl>
+</div></blockquote>
+<p>See the <span class="target" id="index-0-module:CheckIncludeFiles"></span><a class="reference internal" href="CheckIncludeFiles.html#module:CheckIncludeFiles" title="CheckIncludeFiles"><code class="xref cmake cmake-module docutils literal notranslate"><span class="pre">CheckIncludeFiles</span></code></a> module to check for multiple headers
+at once.  See the <span class="target" id="index-0-module:CheckIncludeFileCXX"></span><a class="reference internal" href="CheckIncludeFileCXX.html#module:CheckIncludeFileCXX" title="CheckIncludeFileCXX"><code class="xref cmake cmake-module docutils literal notranslate"><span class="pre">CheckIncludeFileCXX</span></code></a> module to check for headers
+using the <code class="docutils literal notranslate"><span class="pre">CXX</span></code> language.</p>
+</section>
 
 
+            <div class="clearer"></div>
           </div>
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="CheckIncludeFileCXX.html"
-                        title="previous chapter">CheckIncludeFileCXX</a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="CheckIncludeFiles.html"
-                        title="next chapter">CheckIncludeFiles</a></p>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="CheckIncludeFileCXX.html"
+                          title="previous chapter">CheckIncludeFileCXX</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="CheckIncludeFiles.html"
+                          title="next chapter">CheckIncludeFiles</a></p>
+  </div>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="../_sources/module/CheckIncludeFile.txt"
+      <li><a href="../_sources/module/CheckIncludeFile.rst.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div>
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
       <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
+    </div>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -148,18 +192,20 @@ using the <code class="docutils literal"><span class="pre">CXX</span></code> lan
          style="vertical-align: middle; margin-top: -2px" />
   </li>
   <li>
-    <a href="https://cmake.org/">CMake</a> &raquo;
+    <a href="https://cmake.org/">CMake</a> &#187;
   </li>
   <li>
-    <a href="../index.html">3.7.1 Documentation</a> &raquo;
+    <a href="../index.html">3.27.3 Documentation</a> &#187;
   </li>
 
-          <li class="nav-item nav-item-1"><a href="../manual/cmake-modules.7.html" >cmake-modules(7)</a> &raquo;</li> 
+          <li class="nav-item nav-item-1"><a href="../manual/cmake-modules.7.html" >cmake-modules(7)</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">CheckIncludeFile</a></li> 
       </ul>
     </div>
+
     <div class="footer" role="contentinfo">
-        &copy; Copyright 2000-2016 Kitware, Inc. and Contributors.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4a0+.
+        &#169; Copyright 2000-2023 Kitware, Inc. and Contributors.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.3.0.
     </div>
   </body>
 </html>

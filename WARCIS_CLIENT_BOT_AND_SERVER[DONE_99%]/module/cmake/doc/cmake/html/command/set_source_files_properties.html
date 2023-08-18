@@ -1,36 +1,32 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
+<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-  <title>set_source_files_properties &mdash; CMake 3.7.1 Documentation</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
+  <title>set_source_files_properties &mdash; CMake 3.27.3 Documentation</title>
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/cmake.css" />
     
-    <link rel="stylesheet" href="../_static/cmake.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
     
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '../',
-        VERSION:     '3.7.1',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
-      };
-    </script>
-    <script type="text/javascript" src="../_static/jquery.js"></script>
-    <script type="text/javascript" src="../_static/underscore.js"></script>
-    <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="shortcut icon" href="../_static/cmake-favicon.ico"/>
-    <link rel="top" title="CMake 3.7.1 Documentation" href="../index.html" />
-    <link rel="up" title="cmake-commands(7)" href="../manual/cmake-commands.7.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="set_target_properties" href="set_target_properties.html" />
-    <link rel="prev" title="set" href="set.html" /> 
-  </head>
-  <body role="document">
+    <link rel="prev" title="remove_definitions" href="remove_definitions.html" />
+ 
+
+  </head><body>
+
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
@@ -41,20 +37,21 @@
           <a href="set_target_properties.html" title="set_target_properties"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="set.html" title="set"
+          <a href="remove_definitions.html" title="remove_definitions"
              accesskey="P">previous</a> |</li>
   <li>
     <img src="../_static/cmake-logo-16.png" alt=""
          style="vertical-align: middle; margin-top: -2px" />
   </li>
   <li>
-    <a href="https://cmake.org/">CMake</a> &raquo;
+    <a href="https://cmake.org/">CMake</a> &#187;
   </li>
   <li>
-    <a href="../index.html">3.7.1 Documentation</a> &raquo;
+    <a href="../index.html">3.27.3 Documentation</a> &#187;
   </li>
 
-          <li class="nav-item nav-item-1"><a href="../manual/cmake-commands.7.html" accesskey="U">cmake-commands(7)</a> &raquo;</li> 
+          <li class="nav-item nav-item-1"><a href="../manual/cmake-commands.7.html" accesskey="U">cmake-commands(7)</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">set_source_files_properties</a></li> 
       </ul>
     </div>  
 
@@ -63,52 +60,97 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="set-source-files-properties">
-<span id="command:set_source_files_properties"></span><h1>set_source_files_properties<a class="headerlink" href="#set-source-files-properties" title="Permalink to this headline">¶</a></h1>
+  <section id="set-source-files-properties">
+<span id="command:set_source_files_properties"></span><h1>set_source_files_properties<a class="headerlink" href="#set-source-files-properties" title="Permalink to this heading">¶</a></h1>
 <p>Source files can have properties that affect how they are built.</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>set_source_files_properties([file1 [file2 [...]]]
-                            PROPERTIES prop1 value1
-                            [prop2 value2 [...]])
+<div class="highlight-cmake notranslate"><div class="highlight"><pre><span></span><span class="nf">set_source_files_properties(</span><span class="nv">&lt;files&gt;</span><span class="w"> </span><span class="p">...</span>
+<span class="w">                            </span><span class="p">[</span><span class="no">DIRECTORY</span><span class="w"> </span><span class="nv">&lt;dirs&gt;</span><span class="w"> </span><span class="p">...]</span>
+<span class="w">                            </span><span class="p">[</span><span class="no">TARGET_DIRECTORY</span><span class="w"> </span><span class="nv">&lt;targets&gt;</span><span class="w"> </span><span class="p">...]</span>
+<span class="w">                            </span><span class="no">PROPERTIES</span><span class="w"> </span><span class="nv">&lt;prop1&gt;</span><span class="w"> </span><span class="nv">&lt;value1&gt;</span>
+<span class="w">                            </span><span class="p">[</span><span class="nv">&lt;prop2&gt;</span><span class="w"> </span><span class="nv">&lt;value2&gt;</span><span class="p">]</span><span class="w"> </span><span class="p">...</span><span class="nf">)</span>
 </pre></div>
 </div>
-<p>Set properties associated with source files using a key/value paired
-list.  See <a class="reference internal" href="../manual/cmake-properties.7.html#source-file-properties"><span>Properties on Source Files</span></a> for the list of properties known
-to CMake.  Source file properties are visible only to targets added
-in the same directory (CMakeLists.txt).</p>
+<p>Sets properties associated with source files using a key/value paired
+list.</p>
+<div class="versionadded">
+<p><span class="versionmodified added">New in version 3.18: </span>By default, source file properties are only visible to targets added in the
+same directory (<code class="docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code>).  Visibility can be set in other directory
+scopes using one or both of the following options:</p>
 </div>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">DIRECTORY</span> <span class="pre">&lt;dirs&gt;...</span></code></dt><dd><p>The source file properties will be set in each of the <code class="docutils literal notranslate"><span class="pre">&lt;dirs&gt;</span></code>
+directories' scopes.  CMake must already know about each of these
+source directories, either by having added them through a call to
+<span class="target" id="index-0-command:add_subdirectory"></span><a class="reference internal" href="add_subdirectory.html#command:add_subdirectory" title="add_subdirectory"><code class="xref cmake cmake-command docutils literal notranslate"><span class="pre">add_subdirectory()</span></code></a> or it being the top level source directory.
+Relative paths are treated as relative to the current source directory.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">TARGET_DIRECTORY</span> <span class="pre">&lt;targets&gt;...</span></code></dt><dd><p>The source file properties will be set in each of the directory scopes
+where any of the specified <code class="docutils literal notranslate"><span class="pre">&lt;targets&gt;</span></code> were created (the <code class="docutils literal notranslate"><span class="pre">&lt;targets&gt;</span></code>
+must therefore already exist).</p>
+</dd>
+</dl>
+<p>Use <span class="target" id="index-0-command:get_source_file_property"></span><a class="reference internal" href="get_source_file_property.html#command:get_source_file_property" title="get_source_file_property"><code class="xref cmake cmake-command docutils literal notranslate"><span class="pre">get_source_file_property()</span></code></a> to get property values.
+See also the <span class="target" id="index-0-command:set_property"></span><a class="reference internal" href="set_property.html#command:set_property" title="set_property(source)"><code class="xref cmake cmake-command docutils literal notranslate"><span class="pre">set_property(SOURCE)</span></code></a> command.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <span class="target" id="index-0-prop_sf:GENERATED"></span><a class="reference internal" href="../prop_sf/GENERATED.html#prop_sf:GENERATED" title="GENERATED"><code class="xref cmake cmake-prop_sf docutils literal notranslate"><span class="pre">GENERATED</span></code></a> source file property may be globally visible.
+See its documentation for details.</p>
+</div>
+<section id="see-also">
+<h2>See Also<a class="headerlink" href="#see-also" title="Permalink to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><span class="target" id="index-0-command:define_property"></span><a class="reference internal" href="define_property.html#command:define_property" title="define_property"><code class="xref cmake cmake-command docutils literal notranslate"><span class="pre">define_property()</span></code></a></p></li>
+<li><p><span class="target" id="index-1-command:get_source_file_property"></span><a class="reference internal" href="get_source_file_property.html#command:get_source_file_property" title="get_source_file_property"><code class="xref cmake cmake-command docutils literal notranslate"><span class="pre">get_source_file_property()</span></code></a></p></li>
+<li><p><a class="reference internal" href="../manual/cmake-properties.7.html#source-file-properties"><span class="std std-ref">Properties on Source Files</span></a> for the list of properties known
+to CMake</p></li>
+</ul>
+</section>
+</section>
 
 
+            <div class="clearer"></div>
           </div>
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="set.html"
-                        title="previous chapter">set</a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="set_target_properties.html"
-                        title="next chapter">set_target_properties</a></p>
+  <div>
+    <h3><a href="../index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">set_source_files_properties</a><ul>
+<li><a class="reference internal" href="#see-also">See Also</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="remove_definitions.html"
+                          title="previous chapter">remove_definitions</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="set_target_properties.html"
+                          title="next chapter">set_target_properties</a></p>
+  </div>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="../_sources/command/set_source_files_properties.txt"
+      <li><a href="../_sources/command/set_source_files_properties.rst.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div>
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
       <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
+    </div>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -123,25 +165,27 @@ in the same directory (CMakeLists.txt).</p>
           <a href="set_target_properties.html" title="set_target_properties"
              >next</a> |</li>
         <li class="right" >
-          <a href="set.html" title="set"
+          <a href="remove_definitions.html" title="remove_definitions"
              >previous</a> |</li>
   <li>
     <img src="../_static/cmake-logo-16.png" alt=""
          style="vertical-align: middle; margin-top: -2px" />
   </li>
   <li>
-    <a href="https://cmake.org/">CMake</a> &raquo;
+    <a href="https://cmake.org/">CMake</a> &#187;
   </li>
   <li>
-    <a href="../index.html">3.7.1 Documentation</a> &raquo;
+    <a href="../index.html">3.27.3 Documentation</a> &#187;
   </li>
 
-          <li class="nav-item nav-item-1"><a href="../manual/cmake-commands.7.html" >cmake-commands(7)</a> &raquo;</li> 
+          <li class="nav-item nav-item-1"><a href="../manual/cmake-commands.7.html" >cmake-commands(7)</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">set_source_files_properties</a></li> 
       </ul>
     </div>
+
     <div class="footer" role="contentinfo">
-        &copy; Copyright 2000-2016 Kitware, Inc. and Contributors.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4a0+.
+        &#169; Copyright 2000-2023 Kitware, Inc. and Contributors.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.3.0.
     </div>
   </body>
 </html>

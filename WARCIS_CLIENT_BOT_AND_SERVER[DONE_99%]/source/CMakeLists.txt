@@ -1,5 +1,5 @@
 # Required cmake version
-cmake_minimum_required(VERSION 3.1.0)
+cmake_minimum_required(VERSION 3.7.0)
 
 # Put the include dirs which are in the source or build tree
 # before all other include dirs, so the headers in the sources

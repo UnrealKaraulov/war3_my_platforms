@@ -1,0 +1,11 @@
+C:\Projects\pvpgn-magic\source\src\compat\gettimeofday.cpp;C:\Projects\pvpgn-magic\build\src\compat\compat.dir\Release\gettimeofday.obj
+C:\Projects\pvpgn-magic\source\src\compat\mmap.cpp;C:\Projects\pvpgn-magic\build\src\compat\compat.dir\Release\mmap.obj
+C:\Projects\pvpgn-magic\source\src\compat\pdir.cpp;C:\Projects\pvpgn-magic\build\src\compat\compat.dir\Release\pdir.obj
+C:\Projects\pvpgn-magic\source\src\compat\pgetopt.cpp;C:\Projects\pvpgn-magic\build\src\compat\compat.dir\Release\pgetopt.obj
+C:\Projects\pvpgn-magic\source\src\compat\psock.cpp;C:\Projects\pvpgn-magic\build\src\compat\compat.dir\Release\psock.obj
+C:\Projects\pvpgn-magic\source\src\compat\strcasecmp.cpp;C:\Projects\pvpgn-magic\build\src\compat\compat.dir\Release\strcasecmp.obj
+C:\Projects\pvpgn-magic\source\src\compat\strdup.cpp;C:\Projects\pvpgn-magic\build\src\compat\compat.dir\Release\strdup.obj
+C:\Projects\pvpgn-magic\source\src\compat\strerror.cpp;C:\Projects\pvpgn-magic\build\src\compat\compat.dir\Release\strerror.obj
+C:\Projects\pvpgn-magic\source\src\compat\strncasecmp.cpp;C:\Projects\pvpgn-magic\build\src\compat\compat.dir\Release\strncasecmp.obj
+C:\Projects\pvpgn-magic\source\src\compat\strsep.cpp;C:\Projects\pvpgn-magic\build\src\compat\compat.dir\Release\strsep.obj
+C:\Projects\pvpgn-magic\source\src\compat\uname.cpp;C:\Projects\pvpgn-magic\build\src\compat\compat.dir\Release\uname.obj

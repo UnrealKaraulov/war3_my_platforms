@@ -1,0 +1,13 @@
+﻿  cdb_find.cpp
+  cdb_findnext.cpp
+  cdb_hash.cpp
+  cdb_init.cpp
+  cdb_make_add.cpp
+  cdb_make.cpp
+  cdb_make_find.cpp
+  cdb_make_put.cpp
+  cdb_seek.cpp
+  cdb_seq.cpp
+  cdb_unpack.cpp
+  Создание кода...
+  tinycdb.vcxproj -> C:\Projects\pvpgn-magic\build\src\tinycdb\Release\tinycdb.lib

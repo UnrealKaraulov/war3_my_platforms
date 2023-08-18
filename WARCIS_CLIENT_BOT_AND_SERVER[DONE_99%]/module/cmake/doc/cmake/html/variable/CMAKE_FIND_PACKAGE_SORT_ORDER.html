@@ -1,36 +1,32 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
+<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-  <title>CMAKE_FIND_PACKAGE_SORT_ORDER &mdash; CMake 3.7.1 Documentation</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
+  <title>CMAKE_FIND_PACKAGE_SORT_ORDER &mdash; CMake 3.27.3 Documentation</title>
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/cmake.css" />
     
-    <link rel="stylesheet" href="../_static/cmake.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
     
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '../',
-        VERSION:     '3.7.1',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
-      };
-    </script>
-    <script type="text/javascript" src="../_static/jquery.js"></script>
-    <script type="text/javascript" src="../_static/underscore.js"></script>
-    <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="shortcut icon" href="../_static/cmake-favicon.ico"/>
-    <link rel="top" title="CMake 3.7.1 Documentation" href="../index.html" />
-    <link rel="up" title="cmake-variables(7)" href="../manual/cmake-variables.7.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="CMAKE_GENERATOR" href="CMAKE_GENERATOR.html" />
-    <link rel="prev" title="CMAKE_FIND_PACKAGE_SORT_DIRECTION" href="CMAKE_FIND_PACKAGE_SORT_DIRECTION.html" /> 
-  </head>
-  <body role="document">
+    <link rel="prev" title="CMAKE_FIND_PACKAGE_SORT_DIRECTION" href="CMAKE_FIND_PACKAGE_SORT_DIRECTION.html" />
+ 
+
+  </head><body>
+
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
@@ -48,13 +44,14 @@
          style="vertical-align: middle; margin-top: -2px" />
   </li>
   <li>
-    <a href="https://cmake.org/">CMake</a> &raquo;
+    <a href="https://cmake.org/">CMake</a> &#187;
   </li>
   <li>
-    <a href="../index.html">3.7.1 Documentation</a> &raquo;
+    <a href="../index.html">3.27.3 Documentation</a> &#187;
   </li>
 
-          <li class="nav-item nav-item-1"><a href="../manual/cmake-variables.7.html" accesskey="U">cmake-variables(7)</a> &raquo;</li> 
+          <li class="nav-item nav-item-1"><a href="../manual/cmake-variables.7.html" accesskey="U">cmake-variables(7)</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">CMAKE_FIND_PACKAGE_SORT_ORDER</a></li> 
       </ul>
     </div>  
 
@@ -63,71 +60,76 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="cmake-find-package-sort-order">
-<span id="variable:CMAKE_FIND_PACKAGE_SORT_ORDER"></span><h1>CMAKE_FIND_PACKAGE_SORT_ORDER<a class="headerlink" href="#cmake-find-package-sort-order" title="Permalink to this headline">¶</a></h1>
-<p>The default order for sorting packages found using <span class="target" id="index-0-command:find_package"></span><a class="reference internal" href="../command/find_package.html#command:find_package" title="find_package"><code class="xref cmake cmake-command docutils literal"><span class="pre">find_package()</span></code></a>.
+  <section id="cmake-find-package-sort-order">
+<span id="variable:CMAKE_FIND_PACKAGE_SORT_ORDER"></span><h1>CMAKE_FIND_PACKAGE_SORT_ORDER<a class="headerlink" href="#cmake-find-package-sort-order" title="Permalink to this heading">¶</a></h1>
+<div class="versionadded">
+<p><span class="versionmodified added">New in version 3.7.</span></p>
+</div>
+<p>The default order for sorting packages found using <span class="target" id="index-0-command:find_package"></span><a class="reference internal" href="../command/find_package.html#command:find_package" title="find_package"><code class="xref cmake cmake-command docutils literal notranslate"><span class="pre">find_package()</span></code></a>.
 It can assume one of the following values:</p>
-<dl class="docutils">
-<dt><code class="docutils literal"><span class="pre">NONE</span></code></dt>
-<dd>Default.  No attempt is done to sort packages.
-The first valid package found will be selected.</dd>
-<dt><code class="docutils literal"><span class="pre">NAME</span></code></dt>
-<dd>Sort packages lexicographically before selecting one.</dd>
-<dt><code class="docutils literal"><span class="pre">NATURAL</span></code></dt>
-<dd>Sort packages using natural order (see <code class="docutils literal"><span class="pre">strverscmp(3)</span></code> manual),
-i.e. such that contiguous digits are compared as whole numbers.</dd>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">NONE</span></code></dt><dd><p>Default.  No attempt is done to sort packages.
+The first valid package found will be selected.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">NAME</span></code></dt><dd><p>Sort packages lexicographically before selecting one.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">NATURAL</span></code></dt><dd><p>Sort packages using natural order (see <code class="docutils literal notranslate"><span class="pre">strverscmp(3)</span></code> manual),
+i.e. such that contiguous digits are compared as whole numbers.</p>
+</dd>
 </dl>
 <p>Natural sorting can be employed to return the highest version when multiple
-versions of the same library are found by <span class="target" id="index-1-command:find_package"></span><a class="reference internal" href="../command/find_package.html#command:find_package" title="find_package"><code class="xref cmake cmake-command docutils literal"><span class="pre">find_package()</span></code></a>.  For
+versions of the same library are found by <span class="target" id="index-1-command:find_package"></span><a class="reference internal" href="../command/find_package.html#command:find_package" title="find_package"><code class="xref cmake cmake-command docutils literal notranslate"><span class="pre">find_package()</span></code></a>.  For
 example suppose that the following libraries have been found:</p>
 <ul class="simple">
-<li>libX-1.1.0</li>
-<li>libX-1.2.9</li>
-<li>libX-1.2.10</li>
+<li><p>libX-1.1.0</p></li>
+<li><p>libX-1.2.9</p></li>
+<li><p>libX-1.2.10</p></li>
 </ul>
-<p>By setting <code class="docutils literal"><span class="pre">NATURAL</span></code> order we can select the one with the highest
-version number <code class="docutils literal"><span class="pre">libX-1.2.10</span></code>.</p>
-<div class="highlight-cmake"><div class="highlight"><pre><span></span><span class="nb">set</span><span class="p">(</span><span class="s">CMAKE_FIND_PACKAGE_SORT_ORDER</span> <span class="s">NATURAL</span><span class="p">)</span>
-<span class="nb">find_package</span><span class="p">(</span><span class="s">libX</span> <span class="s">CONFIG</span><span class="p">)</span>
+<p>By setting <code class="docutils literal notranslate"><span class="pre">NATURAL</span></code> order we can select the one with the highest
+version number <code class="docutils literal notranslate"><span class="pre">libX-1.2.10</span></code>.</p>
+<div class="highlight-cmake notranslate"><div class="highlight"><pre><span></span><span class="nf">set(</span><span class="no">CMAKE_FIND_PACKAGE_SORT_ORDER</span><span class="w"> </span><span class="no">NATURAL</span><span class="nf">)</span>
+<span class="nf">find_package(</span><span class="nb">libX</span><span class="w"> </span><span class="no">CONFIG</span><span class="nf">)</span>
 </pre></div>
 </div>
 <p>The sort direction can be controlled using the
-<span class="target" id="index-0-variable:CMAKE_FIND_PACKAGE_SORT_DIRECTION"></span><a class="reference internal" href="CMAKE_FIND_PACKAGE_SORT_DIRECTION.html#variable:CMAKE_FIND_PACKAGE_SORT_DIRECTION" title="CMAKE_FIND_PACKAGE_SORT_DIRECTION"><code class="xref cmake cmake-variable docutils literal"><span class="pre">CMAKE_FIND_PACKAGE_SORT_DIRECTION</span></code></a> variable
+<span class="target" id="index-0-variable:CMAKE_FIND_PACKAGE_SORT_DIRECTION"></span><a class="reference internal" href="CMAKE_FIND_PACKAGE_SORT_DIRECTION.html#variable:CMAKE_FIND_PACKAGE_SORT_DIRECTION" title="CMAKE_FIND_PACKAGE_SORT_DIRECTION"><code class="xref cmake cmake-variable docutils literal notranslate"><span class="pre">CMAKE_FIND_PACKAGE_SORT_DIRECTION</span></code></a> variable
 (by default decrescent, e.g. lib-B will be tested before lib-A).</p>
-</div>
+</section>
 
 
+            <div class="clearer"></div>
           </div>
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="CMAKE_FIND_PACKAGE_SORT_DIRECTION.html"
-                        title="previous chapter">CMAKE_FIND_PACKAGE_SORT_DIRECTION</a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="CMAKE_GENERATOR.html"
-                        title="next chapter">CMAKE_GENERATOR</a></p>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="CMAKE_FIND_PACKAGE_SORT_DIRECTION.html"
+                          title="previous chapter">CMAKE_FIND_PACKAGE_SORT_DIRECTION</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="CMAKE_GENERATOR.html"
+                          title="next chapter">CMAKE_GENERATOR</a></p>
+  </div>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="../_sources/variable/CMAKE_FIND_PACKAGE_SORT_ORDER.txt"
+      <li><a href="../_sources/variable/CMAKE_FIND_PACKAGE_SORT_ORDER.rst.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div>
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
       <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
+    </div>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -149,18 +151,20 @@ version number <code class="docutils literal"><span class="pre">libX-1.2.10</spa
          style="vertical-align: middle; margin-top: -2px" />
   </li>
   <li>
-    <a href="https://cmake.org/">CMake</a> &raquo;
+    <a href="https://cmake.org/">CMake</a> &#187;
   </li>
   <li>
-    <a href="../index.html">3.7.1 Documentation</a> &raquo;
+    <a href="../index.html">3.27.3 Documentation</a> &#187;
   </li>
 
-          <li class="nav-item nav-item-1"><a href="../manual/cmake-variables.7.html" >cmake-variables(7)</a> &raquo;</li> 
+          <li class="nav-item nav-item-1"><a href="../manual/cmake-variables.7.html" >cmake-variables(7)</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">CMAKE_FIND_PACKAGE_SORT_ORDER</a></li> 
       </ul>
     </div>
+
     <div class="footer" role="contentinfo">
-        &copy; Copyright 2000-2016 Kitware, Inc. and Contributors.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4a0+.
+        &#169; Copyright 2000-2023 Kitware, Inc. and Contributors.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.3.0.
     </div>
   </body>
 </html>

@@ -1,36 +1,32 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
+<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-  <title>OBJECT_DEPENDS &mdash; CMake 3.7.1 Documentation</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
+  <title>OBJECT_DEPENDS &mdash; CMake 3.27.3 Documentation</title>
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/cmake.css" />
     
-    <link rel="stylesheet" href="../_static/cmake.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
     
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '../',
-        VERSION:     '3.7.1',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
-      };
-    </script>
-    <script type="text/javascript" src="../_static/jquery.js"></script>
-    <script type="text/javascript" src="../_static/underscore.js"></script>
-    <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="shortcut icon" href="../_static/cmake-favicon.ico"/>
-    <link rel="top" title="CMake 3.7.1 Documentation" href="../index.html" />
-    <link rel="up" title="cmake-properties(7)" href="../manual/cmake-properties.7.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="OBJECT_OUTPUTS" href="OBJECT_OUTPUTS.html" />
-    <link rel="prev" title="MACOSX_PACKAGE_LOCATION" href="MACOSX_PACKAGE_LOCATION.html" /> 
-  </head>
-  <body role="document">
+    <link rel="prev" title="MACOSX_PACKAGE_LOCATION" href="MACOSX_PACKAGE_LOCATION.html" />
+ 
+
+  </head><body>
+
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
@@ -48,13 +44,14 @@
          style="vertical-align: middle; margin-top: -2px" />
   </li>
   <li>
-    <a href="https://cmake.org/">CMake</a> &raquo;
+    <a href="https://cmake.org/">CMake</a> &#187;
   </li>
   <li>
-    <a href="../index.html">3.7.1 Documentation</a> &raquo;
+    <a href="../index.html">3.27.3 Documentation</a> &#187;
   </li>
 
-          <li class="nav-item nav-item-1"><a href="../manual/cmake-properties.7.html" accesskey="U">cmake-properties(7)</a> &raquo;</li> 
+          <li class="nav-item nav-item-1"><a href="../manual/cmake-properties.7.html" accesskey="U">cmake-properties(7)</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">OBJECT_DEPENDS</a></li> 
       </ul>
     </div>  
 
@@ -63,14 +60,14 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="object-depends">
-<span id="prop_sf:OBJECT_DEPENDS"></span><h1>OBJECT_DEPENDS<a class="headerlink" href="#object-depends" title="Permalink to this headline">¶</a></h1>
+  <section id="object-depends">
+<span id="prop_sf:OBJECT_DEPENDS"></span><h1>OBJECT_DEPENDS<a class="headerlink" href="#object-depends" title="Permalink to this heading">¶</a></h1>
 <p>Additional files on which a compiled object file depends.</p>
-<p>Specifies a <a class="reference internal" href="../manual/cmake-language.7.html#cmake-language-lists"><span>;-list</span></a> of full-paths to
+<p>Specifies a <a class="reference internal" href="../manual/cmake-language.7.html#cmake-language-lists"><span class="std std-ref">semicolon-separated list</span></a> of full-paths to
 files on which any object files compiled from this source file depend.
-On <a class="reference internal" href="../manual/cmake-generators.7.html#makefile-generators"><span>Makefile Generators</span></a> and the <span class="target" id="index-0-generator:Ninja"></span><a class="reference internal" href="../generator/Ninja.html#generator:Ninja" title="Ninja"><code class="xref cmake cmake-generator docutils literal"><span class="pre">Ninja</span></code></a> generator an
+On <a class="reference internal" href="../manual/cmake-generators.7.html#makefile-generators"><span class="std std-ref">Makefile Generators</span></a> and the <span class="target" id="index-0-generator:Ninja"></span><a class="reference internal" href="../generator/Ninja.html#generator:Ninja" title="Ninja"><code class="xref cmake cmake-generator docutils literal notranslate"><span class="pre">Ninja</span></code></a> generator an
 object file will be recompiled if any of the named files is newer than it.
-<a class="reference internal" href="../manual/cmake-generators.7.html#visual-studio-generators"><span>Visual Studio Generators</span></a> and the <span class="target" id="index-0-generator:Xcode"></span><a class="reference internal" href="../generator/Xcode.html#generator:Xcode" title="Xcode"><code class="xref cmake cmake-generator docutils literal"><span class="pre">Xcode</span></code></a> generator
+<a class="reference internal" href="../manual/cmake-generators.7.html#visual-studio-generators"><span class="std std-ref">Visual Studio Generators</span></a> and the <span class="target" id="index-0-generator:Xcode"></span><a class="reference internal" href="../generator/Xcode.html#generator:Xcode" title="Xcode"><code class="xref cmake cmake-generator docutils literal notranslate"><span class="pre">Xcode</span></code></a> generator
 cannot implement such compilation dependencies.</p>
 <p>This property need not be used to specify the dependency of a source
 file on a generated header file that it includes.  Although the
@@ -79,42 +76,44 @@ necessary.  If the generated header file is created by a custom
 command in the same target as the source file, the automatic
 dependency scanning process will recognize the dependency.  If the
 generated header file is created by another target, an inter-target
-dependency should be created with the <span class="target" id="index-0-command:add_dependencies"></span><a class="reference internal" href="../command/add_dependencies.html#command:add_dependencies" title="add_dependencies"><code class="xref cmake cmake-command docutils literal"><span class="pre">add_dependencies()</span></code></a>
+dependency should be created with the <span class="target" id="index-0-command:add_dependencies"></span><a class="reference internal" href="../command/add_dependencies.html#command:add_dependencies" title="add_dependencies"><code class="xref cmake cmake-command docutils literal notranslate"><span class="pre">add_dependencies()</span></code></a>
 command (if one does not already exist due to linking relationships).</p>
-</div>
+</section>
 
 
+            <div class="clearer"></div>
           </div>
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="MACOSX_PACKAGE_LOCATION.html"
-                        title="previous chapter">MACOSX_PACKAGE_LOCATION</a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="OBJECT_OUTPUTS.html"
-                        title="next chapter">OBJECT_OUTPUTS</a></p>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="MACOSX_PACKAGE_LOCATION.html"
+                          title="previous chapter">MACOSX_PACKAGE_LOCATION</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="OBJECT_OUTPUTS.html"
+                          title="next chapter">OBJECT_OUTPUTS</a></p>
+  </div>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="../_sources/prop_sf/OBJECT_DEPENDS.txt"
+      <li><a href="../_sources/prop_sf/OBJECT_DEPENDS.rst.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div>
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
       <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
+    </div>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -136,18 +135,20 @@ command (if one does not already exist due to linking relationships).</p>
          style="vertical-align: middle; margin-top: -2px" />
   </li>
   <li>
-    <a href="https://cmake.org/">CMake</a> &raquo;
+    <a href="https://cmake.org/">CMake</a> &#187;
   </li>
   <li>
-    <a href="../index.html">3.7.1 Documentation</a> &raquo;
+    <a href="../index.html">3.27.3 Documentation</a> &#187;
   </li>
 
-          <li class="nav-item nav-item-1"><a href="../manual/cmake-properties.7.html" >cmake-properties(7)</a> &raquo;</li> 
+          <li class="nav-item nav-item-1"><a href="../manual/cmake-properties.7.html" >cmake-properties(7)</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">OBJECT_DEPENDS</a></li> 
       </ul>
     </div>
+
     <div class="footer" role="contentinfo">
-        &copy; Copyright 2000-2016 Kitware, Inc. and Contributors.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4a0+.
+        &#169; Copyright 2000-2023 Kitware, Inc. and Contributors.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.3.0.
     </div>
   </body>
 </html>

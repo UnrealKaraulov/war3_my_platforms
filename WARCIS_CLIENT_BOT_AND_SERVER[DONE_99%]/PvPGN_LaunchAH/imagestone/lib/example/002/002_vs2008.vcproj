@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="002"
-	ProjectGUID="{26DD0141-E69A-4575-B332-4788C6226968}"
+	ProjectGUID="{26DD0143-E69A-4575-B332-4788C6226968}"
 	RootNamespace="My002"
 	Keyword="MFCProj"
 	TargetFrameworkVersion="196613"

@@ -1,35 +1,32 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
+<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-  <title>cmake-gui(1) &mdash; CMake 3.7.1 Documentation</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
+  <title>cmake-gui(1) &mdash; CMake 3.27.3 Documentation</title>
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/cmake.css" />
     
-    <link rel="stylesheet" href="../_static/cmake.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
     
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '../',
-        VERSION:     '3.7.1',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
-      };
-    </script>
-    <script type="text/javascript" src="../_static/jquery.js"></script>
-    <script type="text/javascript" src="../_static/underscore.js"></script>
-    <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="shortcut icon" href="../_static/cmake-favicon.ico"/>
-    <link rel="top" title="CMake 3.7.1 Documentation" href="../index.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="ccmake(1)" href="ccmake.1.html" />
-    <link rel="prev" title="cpack(1)" href="cpack.1.html" /> 
-  </head>
-  <body role="document">
+    <link rel="prev" title="cpack(1)" href="cpack.1.html" />
+ 
+
+  </head><body>
+
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
@@ -47,12 +44,13 @@
          style="vertical-align: middle; margin-top: -2px" />
   </li>
   <li>
-    <a href="https://cmake.org/">CMake</a> &raquo;
+    <a href="https://cmake.org/">CMake</a> &#187;
   </li>
   <li>
-    <a href="../index.html">3.7.1 Documentation</a> &raquo;
+    <a href="../index.html">3.27.3 Documentation</a> &#187;
   </li>
- 
+
+        <li class="nav-item nav-item-this"><a href="">cmake-gui(1)</a></li> 
       </ul>
     </div>  
 
@@ -61,182 +59,261 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <span class="target" id="manual:cmake-gui(1)"></span><div class="section" id="cmake-gui-1">
-<h1>cmake-gui(1)<a class="headerlink" href="#cmake-gui-1" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="synopsis">
-<h2>Synopsis<a class="headerlink" href="#synopsis" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python"><div class="highlight"><pre><span></span>cmake-gui [&lt;options&gt;]
-cmake-gui [&lt;options&gt;] (&lt;path-to-source&gt; | &lt;path-to-existing-build&gt;)
+  <span class="target" id="manual:cmake-gui(1)"></span><section id="cmake-gui-1">
+<h1>cmake-gui(1)<a class="headerlink" href="#cmake-gui-1" title="Permalink to this heading">¶</a></h1>
+<section id="synopsis">
+<h2>Synopsis<a class="headerlink" href="#synopsis" title="Permalink to this heading">¶</a></h2>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>cmake-gui [&lt;options&gt;]
+cmake-gui [&lt;options&gt;] -B &lt;path-to-build&gt; [-S &lt;path-to-source&gt;]
+cmake-gui [&lt;options&gt;] &lt;path-to-source | path-to-existing-build&gt;
+cmake-gui [&lt;options&gt;] --browse-manual [&lt;filename&gt;]
 </pre></div>
 </div>
-</div>
-<div class="section" id="description">
-<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
-<p>The &#8220;cmake-gui&#8221; executable is the CMake GUI.  Project configuration
+</section>
+<section id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this heading">¶</a></h2>
+<p>The <strong class="program">cmake-gui</strong> executable is the CMake GUI.  Project configuration
 settings may be specified interactively.  Brief instructions are
 provided at the bottom of the window when the program is running.</p>
 <p>CMake is a cross-platform build system generator.  Projects specify
 their build process with platform-independent CMake listfiles included
-in each directory of a source tree with the name CMakeLists.txt.
+in each directory of a source tree with the name <code class="docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code>.
 Users build a project by using CMake to generate a build system for a
 native tool on their platform.</p>
-</div>
-<div class="section" id="options">
-<h2>Options<a class="headerlink" href="#options" title="Permalink to this headline">¶</a></h2>
-<dl class="docutils">
-<dt><code class="docutils literal"><span class="pre">--help,-help,-usage,-h,-H,/?</span></code></dt>
-<dd><p class="first">Print usage information and exit.</p>
-<p class="last">Usage describes the basic command line interface and its options.</p>
-</dd>
-<dt><code class="docutils literal"><span class="pre">--version,-version,/V</span> <span class="pre">[&lt;f&gt;]</span></code></dt>
-<dd><p class="first">Show program name/version banner and exit.</p>
-<p class="last">If a file is specified, the version is written into it.
-The help is printed to a named &lt;f&gt;ile if given.</p>
-</dd>
-<dt><code class="docutils literal"><span class="pre">--help-full</span> <span class="pre">[&lt;f&gt;]</span></code></dt>
-<dd><p class="first">Print all help manuals and exit.</p>
-<p class="last">All manuals are printed in a human-readable text format.
-The help is printed to a named &lt;f&gt;ile if given.</p>
-</dd>
-<dt><code class="docutils literal"><span class="pre">--help-manual</span> <span class="pre">&lt;man&gt;</span> <span class="pre">[&lt;f&gt;]</span></code></dt>
-<dd><p class="first">Print one help manual and exit.</p>
-<p class="last">The specified manual is printed in a human-readable text format.
-The help is printed to a named &lt;f&gt;ile if given.</p>
-</dd>
-<dt><code class="docutils literal"><span class="pre">--help-manual-list</span> <span class="pre">[&lt;f&gt;]</span></code></dt>
-<dd><p class="first">List help manuals available and exit.</p>
-<p class="last">The list contains all manuals for which help may be obtained by
-using the <code class="docutils literal"><span class="pre">--help-manual</span></code> option followed by a manual name.
-The help is printed to a named &lt;f&gt;ile if given.</p>
-</dd>
-<dt><code class="docutils literal"><span class="pre">--help-command</span> <span class="pre">&lt;cmd&gt;</span> <span class="pre">[&lt;f&gt;]</span></code></dt>
-<dd><p class="first">Print help for one command and exit.</p>
-<p class="last">The <span class="target" id="index-0-manual:cmake-commands(7)"></span><a class="reference internal" href="cmake-commands.7.html#manual:cmake-commands(7)" title="cmake-commands(7)"><code class="xref cmake cmake-manual docutils literal"><span class="pre">cmake-commands(7)</span></code></a> manual entry for <code class="docutils literal"><span class="pre">&lt;cmd&gt;</span></code> is
+</section>
+<section id="options">
+<h2>Options<a class="headerlink" href="#options" title="Permalink to this heading">¶</a></h2>
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cmake-gui-S">
+<span id="cmdoption-cmake-gui-s"></span><span class="sig-name descname"><span class="pre">-S</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;path-to-source&gt;</span></span><a class="headerlink" href="#cmdoption-cmake-gui-S" title="Permalink to this definition">¶</a></dt>
+<dd><p>Path to root directory of the CMake project to build.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cmake-gui-B">
+<span id="cmdoption-cmake-gui-b"></span><span class="sig-name descname"><span class="pre">-B</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;path-to-build&gt;</span></span><a class="headerlink" href="#cmdoption-cmake-gui-B" title="Permalink to this definition">¶</a></dt>
+<dd><p>Path to directory which CMake will use as the root of build directory.</p>
+<p>If the directory doesn't already exist CMake will make it.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cmake-gui-preset">
+<span class="sig-name descname"><span class="pre">--preset</span></span><span class="sig-prename descclassname"><span class="pre">=&lt;preset-name&gt;</span></span><a class="headerlink" href="#cmdoption-cmake-gui-preset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Name of the preset to use from the project's
+<span class="target" id="index-0-manual:cmake-presets(7)"></span><a class="reference internal" href="cmake-presets.7.html#manual:cmake-presets(7)" title="cmake-presets(7)"><code class="xref cmake cmake-manual docutils literal notranslate"><span class="pre">presets</span></code></a> files, if it has them.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cmake-gui-browse-manual">
+<span class="sig-name descname"><span class="pre">--browse-manual</span></span><span class="sig-prename descclassname"> <span class="pre">[&lt;filename&gt;]</span></span><a class="headerlink" href="#cmdoption-cmake-gui-browse-manual" title="Permalink to this definition">¶</a></dt>
+<dd><p>Open the CMake reference manual in a browser and immediately exit. If
+<code class="docutils literal notranslate"><span class="pre">&lt;filename&gt;</span></code> is specified, open that file within the reference manual
+instead of <code class="docutils literal notranslate"><span class="pre">index.html</span></code>.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cmake-gui-version">
+<span id="cmdoption-cmake-gui-version"></span><span id="cmdoption-cmake-gui-V"></span><span id="cmdoption-cmake-gui-v"></span><span class="sig-name descname"><span class="pre">-version</span></span><span class="sig-prename descclassname"> <span class="pre">[&lt;file&gt;]</span></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--version</span></span><span class="sig-prename descclassname"> <span class="pre">[&lt;file&gt;]</span></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">/V</span></span><span class="sig-prename descclassname"> <span class="pre">[&lt;file&gt;]</span></span><a class="headerlink" href="#cmdoption-cmake-gui-version" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show program name/version banner and exit.
+The output is printed to a named <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> if given.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cmake-gui-h">
+<span id="cmdoption-cmake-gui-H"></span><span id="cmdoption-cmake-gui-help"></span><span id="cmdoption-cmake-gui-help"></span><span id="cmdoption-cmake-gui-usage"></span><span id="cmdoption-cmake-gui-0"></span><span id="cmdoption-cmake-gui"></span><span class="sig-name descname"><span class="pre">-h</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">-H</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--help</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">-help</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">-usage</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">/?</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-cmake-gui-h" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print usage information and exit.</p>
+<p>Usage describes the basic command line interface and its options.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cmake-gui-help-full">
+<span class="sig-name descname"><span class="pre">--help-full</span></span><span class="sig-prename descclassname"> <span class="pre">[&lt;file&gt;]</span></span><a class="headerlink" href="#cmdoption-cmake-gui-help-full" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print all help manuals and exit.</p>
+<p>All manuals are printed in a human-readable text format.
+The output is printed to a named <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> if given.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cmake-gui-help-manual">
+<span class="sig-name descname"><span class="pre">--help-manual</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;man&gt;</span> <span class="pre">[&lt;file&gt;]</span></span><a class="headerlink" href="#cmdoption-cmake-gui-help-manual" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print one help manual and exit.</p>
+<p>The specified manual is printed in a human-readable text format.
+The output is printed to a named <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> if given.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cmake-gui-help-manual-list">
+<span class="sig-name descname"><span class="pre">--help-manual-list</span></span><span class="sig-prename descclassname"> <span class="pre">[&lt;file&gt;]</span></span><a class="headerlink" href="#cmdoption-cmake-gui-help-manual-list" title="Permalink to this definition">¶</a></dt>
+<dd><p>List help manuals available and exit.</p>
+<p>The list contains all manuals for which help may be obtained by
+using the <code class="docutils literal notranslate"><span class="pre">--help-manual</span></code> option followed by a manual name.
+The output is printed to a named <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> if given.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cmake-gui-help-command">
+<span class="sig-name descname"><span class="pre">--help-command</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;cmd&gt;</span> <span class="pre">[&lt;file&gt;]</span></span><a class="headerlink" href="#cmdoption-cmake-gui-help-command" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print help for one command and exit.</p>
+<p>The <span class="target" id="index-0-manual:cmake-commands(7)"></span><a class="reference internal" href="cmake-commands.7.html#manual:cmake-commands(7)" title="cmake-commands(7)"><code class="xref cmake cmake-manual docutils literal notranslate"><span class="pre">cmake-commands(7)</span></code></a> manual entry for <code class="docutils literal notranslate"><span class="pre">&lt;cmd&gt;</span></code> is
 printed in a human-readable text format.
-The help is printed to a named &lt;f&gt;ile if given.</p>
-</dd>
-<dt><code class="docutils literal"><span class="pre">--help-command-list</span> <span class="pre">[&lt;f&gt;]</span></code></dt>
-<dd><p class="first">List commands with help available and exit.</p>
-<p class="last">The list contains all commands for which help may be obtained by
-using the <code class="docutils literal"><span class="pre">--help-command</span></code> option followed by a command name.
-The help is printed to a named &lt;f&gt;ile if given.</p>
-</dd>
-<dt><code class="docutils literal"><span class="pre">--help-commands</span> <span class="pre">[&lt;f&gt;]</span></code></dt>
-<dd><p class="first">Print cmake-commands manual and exit.</p>
-<p class="last">The <span class="target" id="index-1-manual:cmake-commands(7)"></span><a class="reference internal" href="cmake-commands.7.html#manual:cmake-commands(7)" title="cmake-commands(7)"><code class="xref cmake cmake-manual docutils literal"><span class="pre">cmake-commands(7)</span></code></a> manual is printed in a
+The output is printed to a named <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> if given.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cmake-gui-help-command-list">
+<span class="sig-name descname"><span class="pre">--help-command-list</span></span><span class="sig-prename descclassname"> <span class="pre">[&lt;file&gt;]</span></span><a class="headerlink" href="#cmdoption-cmake-gui-help-command-list" title="Permalink to this definition">¶</a></dt>
+<dd><p>List commands with help available and exit.</p>
+<p>The list contains all commands for which help may be obtained by
+using the <code class="docutils literal notranslate"><span class="pre">--help-command</span></code> option followed by a command name.
+The output is printed to a named <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> if given.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cmake-gui-help-commands">
+<span class="sig-name descname"><span class="pre">--help-commands</span></span><span class="sig-prename descclassname"> <span class="pre">[&lt;file&gt;]</span></span><a class="headerlink" href="#cmdoption-cmake-gui-help-commands" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print cmake-commands manual and exit.</p>
+<p>The <span class="target" id="index-1-manual:cmake-commands(7)"></span><a class="reference internal" href="cmake-commands.7.html#manual:cmake-commands(7)" title="cmake-commands(7)"><code class="xref cmake cmake-manual docutils literal notranslate"><span class="pre">cmake-commands(7)</span></code></a> manual is printed in a
 human-readable text format.
-The help is printed to a named &lt;f&gt;ile if given.</p>
-</dd>
-<dt><code class="docutils literal"><span class="pre">--help-module</span> <span class="pre">&lt;mod&gt;</span> <span class="pre">[&lt;f&gt;]</span></code></dt>
-<dd><p class="first">Print help for one module and exit.</p>
-<p class="last">The <span class="target" id="index-0-manual:cmake-modules(7)"></span><a class="reference internal" href="cmake-modules.7.html#manual:cmake-modules(7)" title="cmake-modules(7)"><code class="xref cmake cmake-manual docutils literal"><span class="pre">cmake-modules(7)</span></code></a> manual entry for <code class="docutils literal"><span class="pre">&lt;mod&gt;</span></code> is printed
+The output is printed to a named <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> if given.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cmake-gui-help-module">
+<span class="sig-name descname"><span class="pre">--help-module</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;mod&gt;</span> <span class="pre">[&lt;file&gt;]</span></span><a class="headerlink" href="#cmdoption-cmake-gui-help-module" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print help for one module and exit.</p>
+<p>The <span class="target" id="index-0-manual:cmake-modules(7)"></span><a class="reference internal" href="cmake-modules.7.html#manual:cmake-modules(7)" title="cmake-modules(7)"><code class="xref cmake cmake-manual docutils literal notranslate"><span class="pre">cmake-modules(7)</span></code></a> manual entry for <code class="docutils literal notranslate"><span class="pre">&lt;mod&gt;</span></code> is printed
 in a human-readable text format.
-The help is printed to a named &lt;f&gt;ile if given.</p>
-</dd>
-<dt><code class="docutils literal"><span class="pre">--help-module-list</span> <span class="pre">[&lt;f&gt;]</span></code></dt>
-<dd><p class="first">List modules with help available and exit.</p>
-<p class="last">The list contains all modules for which help may be obtained by
-using the <code class="docutils literal"><span class="pre">--help-module</span></code> option followed by a module name.
-The help is printed to a named &lt;f&gt;ile if given.</p>
-</dd>
-<dt><code class="docutils literal"><span class="pre">--help-modules</span> <span class="pre">[&lt;f&gt;]</span></code></dt>
-<dd><p class="first">Print cmake-modules manual and exit.</p>
-<p class="last">The <span class="target" id="index-1-manual:cmake-modules(7)"></span><a class="reference internal" href="cmake-modules.7.html#manual:cmake-modules(7)" title="cmake-modules(7)"><code class="xref cmake cmake-manual docutils literal"><span class="pre">cmake-modules(7)</span></code></a> manual is printed in a human-readable
+The output is printed to a named <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> if given.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cmake-gui-help-module-list">
+<span class="sig-name descname"><span class="pre">--help-module-list</span></span><span class="sig-prename descclassname"> <span class="pre">[&lt;file&gt;]</span></span><a class="headerlink" href="#cmdoption-cmake-gui-help-module-list" title="Permalink to this definition">¶</a></dt>
+<dd><p>List modules with help available and exit.</p>
+<p>The list contains all modules for which help may be obtained by
+using the <code class="docutils literal notranslate"><span class="pre">--help-module</span></code> option followed by a module name.
+The output is printed to a named <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> if given.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cmake-gui-help-modules">
+<span class="sig-name descname"><span class="pre">--help-modules</span></span><span class="sig-prename descclassname"> <span class="pre">[&lt;file&gt;]</span></span><a class="headerlink" href="#cmdoption-cmake-gui-help-modules" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print cmake-modules manual and exit.</p>
+<p>The <span class="target" id="index-1-manual:cmake-modules(7)"></span><a class="reference internal" href="cmake-modules.7.html#manual:cmake-modules(7)" title="cmake-modules(7)"><code class="xref cmake cmake-manual docutils literal notranslate"><span class="pre">cmake-modules(7)</span></code></a> manual is printed in a human-readable
 text format.
-The help is printed to a named &lt;f&gt;ile if given.</p>
-</dd>
-<dt><code class="docutils literal"><span class="pre">--help-policy</span> <span class="pre">&lt;cmp&gt;</span> <span class="pre">[&lt;f&gt;]</span></code></dt>
-<dd><p class="first">Print help for one policy and exit.</p>
-<p class="last">The <span class="target" id="index-0-manual:cmake-policies(7)"></span><a class="reference internal" href="cmake-policies.7.html#manual:cmake-policies(7)" title="cmake-policies(7)"><code class="xref cmake cmake-manual docutils literal"><span class="pre">cmake-policies(7)</span></code></a> manual entry for <code class="docutils literal"><span class="pre">&lt;cmp&gt;</span></code> is
+The output is printed to a named <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> if given.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cmake-gui-help-policy">
+<span class="sig-name descname"><span class="pre">--help-policy</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;cmp&gt;</span> <span class="pre">[&lt;file&gt;]</span></span><a class="headerlink" href="#cmdoption-cmake-gui-help-policy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print help for one policy and exit.</p>
+<p>The <span class="target" id="index-0-manual:cmake-policies(7)"></span><a class="reference internal" href="cmake-policies.7.html#manual:cmake-policies(7)" title="cmake-policies(7)"><code class="xref cmake cmake-manual docutils literal notranslate"><span class="pre">cmake-policies(7)</span></code></a> manual entry for <code class="docutils literal notranslate"><span class="pre">&lt;cmp&gt;</span></code> is
 printed in a human-readable text format.
-The help is printed to a named &lt;f&gt;ile if given.</p>
-</dd>
-<dt><code class="docutils literal"><span class="pre">--help-policy-list</span> <span class="pre">[&lt;f&gt;]</span></code></dt>
-<dd><p class="first">List policies with help available and exit.</p>
-<p class="last">The list contains all policies for which help may be obtained by
-using the <code class="docutils literal"><span class="pre">--help-policy</span></code> option followed by a policy name.
-The help is printed to a named &lt;f&gt;ile if given.</p>
-</dd>
-<dt><code class="docutils literal"><span class="pre">--help-policies</span> <span class="pre">[&lt;f&gt;]</span></code></dt>
-<dd><p class="first">Print cmake-policies manual and exit.</p>
-<p class="last">The <span class="target" id="index-1-manual:cmake-policies(7)"></span><a class="reference internal" href="cmake-policies.7.html#manual:cmake-policies(7)" title="cmake-policies(7)"><code class="xref cmake cmake-manual docutils literal"><span class="pre">cmake-policies(7)</span></code></a> manual is printed in a
+The output is printed to a named <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> if given.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cmake-gui-help-policy-list">
+<span class="sig-name descname"><span class="pre">--help-policy-list</span></span><span class="sig-prename descclassname"> <span class="pre">[&lt;file&gt;]</span></span><a class="headerlink" href="#cmdoption-cmake-gui-help-policy-list" title="Permalink to this definition">¶</a></dt>
+<dd><p>List policies with help available and exit.</p>
+<p>The list contains all policies for which help may be obtained by
+using the <code class="docutils literal notranslate"><span class="pre">--help-policy</span></code> option followed by a policy name.
+The output is printed to a named <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> if given.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cmake-gui-help-policies">
+<span class="sig-name descname"><span class="pre">--help-policies</span></span><span class="sig-prename descclassname"> <span class="pre">[&lt;file&gt;]</span></span><a class="headerlink" href="#cmdoption-cmake-gui-help-policies" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print cmake-policies manual and exit.</p>
+<p>The <span class="target" id="index-1-manual:cmake-policies(7)"></span><a class="reference internal" href="cmake-policies.7.html#manual:cmake-policies(7)" title="cmake-policies(7)"><code class="xref cmake cmake-manual docutils literal notranslate"><span class="pre">cmake-policies(7)</span></code></a> manual is printed in a
 human-readable text format.
-The help is printed to a named &lt;f&gt;ile if given.</p>
-</dd>
-<dt><code class="docutils literal"><span class="pre">--help-property</span> <span class="pre">&lt;prop&gt;</span> <span class="pre">[&lt;f&gt;]</span></code></dt>
-<dd><p class="first">Print help for one property and exit.</p>
-<p class="last">The <span class="target" id="index-0-manual:cmake-properties(7)"></span><a class="reference internal" href="cmake-properties.7.html#manual:cmake-properties(7)" title="cmake-properties(7)"><code class="xref cmake cmake-manual docutils literal"><span class="pre">cmake-properties(7)</span></code></a> manual entries for <code class="docutils literal"><span class="pre">&lt;prop&gt;</span></code> are
+The output is printed to a named <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> if given.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cmake-gui-help-property">
+<span class="sig-name descname"><span class="pre">--help-property</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;prop&gt;</span> <span class="pre">[&lt;file&gt;]</span></span><a class="headerlink" href="#cmdoption-cmake-gui-help-property" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print help for one property and exit.</p>
+<p>The <span class="target" id="index-0-manual:cmake-properties(7)"></span><a class="reference internal" href="cmake-properties.7.html#manual:cmake-properties(7)" title="cmake-properties(7)"><code class="xref cmake cmake-manual docutils literal notranslate"><span class="pre">cmake-properties(7)</span></code></a> manual entries for <code class="docutils literal notranslate"><span class="pre">&lt;prop&gt;</span></code> are
 printed in a human-readable text format.
-The help is printed to a named &lt;f&gt;ile if given.</p>
-</dd>
-<dt><code class="docutils literal"><span class="pre">--help-property-list</span> <span class="pre">[&lt;f&gt;]</span></code></dt>
-<dd><p class="first">List properties with help available and exit.</p>
-<p class="last">The list contains all properties for which help may be obtained by
-using the <code class="docutils literal"><span class="pre">--help-property</span></code> option followed by a property name.
-The help is printed to a named &lt;f&gt;ile if given.</p>
-</dd>
-<dt><code class="docutils literal"><span class="pre">--help-properties</span> <span class="pre">[&lt;f&gt;]</span></code></dt>
-<dd><p class="first">Print cmake-properties manual and exit.</p>
-<p class="last">The <span class="target" id="index-1-manual:cmake-properties(7)"></span><a class="reference internal" href="cmake-properties.7.html#manual:cmake-properties(7)" title="cmake-properties(7)"><code class="xref cmake cmake-manual docutils literal"><span class="pre">cmake-properties(7)</span></code></a> manual is printed in a
+The output is printed to a named <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> if given.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cmake-gui-help-property-list">
+<span class="sig-name descname"><span class="pre">--help-property-list</span></span><span class="sig-prename descclassname"> <span class="pre">[&lt;file&gt;]</span></span><a class="headerlink" href="#cmdoption-cmake-gui-help-property-list" title="Permalink to this definition">¶</a></dt>
+<dd><p>List properties with help available and exit.</p>
+<p>The list contains all properties for which help may be obtained by
+using the <code class="docutils literal notranslate"><span class="pre">--help-property</span></code> option followed by a property name.
+The output is printed to a named <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> if given.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cmake-gui-help-properties">
+<span class="sig-name descname"><span class="pre">--help-properties</span></span><span class="sig-prename descclassname"> <span class="pre">[&lt;file&gt;]</span></span><a class="headerlink" href="#cmdoption-cmake-gui-help-properties" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print cmake-properties manual and exit.</p>
+<p>The <span class="target" id="index-1-manual:cmake-properties(7)"></span><a class="reference internal" href="cmake-properties.7.html#manual:cmake-properties(7)" title="cmake-properties(7)"><code class="xref cmake cmake-manual docutils literal notranslate"><span class="pre">cmake-properties(7)</span></code></a> manual is printed in a
 human-readable text format.
-The help is printed to a named &lt;f&gt;ile if given.</p>
-</dd>
-<dt><code class="docutils literal"><span class="pre">--help-variable</span> <span class="pre">&lt;var&gt;</span> <span class="pre">[&lt;f&gt;]</span></code></dt>
-<dd><p class="first">Print help for one variable and exit.</p>
-<p class="last">The <span class="target" id="index-0-manual:cmake-variables(7)"></span><a class="reference internal" href="cmake-variables.7.html#manual:cmake-variables(7)" title="cmake-variables(7)"><code class="xref cmake cmake-manual docutils literal"><span class="pre">cmake-variables(7)</span></code></a> manual entry for <code class="docutils literal"><span class="pre">&lt;var&gt;</span></code> is
+The output is printed to a named <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> if given.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cmake-gui-help-variable">
+<span class="sig-name descname"><span class="pre">--help-variable</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;var&gt;</span> <span class="pre">[&lt;file&gt;]</span></span><a class="headerlink" href="#cmdoption-cmake-gui-help-variable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print help for one variable and exit.</p>
+<p>The <span class="target" id="index-0-manual:cmake-variables(7)"></span><a class="reference internal" href="cmake-variables.7.html#manual:cmake-variables(7)" title="cmake-variables(7)"><code class="xref cmake cmake-manual docutils literal notranslate"><span class="pre">cmake-variables(7)</span></code></a> manual entry for <code class="docutils literal notranslate"><span class="pre">&lt;var&gt;</span></code> is
 printed in a human-readable text format.
-The help is printed to a named &lt;f&gt;ile if given.</p>
-</dd>
-<dt><code class="docutils literal"><span class="pre">--help-variable-list</span> <span class="pre">[&lt;f&gt;]</span></code></dt>
-<dd><p class="first">List variables with help available and exit.</p>
-<p class="last">The list contains all variables for which help may be obtained by
-using the <code class="docutils literal"><span class="pre">--help-variable</span></code> option followed by a variable name.
-The help is printed to a named &lt;f&gt;ile if given.</p>
-</dd>
-<dt><code class="docutils literal"><span class="pre">--help-variables</span> <span class="pre">[&lt;f&gt;]</span></code></dt>
-<dd><p class="first">Print cmake-variables manual and exit.</p>
-<p class="last">The <span class="target" id="index-1-manual:cmake-variables(7)"></span><a class="reference internal" href="cmake-variables.7.html#manual:cmake-variables(7)" title="cmake-variables(7)"><code class="xref cmake cmake-manual docutils literal"><span class="pre">cmake-variables(7)</span></code></a> manual is printed in a
+The output is printed to a named <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> if given.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cmake-gui-help-variable-list">
+<span class="sig-name descname"><span class="pre">--help-variable-list</span></span><span class="sig-prename descclassname"> <span class="pre">[&lt;file&gt;]</span></span><a class="headerlink" href="#cmdoption-cmake-gui-help-variable-list" title="Permalink to this definition">¶</a></dt>
+<dd><p>List variables with help available and exit.</p>
+<p>The list contains all variables for which help may be obtained by
+using the <code class="docutils literal notranslate"><span class="pre">--help-variable</span></code> option followed by a variable name.
+The output is printed to a named <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> if given.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cmake-gui-help-variables">
+<span class="sig-name descname"><span class="pre">--help-variables</span></span><span class="sig-prename descclassname"> <span class="pre">[&lt;file&gt;]</span></span><a class="headerlink" href="#cmdoption-cmake-gui-help-variables" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print cmake-variables manual and exit.</p>
+<p>The <span class="target" id="index-1-manual:cmake-variables(7)"></span><a class="reference internal" href="cmake-variables.7.html#manual:cmake-variables(7)" title="cmake-variables(7)"><code class="xref cmake cmake-manual docutils literal notranslate"><span class="pre">cmake-variables(7)</span></code></a> manual is printed in a
 human-readable text format.
-The help is printed to a named &lt;f&gt;ile if given.</p>
-</dd>
-</dl>
-</div>
-<div class="section" id="see-also">
-<h2>See Also<a class="headerlink" href="#see-also" title="Permalink to this headline">¶</a></h2>
+The output is printed to a named <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> if given.</p>
+</dd></dl>
+
+</section>
+<section id="see-also">
+<h2>See Also<a class="headerlink" href="#see-also" title="Permalink to this heading">¶</a></h2>
 <p>The following resources are available to get help using CMake:</p>
-<dl class="docutils">
-<dt>Home Page</dt>
-<dd><p class="first"><a class="reference external" href="https://cmake.org">https://cmake.org</a></p>
-<p class="last">The primary starting point for learning about CMake.</p>
+<dl>
+<dt>Home Page</dt><dd><p><a class="reference external" href="https://cmake.org">https://cmake.org</a></p>
+<p>The primary starting point for learning about CMake.</p>
 </dd>
-<dt>Frequently Asked Questions</dt>
-<dd><p class="first"><a class="reference external" href="https://cmake.org/Wiki/CMake_FAQ">https://cmake.org/Wiki/CMake_FAQ</a></p>
-<p class="last">A Wiki is provided containing answers to frequently asked questions.</p>
+<dt>Online Documentation and Community Resources</dt><dd><p><a class="reference external" href="https://cmake.org/documentation">https://cmake.org/documentation</a></p>
+<p>Links to available documentation and community resources may be
+found on this web page.</p>
 </dd>
-<dt>Online Documentation</dt>
-<dd><p class="first"><a class="reference external" href="https://cmake.org/documentation">https://cmake.org/documentation</a></p>
-<p class="last">Links to available documentation may be found on this web page.</p>
-</dd>
-<dt>Mailing List</dt>
-<dd><p class="first"><a class="reference external" href="https://cmake.org/mailing-lists">https://cmake.org/mailing-lists</a></p>
-<p class="last">For help and discussion about using cmake, a mailing list is
-provided at <a class="reference external" href="mailto:cmake&#37;&#52;&#48;cmake&#46;org">cmake<span>&#64;</span>cmake<span>&#46;</span>org</a>.  The list is member-post-only but one
-may sign up on the CMake web page.  Please first read the full
-documentation at <a class="reference external" href="https://cmake.org">https://cmake.org</a> before posting questions to
-the list.</p>
+<dt>Discourse Forum</dt><dd><p><a class="reference external" href="https://discourse.cmake.org">https://discourse.cmake.org</a></p>
+<p>The Discourse Forum hosts discussion and questions about CMake.</p>
 </dd>
 </dl>
-</div>
-</div>
+</section>
+</section>
 
 
+            <div class="clearer"></div>
           </div>
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-  <h3><a href="../index.html">Table Of Contents</a></h3>
-  <ul>
+  <div>
+    <h3><a href="../index.html">Table of Contents</a></h3>
+    <ul>
 <li><a class="reference internal" href="#">cmake-gui(1)</a><ul>
 <li><a class="reference internal" href="#synopsis">Synopsis</a></li>
 <li><a class="reference internal" href="#description">Description</a></li>
@@ -246,32 +323,34 @@ the list.</p>
 </li>
 </ul>
 
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="cpack.1.html"
-                        title="previous chapter">cpack(1)</a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="ccmake.1.html"
-                        title="next chapter">ccmake(1)</a></p>
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="cpack.1.html"
+                          title="previous chapter">cpack(1)</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="ccmake.1.html"
+                          title="next chapter">ccmake(1)</a></p>
+  </div>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="../_sources/manual/cmake-gui.1.txt"
+      <li><a href="../_sources/manual/cmake-gui.1.rst.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div>
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
       <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
+    </div>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -293,17 +372,19 @@ the list.</p>
          style="vertical-align: middle; margin-top: -2px" />
   </li>
   <li>
-    <a href="https://cmake.org/">CMake</a> &raquo;
+    <a href="https://cmake.org/">CMake</a> &#187;
   </li>
   <li>
-    <a href="../index.html">3.7.1 Documentation</a> &raquo;
+    <a href="../index.html">3.27.3 Documentation</a> &#187;
   </li>
- 
+
+        <li class="nav-item nav-item-this"><a href="">cmake-gui(1)</a></li> 
       </ul>
     </div>
+
     <div class="footer" role="contentinfo">
-        &copy; Copyright 2000-2016 Kitware, Inc. and Contributors.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4a0+.
+        &#169; Copyright 2000-2023 Kitware, Inc. and Contributors.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.3.0.
     </div>
   </body>
 </html>

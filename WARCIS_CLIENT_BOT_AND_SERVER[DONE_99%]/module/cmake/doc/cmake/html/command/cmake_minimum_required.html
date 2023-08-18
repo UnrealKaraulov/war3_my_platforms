@@ -1,36 +1,32 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
+<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-  <title>cmake_minimum_required &mdash; CMake 3.7.1 Documentation</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
+  <title>cmake_minimum_required &mdash; CMake 3.27.3 Documentation</title>
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/cmake.css" />
     
-    <link rel="stylesheet" href="../_static/cmake.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
     
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '../',
-        VERSION:     '3.7.1',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
-      };
-    </script>
-    <script type="text/javascript" src="../_static/jquery.js"></script>
-    <script type="text/javascript" src="../_static/underscore.js"></script>
-    <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="shortcut icon" href="../_static/cmake-favicon.ico"/>
-    <link rel="top" title="CMake 3.7.1 Documentation" href="../index.html" />
-    <link rel="up" title="cmake-commands(7)" href="../manual/cmake-commands.7.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="cmake_parse_arguments" href="cmake_parse_arguments.html" />
-    <link rel="prev" title="cmake_host_system_information" href="cmake_host_system_information.html" /> 
-  </head>
-  <body role="document">
+    <link rel="prev" title="cmake_language" href="cmake_language.html" />
+ 
+
+  </head><body>
+
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
@@ -41,20 +37,21 @@
           <a href="cmake_parse_arguments.html" title="cmake_parse_arguments"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="cmake_host_system_information.html" title="cmake_host_system_information"
+          <a href="cmake_language.html" title="cmake_language"
              accesskey="P">previous</a> |</li>
   <li>
     <img src="../_static/cmake-logo-16.png" alt=""
          style="vertical-align: middle; margin-top: -2px" />
   </li>
   <li>
-    <a href="https://cmake.org/">CMake</a> &raquo;
+    <a href="https://cmake.org/">CMake</a> &#187;
   </li>
   <li>
-    <a href="../index.html">3.7.1 Documentation</a> &raquo;
+    <a href="../index.html">3.27.3 Documentation</a> &#187;
   </li>
 
-          <li class="nav-item nav-item-1"><a href="../manual/cmake-commands.7.html" accesskey="U">cmake-commands(7)</a> &raquo;</li> 
+          <li class="nav-item nav-item-1"><a href="../manual/cmake-commands.7.html" accesskey="U">cmake-commands(7)</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">cmake_minimum_required</a></li> 
       </ul>
     </div>  
 
@@ -63,94 +60,125 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="cmake-minimum-required">
-<span id="command:cmake_minimum_required"></span><h1>cmake_minimum_required<a class="headerlink" href="#cmake-minimum-required" title="Permalink to this headline">¶</a></h1>
-<p>Set the minimum required version of cmake for a project and
-update <a class="reference internal" href="#policy-settings">Policy Settings</a> to match the version given:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>cmake_minimum_required(VERSION major.minor[.patch[.tweak]]
-                       [FATAL_ERROR])
+  <section id="cmake-minimum-required">
+<span id="command:cmake_minimum_required"></span><h1>cmake_minimum_required<a class="headerlink" href="#cmake-minimum-required" title="Permalink to this heading">¶</a></h1>
+<p>Require a minimum version of cmake.</p>
+<div class="highlight-cmake notranslate"><div class="highlight"><pre><span></span><span class="nf">cmake_minimum_required(</span><span class="no">VERSION</span><span class="w"> </span><span class="nv">&lt;min&gt;</span><span class="p">[...</span><span class="nv">&lt;policy_max&gt;</span><span class="p">]</span><span class="w"> </span><span class="p">[</span><span class="no">FATAL_ERROR</span><span class="p">]</span><span class="nf">)</span>
 </pre></div>
 </div>
-<p>If the current version of CMake is lower than that required it will
-stop processing the project and report an error.</p>
-<p>The <code class="docutils literal"><span class="pre">FATAL_ERROR</span></code> option is accepted but ignored by CMake 2.6 and
+<div class="versionadded">
+<p><span class="versionmodified added">New in version 3.12: </span>The optional <code class="docutils literal notranslate"><span class="pre">&lt;policy_max&gt;</span></code> version.</p>
+</div>
+<p>Sets the minimum required version of cmake for a project.
+Also updates the policy settings as explained below.</p>
+<p><code class="docutils literal notranslate"><span class="pre">&lt;min&gt;</span></code> and the optional <code class="docutils literal notranslate"><span class="pre">&lt;policy_max&gt;</span></code> are each CMake versions of the
+form <code class="docutils literal notranslate"><span class="pre">major.minor[.patch[.tweak]]</span></code>, and the <code class="docutils literal notranslate"><span class="pre">...</span></code> is literal.</p>
+<p>If the running version of CMake is lower than the <code class="docutils literal notranslate"><span class="pre">&lt;min&gt;</span></code> required
+version it will stop processing the project and report an error.
+The optional <code class="docutils literal notranslate"><span class="pre">&lt;policy_max&gt;</span></code> version, if specified, must be at least the
+<code class="docutils literal notranslate"><span class="pre">&lt;min&gt;</span></code> version and affects policy settings as described in <a class="reference internal" href="#policy-settings">Policy Settings</a>.
+If the running version of CMake is older than 3.12, the extra <code class="docutils literal notranslate"><span class="pre">...</span></code>
+dots will be seen as version component separators, resulting in the
+<code class="docutils literal notranslate"><span class="pre">...&lt;max&gt;</span></code> part being ignored and preserving the pre-3.12 behavior
+of basing policies on <code class="docutils literal notranslate"><span class="pre">&lt;min&gt;</span></code>.</p>
+<p>This command will set the value of the
+<span class="target" id="index-0-variable:CMAKE_MINIMUM_REQUIRED_VERSION"></span><a class="reference internal" href="../variable/CMAKE_MINIMUM_REQUIRED_VERSION.html#variable:CMAKE_MINIMUM_REQUIRED_VERSION" title="CMAKE_MINIMUM_REQUIRED_VERSION"><code class="xref cmake cmake-variable docutils literal notranslate"><span class="pre">CMAKE_MINIMUM_REQUIRED_VERSION</span></code></a> variable to <code class="docutils literal notranslate"><span class="pre">&lt;min&gt;</span></code>.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">FATAL_ERROR</span></code> option is accepted but ignored by CMake 2.6 and
 higher.  It should be specified so CMake versions 2.4 and lower fail
 with an error instead of just a warning.</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p>Call the <code class="docutils literal"><span class="pre">cmake_minimum_required()</span></code> command at the beginning of
-the top-level <code class="docutils literal"><span class="pre">CMakeLists.txt</span></code> file even before calling the
-<span class="target" id="index-0-command:project"></span><a class="reference internal" href="project.html#command:project" title="project"><code class="xref cmake cmake-command docutils literal"><span class="pre">project()</span></code></a> command.  It is important to establish version
+<p class="admonition-title">Note</p>
+<p>Call the <code class="docutils literal notranslate"><span class="pre">cmake_minimum_required()</span></code> command at the beginning of
+the top-level <code class="docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code> file even before calling the
+<span class="target" id="index-0-command:project"></span><a class="reference internal" href="project.html#command:project" title="project"><code class="xref cmake cmake-command docutils literal notranslate"><span class="pre">project()</span></code></a> command.  It is important to establish version
 and policy settings before invoking other commands whose behavior
-they may affect.  See also policy <span class="target" id="index-0-policy:CMP0000"></span><a class="reference internal" href="../policy/CMP0000.html#policy:CMP0000" title="CMP0000"><code class="xref cmake cmake-policy docutils literal"><span class="pre">CMP0000</span></code></a>.</p>
-<p class="last">Calling <code class="docutils literal"><span class="pre">cmake_minimum_required()</span></code> inside a <span class="target" id="index-0-command:function"></span><a class="reference internal" href="function.html#command:function" title="function"><code class="xref cmake cmake-command docutils literal"><span class="pre">function()</span></code></a>
-limits some effects to the function scope when invoked.  Such calls
-should not be made with the intention of having global effects.</p>
+they may affect.  See also policy <span class="target" id="index-0-policy:CMP0000"></span><a class="reference internal" href="../policy/CMP0000.html#policy:CMP0000" title="CMP0000"><code class="xref cmake cmake-policy docutils literal notranslate"><span class="pre">CMP0000</span></code></a>.</p>
+<p>Calling <code class="docutils literal notranslate"><span class="pre">cmake_minimum_required()</span></code> inside a <span class="target" id="index-0-command:function"></span><a class="reference internal" href="function.html#command:function" title="function"><code class="xref cmake cmake-command docutils literal notranslate"><span class="pre">function()</span></code></a>
+limits some effects to the function scope when invoked.  For example,
+the <span class="target" id="index-1-variable:CMAKE_MINIMUM_REQUIRED_VERSION"></span><a class="reference internal" href="../variable/CMAKE_MINIMUM_REQUIRED_VERSION.html#variable:CMAKE_MINIMUM_REQUIRED_VERSION" title="CMAKE_MINIMUM_REQUIRED_VERSION"><code class="xref cmake cmake-variable docutils literal notranslate"><span class="pre">CMAKE_MINIMUM_REQUIRED_VERSION</span></code></a> variable won't be set
+in the calling scope.  Functions do not introduce their own policy
+scope though, so policy settings of the caller <em>will</em> be affected
+(see below).  Due to this mix of things that do and do not affect the
+calling scope, calling <code class="docutils literal notranslate"><span class="pre">cmake_minimum_required()</span></code> inside a function
+is generally discouraged.</p>
 </div>
-<div class="section" id="policy-settings">
-<h2>Policy Settings<a class="headerlink" href="#policy-settings" title="Permalink to this headline">¶</a></h2>
-<p>The <code class="docutils literal"><span class="pre">cmake_minimum_required(VERSION)</span></code> command implicitly invokes the
-<span class="target" id="index-0-command:cmake_policy"></span><a class="reference internal" href="cmake_policy.html#command:cmake_policy" title="cmake_policy"><code class="xref cmake cmake-command docutils literal"><span class="pre">cmake_policy(VERSION)</span></code></a> command to specify that the current
-project code is written for the given version of CMake.
-All policies introduced in the specified version or earlier will be
-set to use NEW behavior.  All policies introduced after the specified
-version will be unset.  This effectively requests behavior preferred
+<section id="policy-settings">
+<span id="id1"></span><h2>Policy Settings<a class="headerlink" href="#policy-settings" title="Permalink to this heading">¶</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">cmake_minimum_required(VERSION)</span></code> command implicitly invokes the
+<span class="target" id="index-0-command:cmake_policy"></span><a class="reference internal" href="cmake_policy.html#command:cmake_policy" title="cmake_policy(version)"><code class="xref cmake cmake-command docutils literal notranslate"><span class="pre">cmake_policy(VERSION)</span></code></a> command to specify that the current
+project code is written for the given range of CMake versions.
+All policies known to the running version of CMake and introduced
+in the <code class="docutils literal notranslate"><span class="pre">&lt;min&gt;</span></code> (or <code class="docutils literal notranslate"><span class="pre">&lt;max&gt;</span></code>, if specified) version or earlier will
+be set to use <code class="docutils literal notranslate"><span class="pre">NEW</span></code> behavior.  All policies introduced in later
+versions will be unset.  This effectively requests behavior preferred
 as of a given CMake version and tells newer CMake versions to warn
 about their new policies.</p>
-<p>When a version higher than 2.4 is specified the command implicitly
-invokes:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>cmake_policy(VERSION major[.minor[.patch[.tweak]]])
+<p>When a <code class="docutils literal notranslate"><span class="pre">&lt;min&gt;</span></code> version higher than 2.4 is specified the command
+implicitly invokes</p>
+<div class="highlight-cmake notranslate"><div class="highlight"><pre><span></span><span class="nf">cmake_policy(</span><span class="no">VERSION</span><span class="w"> </span><span class="nv">&lt;min&gt;</span><span class="p">[...</span><span class="nv">&lt;max&gt;</span><span class="p">]</span><span class="nf">)</span>
 </pre></div>
 </div>
-<p>which sets the cmake policy version level to the version specified.
-When version 2.4 or lower is given the command implicitly invokes:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>cmake_policy(VERSION 2.4)
+<p>which sets CMake policies based on the range of versions specified.
+When a <code class="docutils literal notranslate"><span class="pre">&lt;min&gt;</span></code> version 2.4 or lower is given the command implicitly
+invokes</p>
+<div class="highlight-cmake notranslate"><div class="highlight"><pre><span></span><span class="nf">cmake_policy(</span><span class="no">VERSION</span><span class="w"> </span><span class="m">2.4</span><span class="p">[...</span><span class="nv">&lt;max&gt;</span><span class="p">]</span><span class="nf">)</span>
 </pre></div>
 </div>
 <p>which enables compatibility features for CMake 2.4 and lower.</p>
-</div>
-</div>
+</section>
+<section id="see-also">
+<h2>See Also<a class="headerlink" href="#see-also" title="Permalink to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><span class="target" id="index-1-command:cmake_policy"></span><a class="reference internal" href="cmake_policy.html#command:cmake_policy" title="cmake_policy"><code class="xref cmake cmake-command docutils literal notranslate"><span class="pre">cmake_policy()</span></code></a></p></li>
+</ul>
+</section>
+</section>
 
 
+            <div class="clearer"></div>
           </div>
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-  <h3><a href="../index.html">Table Of Contents</a></h3>
-  <ul>
+  <div>
+    <h3><a href="../index.html">Table of Contents</a></h3>
+    <ul>
 <li><a class="reference internal" href="#">cmake_minimum_required</a><ul>
 <li><a class="reference internal" href="#policy-settings">Policy Settings</a></li>
+<li><a class="reference internal" href="#see-also">See Also</a></li>
 </ul>
 </li>
 </ul>
 
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="cmake_host_system_information.html"
-                        title="previous chapter">cmake_host_system_information</a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="cmake_parse_arguments.html"
-                        title="next chapter">cmake_parse_arguments</a></p>
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="cmake_language.html"
+                          title="previous chapter">cmake_language</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="cmake_parse_arguments.html"
+                          title="next chapter">cmake_parse_arguments</a></p>
+  </div>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="../_sources/command/cmake_minimum_required.txt"
+      <li><a href="../_sources/command/cmake_minimum_required.rst.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div>
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
       <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
+    </div>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -165,25 +193,27 @@ When version 2.4 or lower is given the command implicitly invokes:</p>
           <a href="cmake_parse_arguments.html" title="cmake_parse_arguments"
              >next</a> |</li>
         <li class="right" >
-          <a href="cmake_host_system_information.html" title="cmake_host_system_information"
+          <a href="cmake_language.html" title="cmake_language"
              >previous</a> |</li>
   <li>
     <img src="../_static/cmake-logo-16.png" alt=""
          style="vertical-align: middle; margin-top: -2px" />
   </li>
   <li>
-    <a href="https://cmake.org/">CMake</a> &raquo;
+    <a href="https://cmake.org/">CMake</a> &#187;
   </li>
   <li>
-    <a href="../index.html">3.7.1 Documentation</a> &raquo;
+    <a href="../index.html">3.27.3 Documentation</a> &#187;
   </li>
 
-          <li class="nav-item nav-item-1"><a href="../manual/cmake-commands.7.html" >cmake-commands(7)</a> &raquo;</li> 
+          <li class="nav-item nav-item-1"><a href="../manual/cmake-commands.7.html" >cmake-commands(7)</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">cmake_minimum_required</a></li> 
       </ul>
     </div>
+
     <div class="footer" role="contentinfo">
-        &copy; Copyright 2000-2016 Kitware, Inc. and Contributors.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4a0+.
+        &#169; Copyright 2000-2023 Kitware, Inc. and Contributors.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.3.0.
     </div>
   </body>
 </html>

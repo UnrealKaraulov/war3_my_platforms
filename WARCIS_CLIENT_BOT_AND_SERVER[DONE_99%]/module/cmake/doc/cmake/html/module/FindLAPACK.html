@@ -1,36 +1,32 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
+<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-  <title>FindLAPACK &mdash; CMake 3.7.1 Documentation</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
+  <title>FindLAPACK &mdash; CMake 3.27.3 Documentation</title>
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/cmake.css" />
     
-    <link rel="stylesheet" href="../_static/cmake.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
     
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '../',
-        VERSION:     '3.7.1',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
-      };
-    </script>
-    <script type="text/javascript" src="../_static/jquery.js"></script>
-    <script type="text/javascript" src="../_static/underscore.js"></script>
-    <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="shortcut icon" href="../_static/cmake-favicon.ico"/>
-    <link rel="top" title="CMake 3.7.1 Documentation" href="../index.html" />
-    <link rel="up" title="cmake-modules(7)" href="../manual/cmake-modules.7.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="FindLATEX" href="FindLATEX.html" />
-    <link rel="prev" title="FindKDE4" href="FindKDE4.html" /> 
-  </head>
-  <body role="document">
+    <link rel="prev" title="FindKDE4" href="FindKDE4.html" />
+ 
+
+  </head><body>
+
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
@@ -48,13 +44,14 @@
          style="vertical-align: middle; margin-top: -2px" />
   </li>
   <li>
-    <a href="https://cmake.org/">CMake</a> &raquo;
+    <a href="https://cmake.org/">CMake</a> &#187;
   </li>
   <li>
-    <a href="../index.html">3.7.1 Documentation</a> &raquo;
+    <a href="../index.html">3.27.3 Documentation</a> &#187;
   </li>
 
-          <li class="nav-item nav-item-1"><a href="../manual/cmake-modules.7.html" accesskey="U">cmake-modules(7)</a> &raquo;</li> 
+          <li class="nav-item nav-item-1"><a href="../manual/cmake-modules.7.html" accesskey="U">cmake-modules(7)</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">FindLAPACK</a></li> 
       </ul>
     </div>  
 
@@ -63,67 +60,143 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="findlapack">
-<span id="module:FindLAPACK"></span><h1>FindLAPACK<a class="headerlink" href="#findlapack" title="Permalink to this headline">¶</a></h1>
-<p>Find LAPACK library</p>
-<p>This module finds an installed fortran library that implements the
-LAPACK linear-algebra interface (see <a class="reference external" href="http://www.netlib.org/lapack/">http://www.netlib.org/lapack/</a>).</p>
-<p>The approach follows that taken for the autoconf macro file,
-acx_lapack.m4 (distributed at
-<a class="reference external" href="http://ac-archive.sourceforge.net/ac-archive/acx_lapack.html">http://ac-archive.sourceforge.net/ac-archive/acx_lapack.html</a>).</p>
-<p>This module sets the following variables:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>LAPACK_FOUND - set to true if a library implementing the LAPACK interface
-  is found
-LAPACK_LINKER_FLAGS - uncached list of required linker flags (excluding -l
-  and -L).
-LAPACK_LIBRARIES - uncached list of libraries (using full path name) to
-  link against to use LAPACK
-LAPACK95_LIBRARIES - uncached list of libraries (using full path name) to
-  link against to use LAPACK95
-LAPACK95_FOUND - set to true if a library implementing the LAPACK f95
-  interface is found
-BLA_STATIC  if set on this determines what kind of linkage we do (static)
-BLA_VENDOR  if set checks only the specified vendor, if not set checks
-   all the possibilities
-BLA_F95     if set on tries to find the f95 interfaces for BLAS/LAPACK
+  <section id="findlapack">
+<span id="module:FindLAPACK"></span><h1>FindLAPACK<a class="headerlink" href="#findlapack" title="Permalink to this heading">¶</a></h1>
+<p>Find Linear Algebra PACKage (LAPACK) library</p>
+<p>This module finds an installed Fortran library that implements the
+<a class="reference external" href="https://netlib.org/lapack/">LAPACK linear-algebra interface</a>.</p>
+<p>At least one of the <code class="docutils literal notranslate"><span class="pre">C</span></code>, <code class="docutils literal notranslate"><span class="pre">CXX</span></code>, or <code class="docutils literal notranslate"><span class="pre">Fortran</span></code> languages must be enabled.</p>
+<section id="input-variables">
+<h2>Input Variables<a class="headerlink" href="#input-variables" title="Permalink to this heading">¶</a></h2>
+<p>The following variables may be set to influence this module's behavior:</p>
+<dl>
+<dt><code class="docutils literal notranslate"><span class="pre">BLA_STATIC</span></code></dt><dd><p>if <code class="docutils literal notranslate"><span class="pre">ON</span></code> use static linkage</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">BLA_VENDOR</span></code></dt><dd><p>Set to one of the <a class="reference internal" href="FindBLAS.html#blas-lapack-vendors"><span class="std std-ref">BLAS/LAPACK Vendors</span></a> to search for BLAS only
+from the specified vendor.  If not set, all vendors are considered.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">BLA_F95</span></code></dt><dd><p>if <code class="docutils literal notranslate"><span class="pre">ON</span></code> tries to find the BLAS95/LAPACK95 interfaces</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">BLA_PREFER_PKGCONFIG</span></code></dt><dd><div class="versionadded">
+<p><span class="versionmodified added">New in version 3.20.</span></p>
+</div>
+<p>if set <code class="docutils literal notranslate"><span class="pre">pkg-config</span></code> will be used to search for a LAPACK library first
+and if one is found that is preferred</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">BLA_PKGCONFIG_LAPACK</span></code></dt><dd><div class="versionadded">
+<p><span class="versionmodified added">New in version 3.25.</span></p>
+</div>
+<p>If set, the <code class="docutils literal notranslate"><span class="pre">pkg-config</span></code> method will look for this module name instead of
+just <code class="docutils literal notranslate"><span class="pre">lapack</span></code>.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">BLA_SIZEOF_INTEGER</span></code></dt><dd><div class="versionadded">
+<p><span class="versionmodified added">New in version 3.22.</span></p>
+</div>
+<p>Specify the BLAS/LAPACK library integer size:</p>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">4</span></code></dt><dd><p>Search for a BLAS/LAPACK with 32-bit integer interfaces.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">8</span></code></dt><dd><p>Search for a BLAS/LAPACK with 64-bit integer interfaces.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">ANY</span></code></dt><dd><p>Search for any BLAS/LAPACK.
+Most likely, a BLAS/LAPACK with 32-bit integer interfaces will be found.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+<section id="imported-targets">
+<h2>Imported targets<a class="headerlink" href="#imported-targets" title="Permalink to this heading">¶</a></h2>
+<p>This module defines the following <span class="target" id="index-0-prop_tgt:IMPORTED"></span><a class="reference internal" href="../prop_tgt/IMPORTED.html#prop_tgt:IMPORTED" title="IMPORTED"><code class="xref cmake cmake-prop_tgt docutils literal notranslate"><span class="pre">IMPORTED</span></code></a> targets:</p>
+<dl>
+<dt><code class="docutils literal notranslate"><span class="pre">LAPACK::LAPACK</span></code></dt><dd><div class="versionadded">
+<p><span class="versionmodified added">New in version 3.18.</span></p>
+</div>
+<p>The libraries to use for LAPACK, if found.</p>
+</dd>
+</dl>
+</section>
+<section id="result-variables">
+<h2>Result Variables<a class="headerlink" href="#result-variables" title="Permalink to this heading">¶</a></h2>
+<p>This module defines the following variables:</p>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">LAPACK_FOUND</span></code></dt><dd><p>library implementing the LAPACK interface is found</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">LAPACK_LINKER_FLAGS</span></code></dt><dd><p>uncached list of required linker flags (excluding <code class="docutils literal notranslate"><span class="pre">-l</span></code> and <code class="docutils literal notranslate"><span class="pre">-L</span></code>).</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">LAPACK_LIBRARIES</span></code></dt><dd><p>uncached list of libraries (using full path name) to link against
+to use LAPACK</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">LAPACK95_LIBRARIES</span></code></dt><dd><p>uncached list of libraries (using full path name) to link against
+to use LAPACK95</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">LAPACK95_FOUND</span></code></dt><dd><p>library implementing the LAPACK95 interface is found</p>
+</dd>
+</dl>
+</section>
+<section id="intel-mkl">
+<h2>Intel MKL<a class="headerlink" href="#intel-mkl" title="Permalink to this heading">¶</a></h2>
+<p>To use the Intel MKL implementation of LAPACK, a project must enable at least
+one of the <code class="docutils literal notranslate"><span class="pre">C</span></code> or <code class="docutils literal notranslate"><span class="pre">CXX</span></code> languages.  Set <code class="docutils literal notranslate"><span class="pre">BLA_VENDOR</span></code> to an Intel MKL
+variant either on the command-line as <code class="docutils literal notranslate"><span class="pre">-DBLA_VENDOR=Intel10_64lp</span></code> or in
+project code:</p>
+<div class="highlight-cmake notranslate"><div class="highlight"><pre><span></span><span class="nf">set(</span><span class="no">BLA_VENDOR</span><span class="w"> </span><span class="nb">Intel10_64lp</span><span class="nf">)</span>
+<span class="nf">find_package(</span><span class="no">LAPACK</span><span class="nf">)</span>
 </pre></div>
 </div>
-<p>## List of vendors (BLA_VENDOR) valid in this module # Intel(mkl),
-OpenBLAS, ACML,Apple, NAS, Generic</p>
-</div>
+<p>In order to build a project using Intel MKL, and end user must first
+establish an Intel MKL environment.  See the <span class="target" id="index-0-module:FindBLAS"></span><a class="reference internal" href="FindBLAS.html#module:FindBLAS" title="FindBLAS"><code class="xref cmake cmake-module docutils literal notranslate"><span class="pre">FindBLAS</span></code></a> module
+section on <a class="reference internal" href="FindBLAS.html#intel-mkl"><span class="std std-ref">Intel MKL</span></a> for details.</p>
+</section>
+</section>
 
 
+            <div class="clearer"></div>
           </div>
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="FindKDE4.html"
-                        title="previous chapter">FindKDE4</a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="FindLATEX.html"
-                        title="next chapter">FindLATEX</a></p>
+  <div>
+    <h3><a href="../index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">FindLAPACK</a><ul>
+<li><a class="reference internal" href="#input-variables">Input Variables</a></li>
+<li><a class="reference internal" href="#imported-targets">Imported targets</a></li>
+<li><a class="reference internal" href="#result-variables">Result Variables</a></li>
+<li><a class="reference internal" href="#intel-mkl">Intel MKL</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="FindKDE4.html"
+                          title="previous chapter">FindKDE4</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="FindLATEX.html"
+                          title="next chapter">FindLATEX</a></p>
+  </div>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="../_sources/module/FindLAPACK.txt"
+      <li><a href="../_sources/module/FindLAPACK.rst.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div>
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
       <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
+    </div>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -145,18 +218,20 @@ OpenBLAS, ACML,Apple, NAS, Generic</p>
          style="vertical-align: middle; margin-top: -2px" />
   </li>
   <li>
-    <a href="https://cmake.org/">CMake</a> &raquo;
+    <a href="https://cmake.org/">CMake</a> &#187;
   </li>
   <li>
-    <a href="../index.html">3.7.1 Documentation</a> &raquo;
+    <a href="../index.html">3.27.3 Documentation</a> &#187;
   </li>
 
-          <li class="nav-item nav-item-1"><a href="../manual/cmake-modules.7.html" >cmake-modules(7)</a> &raquo;</li> 
+          <li class="nav-item nav-item-1"><a href="../manual/cmake-modules.7.html" >cmake-modules(7)</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">FindLAPACK</a></li> 
       </ul>
     </div>
+
     <div class="footer" role="contentinfo">
-        &copy; Copyright 2000-2016 Kitware, Inc. and Contributors.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4a0+.
+        &#169; Copyright 2000-2023 Kitware, Inc. and Contributors.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.3.0.
     </div>
   </body>
 </html>

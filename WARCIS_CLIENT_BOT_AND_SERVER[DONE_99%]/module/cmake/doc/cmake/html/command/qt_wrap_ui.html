@@ -1,36 +1,32 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
+<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-  <title>qt_wrap_ui &mdash; CMake 3.7.1 Documentation</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
+  <title>qt_wrap_ui &mdash; CMake 3.27.3 Documentation</title>
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/cmake.css" />
     
-    <link rel="stylesheet" href="../_static/cmake.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
     
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '../',
-        VERSION:     '3.7.1',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
-      };
-    </script>
-    <script type="text/javascript" src="../_static/jquery.js"></script>
-    <script type="text/javascript" src="../_static/underscore.js"></script>
-    <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="shortcut icon" href="../_static/cmake-favicon.ico"/>
-    <link rel="top" title="CMake 3.7.1 Documentation" href="../index.html" />
-    <link rel="up" title="cmake-commands(7)" href="../manual/cmake-commands.7.html" />
-    <link rel="next" title="remove_definitions" href="remove_definitions.html" />
-    <link rel="prev" title="qt_wrap_cpp" href="qt_wrap_cpp.html" /> 
-  </head>
-  <body role="document">
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="remove" href="remove.html" />
+    <link rel="prev" title="qt_wrap_cpp" href="qt_wrap_cpp.html" />
+ 
+
+  </head><body>
+
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
@@ -38,7 +34,7 @@
           <a href="../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="remove_definitions.html" title="remove_definitions"
+          <a href="remove.html" title="remove"
              accesskey="N">next</a> |</li>
         <li class="right" >
           <a href="qt_wrap_cpp.html" title="qt_wrap_cpp"
@@ -48,13 +44,14 @@
          style="vertical-align: middle; margin-top: -2px" />
   </li>
   <li>
-    <a href="https://cmake.org/">CMake</a> &raquo;
+    <a href="https://cmake.org/">CMake</a> &#187;
   </li>
   <li>
-    <a href="../index.html">3.7.1 Documentation</a> &raquo;
+    <a href="../index.html">3.27.3 Documentation</a> &#187;
   </li>
 
-          <li class="nav-item nav-item-1"><a href="../manual/cmake-commands.7.html" accesskey="U">cmake-commands(7)</a> &raquo;</li> 
+          <li class="nav-item nav-item-1"><a href="../manual/cmake-commands.7.html" accesskey="U">cmake-commands(7)</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">qt_wrap_ui</a></li> 
       </ul>
     </div>  
 
@@ -63,51 +60,63 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="qt-wrap-ui">
-<span id="command:qt_wrap_ui"></span><h1>qt_wrap_ui<a class="headerlink" href="#qt-wrap-ui" title="Permalink to this headline">¶</a></h1>
-<p>Create Qt user interfaces Wrappers.</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>qt_wrap_ui(resultingLibraryName HeadersDestName
-           SourcesDestName SourceLists ...)
+  <section id="qt-wrap-ui">
+<span id="command:qt_wrap_ui"></span><h1>qt_wrap_ui<a class="headerlink" href="#qt-wrap-ui" title="Permalink to this heading">¶</a></h1>
+<div class="deprecated">
+<p><span class="versionmodified deprecated">Deprecated since version 3.14: </span>This command was originally added to support Qt 3 before the
+<span class="target" id="index-0-command:add_custom_command"></span><a class="reference internal" href="add_custom_command.html#command:add_custom_command" title="add_custom_command"><code class="xref cmake cmake-command docutils literal notranslate"><span class="pre">add_custom_command()</span></code></a> command was sufficiently mature.  The
+<span class="target" id="index-0-module:FindQt4"></span><a class="reference internal" href="../module/FindQt4.html#module:FindQt4" title="FindQt4"><code class="xref cmake cmake-module docutils literal notranslate"><span class="pre">FindQt4</span></code></a> module provides the <code class="docutils literal notranslate"><span class="pre">qt4_wrap_ui()</span></code> macro, which
+should be used instead for Qt 4 projects.  For projects using Qt 5 or
+later, use the equivalent macro provided by Qt itself (e.g. Qt 5 provides
+<code class="docutils literal notranslate"><span class="pre">qt5_wrap_ui()</span></code>).</p>
+</div>
+<p>Manually create Qt user interfaces Wrappers.</p>
+<div class="highlight-cmake notranslate"><div class="highlight"><pre><span></span><span class="nf">qt_wrap_ui(</span><span class="nb">resultingLibraryName</span><span class="w"> </span><span class="nb">HeadersDestName</span>
+<span class="w">           </span><span class="nb">SourcesDestName</span><span class="w"> </span><span class="nb">SourceLists</span><span class="w"> </span><span class="p">...</span><span class="nf">)</span>
 </pre></div>
 </div>
-<p>Produce .h and .cxx files for all the .ui files listed in the
-<code class="docutils literal"><span class="pre">SourceLists</span></code>.  The .h files will be added to the library using the
-<code class="docutils literal"><span class="pre">HeadersDestNamesource</span></code> list.  The .cxx files will be added to the
-library using the <code class="docutils literal"><span class="pre">SourcesDestNamesource</span></code> list.</p>
-</div>
+<p>Produces .h and .cxx files for all the .ui files listed in the
+<code class="docutils literal notranslate"><span class="pre">SourceLists</span></code>.  The .h files will be added to the library using the
+<code class="docutils literal notranslate"><span class="pre">HeadersDestNamesource</span></code> list.  The .cxx files will be added to the
+library using the <code class="docutils literal notranslate"><span class="pre">SourcesDestNamesource</span></code> list.</p>
+<p>Consider updating the project to use the <span class="target" id="index-0-prop_tgt:AUTOUIC"></span><a class="reference internal" href="../prop_tgt/AUTOUIC.html#prop_tgt:AUTOUIC" title="AUTOUIC"><code class="xref cmake cmake-prop_tgt docutils literal notranslate"><span class="pre">AUTOUIC</span></code></a> target property
+instead for a more automated way of invoking the <code class="docutils literal notranslate"><span class="pre">uic</span></code> tool.</p>
+</section>
 
 
+            <div class="clearer"></div>
           </div>
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="qt_wrap_cpp.html"
-                        title="previous chapter">qt_wrap_cpp</a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="remove_definitions.html"
-                        title="next chapter">remove_definitions</a></p>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="qt_wrap_cpp.html"
+                          title="previous chapter">qt_wrap_cpp</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="remove.html"
+                          title="next chapter">remove</a></p>
+  </div>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="../_sources/command/qt_wrap_ui.txt"
+      <li><a href="../_sources/command/qt_wrap_ui.rst.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div>
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
       <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
+    </div>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -119,7 +128,7 @@ library using the <code class="docutils literal"><span class="pre">SourcesDestNa
           <a href="../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="remove_definitions.html" title="remove_definitions"
+          <a href="remove.html" title="remove"
              >next</a> |</li>
         <li class="right" >
           <a href="qt_wrap_cpp.html" title="qt_wrap_cpp"
@@ -129,18 +138,20 @@ library using the <code class="docutils literal"><span class="pre">SourcesDestNa
          style="vertical-align: middle; margin-top: -2px" />
   </li>
   <li>
-    <a href="https://cmake.org/">CMake</a> &raquo;
+    <a href="https://cmake.org/">CMake</a> &#187;
   </li>
   <li>
-    <a href="../index.html">3.7.1 Documentation</a> &raquo;
+    <a href="../index.html">3.27.3 Documentation</a> &#187;
   </li>
 
-          <li class="nav-item nav-item-1"><a href="../manual/cmake-commands.7.html" >cmake-commands(7)</a> &raquo;</li> 
+          <li class="nav-item nav-item-1"><a href="../manual/cmake-commands.7.html" >cmake-commands(7)</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">qt_wrap_ui</a></li> 
       </ul>
     </div>
+
     <div class="footer" role="contentinfo">
-        &copy; Copyright 2000-2016 Kitware, Inc. and Contributors.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4a0+.
+        &#169; Copyright 2000-2023 Kitware, Inc. and Contributors.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.3.0.
     </div>
   </body>
 </html>
