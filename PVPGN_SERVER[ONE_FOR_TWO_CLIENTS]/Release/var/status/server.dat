@@ -1,16 +1,14 @@
 [STATUS]
-Version=2.00.BETA
-Uptime=26 days 20 hours 43 minutes 0 seconds
+Version=1.99.7.2.1-PRO
+Uptime=2 minutes 0 seconds
 Games=0
-Users=1
-Channels=5
-UserAccounts=3
+Users=0
+Channels=4
+UserAccounts=0
 [CHANNELS]
 channel1=The Void
 channel2=Test Channel 1
 channel3=Warcis Support Channel
 channel4=Warcis Admin Channel
-channel5=Main
 [GAMES]
 [USERS]
-user1=W3XP,WarcisHostBot,1.26.0.1,USA

@@ -1,5 +1,0 @@
-﻿  format.cc
-C:\Projects\pvpgn-magic\source\lib\fmt\format.cc(8,10): fatal  error C1083: Не удается открыть файл включение: fmt/format-inl.h: No such file or directory,
-  posix.cc
-C:\Projects\pvpgn-magic\source\lib\fmt\posix.cc(13,10): fatal  error C1083: Не удается открыть файл включение: fmt/posix.h: No such file or directory,
-  Создание кода...

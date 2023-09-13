@@ -1,7 +1,232 @@
-May 09 17:06:11 [info ] eventlog_startup: logging event levels: fatal,error,warn,info
-May 09 17:06:11 [error] pvpgn::bnetd::InitHostBotList: [WHITELIST] added WarcisHostBot
-May 09 17:06:11 [error] pvpgn::bnetd::InitCrcWhiteList: [CRCWHITELIST] added 3816578313
-May 09 17:06:11 [info ] pvpgn_greeting: Warcis Server 2.00.BETA process 432
-May 09 17:06:11 [info ] pvpgn_greeting: running on Windows 10 (10.0 Build 25290, x86)
-May 09 17:06:11 [info ] pvpgn::bnetd::storage_init: initializing storage layer (available drivers: file, sql)
-May 09 17:06:11 [info ] pvpgn::bnetd::sql_mysql_init: Successfully turned on MYSQL_OPT_RECONNECT.
+Sep 13 16:05:16 [info ] eventlog_startup: logging event levels: fatal,error,warn,info
+Sep 13 16:05:16 [error] pvpgn::bnetd::InitHostBotList: [WHITELIST] added WarcisHostBot
+Sep 13 16:05:16 [error] pvpgn::bnetd::InitCrcWhiteList: [CRCWHITELIST] added 3816578313
+Sep 13 16:05:16 [info ] pvpgn_greeting: PvPGN 1.99.7.2.1-PRO process 6596
+Sep 13 16:05:16 [info ] pvpgn_greeting: running on Windows 10 (10.0 Build 25290, x86)
+Sep 13 16:05:16 [info ] pvpgn::bnetd::storage_init: initializing storage layer (available drivers: file, sql)
+Sep 13 16:05:16 [info ] pvpgn::bnetd::storage_init: using file storage driver
+Sep 13 16:05:16 [info ] pvpgn::FDWSelectBackend::FDWSelectBackend: fdwatch select() based layer initialized (max 8128 sockets)
+Sep 13 16:05:16 [info ] pvpgn::bnetd::i18n_load: localization file loaded "conf\i18n/bgBG/common.xml"
+Sep 13 16:05:16 [info ] pvpgn::bnetd::i18n_load: localization file loaded "conf\i18n/csCZ/common.xml"
+Sep 13 16:05:16 [info ] pvpgn::bnetd::i18n_load: localization file loaded "conf\i18n/deDE/common.xml"
+Sep 13 16:05:16 [info ] pvpgn::bnetd::i18n_load: localization file loaded "conf\i18n/esES/common.xml"
+Sep 13 16:05:16 [info ] pvpgn::bnetd::i18n_load: localization file loaded "conf\i18n/frFR/common.xml"
+Sep 13 16:05:16 [info ] pvpgn::bnetd::i18n_load: localization file loaded "conf\i18n/itIT/common.xml"
+Sep 13 16:05:16 [info ] pvpgn::bnetd::i18n_load: localization file loaded "conf\i18n/jpJA/common.xml"
+Sep 13 16:05:16 [info ] pvpgn::bnetd::i18n_load: localization file loaded "conf\i18n/koKR/common.xml"
+Sep 13 16:05:16 [info ] pvpgn::bnetd::i18n_load: localization file loaded "conf\i18n/nlNL/common.xml"
+Sep 13 16:05:16 [info ] pvpgn::bnetd::i18n_load: localization file loaded "conf\i18n/plPL/common.xml"
+Sep 13 16:05:16 [info ] pvpgn::bnetd::i18n_load: localization file loaded "conf\i18n/ptBR/common.xml"
+Sep 13 16:05:16 [info ] pvpgn::bnetd::i18n_load: localization file loaded "conf\i18n/ruRU/common.xml"
+Sep 13 16:05:16 [info ] pvpgn::bnetd::i18n_load: localization file loaded "conf\i18n/svSE/common.xml"
+Sep 13 16:05:16 [info ] pvpgn::bnetd::i18n_load: localization file loaded "conf\i18n/zhCN/common.xml"
+Sep 13 16:05:16 [info ] pvpgn::bnetd::i18n_load: localization file loaded "conf\i18n/zhTW/common.xml"
+Sep 13 16:05:16 [info ] pvpgn::bnetd::i18n_load: localization file loaded "conf\i18n/common.xml"
+Sep 13 16:05:16 [info ] pvpgn::bnetd::server_set_hostname: set hostname to "WB2ITB0J"
+Sep 13 16:05:16 [error] pre_server_startup: [json.exception.parse_error.101] parse error at 237: syntax error - unexpected ']'; expected '[', '{', or a literal
+Sep 13 16:05:16 [error] pvpgn::bnetd::load_versioncheck_conf: Could not parse conf\versioncheck.conf: [json.exception.parse_error.101] parse error at 1: syntax error - invalid literal; last read: '#'
+Sep 13 16:05:16 [error] pre_server_startup: could not load versioncheck list
+Sep 13 16:05:16 [warn ] pvpgn::bnetd::news_load: (first) news entry seems to be missing a timestamp, please check your news file on line 1
+Sep 13 16:05:16 [info ] pvpgn::bnetd::output_init: initializing output file
+Sep 13 16:05:16 [info ] pvpgn::bnetd::accountlist_create: started creating accountlist
+Sep 13 16:05:16 [error] pvpgn::bnetd::file_read_accounts: unable to open user directory "var\users" for reading (error: Error opening directory: var\users/*.*)
+Sep 13 16:05:16 [error] pvpgn::bnetd::accountlist_load_all: got error reading user accounts
+Sep 13 16:05:16 [info ] pvpgn::bnetd::ladder_createxptable: set war3 xpcalc maxleveldiff to 6
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/SEXP_AR_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/SEXP_CR_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/SEXP_AW_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/SEXP_CW_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/SEXP_AG_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/SEXP_CG_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/STAR_AR_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/STAR_CR_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/STAR_AW_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/STAR_CW_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/STAR_AG_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/STAR_CG_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/W2BN_AR_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/W2BN_CR_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/W2BN_AW_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/W2BN_CW_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/W2BN_AG_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/W2BN_CG_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/W2BN_ARI_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/W2BN_CRI_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/W2BN_AWI_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/W2BN_CWI_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/W2BN_AGI_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/W2BN_CGI_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/RAL2_SOLO_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/TSUN_SOLO_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/TSXP_SOLO_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/W3XP_SOLO_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/WAR3_SOLO_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/YURI_SOLO_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/W3XP_TEAM_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/WAR3_TEAM_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/W3XP_FFA_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/WAR3_FFA_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/W3XP_AT_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/WAR3_AT_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/SEXP_AR_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/SEXP_CR_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/SEXP_AW_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/SEXP_CW_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/SEXP_AG_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/SEXP_CG_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/STAR_AR_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/STAR_CR_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/STAR_AW_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/STAR_CW_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/STAR_AG_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/STAR_CG_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/W2BN_AR_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/W2BN_CR_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/W2BN_AW_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/W2BN_CW_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/W2BN_AG_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/W2BN_CG_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/W2BN_ARI_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/W2BN_CRI_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/W2BN_AWI_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/W2BN_CWI_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/W2BN_AGI_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/W2BN_CGI_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/RAL2_SOLO_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/TSUN_SOLO_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/TSXP_SOLO_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/W3XP_SOLO_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/WAR3_SOLO_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/YURI_SOLO_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/W3XP_TEAM_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/WAR3_TEAM_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/W3XP_FFA_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/WAR3_FFA_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/W3XP_AT_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/WAR3_AT_LADDER
+Sep 13 16:05:16 [info ] pvpgn::bnetd::aliasfile_load: done loading aliases
+Sep 13 16:05:16 [info ] pvpgn::trans_load: trans file loaded
+Sep 13 16:05:16 [info ] pvpgn::bnetd::anongame_infos_load: got langID: []
+Sep 13 16:05:16 [info ] pvpgn::bnetd::anongame_infos_load: got langID: [deDE]
+Sep 13 16:05:16 [info ] pvpgn::bnetd::anongame_infos_load: got langID: [zhCN]
+Sep 13 16:05:16 [info ] pvpgn::bnetd::anongame_infos_load: got langID: [ruRU]
+Sep 13 16:05:16 [error] pvpgn::bnetd::file_load_clans: unable to open clan directory "var\clans" for reading (error: Error opening directory: var\clans/*.*)
+Sep 13 16:05:16 [error] pvpgn::bnetd::file_load_teams: unable to open team directory "var\teams\" for reading (error: Error opening directory: var\teams\/*.*)
+Sep 13 16:05:16 [info ] pvpgn::bnetd::_setup_listensock: listening for bnet connections on 0.0.0.0:6112 TCP
+Sep 13 16:05:16 [info ] pvpgn::bnetd::_setup_listensock: listening for w3route connections on 0.0.0.0:6200 TCP
+Sep 13 16:06:01 [info ] eventlog_startup: logging event levels: fatal,error,warn,info
+Sep 13 16:06:01 [error] pvpgn::bnetd::InitHostBotList: [WHITELIST] added WarcisHostBot
+Sep 13 16:06:01 [error] pvpgn::bnetd::InitCrcWhiteList: [CRCWHITELIST] added 3816578313
+Sep 13 16:06:01 [info ] pvpgn_greeting: PvPGN 1.99.7.2.1-PRO process 7444
+Sep 13 16:06:01 [info ] pvpgn_greeting: running on Windows 10 (10.0 Build 25290, x86)
+Sep 13 16:06:01 [info ] pvpgn::bnetd::storage_init: initializing storage layer (available drivers: file, sql)
+Sep 13 16:06:01 [info ] pvpgn::bnetd::storage_init: using file storage driver
+Sep 13 16:06:01 [info ] pvpgn::FDWSelectBackend::FDWSelectBackend: fdwatch select() based layer initialized (max 8128 sockets)
+Sep 13 16:06:01 [info ] pvpgn::bnetd::i18n_load: localization file loaded "conf\i18n/bgBG/common.xml"
+Sep 13 16:06:01 [info ] pvpgn::bnetd::i18n_load: localization file loaded "conf\i18n/csCZ/common.xml"
+Sep 13 16:06:01 [info ] pvpgn::bnetd::i18n_load: localization file loaded "conf\i18n/deDE/common.xml"
+Sep 13 16:06:01 [info ] pvpgn::bnetd::i18n_load: localization file loaded "conf\i18n/esES/common.xml"
+Sep 13 16:06:01 [info ] pvpgn::bnetd::i18n_load: localization file loaded "conf\i18n/frFR/common.xml"
+Sep 13 16:06:01 [info ] pvpgn::bnetd::i18n_load: localization file loaded "conf\i18n/itIT/common.xml"
+Sep 13 16:06:01 [info ] pvpgn::bnetd::i18n_load: localization file loaded "conf\i18n/jpJA/common.xml"
+Sep 13 16:06:01 [info ] pvpgn::bnetd::i18n_load: localization file loaded "conf\i18n/koKR/common.xml"
+Sep 13 16:06:01 [info ] pvpgn::bnetd::i18n_load: localization file loaded "conf\i18n/nlNL/common.xml"
+Sep 13 16:06:01 [info ] pvpgn::bnetd::i18n_load: localization file loaded "conf\i18n/plPL/common.xml"
+Sep 13 16:06:01 [info ] pvpgn::bnetd::i18n_load: localization file loaded "conf\i18n/ptBR/common.xml"
+Sep 13 16:06:01 [info ] pvpgn::bnetd::i18n_load: localization file loaded "conf\i18n/ruRU/common.xml"
+Sep 13 16:06:01 [info ] pvpgn::bnetd::i18n_load: localization file loaded "conf\i18n/svSE/common.xml"
+Sep 13 16:06:01 [info ] pvpgn::bnetd::i18n_load: localization file loaded "conf\i18n/zhCN/common.xml"
+Sep 13 16:06:01 [info ] pvpgn::bnetd::i18n_load: localization file loaded "conf\i18n/zhTW/common.xml"
+Sep 13 16:06:01 [info ] pvpgn::bnetd::i18n_load: localization file loaded "conf\i18n/common.xml"
+Sep 13 16:06:01 [info ] pvpgn::bnetd::server_set_hostname: set hostname to "WB2ITB0J"
+Sep 13 16:06:01 [error] pre_server_startup: [json.exception.parse_error.101] parse error at 237: syntax error - unexpected ']'; expected '[', '{', or a literal
+Sep 13 16:06:01 [error] pvpgn::bnetd::load_versioncheck_conf: Could not parse conf\versioncheck.conf: [json.exception.parse_error.101] parse error at 1: syntax error - invalid literal; last read: '#'
+Sep 13 16:06:01 [error] pre_server_startup: could not load versioncheck list
+Sep 13 16:06:01 [warn ] pvpgn::bnetd::news_load: (first) news entry seems to be missing a timestamp, please check your news file on line 1
+Sep 13 16:06:01 [info ] pvpgn::bnetd::output_init: initializing output file
+Sep 13 16:06:01 [info ] pvpgn::bnetd::accountlist_create: started creating accountlist
+Sep 13 16:06:01 [error] pvpgn::bnetd::file_read_accounts: unable to open user directory "var\users" for reading (error: Error opening directory: var\users/*.*)
+Sep 13 16:06:01 [error] pvpgn::bnetd::accountlist_load_all: got error reading user accounts
+Sep 13 16:06:01 [info ] pvpgn::bnetd::ladder_createxptable: set war3 xpcalc maxleveldiff to 6
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/SEXP_AR_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/SEXP_CR_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/SEXP_AW_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/SEXP_CW_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/SEXP_AG_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/SEXP_CG_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/STAR_AR_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/STAR_CR_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/STAR_AW_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/STAR_CW_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/STAR_AG_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/STAR_CG_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/W2BN_AR_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/W2BN_CR_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/W2BN_AW_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/W2BN_CW_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/W2BN_AG_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/W2BN_CG_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/W2BN_ARI_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/W2BN_CRI_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/W2BN_AWI_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/W2BN_CWI_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/W2BN_AGI_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/W2BN_CGI_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/RAL2_SOLO_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/TSUN_SOLO_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/TSXP_SOLO_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/W3XP_SOLO_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/WAR3_SOLO_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/YURI_SOLO_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/W3XP_TEAM_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/WAR3_TEAM_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/W3XP_FFA_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/WAR3_FFA_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/W3XP_AT_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::loadBinary: successfully loaded var\ladders/WAR3_AT_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/SEXP_AR_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/SEXP_CR_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/SEXP_AW_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/SEXP_CW_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/SEXP_AG_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/SEXP_CG_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/STAR_AR_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/STAR_CR_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/STAR_AW_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/STAR_CW_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/STAR_AG_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/STAR_CG_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/W2BN_AR_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/W2BN_CR_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/W2BN_AW_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/W2BN_CW_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/W2BN_AG_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/W2BN_CG_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/W2BN_ARI_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/W2BN_CRI_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/W2BN_AWI_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/W2BN_CWI_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/W2BN_AGI_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/W2BN_CGI_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/RAL2_SOLO_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/TSUN_SOLO_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/TSXP_SOLO_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/W3XP_SOLO_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/WAR3_SOLO_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/YURI_SOLO_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/W3XP_TEAM_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/WAR3_TEAM_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/W3XP_FFA_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/WAR3_FFA_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/W3XP_AT_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::LadderList::saveBinary: successfully saved var\ladders/WAR3_AT_LADDER
+Sep 13 16:06:01 [info ] pvpgn::bnetd::aliasfile_load: done loading aliases
+Sep 13 16:06:01 [info ] pvpgn::trans_load: trans file loaded
+Sep 13 16:06:01 [info ] pvpgn::bnetd::anongame_infos_load: got langID: []
+Sep 13 16:06:01 [info ] pvpgn::bnetd::anongame_infos_load: got langID: [deDE]
+Sep 13 16:06:01 [info ] pvpgn::bnetd::anongame_infos_load: got langID: [zhCN]
+Sep 13 16:06:01 [info ] pvpgn::bnetd::anongame_infos_load: got langID: [ruRU]
+Sep 13 16:06:01 [error] pvpgn::bnetd::file_load_clans: unable to open clan directory "var\clans" for reading (error: Error opening directory: var\clans/*.*)
+Sep 13 16:06:01 [error] pvpgn::bnetd::file_load_teams: unable to open team directory "var\teams\" for reading (error: Error opening directory: var\teams\/*.*)
+Sep 13 16:06:01 [info ] pvpgn::bnetd::_setup_listensock: listening for bnet connections on 0.0.0.0:6112 TCP
+Sep 13 16:06:01 [info ] pvpgn::bnetd::_setup_listensock: listening for w3route connections on 0.0.0.0:6200 TCP
