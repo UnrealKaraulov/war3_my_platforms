@@ -9,7 +9,7 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{B5A4F019-3B66-4F22-97A6-F42986FC7EAD}</ProjectGuid>
     <RootNamespace>AntiHack</RootNamespace>
-    <WindowsTargetPlatformVersion>7.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
     <ProjectName>AMH</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -30,8 +30,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <LibraryPath>.\..\Release;.\..\MinHook;.\..\JPEG;.\..\..\DreamDota\Public Release;.\..\;.\..\StormLib\bin\stormlib_dll\win32\release;.\..\pa_snapshot\portaudio\build\msvc\Win32\Release;$(LibraryPath)</LibraryPath>
-    <IncludePath>.\..\..\DreamDota\Library\include\;.\..\..\DreamDota\DreamWarcraft;.\..\MinHook;.\..\JPEG;.\..\StormLib\src;.\..\imagestone\lib\;.\..\pa_snapshot\portaudio\include\;.\..\d3d8to9\;$(IncludePath)</IncludePath>
+    <LibraryPath>.\..\Release;.\..\MinHook;.\..\JPEG;.\..\..\DreamDota\Public Release;.\..\;.\..\StormLib\bin\StormLib\Win32\ReleaseAS;.\..\portaudio\msvc\Win32\Release;$(LibraryPath)</LibraryPath>
+    <IncludePath>.\..\..\DreamDota\Library\include\;.\..\..\DreamDota\DreamWarcraft;.\..\MinHook;.\..\JPEG;.\..\StormLib\src;.\..\imagestone\lib\;.\..\portaudio\include\;.\..\d3d8to9\;$(IncludePath)</IncludePath>
     <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
     <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
   </PropertyGroup>
@@ -43,15 +43,14 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_NDEBUG;_USING_V110_SDK71_;_HAS_EXCEPTIONS=0;_HAS_AUTO_PTR_ETC=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_WINSOCK_DEPRECATED_NO_WARNINGS;WIN32;NDEBUG;_HAS_STD_BYTE=0;_NDEBUG;_HAS_EXCEPTIONS=0;_HAS_AUTO_PTR_ETC=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <OmitFramePointers>false</OmitFramePointers>
       <FloatingPointModel>
       </FloatingPointModel>
       <BufferSecurityCheck>true</BufferSecurityCheck>
-      <LanguageStandard>
-      </LanguageStandard>
+      <LanguageStandard>stdcpp17</LanguageStandard>
       <CallingConvention>VectorCall</CallingConvention>
       <StringPooling>false</StringPooling>
       <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
@@ -100,10 +99,7 @@
     <ClCompile Include="gameprotocol.cpp" />
     <ClCompile Include="NewJassNatives.cpp" />
     <ClCompile Include="quantizer.cpp" />
-    <ClCompile Include="Spammmm.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-      </ExcludedFromBuild>
-    </ClCompile>
+    <ClCompile Include="Spammmm.cpp" />
     <ClCompile Include="Storm.cpp" />
     <ClCompile Include="tga_reader.c" />
     <ClCompile Include="UnitAndItem.cpp" />
@@ -129,10 +125,12 @@
     <ClInclude Include="commandpacket.h" />
     <ClInclude Include="crc32.h" />
     <ClInclude Include="CustomFeatures.h" />
+    <ClInclude Include="fp_call.h" />
     <ClInclude Include="FunctionTemplate.h" />
     <ClInclude Include="gameprotocol.h" />
     <ClInclude Include="quantizer.h" />
     <ClInclude Include="resource.h" />
+    <ClInclude Include="Spammm.h" />
     <ClInclude Include="Storm.h" />
     <ClInclude Include="tga_reader.h" />
     <ClInclude Include="tclWinPort.h" />
@@ -148,12 +146,12 @@
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
-    <Import Project="C:\Projects\pvpgn-magic\PvPGN_LaunchAH\packages\CrashRpt.CPP.2.0.18.0\build\native\CrashRpt.CPP.targets" Condition="Exists('C:\Projects\pvpgn-magic\PvPGN_LaunchAH\packages\CrashRpt.CPP.2.0.18.0\build\native\CrashRpt.CPP.targets')" />
+    <Import Project=".\..\packages\CrashRpt.CPP.2.0.18.0\build\native\CrashRpt.CPP.targets" Condition="Exists('.\..\packages\CrashRpt.CPP.2.0.18.0\build\native\CrashRpt.CPP.targets')" />
   </ImportGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>Данный проект ссылается на пакеты NuGet, отсутствующие на этом компьютере. Используйте восстановление пакетов NuGet, чтобы скачать их.  Дополнительную информацию см. по адресу: http://go.microsoft.com/fwlink/?LinkID=322105. Отсутствует следующий файл: {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('C:\Projects\pvpgn-magic\PvPGN_LaunchAH\packages\CrashRpt.CPP.2.0.18.0\build\native\CrashRpt.CPP.targets')" Text="$([System.String]::Format('$(ErrorText)', 'C:\Projects\pvpgn-magic\PvPGN_LaunchAH\packages\CrashRpt.CPP.2.0.18.0\build\native\CrashRpt.CPP.targets'))" />
+    <Error Condition="!Exists('.\..\packages\CrashRpt.CPP.2.0.18.0\build\native\CrashRpt.CPP.targets')" Text="$([System.String]::Format('$(ErrorText)', '.\..\packages\CrashRpt.CPP.2.0.18.0\build\native\CrashRpt.CPP.targets'))" />
   </Target>
 </Project>

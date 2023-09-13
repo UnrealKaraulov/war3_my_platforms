@@ -1,0 +1,10 @@
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\Release\ClientUpdater.exe.config
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\Release\ClientUpdater.exe
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\Release\ClientUpdater.pdb
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\ClientUpdater\obj\x86\Release\ClientUpdater.csproj.AssemblyReference.cache
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\ClientUpdater\obj\x86\Release\ClientUpdater.WarcisUpdateWindow.resources
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\ClientUpdater\obj\x86\Release\ClientUpdater.Properties.Resources.resources
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\ClientUpdater\obj\x86\Release\ClientUpdater.csproj.GenerateResource.cache
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\ClientUpdater\obj\x86\Release\ClientUpdater.csproj.CoreCompileInputs.cache
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\ClientUpdater\obj\x86\Release\ClientUpdater.exe
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\ClientUpdater\obj\x86\Release\ClientUpdater.pdb

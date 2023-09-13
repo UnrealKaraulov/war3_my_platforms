@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>Launcher</RootNamespace>
     <AssemblyName>Launcher</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
     <PublishUrl>publish\</PublishUrl>
@@ -83,7 +83,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Includes\CpuID.cs" />
+    <Compile Include="Includes\GlobalSuppressions.cs" />
     <Compile Include="Includes\CustomMarshal.cs" />
     <Compile Include="Includes\CustomMarshalAsAttribute.cs" />
     <Compile Include="Includes\CustomMarshalAttribute.cs" />

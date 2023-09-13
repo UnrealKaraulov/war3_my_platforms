@@ -1,0 +1,1 @@
+C:\Users\Karaulov\Downloads\portaudio-master\msvc\Win32\Release\portaudio.lib

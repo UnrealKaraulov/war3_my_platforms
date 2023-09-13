@@ -1,0 +1,14 @@
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\Launcher\obj\x86\Release\WarCIS_client.csproj.AssemblyReference.cache
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\Launcher\obj\x86\Release\Launcher.Launcher.resources
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\Launcher\obj\x86\Release\Launcher.Properties.Resources.resources
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\Launcher\obj\x86\Release\Launcher.splash_screen.resources
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\Launcher\obj\x86\Release\Launcher.StatsLine.resources
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\Launcher\obj\x86\Release\Launcher.Warkey.resources
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\Launcher\obj\x86\Release\WarCIS_client.csproj.GenerateResource.cache
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\Launcher\obj\x86\Release\WarCIS_client.csproj.CoreCompileInputs.cache
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\Release\Launcher.exe.config
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\Release\Launcher.exe
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\Release\Launcher.pdb
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\Launcher\obj\x86\Release\WarCIS_client.csproj.CopyComplete
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\Launcher\obj\x86\Release\Launcher.exe
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\Launcher\obj\x86\Release\Launcher.pdb

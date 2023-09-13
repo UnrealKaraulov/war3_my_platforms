@@ -1,12 +1,7 @@
 #pragma once
 
-#include <portaudio.h>
 #pragma comment(lib,"portaudio.lib")
-
-
-
-
-
+#include <portaudio.h>
 #if 1
 #define PA_SAMPLE_TYPE  paInt16
 typedef short SAMPLE;

@@ -1,6 +1,6 @@
 //extern "C"
 //{
-#include "..\WarcraftLoaderLib\Spammm.h"
+#include "Spammm.h"
 //}
 void A000( ) { }//BA000( ); }
 void A001( ) { }//BA001( ); }

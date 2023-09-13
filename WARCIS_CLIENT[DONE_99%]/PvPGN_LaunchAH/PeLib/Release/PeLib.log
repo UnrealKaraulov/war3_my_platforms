@@ -1,0 +1,15 @@
+﻿  BoundImportDirectory.cpp
+  InputBuffer.cpp
+  OutputBuffer.cpp
+  ComHeaderDirectory.cpp
+  DebugDirectory.cpp
+  ExportDirectory.cpp
+  IatDirectory.cpp
+  MzHeader.cpp
+  PeFile.cpp
+  PeHeader.cpp
+  PeLibAux.cpp
+  RelocationsDirectory.cpp
+  ResourceDirectory.cpp
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\PeLib\ResourceDirectory.cpp(364,73): warning C4267: =: преобразование из "size_t" в "PeLib::word"; возможна потеря данных
+  PeLib.vcxproj -> C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\Release\PeLib.lib

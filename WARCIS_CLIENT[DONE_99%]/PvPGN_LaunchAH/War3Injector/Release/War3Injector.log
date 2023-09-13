@@ -1,0 +1,7 @@
+﻿  w3l.cpp
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\War3Injector\w3l.cpp(183,21): warning C4996: '_wgetenv': This function or variable may be unsafe. Consider using _wdupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\War3Injector\w3l.cpp(128,7): warning C4101: buf: неиспользованная локальная переменная
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\War3Injector\w3l.cpp(124,6): warning C4101: i: неиспользованная локальная переменная
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\War3Injector\w3l.cpp(127,15): warning C4101: errmsg: неиспользованная локальная переменная
+     Создается библиотека C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\\Release\War3Injector.lib и объект C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\\Release\War3Injector.exp
+  War3Injector.vcxproj -> C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\Release\War3Injector.dll

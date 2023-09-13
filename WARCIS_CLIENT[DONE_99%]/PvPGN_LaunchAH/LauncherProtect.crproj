@@ -1,4 +1,4 @@
-<project outputDir="C:\Projects\pvpgn-magic\PvPGN_LaunchAH\Release\Confused" baseDir="C:\Projects\pvpgn-magic\PvPGN_LaunchAH\Release" seed="12344325" xmlns="http://confuser.codeplex.com">
+<project outputDir=".\Release\Confused" baseDir=".\Release" seed="12344325" xmlns="http://confuser.codeplex.com">
   <packer id="compressor" />
   <module path="INIFileParser.dll" />
   <module path="OtherInfo.dll" />

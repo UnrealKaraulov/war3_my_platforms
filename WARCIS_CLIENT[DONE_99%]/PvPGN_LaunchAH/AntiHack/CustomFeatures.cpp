@@ -26,7 +26,7 @@ extern "C"
 #include <TlHelp32.h>
 using namespace std;
 #include <filesystem>
-namespace fs = std::experimental::filesystem;
+namespace fs = std::filesystem;
 
 #include "WarcraftFrameHelper.h"
 using namespace NWar3Frame;

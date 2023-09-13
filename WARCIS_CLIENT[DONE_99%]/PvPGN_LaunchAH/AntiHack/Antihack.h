@@ -7,7 +7,6 @@
 
 
 #include <algorithm>
-#include <functional>
 #include <vector>
 #include <string>
 #include <regex>

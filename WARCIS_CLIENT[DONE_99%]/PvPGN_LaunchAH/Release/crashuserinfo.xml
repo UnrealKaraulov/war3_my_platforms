@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <UserInfo>
-<CommandLine>"C:\Projects\pvpgn-magic\PvPGN_LaunchAH\Release\ClientUpdater\WC3.exe"  -window</CommandLine>
+<CommandLine>".\Release\ClientUpdater\WC3.exe"  -window</CommandLine>
 <CrashThreadId>AE0(NAME:ANTIHACK THREAD)</CrashThreadId>
-<CrashThreadStartAddress>Module path: C:\Projects\pvpgn-magic\PvPGN_LaunchAH\Release\ClientUpdater\AMH.dll. Module start address:67930000. Thread start address:67937D00</CrashThreadStartAddress>
+<CrashThreadStartAddress>Module path: .\Release\ClientUpdater\AMH.dll. Module start address:67930000. Thread start address:67937D00</CrashThreadStartAddress>
 <Current game menu:>MAIN_MENU</Current game menu:>
 <LastError_0A58_000>struct HINSTANCE__ *__stdcall GetModuleFromAddress(int)(756):(GPROXY THREAD)</LastError_0A58_000>
 <LastError_0A58_001>struct HINSTANCE__ *__stdcall GetModuleFromAddress(int)(764):(GPROXY THREAD)</LastError_0A58_001>

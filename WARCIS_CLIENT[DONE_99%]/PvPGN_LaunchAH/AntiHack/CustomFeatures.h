@@ -1,8 +1,8 @@
 #pragma once
+
 #include "warcis_reconnector.h"
 #include "voiceheaders.h"
 #include "WarcraftFrameHelper.h"
-
 int GetLocalPlayerId( );
 
 extern int _BarVTable;

@@ -23,9 +23,9 @@ AppUpdatesURL={#MyAppURL}
 DefaultDirName={pf}\Warcis/Warcraft Client
 DefaultGroupName=Warcis/Warcraft III
 AllowNoIcons=yes
-LicenseFile=C:\Projects\pvpgn-magic\PvPGN_LaunchAH\Installer\License.txt
-InfoBeforeFile=C:\Projects\pvpgn-magic\PvPGN_LaunchAH\Installer\BeforeInstall.txt
-InfoAfterFile=C:\Projects\pvpgn-magic\PvPGN_LaunchAH\Installer\AfterInstall.txt
+LicenseFile=.\Installer\License.txt
+InfoBeforeFile=.\Installer\BeforeInstall.txt
+InfoAfterFile=.\Installer\AfterInstall.txt
 OutputBaseFilename=Warcis
 Compression=lzma
 SolidCompression=yes
@@ -47,21 +47,21 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 Name: "quicklaunchicon"; Description: "{cm:CreateQuickLaunchIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "C:\Projects\pvpgn-magic\PvPGN_LaunchAH\Release\ClientUpdater\Launcher.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\pvpgn-magic\PvPGN_LaunchAH\Release\ClientUpdater\AMH.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\pvpgn-magic\PvPGN_LaunchAH\Release\ClientUpdater\ClientUpdater.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\pvpgn-magic\PvPGN_LaunchAH\Release\ClientUpdater\crashrpt.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\pvpgn-magic\PvPGN_LaunchAH\Release\ClientUpdater\d3d8.fix"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\pvpgn-magic\PvPGN_LaunchAH\Release\ClientUpdater\dbghelp.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\pvpgn-magic\PvPGN_LaunchAH\Release\ClientUpdater\ijl20.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\pvpgn-magic\PvPGN_LaunchAH\Release\ClientUpdater\INIFileParser.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\pvpgn-magic\PvPGN_LaunchAH\Release\ClientUpdater\LauncherGlobals.ini"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\pvpgn-magic\PvPGN_LaunchAH\Release\ClientUpdater\MaterialSkin.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\pvpgn-magic\PvPGN_LaunchAH\Release\ClientUpdater\sendrpt.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\pvpgn-magic\PvPGN_LaunchAH\Release\ClientUpdater\StormLib.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\pvpgn-magic\PvPGN_LaunchAH\Release\ClientUpdater\War3Injector.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\pvpgn-magic\PvPGN_LaunchAH\Release\ClientUpdater\warcis.mpq"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\pvpgn-magic\PvPGN_LaunchAH\Release\ClientUpdater\WC3.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: ".\Release\ClientUpdater\Launcher.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: ".\Release\ClientUpdater\AMH.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: ".\Release\ClientUpdater\ClientUpdater.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: ".\Release\ClientUpdater\crashrpt.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: ".\Release\ClientUpdater\d3d8.fix"; DestDir: "{app}"; Flags: ignoreversion
+Source: ".\Release\ClientUpdater\dbghelp.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: ".\Release\ClientUpdater\ijl20.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: ".\Release\ClientUpdater\INIFileParser.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: ".\Release\ClientUpdater\LauncherGlobals.ini"; DestDir: "{app}"; Flags: ignoreversion
+Source: ".\Release\ClientUpdater\MaterialSkin.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: ".\Release\ClientUpdater\sendrpt.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: ".\Release\ClientUpdater\StormLib.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: ".\Release\ClientUpdater\War3Injector.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: ".\Release\ClientUpdater\warcis.mpq"; DestDir: "{app}"; Flags: ignoreversion
+Source: ".\Release\ClientUpdater\WC3.exe"; DestDir: "{app}"; Flags: ignoreversion
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]

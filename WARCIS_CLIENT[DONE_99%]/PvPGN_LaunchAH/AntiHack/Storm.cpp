@@ -5,6 +5,8 @@
 #include <cstdlib>
 #include "warcis_reconnector.h"
 
+#include "fp_call.h"
+
 namespace Storm {
 	bool StormAvailable = false;
 	HMODULE StormModule = NULL;

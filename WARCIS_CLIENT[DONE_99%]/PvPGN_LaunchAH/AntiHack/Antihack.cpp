@@ -7,6 +7,11 @@
 
 
 #define NOMINMAX
+
+
+#pragma comment(lib,"PeLib.lib")
+#include "..\PeLib\PeLib.h"
+
 #include "warcis_reconnector.h"
 
 
@@ -24,21 +29,17 @@
 
 #include <TlHelp32.h>
 
-#pragma comment(lib,"PeLib.lib")
-#include "..\PeLib\PeLib.h"
 #include "Storm.h"
 #include "BlpReadWrite.h"
 #include <algorithm>
 
-
-#define byte BYTE
 #include <ImageStone.h>
 #include <.\include\effect\effect_ext.h>
 #include "WarcraftFrameHelper.h"
 
 unsigned int Antihack_magic_value = 0xFFFFFFFF;
 
-namespace fs = std::experimental::filesystem;
+namespace fs = std::filesystem;
 
 
 std::vector<uint32_t> WhiteListDlls;
@@ -2345,20 +2346,6 @@ std::wstring ConvertFromUtf8ToUtf16( const std::string& str )
 	}
 
 	return convertedString;
-}
-
-string utf8_to_string( const char *utf8str, const locale& loc )
-{
-#ifndef  ANTIHACKNODEBUG
-	AddLogFunctionCall( __FUNCSIGW__, __LINE__ );
-#endif
-	// UTF-8 to wstring
-	wstring_convert<codecvt_utf8<wchar_t>> wconv;
-	wstring wstr = wconv.from_bytes( utf8str );
-	// wstring to string
-	vector<char> buf( wstr.size( ) );
-	use_facet<ctype<wchar_t>>( loc ).narrow( wstr.data( ), wstr.data( ) + wstr.size( ), '?', buf.data( ) );
-	return string( buf.data( ), buf.size( ) );
 }
 
 
