@@ -1,6 +1,6 @@
-1. Добавить новые пакеты в bnet_protocol.h
+1. Р”РѕР±Р°РІРёС‚СЊ РЅРѕРІС‹Рµ РїР°РєРµС‚С‹ РІ bnet_protocol.h
 
-// Сервер запросит сканирование в которой отправит нужную команду
+// РЎРµСЂРІРµСЂ Р·Р°РїСЂРѕСЃРёС‚ СЃРєР°РЅРёСЂРѕРІР°РЅРёРµ РІ РєРѕС‚РѕСЂРѕР№ РѕС‚РїСЂР°РІРёС‚ РЅСѓР¶РЅСѓСЋ РєРѕРјР°РЅРґСѓ
 #define SERVER_AH_SCAN_REQUEST 0x6eff
 	typedef struct
 	{
@@ -9,7 +9,7 @@
 		bn_int		command;
 	} PACKED_ATTR( ) t_server_ah_scan_request;
 
-// Клиент вернет нужные данные, хранить будет их в val1 - val4
+// РљР»РёРµРЅС‚ РІРµСЂРЅРµС‚ РЅСѓР¶РЅС‹Рµ РґР°РЅРЅС‹Рµ, С…СЂР°РЅРёС‚СЊ Р±СѓРґРµС‚ РёС… РІ val1 - val4
 #define CLIENT_AH_SCAN_RESPONSE 0x6eff
 	typedef struct
 	{
@@ -23,25 +23,25 @@
 	} PACKED_ATTR( ) t_client_ah_scan_response;
 
 
-2. Добавить в packet.h 
+2. Р”РѕР±Р°РІРёС‚СЊ РІ packet.h 
 
 			t_server_ah_scan_request	    server_ah_scan_request;
 			t_client_ah_scan_response	    client_ah_scan_response;
 
 			
-3. Добавить в handle_bnet.cpp
+3. Р”РѕР±Р°РІРёС‚СЊ РІ handle_bnet.cpp
 
 static int _client_ah_scan_response(t_connection * c, t_packet const *const packet);
 
 ...
-	после 
+	РїРѕСЃР»Рµ 
 	{ CLIENT_CHANGEEMAILREQ, _client_changeemailreq },
-	добавить
+	РґРѕР±Р°РІРёС‚СЊ
 	{ CLIENT_AH_SCAN_RESPONSE, _client_ah_scan_response },
 ...
-	после 
+	РїРѕСЃР»Рµ 
 	{ CLIENT_EXTRAWORK, _client_extrawork },
-	добавить
+	РґРѕР±Р°РІРёС‚СЊ
 	{ CLIENT_AH_SCAN_RESPONSE, _client_ah_scan_response },
 
 static int _client_ah_scan_response( t_connection * c, t_packet const *const packet )
@@ -63,15 +63,15 @@ static int _client_ah_scan_response( t_connection * c, t_packet const *const pac
 	}
 
 	
-В функцию 	static int _client_authreq109(t_connection * c, t_packet const *const packet)
-		добавить 
+Р’ С„СѓРЅРєС†РёСЋ 	static int _client_authreq109(t_connection * c, t_packet const *const packet)
+		РґРѕР±Р°РІРёС‚СЊ 
 		conn_client_request_ah_scan( c, 1 ); 
-		перед
+		РїРµСЂРµРґ
 		conn_push_outqueue(c, rpacket);
 		packet_del_ref(rpacket);
 		
 		
-В функцию _client_logonproofreq добавить после 	hash_set_str(&serverhash, account_get_pass(account));
+Р’ С„СѓРЅРєС†РёСЋ _client_logonproofreq РґРѕР±Р°РІРёС‚СЊ РїРѕСЃР»Рµ 	hash_set_str(&serverhash, account_get_pass(account));
 	if ( conn_get_ah_status( c ) == 1 )
 	{
 		...
@@ -100,28 +100,28 @@ else
 //conn_push_outqueue(c, rpacket);
 //packet_del_ref(rpacket);	
 
-4. Добавить в setup_before.h (например)
+4. Р”РѕР±Р°РІРёС‚СЊ РІ setup_before.h (РЅР°РїСЂРёРјРµСЂ)
 ...
-// Изменить версии при обновлении античита или лаунчера что бы защититься от использования старых версий
+// РР·РјРµРЅРёС‚СЊ РІРµСЂСЃРёРё РїСЂРё РѕР±РЅРѕРІР»РµРЅРёРё Р°РЅС‚РёС‡РёС‚Р° РёР»Рё Р»Р°СѓРЅС‡РµСЂР° С‡С‚Рѕ Р±С‹ Р·Р°С‰РёС‚РёС‚СЊСЃСЏ РѕС‚ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёСЏ СЃС‚Р°СЂС‹С… РІРµСЂСЃРёР№
 const int ANHIHACK_VERSION = 0x1be;
 const int LAUNCHER_VERSION = 0x1;
 ...
-5. Добавить в connection.h 
+5. Р”РѕР±Р°РІРёС‚СЊ РІ connection.h 
 
 extern int conn_client_ah_scan_response( t_connection * c, int command, int ahversion, int var1, int var2, int var3, int var4 );
 extern int conn_client_request_ah_scan( t_connection * c, int command );
 extern int conn_get_ah_status( t_connection * c );
 extern int conn_get_ah_version( t_connection * c );
 
-После:
+РџРѕСЃР»Рµ:
 t_account *		account;
-Добавить:
+Р”РѕР±Р°РІРёС‚СЊ:
 int					ah_status;
 int					ah_version;
 unsigned int		found_cheat;
 unsigned int		found_cheat2dc;
 
-6. Добавить в connection.cpp
+6. Р”РѕР±Р°РІРёС‚СЊ РІ connection.cpp
 
 extern int conn_client_request_ah_scan( t_connection * c, int command)
 {
@@ -181,11 +181,11 @@ extern int conn_get_ah_version( t_connection * c )
 }
 
 
-7. в Gproxy добавить пакет 
+7. РІ Gproxy РґРѕР±Р°РІРёС‚СЊ РїР°РєРµС‚ 
 
 SID_AH_PACKET = 0x6e	// 0x6e
 
-и обработчик для него(пример):
+Рё РѕР±СЂР°Р±РѕС‚С‡РёРє РґР»СЏ РЅРµРіРѕ(РїСЂРёРјРµСЂ):
 ...
 case SID_AH_PACKET: Handle_AH_PACKET( packet->GetData( ) ); forward = false; break;
 ...
@@ -233,10 +233,10 @@ void CWC3::Handle_AH_PACKET( BYTEARRAY data )
 }
 
 
-Найти в коде PvPGN все строки "c->protocol.game = NULL;" и поставить перед ними conn_client_request_ah_scan( c, 0x11 ); (отключает режим белого списка)
+РќР°Р№С‚Рё РІ РєРѕРґРµ PvPGN РІСЃРµ СЃС‚СЂРѕРєРё "c->protocol.game = NULL;" Рё РїРѕСЃС‚Р°РІРёС‚СЊ РїРµСЂРµРґ РЅРёРјРё conn_client_request_ah_scan( c, 0x11 ); (РѕС‚РєР»СЋС‡Р°РµС‚ СЂРµР¶РёРј Р±РµР»РѕРіРѕ СЃРїРёСЃРєР°)
 
-Добавить в conn_set_game 
-в начало :
+Р”РѕР±Р°РІРёС‚СЊ РІ conn_set_game 
+РІ РЅР°С‡Р°Р»Рѕ :
 	bool GameFound = true;
 
 	if ( c->protocol.game ) {
@@ -244,7 +244,7 @@ void CWC3::Handle_AH_PACKET( BYTEARRAY data )
 		}
 		else GameFound = false;
 
-	в конец:
+	РІ РєРѕРЅРµС†:
 	if ( !GameFound && c->protocol.game )
 	{
 		const char * _gamename2 = game_get_name( c->protocol.game );
@@ -255,4 +255,4 @@ void CWC3::Handle_AH_PACKET( BYTEARRAY data )
 		}
 	}
 
-все ID команд и пакетов можно менять на сервере и в клиенте античита если вдруг будут предприниматься попытки обхода античита.
+РІСЃРµ ID РєРѕРјР°РЅРґ Рё РїР°РєРµС‚РѕРІ РјРѕР¶РЅРѕ РјРµРЅСЏС‚СЊ РЅР° СЃРµСЂРІРµСЂРµ Рё РІ РєР»РёРµРЅС‚Рµ Р°РЅС‚РёС‡РёС‚Р° РµСЃР»Рё РІРґСЂСѓРі Р±СѓРґСѓС‚ РїСЂРµРґРїСЂРёРЅРёРјР°С‚СЊСЃСЏ РїРѕРїС‹С‚РєРё РѕР±С…РѕРґР° Р°РЅС‚РёС‡РёС‚Р°.
