@@ -6464,8 +6464,6 @@ void CustomFeaturesInitialize( const char * launcherpath )
 			if ( !custommpqloaded || !tmpval )
 			{
 				CONSOLE_Print( "Error loading warcis.mpq #3 at path: " + ( string )WarcisMpqPath );
-
-
 			}
 			else AllOkay = TRUE;
 		}
@@ -6542,11 +6540,8 @@ void CustomFeaturesInitialize( const char * launcherpath )
 	//if ( IsKeyPressed( '6' ) )
 	//	return;
 
-
-
 	AddNewAhChecks( GetProcAddress_org, 50 );
 	AddNewAhChecks( GetProcAddress_my, 50 );
-
 
 	//CONSOLE_Print( "4" );
 

@@ -1,1 +1,0 @@
-REFER TO http://harpywar.com/?a=articles&b=2&c=1&d=74&lang=en

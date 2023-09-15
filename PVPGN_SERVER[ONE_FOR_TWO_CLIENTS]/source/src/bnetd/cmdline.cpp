@@ -273,13 +273,13 @@ namespace pvpgn
 #ifdef WIN32
 		static int conf_set_service(const char *valstr)
 		{
-			/*unsigned tmp = 0;
+			unsigned tmp = 0;
 
 			conf_set_bool(&tmp, valstr, 0);
 			if (tmp) {
-				Win32_ServiceRun();
-				exitflag = 1;
-			}*/
+				//Win32_ServiceRun();
+				//exitflag = 1;
+			}
 
 			return 0;
 		}
@@ -297,7 +297,7 @@ namespace pvpgn
 			conf_set_str(&tmp, valstr, NULL);
 
 			if (tmp) {
-				/*if (!strcasecmp(tmp, "install")) {
+			/*	if (!strcasecmp(tmp, "install")) {
 					std::fprintf(stderr, "Installing service");
 					Win32_ServiceInstall();
 				}

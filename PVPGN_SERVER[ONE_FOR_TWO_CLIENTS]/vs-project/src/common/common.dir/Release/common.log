@@ -1,0 +1,48 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets(2128,5): warning : The referenced project '../vs-project/ZERO_CHECK.vcxproj' does not exist.
+  addr.cpp
+  asnprintf.cpp
+  bnethashconv.cpp
+  bnethash.cpp
+  bnettime.cpp
+  bn_type.cpp
+  conf.cpp
+  d2char_checksum.cpp
+  eventlog.cpp
+  fdwatch.cpp
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER[ONE_FOR_TWO_CLIENTS]\source\src\common\bn_type.cpp(54,26): warning C4146: применение унарного минуса к типу без знака; результат оставлен без знака
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER[ONE_FOR_TWO_CLIENTS]\source\src\common\bnethash.cpp(62,18): warning C4146: применение унарного минуса к типу без знака; результат оставлен без знака
+  fdwatch_epoll.cpp
+  fdwatch_kqueue.cpp
+  fdwatch_poll.cpp
+  fdwatch_select.cpp
+  fdwbackend.cpp
+  give_up_root_privileges.cpp
+  hashtable.cpp
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER[ONE_FOR_TWO_CLIENTS]\source\src\common\addr.cpp(141,8): warning C4996: 'gethostbyname': Use getaddrinfo() or GetAddrInfoW() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  hexdump.cpp
+  list.cpp
+  network.cpp
+  packet.cpp
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER[ONE_FOR_TWO_CLIENTS]\source\src\common\fdwatch.cpp(142,22): warning C4018: >=: несоответствие типов со знаком и без знака
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER[ONE_FOR_TWO_CLIENTS]\source\src\common\fdwatch.cpp(166,22): warning C4018: >=: несоответствие типов со знаком и без знака
+  proginfo.cpp
+  queue.cpp
+  rcm.cpp
+  rlimit.cpp
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER[ONE_FOR_TWO_CLIENTS]\source\src\common\packet.cpp(564,5): warning C4065: оператор switch содержит метку "default", но не содержит ни одной метки "case"
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER[ONE_FOR_TWO_CLIENTS]\source\src\common\packet.cpp(814,5): warning C4065: оператор switch содержит метку "default", но не содержит ни одной метки "case"
+  systemerror.cpp
+  tag.cpp
+  token.cpp
+  trans.cpp
+  util.cpp
+  wolhash.cpp
+  xalloc.cpp
+  xstr.cpp
+  xstring.cpp
+  gui_printf.cpp
+  bigint.cpp
+  bnetsrp3.cpp
+  peerchat.cpp
+  pugixml.cpp
+  common.vcxproj -> C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER[ONE_FOR_TWO_CLIENTS]\vs-project\src\vs-project\src\common\Release\common.lib

@@ -51,7 +51,7 @@
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>.\..\..\..\source\lib\;$(SolutionDir);.\..\..\..\source\src\;$(IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <IncludePath>.\..\..\..\source\lib\;$(SolutionDir);.\..\..\..\source\fmt\include;.\..\..\..\source\src\;$(IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <IncludePath>.\..\..\..\source\lib\;$(SolutionDir);.\..\..\..\source\src\;$(IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
@@ -72,6 +72,7 @@
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;UNICODE;_UNICODE;HAVE_CONFIG_H;DISABLED_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -160,7 +161,6 @@
     <ClInclude Include="..\..\..\source\src\common\irc_protocol.h" />
     <ClInclude Include="..\..\..\source\src\common\list.h" />
     <ClInclude Include="..\..\..\source\src\common\lstr.h" />
-    <ClInclude Include="..\..\..\source\src\common\make_unique.hpp" />
     <ClInclude Include="..\..\..\source\src\common\network.h" />
     <ClInclude Include="..\..\..\source\src\common\packet.h" />
     <ClInclude Include="..\..\..\source\src\common\proginfo.h" />
@@ -188,7 +188,6 @@
     <ClInclude Include="..\..\..\source\src\common\bnetsrp3.h" />
     <ClInclude Include="..\..\..\source\src\common\peerchat.h" />
     <ClInclude Include="..\..\..\source\src\common\wol_gameres_protocol.h" />
-    <ClInclude Include="..\..\..\source\src\common\format.h" />
     <ClInclude Include="..\..\..\source\src\common\pugiconfig.h" />
     <ClInclude Include="..\..\..\source\src\common\pugixml.h" />
     <ClCompile Include="..\..\..\source\src\common\addr.cpp" />
@@ -229,7 +228,6 @@
     <ClCompile Include="..\..\..\source\src\common\bigint.cpp" />
     <ClCompile Include="..\..\..\source\src\common\bnetsrp3.cpp" />
     <ClCompile Include="..\..\..\source\src\common\peerchat.cpp" />
-    <ClCompile Include="..\..\..\source\src\common\format.cc" />
     <ClCompile Include="..\..\..\source\src\common\pugixml.cpp" />
   </ItemGroup>
   <ItemGroup>

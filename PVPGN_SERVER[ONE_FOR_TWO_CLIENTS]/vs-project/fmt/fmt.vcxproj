@@ -10,6 +10,24 @@
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\source\fmt\src\format.cc" />
+    <ClCompile Include="..\..\source\fmt\src\os.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\source\fmt\include\fmt\chrono.h" />
+    <ClInclude Include="..\..\source\fmt\include\fmt\color.h" />
+    <ClInclude Include="..\..\source\fmt\include\fmt\compile.h" />
+    <ClInclude Include="..\..\source\fmt\include\fmt\core.h" />
+    <ClInclude Include="..\..\source\fmt\include\fmt\format-inl.h" />
+    <ClInclude Include="..\..\source\fmt\include\fmt\format.h" />
+    <ClInclude Include="..\..\source\fmt\include\fmt\locale.h" />
+    <ClInclude Include="..\..\source\fmt\include\fmt\os.h" />
+    <ClInclude Include="..\..\source\fmt\include\fmt\ostream.h" />
+    <ClInclude Include="..\..\source\fmt\include\fmt\posix.h" />
+    <ClInclude Include="..\..\source\fmt\include\fmt\printf.h" />
+    <ClInclude Include="..\..\source\fmt\include\fmt\ranges.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{8CD26C91-6F47-4E67-AD86-3748F5CC61D4}</ProjectGuid>
@@ -45,7 +63,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>.\..\..\source\lib\;$(VC_IncludePath);$(SolutionDir);$(WindowsSDK_IncludePath);</IncludePath>
+    <IncludePath>.\..\..\source\fmt\include;$(VC_IncludePath);$(SolutionDir);$(WindowsSDK_IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -54,13 +72,13 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
-      <FunctionLevelLinking>true</FunctionLevelLinking>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
-      <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <WholeProgramOptimization>false</WholeProgramOptimization>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -87,20 +105,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\source\lib\fmt\core.h" />
-    <ClInclude Include="..\..\source\lib\fmt\format-inl.h" />
-    <ClInclude Include="..\..\source\lib\fmt\format.h" />
-    <ClInclude Include="..\..\source\lib\fmt\ostream.h" />
-    <ClInclude Include="..\..\source\lib\fmt\posix.h" />
-    <ClInclude Include="..\..\source\lib\fmt\printf.h" />
-    <ClInclude Include="..\..\source\lib\fmt\ranges.h" />
-    <ClInclude Include="..\..\source\lib\fmt\time.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\source\lib\fmt\format.cc" />
-    <ClCompile Include="..\..\source\lib\fmt\posix.cc" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

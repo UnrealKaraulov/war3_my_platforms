@@ -35,6 +35,8 @@
 #include <sstream>
 #include <tuple>
 
+#include <nonstd/optional.hpp>
+
 #include "compat/strcasecmp.h"
 #include "compat/strncasecmp.h"
 #include "common/packet.h"
@@ -52,6 +54,7 @@
 #include "common/bnetsrp3.h"
 #include "common/xstring.h"
 
+#include "account_email_verification.h"
 #include "handlers.h"
 #include "connection.h"
 #include "prefs.h"
@@ -456,10 +459,10 @@ namespace pvpgn
 			case conn_state_connected:
 				switch (handle(bnet_htable_con, packet_get_type(packet), c, packet)) {
 				case 1:
-					eventlog(eventlog_level_error, __FUNCTION__, "[{}] unknown (unlogged in) bnet packet type 0x{:04x}, len {}", conn_get_socket(c), packet_get_type(packet), packet_get_size(packet));
+					eventlog(eventlog_level_error, __FUNCTION__, "[{}] unknown (connected) bnet packet type 0x{:04x}, len {}", conn_get_socket(c), packet_get_type(packet), packet_get_size(packet));
 					break;
 				case -1:
-					eventlog(eventlog_level_error, __FUNCTION__, "[{}] (unlogged in) got error handling packet type 0x{:04x}, len {}", conn_get_socket(c), packet_get_type(packet), packet_get_size(packet));
+					eventlog(eventlog_level_error, __FUNCTION__, "[{}] (connected) got error handling packet type 0x{:04x}, len {}", conn_get_socket(c), packet_get_type(packet), packet_get_size(packet));
 					break;
 				};
 				break;
@@ -795,11 +798,11 @@ namespace pvpgn
 				return 0;
 			}
 
-			eventlog(eventlog_level_debug, __FUNCTION__, "[{}] CLIENT_PROGIDENT archtag=0x{:08x} clienttag=0x{:08x} versionid=0x{:08x} unknown1=0x{:08x}", conn_get_socket(c), bn_int_get(packet->u.client_progident.archtag), bn_int_get(packet->u.client_progident.clienttag), bn_int_get(packet->u.client_progident.versionid), bn_int_get(packet->u.client_progident.unknown1));
-
 			conn_set_archtag(c, bn_int_get(packet->u.client_progident.archtag));
 			conn_set_clienttag(c, bn_int_get(packet->u.client_progident.clienttag));
 			conn_set_versionid(c, bn_int_get(packet->u.client_progident.versionid));
+
+			eventlog(eventlog_level_debug, __FUNCTION__, "[{}]CLIENT_PROGIDENTarchtag=0x{:08x}clienttag=0x{:08x}versionid=0x{:08x}unknown1=0x{:08x}", conn_get_socket(c), bn_int_get(packet->u.client_progident.archtag), bn_int_get(packet->u.client_progident.clienttag), bn_int_get(packet->u.client_progident.versionid), bn_int_get(packet->u.client_progident.unknown1));
 
 			if ((rpacket = packet_create(packet_class_bnet)))
 			{
@@ -932,7 +935,7 @@ namespace pvpgn
 				}
 				account_set_salt(account, account_salt);
 				account_set_verifier(account, account_verifier);
-				eventlog(eventlog_level_debug, __FUNCTION__, "[{}] account created password {} ", conn_get_socket(c), "hidden");
+				eventlog(eventlog_level_debug, __FUNCTION__, "[{}] account created", conn_get_socket(c));
 				bn_int_set(&rpacket->u.server_createaccount_w3.result, SERVER_CREATEACCOUNT_W3_RESULT_OK);
 			}
 
@@ -1170,23 +1173,23 @@ namespace pvpgn
 			}
 
 			auto send_failed_packet = [](t_connection* c)
-			{
-				t_packet* rpacket = packet_create(packet_class_bnet);
-				if (rpacket)
 				{
-					packet_set_size(rpacket, sizeof(t_server_authreply1));
-					packet_set_type(rpacket, SERVER_AUTHREPLY1);
-					conn_set_state(c, conn_state_untrusted);
+					t_packet* rpacket = packet_create(packet_class_bnet);
+					if (rpacket)
+					{
+						packet_set_size(rpacket, sizeof(t_server_authreply1));
+						packet_set_type(rpacket, SERVER_AUTHREPLY1);
+						conn_set_state(c, conn_state_untrusted);
 
-					bn_int_set(&rpacket->u.server_authreply1.message, SERVER_AUTHREPLY1_MESSAGE_BADVERSION);
-					packet_append_string(rpacket, "");
-					packet_append_string(rpacket, ""); // undocumented extra null terminator
+						bn_int_set(&rpacket->u.server_authreply1.message, SERVER_AUTHREPLY1_MESSAGE_BADVERSION);
+						packet_append_string(rpacket, "");
+						packet_append_string(rpacket, ""); // undocumented extra null terminator
 
-					conn_push_outqueue(c, rpacket);
+						conn_push_outqueue(c, rpacket);
 
-					packet_del_ref(rpacket);
-				}
-			};
+						packet_del_ref(rpacket);
+					}
+				};
 
 			// The following if statements are sanity checks
 			// The client should have already sent this information in a previous packet and is resending it again in this packet
@@ -1226,18 +1229,17 @@ namespace pvpgn
 
 			std::string version_string = vernum_to_verstr(bn_int_get(packet->u.client_authreq1.gameversion));
 			conn_set_clientver(c, version_string.c_str());
-			eventlog(eventlog_level_info, __FUNCTION__, "[{}] CLIENT_AUTHREQ1 archtag=0x{:08x} clienttag=0x{:08x} verstr={} exeinfo=\"{}\" versionid=0x{:08x} gameversion=0x{:08x} checksum=0x{:08x}", conn_get_socket(c), bn_int_get(packet->u.client_authreq1.archtag), bn_int_get(packet->u.client_authreq1.clienttag), version_string, exeinfo, conn_get_versionid(c), conn_get_gameversion(c), conn_get_checksum(c));
 
 			conn_set_versionid(c, bn_int_get(packet->u.client_authreq1.versionid));
 			conn_set_checksum(c, bn_int_get(packet->u.client_authreq1.checksum));
 			conn_set_gameversion(c, bn_int_get(packet->u.client_authreq1.gameversion));
 
+			eventlog(eventlog_level_info, __FUNCTION__, "[{}] CLIENT_AUTHREQ1 archtag=0x{:08x} clienttag=0x{:08x} verstr={} exeinfo=\"{}\" versionid=0x{:08x} gameversion=0x{:08x} checksum=0x{:08x}", conn_get_socket(c), bn_int_get(packet->u.client_authreq1.archtag), bn_int_get(packet->u.client_authreq1.clienttag), version_string, exeinfo, conn_get_versionid(c), conn_get_gameversion(c), conn_get_checksum(c));
 
 			const VersionCheck* vc = select_versioncheck(conn_get_archtag(c), conn_get_clienttag(c), conn_get_versionid(c), conn_get_gameversion(c), conn_get_checksum(c));
-			conn_set_versioncheck(c, vc);
 			if (vc)
 			{
-				eventlog(eventlog_level_info, __FUNCTION__, "[{}] client matches versiontag \"{}\"", conn_get_socket(c), conn_get_versioncheck(c)->get_version_tag());
+				eventlog(eventlog_level_info, __FUNCTION__, "[{}] client matches versiontag \"{}\"", conn_get_socket(c), vc->get_version_tag());
 			}
 			else
 			{
@@ -1269,7 +1271,7 @@ namespace pvpgn
 				// Only handle updates when there is an update file available.
 				if (mpqfilename)
 				{
-					eventlog(eventlog_level_info, __FUNCTION__, "[{}] an upgrade for version {} is available \"{}\"", conn_get_socket(c), conn_get_versioncheck(c)->get_version_tag(), mpqfilename);
+					eventlog(eventlog_level_info, __FUNCTION__, "[{}] an upgrade for version {} is available \"{}\"", conn_get_socket(c), vc->get_version_tag(), mpqfilename);
 					bn_int_set(&rpacket->u.server_authreply1.message, SERVER_AUTHREPLY1_MESSAGE_UPDATE);
 					packet_append_string(rpacket, mpqfilename);
 
@@ -1301,22 +1303,22 @@ namespace pvpgn
 			}
 
 			auto send_failed_packet = [](t_connection* c)
-			{
-				t_packet* rpacket = packet_create(packet_class_bnet);
-				if (rpacket)
 				{
-					packet_set_size(rpacket, sizeof(t_server_authreply_109));
-					packet_set_type(rpacket, SERVER_AUTHREPLY_109);
-					conn_set_state(c, conn_state_untrusted);
+					t_packet* rpacket = packet_create(packet_class_bnet);
+					if (rpacket)
+					{
+						packet_set_size(rpacket, sizeof(t_server_authreply_109));
+						packet_set_type(rpacket, SERVER_AUTHREPLY_109);
+						conn_set_state(c, conn_state_untrusted);
 
-					bn_int_set(&rpacket->u.server_authreply_109.message, SERVER_AUTHREPLY_109_MESSAGE_BADVERSION);
-					packet_append_string(rpacket, "");
+						bn_int_set(&rpacket->u.server_authreply_109.message, SERVER_AUTHREPLY_109_MESSAGE_BADVERSION);
+						packet_append_string(rpacket, "");
 
-					conn_push_outqueue(c, rpacket);
+						conn_push_outqueue(c, rpacket);
 
-					packet_del_ref(rpacket);
-				}
-			};
+						packet_del_ref(rpacket);
+					}
+				};
 
 
 			std::uint32_t count = bn_int_get(packet->u.client_authreq_109.cdkey_number);
@@ -1362,10 +1364,9 @@ namespace pvpgn
 
 
 				const VersionCheck* vc = select_versioncheck(conn_get_archtag(c), conn_get_clienttag(c), conn_get_versionid(c), conn_get_gameversion(c), conn_get_checksum(c));
-				conn_set_versioncheck(c, vc);
 				if (vc)
 				{
-					eventlog(eventlog_level_info, __FUNCTION__, "[{}] client matches versiontag \"{}\"", conn_get_socket(c), conn_get_versioncheck(c)->get_version_tag());
+					eventlog(eventlog_level_info, __FUNCTION__, "[{}] client matches versiontag \"{}\"", conn_get_socket(c), vc->get_version_tag());
 				}
 				else
 				{
@@ -1386,13 +1387,13 @@ namespace pvpgn
 				char* mpqfilename = nullptr;
 				if (vc)
 				{
-					mpqfilename = autoupdate_check(conn_get_archtag(c), conn_get_clienttag(c), conn_get_gamelang(c), conn_get_versioncheck(c)->get_version_tag().c_str(), NULL);
+					mpqfilename = autoupdate_check(conn_get_archtag(c), conn_get_clienttag(c), conn_get_gamelang(c), vc->get_version_tag().c_str(), NULL);
 				}
 
 				// Only handle updates when there is an update file available.
 				if (mpqfilename)
 				{
-					eventlog(eventlog_level_info, __FUNCTION__, "[{}] an upgrade for {} is available \"{}\"", conn_get_socket(c), conn_get_versioncheck(c)->get_version_tag(), mpqfilename);
+					eventlog(eventlog_level_info, __FUNCTION__, "[{}] an upgrade for {} is available \"{}\"", conn_get_socket(c), vc->get_version_tag(), mpqfilename);
 					bn_int_set(&rpacket->u.server_authreply_109.message, SERVER_AUTHREPLY_109_MESSAGE_UPDATE);
 					packet_append_string(rpacket, mpqfilename);
 
@@ -1451,7 +1452,7 @@ namespace pvpgn
 				if ((conn_get_clienttag(c) == CLIENTTAG_WARCRAFT3_UINT) || (conn_get_clienttag(c) == CLIENTTAG_WAR3XP_UINT))
 					packet_append_string(rpacket, prefs_get_war3_iconfile());
 				/* battle.net still sends "icons.bni" to sc/bw clients
-				 * clients request icons_STAR.bni seperatly */
+				 * clients request icons_STAR.bni separately */
 				 /*	else if (std::strcmp(conn_get_clienttag(c),CLIENTTAG_STARCRAFT)==0)
 						 packet_append_string(rpacket,prefs_get_star_iconfile());
 						 else if (std::strcmp(conn_get_clienttag(c),CLIENTTAG_BROODWARS)==0)
@@ -2062,9 +2063,9 @@ namespace pvpgn
 					else
 					{
 						bool noaccount = false;
-						/* fail if no account */
-						if (!(account = accountlist_find_account(username))) {
-							if (ToLower(username) == ToLower("WarcisHostBot"))
+						/* create defaul accounts with default password! */
+						/*if (!(account = accountlist_find_account(username))) {
+							if (ToLower(username) == ToLower("HostBotAccount"))
 							{
 								char salt[BCRYPT_HASHSIZE];
 								char hash[BCRYPT_HASHSIZE];
@@ -2073,7 +2074,7 @@ namespace pvpgn
 								accountlist_create_account(username, hash);
 								eventlog(eventlog_level_info, __FUNCTION__, "[{}] (W3) login for \"{}\" create new bot account!", conn_get_socket(c), username);
 							}
-							else if (ToLower(username) == ToLower("Venmade"))
+							else if (ToLower(username) == ToLower("AdminAccount"))
 							{
 								char salt[BCRYPT_HASHSIZE];
 								char hash[BCRYPT_HASHSIZE];
@@ -2088,67 +2089,67 @@ namespace pvpgn
 							{
 								noaccount = true;
 							}
-						}
+						}*/
 						if (noaccount)
 						{
 							eventlog(eventlog_level_info, __FUNCTION__, "[{}] (W3) login for \"{}\" refused (no such account)", conn_get_socket(c), username);
 							bn_int_set(&rpacket->u.server_loginreply_w3.message, SERVER_LOGINREPLY_W3_MESSAGE_BADACCT);
 						}
 						else
-						/* already logged in */
-						if (connlist_find_connection_by_account(account) && !IsHostBot(username) && !account_get_auth_botlogin(account) && prefs_get_kick_old_login() == 0) {
-							eventlog(eventlog_level_info, __FUNCTION__, "[{}] (W3) login for \"{}\" refused (already logged in)", conn_get_socket(c), username);
-							bn_int_set(&rpacket->u.server_loginreply_w3.message, SERVER_LOGINREPLY_W3_MESSAGE_ALREADY);
-						}
-						else if (account_get_auth_bnetlogin(account) == 0) {	/* default to true */
-							eventlog(eventlog_level_info, __FUNCTION__, "[{}] (W3) login for \"{}\" refused (no bnet access)", conn_get_socket(c), username);
-							bn_int_set(&rpacket->u.server_loginreply_w3.message, SERVER_LOGINREPLY_W3_MESSAGE_BADACCT);
-						}
-						else if (!(account_salt = account_get_salt(account))) {
-							eventlog(eventlog_level_info, __FUNCTION__, "[{}] (W3) \"{}\" passed account check (even though account has no salt)", conn_get_socket(c), username);
-							conn_set_loggeduser(c, username);
-							bn_int_set(&rpacket->u.server_loginreply_w3.message, SERVER_LOGINREPLY_W3_MESSAGE_SUCCESS);
-						}
-						else if (!(account_verifier = account_get_verifier(account))) {
-							eventlog(eventlog_level_info, __FUNCTION__, "[{}] (W3) \"{}\" passed account check (even though account has no verifier)", conn_get_socket(c), username);
-							conn_set_loggeduser(c, username);
-							bn_int_set(&rpacket->u.server_loginreply_w3.message, SERVER_LOGINREPLY_W3_MESSAGE_SUCCESS);
-							xfree((void*)account_salt);
-						}
-						else {
-
-							for (i = 0; i < 32; i++) {
-								bn_byte_set(&rpacket->u.server_loginreply_w3.salt[i], account_salt[i]);
+							/* already logged in */
+							if (connlist_find_connection_by_account(account) && !IsHostBot(username) && !account_get_auth_botlogin(account) && prefs_get_kick_old_login() == 0) {
+								eventlog(eventlog_level_info, __FUNCTION__, "[{}] (W3) login for \"{}\" refused (already logged in)", conn_get_socket(c), username);
+								bn_int_set(&rpacket->u.server_loginreply_w3.message, SERVER_LOGINREPLY_W3_MESSAGE_ALREADY);
 							}
+							else if (account_get_auth_bnetlogin(account) == 0) {	/* default to true */
+								eventlog(eventlog_level_info, __FUNCTION__, "[{}] (W3) login for \"{}\" refused (no bnet access)", conn_get_socket(c), username);
+								bn_int_set(&rpacket->u.server_loginreply_w3.message, SERVER_LOGINREPLY_W3_MESSAGE_BADACCT);
+							}
+							else if (!(account_salt = account_get_salt(account))) {
+								eventlog(eventlog_level_info, __FUNCTION__, "[{}] (W3) \"{}\" passed account check (even though account has no salt)", conn_get_socket(c), username);
+								conn_set_loggeduser(c, username);
+								bn_int_set(&rpacket->u.server_loginreply_w3.message, SERVER_LOGINREPLY_W3_MESSAGE_SUCCESS);
+							}
+							else if (!(account_verifier = account_get_verifier(account))) {
+								eventlog(eventlog_level_info, __FUNCTION__, "[{}] (W3) \"{}\" passed account check (even though account has no verifier)", conn_get_socket(c), username);
+								conn_set_loggeduser(c, username);
+								bn_int_set(&rpacket->u.server_loginreply_w3.message, SERVER_LOGINREPLY_W3_MESSAGE_SUCCESS);
+								xfree((void*)account_salt);
+							}
+							else {
 
-							BigInt salt = BigInt((unsigned char*)account_salt, 32, 4, false);
-							BigInt verifier = BigInt((unsigned char*)account_verifier, 32, 1, false);
-							BnetSRP3 srp3 = BnetSRP3(username, salt);
+								for (i = 0; i < 32; i++) {
+									bn_byte_set(&rpacket->u.server_loginreply_w3.salt[i], account_salt[i]);
+								}
 
-							BigInt client_public_key = BigInt((unsigned char*)conn_client_public_key, 32, 1, false);
-							BigInt server_public_key = srp3.getServerSessionPublicKey(verifier);
+								BigInt salt = BigInt((unsigned char*)account_salt, 32, 4, false);
+								BigInt verifier = BigInt((unsigned char*)account_verifier, 32, 1, false);
+								BnetSRP3 srp3 = BnetSRP3(username, salt);
 
-							server_public_key.getData((unsigned char*)&rpacket->u.server_loginreply_w3.server_public_key, 32, 4, false);
+								BigInt client_public_key = BigInt((unsigned char*)conn_client_public_key, 32, 1, false);
+								BigInt server_public_key = srp3.getServerSessionPublicKey(verifier);
 
-							BigInt hashed_server_secret_ = srp3.getHashedServerSecret(client_public_key, verifier);
-							BigInt client_proof = srp3.getClientPasswordProof(client_public_key, server_public_key, hashed_server_secret_);
-							BigInt server_proof = srp3.getServerPasswordProof(client_public_key, client_proof, hashed_server_secret_);
+								server_public_key.getData((unsigned char*)&rpacket->u.server_loginreply_w3.server_public_key, 32, 4, false);
 
-							char* conn_client_proof = (char*)client_proof.getData(20, 4, false);
-							char* conn_server_proof = (char*)server_proof.getData(20, 4, false);
+								BigInt hashed_server_secret_ = srp3.getHashedServerSecret(client_public_key, verifier);
+								BigInt client_proof = srp3.getClientPasswordProof(client_public_key, server_public_key, hashed_server_secret_);
+								BigInt server_proof = srp3.getServerPasswordProof(client_public_key, client_proof, hashed_server_secret_);
 
-							conn_set_client_proof(c, conn_client_proof);
-							conn_set_server_proof(c, conn_server_proof);
+								char* conn_client_proof = (char*)client_proof.getData(20, 4, false);
+								char* conn_server_proof = (char*)server_proof.getData(20, 4, false);
 
-							xfree((void*)account_verifier);
-							xfree((void*)account_salt);
-							xfree(conn_client_proof);
-							xfree(conn_server_proof);
+								conn_set_client_proof(c, conn_client_proof);
+								conn_set_server_proof(c, conn_server_proof);
 
-							eventlog(eventlog_level_info, __FUNCTION__, "[{}] (W3) \"{}\" passed account check", conn_get_socket(c), username);
-							conn_set_loggeduser(c, username);
-							bn_int_set(&rpacket->u.server_loginreply_w3.message, SERVER_LOGINREPLY_W3_MESSAGE_SUCCESS);
-						}
+								xfree((void*)account_verifier);
+								xfree((void*)account_salt);
+								xfree(conn_client_proof);
+								xfree(conn_server_proof);
+
+								eventlog(eventlog_level_info, __FUNCTION__, "[{}] (W3) \"{}\" passed account check", conn_get_socket(c), username);
+								conn_set_loggeduser(c, username);
+								bn_int_set(&rpacket->u.server_loginreply_w3.message, SERVER_LOGINREPLY_W3_MESSAGE_SUCCESS);
+							}
 					}
 				}
 
@@ -2405,7 +2406,7 @@ namespace pvpgn
 					const char* client_password_proof;
 
 					/* PELISH: This can not occur - We already tested packet size which must be wrong firstly.
-					Also pvpgn will crash when will dereferencing NULL pointer (so we cant got this errorlog message)
+					   Also pvpgn will crash when will dereferencing NULL pointer (so we can't got this errorlog message)
 					I vote for deleting this "if" */
 					if (!(client_password_proof = (const char*)packet_get_data_const(packet, offsetof(t_client_logonproofreq, client_password_proof), 20))) {
 						eventlog(eventlog_level_error, __FUNCTION__, "[{}] (W3) got bad LOGONPROOFREQ packet (missing hash)", conn_get_socket(c));
@@ -2861,8 +2862,10 @@ namespace pvpgn
 					continue;
 				}
 
-				const std::string my_version_tag = conn_get_versioncheck(c) ? conn_get_versioncheck(c)->get_version_tag() : "";
-				const std::string friend_version_tag = conn_get_versioncheck(friend_connection) ? conn_get_versioncheck(friend_connection)->get_version_tag() : "";
+				const VersionCheck* const my_vc = select_versioncheck(conn_get_archtag(c), conn_get_clienttag(c), conn_get_versionid(c), conn_get_gameversion(c), conn_get_checksum(c));
+				const VersionCheck* const friend_vc = select_versioncheck(conn_get_archtag(friend_connection), conn_get_clienttag(friend_connection), conn_get_versionid(friend_connection), conn_get_gameversion(friend_connection), conn_get_checksum(friend_connection));
+				std::string my_version_tag = my_vc ? my_vc->get_version_tag() : "";
+				std::string friend_version_tag = friend_vc ? friend_vc->get_version_tag() : "";
 				// friend is using another game or is on a different version
 				if (my_version_tag != friend_version_tag)
 				{
@@ -2918,8 +2921,10 @@ namespace pvpgn
 						continue;
 					}
 
-					const std::string my_version_tag = conn_get_versioncheck(c) ? conn_get_versioncheck(c)->get_version_tag() : "";
-					const std::string user_version_tag = conn_get_versioncheck(user_connection) ? conn_get_versioncheck(user_connection)->get_version_tag() : "";
+					const VersionCheck* const my_vc = select_versioncheck(conn_get_archtag(c), conn_get_clienttag(c), conn_get_versionid(c), conn_get_gameversion(c), conn_get_checksum(c));
+					const VersionCheck* const user_vc = select_versioncheck(conn_get_archtag(user_connection), conn_get_clienttag(user_connection), conn_get_versionid(user_connection), conn_get_gameversion(user_connection), conn_get_checksum(user_connection));
+					std::string my_version_tag = my_vc ? my_vc->get_version_tag() : "";
+					std::string user_version_tag = user_connection ? user_vc->get_version_tag() : "";
 					// user is using another game or is on a different version
 					if (my_version_tag != user_version_tag)
 					{
@@ -3014,7 +3019,7 @@ namespace pvpgn
 				for (i = 1; i < MAX_TEAMSIZE; i++) {
 					if ((i < teammemcount)) {
 						if (!(members[i] = accountlist_find_account(invited_usernames[i - 1]))) {
-							eventlog(eventlog_level_error, __FUNCTION__, "got invitation for non-existant user \"{}\"", invited_usernames[i - 1]);
+							eventlog(eventlog_level_error, __FUNCTION__, "got invitation for non-existent user \"{}\"", invited_usernames[i - 1]);
 							return -1;
 						}
 					}
@@ -3093,7 +3098,7 @@ namespace pvpgn
 				 * five int's to fill
 				 * fill with uid's of all teammembers, including the inviter
 				 * and the rest with FFFFFFFF
-				 * to be used when sever recieves anongame search
+				 * to be used when sever receives anongame search
 				 * [Omega]
 				 */
 				for (i = 0; i < 5; i++) {
@@ -3245,9 +3250,9 @@ namespace pvpgn
 			bn_int_set(&rpacket->u.server_motd_w3.timestamp2, SERVER_MOTD_W3_WELCOME);
 
 
-			// read text from bnmotd_w3.txt
+			// read text from w3motd.txt
 			{
-				fmt::memory_buffer serverinfo;
+				std::string serverinfo;
 
 				std::string filename = i18n_filename(prefs_get_motdw3file(), conn_get_gamelang_localized(c));
 				std::FILE* fp = std::fopen(filename.c_str(), "r");
@@ -3256,16 +3261,22 @@ namespace pvpgn
 					while (char* buff = file_get_line(fp))
 					{
 						char* line = message_format_line(c, buff);
-						fmt::format_to(serverinfo, "{}" + '\n', (line + 1));
+						fmt::format_to(std::back_inserter(serverinfo), "{}\n", line + 1);
 						xfree((void*)line);
 					}
 
 					if (std::fclose(fp) == EOF)
 					{
-						eventlog(eventlog_level_error, __FUNCTION__, "could not close motdw3 file \"{}\" after reading (std::fopen: {})", filename, std::strerror(errno));
+						eventlog(eventlog_level_error, __FUNCTION__, "Failed to close w3motd file \"{}\" after reading (std::fopen: {})", filename, std::strerror(errno));
 					}
 				}
-				packet_append_string(rpacket, fmt::to_string(serverinfo).c_str());
+				else
+				{
+					eventlog(eventlog_level_error, __FUNCTION__, "Failed to open w3motd file \"{}\"", filename);
+					fmt::format_to(std::back_inserter(serverinfo), "An error has occurred.");
+				}
+
+				packet_append_string(rpacket, serverinfo.c_str());
 			}
 
 			conn_push_outqueue(c, rpacket);
@@ -3379,7 +3390,7 @@ namespace pvpgn
 			}
 
 			if (!(account = accountlist_find_account(username))) {
-				eventlog(eventlog_level_error, __FUNCTION__, "requested claninfo for non-existant account");
+				eventlog(eventlog_level_error, __FUNCTION__, "requested claninfo for non-existent account");
 				return -1;
 			}
 
@@ -3441,7 +3452,7 @@ namespace pvpgn
 			}
 
 			if (!(account = accountlist_find_account(username))) {
-				eventlog(eventlog_level_error, __FUNCTION__, "requested profile for non-existant account");
+				eventlog(eventlog_level_error, __FUNCTION__, "requested profile for non-existent account");
 				return -1;
 			}
 			if ((rpacket = packet_create(packet_class_bnet))) {
@@ -3897,7 +3908,23 @@ namespace pvpgn
 
 				if (account) {
 					packet_append_string(rpacket, username);
-					packet_append_string(rpacket, conn_get_playerinfo(c));
+
+					nonstd::optional<std::string> playerinfo = conn_get_playerinfo(c);
+					if (playerinfo.has_value())
+					{
+						packet_append_string(rpacket, playerinfo.value().c_str());
+					}
+					else
+					{
+						// just send reversed client tag, it's better than nothing
+
+						t_clienttag client_tag = conn_get_clienttag(c);
+						char reversed_client_tag[5] = {};
+						tag_uint_to_revstr(reversed_client_tag, client_tag);
+
+						packet_append_string(rpacket, reversed_client_tag);
+					}
+
 					packet_append_string(rpacket, username);
 				}
 				else {
@@ -3984,7 +4011,6 @@ namespace pvpgn
 			std::string tmpstr;
 			clienttag = conn_get_clienttag(c);
 			if ((clienttag == CLIENTTAG_WARCRAFT3_UINT) || (clienttag == CLIENTTAG_WAR3XP_UINT)) {
-				conn_update_w3_playerinfo(c);
 				switch (bn_int_get(packet->u.client_joinchannel.channelflag)) {
 				case CLIENT_JOINCHANNEL_NORMAL:
 					eventlog(eventlog_level_info, __FUNCTION__, "[{}] CLIENT_JOINCHANNEL_NORMAL channel \"{}\"", conn_get_socket(c), cname);
@@ -4099,9 +4125,12 @@ namespace pvpgn
 				eventlog(eventlog_level_debug, __FUNCTION__, "[{}] not listing because game is wrong type", conn_get_socket(cbdata->c));
 				return 0;
 			}
-			if (conn_get_versioncheck(cbdata->c) &&
-				conn_get_versioncheck(game_get_owner(game)) &&
-				conn_get_versioncheck(cbdata->c)->get_version_tag() != conn_get_versioncheck(game_get_owner(game))->get_version_tag())
+			const VersionCheck* const cbdata_c_vc = select_versioncheck(conn_get_archtag(cbdata->c), conn_get_clienttag(cbdata->c), conn_get_versionid(cbdata->c), conn_get_gameversion(cbdata->c), conn_get_checksum(cbdata->c));
+			t_connection* gowner_c = game_get_owner(game);
+			const VersionCheck* const gowner_c_vc = select_versioncheck(conn_get_archtag(gowner_c), conn_get_clienttag(gowner_c), conn_get_versionid(gowner_c), conn_get_gameversion(gowner_c), conn_get_checksum(gowner_c));
+			if (cbdata_c_vc != nullptr &&
+				gowner_c_vc != nullptr &&
+				cbdata_c_vc->get_version_tag() != gowner_c_vc->get_version_tag())
 			{
 				eventlog(eventlog_level_debug, __FUNCTION__, "[{}] not listing because game is wrong versiontag", conn_get_socket(cbdata->c));
 				return 0;
@@ -4846,7 +4875,6 @@ namespace pvpgn
 				t_bnettime bt;
 				t_ladder_id id;
 				t_ladder_sort sort;
-				bool error = false;
 
 				clienttag = conn_get_clienttag(c);
 
@@ -4878,7 +4906,6 @@ namespace pvpgn
 				bn_int_set(&rpacket->u.server_ladderreply.id, idnum);
 				bn_int_set(&rpacket->u.server_ladderreply.type, type);
 				bn_int_set(&rpacket->u.server_ladderreply.startplace, start);
-				bn_int_set(&rpacket->u.server_ladderreply.count, count);
 
 				switch (type) {
 				case CLIENT_LADDERREQ_TYPE_HIGHESTRATED:
@@ -4893,31 +4920,25 @@ namespace pvpgn
 				default:
 					sort = ladder_sort_default;
 					eventlog(eventlog_level_error, __FUNCTION__, "[{}] got unknown value for ladderreq.type={}", conn_get_socket(c), type);
-					error = true;
 				}
 
-				LadderList* ladderList_active = NULL;
-				LadderList* ladderList_current = NULL;
-
-				if (!error)
-				{
-					ladderList_active = ladders.getLadderList(LadderKey(id, clienttag, sort, ladder_time_active));
-					ladderList_current = ladders.getLadderList(LadderKey(id, clienttag, sort, ladder_time_current));
-				}
-				if (!ladderList_active || ladderList_current)
-					error = true;
+				LadderList* ladderList_active = ladders.getLadderList(LadderKey(id, clienttag, sort, ladder_time_active));
+				LadderList* ladderList_current = ladders.getLadderList(LadderKey(id, clienttag, sort, ladder_time_current));
 
 				for (i = start; i < start + count; i++) {
-
-
 					const LadderReferencedObject* referencedObject = NULL;
-					account = NULL;
-					if (!error) {
 
-						if (!(referencedObject = ladderList_active->getReferencedObject(i + 1)))
-							referencedObject = ladderList_current->getReferencedObject(i + 1);
+					if (ladderList_active)
+					{
+						referencedObject = ladderList_active->getReferencedObject(i + 1);
 					}
 
+					if (!referencedObject && ladderList_current)
+					{
+						referencedObject = ladderList_current->getReferencedObject(i + 1);
+					}
+
+					account = NULL;
 					if ((referencedObject) && (account = referencedObject->getAccount()))
 					{
 						bn_int_set(&entry.active.wins, account_get_ladder_active_wins(account, clienttag, id));
@@ -4973,6 +4994,8 @@ namespace pvpgn
 					else
 						packet_append_string(rpacket, " ");	/* use a space so the client won't show the user's own account when double-clicked on */
 				}
+
+				bn_int_set(&rpacket->u.server_ladderreply.count, i - start);
 
 				conn_push_outqueue(c, rpacket);
 				packet_del_ref(rpacket);
@@ -5415,7 +5438,7 @@ namespace pvpgn
 			}
 			offset += (std::strlen(username) + 1);
 			if (packet_get_size(packet) < offset + 1) {
-				eventlog(eventlog_level_error, __FUNCTION__, "[{}] got bad CLAN_CREATEINVITEREPLY packet (mising status)", conn_get_socket(c));
+				eventlog(eventlog_level_error, __FUNCTION__, "[{}] got bad CLAN_CREATEINVITEREPLY packet (missing status)", conn_get_socket(c));
 				return -1;
 			}
 			status = *((char*)packet_get_data_const(packet, offset, 1));
@@ -5495,7 +5518,7 @@ namespace pvpgn
 				offset += (std::strlen(username) + 1);
 				if (packet_get_size(packet) < offset + 1)
 				{
-					eventlog(eventlog_level_error, __FUNCTION__, "[{}] got bad CLANMEMBER_RANKUPDATE_REQ packet (mising status)", conn_get_socket(c));
+					eventlog(eventlog_level_error, __FUNCTION__, "[{}] got bad CLANMEMBER_RANKUPDATE_REQ packet (missing status)", conn_get_socket(c));
 					packet_del_ref(rpacket);
 					return -1;
 				}
@@ -5560,7 +5583,6 @@ namespace pvpgn
 						t_packet* rpacket2;
 						if (dest_conn) {
 							clan_close_status_window(dest_conn);
-							conn_update_w3_playerinfo(dest_conn);
 							channel_rejoin(dest_conn);
 						}
 						if ((rpacket2 = packet_create(packet_class_bnet)) != NULL) {
@@ -5662,7 +5684,7 @@ namespace pvpgn
 					else if (account_get_clanmember_forced(conn_get_account(conn))) {
 						response_code = CLAN_RESPONSE_NOT_FOUND;
 
-						// clan allready ful
+						// clan already ful
 					}
 					else if (clan_get_member_count(clan) >= prefs_get_clan_max_members()) {
 						response_code = CLAN_RESPONSE_CLAN_FULL;
@@ -5724,7 +5746,7 @@ namespace pvpgn
 			}
 			offset += (std::strlen(username) + 1);
 			if (packet_get_size(packet) < offset + 1) {
-				eventlog(eventlog_level_error, __FUNCTION__, "[{}] got bad CLAN_INVITEREPLY packet (mising status)", conn_get_socket(c));
+				eventlog(eventlog_level_error, __FUNCTION__, "[{}] got bad CLAN_INVITEREPLY packet (missing status)", conn_get_socket(c));
 				return -1;
 			}
 			status = *((char*)packet_get_data_const(packet, offset, 1));
@@ -5768,7 +5790,6 @@ namespace pvpgn
 						clanmember_set_fullmember(member, 1);
 						if (conn_get_channel(c))
 						{
-							conn_update_w3_playerinfo(c);
 							channel_set_userflags(c);
 
 							std::string channelname("Clan " + std::string(clantag_to_str(clan_get_clantag(clan))));
@@ -5804,6 +5825,11 @@ namespace pvpgn
 				eventlog(eventlog_level_error, __FUNCTION__, "[{}] got bad SETEMAILREPLY packet", conn_get_socket(c));
 				return -1;
 			}
+			if (std::strlen(email) == 0)
+			{
+				eventlog(eventlog_level_error, __FUNCTION__, "[{}]userdeclinedtosetanemailaddress", conn_get_socket(c));
+				return 0;
+			}
 			if (!(account = conn_get_account(c))) {
 				eventlog(eventlog_level_error, __FUNCTION__, "got NULL account for connection in setemail request");
 				return -1;
@@ -5817,7 +5843,15 @@ namespace pvpgn
 				return 0;
 			}
 			else
+			{
+				account_set_email_verified(account, false);
 				eventlog(eventlog_level_info, __FUNCTION__, "[{}] init account \"{}\" email to \"{}\"", conn_get_socket(c), account_get_name(account), email);
+
+				if (prefs_get_verify_account_email() == 1)
+				{
+					account_generate_email_verification_code(account);
+				}
+			}
 			return 0;
 		}
 
@@ -5862,7 +5896,15 @@ namespace pvpgn
 				return 0;
 			}
 			else
+			{
+				account_set_email_verified(account, false);
 				eventlog(eventlog_level_info, __FUNCTION__, "[{}] change account \"{}\" email to \"{}\"", conn_get_socket(c), account_get_name(account), newaddr);
+
+				if (prefs_get_verify_account_email() == 1)
+				{
+					account_generate_email_verification_code(account);
+				}
+			}
 			return 0;
 		}
 

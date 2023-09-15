@@ -51,7 +51,7 @@
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>.\..\..\..\source\lib\;$(SolutionDir);.\..\..\..\source\src\;$(IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <IncludePath>.\..\..\..\source\lib\;$(SolutionDir);.\..\..\..\source\fmt\include;.\..\..\..\source\src\;$(IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <IncludePath>.\..\..\..\source\lib\;$(SolutionDir);.\..\..\..\source\src\;$(IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
@@ -72,6 +72,7 @@
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;UNICODE;_UNICODE;HAVE_CONFIG_H;DISABLED_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -126,6 +127,8 @@
     <ClInclude Include="..\..\..\source\src\compat\access.h" />
     <ClInclude Include="..\..\..\source\src\compat\gethostname.h" />
     <ClInclude Include="..\..\..\source\src\compat\gettimeofday.h" />
+    <ClInclude Include="..\..\..\source\src\compat\gmtime_s.h" />
+    <ClInclude Include="..\..\..\source\src\compat\localtime_s.h" />
     <ClInclude Include="..\..\..\source\src\compat\mkdir.h" />
     <ClInclude Include="..\..\..\source\src\compat\mmap.h" />
     <ClInclude Include="..\..\..\source\src\compat\netinet_in.h" />
@@ -148,6 +151,8 @@
     <ClInclude Include="..\..\..\source\src\compat\termios.h" />
     <ClInclude Include="..\..\..\source\src\compat\uname.h" />
     <ClCompile Include="..\..\..\source\src\compat\gettimeofday.cpp" />
+    <ClCompile Include="..\..\..\source\src\compat\gmtime_s.cpp" />
+    <ClCompile Include="..\..\..\source\src\compat\localtime_s.cpp" />
     <ClCompile Include="..\..\..\source\src\compat\mmap.cpp" />
     <ClCompile Include="..\..\..\source\src\compat\pdir.cpp" />
     <ClCompile Include="..\..\..\source\src\compat\pgetopt.cpp" />

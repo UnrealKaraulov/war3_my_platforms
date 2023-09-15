@@ -55,7 +55,7 @@
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>.\..\..\..\source\lib;\.\..\..\..\module\include\zlib\1.2.8\;.\..\..\..\module\include\mysql\5.7.13\;.\..\..\..\source\src\;$(SolutionDir);$(IncludePath)</IncludePath>
+    <IncludePath>.\..\..\..\source\lib;.\..\..\..\source\include\zlib;.\..\..\..\module\include\mysql\5.7.13;.\..\..\..\source\include;.\..\..\..\source\fmt\include;.\..\..\..\source\src;$(SolutionDir);$(IncludePath)</IncludePath>
     <LibraryPath>\.\..\..\..\module\include\zlib\1.2.8\;.\..\..\..\module\include\mysql\5.7.13\;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -95,7 +95,7 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\common\Release\common.lib;..\compat\Release\compat.lib;..\tinycdb\Release\tinycdb.lib;ws2_32.lib;.\..\..\..\module\include\zlib\1.2.8\zdll.lib;.\..\..\..\module\include\mysql\5.7.13\libmysql.lib;.\..\..\Release\fmt.lib</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\common\Release\common.lib;..\compat\Release\compat.lib;..\tinycdb\Release\tinycdb.lib;ws2_32.lib;.\..\..\..\module\include\zlib\1.2.8\zdll.lib;.\..\..\..\module\include\mysql\5.7.13\libmysql.lib;.\..\..\Release\fmt.lib;.\..\..\..\source\lib\curl\libcurl.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>../vs-project/src/common;../vs-project/src/common/$(Configuration);../vs-project/src/compat;../vs-project/src/compat/$(Configuration);../vs-project/src/win32;../vs-project/src/win32/$(Configuration);../vs-project/src/tinycdb;../vs-project/src/tinycdb/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
@@ -159,6 +159,7 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\source\src\bnetd\account_email_verification.h" />
     <ClInclude Include="..\..\..\source\src\bnetd\bcrypt.h" />
     <ClInclude Include="..\..\..\source\src\bnetd\BlockingSocket.h" />
     <ClInclude Include="..\..\..\source\src\bnetd\Definements.h" />
@@ -168,6 +169,7 @@
     <ClInclude Include="..\..\..\source\src\bnetd\FTPListParse.h" />
     <ClInclude Include="..\..\..\source\src\bnetd\httplib.h" />
     <ClInclude Include="..\..\..\source\src\bnetd\smart_ptr.h" />
+    <ClInclude Include="..\..\..\source\src\bnetd\smtp.h" />
     <ClInclude Include="..\..\..\source\src\win32\windump.h" />
     <ClInclude Include="..\..\..\source\src\bnetd\account.h" />
     <ClInclude Include="..\..\..\source\src\bnetd\account_wrap.h" />
@@ -255,12 +257,14 @@
     <ClInclude Include="..\..\..\source\src\win32\winmain.h" />
     <ClInclude Include="..\..\..\source\src\json\json.hpp" />
     <ClInclude Include="..\..\..\source\src\win32\console_resource.h" />
+    <ClCompile Include="..\..\..\source\src\bnetd\account_email_verification.cpp" />
     <ClCompile Include="..\..\..\source\src\bnetd\bcrypt.c" />
     <ClCompile Include="..\..\..\source\src\bnetd\BlockingSocket.cpp" />
     <ClCompile Include="..\..\..\source\src\bnetd\FTPClient.cpp" />
     <ClCompile Include="..\..\..\source\src\bnetd\FTPDataTypes.cpp" />
     <ClCompile Include="..\..\..\source\src\bnetd\FTPFileStatus.cpp" />
     <ClCompile Include="..\..\..\source\src\bnetd\FTPListParse.cpp" />
+    <ClCompile Include="..\..\..\source\src\bnetd\smtp.cpp" />
     <ClCompile Include="..\..\..\source\src\win32\windump.cpp" />
     <ClCompile Include="..\..\..\source\src\bnetd\account.cpp" />
     <ClCompile Include="..\..\..\source\src\bnetd\account_wrap.cpp" />

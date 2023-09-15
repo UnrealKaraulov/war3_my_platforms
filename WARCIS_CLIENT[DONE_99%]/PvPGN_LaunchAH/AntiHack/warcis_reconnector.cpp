@@ -313,7 +313,6 @@ CGProxy::CGProxy( const std::string & nServer, uint16_t nPort )
 	//CONSOLE_Print( "[Warcis_Rec] Listening for warcis_reconnector games on port [" + UTIL_ToString( m_Port ) + "]" );
 	//CONSOLE_Print( "[Warcis_Rec] Listening for warcraft 3 connections on port 6112" );
 	CONSOLE_Print( "[Warcis_Rec] " + m_Version );
-
 }
 
 CGProxy :: ~CGProxy( )
@@ -1445,7 +1444,7 @@ CWC3::CWC3( CTCPSocket *socket, string hostname, uint16_t port, string indicator
 	m_RemoteSocket = new CTCPClient( );
 	m_RemoteSocket->SetNoDelay( true );
 	m_RemoteSocket->Connect( string( ), hostname, port );
-	//CONSOLE_Print( "[Warcis_Rec] Initiating the two way connection" );
+	CONSOLE_Print( "[Warcis_Rec] Initiating the two way connection" );
 	m_GIndicator = indicator;
 	m_FirstPacket = true;
 	m_IsBNFTP = false;

@@ -1,8 +1,6 @@
 #ifndef PVPGN_CONFIG_H
 #define PVPGN_CONFIG_H
 
-//Windows config
-
 #define HAVE_FCNTL_H
 /* #undef HAVE_SYS_TIME_H */
 /* #undef HAVE_SYS_SELECT_H */

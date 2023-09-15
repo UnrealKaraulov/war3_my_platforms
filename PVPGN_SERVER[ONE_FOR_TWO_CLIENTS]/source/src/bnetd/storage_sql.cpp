@@ -128,7 +128,7 @@ namespace pvpgn
 
 			if (!sql)
 			{
-				eventlog(eventlog_level_error, __FUNCTION__, "sql layer not initilized");
+				eventlog(eventlog_level_error, __FUNCTION__, "sql layer not initialized");
 				return NULL;
 			}
 
@@ -152,7 +152,7 @@ namespace pvpgn
 				sql->free_result(result);
 				if (num > 0)
 				{
-					eventlog(eventlog_level_error, __FUNCTION__, "got existant username");
+					eventlog(eventlog_level_error, __FUNCTION__, "got existent username");
 					goto err_dup;
 				}
 			}
@@ -225,13 +225,12 @@ namespace pvpgn
 #ifndef SQL_ON_DEMAND
 			t_sql_res *result = NULL;
 			t_sql_row *row;
-			char **tab;
 			unsigned int uid;
 			unsigned int num_fields;
 
 			if (!sql)
 			{
-				eventlog(eventlog_level_error, __FUNCTION__, "sql layer not initilized");
+				eventlog(eventlog_level_error, __FUNCTION__, "sql layer not initialized");
 				return -1;
 			}
 
@@ -249,13 +248,7 @@ namespace pvpgn
 
 			uid = *((unsigned int *)info);
 
-			for (tab = const_cast<char **>(sql_tables); *tab; tab++)
-			{
-				// process only a table where the attribute is in
-				if (strcmp(ktab, *tab) != 0)
-					continue;
-
-				std::snprintf(query, sizeof(query), "SELECT * FROM %s%s WHERE " SQL_UID_FIELD "='%u'", tab_prefix, *tab, uid);
+			std::snprintf(query, sizeof(query), "SELECT * FROM %s%s WHERE " SQL_UID_FIELD "='%u'", tab_prefix, ktab, uid);
 				eventlog(eventlog_level_trace, __FUNCTION__, "{}", query);
 
 				if ((result = sql->query_res(query)) != NULL && sql->num_rows(result) == 1 && (num_fields = sql->num_fields(result)) > 1)
@@ -297,7 +290,7 @@ namespace pvpgn
 							continue;	/* its an NULL value sql field */
 
 						//              eventlog(eventlog_level_trace, __FUNCTION__, "read key (step2): '{}' val: '{}'", _db_add_tab(*tab, *fentry), unescape_chars(row[i]));
-						if (cb(_db_add_tab(*tab, *fentry), (output = unescape_chars(row[i])), data))
+					if (cb(_db_add_tab(ktab, *fentry), (output = unescape_chars(row[i])), data))
 							eventlog(eventlog_level_error, __FUNCTION__, "got error from callback on UID: {}", uid);
 						if (output)
 							xfree((void *)output);
@@ -308,7 +301,7 @@ namespace pvpgn
 				}
 				if (result)
 					sql->free_result(result);
-			}
+
 #endif				/* SQL_ON_DEMAND */
 			return 0;
 		}
@@ -324,7 +317,7 @@ namespace pvpgn
 
 			if (!sql)
 			{
-				eventlog(eventlog_level_error, __FUNCTION__, "sql layer not initilized");
+				eventlog(eventlog_level_error, __FUNCTION__, "sql layer not initialized");
 				return NULL;
 			}
 
@@ -355,7 +348,7 @@ namespace pvpgn
 
 			if (sql->num_rows(result) != 1)
 			{
-				//      eventlog(eventlog_level_debug, __FUNCTION__, "wrong numer of rows from query ({})", query);
+				//      eventlog(eventlog_level_debug, __FUNCTION__, "wrong number of rows from query ({})", query);
 				sql->free_result(result);
 				return NULL;
 			}
@@ -405,7 +398,7 @@ namespace pvpgn
 
 			if (!sql)
 			{
-				eventlog(eventlog_level_error, __FUNCTION__, "sql layer not initilized");
+				eventlog(eventlog_level_error, __FUNCTION__, "sql layer not initialized");
 				return -1;
 			}
 
@@ -508,7 +501,7 @@ namespace pvpgn
 			for (std::map<std::string, std::string>::iterator q = queries.begin(); q != queries.end(); ++q)
 			{
 				query_s = "UPDATE " + std::string(tab_prefix) + q->first + " SET ";
-				query_s += q->second.substr(0, q->second.size() - 2); // remove last reduntant comma at the end of the string with parameters
+				query_s += q->second.substr(0, q->second.size() - 2); // remove last redundant comma at the end of the string with parameters
 				query_s += " WHERE " SQL_UID_FIELD " = '" + std_to_string(uid) + "'";
 
 				if (!sql->query(query_s.c_str()))
@@ -533,7 +526,7 @@ namespace pvpgn
 
 			if (!sql)
 			{
-				eventlog(eventlog_level_error, __FUNCTION__, "sql layer not initilized");
+				eventlog(eventlog_level_error, __FUNCTION__, "sql layer not initialized");
 				return NULL;
 			}
 

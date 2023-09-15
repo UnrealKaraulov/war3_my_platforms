@@ -1111,17 +1111,29 @@ namespace pvpgn
 				bn_int_set( &packet->u.server_message.latency, conn_get_latency( me ) );
 				{
 					char const * tname;
-					char const * playerinfo;
 
 					tname = conn_get_chatcharname( me, dst );
 					packet_append_string( packet, tname );
 					conn_unget_chatcharname( me, tname );
-					if ( ( conn_get_clienttag( me ) == CLIENTTAG_WARCRAFT3_UINT ) || ( conn_get_clienttag( me ) == CLIENTTAG_WAR3XP_UINT ) )
-						playerinfo = conn_get_w3_playerinfo( me );
-					else playerinfo = conn_get_playerinfo( me );
 
-					if ( playerinfo == NULL ) { playerinfo = ""; }
-					packet_append_string( packet, playerinfo );
+					std::string playerinfo;
+					auto temp = conn_get_playerinfo(me);
+					if (temp.has_value())
+					{
+						playerinfo = temp.value();
+					}
+					else
+					{
+						// just send reversed client tag, it's better than nothing
+
+						t_clienttag client_tag = conn_get_clienttag(me);
+						char reversed_client_tag[5] = {};
+						tag_uint_to_revstr(reversed_client_tag, client_tag);
+
+						playerinfo = reversed_client_tag;
+					}
+
+					packet_append_string(packet, playerinfo.c_str());
 				}
 				break;
 			case message_type_join:
@@ -1138,22 +1150,31 @@ namespace pvpgn
 				else
 				{
 					char const * tname;
-					char const * playerinfo;
 
 					tname = conn_get_chatcharname( me, dst );
 
 
 					packet_append_string( packet, tname );
+					conn_unget_chatcharname(me, tname);
 
+					std::string playerinfo;
+					auto temp = conn_get_playerinfo(me);
+					if (temp.has_value())
+					{
+						playerinfo = temp.value();
+					}
+					else
+					{
+						// just send reversed client tag, it's better than nothing
 
-					conn_unget_chatcharname( me, tname );
+						t_clienttag client_tag = conn_get_clienttag(me);
+						char reversed_client_tag[5] = {};
+						tag_uint_to_revstr(reversed_client_tag, client_tag);
 
-					if ( ( conn_get_clienttag( me ) == CLIENTTAG_WARCRAFT3_UINT ) || ( conn_get_clienttag( me ) == CLIENTTAG_WAR3XP_UINT ) )
-						playerinfo = conn_get_w3_playerinfo( me );
-					else playerinfo = conn_get_playerinfo( me );
+						playerinfo = reversed_client_tag;
+					}
 
-					if ( playerinfo == NULL ) { playerinfo = ""; }
-					packet_append_string( packet, playerinfo );
+					packet_append_string(packet, playerinfo.c_str());
 				}
 				break;
 			case message_type_part:
@@ -1298,18 +1319,27 @@ namespace pvpgn
 				bn_int_set( &packet->u.server_message.latency, conn_get_latency( me ) );
 				{
 					char const * tname;
-					char const * playerinfo;
 
 					tname = conn_get_chatcharname( me, dst );
 					packet_append_string( packet, tname );
 					conn_unget_chatcharname( me, tname );
-					if ( ( conn_get_clienttag( me ) == CLIENTTAG_WARCRAFT3_UINT ) || ( conn_get_clienttag( me ) == CLIENTTAG_WAR3XP_UINT ) )
-						playerinfo = conn_get_w3_playerinfo( me );
-					else playerinfo = conn_get_playerinfo( me );
 
-					if ( playerinfo == NULL ) { playerinfo = ""; }
+					std::string playerinfo;
+					auto temp = conn_get_playerinfo(me);
+					if (temp.has_value())
+					{
+						playerinfo = temp.value();
+					}
+					else
+					{
+						// just send reversed client tag, it's better than nothing
 
-					packet_append_string( packet, playerinfo );
+						t_clienttag client_tag = conn_get_clienttag(me);
+						char reversed_client_tag[5] = {};
+						tag_uint_to_revstr(reversed_client_tag, client_tag);
+					}
+
+					packet_append_string(packet, playerinfo.c_str());
 				}
 				break;
 			case message_type_whisperack:

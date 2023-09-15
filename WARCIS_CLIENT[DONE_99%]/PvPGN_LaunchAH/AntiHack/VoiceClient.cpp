@@ -820,7 +820,7 @@ BOOL VoiceChangeMenuCallbackInitialized = FALSE;
 
 void VoiceChangeMenuCallback( )
 {
-	CONSOLE_Print( __FUNCTION__ + to_string( __LINE__ ) );
+	//CONSOLE_Print( __FUNCTION__ + to_string( __LINE__ ) );
 
 	//CONSOLE_Print( "Need delete!" );
 	for ( auto s : VoicePlayerFrameList[ 0 ] )

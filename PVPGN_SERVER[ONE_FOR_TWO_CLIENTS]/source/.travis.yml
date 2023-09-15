@@ -1,9 +1,11 @@
 os: linux
-dist: bionic
+dist: focal
 arch: amd64
 
 language: cpp
-compiler: gcc
+compiler:
+  - clang
+  - gcc
   
 branches:
   only:

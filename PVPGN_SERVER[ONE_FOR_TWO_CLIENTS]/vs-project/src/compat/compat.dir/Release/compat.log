@@ -1,0 +1,16 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets(2128,5): warning : The referenced project '../vs-project/ZERO_CHECK.vcxproj' does not exist.
+  gettimeofday.cpp
+  gmtime_s.cpp
+  localtime_s.cpp
+  mmap.cpp
+  pdir.cpp
+  pgetopt.cpp
+  psock.cpp
+  strcasecmp.cpp
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER[ONE_FOR_TWO_CLIENTS]\source\src\compat\gettimeofday.cpp(53,18): warning C4244: =: преобразование "time_t" в "long", возможна потеря данных
+  strdup.cpp
+  strerror.cpp
+  strncasecmp.cpp
+  strsep.cpp
+  uname.cpp
+  compat.vcxproj -> C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER[ONE_FOR_TWO_CLIENTS]\vs-project\src\vs-project\src\compat\Release\compat.lib

@@ -31,7 +31,7 @@ namespace Launcher
         // Тут изменить версию при обновлении лаунчера
         const uint Launcher_Version = 5;
 
-        string ServerAddrText = "176.118.24.67";
+        string ServerAddrText = "127.0.0.1";
 
 
         private readonly MaterialSkinManager materialSkinManager = null;

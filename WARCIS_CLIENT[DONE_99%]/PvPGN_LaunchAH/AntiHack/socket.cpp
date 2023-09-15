@@ -387,8 +387,11 @@ void CTCPClient :: Disconnect( )
 
 void CTCPClient :: Connect(   const std::string & localaddress, const std::string & address, uint16_t port )
 {
-	if( m_Socket == INVALID_SOCKET || m_HasError || m_Connecting || m_Connected )
+	if (m_Socket == INVALID_SOCKET || m_HasError || m_Connecting || m_Connected)
+	{
+		CONSOLE_Print( "[Warcis_Rec] TCP invalid" );
 		return;
+	}
 
 	if( !localaddress.empty( ) )
 	{
@@ -405,7 +408,7 @@ void CTCPClient :: Connect(   const std::string & localaddress, const std::strin
 		{
 			m_HasError = true;
 			m_Error = GetLastError( );
-			//CONSOLE_Print( "[TCPCLIENT] error (bind) - " + GetErrorString( ) );
+			CONSOLE_Print( "[Warcis_Rec] TCP  error (bind) - " + GetErrorString( ) );
 			return;
 		}
 	}
@@ -420,7 +423,7 @@ void CTCPClient :: Connect(   const std::string & localaddress, const std::strin
 	{
 		m_HasError = true;
 		// m_Error = h_error;
-		//CONSOLE_Print( "[TCPCLIENT] error (gethostbyname)" );
+		CONSOLE_Print( "[Warcis_Rec] TCP error (gethostbyname)" );
 		return;
 	}
 
@@ -440,7 +443,7 @@ void CTCPClient :: Connect(   const std::string & localaddress, const std::strin
 
 			m_HasError = true;
 			m_Error = GetLastError( );
-			//CONSOLE_Print( "[TCPCLIENT] error (connect) - " + GetErrorString( ) );
+			CONSOLE_Print( "[Warcis_Rec] TCP error (connect) - " + GetErrorString( ) );
 			return;
 		}
 	}

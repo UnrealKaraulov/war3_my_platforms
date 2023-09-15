@@ -38,35 +38,35 @@ namespace pvpgn
 
 		static struct {
 			/* files and paths */
-			char const * filedir;
-			char const * i18ndir;
-			char const * storage_path;
-			char const * logfile;
-			char const * loglevels;
-			char const * localizefile;
-			char const * motdfile;
-			char const * motdw3file;
-			char const * newsfile;
-			char const * channelfile;
-			char const * pidfile;
-			char const * adfile;
-			char const * topicfile;
-			char const * DBlayoutfile;
+			char const* filedir;
+			char const* i18ndir;
+			char const* storage_path;
+			char const* logfile;
+			char const* loglevels;
+			char const* localizefile;
+			char const* motdfile;
+			char const* motdw3file;
+			char const* newsfile;
+			char const* channelfile;
+			char const* pidfile;
+			char const* adfile;
+			char const* topicfile;
+			char const* DBlayoutfile;
 
 			unsigned int usersync;
 			unsigned int userflush;
 			unsigned int userflush_connected;
 			unsigned int userstep;
 
-			char const * servername;
-			char const * hostname;
+			char const* servername;
+			char const* hostname;
 
 			unsigned int track;
-			char const * location;
-			char const * description;
-			char const * url;
-			char const * contact_name;
-			char const * contact_email;
+			char const* location;
+			char const* description;
+			char const* url;
+			char const* contact_name;
+			char const* contact_email;
 			unsigned int latency;
 			unsigned int irc_latency;
 			unsigned int shutdown_delay;
@@ -80,27 +80,27 @@ namespace pvpgn
 			unsigned int hide_temp_channels;
 			unsigned int hide_addr;
 			unsigned int enable_conn_all;
-			char const * reportdir;
+			char const* reportdir;
 			unsigned int report_all_games;
 			unsigned int report_diablo_games;
-			char const * iconfile;
-			char const * war3_iconfile;
-			char const * star_iconfile;
-			char const * tosfile;
-			char const * mpqfile;
-			char const * trackaddrs;
-			char const * servaddrs;
-			char const * w3routeaddr;
-			char const * ircaddrs;
+			char const* iconfile;
+			char const* war3_iconfile;
+			char const* star_iconfile;
+			char const* tosfile;
+			char const* mpqfile;
+			char const* trackaddrs;
+			char const* servaddrs;
+			char const* w3routeaddr;
+			char const* ircaddrs;
 			unsigned int use_keepalive;
 			unsigned int udptest_port;
-			char const * ipbanfile;
+			char const* ipbanfile;
 			unsigned int disc_is_loss;
-			char const * helpfile;
-			char const * transfile;
+			char const* helpfile;
+			char const* transfile;
 			unsigned int chanlog;
-			char const * chanlogdir;
-			char const * userlogdir;
+			char const* chanlogdir;
+			char const* userlogdir;
 			unsigned int quota;
 			unsigned int quota_lines;
 			unsigned int quota_time;
@@ -108,49 +108,50 @@ namespace pvpgn
 			unsigned int quota_maxline;
 			unsigned int ladder_init_rating;
 			unsigned int quota_dobae;
-			char const * realmfile;
-			char const * issuefile;
+			char const* realmfile;
+			char const* issuefile;
 			//here
-			char const * whitelistfile;
-			char const * crcwhitelistfile;
-			char const * blacklistfile;
-			char const * effective_user;
-			char const * effective_group;
+			char const* whitelistfile;
+			char const* crcwhitelistfile;
+			char const* blacklistfile;
+			char const* effective_user;
+			char const* effective_group;
 			unsigned int nullmsg;
 			unsigned int mail_support;
 			unsigned int mail_quota;
-			char const * maildir;
-			char const * log_notice;
+			char const* maildir;
+			char const* log_notice;
 			unsigned int savebyname;
 			unsigned int allow_bad_version;
 			unsigned int allow_unknown_version;
-			char const * versioncheck_file;
+			char const* versioncheck_file;
 			unsigned int d2cs_version;
 			unsigned int allow_d2cs_setname;
 			unsigned int hashtable_size;
-			char const * telnetaddrs;
+			char const* telnetaddrs;
 			unsigned int ipban_check_int;
-			char const * version_exeinfo_match;
+			char const* version_exeinfo_match;
 			unsigned int version_exeinfo_maxdiff;
 			unsigned int max_concurrent_logins;
-			char const * mapsfile;
-			char const * xplevelfile;
-			char const * xpcalcfile;
+			char const* mapsfile;
+			char const* xplevelfile;
+			char const* xpcalcfile;
 			unsigned int initkill_timer;
 			unsigned int war3_ladder_update_secs;
 			unsigned int output_update_secs;
-			char const * ladderdir;
-			char const * statusdir;
+			char const* ladderdir;
+			char const* statusdir;
 			unsigned int XML_output_ladder;
 			unsigned int XML_status_output;
-			char const * account_allowed_symbols;
+			char const* account_allowed_symbols;
 			unsigned int account_force_username;
-			char const * command_groups_file;
-			char const * tournament_file;
-			char const * customicons_file;
-			char const * scriptdir;
-			char const * aliasfile;
-			char const * anongame_infos_file;
+			char const* command_groups_file;
+			char const* tournament_file;
+			char const* customicons_file;
+			char const* email_verification_file;
+			char const* scriptdir;
+			char const* aliasfile;
+			char const* anongame_infos_file;
 			unsigned int max_conns_per_IP;
 			unsigned int max_friends;
 			unsigned int clan_newer_time;
@@ -160,585 +161,644 @@ namespace pvpgn
 			unsigned int passfail_count;
 			unsigned int passfail_bantime;
 			unsigned int maxusers_per_channel;
-			char const * supportfile;
-			char const * allowed_clients;
-			char const * ladder_games;
-			char const * ladder_prefix;
+			unsigned int verify_account_email;
+			unsigned int verify_account_email_expiration;
+			char const* verify_account_email_from_address;
+			char const* verify_account_email_from_name;
+			char const* supportfile;
+			char const* allowed_clients;
+			char const* ladder_games;
+			char const* ladder_prefix;
 			unsigned int max_connections;
 			unsigned int packet_limit;
 			unsigned int sync_on_logoff;
-			char const * irc_network_name;
+			char const* irc_network_name;
 			unsigned int localize_by_country;
 			unsigned int log_commands;
-			char const * log_command_groups;
-			char const * log_command_list;
+			char const* log_command_groups;
+			char const* log_command_list;
+			char const* smtp_ca_cert_store_file;
+			char const* smtp_ca_cert_store_remote_url;
+			unsigned int smtp_ca_cert_store_fetch_interval;
+			char const* smtp_server_url;
+			unsigned int smtp_port;
+			char const* smtp_username;
+			char const* smtp_password;
 
-			char const * apiregaddrs;
-			char const * wolv1addrs;
-			char const * wolv2addrs;
-			char const * wgameresaddrs;
-			char const * woltimezone;
-			char const * wollongitude;
-			char const * wollatitude;
-			char const * wol_autoupdate_serverhost;
-			char const * wol_autoupdate_username;
-			char const * wol_autoupdate_password;
+			char const* apiregaddrs;
+			char const* wolv1addrs;
+			char const* wolv2addrs;
+			char const* wgameresaddrs;
+			char const* woltimezone;
+			char const* wollongitude;
+			char const* wollatitude;
+			char const* wol_autoupdate_serverhost;
+			char const* wol_autoupdate_username;
+			char const* wol_autoupdate_password;
 		} prefs_runtime_config;
 
-		static int conf_set_filedir(const char *valstr);
-		static const char *conf_get_filedir(void);
+		static int conf_set_filedir(const char* valstr);
+		static const char* conf_get_filedir(void);
 		static int conf_setdef_filedir(void);
 
-		static int conf_set_i18ndir(const char *valstr);
-		static const char *conf_get_i18ndir(void);
+		static int conf_set_i18ndir(const char* valstr);
+		static const char* conf_get_i18ndir(void);
 		static int conf_setdef_i18ndir(void);
 
-		static int conf_set_storage_path(const char *valstr);
-		static const char *conf_get_storage_path(void);
+		static int conf_set_storage_path(const char* valstr);
+		static const char* conf_get_storage_path(void);
 		static int conf_setdef_storage_path(void);
 
-		static int conf_set_logfile(const char *valstr);
-		static const char *conf_get_logfile(void);
+		static int conf_set_logfile(const char* valstr);
+		static const char* conf_get_logfile(void);
 		static int conf_setdef_logfile(void);
 
-		static int conf_set_loglevels(const char *valstr);
-		static const char *conf_get_loglevels(void);
+		static int conf_set_loglevels(const char* valstr);
+		static const char* conf_get_loglevels(void);
 		static int conf_setdef_loglevels(void);
 
-		static int conf_set_localizefile(const char *valstr);
-		static const char *conf_get_localizefile(void);
+		static int conf_set_localizefile(const char* valstr);
+		static const char* conf_get_localizefile(void);
 		static int conf_setdef_localizefile(void);
 
-		static int conf_set_motdfile(const char *valstr);
-		static const char *conf_get_motdfile(void);
+		static int conf_set_motdfile(const char* valstr);
+		static const char* conf_get_motdfile(void);
 		static int conf_setdef_motdfile(void);
 
-		static int conf_set_motdw3file(const char *valstr);
-		static const char *conf_get_motdw3file(void);
+		static int conf_set_motdw3file(const char* valstr);
+		static const char* conf_get_motdw3file(void);
 		static int conf_setdef_motdw3file(void);
 
-		static int conf_set_newsfile(const char *valstr);
-		static const char *conf_get_newsfile(void);
+		static int conf_set_newsfile(const char* valstr);
+		static const char* conf_get_newsfile(void);
 		static int conf_setdef_newsfile(void);
 
-		static int conf_set_channelfile(const char *valstr);
-		static const char *conf_get_channelfile(void);
+		static int conf_set_channelfile(const char* valstr);
+		static const char* conf_get_channelfile(void);
 		static int conf_setdef_channelfile(void);
 
-		static int conf_set_pidfile(const char *valstr);
-		static const char *conf_get_pidfile(void);
+		static int conf_set_pidfile(const char* valstr);
+		static const char* conf_get_pidfile(void);
 		static int conf_setdef_pidfile(void);
 
-		static int conf_set_adfile(const char *valstr);
-		static const char *conf_get_adfile(void);
+		static int conf_set_adfile(const char* valstr);
+		static const char* conf_get_adfile(void);
 		static int conf_setdef_adfile(void);
 
-		static int conf_set_topicfile(const char *valstr);
-		static const char *conf_get_topicfile(void);
+		static int conf_set_topicfile(const char* valstr);
+		static const char* conf_get_topicfile(void);
 		static int conf_setdef_topicfile(void);
 
-		static int conf_set_DBlayoutfile(const char *valstr);
-		static const char *conf_get_DBlayoutfile(void);
+		static int conf_set_DBlayoutfile(const char* valstr);
+		static const char* conf_get_DBlayoutfile(void);
 		static int conf_setdef_DBlayoutfile(void);
 
-		static int conf_set_supportfile(const char *valstr);
-		static const char *conf_get_supportfile(void);
+		static int conf_set_supportfile(const char* valstr);
+		static const char* conf_get_supportfile(void);
 		static int conf_setdef_supportfile(void);
 
-		static int conf_set_usersync(const char *valstr);
-		static const char *conf_get_usersync(void);
+		static int conf_set_usersync(const char* valstr);
+		static const char* conf_get_usersync(void);
 		static int conf_setdef_usersync(void);
 
-		static int conf_set_userflush(const char *valstr);
-		static const char *conf_get_userflush(void);
+		static int conf_set_userflush(const char* valstr);
+		static const char* conf_get_userflush(void);
 		static int conf_setdef_userflush(void);
 
-		static int conf_set_userflush_connected(const char *valstr);
-		static const char *conf_get_userflush_connected(void);
+		static int conf_set_userflush_connected(const char* valstr);
+		static const char* conf_get_userflush_connected(void);
 		static int conf_setdef_userflush_connected(void);
 
-		static int conf_set_userstep(const char *valstr);
-		static const char *conf_get_userstep(void);
+		static int conf_set_userstep(const char* valstr);
+		static const char* conf_get_userstep(void);
 		static int conf_setdef_userstep(void);
 
-		static int conf_set_servername(const char *valstr);
-		static const char *conf_get_servername(void);
+		static int conf_set_servername(const char* valstr);
+		static const char* conf_get_servername(void);
 		static int conf_setdef_servername(void);
 
-		static int conf_set_hostname(const char *valstr);
-		static const char *conf_get_hostname(void);
+		static int conf_set_hostname(const char* valstr);
+		static const char* conf_get_hostname(void);
 		static int conf_setdef_hostname(void);
 
-		static int conf_set_track(const char *valstr);
-		static const char *conf_get_track(void);
+		static int conf_set_track(const char* valstr);
+		static const char* conf_get_track(void);
 		static int conf_setdef_track(void);
 
-		static int conf_set_location(const char *valstr);
-		static const char *conf_get_location(void);
+		static int conf_set_location(const char* valstr);
+		static const char* conf_get_location(void);
 		static int conf_setdef_location(void);
 
-		static int conf_set_description(const char *valstr);
-		static const char *conf_get_description(void);
+		static int conf_set_description(const char* valstr);
+		static const char* conf_get_description(void);
 		static int conf_setdef_description(void);
 
-		static int conf_set_url(const char *valstr);
-		static const char *conf_get_url(void);
+		static int conf_set_url(const char* valstr);
+		static const char* conf_get_url(void);
 		static int conf_setdef_url(void);
 
-		static int conf_set_contact_name(const char *valstr);
-		static const char *conf_get_contact_name(void);
+		static int conf_set_contact_name(const char* valstr);
+		static const char* conf_get_contact_name(void);
 		static int conf_setdef_contact_name(void);
 
-		static int conf_set_contact_email(const char *valstr);
-		static const char *conf_get_contact_email(void);
+		static int conf_set_contact_email(const char* valstr);
+		static const char* conf_get_contact_email(void);
 		static int conf_setdef_contact_email(void);
 
-		static int conf_set_latency(const char *valstr);
-		static const char *conf_get_latency(void);
+		static int conf_set_latency(const char* valstr);
+		static const char* conf_get_latency(void);
 		static int conf_setdef_latency(void);
 
-		static int conf_set_irc_latency(const char *valstr);
-		static const char *conf_get_irc_latency(void);
+		static int conf_set_irc_latency(const char* valstr);
+		static const char* conf_get_irc_latency(void);
 		static int conf_setdef_irc_latency(void);
 
-		static int conf_set_shutdown_delay(const char *valstr);
-		static const char *conf_get_shutdown_delay(void);
+		static int conf_set_shutdown_delay(const char* valstr);
+		static const char* conf_get_shutdown_delay(void);
 		static int conf_setdef_shutdown_delay(void);
 
-		static int conf_set_shutdown_decr(const char *valstr);
-		static const char *conf_get_shutdown_decr(void);
+		static int conf_set_shutdown_decr(const char* valstr);
+		static const char* conf_get_shutdown_decr(void);
 		static int conf_setdef_shutdown_decr(void);
 
-		static int conf_set_new_accounts(const char *valstr);
-		static const char *conf_get_new_accounts(void);
+		static int conf_set_new_accounts(const char* valstr);
+		static const char* conf_get_new_accounts(void);
 		static int conf_setdef_new_accounts(void);
 
-		static int conf_set_max_accounts(const char *valstr);
-		static const char *conf_get_max_accounts(void);
+		static int conf_set_max_accounts(const char* valstr);
+		static const char* conf_get_max_accounts(void);
 		static int conf_setdef_max_accounts(void);
 
-		static int conf_set_kick_old_login(const char *valstr);
-		static const char *conf_get_kick_old_login(void);
+		static int conf_set_kick_old_login(const char* valstr);
+		static const char* conf_get_kick_old_login(void);
 		static int conf_setdef_kick_old_login(void);
 
-		static int conf_set_ask_new_channel(const char *valstr);
-		static const char *conf_get_ask_new_channel(void);
+		static int conf_set_ask_new_channel(const char* valstr);
+		static const char* conf_get_ask_new_channel(void);
 		static int conf_setdef_ask_new_channel(void);
 
-		static int conf_set_hide_pass_games(const char *valstr);
-		static const char *conf_get_hide_pass_games(void);
+		static int conf_set_hide_pass_games(const char* valstr);
+		static const char* conf_get_hide_pass_games(void);
 		static int conf_setdef_hide_pass_games(void);
 
-		static int conf_set_hide_started_games(const char *valstr);
-		static const char *conf_get_hide_started_games(void);
+		static int conf_set_hide_started_games(const char* valstr);
+		static const char* conf_get_hide_started_games(void);
 		static int conf_setdef_hide_started_games(void);
 
-		static int conf_set_hide_temp_channels(const char *valstr);
-		static const char *conf_get_hide_temp_channels(void);
+		static int conf_set_hide_temp_channels(const char* valstr);
+		static const char* conf_get_hide_temp_channels(void);
 		static int conf_setdef_hide_temp_channels(void);
 
-		static int conf_set_hide_addr(const char *valstr);
-		static const char *conf_get_hide_addr(void);
+		static int conf_set_hide_addr(const char* valstr);
+		static const char* conf_get_hide_addr(void);
 		static int conf_setdef_hide_addr(void);
 
-		static int conf_set_enable_conn_all(const char *valstr);
-		static const char *conf_get_enable_conn_all(void);
+		static int conf_set_enable_conn_all(const char* valstr);
+		static const char* conf_get_enable_conn_all(void);
 		static int conf_setdef_enable_conn_all(void);
 
-		static int conf_set_reportdir(const char *valstr);
-		static const char *conf_get_reportdir(void);
+		static int conf_set_reportdir(const char* valstr);
+		static const char* conf_get_reportdir(void);
 		static int conf_setdef_reportdir(void);
 
-		static int conf_set_report_all_games(const char *valstr);
-		static const char *conf_get_report_all_games(void);
+		static int conf_set_report_all_games(const char* valstr);
+		static const char* conf_get_report_all_games(void);
 		static int conf_setdef_report_all_games(void);
 
-		static int conf_set_report_diablo_games(const char *valstr);
-		static const char *conf_get_report_diablo_games(void);
+		static int conf_set_report_diablo_games(const char* valstr);
+		static const char* conf_get_report_diablo_games(void);
 		static int conf_setdef_report_diablo_games(void);
 
-		static int conf_set_iconfile(const char *valstr);
-		static const char *conf_get_iconfile(void);
+		static int conf_set_iconfile(const char* valstr);
+		static const char* conf_get_iconfile(void);
 		static int conf_setdef_iconfile(void);
 
-		static int conf_set_war3_iconfile(const char *valstr);
-		static const char *conf_get_war3_iconfile(void);
+		static int conf_set_war3_iconfile(const char* valstr);
+		static const char* conf_get_war3_iconfile(void);
 		static int conf_setdef_war3_iconfile(void);
 
-		static int conf_set_star_iconfile(const char *valstr);
-		static const char *conf_get_star_iconfile(void);
+		static int conf_set_star_iconfile(const char* valstr);
+		static const char* conf_get_star_iconfile(void);
 		static int conf_setdef_star_iconfile(void);
 
-		static int conf_set_tosfile(const char *valstr);
-		static const char *conf_get_tosfile(void);
+		static int conf_set_tosfile(const char* valstr);
+		static const char* conf_get_tosfile(void);
 		static int conf_setdef_tosfile(void);
 
-		static int conf_set_mpqfile(const char *valstr);
-		static const char *conf_get_mpqfile(void);
+		static int conf_set_mpqfile(const char* valstr);
+		static const char* conf_get_mpqfile(void);
 		static int conf_setdef_mpqfile(void);
 
-		static int conf_set_trackaddrs(const char *valstr);
-		static const char *conf_get_trackaddrs(void);
+		static int conf_set_trackaddrs(const char* valstr);
+		static const char* conf_get_trackaddrs(void);
 		static int conf_setdef_trackaddrs(void);
 
-		static int conf_set_servaddrs(const char *valstr);
-		static const char *conf_get_servaddrs(void);
+		static int conf_set_servaddrs(const char* valstr);
+		static const char* conf_get_servaddrs(void);
 		static int conf_setdef_servaddrs(void);
 
-		static int conf_set_w3routeaddr(const char *valstr);
-		static const char *conf_get_w3routeaddr(void);
+		static int conf_set_w3routeaddr(const char* valstr);
+		static const char* conf_get_w3routeaddr(void);
 		static int conf_setdef_w3routeaddr(void);
 
-		static int conf_set_ircaddrs(const char *valstr);
-		static const char *conf_get_ircaddrs(void);
+		static int conf_set_ircaddrs(const char* valstr);
+		static const char* conf_get_ircaddrs(void);
 		static int conf_setdef_ircaddrs(void);
 
-		static int conf_set_use_keepalive(const char *valstr);
-		static const char *conf_get_use_keepalive(void);
+		static int conf_set_use_keepalive(const char* valstr);
+		static const char* conf_get_use_keepalive(void);
 		static int conf_setdef_use_keepalive(void);
 
-		static int conf_set_udptest_port(const char *valstr);
-		static const char *conf_get_udptest_port(void);
+		static int conf_set_udptest_port(const char* valstr);
+		static const char* conf_get_udptest_port(void);
 		static int conf_setdef_udptest_port(void);
 
-		static int conf_set_ipbanfile(const char *valstr);
-		static const char *conf_get_ipbanfile(void);
+		static int conf_set_ipbanfile(const char* valstr);
+		static const char* conf_get_ipbanfile(void);
 		static int conf_setdef_ipbanfile(void);
 
-		static int conf_set_disc_is_loss(const char *valstr);
-		static const char *conf_get_disc_is_loss(void);
+		static int conf_set_disc_is_loss(const char* valstr);
+		static const char* conf_get_disc_is_loss(void);
 		static int conf_setdef_disc_is_loss(void);
 
-		static int conf_set_helpfile(const char *valstr);
-		static const char *conf_get_helpfile(void);
+		static int conf_set_helpfile(const char* valstr);
+		static const char* conf_get_helpfile(void);
 		static int conf_setdef_helpfile(void);
 
-		static int conf_set_transfile(const char *valstr);
-		static const char *conf_get_transfile(void);
+		static int conf_set_transfile(const char* valstr);
+		static const char* conf_get_transfile(void);
 		static int conf_setdef_transfile(void);
 
-		static int conf_set_chanlog(const char *valstr);
-		static const char *conf_get_chanlog(void);
+		static int conf_set_chanlog(const char* valstr);
+		static const char* conf_get_chanlog(void);
 		static int conf_setdef_chanlog(void);
 
-		static int conf_set_chanlogdir(const char *valstr);
-		static const char *conf_get_chanlogdir(void);
+		static int conf_set_chanlogdir(const char* valstr);
+		static const char* conf_get_chanlogdir(void);
 		static int conf_setdef_chanlogdir(void);
 
-		static int conf_set_userlogdir(const char *valstr);
-		static const char *conf_get_userlogdir(void);
+		static int conf_set_userlogdir(const char* valstr);
+		static const char* conf_get_userlogdir(void);
 		static int conf_setdef_userlogdir(void);
 
-		static int conf_set_quota(const char *valstr);
-		static const char *conf_get_quota(void);
+		static int conf_set_quota(const char* valstr);
+		static const char* conf_get_quota(void);
 		static int conf_setdef_quota(void);
 
-		static int conf_set_quota_lines(const char *valstr);
-		static const char *conf_get_quota_lines(void);
+		static int conf_set_quota_lines(const char* valstr);
+		static const char* conf_get_quota_lines(void);
 		static int conf_setdef_quota_lines(void);
 
-		static int conf_set_quota_time(const char *valstr);
-		static const char *conf_get_quota_time(void);
+		static int conf_set_quota_time(const char* valstr);
+		static const char* conf_get_quota_time(void);
 		static int conf_setdef_quota_time(void);
 
-		static int conf_set_quota_wrapline(const char *valstr);
-		static const char *conf_get_quota_wrapline(void);
+		static int conf_set_quota_wrapline(const char* valstr);
+		static const char* conf_get_quota_wrapline(void);
 		static int conf_setdef_quota_wrapline(void);
 
-		static int conf_set_quota_maxline(const char *valstr);
-		static const char *conf_get_quota_maxline(void);
+		static int conf_set_quota_maxline(const char* valstr);
+		static const char* conf_get_quota_maxline(void);
 		static int conf_setdef_quota_maxline(void);
 
-		static int conf_set_ladder_init_rating(const char *valstr);
-		static const char *conf_get_ladder_init_rating(void);
+		static int conf_set_ladder_init_rating(const char* valstr);
+		static const char* conf_get_ladder_init_rating(void);
 		static int conf_setdef_ladder_init_rating(void);
 
-		static int conf_set_quota_dobae(const char *valstr);
-		static const char *conf_get_quota_dobae(void);
+		static int conf_set_quota_dobae(const char* valstr);
+		static const char* conf_get_quota_dobae(void);
 		static int conf_setdef_quota_dobae(void);
 
-		static int conf_set_realmfile(const char *valstr);
-		static const char *conf_get_realmfile(void);
+		static int conf_set_realmfile(const char* valstr);
+		static const char* conf_get_realmfile(void);
 		static int conf_setdef_realmfile(void);
 
-		static int conf_set_issuefile( const char *valstr );
-		static const char *conf_get_issuefile( void );
-		static int conf_setdef_issuefile( void );
-//here
-		static int conf_set_whitelistfile( const char *valstr );
-		static const char *conf_get_whitelistfile( void );
-		static int conf_setdef_whitelistfile( void );
+		static int conf_set_issuefile(const char* valstr);
+		static const char* conf_get_issuefile(void);
+		static int conf_setdef_issuefile(void);
+		//here
+		static int conf_set_whitelistfile(const char* valstr);
+		static const char* conf_get_whitelistfile(void);
+		static int conf_setdef_whitelistfile(void);
 
-		static int conf_set_crcwhitelistfile( const char *valstr );
-		static const char *conf_get_crcwhitelistfile( void );
-		static int conf_setdef_crcwhitelistfile( void );
+		static int conf_set_crcwhitelistfile(const char* valstr);
+		static const char* conf_get_crcwhitelistfile(void);
+		static int conf_setdef_crcwhitelistfile(void);
 
-		static int conf_set_blacklistfile( const char *valstr );
-		static const char *conf_get_blacklistfile( void );
-		static int conf_setdef_blacklistfile( void );
+		static int conf_set_blacklistfile(const char* valstr);
+		static const char* conf_get_blacklistfile(void);
+		static int conf_setdef_blacklistfile(void);
 
-		static int conf_set_effective_user(const char *valstr);
-		static const char *conf_get_effective_user(void);
+		static int conf_set_effective_user(const char* valstr);
+		static const char* conf_get_effective_user(void);
 		static int conf_setdef_effective_user(void);
 
-		static int conf_set_effective_group(const char *valstr);
-		static const char *conf_get_effective_group(void);
+		static int conf_set_effective_group(const char* valstr);
+		static const char* conf_get_effective_group(void);
 		static int conf_setdef_effective_group(void);
 
-		static int conf_set_nullmsg(const char *valstr);
-		static const char *conf_get_nullmsg(void);
+		static int conf_set_nullmsg(const char* valstr);
+		static const char* conf_get_nullmsg(void);
 		static int conf_setdef_nullmsg(void);
 
-		static int conf_set_mail_support(const char *valstr);
-		static const char *conf_get_mail_support(void);
+		static int conf_set_mail_support(const char* valstr);
+		static const char* conf_get_mail_support(void);
 		static int conf_setdef_mail_support(void);
 
-		static int conf_set_mail_quota(const char *valstr);
-		static const char *conf_get_mail_quota(void);
+		static int conf_set_mail_quota(const char* valstr);
+		static const char* conf_get_mail_quota(void);
 		static int conf_setdef_mail_quota(void);
 
-		static int conf_set_maildir(const char *valstr);
-		static const char *conf_get_maildir(void);
+		static int conf_set_maildir(const char* valstr);
+		static const char* conf_get_maildir(void);
 		static int conf_setdef_maildir(void);
 
-		static int conf_set_log_notice(const char *valstr);
-		static const char *conf_get_log_notice(void);
+		static int conf_set_log_notice(const char* valstr);
+		static const char* conf_get_log_notice(void);
 		static int conf_setdef_log_notice(void);
 
-		static int conf_set_savebyname(const char *valstr);
-		static const char *conf_get_savebyname(void);
+		static int conf_set_savebyname(const char* valstr);
+		static const char* conf_get_savebyname(void);
 		static int conf_setdef_savebyname(void);
 
-		static int conf_set_allow_bad_version(const char *valstr);
-		static const char *conf_get_allow_bad_version(void);
+		static int conf_set_allow_bad_version(const char* valstr);
+		static const char* conf_get_allow_bad_version(void);
 		static int conf_setdef_allow_bad_version(void);
 
-		static int conf_set_allow_unknown_version(const char *valstr);
-		static const char *conf_get_allow_unknown_version(void);
+		static int conf_set_allow_unknown_version(const char* valstr);
+		static const char* conf_get_allow_unknown_version(void);
 		static int conf_setdef_allow_unknown_version(void);
 
-		static int conf_set_versioncheck_file(const char *valstr);
-		static const char *conf_get_versioncheck_file(void);
+		static int conf_set_versioncheck_file(const char* valstr);
+		static const char* conf_get_versioncheck_file(void);
 		static int conf_setdef_versioncheck_file(void);
 
-		static int conf_set_d2cs_version(const char *valstr);
-		static const char *conf_get_d2cs_version(void);
+		static int conf_set_d2cs_version(const char* valstr);
+		static const char* conf_get_d2cs_version(void);
 		static int conf_setdef_d2cs_version(void);
 
-		static int conf_set_allow_d2cs_setname(const char *valstr);
-		static const char *conf_get_allow_d2cs_setname(void);
+		static int conf_set_allow_d2cs_setname(const char* valstr);
+		static const char* conf_get_allow_d2cs_setname(void);
 		static int conf_setdef_allow_d2cs_setname(void);
 
-		static int conf_set_hashtable_size(const char *valstr);
-		static const char *conf_get_hashtable_size(void);
+		static int conf_set_hashtable_size(const char* valstr);
+		static const char* conf_get_hashtable_size(void);
 		static int conf_setdef_hashtable_size(void);
 
-		static int conf_set_telnetaddrs(const char *valstr);
-		static const char *conf_get_telnetaddrs(void);
+		static int conf_set_telnetaddrs(const char* valstr);
+		static const char* conf_get_telnetaddrs(void);
 		static int conf_setdef_telnetaddrs(void);
 
-		static int conf_set_ipban_check_int(const char *valstr);
-		static const char *conf_get_ipban_check_int(void);
+		static int conf_set_ipban_check_int(const char* valstr);
+		static const char* conf_get_ipban_check_int(void);
 		static int conf_setdef_ipban_check_int(void);
 
-		static int conf_set_max_concurrent_logins(const char *valstr);
-		static const char *conf_get_max_concurrent_logins(void);
+		static int conf_set_max_concurrent_logins(const char* valstr);
+		static const char* conf_get_max_concurrent_logins(void);
 		static int conf_setdef_max_concurrent_logins(void);
 
-		static int conf_set_mapsfile(const char *valstr);
-		static const char *conf_get_mapsfile(void);
+		static int conf_set_mapsfile(const char* valstr);
+		static const char* conf_get_mapsfile(void);
 		static int conf_setdef_mapsfile(void);
 
-		static int conf_set_xplevelfile(const char *valstr);
-		static const char *conf_get_xplevelfile(void);
+		static int conf_set_xplevelfile(const char* valstr);
+		static const char* conf_get_xplevelfile(void);
 		static int conf_setdef_xplevelfile(void);
 
-		static int conf_set_xpcalcfile(const char *valstr);
-		static const char *conf_get_xpcalcfile(void);
+		static int conf_set_xpcalcfile(const char* valstr);
+		static const char* conf_get_xpcalcfile(void);
 		static int conf_setdef_xpcalcfile(void);
 
-		static int conf_set_initkill_timer(const char *valstr);
-		static const char *conf_get_initkill_timer(void);
+		static int conf_set_initkill_timer(const char* valstr);
+		static const char* conf_get_initkill_timer(void);
 		static int conf_setdef_initkill_timer(void);
 
-		static int conf_set_war3_ladder_update_secs(const char *valstr);
-		static const char *conf_get_war3_ladder_update_secs(void);
+		static int conf_set_war3_ladder_update_secs(const char* valstr);
+		static const char* conf_get_war3_ladder_update_secs(void);
 		static int conf_setdef_war3_ladder_update_secs(void);
 
-		static int conf_set_output_update_secs(const char *valstr);
-		static const char *conf_get_output_update_secs(void);
+		static int conf_set_output_update_secs(const char* valstr);
+		static const char* conf_get_output_update_secs(void);
 		static int conf_setdef_output_update_secs(void);
 
-		static int conf_set_ladderdir(const char *valstr);
-		static const char *conf_get_ladderdir(void);
+		static int conf_set_ladderdir(const char* valstr);
+		static const char* conf_get_ladderdir(void);
 		static int conf_setdef_ladderdir(void);
 
-		static int conf_set_statusdir(const char *valstr);
-		static const char *conf_get_statusdir(void);
+		static int conf_set_statusdir(const char* valstr);
+		static const char* conf_get_statusdir(void);
 		static int conf_setdef_statusdir(void);
 
-		static int conf_set_XML_output_ladder(const char *valstr);
-		static const char *conf_get_XML_output_ladder(void);
+		static int conf_set_XML_output_ladder(const char* valstr);
+		static const char* conf_get_XML_output_ladder(void);
 		static int conf_setdef_XML_output_ladder(void);
 
-		static int conf_set_XML_status_output(const char *valstr);
-		static const char *conf_get_XML_status_output(void);
+		static int conf_set_XML_status_output(const char* valstr);
+		static const char* conf_get_XML_status_output(void);
 		static int conf_setdef_XML_status_output(void);
 
-		static int conf_set_account_allowed_symbols(const char *valstr);
-		static const char *conf_get_account_allowed_symbols(void);
+		static int conf_set_account_allowed_symbols(const char* valstr);
+		static const char* conf_get_account_allowed_symbols(void);
 		static int conf_setdef_account_allowed_symbols(void);
 
-		static int conf_set_account_force_username(const char *valstr);
-		static const char *conf_get_account_force_username(void);
+		static int conf_set_account_force_username(const char* valstr);
+		static const char* conf_get_account_force_username(void);
 		static int conf_setdef_account_force_username(void);
 
-		static int conf_set_command_groups_file(const char *valstr);
-		static const char *conf_get_command_groups_file(void);
+		static int conf_set_command_groups_file(const char* valstr);
+		static const char* conf_get_command_groups_file(void);
 		static int conf_setdef_command_groups_file(void);
 
-		static int conf_set_tournament_file(const char *valstr);
-		static const char *conf_get_tournament_file(void);
+		static int conf_set_tournament_file(const char* valstr);
+		static const char* conf_get_tournament_file(void);
 		static int conf_setdef_tournament_file(void);
 
-		static int conf_set_customicons_file(const char *valstr);
-		static const char *conf_get_customicons_file(void);
+		static int conf_set_customicons_file(const char* valstr);
+		static const char* conf_get_customicons_file(void);
 		static int conf_setdef_customicons_file(void);
 
-		static int conf_set_scriptdir(const char *valstr);
-		static const char *conf_get_scriptdir(void);
+		static int conf_set_email_verification_file(const char* valstr);
+		static const char* conf_get_email_verification_file(void);
+		static int conf_setdef_email_verification_file(void);
+
+		static int conf_set_scriptdir(const char* valstr);
+		static const char* conf_get_scriptdir(void);
 		static int conf_setdef_scriptdir(void);
 
-		static int conf_set_aliasfile(const char *valstr);
-		static const char *conf_get_aliasfile(void);
+		static int conf_set_aliasfile(const char* valstr);
+		static const char* conf_get_aliasfile(void);
 		static int conf_setdef_aliasfile(void);
 
-		static int conf_set_anongame_infos_file(const char *valstr);
-		static const char *conf_get_anongame_infos_file(void);
+		static int conf_set_anongame_infos_file(const char* valstr);
+		static const char* conf_get_anongame_infos_file(void);
 		static int conf_setdef_anongame_infos_file(void);
 
-		static int conf_set_max_conns_per_IP(const char *valstr);
-		static const char *conf_get_max_conns_per_IP(void);
+		static int conf_set_max_conns_per_IP(const char* valstr);
+		static const char* conf_get_max_conns_per_IP(void);
 		static int conf_setdef_max_conns_per_IP(void);
 
-		static int conf_set_max_friends(const char *valstr);
-		static const char *conf_get_max_friends(void);
+		static int conf_set_max_friends(const char* valstr);
+		static const char* conf_get_max_friends(void);
 		static int conf_setdef_max_friends(void);
 
-		static int conf_set_clan_newer_time(const char *valstr);
-		static const char *conf_get_clan_newer_time(void);
+		static int conf_set_clan_newer_time(const char* valstr);
+		static const char* conf_get_clan_newer_time(void);
 		static int conf_setdef_clan_newer_time(void);
 
-		static int conf_set_clan_max_members(const char *valstr);
-		static const char *conf_get_clan_max_members(void);
+		static int conf_set_clan_max_members(const char* valstr);
+		static const char* conf_get_clan_max_members(void);
 		static int conf_setdef_clan_max_members(void);
 
-		static int conf_set_clan_channel_default_private(const char *valstr);
-		static const char *conf_get_clan_channel_default_private(void);
+		static int conf_set_clan_channel_default_private(const char* valstr);
+		static const char* conf_get_clan_channel_default_private(void);
 		static int conf_setdef_clan_channel_default_private(void);
 
-		static int conf_set_clan_min_invites(const char *valstr);
-		static const char *conf_get_clan_min_invites(void);
+		static int conf_set_clan_min_invites(const char* valstr);
+		static const char* conf_get_clan_min_invites(void);
 		static int conf_setdef_clan_min_invites(void);
 
-		static int conf_set_passfail_count(const char *valstr);
-		static const char *conf_get_passfail_count(void);
+		static int conf_set_passfail_count(const char* valstr);
+		static const char* conf_get_passfail_count(void);
 		static int conf_setdef_passfail_count(void);
 
-		static int conf_set_passfail_bantime(const char *valstr);
-		static const char *conf_get_passfail_bantime(void);
+		static int conf_set_passfail_bantime(const char* valstr);
+		static const char* conf_get_passfail_bantime(void);
 		static int conf_setdef_passfail_bantime(void);
 
-		static int conf_set_maxusers_per_channel(const char *valstr);
-		static const char *conf_get_maxusers_per_channel(void);
+		static int conf_set_maxusers_per_channel(const char* valstr);
+		static const char* conf_get_maxusers_per_channel(void);
 		static int conf_setdef_maxusers_per_channel(void);
 
-		static int conf_set_allowed_clients(const char *valstr);
-		static const char *conf_get_allowed_clients(void);
+		static int conf_set_verify_account_email(const char* valstr);
+		static const char* conf_get_verify_account_email(void);
+		static int conf_setdef_verify_account_email(void);
+
+		static int conf_set_verify_account_email_expiration(const char* valstr);
+		static const char* conf_get_verify_account_email_expiration(void);
+		static int conf_setdef_verify_account_email_expiration(void);
+
+		static int conf_set_verify_account_email_from_address(const char* valstr);
+		static const char* conf_get_verify_account_email_from_address(void);
+		static int conf_setdef_verify_account_email_from_address(void);
+
+		static int conf_set_verify_account_email_from_name(const char* valstr);
+		static const char* conf_get_verify_account_email_from_name(void);
+		static int conf_setdef_verify_account_email_from_name(void);
+
+		static int conf_set_allowed_clients(const char* valstr);
+		static const char* conf_get_allowed_clients(void);
 		static int conf_setdef_allowed_clients(void);
 
-		static int conf_set_ladder_games(const char *valstr);
-		static const char *conf_get_ladder_games(void);
+		static int conf_set_ladder_games(const char* valstr);
+		static const char* conf_get_ladder_games(void);
 		static int conf_setdef_ladder_games(void);
 
-		static int conf_set_max_connections(const char *valstr);
-		static const char *conf_get_max_connections(void);
+		static int conf_set_max_connections(const char* valstr);
+		static const char* conf_get_max_connections(void);
 		static int conf_setdef_max_connections(void);
 
-		static int conf_set_packet_limit(const char *valstr);
-		static const char *conf_get_packet_limit(void);
+		static int conf_set_packet_limit(const char* valstr);
+		static const char* conf_get_packet_limit(void);
 		static int conf_setdef_packet_limit(void);
 
-		static int conf_set_sync_on_logoff(const char *valstr);
-		static const char *conf_get_sync_on_logoff(void);
+		static int conf_set_sync_on_logoff(const char* valstr);
+		static const char* conf_get_sync_on_logoff(void);
 		static int conf_setdef_sync_on_logoff(void);
 
-		static int conf_set_ladder_prefix(const char *valstr);
-		static const char *conf_get_ladder_prefix(void);
+		static int conf_set_ladder_prefix(const char* valstr);
+		static const char* conf_get_ladder_prefix(void);
 		static int conf_setdef_ladder_prefix(void);
 
 		static int conf_setdef_irc_network_name(void);
-		static int conf_set_irc_network_name(const char *valstr);
-		static const char *conf_get_irc_network_name(void);
+		static int conf_set_irc_network_name(const char* valstr);
+		static const char* conf_get_irc_network_name(void);
 
-		static int conf_set_localize_by_country(const char *valstr);
-		static const char *conf_get_localize_by_country(void);
+		static int conf_set_localize_by_country(const char* valstr);
+		static const char* conf_get_localize_by_country(void);
 		static int conf_setdef_localize_by_country(void);
 
-		static int conf_set_log_commands(const char *valstr);
-		static const char *conf_get_log_commands(void);
+		static int conf_set_log_commands(const char* valstr);
+		static const char* conf_get_log_commands(void);
 		static int conf_setdef_log_commands(void);
 
-		static int conf_set_log_command_groups(const char *valstr);
-		static const char *conf_get_log_command_groups(void);
+		static int conf_set_log_command_groups(const char* valstr);
+		static const char* conf_get_log_command_groups(void);
 		static int conf_setdef_log_command_groups(void);
 
-		static int conf_set_log_command_list(const char *valstr);
-		static const char *conf_get_log_command_list(void);
+		static int conf_set_log_command_list(const char* valstr);
+		static const char* conf_get_log_command_list(void);
 		static int conf_setdef_log_command_list(void);
+
+		static int conf_set_smtp_ca_cert_store_file(const char* valstr);
+		static const char* conf_get_smtp_ca_cert_store_file(void);
+		static int conf_setdef_smtp_ca_cert_store_file(void);
+
+		static int conf_set_smtp_ca_cert_store_remote_url(const char* valstr);
+		static const char* conf_get_smtp_ca_cert_store_remote_url(void);
+		static int conf_setdef_smtp_ca_cert_store_remote_url(void);
+
+		static int conf_set_smtp_ca_cert_store_fetch_interval(const char* valstr);
+		static const char* conf_get_smtp_ca_cert_store_fetch_interval(void);
+		static int conf_setdef_smtp_ca_cert_store_fetch_interval(void);
+
+		static int conf_set_smtp_server_url(const char* valstr);
+		static const char* conf_get_smtp_server_url(void);
+		static int conf_setdef_smtp_server_url(void);
+
+		static int conf_set_smtp_port(const char* valstr);
+		static const char* conf_get_smtp_port(void);
+		static int conf_setdef_smtp_port(void);
+
+		static int conf_set_smtp_username(const char* valstr);
+		static const char* conf_get_smtp_username(void);
+		static int conf_setdef_smtp_username(void);
+
+		static int conf_set_smtp_password(const char* valstr);
+		static const char* conf_get_smtp_password(void);
+		static int conf_setdef_smtp_password(void);
 
 
 		static int conf_setdef_apireg_addrs(void);
-		static int conf_set_apireg_addrs(const char *valstr);
-		static const char *conf_get_apireg_addrs(void);
+		static int conf_set_apireg_addrs(const char* valstr);
+		static const char* conf_get_apireg_addrs(void);
 
 		static int conf_setdef_wgameres_addrs(void);
-		static int conf_set_wgameres_addrs(const char *valstr);
-		static const char *conf_get_wgameres_addrs(void);
+		static int conf_set_wgameres_addrs(const char* valstr);
+		static const char* conf_get_wgameres_addrs(void);
 
 		static int conf_setdef_wolv1_addrs(void);
-		static int conf_set_wolv1_addrs(const char *valstr);
-		static const char *conf_get_wolv1_addrs(void);
+		static int conf_set_wolv1_addrs(const char* valstr);
+		static const char* conf_get_wolv1_addrs(void);
 
 		static int conf_setdef_wolv2_addrs(void);
-		static int conf_set_wolv2_addrs(const char *valstr);
-		static const char *conf_get_wolv2_addrs(void);
+		static int conf_set_wolv2_addrs(const char* valstr);
+		static const char* conf_get_wolv2_addrs(void);
 
-		static int conf_set_wol_timezone(const char *valstr);
-		static const char *conf_get_wol_timezone(void);
+		static int conf_set_wol_timezone(const char* valstr);
+		static const char* conf_get_wol_timezone(void);
 		static int conf_setdef_wol_timezone(void);
 
-		static int conf_set_wol_longitude(const char *valstr);
-		static const char *conf_get_wol_longitude(void);
+		static int conf_set_wol_longitude(const char* valstr);
+		static const char* conf_get_wol_longitude(void);
 		static int conf_setdef_wol_longitude(void);
 
-		static int conf_set_wol_latitude(const char *valstr);
-		static const char *conf_get_wol_latitude(void);
+		static int conf_set_wol_latitude(const char* valstr);
+		static const char* conf_get_wol_latitude(void);
 		static int conf_setdef_wol_latitude(void);
 
-		static int conf_set_wol_autoupdate_serverhost(const char *valstr);
-		static const char *conf_get_wol_autoupdate_serverhost(void);
+		static int conf_set_wol_autoupdate_serverhost(const char* valstr);
+		static const char* conf_get_wol_autoupdate_serverhost(void);
 		static int conf_setdef_wol_autoupdate_serverhost(void);
 
-		static int conf_set_wol_autoupdate_username(const char *valstr);
-		static const char *conf_get_wol_autoupdate_username(void);
+		static int conf_set_wol_autoupdate_username(const char* valstr);
+		static const char* conf_get_wol_autoupdate_username(void);
 		static int conf_setdef_wol_autoupdate_username(void);
 
-		static int conf_set_wol_autoupdate_password(const char *valstr);
-		static const char *conf_get_wol_autoupdate_password(void);
+		static int conf_set_wol_autoupdate_password(const char* valstr);
+		static const char* conf_get_wol_autoupdate_password(void);
 		static int conf_setdef_wol_autoupdate_password(void);
 
-	
+
 
 
 		/*    directive                 set method                     get method         */
@@ -851,6 +911,7 @@ namespace pvpgn
 			{ "command_groups_file", conf_set_command_groups_file, conf_get_command_groups_file, conf_setdef_command_groups_file },
 			{ "tournament_file", conf_set_tournament_file, conf_get_tournament_file, conf_setdef_tournament_file },
 			{ "customicons_file", conf_set_customicons_file, conf_get_customicons_file, conf_setdef_customicons_file },
+			{ "email_verification_file", conf_set_email_verification_file, conf_get_email_verification_file, conf_setdef_email_verification_file },
 			{ "scriptdir", conf_set_scriptdir, conf_get_scriptdir, conf_setdef_scriptdir },
 			{ "aliasfile", conf_set_aliasfile, conf_get_aliasfile, conf_setdef_aliasfile },
 			{ "anongame_infos_file", conf_set_anongame_infos_file, conf_get_anongame_infos_file, conf_setdef_anongame_infos_file },
@@ -863,6 +924,10 @@ namespace pvpgn
 			{ "passfail_count", conf_set_passfail_count, conf_get_passfail_count, conf_setdef_passfail_count },
 			{ "passfail_bantime", conf_set_passfail_bantime, conf_get_passfail_bantime, conf_setdef_passfail_bantime },
 			{ "maxusers_per_channel", conf_set_maxusers_per_channel, conf_get_maxusers_per_channel, conf_setdef_maxusers_per_channel },
+			{ "verify_account_email", conf_set_verify_account_email, conf_get_verify_account_email, conf_setdef_verify_account_email },
+			{ "verify_account_email_expiration", conf_set_verify_account_email_expiration, conf_get_verify_account_email_expiration, conf_setdef_verify_account_email_expiration },
+			{ "verify_account_email_from_address", conf_set_verify_account_email_from_address, conf_get_verify_account_email_from_address, conf_setdef_verify_account_email_from_address },
+			{ "verify_account_email_from_name", conf_set_verify_account_email_from_name, conf_get_verify_account_email_from_name, conf_setdef_verify_account_email_from_name },
 			{ "allowed_clients", conf_set_allowed_clients, conf_get_allowed_clients, conf_setdef_allowed_clients },
 			{ "ladder_games", conf_set_ladder_games, conf_get_ladder_games, conf_setdef_ladder_games },
 			{ "max_connections", conf_set_max_connections, conf_get_max_connections, conf_setdef_max_connections },
@@ -874,6 +939,13 @@ namespace pvpgn
 			{ "log_commands", conf_set_log_commands, conf_get_log_commands, conf_setdef_log_commands },
 			{ "log_command_groups", conf_set_log_command_groups, conf_get_log_command_groups, conf_setdef_log_command_groups },
 			{ "log_command_list", conf_set_log_command_list, conf_get_log_command_list, conf_setdef_log_command_list },
+			{ "smtp_ca_cert_store_file", conf_set_smtp_ca_cert_store_file, conf_get_smtp_ca_cert_store_file, conf_setdef_smtp_ca_cert_store_file },
+			{ "smtp_ca_cert_store_remote_url", conf_set_smtp_ca_cert_store_remote_url, conf_get_smtp_ca_cert_store_remote_url, conf_setdef_smtp_ca_cert_store_remote_url },
+			{ "smtp_ca_cert_store_fetch_interval", conf_set_smtp_ca_cert_store_fetch_interval, conf_get_smtp_ca_cert_store_fetch_interval, conf_setdef_smtp_ca_cert_store_fetch_interval },
+			{ "smtp_server_url", conf_set_smtp_server_url, conf_get_smtp_server_url, conf_setdef_smtp_server_url, },
+			{ "smtp_port", conf_set_smtp_port, conf_get_smtp_port, conf_setdef_smtp_port },
+			{ "smtp_username", conf_set_smtp_username, conf_get_smtp_username, conf_setdef_smtp_username },
+			{ "smtp_password", conf_set_smtp_password, conf_get_smtp_password, conf_setdef_smtp_password },
 
 			{ "apiregaddrs", conf_set_apireg_addrs, conf_get_apireg_addrs, conf_setdef_apireg_addrs },
 			{ "wgameresaddrs", conf_set_wgameres_addrs, conf_get_wgameres_addrs, conf_setdef_wgameres_addrs },
@@ -889,9 +961,9 @@ namespace pvpgn
 			{ NULL, NULL, NULL, NONE },
 		};
 
-		extern int prefs_load(char const * filename)
+		extern int prefs_load(char const* filename)
 		{
-			std::FILE *fd;
+			std::FILE* fd;
 
 			if (!filename) {
 				eventlog(eventlog_level_error, __FUNCTION__, "got NULL filename");
@@ -921,12 +993,12 @@ namespace pvpgn
 			conf_unload(conf_table);
 		}
 
-		extern char const * prefs_get_storage_path(void)
+		extern char const* prefs_get_storage_path(void)
 		{
 			return prefs_runtime_config.storage_path;
 		}
 
-		static int conf_set_storage_path(const char *valstr)
+		static int conf_set_storage_path(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.storage_path, valstr, NULL);
 		}
@@ -942,12 +1014,12 @@ namespace pvpgn
 		}
 
 
-		extern char const * prefs_get_filedir(void)
+		extern char const* prefs_get_filedir(void)
 		{
 			return prefs_runtime_config.filedir;
 		}
 
-		static int conf_set_filedir(const char *valstr)
+		static int conf_set_filedir(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.filedir, valstr, NULL);
 		}
@@ -963,12 +1035,12 @@ namespace pvpgn
 		}
 
 
-		extern char const * prefs_get_i18ndir(void)
+		extern char const* prefs_get_i18ndir(void)
 		{
 			return prefs_runtime_config.i18ndir;
 		}
 
-		static int conf_set_i18ndir(const char *valstr)
+		static int conf_set_i18ndir(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.i18ndir, valstr, NULL);
 		}
@@ -984,12 +1056,12 @@ namespace pvpgn
 		}
 
 
-		extern char const * prefs_get_logfile(void)
+		extern char const* prefs_get_logfile(void)
 		{
 			return prefs_runtime_config.logfile;
 		}
 
-		static int conf_set_logfile(const char *valstr)
+		static int conf_set_logfile(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.logfile, valstr, NULL);
 		}
@@ -1005,12 +1077,12 @@ namespace pvpgn
 		}
 
 
-		extern char const * prefs_get_loglevels(void)
+		extern char const* prefs_get_loglevels(void)
 		{
 			return prefs_runtime_config.loglevels;
 		}
 
-		static int conf_set_loglevels(const char *valstr)
+		static int conf_set_loglevels(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.loglevels, valstr, NULL);
 		}
@@ -1026,12 +1098,12 @@ namespace pvpgn
 		}
 
 
-		extern char const * prefs_get_localizefile(void)
+		extern char const* prefs_get_localizefile(void)
 		{
 			return prefs_runtime_config.localizefile;
 		}
 
-		static int conf_set_localizefile(const char *valstr)
+		static int conf_set_localizefile(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.localizefile, valstr, NULL);
 		}
@@ -1047,12 +1119,12 @@ namespace pvpgn
 		}
 
 
-		extern char const * prefs_get_motdfile(void)
+		extern char const* prefs_get_motdfile(void)
 		{
 			return prefs_runtime_config.motdfile;
 		}
 
-		static int conf_set_motdfile(const char *valstr)
+		static int conf_set_motdfile(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.motdfile, valstr, NULL);
 		}
@@ -1068,12 +1140,12 @@ namespace pvpgn
 		}
 
 
-		extern char const * prefs_get_motdw3file(void)
+		extern char const* prefs_get_motdw3file(void)
 		{
 			return prefs_runtime_config.motdw3file;
 		}
 
-		static int conf_set_motdw3file(const char *valstr)
+		static int conf_set_motdw3file(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.motdw3file, valstr, NULL);
 		}
@@ -1089,12 +1161,12 @@ namespace pvpgn
 		}
 
 
-		extern char const * prefs_get_newsfile(void)
+		extern char const* prefs_get_newsfile(void)
 		{
 			return prefs_runtime_config.newsfile;
 		}
 
-		static int conf_set_newsfile(const char *valstr)
+		static int conf_set_newsfile(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.newsfile, valstr, NULL);
 		}
@@ -1110,12 +1182,12 @@ namespace pvpgn
 		}
 
 
-		extern char const * prefs_get_adfile(void)
+		extern char const* prefs_get_adfile(void)
 		{
 			return prefs_runtime_config.adfile;
 		}
 
-		static int conf_set_adfile(const char *valstr)
+		static int conf_set_adfile(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.adfile, valstr, NULL);
 		}
@@ -1131,12 +1203,12 @@ namespace pvpgn
 		}
 
 
-		extern char const * prefs_get_topicfile(void)
+		extern char const* prefs_get_topicfile(void)
 		{
 			return prefs_runtime_config.topicfile;
 		}
 
-		static int conf_set_topicfile(const char *valstr)
+		static int conf_set_topicfile(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.topicfile, valstr, NULL);
 		}
@@ -1152,12 +1224,12 @@ namespace pvpgn
 		}
 
 
-		extern char const * prefs_get_DBlayoutfile(void)
+		extern char const* prefs_get_DBlayoutfile(void)
 		{
 			return prefs_runtime_config.DBlayoutfile;
 		}
 
-		static int conf_set_DBlayoutfile(const char *valstr)
+		static int conf_set_DBlayoutfile(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.DBlayoutfile, valstr, NULL);
 		}
@@ -1178,7 +1250,7 @@ namespace pvpgn
 			return prefs_runtime_config.usersync;
 		}
 
-		static int conf_set_usersync(const char *valstr)
+		static int conf_set_usersync(const char* valstr)
 		{
 			return conf_set_int(&prefs_runtime_config.usersync, valstr, 0);
 		}
@@ -1199,7 +1271,7 @@ namespace pvpgn
 			return prefs_runtime_config.userflush;
 		}
 
-		static int conf_set_userflush(const char *valstr)
+		static int conf_set_userflush(const char* valstr)
 		{
 			return conf_set_int(&prefs_runtime_config.userflush, valstr, 0);
 		}
@@ -1220,7 +1292,7 @@ namespace pvpgn
 			return prefs_runtime_config.userflush_connected;
 		}
 
-		static int conf_set_userflush_connected(const char *valstr)
+		static int conf_set_userflush_connected(const char* valstr)
 		{
 			return conf_set_bool(&prefs_runtime_config.userflush_connected, valstr, 0);
 		}
@@ -1241,7 +1313,7 @@ namespace pvpgn
 			return prefs_runtime_config.userstep;
 		}
 
-		static int conf_set_userstep(const char *valstr)
+		static int conf_set_userstep(const char* valstr)
 		{
 			return conf_set_int(&prefs_runtime_config.userstep, valstr, 0);
 		}
@@ -1257,12 +1329,12 @@ namespace pvpgn
 		}
 
 
-		extern char const * prefs_get_servername(void)
+		extern char const* prefs_get_servername(void)
 		{
 			return prefs_runtime_config.servername;
 		}
 
-		static int conf_set_servername(const char *valstr)
+		static int conf_set_servername(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.servername, valstr, NULL);
 		}
@@ -1278,12 +1350,12 @@ namespace pvpgn
 		}
 
 
-		extern char const * prefs_get_hostname(void)
+		extern char const* prefs_get_hostname(void)
 		{
 			return prefs_runtime_config.hostname;
 		}
 
-		static int conf_set_hostname(const char *valstr)
+		static int conf_set_hostname(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.hostname, valstr, NULL);
 		}
@@ -1304,7 +1376,7 @@ namespace pvpgn
 			return prefs_runtime_config.track;
 		}
 
-		static int conf_set_track(const char *valstr)
+		static int conf_set_track(const char* valstr)
 		{
 			unsigned int rez;
 
@@ -1325,12 +1397,12 @@ namespace pvpgn
 		}
 
 
-		extern char const * prefs_get_location(void)
+		extern char const* prefs_get_location(void)
 		{
 			return prefs_runtime_config.location;
 		}
 
-		static int conf_set_location(const char *valstr)
+		static int conf_set_location(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.location, valstr, NULL);
 		}
@@ -1346,12 +1418,12 @@ namespace pvpgn
 		}
 
 
-		extern char const * prefs_get_description(void)
+		extern char const* prefs_get_description(void)
 		{
 			return prefs_runtime_config.description;
 		}
 
-		static int conf_set_description(const char *valstr)
+		static int conf_set_description(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.description, valstr, NULL);
 		}
@@ -1367,12 +1439,12 @@ namespace pvpgn
 		}
 
 
-		extern char const * prefs_get_url(void)
+		extern char const* prefs_get_url(void)
 		{
 			return prefs_runtime_config.url;
 		}
 
-		static int conf_set_url(const char *valstr)
+		static int conf_set_url(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.url, valstr, NULL);
 		}
@@ -1388,12 +1460,12 @@ namespace pvpgn
 		}
 
 
-		extern char const * prefs_get_contact_name(void)
+		extern char const* prefs_get_contact_name(void)
 		{
 			return prefs_runtime_config.contact_name;
 		}
 
-		static int conf_set_contact_name(const char *valstr)
+		static int conf_set_contact_name(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.contact_name, valstr, NULL);
 		}
@@ -1409,12 +1481,12 @@ namespace pvpgn
 		}
 
 
-		extern char const * prefs_get_contact_email(void)
+		extern char const* prefs_get_contact_email(void)
 		{
 			return prefs_runtime_config.contact_email;
 		}
 
-		static int conf_set_contact_email(const char *valstr)
+		static int conf_set_contact_email(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.contact_email, valstr, NULL);
 		}
@@ -1435,7 +1507,7 @@ namespace pvpgn
 			return prefs_runtime_config.latency;
 		}
 
-		static int conf_set_latency(const char *valstr)
+		static int conf_set_latency(const char* valstr)
 		{
 			return conf_set_int(&prefs_runtime_config.latency, valstr, 0);
 		}
@@ -1456,7 +1528,7 @@ namespace pvpgn
 			return prefs_runtime_config.irc_latency;
 		}
 
-		static int conf_set_irc_latency(const char *valstr)
+		static int conf_set_irc_latency(const char* valstr)
 		{
 			return conf_set_int(&prefs_runtime_config.irc_latency, valstr, 0);
 		}
@@ -1477,7 +1549,7 @@ namespace pvpgn
 			return prefs_runtime_config.shutdown_delay;
 		}
 
-		static int conf_set_shutdown_delay(const char *valstr)
+		static int conf_set_shutdown_delay(const char* valstr)
 		{
 			return conf_set_int(&prefs_runtime_config.shutdown_delay, valstr, 0);
 		}
@@ -1498,7 +1570,7 @@ namespace pvpgn
 			return prefs_runtime_config.shutdown_decr;
 		}
 
-		static int conf_set_shutdown_decr(const char *valstr)
+		static int conf_set_shutdown_decr(const char* valstr)
 		{
 			return conf_set_int(&prefs_runtime_config.shutdown_decr, valstr, 0);
 		}
@@ -1519,7 +1591,7 @@ namespace pvpgn
 			return prefs_runtime_config.new_accounts;
 		}
 
-		static int conf_set_new_accounts(const char *valstr)
+		static int conf_set_new_accounts(const char* valstr)
 		{
 			return conf_set_bool(&prefs_runtime_config.new_accounts, valstr, 0);
 		}
@@ -1540,7 +1612,7 @@ namespace pvpgn
 			return prefs_runtime_config.max_accounts;
 		}
 
-		static int conf_set_max_accounts(const char *valstr)
+		static int conf_set_max_accounts(const char* valstr)
 		{
 			return conf_set_int(&prefs_runtime_config.max_accounts, valstr, 0);
 		}
@@ -1561,7 +1633,7 @@ namespace pvpgn
 			return prefs_runtime_config.kick_old_login;
 		}
 
-		static int conf_set_kick_old_login(const char *valstr)
+		static int conf_set_kick_old_login(const char* valstr)
 		{
 			return conf_set_bool(&prefs_runtime_config.kick_old_login, valstr, 0);
 		}
@@ -1577,12 +1649,12 @@ namespace pvpgn
 		}
 
 
-		extern char const * prefs_get_channelfile(void)
+		extern char const* prefs_get_channelfile(void)
 		{
 			return prefs_runtime_config.channelfile;
 		}
 
-		static int conf_set_channelfile(const char *valstr)
+		static int conf_set_channelfile(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.channelfile, valstr, NULL);
 		}
@@ -1603,7 +1675,7 @@ namespace pvpgn
 			return prefs_runtime_config.ask_new_channel;
 		}
 
-		static int conf_set_ask_new_channel(const char *valstr)
+		static int conf_set_ask_new_channel(const char* valstr)
 		{
 			return conf_set_bool(&prefs_runtime_config.ask_new_channel, valstr, 0);
 		}
@@ -1624,7 +1696,7 @@ namespace pvpgn
 			return prefs_runtime_config.hide_pass_games;
 		}
 
-		static int conf_set_hide_pass_games(const char *valstr)
+		static int conf_set_hide_pass_games(const char* valstr)
 		{
 			return conf_set_bool(&prefs_runtime_config.hide_pass_games, valstr, 0);
 		}
@@ -1645,7 +1717,7 @@ namespace pvpgn
 			return prefs_runtime_config.hide_started_games;
 		}
 
-		static int conf_set_hide_started_games(const char *valstr)
+		static int conf_set_hide_started_games(const char* valstr)
 		{
 			return conf_set_bool(&prefs_runtime_config.hide_started_games, valstr, 0);
 		}
@@ -1666,7 +1738,7 @@ namespace pvpgn
 			return prefs_runtime_config.hide_temp_channels;
 		}
 
-		static int conf_set_hide_temp_channels(const char *valstr)
+		static int conf_set_hide_temp_channels(const char* valstr)
 		{
 			return conf_set_bool(&prefs_runtime_config.hide_temp_channels, valstr, 0);
 		}
@@ -1686,7 +1758,7 @@ namespace pvpgn
 			return prefs_runtime_config.hide_addr;
 		}
 
-		static int conf_set_hide_addr(const char *valstr)
+		static int conf_set_hide_addr(const char* valstr)
 		{
 			return conf_set_bool(&prefs_runtime_config.hide_addr, valstr, 0);
 		}
@@ -1707,7 +1779,7 @@ namespace pvpgn
 			return prefs_runtime_config.enable_conn_all;
 		}
 
-		static int conf_set_enable_conn_all(const char *valstr)
+		static int conf_set_enable_conn_all(const char* valstr)
 		{
 			return conf_set_bool(&prefs_runtime_config.enable_conn_all, valstr, 0);
 		}
@@ -1723,12 +1795,12 @@ namespace pvpgn
 		}
 
 
-		extern char const * prefs_get_reportdir(void)
+		extern char const* prefs_get_reportdir(void)
 		{
 			return prefs_runtime_config.reportdir;
 		}
 
-		static int conf_set_reportdir(const char *valstr)
+		static int conf_set_reportdir(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.reportdir, valstr, NULL);
 		}
@@ -1749,7 +1821,7 @@ namespace pvpgn
 			return prefs_runtime_config.report_all_games;
 		}
 
-		static int conf_set_report_all_games(const char *valstr)
+		static int conf_set_report_all_games(const char* valstr)
 		{
 			return conf_set_bool(&prefs_runtime_config.report_all_games, valstr, 0);
 		}
@@ -1770,7 +1842,7 @@ namespace pvpgn
 			return prefs_runtime_config.report_diablo_games;
 		}
 
-		static int conf_set_report_diablo_games(const char *valstr)
+		static int conf_set_report_diablo_games(const char* valstr)
 		{
 			return conf_set_bool(&prefs_runtime_config.report_diablo_games, valstr, 0);
 		}
@@ -1786,12 +1858,12 @@ namespace pvpgn
 		}
 
 
-		extern char const * prefs_get_pidfile(void)
+		extern char const* prefs_get_pidfile(void)
 		{
 			return prefs_runtime_config.pidfile;
 		}
 
-		static int conf_set_pidfile(const char *valstr)
+		static int conf_set_pidfile(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.pidfile, valstr, NULL);
 		}
@@ -1807,12 +1879,12 @@ namespace pvpgn
 		}
 
 
-		extern char const * prefs_get_iconfile(void)
+		extern char const* prefs_get_iconfile(void)
 		{
 			return prefs_runtime_config.iconfile;
 		}
 
-		static int conf_set_iconfile(const char *valstr)
+		static int conf_set_iconfile(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.iconfile, valstr, NULL);
 		}
@@ -1828,12 +1900,12 @@ namespace pvpgn
 		}
 
 
-		extern char const * prefs_get_war3_iconfile(void)
+		extern char const* prefs_get_war3_iconfile(void)
 		{
 			return prefs_runtime_config.war3_iconfile;
 		}
 
-		static int conf_set_war3_iconfile(const char *valstr)
+		static int conf_set_war3_iconfile(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.war3_iconfile, valstr, NULL);
 		}
@@ -1849,12 +1921,12 @@ namespace pvpgn
 		}
 
 
-		extern char const * prefs_get_star_iconfile(void)
+		extern char const* prefs_get_star_iconfile(void)
 		{
 			return prefs_runtime_config.star_iconfile;
 		}
 
-		static int conf_set_star_iconfile(const char *valstr)
+		static int conf_set_star_iconfile(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.star_iconfile, valstr, NULL);
 		}
@@ -1870,12 +1942,12 @@ namespace pvpgn
 		}
 
 
-		extern char const * prefs_get_tosfile(void)
+		extern char const* prefs_get_tosfile(void)
 		{
 			return prefs_runtime_config.tosfile;
 		}
 
-		static int conf_set_tosfile(const char *valstr)
+		static int conf_set_tosfile(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.tosfile, valstr, NULL);
 		}
@@ -1891,12 +1963,12 @@ namespace pvpgn
 		}
 
 
-		extern char const * prefs_get_mpqfile(void)
+		extern char const* prefs_get_mpqfile(void)
 		{
 			return prefs_runtime_config.mpqfile;
 		}
 
-		static int conf_set_mpqfile(const char *valstr)
+		static int conf_set_mpqfile(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.mpqfile, valstr, NULL);
 		}
@@ -1912,12 +1984,12 @@ namespace pvpgn
 		}
 
 
-		extern char const * prefs_get_trackserv_addrs(void)
+		extern char const* prefs_get_trackserv_addrs(void)
 		{
 			return prefs_runtime_config.trackaddrs;
 		}
 
-		static int conf_set_trackaddrs(const char *valstr)
+		static int conf_set_trackaddrs(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.trackaddrs, valstr, NULL);
 		}
@@ -1933,12 +2005,12 @@ namespace pvpgn
 		}
 
 
-		extern char const * prefs_get_bnetdserv_addrs(void)
+		extern char const* prefs_get_bnetdserv_addrs(void)
 		{
 			return prefs_runtime_config.servaddrs;
 		}
 
-		static int conf_set_servaddrs(const char *valstr)
+		static int conf_set_servaddrs(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.servaddrs, valstr, NULL);
 		}
@@ -1954,12 +2026,12 @@ namespace pvpgn
 		}
 
 
-		extern char const * prefs_get_w3route_addr(void)
+		extern char const* prefs_get_w3route_addr(void)
 		{
 			return prefs_runtime_config.w3routeaddr;
 		}
 
-		static int conf_set_w3routeaddr(const char *valstr)
+		static int conf_set_w3routeaddr(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.w3routeaddr, valstr, NULL);
 		}
@@ -1975,12 +2047,12 @@ namespace pvpgn
 		}
 
 
-		extern char const * prefs_get_irc_addrs(void)
+		extern char const* prefs_get_irc_addrs(void)
 		{
 			return prefs_runtime_config.ircaddrs;
 		}
 
-		static int conf_set_ircaddrs(const char *valstr)
+		static int conf_set_ircaddrs(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.ircaddrs, valstr, NULL);
 		}
@@ -2001,7 +2073,7 @@ namespace pvpgn
 			return prefs_runtime_config.use_keepalive;
 		}
 
-		static int conf_set_use_keepalive(const char *valstr)
+		static int conf_set_use_keepalive(const char* valstr)
 		{
 			return conf_set_bool(&prefs_runtime_config.use_keepalive, valstr, 0);
 		}
@@ -2022,7 +2094,7 @@ namespace pvpgn
 			return prefs_runtime_config.udptest_port;
 		}
 
-		static int conf_set_udptest_port(const char *valstr)
+		static int conf_set_udptest_port(const char* valstr)
 		{
 			return conf_set_int(&prefs_runtime_config.udptest_port, valstr, 0);
 		}
@@ -2038,12 +2110,12 @@ namespace pvpgn
 		}
 
 
-		extern char const * prefs_get_ipbanfile(void)
+		extern char const* prefs_get_ipbanfile(void)
 		{
 			return prefs_runtime_config.ipbanfile;
 		}
 
-		static int conf_set_ipbanfile(const char *valstr)
+		static int conf_set_ipbanfile(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.ipbanfile, valstr, NULL);
 		}
@@ -2064,7 +2136,7 @@ namespace pvpgn
 			return prefs_runtime_config.disc_is_loss;
 		}
 
-		static int conf_set_disc_is_loss(const char *valstr)
+		static int conf_set_disc_is_loss(const char* valstr)
 		{
 			return conf_set_bool(&prefs_runtime_config.disc_is_loss, valstr, 0);
 		}
@@ -2080,12 +2152,12 @@ namespace pvpgn
 		}
 
 
-		extern char const * prefs_get_helpfile(void)
+		extern char const* prefs_get_helpfile(void)
 		{
 			return prefs_runtime_config.helpfile;
 		}
 
-		static int conf_set_helpfile(const char *valstr)
+		static int conf_set_helpfile(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.helpfile, valstr, NULL);
 		}
@@ -2101,12 +2173,12 @@ namespace pvpgn
 		}
 
 
-		extern char const * prefs_get_transfile(void)
+		extern char const* prefs_get_transfile(void)
 		{
 			return prefs_runtime_config.transfile;
 		}
 
-		static int conf_set_transfile(const char *valstr)
+		static int conf_set_transfile(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.transfile, valstr, NULL);
 		}
@@ -2127,7 +2199,7 @@ namespace pvpgn
 			return prefs_runtime_config.chanlog;
 		}
 
-		static int conf_set_chanlog(const char *valstr)
+		static int conf_set_chanlog(const char* valstr)
 		{
 			return conf_set_bool(&prefs_runtime_config.chanlog, valstr, 0);
 		}
@@ -2143,12 +2215,12 @@ namespace pvpgn
 		}
 
 
-		extern char const * prefs_get_chanlogdir(void)
+		extern char const* prefs_get_chanlogdir(void)
 		{
 			return prefs_runtime_config.chanlogdir;
 		}
 
-		static int conf_set_chanlogdir(const char *valstr)
+		static int conf_set_chanlogdir(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.chanlogdir, valstr, NULL);
 		}
@@ -2164,12 +2236,12 @@ namespace pvpgn
 		}
 
 
-		extern char const * prefs_get_userlogdir(void)
+		extern char const* prefs_get_userlogdir(void)
 		{
 			return prefs_runtime_config.userlogdir;
 		}
 
-		static int conf_set_userlogdir(const char *valstr)
+		static int conf_set_userlogdir(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.userlogdir, valstr, NULL);
 		}
@@ -2190,7 +2262,7 @@ namespace pvpgn
 			return prefs_runtime_config.quota;
 		}
 
-		static int conf_set_quota(const char *valstr)
+		static int conf_set_quota(const char* valstr)
 		{
 			return conf_set_bool(&prefs_runtime_config.quota, valstr, 0);
 		}
@@ -2211,12 +2283,12 @@ namespace pvpgn
 			unsigned int rez;
 
 			rez = prefs_runtime_config.quota_lines;
-			if (rez<1) rez = 1;
-			if (rez>100) rez = 100;
+			if (rez < 1) rez = 1;
+			if (rez > 100) rez = 100;
 			return rez;
 		}
 
-		static int conf_set_quota_lines(const char *valstr)
+		static int conf_set_quota_lines(const char* valstr)
 		{
 			return conf_set_int(&prefs_runtime_config.quota_lines, valstr, 0);
 		}
@@ -2237,12 +2309,12 @@ namespace pvpgn
 			unsigned int rez;
 
 			rez = prefs_runtime_config.quota_time;
-			if (rez<1) rez = 1;
-			if (rez>10) rez = 60;
+			if (rez < 1) rez = 1;
+			if (rez > 10) rez = 60;
 			return rez;
 		}
 
-		static int conf_set_quota_time(const char *valstr)
+		static int conf_set_quota_time(const char* valstr)
 		{
 			return conf_set_int(&prefs_runtime_config.quota_time, valstr, 0);
 		}
@@ -2263,12 +2335,12 @@ namespace pvpgn
 			unsigned int rez;
 
 			rez = prefs_runtime_config.quota_wrapline;
-			if (rez<1) rez = 1;
-			if (rez>256) rez = 256;
+			if (rez < 1) rez = 1;
+			if (rez > 256) rez = 256;
 			return rez;
 		}
 
-		static int conf_set_quota_wrapline(const char *valstr)
+		static int conf_set_quota_wrapline(const char* valstr)
 		{
 			return conf_set_int(&prefs_runtime_config.quota_wrapline, valstr, 0);
 		}
@@ -2289,12 +2361,12 @@ namespace pvpgn
 			unsigned int rez;
 
 			rez = prefs_runtime_config.quota_maxline;
-			if (rez<1) rez = 1;
-			if (rez>256) rez = 256;
+			if (rez < 1) rez = 1;
+			if (rez > 256) rez = 256;
 			return rez;
 		}
 
-		static int conf_set_quota_maxline(const char *valstr)
+		static int conf_set_quota_maxline(const char* valstr)
 		{
 			return conf_set_int(&prefs_runtime_config.quota_maxline, valstr, 0);
 		}
@@ -2315,7 +2387,7 @@ namespace pvpgn
 			return prefs_runtime_config.ladder_init_rating;
 		}
 
-		static int conf_set_ladder_init_rating(const char *valstr)
+		static int conf_set_ladder_init_rating(const char* valstr)
 		{
 			return conf_set_int(&prefs_runtime_config.ladder_init_rating, valstr, 0);
 		}
@@ -2336,12 +2408,12 @@ namespace pvpgn
 			unsigned int rez;
 
 			rez = prefs_runtime_config.quota_dobae;
-			if (rez<1) rez = 1;
-			if (rez>100) rez = 100;
+			if (rez < 1) rez = 1;
+			if (rez > 100) rez = 100;
 			return rez;
 		}
 
-		static int conf_set_quota_dobae(const char *valstr)
+		static int conf_set_quota_dobae(const char* valstr)
 		{
 			return conf_set_int(&prefs_runtime_config.quota_dobae, valstr, 0);
 		}
@@ -2357,12 +2429,12 @@ namespace pvpgn
 		}
 
 
-		extern char const * prefs_get_realmfile(void)
+		extern char const* prefs_get_realmfile(void)
 		{
 			return prefs_runtime_config.realmfile;
 		}
 
-		static int conf_set_realmfile(const char *valstr)
+		static int conf_set_realmfile(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.realmfile, valstr, NULL);
 		}
@@ -2378,95 +2450,95 @@ namespace pvpgn
 		}
 
 
-		extern char const * prefs_get_issuefile( void )
+		extern char const* prefs_get_issuefile(void)
 		{
 			return prefs_runtime_config.issuefile;
 		}
 
-		static int conf_set_issuefile( const char *valstr )
+		static int conf_set_issuefile(const char* valstr)
 		{
-			return conf_set_str( &prefs_runtime_config.issuefile, valstr, NULL );
+			return conf_set_str(&prefs_runtime_config.issuefile, valstr, NULL);
 		}
 
-		static int conf_setdef_issuefile( void )
+		static int conf_setdef_issuefile(void)
 		{
-			return conf_set_str( &prefs_runtime_config.issuefile, NULL, BNETD_ISSUE_FILE );
+			return conf_set_str(&prefs_runtime_config.issuefile, NULL, BNETD_ISSUE_FILE);
 		}
 
-		static const char* conf_get_issuefile( void )
+		static const char* conf_get_issuefile(void)
 		{
 			return prefs_runtime_config.issuefile;
 		}
 
 		//here
-		extern char const * prefs_get_hostbotlistfile( void )
+		extern char const* prefs_get_hostbotlistfile(void)
 		{
 			return prefs_runtime_config.whitelistfile;
 		}
 
-		static int conf_set_whitelistfile( const char *valstr )
+		static int conf_set_whitelistfile(const char* valstr)
 		{
-			return conf_set_str( &prefs_runtime_config.whitelistfile, valstr, NULL );
+			return conf_set_str(&prefs_runtime_config.whitelistfile, valstr, NULL);
 		}
 
-		static int conf_setdef_whitelistfile( void )
+		static int conf_setdef_whitelistfile(void)
 		{
-			return conf_set_str( &prefs_runtime_config.whitelistfile, NULL, "conf/whitelistfile.txt" );
+			return conf_set_str(&prefs_runtime_config.whitelistfile, NULL, "conf/whitelistfile.txt");
 		}
 
-		static const char* conf_get_whitelistfile( void )
+		static const char* conf_get_whitelistfile(void)
 		{
 			return prefs_runtime_config.whitelistfile;
 		}
 
-		extern char const * prefs_get_crcwhitelistfile( void )
+		extern char const* prefs_get_crcwhitelistfile(void)
 		{
 			return prefs_runtime_config.crcwhitelistfile;
 		}
 
-		static int conf_set_crcwhitelistfile( const char *valstr )
+		static int conf_set_crcwhitelistfile(const char* valstr)
 		{
-			return conf_set_str( &prefs_runtime_config.crcwhitelistfile, valstr, NULL );
+			return conf_set_str(&prefs_runtime_config.crcwhitelistfile, valstr, NULL);
 		}
 
-		static int conf_setdef_crcwhitelistfile( void )
+		static int conf_setdef_crcwhitelistfile(void)
 		{
-			return conf_set_str( &prefs_runtime_config.crcwhitelistfile, NULL, "conf/crcwhitelistfile.txt" );
+			return conf_set_str(&prefs_runtime_config.crcwhitelistfile, NULL, "conf/crcwhitelistfile.txt");
 		}
 
-		static const char* conf_get_crcwhitelistfile( void )
+		static const char* conf_get_crcwhitelistfile(void)
 		{
 			return prefs_runtime_config.crcwhitelistfile;
 		}
 
 
-		extern char const * prefs_get_blacklistfile( void )
+		extern char const* prefs_get_blacklistfile(void)
 		{
 			return prefs_runtime_config.blacklistfile;
 		}
 
-		static int conf_set_blacklistfile( const char *valstr )
+		static int conf_set_blacklistfile(const char* valstr)
 		{
-			return conf_set_str( &prefs_runtime_config.blacklistfile, valstr, NULL );
+			return conf_set_str(&prefs_runtime_config.blacklistfile, valstr, NULL);
 		}
 
-		static int conf_setdef_blacklistfile( void )
+		static int conf_setdef_blacklistfile(void)
 		{
-			return conf_set_str( &prefs_runtime_config.blacklistfile, NULL, "conf/blacklistfile.txt" );
+			return conf_set_str(&prefs_runtime_config.blacklistfile, NULL, "conf/blacklistfile.txt");
 		}
 
-		static const char* conf_get_blacklistfile( void )
+		static const char* conf_get_blacklistfile(void)
 		{
 			return prefs_runtime_config.blacklistfile;
 		}
 
 
-		extern char const * prefs_get_effective_user(void)
+		extern char const* prefs_get_effective_user(void)
 		{
 			return prefs_runtime_config.effective_user;
 		}
 
-		static int conf_set_effective_user(const char *valstr)
+		static int conf_set_effective_user(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.effective_user, valstr, NULL);
 		}
@@ -2482,12 +2554,12 @@ namespace pvpgn
 		}
 
 
-		extern char const * prefs_get_effective_group(void)
+		extern char const* prefs_get_effective_group(void)
 		{
 			return prefs_runtime_config.effective_group;
 		}
 
-		static int conf_set_effective_group(const char *valstr)
+		static int conf_set_effective_group(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.effective_group, valstr, NULL);
 		}
@@ -2508,7 +2580,7 @@ namespace pvpgn
 			return prefs_runtime_config.nullmsg;
 		}
 
-		static int conf_set_nullmsg(const char *valstr)
+		static int conf_set_nullmsg(const char* valstr)
 		{
 			return conf_set_int(&prefs_runtime_config.nullmsg, valstr, 0);
 		}
@@ -2529,7 +2601,7 @@ namespace pvpgn
 			return prefs_runtime_config.mail_support;
 		}
 
-		static int conf_set_mail_support(const char *valstr)
+		static int conf_set_mail_support(const char* valstr)
 		{
 			return conf_set_bool(&prefs_runtime_config.mail_support, valstr, 0);
 		}
@@ -2550,12 +2622,12 @@ namespace pvpgn
 			unsigned int rez;
 
 			rez = prefs_runtime_config.mail_quota;
-			if (rez<1) rez = 1;
-			if (rez>30) rez = 30;
+			if (rez < 1) rez = 1;
+			if (rez > 30) rez = 30;
 			return rez;
 		}
 
-		static int conf_set_mail_quota(const char *valstr)
+		static int conf_set_mail_quota(const char* valstr)
 		{
 			return conf_set_int(&prefs_runtime_config.mail_quota, valstr, 0);
 		}
@@ -2571,12 +2643,12 @@ namespace pvpgn
 		}
 
 
-		extern char const * prefs_get_maildir(void)
+		extern char const* prefs_get_maildir(void)
 		{
 			return prefs_runtime_config.maildir;
 		}
 
-		static int conf_set_maildir(const char *valstr)
+		static int conf_set_maildir(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.maildir, valstr, NULL);
 		}
@@ -2592,12 +2664,12 @@ namespace pvpgn
 		}
 
 
-		extern char const * prefs_get_log_notice(void)
+		extern char const* prefs_get_log_notice(void)
 		{
 			return prefs_runtime_config.log_notice;
 		}
 
-		static int conf_set_log_notice(const char *valstr)
+		static int conf_set_log_notice(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.log_notice, valstr, NULL);
 		}
@@ -2618,7 +2690,7 @@ namespace pvpgn
 			return prefs_runtime_config.savebyname;
 		}
 
-		static int conf_set_savebyname(const char *valstr)
+		static int conf_set_savebyname(const char* valstr)
 		{
 			return conf_set_bool(&prefs_runtime_config.savebyname, valstr, 0);
 		}
@@ -2639,7 +2711,7 @@ namespace pvpgn
 			return prefs_runtime_config.allow_bad_version;
 		}
 
-		static int conf_set_allow_bad_version(const char *valstr)
+		static int conf_set_allow_bad_version(const char* valstr)
 		{
 			return conf_set_bool(&prefs_runtime_config.allow_bad_version, valstr, 0);
 		}
@@ -2660,7 +2732,7 @@ namespace pvpgn
 			return prefs_runtime_config.allow_unknown_version;
 		}
 
-		static int conf_set_allow_unknown_version(const char *valstr)
+		static int conf_set_allow_unknown_version(const char* valstr)
 		{
 			return conf_set_bool(&prefs_runtime_config.allow_unknown_version, valstr, 0);
 		}
@@ -2676,12 +2748,12 @@ namespace pvpgn
 		}
 
 
-		extern char const * prefs_get_versioncheck_file(void)
+		extern char const* prefs_get_versioncheck_file(void)
 		{
 			return prefs_runtime_config.versioncheck_file;
 		}
 
-		static int conf_set_versioncheck_file(const char *valstr)
+		static int conf_set_versioncheck_file(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.versioncheck_file, valstr, NULL);
 		}
@@ -2702,7 +2774,7 @@ namespace pvpgn
 			return prefs_runtime_config.allow_d2cs_setname;
 		}
 
-		static int conf_set_allow_d2cs_setname(const char *valstr)
+		static int conf_set_allow_d2cs_setname(const char* valstr)
 		{
 			return conf_set_bool(&prefs_runtime_config.allow_d2cs_setname, valstr, 0);
 		}
@@ -2723,7 +2795,7 @@ namespace pvpgn
 			return prefs_runtime_config.d2cs_version;
 		}
 
-		static int conf_set_d2cs_version(const char *valstr)
+		static int conf_set_d2cs_version(const char* valstr)
 		{
 			return conf_set_int(&prefs_runtime_config.d2cs_version, valstr, 0);
 		}
@@ -2744,7 +2816,7 @@ namespace pvpgn
 			return prefs_runtime_config.hashtable_size;
 		}
 
-		static int conf_set_hashtable_size(const char *valstr)
+		static int conf_set_hashtable_size(const char* valstr)
 		{
 			return conf_set_int(&prefs_runtime_config.hashtable_size, valstr, 0);
 		}
@@ -2760,12 +2832,12 @@ namespace pvpgn
 		}
 
 
-		extern char const * prefs_get_telnet_addrs(void)
+		extern char const* prefs_get_telnet_addrs(void)
 		{
 			return prefs_runtime_config.telnetaddrs;
 		}
 
-		static int conf_set_telnetaddrs(const char *valstr)
+		static int conf_set_telnetaddrs(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.telnetaddrs, valstr, NULL);
 		}
@@ -2786,7 +2858,7 @@ namespace pvpgn
 			return prefs_runtime_config.ipban_check_int;
 		}
 
-		static int conf_set_ipban_check_int(const char *valstr)
+		static int conf_set_ipban_check_int(const char* valstr)
 		{
 			return conf_set_int(&prefs_runtime_config.ipban_check_int, valstr, 0);
 		}
@@ -2807,7 +2879,7 @@ namespace pvpgn
 			return prefs_runtime_config.max_concurrent_logins;
 		}
 
-		static int conf_set_max_concurrent_logins(const char *valstr)
+		static int conf_set_max_concurrent_logins(const char* valstr)
 		{
 			return conf_set_int(&prefs_runtime_config.max_concurrent_logins, valstr, 0);
 		}
@@ -2823,12 +2895,12 @@ namespace pvpgn
 		}
 
 
-		extern char const * prefs_get_mapsfile(void)
+		extern char const* prefs_get_mapsfile(void)
 		{
 			return prefs_runtime_config.mapsfile;
 		}
 
-		static int conf_set_mapsfile(const char *valstr)
+		static int conf_set_mapsfile(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.mapsfile, valstr, NULL);
 		}
@@ -2844,12 +2916,12 @@ namespace pvpgn
 		}
 
 
-		extern char const * prefs_get_xplevel_file(void)
+		extern char const* prefs_get_xplevel_file(void)
 		{
 			return prefs_runtime_config.xplevelfile;
 		}
 
-		static int conf_set_xplevelfile(const char *valstr)
+		static int conf_set_xplevelfile(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.xplevelfile, valstr, NULL);
 		}
@@ -2865,12 +2937,12 @@ namespace pvpgn
 		}
 
 
-		extern char const * prefs_get_xpcalc_file(void)
+		extern char const* prefs_get_xpcalc_file(void)
 		{
 			return prefs_runtime_config.xpcalcfile;
 		}
 
-		static int conf_set_xpcalcfile(const char *valstr)
+		static int conf_set_xpcalcfile(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.xpcalcfile, valstr, NULL);
 		}
@@ -2891,7 +2963,7 @@ namespace pvpgn
 			return prefs_runtime_config.initkill_timer;
 		}
 
-		static int conf_set_initkill_timer(const char *valstr)
+		static int conf_set_initkill_timer(const char* valstr)
 		{
 			return conf_set_int(&prefs_runtime_config.initkill_timer, valstr, 0);
 		}
@@ -2912,7 +2984,7 @@ namespace pvpgn
 			return prefs_runtime_config.war3_ladder_update_secs;
 		}
 
-		static int conf_set_war3_ladder_update_secs(const char *valstr)
+		static int conf_set_war3_ladder_update_secs(const char* valstr)
 		{
 			return conf_set_int(&prefs_runtime_config.war3_ladder_update_secs, valstr, 0);
 		}
@@ -2933,7 +3005,7 @@ namespace pvpgn
 			return prefs_runtime_config.output_update_secs;
 		}
 
-		static int conf_set_output_update_secs(const char *valstr)
+		static int conf_set_output_update_secs(const char* valstr)
 		{
 			return conf_set_int(&prefs_runtime_config.output_update_secs, valstr, 0);
 		}
@@ -2949,12 +3021,12 @@ namespace pvpgn
 		}
 
 
-		extern char const * prefs_get_ladderdir(void)
+		extern char const* prefs_get_ladderdir(void)
 		{
 			return prefs_runtime_config.ladderdir;
 		}
 
-		static int conf_set_ladderdir(const char *valstr)
+		static int conf_set_ladderdir(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.ladderdir, valstr, NULL);
 		}
@@ -2970,12 +3042,12 @@ namespace pvpgn
 		}
 
 
-		extern char const * prefs_get_outputdir(void)
+		extern char const* prefs_get_outputdir(void)
 		{
 			return prefs_runtime_config.statusdir;
 		}
 
-		static int conf_set_statusdir(const char *valstr)
+		static int conf_set_statusdir(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.statusdir, valstr, NULL);
 		}
@@ -2996,7 +3068,7 @@ namespace pvpgn
 			return prefs_runtime_config.XML_output_ladder;
 		}
 
-		static int conf_set_XML_output_ladder(const char *valstr)
+		static int conf_set_XML_output_ladder(const char* valstr)
 		{
 			return conf_set_bool(&prefs_runtime_config.XML_output_ladder, valstr, 0);
 		}
@@ -3017,7 +3089,7 @@ namespace pvpgn
 			return prefs_runtime_config.XML_status_output;
 		}
 
-		static int conf_set_XML_status_output(const char *valstr)
+		static int conf_set_XML_status_output(const char* valstr)
 		{
 			return conf_set_bool(&prefs_runtime_config.XML_status_output, valstr, 0);
 		}
@@ -3033,12 +3105,12 @@ namespace pvpgn
 		}
 
 
-		extern char const * prefs_get_account_allowed_symbols(void)
+		extern char const* prefs_get_account_allowed_symbols(void)
 		{
 			return prefs_runtime_config.account_allowed_symbols;
 		}
 
-		static int conf_set_account_allowed_symbols(const char *valstr)
+		static int conf_set_account_allowed_symbols(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.account_allowed_symbols, valstr, NULL);
 		}
@@ -3059,7 +3131,7 @@ namespace pvpgn
 			return prefs_runtime_config.account_force_username;
 		}
 
-		static int conf_set_account_force_username(const char *valstr)
+		static int conf_set_account_force_username(const char* valstr)
 		{
 			return conf_set_bool(&prefs_runtime_config.account_force_username, valstr, 0);
 		}
@@ -3074,12 +3146,12 @@ namespace pvpgn
 			return conf_get_bool(prefs_runtime_config.account_force_username);
 		}
 
-		extern char const * prefs_get_command_groups_file(void)
+		extern char const* prefs_get_command_groups_file(void)
 		{
 			return prefs_runtime_config.command_groups_file;
 		}
 
-		static int conf_set_command_groups_file(const char *valstr)
+		static int conf_set_command_groups_file(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.command_groups_file, valstr, NULL);
 		}
@@ -3095,12 +3167,12 @@ namespace pvpgn
 		}
 
 
-		extern char const * prefs_get_tournament_file(void)
+		extern char const* prefs_get_tournament_file(void)
 		{
 			return prefs_runtime_config.tournament_file;
 		}
 
-		static int conf_set_tournament_file(const char *valstr)
+		static int conf_set_tournament_file(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.tournament_file, valstr, NULL);
 		}
@@ -3116,12 +3188,12 @@ namespace pvpgn
 		}
 
 
-		extern char const * prefs_get_customicons_file(void)
+		extern char const* prefs_get_customicons_file(void)
 		{
 			return prefs_runtime_config.customicons_file;
 		}
 
-		static int conf_set_customicons_file(const char *valstr)
+		static int conf_set_customicons_file(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.customicons_file, valstr, NULL);
 		}
@@ -3136,12 +3208,33 @@ namespace pvpgn
 			return prefs_runtime_config.customicons_file;
 		}
 
-		extern char const * prefs_get_scriptdir(void)
+
+		extern char const* prefs_get_email_verification_file(void)
+		{
+			return prefs_runtime_config.email_verification_file;
+		}
+
+		static int conf_set_email_verification_file(const char* valstr)
+		{
+			return conf_set_str(&prefs_runtime_config.email_verification_file, valstr, NULL);
+		}
+
+		static const char* conf_get_email_verification_file(void)
+		{
+			return prefs_runtime_config.email_verification_file;
+		}
+
+		static int conf_setdef_email_verification_file(void)
+		{
+			return conf_set_str(&prefs_runtime_config.email_verification_file, NULL, BNETD_EMAIL_VERIFICATION_FILE);
+		}
+
+		extern char const* prefs_get_scriptdir(void)
 		{
 			return prefs_runtime_config.scriptdir;
 		}
 
-		static int conf_set_scriptdir(const char *valstr)
+		static int conf_set_scriptdir(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.scriptdir, valstr, NULL);
 		}
@@ -3156,12 +3249,12 @@ namespace pvpgn
 			return prefs_runtime_config.scriptdir;
 		}
 
-		extern char const * prefs_get_aliasfile(void)
+		extern char const* prefs_get_aliasfile(void)
 		{
 			return prefs_runtime_config.aliasfile;
 		}
 
-		static int conf_set_aliasfile(const char *valstr)
+		static int conf_set_aliasfile(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.aliasfile, valstr, NULL);
 		}
@@ -3177,12 +3270,12 @@ namespace pvpgn
 		}
 
 
-		extern char const * prefs_get_anongame_infos_file(void)
+		extern char const* prefs_get_anongame_infos_file(void)
 		{
 			return prefs_runtime_config.anongame_infos_file;
 		}
 
-		static int conf_set_anongame_infos_file(const char *valstr)
+		static int conf_set_anongame_infos_file(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.anongame_infos_file, valstr, NULL);
 		}
@@ -3203,7 +3296,7 @@ namespace pvpgn
 			return prefs_runtime_config.max_conns_per_IP;
 		}
 
-		static int conf_set_max_conns_per_IP(const char *valstr)
+		static int conf_set_max_conns_per_IP(const char* valstr)
 		{
 			return conf_set_int(&prefs_runtime_config.max_conns_per_IP, valstr, 0);
 		}
@@ -3224,7 +3317,7 @@ namespace pvpgn
 			return prefs_runtime_config.max_friends;
 		}
 
-		static int conf_set_max_friends(const char *valstr)
+		static int conf_set_max_friends(const char* valstr)
 		{
 			return conf_set_int(&prefs_runtime_config.max_friends, valstr, 0);
 		}
@@ -3245,7 +3338,7 @@ namespace pvpgn
 			return prefs_runtime_config.clan_newer_time;
 		}
 
-		static int conf_set_clan_newer_time(const char *valstr)
+		static int conf_set_clan_newer_time(const char* valstr)
 		{
 			return conf_set_int(&prefs_runtime_config.clan_newer_time, valstr, 0);
 		}
@@ -3266,7 +3359,7 @@ namespace pvpgn
 			return prefs_runtime_config.clan_max_members;
 		}
 
-		static int conf_set_clan_max_members(const char *valstr)
+		static int conf_set_clan_max_members(const char* valstr)
 		{
 			int rez = conf_set_int(&prefs_runtime_config.clan_max_members, valstr, 0);
 
@@ -3300,7 +3393,7 @@ namespace pvpgn
 			return prefs_runtime_config.clan_channel_default_private;
 		}
 
-		static int conf_set_clan_channel_default_private(const char *valstr)
+		static int conf_set_clan_channel_default_private(const char* valstr)
 		{
 			return conf_set_bool(&prefs_runtime_config.clan_channel_default_private, valstr, 0);
 		}
@@ -3320,7 +3413,7 @@ namespace pvpgn
 			return prefs_runtime_config.clan_min_invites;
 		}
 
-		static int conf_set_clan_min_invites(const char *valstr)
+		static int conf_set_clan_min_invites(const char* valstr)
 		{
 			return conf_set_int(&prefs_runtime_config.clan_min_invites, valstr, 0);
 		}
@@ -3340,7 +3433,7 @@ namespace pvpgn
 			return prefs_runtime_config.passfail_count;
 		}
 
-		static int conf_set_passfail_count(const char *valstr)
+		static int conf_set_passfail_count(const char* valstr)
 		{
 			return conf_set_int(&prefs_runtime_config.passfail_count, valstr, 0);
 		}
@@ -3361,7 +3454,7 @@ namespace pvpgn
 			return prefs_runtime_config.passfail_bantime;
 		}
 
-		static int conf_set_passfail_bantime(const char *valstr)
+		static int conf_set_passfail_bantime(const char* valstr)
 		{
 			return conf_set_int(&prefs_runtime_config.passfail_bantime, valstr, 0);
 		}
@@ -3382,7 +3475,7 @@ namespace pvpgn
 			return prefs_runtime_config.maxusers_per_channel;
 		}
 
-		static int conf_set_maxusers_per_channel(const char *valstr)
+		static int conf_set_maxusers_per_channel(const char* valstr)
 		{
 			return conf_set_int(&prefs_runtime_config.maxusers_per_channel, valstr, 0);
 		}
@@ -3398,12 +3491,100 @@ namespace pvpgn
 		}
 
 
-		extern char const * prefs_get_supportfile(void)
+		extern unsigned int prefs_get_verify_account_email(void)
+		{
+			return prefs_runtime_config.verify_account_email;
+		}
+
+		extern void prefs_set_verify_account_email(bool enable)
+		{
+			prefs_runtime_config.verify_account_email = enable ? 1 : 0;
+		}
+
+		static int conf_set_verify_account_email(const char* valstr)
+		{
+			return conf_set_bool(&prefs_runtime_config.verify_account_email, valstr, 0);
+		}
+
+		static const char* conf_get_verify_account_email(void)
+		{
+			return conf_get_bool(prefs_runtime_config.verify_account_email);
+		}
+
+		static int conf_setdef_verify_account_email(void)
+		{
+			return conf_set_bool(&prefs_runtime_config.verify_account_email, nullptr, 0);
+		}
+
+
+		extern unsigned int prefs_get_verify_account_email_expiration(void)
+		{
+			return prefs_runtime_config.verify_account_email_expiration;
+		}
+
+		static int conf_set_verify_account_email_expiration(const char* valstr)
+		{
+			return conf_set_int(&prefs_runtime_config.verify_account_email_expiration, valstr, 0);
+		}
+
+		static const char* conf_get_verify_account_email_expiration(void)
+		{
+			return conf_get_int(prefs_runtime_config.verify_account_email_expiration);
+		}
+
+		static int conf_setdef_verify_account_email_expiration(void)
+		{
+			return conf_set_int(&prefs_runtime_config.verify_account_email_expiration, nullptr, 10);
+		}
+
+
+		extern char const* prefs_get_verify_account_email_from_address(void)
+		{
+			return prefs_runtime_config.verify_account_email_from_address;
+		}
+
+		static int conf_set_verify_account_email_from_address(const char* valstr)
+		{
+			return conf_set_str(&prefs_runtime_config.verify_account_email_from_address, valstr, NULL);
+		}
+
+		static const char* conf_get_verify_account_email_from_address(void)
+		{
+			return prefs_runtime_config.verify_account_email_from_address;
+		}
+
+		static int conf_setdef_verify_account_email_from_address(void)
+		{
+			return conf_set_str(&prefs_runtime_config.verify_account_email_from_address, NULL, NULL);
+		}
+
+
+		extern char const* prefs_get_verify_account_email_from_name(void)
+		{
+			return prefs_runtime_config.verify_account_email_from_name;
+		}
+
+		static int conf_set_verify_account_email_from_name(const char* valstr)
+		{
+			return conf_set_str(&prefs_runtime_config.verify_account_email_from_name, valstr, NULL);
+		}
+
+		static const char* conf_get_verify_account_email_from_name(void)
+		{
+			return prefs_runtime_config.verify_account_email_from_name;
+		}
+
+		static int conf_setdef_verify_account_email_from_name(void)
+		{
+			return conf_set_str(&prefs_runtime_config.verify_account_email_from_name, NULL, NULL);
+		}
+
+		extern char const* prefs_get_supportfile(void)
 		{
 			return prefs_runtime_config.supportfile;
 		}
 
-		static int conf_set_supportfile(const char *valstr)
+		static int conf_set_supportfile(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.supportfile, valstr, NULL);
 		}
@@ -3419,12 +3600,12 @@ namespace pvpgn
 		}
 
 
-		extern char const * prefs_get_allowed_clients(void)
+		extern char const* prefs_get_allowed_clients(void)
 		{
 			return prefs_runtime_config.allowed_clients;
 		}
 
-		static int conf_set_allowed_clients(const char *valstr)
+		static int conf_set_allowed_clients(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.allowed_clients, valstr, NULL);
 		}
@@ -3440,12 +3621,12 @@ namespace pvpgn
 		}
 
 
-		extern char const * prefs_get_ladder_games(void)
+		extern char const* prefs_get_ladder_games(void)
 		{
 			return prefs_runtime_config.ladder_games;
 		}
 
-		static int conf_set_ladder_games(const char *valstr)
+		static int conf_set_ladder_games(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.ladder_games, valstr, NULL);
 		}
@@ -3461,12 +3642,12 @@ namespace pvpgn
 		}
 
 
-		extern char const * prefs_get_ladder_prefix(void)
+		extern char const* prefs_get_ladder_prefix(void)
 		{
 			return prefs_runtime_config.ladder_prefix;
 		}
 
-		static int conf_set_ladder_prefix(const char *valstr)
+		static int conf_set_ladder_prefix(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.ladder_prefix, valstr, NULL);
 		}
@@ -3487,7 +3668,7 @@ namespace pvpgn
 			return prefs_runtime_config.max_connections;
 		}
 
-		static int conf_set_max_connections(const char *valstr)
+		static int conf_set_max_connections(const char* valstr)
 		{
 			return conf_set_int(&prefs_runtime_config.max_connections, valstr, 0);
 		}
@@ -3508,7 +3689,7 @@ namespace pvpgn
 			return prefs_runtime_config.packet_limit;
 		}
 
-		static int conf_set_packet_limit(const char *valstr)
+		static int conf_set_packet_limit(const char* valstr)
 		{
 			return conf_set_int(&prefs_runtime_config.packet_limit, valstr, 0);
 		}
@@ -3529,7 +3710,7 @@ namespace pvpgn
 			return prefs_runtime_config.sync_on_logoff;
 		}
 
-		static int conf_set_sync_on_logoff(const char *valstr)
+		static int conf_set_sync_on_logoff(const char* valstr)
 		{
 			return conf_set_bool(&prefs_runtime_config.sync_on_logoff, valstr, 0);
 		}
@@ -3544,12 +3725,12 @@ namespace pvpgn
 			return conf_get_bool(prefs_runtime_config.sync_on_logoff);
 		}
 
-		extern char const * prefs_get_irc_network_name(void)
+		extern char const* prefs_get_irc_network_name(void)
 		{
 			return prefs_runtime_config.irc_network_name;
 		}
 
-		static int conf_set_irc_network_name(const char *valstr)
+		static int conf_set_irc_network_name(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.irc_network_name, valstr, NULL);
 		}
@@ -3570,7 +3751,7 @@ namespace pvpgn
 			return prefs_runtime_config.localize_by_country;
 		}
 
-		static int conf_set_localize_by_country(const char *valstr)
+		static int conf_set_localize_by_country(const char* valstr)
 		{
 			return conf_set_bool(&prefs_runtime_config.localize_by_country, valstr, 0);
 		}
@@ -3591,7 +3772,7 @@ namespace pvpgn
 			return prefs_runtime_config.log_commands;
 		}
 
-		static int conf_set_log_commands(const char *valstr)
+		static int conf_set_log_commands(const char* valstr)
 		{
 			return conf_set_bool(&prefs_runtime_config.log_commands, valstr, 0);
 		}
@@ -3607,12 +3788,12 @@ namespace pvpgn
 		}
 
 
-		extern char const * prefs_get_log_command_groups(void)
+		extern char const* prefs_get_log_command_groups(void)
 		{
 			return prefs_runtime_config.log_command_groups;
 		}
 
-		static int conf_set_log_command_groups(const char *valstr)
+		static int conf_set_log_command_groups(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.log_command_groups, valstr, NULL);
 		}
@@ -3628,12 +3809,12 @@ namespace pvpgn
 		}
 
 
-		extern char const * prefs_get_log_command_list(void)
+		extern char const* prefs_get_log_command_list(void)
 		{
 			return prefs_runtime_config.log_command_list;
 		}
 
-		static int conf_set_log_command_list(const char *valstr)
+		static int conf_set_log_command_list(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.log_command_list, valstr, NULL);
 		}
@@ -3649,16 +3830,162 @@ namespace pvpgn
 		}
 
 
+		extern char const* prefs_get_smtp_ca_cert_store_file(void)
+		{
+			return prefs_runtime_config.smtp_ca_cert_store_file;
+		}
+
+		static int conf_set_smtp_ca_cert_store_file(const char* valstr)
+		{
+			return conf_set_str(&prefs_runtime_config.smtp_ca_cert_store_file, valstr, NULL);
+		}
+
+		static const char* conf_get_smtp_ca_cert_store_file(void)
+		{
+			return prefs_runtime_config.smtp_ca_cert_store_file;
+		}
+
+		static int conf_setdef_smtp_ca_cert_store_file(void)
+		{
+			return conf_set_str(&prefs_runtime_config.smtp_ca_cert_store_file, NULL, NULL);
+		}
+
+
+		extern char const* prefs_get_smtp_ca_cert_store_remote_url(void)
+		{
+			return prefs_runtime_config.smtp_ca_cert_store_remote_url;
+		}
+
+		static int conf_set_smtp_ca_cert_store_remote_url(const char* valstr)
+		{
+			return conf_set_str(&prefs_runtime_config.smtp_ca_cert_store_remote_url, valstr, NULL);
+		}
+
+		static const char* conf_get_smtp_ca_cert_store_remote_url(void)
+		{
+			return prefs_runtime_config.smtp_ca_cert_store_remote_url;
+		}
+
+		static int conf_setdef_smtp_ca_cert_store_remote_url(void)
+		{
+			return conf_set_str(&prefs_runtime_config.smtp_ca_cert_store_remote_url, NULL, NULL);
+		}
+
+
+		extern unsigned int prefs_get_smtp_ca_cert_store_fetch_interval(void)
+		{
+			return prefs_runtime_config.smtp_ca_cert_store_fetch_interval;
+		}
+
+		static int conf_set_smtp_ca_cert_store_fetch_interval(const char* valstr)
+		{
+			return conf_set_int(&prefs_runtime_config.smtp_ca_cert_store_fetch_interval, valstr, 0);
+		}
+
+		static const char* conf_get_smtp_ca_cert_store_fetch_interval(void)
+		{
+			return conf_get_int(prefs_runtime_config.smtp_ca_cert_store_fetch_interval);
+		}
+
+		static int conf_setdef_smtp_ca_cert_store_fetch_interval(void)
+		{
+			return conf_set_int(&prefs_runtime_config.smtp_ca_cert_store_fetch_interval, NULL, BNETD_SMTP_CERT_STORE_FETCH_INTERVAL);
+		}
+
+
+		extern char const* prefs_get_smtp_server_url(void)
+		{
+			return prefs_runtime_config.smtp_server_url;
+		}
+
+		static int conf_set_smtp_server_url(const char* valstr)
+		{
+			return conf_set_str(&prefs_runtime_config.smtp_server_url, valstr, NULL);
+		}
+
+		static const char* conf_get_smtp_server_url(void)
+		{
+			return prefs_runtime_config.smtp_server_url;
+		}
+
+		static int conf_setdef_smtp_server_url(void)
+		{
+			return conf_set_str(&prefs_runtime_config.smtp_server_url, NULL, NULL);
+		}
+
+
+		extern unsigned int prefs_get_smtp_port(void)
+		{
+			return prefs_runtime_config.smtp_port;
+		}
+
+		static int conf_set_smtp_port(const char* valstr)
+		{
+			return conf_set_int(&prefs_runtime_config.smtp_port, valstr, 0);
+		}
+
+		static const char* conf_get_smtp_port(void)
+		{
+			return conf_get_int(prefs_runtime_config.smtp_port);
+		}
+
+		static int conf_setdef_smtp_port(void)
+		{
+			return conf_set_int(&prefs_runtime_config.smtp_port, NULL, BNETD_SMTP_PORT);
+		}
+
+
+		extern char const* prefs_get_smtp_username(void)
+		{
+			return prefs_runtime_config.smtp_username;
+		}
+
+		static int conf_set_smtp_username(const char* valstr)
+		{
+			return conf_set_str(&prefs_runtime_config.smtp_username, valstr, NULL);
+		}
+
+		static const char* conf_get_smtp_username(void)
+		{
+			return prefs_runtime_config.smtp_username;
+		}
+
+		static int conf_setdef_smtp_username(void)
+		{
+			return conf_set_str(&prefs_runtime_config.smtp_username, NULL, NULL);
+		}
+
+
+		extern char const* prefs_get_smtp_password(void)
+		{
+			return prefs_runtime_config.smtp_password;
+		}
+
+		static int conf_set_smtp_password(const char* valstr)
+		{
+			return conf_set_str(&prefs_runtime_config.smtp_password, valstr, NULL);
+		}
+
+		static const char* conf_get_smtp_password(void)
+		{
+			return prefs_runtime_config.smtp_password;
+		}
+
+		static int conf_setdef_smtp_password(void)
+		{
+			return conf_set_str(&prefs_runtime_config.smtp_password, NULL, NULL);
+		}
+
 
 		/**
 		*  Westwood Online Extensions
 		*/
-		extern char const * prefs_get_apireg_addrs(void)
+		extern char const* prefs_get_apireg_addrs(void)
 		{
 			return prefs_runtime_config.apiregaddrs;
 		}
 
-		static int conf_set_apireg_addrs(const char *valstr)
+		static int conf_set_apireg_addrs(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.apiregaddrs, valstr, NULL);
 		}
@@ -3673,12 +4000,12 @@ namespace pvpgn
 			return prefs_runtime_config.apiregaddrs;
 		}
 
-		extern char const * prefs_get_wgameres_addrs(void)
+		extern char const* prefs_get_wgameres_addrs(void)
 		{
 			return prefs_runtime_config.wgameresaddrs;
 		}
 
-		static int conf_set_wgameres_addrs(const char *valstr)
+		static int conf_set_wgameres_addrs(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.wgameresaddrs, valstr, NULL);
 		}
@@ -3693,12 +4020,12 @@ namespace pvpgn
 			return prefs_runtime_config.wgameresaddrs;
 		}
 
-		extern char const * prefs_get_wolv1_addrs(void)
+		extern char const* prefs_get_wolv1_addrs(void)
 		{
 			return prefs_runtime_config.wolv1addrs;
 		}
 
-		static int conf_set_wolv1_addrs(const char *valstr)
+		static int conf_set_wolv1_addrs(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.wolv1addrs, valstr, NULL);
 		}
@@ -3713,12 +4040,12 @@ namespace pvpgn
 			return prefs_runtime_config.wolv1addrs;
 		}
 
-		extern char const * prefs_get_wolv2_addrs(void)
+		extern char const* prefs_get_wolv2_addrs(void)
 		{
 			return prefs_runtime_config.wolv2addrs;
 		}
 
-		static int conf_set_wolv2_addrs(const char *valstr)
+		static int conf_set_wolv2_addrs(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.wolv2addrs, valstr, NULL);
 		}
@@ -3733,17 +4060,17 @@ namespace pvpgn
 			return prefs_runtime_config.wolv2addrs;
 		}
 
-		static int  conf_set_wol_timezone(const char *valstr)
+		static int  conf_set_wol_timezone(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.woltimezone, valstr, NULL);
 		}
 
-		extern char const * prefs_get_wol_timezone(void)
+		extern char const* prefs_get_wol_timezone(void)
 		{
 			return prefs_runtime_config.woltimezone;
 		}
 
-		static char const * conf_get_wol_timezone(void)
+		static char const* conf_get_wol_timezone(void)
 		{
 			return prefs_runtime_config.woltimezone;
 		}
@@ -3753,17 +4080,17 @@ namespace pvpgn
 			return conf_set_str(&prefs_runtime_config.woltimezone, NULL, 0);
 		}
 
-		static int  conf_set_wol_longitude(const char *valstr)
+		static int  conf_set_wol_longitude(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.wollongitude, valstr, NULL);
 		}
 
-		extern char const * prefs_get_wol_longitude(void)
+		extern char const* prefs_get_wol_longitude(void)
 		{
 			return prefs_runtime_config.wollongitude;
 		}
 
-		static char const * conf_get_wol_longitude(void)
+		static char const* conf_get_wol_longitude(void)
 		{
 			return prefs_runtime_config.wollongitude;
 		}
@@ -3773,17 +4100,17 @@ namespace pvpgn
 			return conf_set_str(&prefs_runtime_config.wollongitude, NULL, 0);
 		}
 
-		static int conf_set_wol_latitude(const char *valstr)
+		static int conf_set_wol_latitude(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.wollatitude, valstr, NULL);
 		}
 
-		extern char const * prefs_get_wol_latitude(void)
+		extern char const* prefs_get_wol_latitude(void)
 		{
 			return prefs_runtime_config.wollatitude;
 		}
 
-		static char const * conf_get_wol_latitude(void)
+		static char const* conf_get_wol_latitude(void)
 		{
 			return prefs_runtime_config.wollatitude;
 		}
@@ -3793,17 +4120,17 @@ namespace pvpgn
 			return conf_set_str(&prefs_runtime_config.wollatitude, NULL, 0);
 		}
 
-		static int conf_set_wol_autoupdate_serverhost(const char *valstr)
+		static int conf_set_wol_autoupdate_serverhost(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.wol_autoupdate_serverhost, valstr, NULL);
 		}
 
-		extern char const * prefs_get_wol_autoupdate_serverhost(void)
+		extern char const* prefs_get_wol_autoupdate_serverhost(void)
 		{
 			return prefs_runtime_config.wol_autoupdate_serverhost;
 		}
 
-		static char const * conf_get_wol_autoupdate_serverhost(void)
+		static char const* conf_get_wol_autoupdate_serverhost(void)
 		{
 			return prefs_runtime_config.wol_autoupdate_serverhost;
 		}
@@ -3813,17 +4140,17 @@ namespace pvpgn
 			return conf_set_str(&prefs_runtime_config.wol_autoupdate_serverhost, NULL, 0);
 		}
 
-		static int conf_set_wol_autoupdate_username(const char *valstr)
+		static int conf_set_wol_autoupdate_username(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.wol_autoupdate_username, valstr, NULL);
 		}
 
-		extern char const * prefs_get_wol_autoupdate_username(void)
+		extern char const* prefs_get_wol_autoupdate_username(void)
 		{
 			return prefs_runtime_config.wol_autoupdate_username;
 		}
 
-		static char const * conf_get_wol_autoupdate_username(void)
+		static char const* conf_get_wol_autoupdate_username(void)
 		{
 			return prefs_runtime_config.wol_autoupdate_username;
 		}
@@ -3833,17 +4160,17 @@ namespace pvpgn
 			return conf_set_str(&prefs_runtime_config.wol_autoupdate_username, NULL, 0);
 		}
 
-		static int conf_set_wol_autoupdate_password(const char *valstr)
+		static int conf_set_wol_autoupdate_password(const char* valstr)
 		{
 			return conf_set_str(&prefs_runtime_config.wol_autoupdate_password, valstr, NULL);
 		}
 
-		extern char const * prefs_get_wol_autoupdate_password(void)
+		extern char const* prefs_get_wol_autoupdate_password(void)
 		{
 			return prefs_runtime_config.wol_autoupdate_password;
 		}
 
-		static char const * conf_get_wol_autoupdate_password(void)
+		static char const* conf_get_wol_autoupdate_password(void)
 		{
 			return prefs_runtime_config.wol_autoupdate_password;
 		}

@@ -200,11 +200,45 @@ namespace pvpgn
 													packet_del_ref(rpacket);
 													break;
 												}
-												if ((oldstrhash1 = account_get_pass(account)))
+
+					if (account_get_auth_botlogin(account) != 1) /* default to false */
 												{
-													if (hash_set_str(&oldpasshash1, oldstrhash1) < 0)
+						eventlog(eventlog_level_info, __FUNCTION__, "[{}] bot login for \"{}\" refused (no bot access)", conn_get_socket(c), account_get_name(account));
+														conn_set_state(c, conn_state_bot_username);
+
+														if (!(rpacket = packet_create(packet_class_raw)))
+														{
+															eventlog(eventlog_level_error, __FUNCTION__, "[{}] could not create rpacket", conn_get_socket(c));
+															break;
+														}
+
+						packet_append_ntstring(rpacket, tempb);
+														conn_push_outqueue(c, rpacket);
+														packet_del_ref(rpacket);
+														break;
+													}
+					else if (account_get_auth_lock(account) == 1) /* default to false */
 													{
-														eventlog(eventlog_level_info, __FUNCTION__, "[{}] bot login for \"{}\" refused (corrupted passhash1?)", conn_get_socket(c), account_get_name(account));
+						eventlog(eventlog_level_info, __FUNCTION__, "[{}] bot login for \"{}\" refused (this account is locked)", conn_get_socket(c), account_get_name(account));
+														conn_set_state(c, conn_state_bot_username);
+
+														if (!(rpacket = packet_create(packet_class_raw)))
+														{
+															eventlog(eventlog_level_error, __FUNCTION__, "[{}] could not create rpacket", conn_get_socket(c));
+															break;
+														}
+
+						packet_append_ntstring(rpacket, tempb);
+														conn_push_outqueue(c, rpacket);
+														packet_del_ref(rpacket);
+														break;
+													}
+					
+					if ((oldstrhash1 = account_get_pass(account)))
+					{
+						if (hash_set_str(&oldpasshash1, oldstrhash1) < 0)
+													{
+							eventlog(eventlog_level_info, __FUNCTION__, "[{}] bot login for \"{}\" refused (corrupted passhash1?)", conn_get_socket(c), account_get_name(account));
 														conn_set_state(c, conn_state_bot_username);
 
 														if (!(rpacket = packet_create(packet_class_raw)))
@@ -219,14 +253,14 @@ namespace pvpgn
 														break;
 													}
 
-													testpass = xstrdup(linestr);
-													{
-														strtolower(testpass);
-													}
-													if (bnet_hash(&trypasshash1, std::strlen(testpass), testpass) < 0) /* FIXME: force to lowercase */
-													{
-														eventlog(eventlog_level_info, __FUNCTION__, "[{}] bot login for \"{}\" refused (unable to hash password)", conn_get_socket(c), account_get_name(account));
-														xfree(testpass);
+						testpass = xstrdup(linestr);
+						{
+							strtolower(testpass);
+						}
+						if (bnet_hash(&trypasshash1, std::strlen(testpass), testpass) < 0) /* FIXME: force to lowercase */
+						{
+							eventlog(eventlog_level_info, __FUNCTION__, "[{}] bot login for \"{}\" refused (unable to hash password)", conn_get_socket(c), account_get_name(account));
+							xfree(testpass);
 
 														conn_set_state(c, conn_state_bot_username);
 
@@ -236,15 +270,16 @@ namespace pvpgn
 															break;
 														}
 
-														packet_append_ntstring(rpacket, tempa);
+							packet_append_ntstring(rpacket, tempa);
 														conn_push_outqueue(c, rpacket);
 														packet_del_ref(rpacket);
 														break;
 													}
-													xfree(testpass);
-													if (hash_eq(trypasshash1, oldpasshash1) != 1)
+						xfree(testpass);
+						if (hash_eq(trypasshash1, oldpasshash1) != 1)
 													{
-														eventlog(eventlog_level_info, __FUNCTION__, "[{}] bot login for \"{}\" refused (wrong password)", conn_get_socket(c), account_get_name(account));
+							eventlog(eventlog_level_info, __FUNCTION__, "[{}] bot login for \"{}\" refused (wrong password)", conn_get_socket(c), account_get_name(account));
+							conn_increment_passfail_count(c);
 														conn_set_state(c, conn_state_bot_username);
 
 														if (!(rpacket = packet_create(packet_class_raw)))
@@ -253,41 +288,7 @@ namespace pvpgn
 															break;
 														}
 
-														packet_append_ntstring(rpacket, tempa);
-														conn_push_outqueue(c, rpacket);
-														packet_del_ref(rpacket);
-														break;
-													}
-
-
-													if (account_get_auth_botlogin(account) != 1) /* default to false */
-													{
-														eventlog(eventlog_level_info, __FUNCTION__, "[{}] bot login for \"{}\" refused (no bot access)", conn_get_socket(c), account_get_name(account));
-														conn_set_state(c, conn_state_bot_username);
-
-														if (!(rpacket = packet_create(packet_class_raw)))
-														{
-															eventlog(eventlog_level_error, __FUNCTION__, "[{}] could not create rpacket", conn_get_socket(c));
-															break;
-														}
-
-														packet_append_ntstring(rpacket, tempb);
-														conn_push_outqueue(c, rpacket);
-														packet_del_ref(rpacket);
-														break;
-													}
-													else if (account_get_auth_lock(account) == 1) /* default to false */
-													{
-														eventlog(eventlog_level_info, __FUNCTION__, "[{}] bot login for \"{}\" refused (this account is locked)", conn_get_socket(c), account_get_name(account));
-														conn_set_state(c, conn_state_bot_username);
-
-														if (!(rpacket = packet_create(packet_class_raw)))
-														{
-															eventlog(eventlog_level_error, __FUNCTION__, "[{}] could not create rpacket", conn_get_socket(c));
-															break;
-														}
-
-														packet_append_ntstring(rpacket, tempb);
+							packet_append_ntstring(rpacket, tempa);
 														conn_push_outqueue(c, rpacket);
 														packet_del_ref(rpacket);
 														break;

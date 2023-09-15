@@ -91,9 +91,7 @@ namespace pvpgn
 					entry->group = 1 << (group - 1);
 					entry->command = xstrdup(command);
 					list_append_data(command_groups_head, entry);
-#ifdef COMMANDGROUPSDEBUG
-					eventlog(eventlog_level_info, __FUNCTION__, "Added command: {} - with group {}", entry->command, entry->group);
-#endif
+					eventlog(eventlog_level_trace, __FUNCTION__, "Added command: {} - with group {}", entry->command, entry->group);
 				}
 			}
 			file_get_line(NULL); // clear file_get_line buffer
