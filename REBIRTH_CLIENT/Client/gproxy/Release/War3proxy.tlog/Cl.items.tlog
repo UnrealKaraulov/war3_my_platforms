@@ -1,0 +1,14 @@
+C:\Projects\WAR3\war3_my_platforms2\REBIRTH_CLIENT\Client\gproxy\CheckSum.cpp;C:\Projects\WAR3\war3_my_platforms2\REBIRTH_CLIENT\Client\gproxy\Release\CheckSum.obj
+C:\Projects\WAR3\war3_my_platforms2\REBIRTH_CLIENT\Client\gproxy\bcrypt.c;C:\Projects\WAR3\war3_my_platforms2\REBIRTH_CLIENT\Client\gproxy\Release\bcrypt.obj
+C:\Projects\WAR3\war3_my_platforms2\REBIRTH_CLIENT\Client\gproxy\bncsutilinterface.cpp;C:\Projects\WAR3\war3_my_platforms2\REBIRTH_CLIENT\Client\gproxy\Release\bncsutilinterface.obj
+C:\Projects\WAR3\war3_my_platforms2\REBIRTH_CLIENT\Client\gproxy\bnet.cpp;C:\Projects\WAR3\war3_my_platforms2\REBIRTH_CLIENT\Client\gproxy\Release\bnet.obj
+C:\Projects\WAR3\war3_my_platforms2\REBIRTH_CLIENT\Client\gproxy\bnetprotocol.cpp;C:\Projects\WAR3\war3_my_platforms2\REBIRTH_CLIENT\Client\gproxy\Release\bnetprotocol.obj
+C:\Projects\WAR3\war3_my_platforms2\REBIRTH_CLIENT\Client\gproxy\commandpacket.cpp;C:\Projects\WAR3\war3_my_platforms2\REBIRTH_CLIENT\Client\gproxy\Release\commandpacket.obj
+C:\Projects\WAR3\war3_my_platforms2\REBIRTH_CLIENT\Client\gproxy\config.cpp;C:\Projects\WAR3\war3_my_platforms2\REBIRTH_CLIENT\Client\gproxy\Release\config.obj
+C:\Projects\WAR3\war3_my_platforms2\REBIRTH_CLIENT\Client\gproxy\crc32.cpp;C:\Projects\WAR3\war3_my_platforms2\REBIRTH_CLIENT\Client\gproxy\Release\crc32.obj
+C:\Projects\WAR3\war3_my_platforms2\REBIRTH_CLIENT\Client\gproxy\gameprotocol.cpp;C:\Projects\WAR3\war3_my_platforms2\REBIRTH_CLIENT\Client\gproxy\Release\gameprotocol.obj
+C:\Projects\WAR3\war3_my_platforms2\REBIRTH_CLIENT\Client\gproxy\gproxy.cpp;C:\Projects\WAR3\war3_my_platforms2\REBIRTH_CLIENT\Client\gproxy\Release\gproxy.obj
+C:\Projects\WAR3\war3_my_platforms2\REBIRTH_CLIENT\Client\gproxy\gpsprotocol.cpp;C:\Projects\WAR3\war3_my_platforms2\REBIRTH_CLIENT\Client\gproxy\Release\gpsprotocol.obj
+C:\Projects\WAR3\war3_my_platforms2\REBIRTH_CLIENT\Client\gproxy\socket.cpp;C:\Projects\WAR3\war3_my_platforms2\REBIRTH_CLIENT\Client\gproxy\Release\socket.obj
+C:\Projects\WAR3\war3_my_platforms2\REBIRTH_CLIENT\Client\gproxy\util.cpp;C:\Projects\WAR3\war3_my_platforms2\REBIRTH_CLIENT\Client\gproxy\Release\util.obj
+C:\Projects\WAR3\war3_my_platforms2\REBIRTH_CLIENT\Client\gproxy\xxhash.c;C:\Projects\WAR3\war3_my_platforms2\REBIRTH_CLIENT\Client\gproxy\Release\xxhash.obj

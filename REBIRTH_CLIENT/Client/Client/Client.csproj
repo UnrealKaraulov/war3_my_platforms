@@ -1,0 +1,505 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7A797B9D-3118-4568-9C94-4865284E9CFF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Client</RootNamespace>
+    <AssemblyName>Client</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Release\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>image.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Management">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceProcess">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="ClientUpdaterWindow.xaml.cs">
+      <DependentUpon>ClientUpdaterWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FluentFTP\Client\FtpClient_Connection.cs" />
+    <Compile Include="FluentFTP\Client\FtpClient_FileManagement.cs" />
+    <Compile Include="FluentFTP\Client\FtpClient_FolderManagement.cs" />
+    <Compile Include="FluentFTP\Client\FtpClient_Hash.cs" />
+    <Compile Include="FluentFTP\Client\FtpClient_HighLevel.cs" />
+    <Compile Include="FluentFTP\Client\FtpClient_HighLevelDownload.cs" />
+    <Compile Include="FluentFTP\Client\FtpClient_HighLevelUpload.cs" />
+    <Compile Include="FluentFTP\Client\FtpClient_Listing.cs" />
+    <Compile Include="FluentFTP\Client\FtpClient_LowLevel.cs" />
+    <Compile Include="FluentFTP\Client\FtpClient_Properties.cs" />
+    <Compile Include="FluentFTP\Client\FtpClient_ServerSpecific.cs" />
+    <Compile Include="FluentFTP\Client\FtpClient_Static.cs" />
+    <Compile Include="FluentFTP\Client\FtpClient_Utils.cs" />
+    <Compile Include="FluentFTP\Client\IFtpClient.cs" />
+    <Compile Include="FluentFTP\Enums\FtpCapability.cs" />
+    <Compile Include="FluentFTP\Enums\FtpDataConnectionType.cs" />
+    <Compile Include="FluentFTP\Enums\FtpDataType.cs" />
+    <Compile Include="FluentFTP\Enums\FtpDate.cs" />
+    <Compile Include="FluentFTP\Enums\FtpEncryptionMode.cs" />
+    <Compile Include="FluentFTP\Enums\FtpError.cs" />
+    <Compile Include="FluentFTP\Enums\FtpFileSystemObjectType.cs" />
+    <Compile Include="FluentFTP\Enums\FtpHashAlgorithm.cs" />
+    <Compile Include="FluentFTP\Enums\FtpIpVersion.cs" />
+    <Compile Include="FluentFTP\Enums\FtpListOption.cs" />
+    <Compile Include="FluentFTP\Enums\FtpLocalExists.cs" />
+    <Compile Include="FluentFTP\Enums\FtpOperatingSystem.cs" />
+    <Compile Include="FluentFTP\Enums\FtpParser.cs" />
+    <Compile Include="FluentFTP\Enums\FtpPermission.cs" />
+    <Compile Include="FluentFTP\Enums\FtpRemoteExists.cs" />
+    <Compile Include="FluentFTP\Enums\FtpResponseType.cs" />
+    <Compile Include="FluentFTP\Enums\FtpsBuffering.cs" />
+    <Compile Include="FluentFTP\Enums\FtpServer.cs" />
+    <Compile Include="FluentFTP\Enums\FtpSpecialPermissions.cs" />
+    <Compile Include="FluentFTP\Enums\FtpTraceLevel.cs" />
+    <Compile Include="FluentFTP\Enums\FtpVerify.cs" />
+    <Compile Include="FluentFTP\Exceptions\FtpListParseException.cs" />
+    <Compile Include="FluentFTP\Exceptions\FtpMissingSocketException.cs" />
+    <Compile Include="FluentFTP\Helpers\FtpEvents.cs" />
+    <Compile Include="FluentFTP\Helpers\FtpExceptions.cs" />
+    <Compile Include="FluentFTP\Helpers\FtpHash.cs" />
+    <Compile Include="FluentFTP\Helpers\FtpHashAlgorithms.cs" />
+    <Compile Include="FluentFTP\Helpers\FtpListItem.cs" />
+    <Compile Include="FluentFTP\Helpers\FtpListParser.cs" />
+    <Compile Include="FluentFTP\Helpers\FtpProfile.cs" />
+    <Compile Include="FluentFTP\Helpers\FtpProgress.cs" />
+    <Compile Include="FluentFTP\Helpers\FtpReply.cs" />
+    <Compile Include="FluentFTP\Helpers\FtpSizeReply.cs" />
+    <Compile Include="FluentFTP\Helpers\FtpTrace.cs" />
+    <Compile Include="FluentFTP\Helpers\IntRef.cs" />
+    <Compile Include="FluentFTP\Helpers\Parsers\FtpIBMParser.cs" />
+    <Compile Include="FluentFTP\Helpers\Parsers\FtpMachineListParser.cs" />
+    <Compile Include="FluentFTP\Helpers\Parsers\FtpNonStopParser.cs" />
+    <Compile Include="FluentFTP\Helpers\Parsers\FtpUnixParser.cs" />
+    <Compile Include="FluentFTP\Helpers\Parsers\FtpVMSParser.cs" />
+    <Compile Include="FluentFTP\Helpers\Parsers\FtpWindowsParser.cs" />
+    <Compile Include="FluentFTP\Proxy\FtpClientBlueCoatProxy.cs" />
+    <Compile Include="FluentFTP\Proxy\FtpClientHttp11Proxy.cs" />
+    <Compile Include="FluentFTP\Proxy\FtpClientProxy.cs" />
+    <Compile Include="FluentFTP\Proxy\FtpClientUserAtHostProxy.cs" />
+    <Compile Include="FluentFTP\Proxy\ProxyInfo.cs" />
+    <Compile Include="FluentFTP\Stream\FtpDataStream.cs" />
+    <Compile Include="FluentFTP\Stream\FtpSocketStream.cs" />
+    <Compile Include="FluentFTP\Stream\FtpSslStream.cs" />
+    <Compile Include="FluentFTP\Utils\FtpExtensions.cs" />
+    <Compile Include="FluentFTP\Utils\FtpReflection.cs" />
+    <Compile Include="FluentFTP\Utils\NET2Compatibility.cs" />
+    <Compile Include="GameListWindow.xaml.cs">
+      <DependentUpon>GameListWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GameLobbyWindow.xaml.cs">
+      <DependentUpon>GameLobbyWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalVariables.cs" />
+    <Compile Include="ClientWindow.xaml.cs">
+      <DependentUpon>ClientWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HostMenuWindow.xaml.cs">
+      <DependentUpon>HostMenuWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Includes\CustomMarshal.cs" />
+    <Compile Include="Includes\CustomMarshalAsAttribute.cs" />
+    <Compile Include="Includes\CustomMarshalAttribute.cs" />
+    <Compile Include="Includes\Enums.cs" />
+    <Compile Include="Includes\Imports.cs" />
+    <Compile Include="Includes\Injector.cs" />
+    <Compile Include="Includes\OtherInfoClass.cs" />
+    <Compile Include="Includes\Patternscanner.cs" />
+    <Compile Include="Includes\ProcessHelper.cs" />
+    <Compile Include="Includes\ProcessMemory.cs" />
+    <Compile Include="Includes\Structs.cs" />
+    <Compile Include="KeyBindWindow.xaml.cs">
+      <DependentUpon>KeyBindWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LoadWindow.xaml.cs">
+      <DependentUpon>LoadWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MapDownloadWindow.xaml.cs">
+      <DependentUpon>MapDownloadWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MessageBoxWindow.xaml.cs">
+      <DependentUpon>MessageBoxWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MiscSettingsWindow.xaml.cs">
+      <DependentUpon>MiscSettingsWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Mpq\StormLib.cs" />
+    <Compile Include="PatchesWindow.xaml.cs">
+      <DependentUpon>PatchesWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RichTextBoxEx\EmoticonCollection.cs" />
+    <Compile Include="RichTextBoxEx\EmoticonMapper.cs" />
+    <Compile Include="RichTextBoxEx\RichTextBoxExt.cs" />
+    <Compile Include="RichTextBoxEx\WordBreaker.cs" />
+    <Compile Include="SelectChannelOrCreaateNew.xaml.cs">
+      <DependentUpon>SelectChannelOrCreaateNew.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="System.Windows.Interactivity\AttachableCollection`1.cs" />
+    <Compile Include="System.Windows.Interactivity\Behavior.cs" />
+    <Compile Include="System.Windows.Interactivity\BehaviorCollection.cs" />
+    <Compile Include="System.Windows.Interactivity\Behavior`1.cs" />
+    <Compile Include="System.Windows.Interactivity\CustomPropertyValueEditor.cs" />
+    <Compile Include="System.Windows.Interactivity\CustomPropertyValueEditorAttribute.cs" />
+    <Compile Include="System.Windows.Interactivity\DefaultTriggerAttribute.cs" />
+    <Compile Include="System.Windows.Interactivity\DependencyObjectHelper.cs" />
+    <Compile Include="System.Windows.Interactivity\EventObserver.cs" />
+    <Compile Include="System.Windows.Interactivity\EventTrigger.cs" />
+    <Compile Include="System.Windows.Interactivity\EventTriggerBase.cs" />
+    <Compile Include="System.Windows.Interactivity\EventTriggerBase`1.cs" />
+    <Compile Include="System.Windows.Interactivity\ExceptionStringTable.cs" />
+    <Compile Include="System.Windows.Interactivity\IAttachedObject.cs" />
+    <Compile Include="System.Windows.Interactivity\Interaction.cs" />
+    <Compile Include="System.Windows.Interactivity\InvokeCommandAction.cs" />
+    <Compile Include="System.Windows.Interactivity\Microsoft\Expression\BlendSDK\RuntimeVersion.cs" />
+    <Compile Include="System.Windows.Interactivity\Microsoft\Expression\BlendSDK\VersionConstants.cs" />
+    <Compile Include="System.Windows.Interactivity\NameResolvedEventArgs.cs" />
+    <Compile Include="System.Windows.Interactivity\NameResolver.cs" />
+    <Compile Include="System.Windows.Interactivity\PreviewInvokeEventArgs.cs" />
+    <Compile Include="System.Windows.Interactivity\TargetedTriggerAction.cs" />
+    <Compile Include="System.Windows.Interactivity\TargetedTriggerAction`1.cs" />
+    <Compile Include="System.Windows.Interactivity\TriggerAction.cs" />
+    <Compile Include="System.Windows.Interactivity\TriggerActionCollection.cs" />
+    <Compile Include="System.Windows.Interactivity\TriggerAction`1.cs" />
+    <Compile Include="System.Windows.Interactivity\TriggerBase.cs" />
+    <Compile Include="System.Windows.Interactivity\TriggerBase`1.cs" />
+    <Compile Include="System.Windows.Interactivity\TriggerCollection.cs" />
+    <Compile Include="System.Windows.Interactivity\TypeConstraintAttribute.cs" />
+    <Compile Include="tga\BinaryReaderExtension.cs" />
+    <Compile Include="tga\BitsExtractor.cs" />
+    <Compile Include="tga\Constants.cs" />
+    <Compile Include="tga\DeveloperArea.cs" />
+    <Compile Include="tga\DeveloperField.cs" />
+    <Compile Include="tga\ExtensionArea.cs" />
+    <Compile Include="tga\Footer.cs" />
+    <Compile Include="tga\Header.cs" />
+    <Compile Include="tga\TgaImage.cs" />
+    <Compile Include="UploadNewMapWindow.xaml.cs">
+      <DependentUpon>UploadNewMapWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VideoSettingsWindow.xaml.cs">
+      <DependentUpon>VideoSettingsWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="War3ProxySettings.xaml.cs">
+      <DependentUpon>War3ProxySettings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="War3\TriggerStringParser.cs" />
+    <Compile Include="WindowsFirewallHelper\Addresses\DefaultGateway.cs" />
+    <Compile Include="WindowsFirewallHelper\Addresses\DHCPService.cs" />
+    <Compile Include="WindowsFirewallHelper\Addresses\DNSService.cs" />
+    <Compile Include="WindowsFirewallHelper\Addresses\IPRange.cs" />
+    <Compile Include="WindowsFirewallHelper\Addresses\LocalSubnet.cs" />
+    <Compile Include="WindowsFirewallHelper\Addresses\NetworkAddress.cs" />
+    <Compile Include="WindowsFirewallHelper\Addresses\SingleIP.cs" />
+    <Compile Include="WindowsFirewallHelper\Addresses\SpecialAddress.cs" />
+    <Compile Include="WindowsFirewallHelper\Addresses\WINSService.cs" />
+    <Compile Include="WindowsFirewallHelper\COMInterop\INetFwAuthorizedApplication.cs" />
+    <Compile Include="WindowsFirewallHelper\COMInterop\INetFwAuthorizedApplications.cs" />
+    <Compile Include="WindowsFirewallHelper\COMInterop\INetFwIcmpSettings.cs" />
+    <Compile Include="WindowsFirewallHelper\COMInterop\INetFwMgr.cs" />
+    <Compile Include="WindowsFirewallHelper\COMInterop\INetFwOpenPort.cs" />
+    <Compile Include="WindowsFirewallHelper\COMInterop\INetFwOpenPorts.cs" />
+    <Compile Include="WindowsFirewallHelper\COMInterop\INetFwPolicy.cs" />
+    <Compile Include="WindowsFirewallHelper\COMInterop\INetFwPolicy2.cs" />
+    <Compile Include="WindowsFirewallHelper\COMInterop\INetFwProduct.cs" />
+    <Compile Include="WindowsFirewallHelper\COMInterop\INetFwProducts.cs" />
+    <Compile Include="WindowsFirewallHelper\COMInterop\INetFwProfile.cs" />
+    <Compile Include="WindowsFirewallHelper\COMInterop\INetFwRemoteAdminSettings.cs" />
+    <Compile Include="WindowsFirewallHelper\COMInterop\INetFwRule.cs" />
+    <Compile Include="WindowsFirewallHelper\COMInterop\INetFwRule2.cs" />
+    <Compile Include="WindowsFirewallHelper\COMInterop\INetFwRule3.cs" />
+    <Compile Include="WindowsFirewallHelper\COMInterop\INetFwRules.cs" />
+    <Compile Include="WindowsFirewallHelper\COMInterop\INetFwService.cs" />
+    <Compile Include="WindowsFirewallHelper\COMInterop\INetFwServiceRestriction.cs" />
+    <Compile Include="WindowsFirewallHelper\COMInterop\INetFwServices.cs" />
+    <Compile Include="WindowsFirewallHelper\COMInterop\NetFwAction.cs" />
+    <Compile Include="WindowsFirewallHelper\COMInterop\NetFwIPProtocol.cs" />
+    <Compile Include="WindowsFirewallHelper\COMInterop\NetFwIPVersion.cs" />
+    <Compile Include="WindowsFirewallHelper\COMInterop\NetFwModifyState.cs" />
+    <Compile Include="WindowsFirewallHelper\COMInterop\NetFwProfileType.cs" />
+    <Compile Include="WindowsFirewallHelper\COMInterop\NetFwProfileType2.cs" />
+    <Compile Include="WindowsFirewallHelper\COMInterop\NetFwRuleCategory.cs" />
+    <Compile Include="WindowsFirewallHelper\COMInterop\NetFwRuleDirection.cs" />
+    <Compile Include="WindowsFirewallHelper\COMInterop\NetFwScope.cs" />
+    <Compile Include="WindowsFirewallHelper\COMInterop\NetFwServiceType.cs" />
+    <Compile Include="WindowsFirewallHelper\EdgeTraversalAction.cs" />
+    <Compile Include="WindowsFirewallHelper\Exceptions\FirewallLegacyNotSupportedException.cs" />
+    <Compile Include="WindowsFirewallHelper\Exceptions\FirewallWASInvalidProtocolException.cs" />
+    <Compile Include="WindowsFirewallHelper\Exceptions\FirewallWASNotSupportedException.cs" />
+    <Compile Include="WindowsFirewallHelper\FirewallAction.cs" />
+    <Compile Include="WindowsFirewallHelper\FirewallAPIVersion.cs" />
+    <Compile Include="WindowsFirewallHelper\FirewallDirection.cs" />
+    <Compile Include="WindowsFirewallHelper\FirewallLegacy.cs" />
+    <Compile Include="WindowsFirewallHelper\FirewallLegacyProfile.cs" />
+    <Compile Include="WindowsFirewallHelper\FirewallManager.cs" />
+    <Compile Include="WindowsFirewallHelper\FirewallModifyStatePolicy.cs" />
+    <Compile Include="WindowsFirewallHelper\FirewallPortType.cs" />
+    <Compile Include="WindowsFirewallHelper\FirewallProduct.cs" />
+    <Compile Include="WindowsFirewallHelper\FirewallProductRegistrationHandle.cs" />
+    <Compile Include="WindowsFirewallHelper\FirewallProfiles.cs" />
+    <Compile Include="WindowsFirewallHelper\FirewallProtocol.cs" />
+    <Compile Include="WindowsFirewallHelper\FirewallRulesCategory.cs" />
+    <Compile Include="WindowsFirewallHelper\FirewallRules\FirewallLegacyApplicationRule.cs" />
+    <Compile Include="WindowsFirewallHelper\FirewallRules\FirewallLegacyPortRule.cs" />
+    <Compile Include="WindowsFirewallHelper\FirewallRules\FirewallWASRule.cs" />
+    <Compile Include="WindowsFirewallHelper\FirewallRules\FirewallWASRuleWin7.cs" />
+    <Compile Include="WindowsFirewallHelper\FirewallRules\FirewallWASRuleWin8.cs" />
+    <Compile Include="WindowsFirewallHelper\FirewallScope.cs" />
+    <Compile Include="WindowsFirewallHelper\FirewallWAS.cs" />
+    <Compile Include="WindowsFirewallHelper\FirewallWASInternetControlMessage.cs" />
+    <Compile Include="WindowsFirewallHelper\FirewallWASProfile.cs" />
+    <Compile Include="WindowsFirewallHelper\FirewallWASRuleGroup.cs" />
+    <Compile Include="WindowsFirewallHelper\IAddress.cs" />
+    <Compile Include="WindowsFirewallHelper\IFirewall.cs" />
+    <Compile Include="WindowsFirewallHelper\IFirewallProfile.cs" />
+    <Compile Include="WindowsFirewallHelper\IFirewallRule.cs" />
+    <Compile Include="WindowsFirewallHelper\InternalCollections\FirewallLegacyApplicationCollection.cs" />
+    <Compile Include="WindowsFirewallHelper\InternalCollections\FirewallLegacyPortCollection.cs" />
+    <Compile Include="WindowsFirewallHelper\InternalCollections\FirewallLegacyPortCollectionKey.cs" />
+    <Compile Include="WindowsFirewallHelper\InternalCollections\FirewallLegacyRulesCollection.cs" />
+    <Compile Include="WindowsFirewallHelper\InternalCollections\FirewallLegacyServiceCollection.cs" />
+    <Compile Include="WindowsFirewallHelper\InternalCollections\FirewallProductsCollection.cs" />
+    <Compile Include="WindowsFirewallHelper\InternalCollections\FirewallWASRulesCollection.cs" />
+    <Compile Include="WindowsFirewallHelper\InternalHelpers\AddressHelper.cs" />
+    <Compile Include="WindowsFirewallHelper\InternalHelpers\Collections\ComCollectionBase.cs" />
+    <Compile Include="WindowsFirewallHelper\InternalHelpers\Collections\ComEnumerator.cs" />
+    <Compile Include="WindowsFirewallHelper\InternalHelpers\Collections\ComNativeCollectionBase.cs" />
+    <Compile Include="WindowsFirewallHelper\InternalHelpers\Collections\IComCollection.cs" />
+    <Compile Include="WindowsFirewallHelper\InternalHelpers\ComClassProgIdAttribute.cs" />
+    <Compile Include="WindowsFirewallHelper\InternalHelpers\ComHelper.cs" />
+    <Compile Include="WindowsFirewallHelper\InternalHelpers\ICMPHelper.cs" />
+    <Compile Include="WindowsFirewallHelper\InternalHelpers\NativeHelper.cs" />
+    <Compile Include="WindowsFirewallHelper\InternalHelpers\NetworkInterfaceHelper.cs" />
+    <Compile Include="WindowsFirewallHelper\InternalHelpers\PortHelper.cs" />
+    <Compile Include="WindowsFirewallHelper\InternalHelpers\ThreadSafeSingleton.cs" />
+    <Compile Include="WindowsFirewallHelper\InternetControlMessageKnownTypes.cs" />
+    <Compile Include="WindowsFirewallHelper\InternetControlMessageKnownTypesV6.cs" />
+    <Compile Include="WindowsFirewallHelper\IPSecSecurityLevel.cs" />
+    <Compile Include="WindowsFirewallHelper\NetworkInterfaceTypes.cs" />
+    <Page Include="ClientUpdaterWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GameListWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GameLobbyWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HostMenuWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="KeyBindWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LoadWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LoginWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LoginWindow.xaml.cs">
+      <DependentUpon>LoginWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="ClientWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MapDownloadWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MessageBoxWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MiscSettingsWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PatchesWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SelectChannelOrCreaateNew.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UploadNewMapWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VideoSettingsWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="War3ProxySettings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System.Windows.Interactivity\ExceptionStringTable.resx">
+      <DependentUpon>ExceptionStringTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="app.manifest" />
+    <None Include="War3\Mp3dec.asi" />
+    <None Include="War3\Mssdolby.m3d" />
+    <None Include="War3\Msseax2.m3d" />
+    <None Include="War3\Mssfast.m3d" />
+    <None Include="War3\Reverb3.flt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Smileys\1.png" />
+    <Resource Include="Smileys\101.png" />
+    <Resource Include="Smileys\16.png" />
+    <Resource Include="Smileys\2.png" />
+    <Resource Include="Smileys\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\NoMinimap.png" />
+    <Resource Include="Resources\NoPreview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\LoginPage_Background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Данный проект ссылается на пакеты NuGet, отсутствующие на этом компьютере. Используйте восстановление пакетов NuGet, чтобы скачать их.  Дополнительную информацию см. по адресу: http://go.microsoft.com/fwlink/?LinkID=322105. Отсутствует следующий файл: {0}.</ErrorText>
+    </PropertyGroup>
+  </Target>
+</Project>

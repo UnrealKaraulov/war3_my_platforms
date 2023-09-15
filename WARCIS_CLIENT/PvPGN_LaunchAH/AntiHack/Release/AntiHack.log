@@ -1,0 +1,108 @@
+﻿  Antihack.cpp
+  BlpReadWrite.cpp
+  ChatHelper.cpp
+  CheckFileSign.cpp
+  commandpacket.cpp
+  crc32.cpp
+  CustomFeatures.cpp
+  DotaMPBarHelper.cpp
+  gameprotocol.cpp
+  NewJassNatives.cpp
+  quantizer.cpp
+  Spammmm.cpp
+  Storm.cpp
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\AntiHack\CustomFeatures.cpp(701,17): warning C4305: инициализация: усечение из "double" в "float"
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\AntiHack\CustomFeatures.cpp(814,21): warning C4305: -=: усечение из "double" в "float"
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\AntiHack\CustomFeatures.cpp(838,30): warning C4305: +=: усечение из "double" в "float"
+  UnitAndItem.cpp
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\AntiHack\CustomFeatures.cpp(1100,7): warning C4101: t: неиспользованная локальная переменная
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\AntiHack\CustomFeatures.cpp(1531,38): warning C4477: "sprintf_s": в строке форматирования "%u" требуется аргумент типа "unsigned int", но вариативный аргумент "1" имеет тип "time_t"
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\AntiHack\CustomFeatures.cpp(1531,38): message : рекомендуется использовать "%llu" в строке форматирования
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\AntiHack\CustomFeatures.cpp(1531,38): message : рекомендуется использовать "%I64u" в строке форматирования
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\AntiHack\CustomFeatures.cpp(1921,37): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\AntiHack\CustomFeatures.cpp(2471,83): warning C4305: аргумент: усечение из "double" в "float"
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\AntiHack\CustomFeatures.cpp(2476,83): warning C4305: аргумент: усечение из "double" в "float"
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\AntiHack\CustomFeatures.cpp(3805,27): warning C4305: аргумент: усечение из "double" в "float"
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\AntiHack\CustomFeatures.cpp(4215,22): warning C4018: <: несоответствие типов со знаком и без знака
+  VoiceClient.cpp
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\AntiHack\CustomFeatures.cpp(6424,6): warning C4101: outdataaddr: неиспользованная локальная переменная
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\AntiHack\CustomFeatures.cpp(6425,9): warning C4101: outdatasize: неиспользованная локальная переменная
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\AntiHack\Antihack.cpp(2034,24): warning C4477: "sprintf_s": в строке форматирования "%X" требуется аргумент типа "unsigned int", но вариативный аргумент "1" имеет тип "LPVOID"
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\AntiHack\Antihack.cpp(2065,24): warning C4477: "sprintf_s": в строке форматирования "%X" требуется аргумент типа "unsigned int", но вариативный аргумент "1" имеет тип "LPVOID"
+  WarcraftFrameHelper.cpp
+  warcis_reconnector.cpp
+  gpsprotocol.cpp
+  SimpleCrash.cpp
+  socket.cpp
+  Source.cpp
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\AntiHack\VoiceClient.cpp(142,7): warning C4101: i: неиспользованная локальная переменная
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\AntiHack\VoiceClient.cpp(311,22): warning C4101: i: неиспользованная локальная переменная
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\AntiHack\VoiceClient.cpp(750,133): warning C4018: >=: несоответствие типов со знаком и без знака
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\AntiHack\VoiceClient.cpp(799,30): warning C4305: инициализация: усечение из "double" в "float"
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\AntiHack\VoiceClient.cpp(811,33): warning C4305: -=: усечение из "double" в "float"
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\AntiHack\VoiceClient.cpp(941,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\AntiHack\VoiceClient.cpp(1013,23): warning C4018: <: несоответствие типов со знаком и без знака
+  util.cpp
+  bcrypt.c
+  tga_reader.c
+  xxhash.c
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\AntiHack\bcrypt.c(682,18): warning C4244: =: преобразование "unsigned long" в "char", возможна потеря данных
+LINK : warning C4743: "const std::ios_base::failure::`vftable'" имеет различный размер в "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\pelib\exportdirectory.cpp" и "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\antihack\antihack.cpp": 12 и 16 байт
+LINK : warning C4743: "const std::system_error::`vftable'" имеет различный размер в "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\pelib\exportdirectory.cpp" и "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\antihack\antihack.cpp": 12 и 16 байт
+LINK : warning C4743: "const std::_System_error::`vftable'" имеет различный размер в "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\pelib\exportdirectory.cpp" и "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\antihack\antihack.cpp": 12 и 16 байт
+LINK : warning C4743: "const std::runtime_error::`vftable'" имеет различный размер в "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\pelib\exportdirectory.cpp" и "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\antihack\antihack.cpp": 12 и 16 байт
+LINK : warning C4743: "const std::ios_base::failure::`vftable'" имеет различный размер в "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\pelib\pelibaux.cpp" и "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\antihack\antihack.cpp": 12 и 16 байт
+LINK : warning C4743: "const std::system_error::`vftable'" имеет различный размер в "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\pelib\pelibaux.cpp" и "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\antihack\antihack.cpp": 12 и 16 байт
+LINK : warning C4743: "const std::_System_error::`vftable'" имеет различный размер в "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\pelib\pelibaux.cpp" и "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\antihack\antihack.cpp": 12 и 16 байт
+LINK : warning C4743: "const std::runtime_error::`vftable'" имеет различный размер в "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\pelib\pelibaux.cpp" и "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\antihack\antihack.cpp": 12 и 16 байт
+LINK : warning C4743: "const std::ios_base::failure::`vftable'" имеет различный размер в "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\pelib\pefile.cpp" и "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\antihack\antihack.cpp": 12 и 16 байт
+LINK : warning C4743: "const std::system_error::`vftable'" имеет различный размер в "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\pelib\pefile.cpp" и "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\antihack\antihack.cpp": 12 и 16 байт
+LINK : warning C4743: "const std::_System_error::`vftable'" имеет различный размер в "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\pelib\pefile.cpp" и "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\antihack\antihack.cpp": 12 и 16 байт
+LINK : warning C4743: "const std::runtime_error::`vftable'" имеет различный размер в "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\pelib\pefile.cpp" и "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\antihack\antihack.cpp": 12 и 16 байт
+LINK : warning C4743: "const std::ios_base::failure::`vftable'" имеет различный размер в "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\pelib\debugdirectory.cpp" и "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\antihack\antihack.cpp": 12 и 16 байт
+LINK : warning C4743: "const std::system_error::`vftable'" имеет различный размер в "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\pelib\debugdirectory.cpp" и "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\antihack\antihack.cpp": 12 и 16 байт
+LINK : warning C4743: "const std::_System_error::`vftable'" имеет различный размер в "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\pelib\debugdirectory.cpp" и "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\antihack\antihack.cpp": 12 и 16 байт
+LINK : warning C4743: "const std::runtime_error::`vftable'" имеет различный размер в "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\pelib\debugdirectory.cpp" и "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\antihack\antihack.cpp": 12 и 16 байт
+LINK : warning C4743: "const std::ios_base::failure::`vftable'" имеет различный размер в "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\pelib\relocationsdirectory.cpp" и "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\antihack\antihack.cpp": 12 и 16 байт
+LINK : warning C4743: "const std::system_error::`vftable'" имеет различный размер в "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\pelib\relocationsdirectory.cpp" и "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\antihack\antihack.cpp": 12 и 16 байт
+LINK : warning C4743: "const std::_System_error::`vftable'" имеет различный размер в "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\pelib\relocationsdirectory.cpp" и "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\antihack\antihack.cpp": 12 и 16 байт
+LINK : warning C4743: "const std::runtime_error::`vftable'" имеет различный размер в "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\pelib\relocationsdirectory.cpp" и "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\antihack\antihack.cpp": 12 и 16 байт
+LINK : warning C4743: "const std::ios_base::failure::`vftable'" имеет различный размер в "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\pelib\comheaderdirectory.cpp" и "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\antihack\antihack.cpp": 12 и 16 байт
+LINK : warning C4743: "const std::system_error::`vftable'" имеет различный размер в "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\pelib\comheaderdirectory.cpp" и "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\antihack\antihack.cpp": 12 и 16 байт
+LINK : warning C4743: "const std::_System_error::`vftable'" имеет различный размер в "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\pelib\comheaderdirectory.cpp" и "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\antihack\antihack.cpp": 12 и 16 байт
+LINK : warning C4743: "const std::runtime_error::`vftable'" имеет различный размер в "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\pelib\comheaderdirectory.cpp" и "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\antihack\antihack.cpp": 12 и 16 байт
+LINK : warning C4743: "const std::ios_base::failure::`vftable'" имеет различный размер в "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\pelib\boundimportdirectory.cpp" и "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\antihack\antihack.cpp": 12 и 16 байт
+LINK : warning C4743: "const std::system_error::`vftable'" имеет различный размер в "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\pelib\boundimportdirectory.cpp" и "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\antihack\antihack.cpp": 12 и 16 байт
+LINK : warning C4743: "const std::_System_error::`vftable'" имеет различный размер в "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\pelib\boundimportdirectory.cpp" и "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\antihack\antihack.cpp": 12 и 16 байт
+LINK : warning C4743: "const std::runtime_error::`vftable'" имеет различный размер в "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\pelib\boundimportdirectory.cpp" и "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\antihack\antihack.cpp": 12 и 16 байт
+LINK : warning C4743: "const std::ios_base::failure::`vftable'" имеет различный размер в "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\pelib\mzheader.cpp" и "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\antihack\antihack.cpp": 12 и 16 байт
+LINK : warning C4743: "const std::system_error::`vftable'" имеет различный размер в "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\pelib\mzheader.cpp" и "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\antihack\antihack.cpp": 12 и 16 байт
+LINK : warning C4743: "const std::_System_error::`vftable'" имеет различный размер в "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\pelib\mzheader.cpp" и "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\antihack\antihack.cpp": 12 и 16 байт
+LINK : warning C4743: "const std::runtime_error::`vftable'" имеет различный размер в "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\pelib\mzheader.cpp" и "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\antihack\antihack.cpp": 12 и 16 байт
+LINK : warning C4743: "const std::ios_base::failure::`vftable'" имеет различный размер в "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\pelib\resourcedirectory.cpp" и "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\antihack\antihack.cpp": 12 и 16 байт
+LINK : warning C4743: "const std::system_error::`vftable'" имеет различный размер в "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\pelib\resourcedirectory.cpp" и "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\antihack\antihack.cpp": 12 и 16 байт
+LINK : warning C4743: "const std::_System_error::`vftable'" имеет различный размер в "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\pelib\resourcedirectory.cpp" и "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\antihack\antihack.cpp": 12 и 16 байт
+LINK : warning C4743: "const std::runtime_error::`vftable'" имеет различный размер в "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\pelib\resourcedirectory.cpp" и "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\antihack\antihack.cpp": 12 и 16 байт
+LINK : warning C4743: "const std::ios_base::failure::`vftable'" имеет различный размер в "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\pelib\iatdirectory.cpp" и "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\antihack\antihack.cpp": 12 и 16 байт
+LINK : warning C4743: "const std::system_error::`vftable'" имеет различный размер в "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\pelib\iatdirectory.cpp" и "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\antihack\antihack.cpp": 12 и 16 байт
+LINK : warning C4743: "const std::_System_error::`vftable'" имеет различный размер в "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\pelib\iatdirectory.cpp" и "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\antihack\antihack.cpp": 12 и 16 байт
+LINK : warning C4743: "const std::runtime_error::`vftable'" имеет различный размер в "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\pelib\iatdirectory.cpp" и "c:\projects\war3\war3_my_platforms2\warcis_client[done_99%]\pvpgn_launchah\antihack\antihack.cpp": 12 и 16 байт
+     Создается библиотека C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\Release\AMH.lib и объект C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\Release\AMH.exp
+  Создание кода
+  Создание кода завершено
+portaudio.lib(pa_allocation.obj) : warning LNK4099: "" PDB не найден с "portaudio.lib(pa_allocation.obj)" или на ""; компоновка объекта выполняется как при отсутствии отладочных данных
+portaudio.lib(pa_converters.obj) : warning LNK4099: "" PDB не найден с "portaudio.lib(pa_converters.obj)" или на ""; компоновка объекта выполняется как при отсутствии отладочных данных
+portaudio.lib(pa_cpuload.obj) : warning LNK4099: "" PDB не найден с "portaudio.lib(pa_cpuload.obj)" или на ""; компоновка объекта выполняется как при отсутствии отладочных данных
+portaudio.lib(pa_dither.obj) : warning LNK4099: "" PDB не найден с "portaudio.lib(pa_dither.obj)" или на ""; компоновка объекта выполняется как при отсутствии отладочных данных
+portaudio.lib(pa_front.obj) : warning LNK4099: "" PDB не найден с "portaudio.lib(pa_front.obj)" или на ""; компоновка объекта выполняется как при отсутствии отладочных данных
+portaudio.lib(pa_process.obj) : warning LNK4099: "" PDB не найден с "portaudio.lib(pa_process.obj)" или на ""; компоновка объекта выполняется как при отсутствии отладочных данных
+portaudio.lib(pa_ringbuffer.obj) : warning LNK4099: "" PDB не найден с "portaudio.lib(pa_ringbuffer.obj)" или на ""; компоновка объекта выполняется как при отсутствии отладочных данных
+portaudio.lib(pa_stream.obj) : warning LNK4099: "" PDB не найден с "portaudio.lib(pa_stream.obj)" или на ""; компоновка объекта выполняется как при отсутствии отладочных данных
+portaudio.lib(pa_win_ds.obj) : warning LNK4099: "" PDB не найден с "portaudio.lib(pa_win_ds.obj)" или на ""; компоновка объекта выполняется как при отсутствии отладочных данных
+portaudio.lib(pa_win_ds_dynlink.obj) : warning LNK4099: "" PDB не найден с "portaudio.lib(pa_win_ds_dynlink.obj)" или на ""; компоновка объекта выполняется как при отсутствии отладочных данных
+portaudio.lib(pa_win_wasapi.obj) : warning LNK4099: "" PDB не найден с "portaudio.lib(pa_win_wasapi.obj)" или на ""; компоновка объекта выполняется как при отсутствии отладочных данных
+portaudio.lib(pa_win_coinitialize.obj) : warning LNK4099: "" PDB не найден с "portaudio.lib(pa_win_coinitialize.obj)" или на ""; компоновка объекта выполняется как при отсутствии отладочных данных
+portaudio.lib(pa_win_hostapis.obj) : warning LNK4099: "" PDB не найден с "portaudio.lib(pa_win_hostapis.obj)" или на ""; компоновка объекта выполняется как при отсутствии отладочных данных
+portaudio.lib(pa_win_util.obj) : warning LNK4099: "" PDB не найден с "portaudio.lib(pa_win_util.obj)" или на ""; компоновка объекта выполняется как при отсутствии отладочных данных
+portaudio.lib(pa_win_waveformat.obj) : warning LNK4099: "" PDB не найден с "portaudio.lib(pa_win_waveformat.obj)" или на ""; компоновка объекта выполняется как при отсутствии отладочных данных
+  AntiHack.vcxproj -> C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\Release\AMH.dll
