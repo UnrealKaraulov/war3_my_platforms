@@ -10,4 +10,4 @@
   cdb_seek.cpp
   cdb_seq.cpp
   cdb_unpack.cpp
-  tinycdb.vcxproj -> C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER[ONE_FOR_TWO_CLIENTS]\vs-project\src\vs-project\src\tinycdb\Release\tinycdb.lib
+  tinycdb.vcxproj -> C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\vs-project\src\vs-project\src\tinycdb\Release\tinycdb.lib

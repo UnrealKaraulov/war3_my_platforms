@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER[ONE_FOR_TWO_CLIENTS]\Release\bnetd.exe</FullPath>
+      <FullPath>C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\Release\bnetd.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

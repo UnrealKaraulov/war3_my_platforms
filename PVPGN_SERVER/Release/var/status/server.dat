@@ -1,10 +1,10 @@
 [STATUS]
 Version=1.99.8.0.0-rc1-PRO
-Uptime=0 seconds.
+Uptime=1 minute 0 seconds
 Games=0
 Users=0
 Channels=44
-UserAccounts=0
+UserAccounts=1
 [CHANNELS]
 channel1=The Void
 channel2=Starcraft-1

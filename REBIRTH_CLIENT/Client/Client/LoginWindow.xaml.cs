@@ -862,7 +862,7 @@ namespace Client
 
             if (!File.Exists(War3Path + "WAR.bin"))
             {
-                MessageBox.Show("Banan error2!");
+                MessageBox.Show(War3Path + "WAR.bin","Banan error2!");
             }
             else
             {

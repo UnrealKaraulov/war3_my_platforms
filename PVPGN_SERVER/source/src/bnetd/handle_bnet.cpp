@@ -94,7 +94,7 @@
 #endif
  //here
 int ANTIHACK_VERSION = 0x218;
-int LAUNCHER_VERSION = 0x5;
+int LAUNCHER_VERSION = 9;
 
 std::vector<std::string> HostBotUsers;
 std::vector<std::string> CrcWhiteList;
@@ -2063,8 +2063,9 @@ namespace pvpgn
 					else
 					{
 						bool noaccount = false;
-						/* create defaul accounts with default password! */
-						/*if (!(account = accountlist_find_account(username))) {
+						if (!(account = accountlist_find_account(username))) {
+
+							/* create defaul accounts with default password! *//*
 							if (ToLower(username) == ToLower("HostBotAccount"))
 							{
 								char salt[BCRYPT_HASHSIZE];
@@ -2086,10 +2087,10 @@ namespace pvpgn
 								account_set_command_groups(tmpacc, 255);
 							}
 							else
-							{
+							{*/
 								noaccount = true;
-							}
-						}*/
+							//}
+						}
 						if (noaccount)
 						{
 							eventlog(eventlog_level_info, __FUNCTION__, "[{}] (W3) login for \"{}\" refused (no such account)", conn_get_socket(c), username);
