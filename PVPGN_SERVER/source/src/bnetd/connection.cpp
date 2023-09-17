@@ -100,14 +100,14 @@ namespace pvpgn
 			std::string HostName;
 			std::string MapCode;
 			std::string Slots[24]; // ? ignore
-			unsigned int Races[24];
-			unsigned int Colours[24];
-			unsigned int Teams[24];
+			int Races[24];
+			int Colours[24];
+			int Teams[24];
 			std::time_t LastUpdate;
 			bool FirstCheckTimeout;
 			unsigned int InternalGameId;
-			unsigned int Players;
-			unsigned int MaxPlayers;
+			int Players;
+			int MaxPlayers;
 		};
 		std::vector<SuperGameStruct> SuperGameStructList;
 		static unsigned int InternalGameId = 0;
@@ -462,7 +462,7 @@ namespace pvpgn
 							s.Players--;
 							eventlog(eventlog_level_error, __FUNCTION__, "LeaveFromGame OK");
 
-							if (s.Players < 0)
+							if (s.Players <= 0)
 							{
 								DestroyTheGame(c);
 								return;
@@ -1448,7 +1448,7 @@ namespace pvpgn
 			temp->protocol.lastbadgametime = 0;
 			memset(temp->protocol.hardwareid, 0, 4 * 4);
 
-			temp->protocol.ah_magic_value = rand() % 0x55555555;
+			temp->protocol.ah_magic_value = rand() % 22767;
 			temp->protocol.all_infos_okay = false;
 			temp->protocol.IsNewClient = false;
 			temp->protocol.followaccount = NULL;
@@ -6155,10 +6155,11 @@ lua_handle_user(c, NULL, NULL,luaevent_user_disconnect);
 
 			if (command == 0x1020)
 			{
-				// 
+				// fixme
 				if (c->protocol.account)
 				{
-					if (var1 != 666)
+					// fixme autosearch magic value!!! (SWORD?!)
+					if (var1 == 6666)
 					{
 						t_game* autosearchgame = game_search_for_player(account_map_get_stats(c->protocol.account, strvar, "mmr"), strvar);
 

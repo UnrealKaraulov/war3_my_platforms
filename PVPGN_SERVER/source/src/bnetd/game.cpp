@@ -1681,7 +1681,7 @@ namespace pvpgn
 
 
 
-			if (game->connections && (game->count > 0))
+			if (game->connections && (game->count > 0) && game->players)
 			{
 				for (i = 0; i < game->count; i++)
 				{
@@ -1694,8 +1694,6 @@ namespace pvpgn
 						}
 					}
 				}
-
-
 
 				for (i = 0; i < game->count; i++)
 				{
@@ -1717,14 +1715,9 @@ namespace pvpgn
 
 			}
 
-
-
-
 			// first player will be added here
 			if ((i == game->count) || (game->count == 0))
 			{
-
-
 				if (!game->connections) /* some std::realloc()s are broken */
 					tempc = (t_connection**)xmalloc((game->count + 1) * sizeof(t_connection*));
 				else

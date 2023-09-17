@@ -420,7 +420,7 @@ namespace pvpgn
 			// check for unlock
 			if ( unsigned int locktime = account_get_auth_locktime( account ) )
 			{
-				if ( ( locktime - std::time( NULL ) ) < 0 )
+				if ( ( (long long)locktime - (long long)std::time( NULL ) ) <= 0 )
 				{
 					account_set_auth_lock( account, 0 );
 					account_set_auth_locktime( account, 0 );
@@ -466,7 +466,7 @@ namespace pvpgn
 			// check for unmute
 			if ( unsigned int locktime = account_get_auth_mutetime( account ) )
 			{
-				if ( ( locktime - std::time( NULL ) ) < 0 )
+				if ( ((long long)locktime - (long long)std::time( NULL ) ) <= 0 )
 				{
 					account_set_auth_mute( account, 0 );
 					account_set_auth_mutetime( account, 0 );

@@ -1,12 +1,192 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets(2128,5): warning : The referenced project '../vs-project/src/common/common.vcxproj' does not exist.
 C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets(2128,5): warning : The referenced project '../vs-project/src/compat/compat.vcxproj' does not exist.
 C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets(2128,5): warning : The referenced project '../vs-project/src/tinycdb/tinycdb.vcxproj' does not exist.
+  account_email_verification.cpp
+  bcrypt.c
+  BlockingSocket.cpp
+  FTPClient.cpp
+  FTPDataTypes.cpp
+  FTPFileStatus.cpp
+  FTPListParse.cpp
+  smtp.cpp
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\bcrypt.c(682,18): warning C4244: =: преобразование "unsigned long" в "char", возможна потеря данных
+  windump.cpp
+  It is recommended to include 'winsock2.h' instead of 'winsock.h'
+  It is recommended to include 'winsock2.h' instead of 'winsock.h'
+  It is recommended to include 'winsock2.h' instead of 'winsock.h'
+  account.cpp
+  account_wrap.cpp
+  adbanner.cpp
+  alias_command.cpp
+  anongame.cpp
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\account_email_verification.cpp(177,62): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\smtp.cpp(82,33): warning C4101: e: неиспользованная локальная переменная
+  anongame_gameresult.cpp
+  anongame_infos.cpp
+  anongame_maplists.cpp
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\account_wrap.cpp(533,16): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  attrgroup.cpp
+  attrlayer.cpp
+  autoupdate.cpp
+  channel_conv.cpp
+  channel.cpp
+  character.cpp
+  clan.cpp
+  cmdline.cpp
+  command.cpp
+  command_groups.cpp
+  connection.cpp
+  file_cdb.cpp
+  file.cpp
+  file_plain.cpp
+  friends.cpp
+  game_conv.cpp
+  game.cpp
+  handle_anongame.cpp
+  handle_apireg.cpp
+  It is recommended to include 'winsock2.h' instead of 'winsock.h'
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\ini.h(23,27): warning C4018: <: несоответствие типов со знаком и без знака (компилируется исходный файл ..\..\..\source\src\bnetd\command.cpp)
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\game_conv.cpp(428,6): warning C4065: оператор switch содержит метку "default", но не содержит ни одной метки "case"
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\game_conv.cpp(482,6): warning C4065: оператор switch содержит метку "default", но не содержит ни одной метки "case"
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\game_conv.cpp(634,6): warning C4065: оператор switch содержит метку "default", но не содержит ни одной метки "case"
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\command.cpp(146,19): warning C4244: return: преобразование "std::streamoff" в "unsigned int", возможна потеря данных
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\command.cpp(185,17): warning C4244: аргумент: преобразование "std::streamoff" в "const unsigned int", возможна потеря данных
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\connection.cpp(403,22): warning C4018: <: несоответствие типов со знаком и без знака
   handle_bnet.cpp
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\connection.cpp(1022,22): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\command.cpp(1630,31): warning C4146: применение унарного минуса к типу без знака; результат оставлен без знака
+  handle_bot.cpp
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\connection.cpp(3593,81): warning C4018: >: несоответствие типов со знаком и без знака
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\connection.cpp(4641,22): warning C4244: return: преобразование "time_t" в "int", возможна потеря данных
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\command.cpp(4163,17): warning C4101: i: неиспользованная локальная переменная
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\command.cpp(4211,17): warning C4101: i: неиспользованная локальная переменная
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\connection.cpp(5975,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\connection.cpp(7237,22): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\command.cpp(5481,27): warning C4244: =: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\connection.cpp(7286,22): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\command.cpp(5561,27): warning C4244: =: преобразование "time_t" в "unsigned int", возможна потеря данных
+  handle_d2cs.cpp
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\game.cpp(2675,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\game.cpp(2679,25): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\game.cpp(2788,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\handle_anongame.cpp(375,57): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\handle_anongame.cpp(858,87): warning C4244: аргумент: преобразование "time_t" в "uint16_t", возможна потеря данных
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\handle_anongame.cpp(874,85): warning C4244: аргумент: преобразование "time_t" в "uint16_t", возможна потеря данных
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\handle_anongame.cpp(890,85): warning C4244: аргумент: преобразование "time_t" в "uint16_t", возможна потеря данных
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\handle_anongame.cpp(906,83): warning C4244: аргумент: преобразование "time_t" в "uint16_t", возможна потеря данных
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\handle_anongame.cpp(948,83): warning C4244: аргумент: преобразование "time_t" в "uint16_t", возможна потеря данных
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\handle_bot.cpp(198,32): warning C4101: trypasshash1: неиспользованная локальная переменная
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\handle_bot.cpp(199,32): warning C4101: oldpasshash1: неиспользованная локальная переменная
 C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\handle_bnet.cpp(3095,77): warning C4244: аргумент: преобразование "time_t" в "uint32_t", возможна потеря данных
 C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\handle_bnet.cpp(3197,53): warning C4244: аргумент: преобразование "time_t" в "uint32_t", возможна потеря данных
 C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\handle_bnet.cpp(3200,53): warning C4244: аргумент: преобразование "time_t" в "uint32_t", возможна потеря данных
 C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\handle_bnet.cpp(3201,54): warning C4244: аргумент: преобразование "time_t" в "uint32_t", возможна потеря данных
 C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\handle_bnet.cpp(3248,53): warning C4244: аргумент: преобразование "time_t" в "uint32_t", возможна потеря данных
+  handle_file.cpp
+  handle_init.cpp
+  handle_irc_common.cpp
+  handle_irc.cpp
+  handle_telnet.cpp
+  handle_udp.cpp
+  handle_wol.cpp
+  handle_wol_gameres.cpp
+  helpfile.cpp
+  ini.cpp
+  ipban.cpp
+  irc.cpp
+  ladder_calc.cpp
+  ladder.cpp
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\ini.h(23,27): warning C4018: <: несоответствие типов со знаком и без знака (компилируется исходный файл ..\..\..\source\src\bnetd\ini.cpp)
+  mail.cpp
+  main.cpp
+  message.cpp
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\ipban.cpp(449,16): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\ipban.cpp(452,16): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\ipban.cpp(705,71): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  news.cpp
+  output.cpp
+  prefs.cpp
+  realm.cpp
+  runprog.cpp
+  update_dota_stats.cpp
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\news.cpp(222,61): warning C4244: return: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\news.cpp(228,61): warning C4244: return: преобразование "time_t" в "unsigned int", возможна потеря данных
+  server.cpp
+  sql_common.cpp
+  sql_dbcreator.cpp
+  sql_mysql.cpp
+  sql_odbc.cpp
+  sql_pgsql.cpp
+  sql_sqlite3.cpp
+  storage.cpp
+  storage_file.cpp
+  storage_sql.cpp
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\sql_dbcreator.cpp(751,30): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\sql_dbcreator.cpp(759,46): warning C4018: <: несоответствие типов со знаком и без знака
+  support.cpp
+  team.cpp
+  tick.cpp
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\update_dota_stats.cpp(1029,94): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\update_dota_stats.cpp(1163,46): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\update_dota_stats.cpp(1169,46): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\update_dota_stats.cpp(1178,46): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\update_dota_stats.cpp(1184,46): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\update_dota_stats.cpp(1209,47): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\update_dota_stats.cpp(1215,47): warning C4244: -=: преобразование "double" в "float", возможна потеря данных
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\update_dota_stats.cpp(1221,47): warning C4244: -=: преобразование "double" в "float", возможна потеря данных
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\update_dota_stats.cpp(1227,47): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\update_dota_stats.cpp(1236,47): warning C4244: -=: преобразование "double" в "float", возможна потеря данных
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\update_dota_stats.cpp(1242,47): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\update_dota_stats.cpp(1248,47): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\update_dota_stats.cpp(1254,47): warning C4244: -=: преобразование "double" в "float", возможна потеря данных
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\update_dota_stats.cpp(1613,78): warning C4244: аргумент: преобразование "double" в "unsigned int", возможна потеря данных
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\update_dota_stats.cpp(1677,114): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\update_dota_stats.cpp(1689,182): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\update_dota_stats.cpp(1712,8): warning C4102: skipgame: неиспользованная метка
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\update_dota_stats.cpp(2180,35): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\update_dota_stats.cpp(2186,19): warning C4244: /=: преобразование "double" в "float", возможна потеря данных
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\update_dota_stats.cpp(2221,16): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\sql_mysql.cpp(301,27): warning C4244: return: преобразование "my_ulonglong" в "unsigned int", возможна потеря данных
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\sql_mysql.cpp(316,32): warning C4244: return: преобразование "my_ulonglong" в "unsigned int", возможна потеря данных
+  timer.cpp
+  topic.cpp
+  tournament.cpp
+  icons.cpp
+  tracker.cpp
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\server.cpp(857,10): warning C4996: 'gethostbyname': Use getaddrinfo() or GetAddrInfoW() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\server.cpp(1370,47): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  udptest_send.cpp
+  versioncheck.cpp
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\tournament.cpp(716,26): warning C4244: return: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\tournament.cpp(721,26): warning C4244: return: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\tournament.cpp(726,26): warning C4244: return: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\tournament.cpp(731,26): warning C4244: return: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\tournament.cpp(736,26): warning C4244: return: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\tournament.cpp(741,26): warning C4244: return: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\tournament.cpp(746,26): warning C4244: return: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\tournament.cpp(751,26): warning C4244: return: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\topic.cpp(91,35): warning C4101: e: неиспользованная локальная переменная
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\topic.cpp(182,33): warning C4101: e: неиспользованная локальная переменная
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\topic.cpp(217,33): warning C4101: e: неиспользованная локальная переменная
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\topic.cpp(271,33): warning C4101: e: неиспользованная локальная переменная
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\icons.cpp(1066,18): warning C4018: >=: несоответствие типов со знаком и без знака
+  watch.cpp
+  anongame_wol.cpp
+  handle_wserv.cpp
+  luafunctions.cpp
+  luainterface.cpp
+  luaobjects.cpp
+  luawrapper.cpp
+  i18n.cpp
+  userlog.cpp
+  winmain.cpp
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\userlog.cpp(344,17): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\i18n.cpp(116,22): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\i18n.cpp(313,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\i18n.cpp(322,12): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\i18n.cpp(361,22): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\i18n.cpp(363,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\i18n.cpp(381,22): warning C4018: <: несоответствие типов со знаком и без знака
   fmt.lib(format.obj) : найден .netmodule MSIL или модуль, откомпилированный с параметром /GL; перезапускается компоновка с параметром /LTCG; добавьте /LTCG в командную строку компоновки для повышения производительности компоновщика
 LINK : warning LNK4075: не учитывается "/INCREMENTAL" из-за спецификации "/LTCG"
   Создание кода
