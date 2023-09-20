@@ -100,13 +100,18 @@ namespace Client
             {
                 UpdateScript.Add(@"PING -n 3 127.0.0.1 >NUL 2>&1 || PING -n 3 ::1 >NUL 2>&1");
 
-                FtpClient ClientUpdaterFtp = new FtpClient(GetStringByRegion("UpdaterFtp"), 21, new NetworkCredential("clientdataread", "clientdataread"));
-
-                ClientUpdaterFtp.Connect();
-                ClientUpdaterFtp.Execute("OPTS HASH MD5");
-
+                FtpClient ClientUpdaterFtp = new FtpClient(GetStringByRegion("UpdaterFtp"), new NetworkCredential("clientdataread", "clientdataread"), 21);
+                try
+                {
+                    ClientUpdaterFtp.Connect();
+                    ClientUpdaterFtp.Execute("OPTS HASH MD5");
+                }
+                catch
+                {
+                    MessageBox.Show("Update error 1!");
+                    return;
+                }
                 var UpdateFiles = ClientUpdaterFtp.GetListing();
-
                 if (UpdateFiles.Length == 0)
                     return;
 

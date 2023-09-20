@@ -26,10 +26,10 @@ HANDLE DestroyAutoJoinThreadHandle = NULL;
 
 int CurrentOperationID = -1;
 
-DWORD WINAPI DestroyЌовыйѕотокƒл€јвтоматического¬хода(LPVOID)
+DWORD WINAPI DestroyAutoJoinThread(LPVOID)
 {
 	Sleep(100);
-	ƒоступ_ _WarcraftEngine();
+	GiveMeTlsAccess();
 
 	int i = 1000;
 	while (i > 0)
@@ -69,8 +69,9 @@ void LogLogT(DWORD time)
 	f << "Time:" << time << std::endl;
 }
 
-DWORD WINAPI Ќовыйѕотокƒл€јвтоматического¬хода(LPVOID)
+DWORD WINAPI ThreadForAutoJoin(LPVOID)
 {
+	return 0;
 	LogLog("∆апуск потока автоматического входа в игру");
 	*(int*)((DWORD)GameDll + 0xA9E7A4) = 1;
 	while (!Warcraft3Window)
@@ -85,10 +86,10 @@ DWORD WINAPI Ќовыйѕотокƒл€јвтоматического¬хода(LPVOID)
 
 	Sleep(25);
 	LogLog("ѕолучен доступ к TLS");
-	ƒоступ_ _WarcraftEngine();
+	GiveMeTlsAccess();
 	LogLog("ќбнаружено главное меню");
 	*(int*)((DWORD)GameDll + 0xA9E7A4) = 1;
-	DestroyAutoJoinThreadHandle = CreateThread(0, 0, DestroyЌовыйѕотокƒл€јвтоматического¬хода, 0, 0, 0);
+	DestroyAutoJoinThreadHandle = CreateThread(0, 0, DestroyAutoJoinThread, 0, 0, 0);
 
 	bool onerestart = true;
 	//10580300 6FA8B038  10580300 6FA8B038

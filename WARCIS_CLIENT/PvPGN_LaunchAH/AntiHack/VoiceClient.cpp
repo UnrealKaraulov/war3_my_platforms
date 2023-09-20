@@ -1030,7 +1030,6 @@ void UpdateVoicePlayerList( )
 					CurVoicePlayerName.Load( "WarcisSpeakLoginText", CurrentFrameId );
 					CurVoicePlayerName.SetFrameType( CFrameType::FRAMETYPE_ITEM );
 					CurVoicePlayerName.SetText( s.PlayerName.c_str( ) );
-					CurVoicePlayerName.~CWar3Frame( );
 
 					CurVoiceFrameButton->Load( "WarcisSpeakFrameImg", CurrentFrameId );
 					CurVoiceFrameButton->SetFrameType( CFrameType::FRAMETYPE_BUTTON );

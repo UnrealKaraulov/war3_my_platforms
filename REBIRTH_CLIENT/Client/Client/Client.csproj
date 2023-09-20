@@ -64,6 +64,9 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FluentFTP, Version=47.1.0.0, Culture=neutral, PublicKeyToken=f4af092b1d8df44f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentFTP.47.1.0\lib\net472\FluentFTP.dll</HintPath>
+    </Reference>
     <Reference Include="System">
       <Private>False</Private>
     </Reference>
@@ -118,72 +121,6 @@
     <Compile Include="ClientUpdaterWindow.xaml.cs">
       <DependentUpon>ClientUpdaterWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="FluentFTP\Client\FtpClient_Connection.cs" />
-    <Compile Include="FluentFTP\Client\FtpClient_FileManagement.cs" />
-    <Compile Include="FluentFTP\Client\FtpClient_FolderManagement.cs" />
-    <Compile Include="FluentFTP\Client\FtpClient_Hash.cs" />
-    <Compile Include="FluentFTP\Client\FtpClient_HighLevel.cs" />
-    <Compile Include="FluentFTP\Client\FtpClient_HighLevelDownload.cs" />
-    <Compile Include="FluentFTP\Client\FtpClient_HighLevelUpload.cs" />
-    <Compile Include="FluentFTP\Client\FtpClient_Listing.cs" />
-    <Compile Include="FluentFTP\Client\FtpClient_LowLevel.cs" />
-    <Compile Include="FluentFTP\Client\FtpClient_Properties.cs" />
-    <Compile Include="FluentFTP\Client\FtpClient_ServerSpecific.cs" />
-    <Compile Include="FluentFTP\Client\FtpClient_Static.cs" />
-    <Compile Include="FluentFTP\Client\FtpClient_Utils.cs" />
-    <Compile Include="FluentFTP\Client\IFtpClient.cs" />
-    <Compile Include="FluentFTP\Enums\FtpCapability.cs" />
-    <Compile Include="FluentFTP\Enums\FtpDataConnectionType.cs" />
-    <Compile Include="FluentFTP\Enums\FtpDataType.cs" />
-    <Compile Include="FluentFTP\Enums\FtpDate.cs" />
-    <Compile Include="FluentFTP\Enums\FtpEncryptionMode.cs" />
-    <Compile Include="FluentFTP\Enums\FtpError.cs" />
-    <Compile Include="FluentFTP\Enums\FtpFileSystemObjectType.cs" />
-    <Compile Include="FluentFTP\Enums\FtpHashAlgorithm.cs" />
-    <Compile Include="FluentFTP\Enums\FtpIpVersion.cs" />
-    <Compile Include="FluentFTP\Enums\FtpListOption.cs" />
-    <Compile Include="FluentFTP\Enums\FtpLocalExists.cs" />
-    <Compile Include="FluentFTP\Enums\FtpOperatingSystem.cs" />
-    <Compile Include="FluentFTP\Enums\FtpParser.cs" />
-    <Compile Include="FluentFTP\Enums\FtpPermission.cs" />
-    <Compile Include="FluentFTP\Enums\FtpRemoteExists.cs" />
-    <Compile Include="FluentFTP\Enums\FtpResponseType.cs" />
-    <Compile Include="FluentFTP\Enums\FtpsBuffering.cs" />
-    <Compile Include="FluentFTP\Enums\FtpServer.cs" />
-    <Compile Include="FluentFTP\Enums\FtpSpecialPermissions.cs" />
-    <Compile Include="FluentFTP\Enums\FtpTraceLevel.cs" />
-    <Compile Include="FluentFTP\Enums\FtpVerify.cs" />
-    <Compile Include="FluentFTP\Exceptions\FtpListParseException.cs" />
-    <Compile Include="FluentFTP\Exceptions\FtpMissingSocketException.cs" />
-    <Compile Include="FluentFTP\Helpers\FtpEvents.cs" />
-    <Compile Include="FluentFTP\Helpers\FtpExceptions.cs" />
-    <Compile Include="FluentFTP\Helpers\FtpHash.cs" />
-    <Compile Include="FluentFTP\Helpers\FtpHashAlgorithms.cs" />
-    <Compile Include="FluentFTP\Helpers\FtpListItem.cs" />
-    <Compile Include="FluentFTP\Helpers\FtpListParser.cs" />
-    <Compile Include="FluentFTP\Helpers\FtpProfile.cs" />
-    <Compile Include="FluentFTP\Helpers\FtpProgress.cs" />
-    <Compile Include="FluentFTP\Helpers\FtpReply.cs" />
-    <Compile Include="FluentFTP\Helpers\FtpSizeReply.cs" />
-    <Compile Include="FluentFTP\Helpers\FtpTrace.cs" />
-    <Compile Include="FluentFTP\Helpers\IntRef.cs" />
-    <Compile Include="FluentFTP\Helpers\Parsers\FtpIBMParser.cs" />
-    <Compile Include="FluentFTP\Helpers\Parsers\FtpMachineListParser.cs" />
-    <Compile Include="FluentFTP\Helpers\Parsers\FtpNonStopParser.cs" />
-    <Compile Include="FluentFTP\Helpers\Parsers\FtpUnixParser.cs" />
-    <Compile Include="FluentFTP\Helpers\Parsers\FtpVMSParser.cs" />
-    <Compile Include="FluentFTP\Helpers\Parsers\FtpWindowsParser.cs" />
-    <Compile Include="FluentFTP\Proxy\FtpClientBlueCoatProxy.cs" />
-    <Compile Include="FluentFTP\Proxy\FtpClientHttp11Proxy.cs" />
-    <Compile Include="FluentFTP\Proxy\FtpClientProxy.cs" />
-    <Compile Include="FluentFTP\Proxy\FtpClientUserAtHostProxy.cs" />
-    <Compile Include="FluentFTP\Proxy\ProxyInfo.cs" />
-    <Compile Include="FluentFTP\Stream\FtpDataStream.cs" />
-    <Compile Include="FluentFTP\Stream\FtpSocketStream.cs" />
-    <Compile Include="FluentFTP\Stream\FtpSslStream.cs" />
-    <Compile Include="FluentFTP\Utils\FtpExtensions.cs" />
-    <Compile Include="FluentFTP\Utils\FtpReflection.cs" />
-    <Compile Include="FluentFTP\Utils\NET2Compatibility.cs" />
     <Compile Include="GameListWindow.xaml.cs">
       <DependentUpon>GameListWindow.xaml</DependentUpon>
     </Compile>
@@ -466,6 +403,7 @@
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="app.manifest" />
+    <None Include="packages.config" />
     <None Include="War3\Mp3dec.asi" />
     <None Include="War3\Mssdolby.m3d" />
     <None Include="War3\Msseax2.m3d" />
@@ -496,6 +434,7 @@
   <ItemGroup>
     <Resource Include="image.ico" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

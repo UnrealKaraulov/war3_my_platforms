@@ -28,7 +28,7 @@ crash_rpt::CrashProcessingCallbackResult CALLBACK PFNCRASHPROCESSINGCALLBACK_MY(
 	crash_rpt::ExceptionInfo* exceptionInfo,		//!< Information about exception being processed.
 	LPVOID	userData					//!< Pointer to user-defined data.
 );
-extern crash_rpt::CrashRpt g_crashRpt;
+extern crash_rpt::CrashRpt * g_crashRpt;
 extern DWORD WarcraftThreadId;
 extern "C"
 {
@@ -44,7 +44,9 @@ bool FileExists( const std::string& name );
 bool FileExists( const std::wstring& name );
 // Тут изменить версию при обновлении античита
 #define ANTIHACK_VERSION 0x218
-#define DRDUMP_VERSION_INC 8;
+
+
+#define DRDUMP_VERSION_INC 8
 
 
 void AddLogFunctionCall( LPCWSTR func, int line = 0 );

@@ -61,7 +61,7 @@ void SetTlsForMe( )
 }
 
 
-void Доступ_К_WarcraftEngine( )
+void GiveMeTlsAccess( )
 {
 	_W3XTlsIndex = 0xAB7BF4 + (DWORD)GameDll;
 	

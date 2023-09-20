@@ -20,6 +20,7 @@ using System.Diagnostics;
 using System.Diagnostics.Contracts;
 
 using static Client.GlobalFunctions;
+using FluentFTP.Exceptions;
 
 namespace Client
 {
@@ -32,12 +33,14 @@ namespace Client
         string MapOutFileName = "";
         public bool DownloadStart = false;
         public bool DownloadSuccess = false;
-        FtpClient MapFtpAccount = new FtpClient(GetStringByRegion("MapDownloaderFtp"), 21, new NetworkCredential("ftpmaps", "ftpmaps"));
+        FtpClient MapFtpAccount = new FtpClient(GetStringByRegion("MapDownloaderFtp"), new NetworkCredential("ftpmaps", "ftpmaps"), 21);
 
 
         public MapDownloadWindow(string mapfile, string mapout, string mapname)
         {
             InitializeComponent();
+            MapFtpAccount.Config.DataConnectionType = FtpDataConnectionType.PORT;
+
             MapFileName = "/" + mapfile;
             MapDownloadLabel.Text = "Download map : " + mapname;
             MapOutFileName = mapout;
@@ -48,10 +51,10 @@ namespace Client
             }
             catch
             {
-                MessageBox.Show("No access to map download server!");
+                MessageBox.Show("No access to map download server at " + GetStringByRegion("MapDownloaderFtp") + ":21!");
                 this.Close();
             }
-
+            
             long filesize = MapFtpAccount.GetFileSize(MapFileName) / 1024;
             if (filesize / 1024 <= 1)
             {
@@ -114,11 +117,10 @@ namespace Client
                 DownloadSuccess = true;
                 File.Move(MapOutFileName + ".tmp", MapOutFileName);
             }
-            catch
+            catch (FtpException ex)
             {
-                MessageBox.Show("Error no access to out file:" + MapOutFileName + ".tmp");
+                MessageBox.Show("Error no access to out file:" + MapOutFileName + ".tmp\nError:" + ex.Message);
             }
-
             Application.Current.Dispatcher.Invoke(new Action(() => Close()));
         }
         Thread mDownloadThread = null;

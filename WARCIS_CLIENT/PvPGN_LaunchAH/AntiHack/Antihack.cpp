@@ -346,10 +346,10 @@ crash_rpt::CrashProcessingCallbackResult CALLBACK PFNCRASHPROCESSINGCALLBACK_MY(
 
 	CONSOLE_Print( "Crash thread id and info:" );
 	swprintf_s( BufferForErrorLog, L"%X(NAME:%s)", exceptionInfo->ThreadId, GetThreadNameById( exceptionInfo->ThreadId ) );
-	g_crashRpt.AddUserInfoToReport( L"CrashThreadId", BufferForErrorLog );
+	g_crashRpt->AddUserInfoToReport( L"CrashThreadId", BufferForErrorLog );
 	CONSOLE_Print( BufferForErrorLog );
 	swprintf_s( BufferForErrorLog, L"Module path: %s. Module start address:%X. Thread start address:%X", GetModuleFilePathW( GetModuleFromAddress( GetThreadStartAddress( GetCurrentThread( ) ) ) ).c_str( ), ( unsigned int )GetModuleFromAddress( GetThreadStartAddress( GetCurrentThread( ) ) ), GetThreadStartAddress( GetCurrentThread( ) ) );
-	g_crashRpt.AddUserInfoToReport( L"CrashThreadStartAddress", BufferForErrorLog );
+	g_crashRpt->AddUserInfoToReport( L"CrashThreadStartAddress", BufferForErrorLog );
 	CONSOLE_Print( BufferForErrorLog );
 
 	CONSOLE_Print( "START" );
@@ -360,13 +360,13 @@ crash_rpt::CrashProcessingCallbackResult CALLBACK PFNCRASHPROCESSINGCALLBACK_MY(
 		swprintf_s( BufferForErrorLog, L"LastError_%03X_%04X", i, LastThreadId[ i ] );
 		swprintf_s( BufferForErrorLog2, L"%s(%i):(%s)", LastCalledFunctions[ i ], LastCodeLine[ i ], GetThreadNameById( LastThreadId[ i ] ) );
 
-		g_crashRpt.AddUserInfoToReport( BufferForErrorLog, BufferForErrorLog2 );
+		g_crashRpt->AddUserInfoToReport( BufferForErrorLog, BufferForErrorLog2 );
 		CONSOLE_Print( BufferForErrorLog );
 		CONSOLE_Print( BufferForErrorLog2 );
 	}
 
 
-	g_crashRpt.AddUserInfoToReport( L"Current game menu:", GetGameMenuName( ) );
+	g_crashRpt->AddUserInfoToReport( L"Current game menu:", GetGameMenuName( ) );
 
 	if ( IsGame( ) )
 	{
@@ -387,7 +387,7 @@ crash_rpt::CrashProcessingCallbackResult CALLBACK PFNCRASHPROCESSINGCALLBACK_MY(
 
 	//try
 	//{
-	//	g_crashRpt.SendReport( exceptionInfo->ExceptionPointers );
+	//	g_crashRpt->SendReport( exceptionInfo->ExceptionPointers );
 	//}
 	//catch ( ... )
 	//{
@@ -650,14 +650,17 @@ DWORD WINAPI AH_Scanner_Thread( LPVOID )
 			ScanResult( );
 		}
 
-		if ( _oldsecond == 0 )
-			_oldsecond = time( NULL );
+		if (_oldsecond == 0)
+		{
+			_currentsecond = time(NULL);
+			_oldsecond = time(NULL);
+		}
 
-		time_t diff = _currentsecond - _oldsecond;
+		long long diff = abs((long long)_currentsecond - (long long)_oldsecond);
 
 		if ( diff > 2 )
 		{
-			CONSOLE_Print( "ОБнаружена критическая задержка. [Critical ah delay found! Request ban user! BAD!]" );
+			CONSOLE_Print( "ОБнаружена критическая задержка. [Critical ah delay found 2! Request ban user! BAD!]" );
 			return 4;
 		}
 
@@ -2121,11 +2124,11 @@ int ScanResult( )
 		else
 		{
 
-			time_t diff = _currentsecond - _oldsecond;
+			long long diff = abs((long long)_currentsecond - (long long)_oldsecond);
 
 			if ( diff > 4 )
 			{
-				CONSOLE_Print( "[Critical ah delay found! Request ban user! BAD!]" );
+				CONSOLE_Print( "[Critical ah delay found 1! Request ban user! BAD!]" );
 				return ANTIHACK_VERSION + 1;
 			}
 

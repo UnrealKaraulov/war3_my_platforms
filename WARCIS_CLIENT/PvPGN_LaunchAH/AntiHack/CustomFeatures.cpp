@@ -2720,7 +2720,7 @@ int BattleNetLoginMenuCallback( CWar3Frame*frame, int FrameAddr, uint32_t ClickT
 		if ( frame->GetText( ) && frame->GetText( )[ 0 ] != '\0' )
 		{
 			LastUsername = frame->GetText( );
-			g_crashRpt.AddUserInfoToReport( L"Username", ConvertFromUtf8ToUtf16( LastUsername ).c_str( ) );
+			g_crashRpt->AddUserInfoToReport( L"Username", ConvertFromUtf8ToUtf16( LastUsername ).c_str( ) );
 			SkipBnetActions = false;
 			return 1;
 		}
@@ -2780,7 +2780,7 @@ int BattleNetLoginMenuCallback( CWar3Frame*frame, int FrameAddr, uint32_t ClickT
 	if ( frame == LogonButton )
 	{
 		LastUsername = BattleNetUsernameEditbox->GetText( );
-		g_crashRpt.AddUserInfoToReport( L"Username", ConvertFromUtf8ToUtf16( LastUsername ).c_str( ) );
+		g_crashRpt->AddUserInfoToReport( L"Username", ConvertFromUtf8ToUtf16( LastUsername ).c_str( ) );
 		LastPassword = BattleNePasswordEditbox->GetText( );
 
 		if ( wc3classgproxy )
@@ -2896,7 +2896,7 @@ int __fastcall InitWc3BattleNetMenu_my( void *a1, int unused, int a2, int a3 )
 	BattleNetUsernameEditbox->SetCallbackFunc( BattleNetLoginMenuCallback );
 	BattleNetUsernameEditbox->RegisterEventCallback( CFrameEvents::FRAME_EDITBOX_TEXT_CHANGED );
 	LastUsername = BattleNetUsernameEditbox->GetText( ) ? BattleNetUsernameEditbox->GetText( ) : "";
-	g_crashRpt.AddUserInfoToReport( L"Username", ConvertFromUtf8ToUtf16( LastUsername ).c_str( ) );
+	g_crashRpt->AddUserInfoToReport( L"Username", ConvertFromUtf8ToUtf16( LastUsername ).c_str( ) );
 
 	BattleNePasswordEditbox = new CWar3Frame( );
 	BattleNePasswordEditbox->Load( "Password" );
@@ -3442,7 +3442,7 @@ int __fastcall SimpleButtonPreClickEvent_my( int pButton, int unused, int a2 )
 	}
 
 	//}
-	//__except ( g_crashRpt.SendReport( GetExceptionInformation( ) ) )
+	//__except ( g_crashRpt->SendReport( GetExceptionInformation( ) ) )
 	//{
 	//	::ExitProcess( 0 ); // It is better to stop the process here or else corrupted data may incomprehensibly crash it later.
 	//	return 0;
@@ -4652,7 +4652,7 @@ LRESULT __fastcall BeforeWarcraftWNDProc( HWND hWnd, unsigned int _Msg, WPARAM _
 
 	return WarcraftRealWNDProc_ptr( hWnd, Msg, wParam, lParam );
 	//}
-	//__except ( g_crashRpt.SendReport( GetExceptionInformation( ) ) )
+	//__except ( g_crashRpt->SendReport( GetExceptionInformation( ) ) )
 	//{
 	//	::ExitProcess( 0 ); // It is better to stop the process here or else corrupted data may incomprehensibly crash it later.
 	//	return false;
@@ -6427,112 +6427,110 @@ void CustomFeaturesInitialize( const char * launcherpath )
 	bool FoundArchives = false;
 
 
-	//if ( Storm::Archive_OpenFile( "UI\\SkinMetaData.slk", &outdataaddr, &outdatasize, 1,0 ) || outdatasize )
+	/*	Storm::FileOpenArchive( (War3Path + "\\War3.mpq").c_str ( ), 0, 2, &tmpval );
+		Storm::FileOpenArchive( (War3Path + "\\War3x.mpq" ).c_str( ), 1, 2, &tmpval );
+		Storm::FileOpenArchive( (War3Path + "\\War3xlocal.mpq" ).c_str( ), 3, 2, &tmpval );
+		Storm::FileOpenArchive( (War3Path + "\\War3Patch.mpq" ).c_str( ), 8, 6, &tmpval );
+
+		
+	if ( Storm::Archive_OpenFile( "UI\\SkinMetaData.slk", &outdataaddr, &outdatasize, 1,0 ) || outdatasize )
+	{
+		MessageBox( 0, "W3X LOADED", " ", 0 );
+		FoundArchives = true;
+	}
+
+	if ( Storm::Archive_OpenFile( "UI\\HelpStrings.txt", &outdataaddr, &outdatasize, 1, 0 ) || outdatasize)
+	{
+		MessageBox( 0, "W3 LOADED", " ", 0 );
+		FoundArchives = true;
+	}*/
+
+	BOOL AllOkay = TRUE;
+	BOOL custommpqloaded = TRUE;
+
+
+	//AllOkay = FALSE;
+	//custommpqloaded = Storm::FileOpenArchive( WarcisMpqPath, 11, 6, &tmpval );
+	//if ( !custommpqloaded || !tmpval )
 	//{
-	//	MessageBox( 0, "W3X LOADED", " ", 0 );
-	//	FoundArchives = true;
+	//	CONSOLE_Print( "Error loading warcis.mpq at path: " + ( string )WarcisMpqPath );
+	//	custommpqloaded = Storm::FileOpenArchive( ( AMH_Path + "\\warcis.mpq" ).c_str( ), 11, 6, &tmpval );
+	//	if ( !custommpqloaded || !tmpval )
+	//	{
+	//		CONSOLE_Print( "Error loading warcis.mpq #2 at path: " + ( string )WarcisMpqPath );
+	//		custommpqloaded = Storm::FileOpenArchive( ( AMH_Path_old + "\\warcis.mpq" ).c_str( ), 11, 6, &tmpval );
+	//		if ( !custommpqloaded || !tmpval )
+	//		{
+	//			CONSOLE_Print( "Error loading warcis.mpq #3 at path: " + ( string )WarcisMpqPath );
+	//		}
+	//		else AllOkay = TRUE;
+	//	}
+	//	else AllOkay = TRUE;
+	//}
+	//else AllOkay = TRUE;
+
+
+
+	//AllOkay = FALSE;
+	//custommpqloaded = FALSE;
+
+	//if ( gInfo.UseCustomMpq )
+	//{
+	//	BOOL custommpqloaded = Storm::FileOpenArchive( CustomMpqPath, 10, 6, &tmpval );
+	//	if ( !custommpqloaded || !tmpval )
+	//	{
+	//		CONSOLE_Print( "Error loading custom.mpq at path: " + ( string )CustomMpqPath );
+	//		custommpqloaded = Storm::FileOpenArchive( ( AMH_Path + "\\custom.mpq" ).c_str( ), 10, 6, &tmpval );
+	//		if ( !custommpqloaded || !tmpval )
+	//		{
+	//			CONSOLE_Print( "Error loading custom.mpq #2 at path: " + ( string )CustomMpqPath );
+	//			custommpqloaded = Storm::FileOpenArchive( ( AMH_Path_old + "\\custom.mpq" ).c_str( ), 10, 6, &tmpval );
+	//			if ( !custommpqloaded || !tmpval )
+	//			{
+	//				CONSOLE_Print( "Error loading custom.mpq #3 at path: " + ( string )CustomMpqPath );
+
+
+	//			}
+	//			else AllOkay = TRUE;
+	//		}
+	//		else AllOkay = TRUE;
+	//	}
+	//	else AllOkay = TRUE;
+	//}
+	//else
+	//{
+	//	//AllOkay = TRUE;
+	//	//custommpqloaded = TRUE;
 	//}
 
-	//if ( Storm::Archive_OpenFile( "UI\\HelpStrings.txt", &outdataaddr, &outdatasize, 1, 0 ) || outdatasize)
+
+
+
+
+	//if ( !AllOkay )
 	//{
-	//	MessageBox( 0, "W3 LOADED", " ", 0 );
-	//	FoundArchives = true;
+	//	if ( FileExists( ( CurrentPathW + L"\\custom.mpq" ) ) )
+	//	{
+	//		DeleteFileW( ( CurrentPathW + L"\\custom.mpq" ).c_str( ) );
+	//	}
+
+	//	if ( FileExists( ( CurrentPathW + L"\\warcis.mpq" ) ) )
+	//	{
+	//		DeleteFileW( ( CurrentPathW + L"\\warcis.mpq" ).c_str( ) );
+	//	}
+
+	//	//DeleteFileW( ( CurrentPathW + L"\\warcis.mpq" ).c_str( ) );
+	//	CopyFileW( ( AMH_PathW + L"\\warcis.mpq" ).c_str( ), ( CurrentPathW + L"\\warcis.mpq" ).c_str( ), FALSE );
+	//	custommpqloaded = Storm::FileOpenArchive( "warcis.mpq", 10, 6, &tmpval );
+
+	//	if ( gInfo.UseCustomMpq )
+	//	{
+	//		//DeleteFileW( ( CurrentPathW + L"\\custom.mpq" ).c_str( ) );
+	//		CopyFileW( ( AMH_PathW + L"\\custom.mpq" ).c_str( ), ( CurrentPathW + L"\\custom.mpq" ).c_str( ), FALSE );
+	//		custommpqloaded = Storm::FileOpenArchive( "custom.mpq", 11, 6, &tmpval );
+	//	}
+
 	//}
-
-	//if ( FoundArchives )
-	//{
-	//	Storm::FileOpenArchive( (War3Path + "\\War3.mpq").c_str ( ), 0, 2, &tmpval );
-	//	Storm::FileOpenArchive( (War3Path + "\\War3x.mpq" ).c_str( ), 1, 2, &tmpval );
-	//	Storm::FileOpenArchive( (War3Path + "\\War3xlocal.mpq" ).c_str( ), 3, 2, &tmpval );
-	//	Storm::FileOpenArchive( (War3Path + "\\War3Patch.mpq" ).c_str( ), 8, 6, &tmpval );
-	//}
-
-	BOOL AllOkay = FALSE;
-	BOOL custommpqloaded = FALSE;
-
-
-	AllOkay = FALSE;
-	custommpqloaded = Storm::FileOpenArchive( WarcisMpqPath, 11, 6, &tmpval );
-	if ( !custommpqloaded || !tmpval )
-	{
-		CONSOLE_Print( "Error loading warcis.mpq at path: " + ( string )WarcisMpqPath );
-		custommpqloaded = Storm::FileOpenArchive( ( AMH_Path + "\\warcis.mpq" ).c_str( ), 11, 6, &tmpval );
-		if ( !custommpqloaded || !tmpval )
-		{
-			CONSOLE_Print( "Error loading warcis.mpq #2 at path: " + ( string )WarcisMpqPath );
-			custommpqloaded = Storm::FileOpenArchive( ( AMH_Path_old + "\\warcis.mpq" ).c_str( ), 11, 6, &tmpval );
-			if ( !custommpqloaded || !tmpval )
-			{
-				CONSOLE_Print( "Error loading warcis.mpq #3 at path: " + ( string )WarcisMpqPath );
-			}
-			else AllOkay = TRUE;
-		}
-		else AllOkay = TRUE;
-	}
-	else AllOkay = TRUE;
-
-
-
-	AllOkay = FALSE;
-	custommpqloaded = FALSE;
-
-	if ( gInfo.UseCustomMpq )
-	{
-		BOOL custommpqloaded = Storm::FileOpenArchive( CustomMpqPath, 10, 6, &tmpval );
-		if ( !custommpqloaded || !tmpval )
-		{
-			CONSOLE_Print( "Error loading custom.mpq at path: " + ( string )CustomMpqPath );
-			custommpqloaded = Storm::FileOpenArchive( ( AMH_Path + "\\custom.mpq" ).c_str( ), 10, 6, &tmpval );
-			if ( !custommpqloaded || !tmpval )
-			{
-				CONSOLE_Print( "Error loading custom.mpq #2 at path: " + ( string )CustomMpqPath );
-				custommpqloaded = Storm::FileOpenArchive( ( AMH_Path_old + "\\custom.mpq" ).c_str( ), 10, 6, &tmpval );
-				if ( !custommpqloaded || !tmpval )
-				{
-					CONSOLE_Print( "Error loading custom.mpq #3 at path: " + ( string )CustomMpqPath );
-
-
-				}
-				else AllOkay = TRUE;
-			}
-			else AllOkay = TRUE;
-		}
-		else AllOkay = TRUE;
-	}
-	else
-	{
-		//AllOkay = TRUE;
-		//custommpqloaded = TRUE;
-	}
-
-
-
-
-
-	if ( !AllOkay )
-	{
-		if ( FileExists( ( CurrentPathW + L"\\custom.mpq" ) ) )
-		{
-			DeleteFileW( ( CurrentPathW + L"\\custom.mpq" ).c_str( ) );
-		}
-
-		if ( FileExists( ( CurrentPathW + L"\\warcis.mpq" ) ) )
-		{
-			DeleteFileW( ( CurrentPathW + L"\\warcis.mpq" ).c_str( ) );
-		}
-
-		//DeleteFileW( ( CurrentPathW + L"\\warcis.mpq" ).c_str( ) );
-		CopyFileW( ( AMH_PathW + L"\\warcis.mpq" ).c_str( ), ( CurrentPathW + L"\\warcis.mpq" ).c_str( ), FALSE );
-		custommpqloaded = Storm::FileOpenArchive( "warcis.mpq", 10, 6, &tmpval );
-
-		if ( gInfo.UseCustomMpq )
-		{
-			//DeleteFileW( ( CurrentPathW + L"\\custom.mpq" ).c_str( ) );
-			CopyFileW( ( AMH_PathW + L"\\custom.mpq" ).c_str( ), ( CurrentPathW + L"\\custom.mpq" ).c_str( ), FALSE );
-			custommpqloaded = Storm::FileOpenArchive( "custom.mpq", 11, 6, &tmpval );
-		}
-
-	}
 
 	MH_CreateHook( Storm::FileOpenArchive, &Storm::FileOpenArchive_my, reinterpret_cast< void** >( &Storm::FileOpenArchive_ptr ) );
 	MH_EnableHook( Storm::FileOpenArchive );
@@ -6649,7 +6647,7 @@ void CustomFeaturesInitialize( const char * launcherpath )
 
 	CWar3Frame::InitCallbackHook( );
 
-	//Wc3SetDefaultSkinTheme( "Demon" );// "Human"  "Orc""Undead""NightElf""Demon" 
+	Wc3SetDefaultSkinTheme( "Demon" );// "Human"  "Orc""Undead""NightElf""Demon" 
 	CONSOLE_Print( "CustomFeatureInit" );
 
 	SelectedMapCode = "dota88";

@@ -22,7 +22,7 @@ extern double GameDll;
 
 void ЗапускАвтоматическогоВхода( );
 
-void Доступ_К_WarcraftEngine( );
+void GiveMeTlsAccess( );
 
 extern HWND Warcraft3Window;
 

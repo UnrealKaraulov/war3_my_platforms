@@ -174,6 +174,7 @@ namespace pvpgn
 				bool				all_infos_okay;
 				int					ah_status;
 				int					ah_version;
+				int					launcher_version;
 				unsigned int		ah_magic_value;
 				unsigned int		found_cheat;
 				unsigned int		found_cheat2;
@@ -531,7 +532,8 @@ namespace pvpgn
 		extern int conn_client_ah_scan_response( t_connection * c, uint32_t command, uint32_t ahversion, uint32_t var1, uint32_t var2, uint32_t var3, uint32_t var4, std::string strvar, std::string strvar2, std::string strvar3, std::string strvar4 );
 		extern int conn_send_ah_packet( t_connection * c, uint32_t command, uint32_t var1 = 0, uint32_t var2 = 0, uint32_t var3 = 0, uint32_t var4 = 0, std::string strvar = "", std::string strvar2 = "", std::string strvar3 = "", std::string strvar4 = "");
 		extern int conn_get_ah_status( t_connection * c );
-		extern int conn_get_ah_version( t_connection * c );
+		extern int conn_get_ah_version(t_connection* c);
+		extern int conn_get_launcher_version(t_connection* c);
 		extern unsigned int * conn_get_hardwareid( t_connection * c );
 		extern unsigned int conn_get_lobbynickcolor( t_connection * c );
 		extern unsigned int conn_get_chattextcolor( t_connection * c );

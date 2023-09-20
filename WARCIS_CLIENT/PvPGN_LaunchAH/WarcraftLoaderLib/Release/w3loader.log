@@ -3,17 +3,17 @@
   Создание кода...
   functions.c
   w3lh.c
-C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\WarcraftLoaderLib\w3lh.c(119,12): warning C4022: ReadFile: несоответствие указателя для фактического параметра 1
-C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\WarcraftLoaderLib\w3lh.c(120,15): warning C4022: CloseHandle: несоответствие указателя для фактического параметра 1
-C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\WarcraftLoaderLib\w3lh.c(306,54): warning C4047: функция: "HMODULE" отличается по уровням косвенного обращения от "int"
-C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\WarcraftLoaderLib\w3lh.c(306,54): warning C4024: GetProcAddress: различные типы для формального и фактического параметров 1
-C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\WarcraftLoaderLib\w3lh.c(307,54): warning C4047: функция: "HMODULE" отличается по уровням косвенного обращения от "int"
-C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\WarcraftLoaderLib\w3lh.c(307,54): warning C4024: GetProcAddress: различные типы для формального и фактического параметров 1
-C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\WarcraftLoaderLib\w3lh.c(308,68): warning C4047: функция: "HMODULE" отличается по уровням косвенного обращения от "int"
-C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\WarcraftLoaderLib\w3lh.c(308,68): warning C4024: GetProcAddress: различные типы для формального и фактического параметров 1
-C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\WarcraftLoaderLib\w3lh.c(309,51): warning C4047: функция: "HMODULE" отличается по уровням косвенного обращения от "int"
-C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\WarcraftLoaderLib\w3lh.c(309,51): warning C4024: GetProcAddress: различные типы для формального и фактического параметров 1
-C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\WarcraftLoaderLib\w3lh.c(302,7): warning C4047: инициализация: "int" отличается по уровням косвенного обращения от "HMODULE"
-C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\WarcraftLoaderLib\w3lh.c(303,7): warning C4047: инициализация: "int" отличается по уровням косвенного обращения от "HMODULE"
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT\PvPGN_LaunchAH\WarcraftLoaderLib\w3lh.c(119,12): warning C4022: ReadFile: несоответствие указателя для фактического параметра 1
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT\PvPGN_LaunchAH\WarcraftLoaderLib\w3lh.c(120,15): warning C4022: CloseHandle: несоответствие указателя для фактического параметра 1
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT\PvPGN_LaunchAH\WarcraftLoaderLib\w3lh.c(306,54): warning C4047: функция: "HMODULE" отличается по уровням косвенного обращения от "int"
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT\PvPGN_LaunchAH\WarcraftLoaderLib\w3lh.c(306,54): warning C4024: GetProcAddress: различные типы для формального и фактического параметров 1
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT\PvPGN_LaunchAH\WarcraftLoaderLib\w3lh.c(307,54): warning C4047: функция: "HMODULE" отличается по уровням косвенного обращения от "int"
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT\PvPGN_LaunchAH\WarcraftLoaderLib\w3lh.c(307,54): warning C4024: GetProcAddress: различные типы для формального и фактического параметров 1
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT\PvPGN_LaunchAH\WarcraftLoaderLib\w3lh.c(308,68): warning C4047: функция: "HMODULE" отличается по уровням косвенного обращения от "int"
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT\PvPGN_LaunchAH\WarcraftLoaderLib\w3lh.c(308,68): warning C4024: GetProcAddress: различные типы для формального и фактического параметров 1
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT\PvPGN_LaunchAH\WarcraftLoaderLib\w3lh.c(309,51): warning C4047: функция: "HMODULE" отличается по уровням косвенного обращения от "int"
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT\PvPGN_LaunchAH\WarcraftLoaderLib\w3lh.c(309,51): warning C4024: GetProcAddress: различные типы для формального и фактического параметров 1
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT\PvPGN_LaunchAH\WarcraftLoaderLib\w3lh.c(302,7): warning C4047: инициализация: "int" отличается по уровням косвенного обращения от "HMODULE"
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT\PvPGN_LaunchAH\WarcraftLoaderLib\w3lh.c(303,7): warning C4047: инициализация: "int" отличается по уровням косвенного обращения от "HMODULE"
   Создание кода...
-  w3loader.vcxproj -> C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\Release\Loader.lib
+  w3loader.vcxproj -> C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT\PvPGN_LaunchAH\Release\Loader.lib

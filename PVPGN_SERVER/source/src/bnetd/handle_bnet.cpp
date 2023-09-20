@@ -2568,12 +2568,7 @@ namespace pvpgn
 							msgtemp = "Please update antihack client!";
 						}
 
-						if (conn_get_ah_status(c) == 3)
-						{
-							msgtemp = "Please update launcher!";
-						}
-
-						if (conn_get_ah_status(c) == 2 || conn_get_cheats(c) > 0)
+						if (conn_get_cheats(c) > 0)
 						{
 							msgtemp = "Please remove hacks and restart! Code 1:";
 							msgtemp += std::to_string(conn_get_cheats(c));
@@ -2581,9 +2576,19 @@ namespace pvpgn
 							msgtemp += std::to_string(conn_get_ah_version(c) - ANTIHACK_VERSION);
 						}
 
+						if (conn_get_ah_status(c) == 3)
+						{
+							msgtemp = "Please update launcher to " +std::to_string(conn_get_launcher_version(c) - LAUNCHER_VERSION) +"!";
+						}
+
 						if (conn_get_ah_status(c) == 4)
 						{
 							msgtemp = "Please update AHM.dll possible corrupted by anime virus!";
+						}
+
+						if (conn_get_ah_status(c) == 5)
+						{
+							msgtemp = "Please update ANTIHACK version to " + std::to_string(conn_get_ah_version(c) - ANTIHACK_VERSION) + "!";
 						}
 
 						//msgtemp += account_get_locktext( c, account, true );
@@ -5241,14 +5246,14 @@ namespace pvpgn
 			if (conn_get_clienttag(c) != CLIENTTAG_WAR3XP_UINT
 				|| bn_int_get(packet->u.client_changeclient.clienttag) != CLIENTTAG_WARCRAFT3_UINT)
 			{
-				eventlog(eventlog_level_error, __FUNCTION__, "[{}] invalid attempt to change client from {X} to {X}", conn_get_socket(c), conn_get_clienttag(c), bn_int_get(packet->u.client_changeclient.clienttag));
+				eventlog(eventlog_level_error, __FUNCTION__, "[{}] invalid attempt to change client from {} to {}", conn_get_socket(c), conn_get_clienttag(c), bn_int_get(packet->u.client_changeclient.clienttag));
 				conn_set_state(c, conn_state_destroy);
 				return -1;
 			}
 
 			conn_set_clienttag(c, bn_int_get(packet->u.client_changeclient.clienttag));
 
-			eventlog(eventlog_level_info, __FUNCTION__, "[{}] changed client to {X}", conn_get_socket(c), bn_int_get(packet->u.client_changeclient.clienttag));
+			eventlog(eventlog_level_info, __FUNCTION__, "[{}] changed client to {}", conn_get_socket(c), bn_int_get(packet->u.client_changeclient.clienttag));
 
 			return 0;
 		}

@@ -94,3 +94,4 @@ C:\Projects\WAR3\war3_my_platforms2\REBIRTH_CLIENT\Client\Client\obj\Release\Cli
 C:\Projects\WAR3\war3_my_platforms2\REBIRTH_CLIENT\Client\Client\obj\Release\Client.csproj.CoreCompileInputs.cache
 C:\Projects\WAR3\war3_my_platforms2\REBIRTH_CLIENT\Client\Client\obj\Release\Client.exe
 C:\Projects\WAR3\war3_my_platforms2\REBIRTH_CLIENT\Client\Client\obj\Release\Client.pdb
+C:\Projects\WAR3\war3_my_platforms2\REBIRTH_CLIENT\Client\Client\obj\Release\Client.csproj.CopyComplete

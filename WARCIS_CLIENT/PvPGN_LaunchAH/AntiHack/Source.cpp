@@ -493,11 +493,11 @@ void __stdcall InitAllFunctions( )
 		handlerSettings.OverrideDefaultFullDumpType = TRUE;
 		CONSOLE_Print( "[Warcis_Rec] Init crash report...70%" );
 
-		g_crashRpt = crash_rpt::CrashRpt( &appInfo, &handlerSettings, TRUE );
+		g_crashRpt = new crash_rpt::CrashRpt( &appInfo, &handlerSettings, TRUE );
 
-		g_crashRpt.AddFileToReport( L".\\warcis.log", L"Warcis Log File.txt" );
-		g_crashRpt.AddFileToReport( L".\\tempreplay.w3g", L"Warcraft Temp Replay.w3g" );
-		g_crashRpt.AddUserInfoToReport( L"CommandLine", GetCommandLineW( ) );
+		g_crashRpt->AddFileToReport( L".\\warcis.log", L"Warcis Log File.txt" );
+		g_crashRpt->AddFileToReport( L".\\tempreplay.w3g", L"Warcraft Temp Replay.w3g" );
+		g_crashRpt->AddUserInfoToReport( L"CommandLine", GetCommandLineW( ) );
 
 		CONSOLE_Print( "[Warcis_Rec] Init crash report...100" );
 	}
@@ -678,7 +678,7 @@ inline void ErasePEHeaderFromMemory( )
 }
 
 
-crash_rpt::CrashRpt g_crashRpt;
+crash_rpt::CrashRpt * g_crashRpt;
 
 void RemoveBadFiles( )
 {

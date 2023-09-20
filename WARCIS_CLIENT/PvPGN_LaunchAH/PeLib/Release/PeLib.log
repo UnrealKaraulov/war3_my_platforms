@@ -11,5 +11,5 @@
   PeLibAux.cpp
   RelocationsDirectory.cpp
   ResourceDirectory.cpp
-C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\PeLib\ResourceDirectory.cpp(364,73): warning C4267: =: преобразование из "size_t" в "PeLib::word"; возможна потеря данных
-  PeLib.vcxproj -> C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\Release\PeLib.lib
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT\PvPGN_LaunchAH\PeLib\ResourceDirectory.cpp(364,73): warning C4267: =: преобразование из "size_t" в "PeLib::word"; возможна потеря данных
+  PeLib.vcxproj -> C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT\PvPGN_LaunchAH\Release\PeLib.lib

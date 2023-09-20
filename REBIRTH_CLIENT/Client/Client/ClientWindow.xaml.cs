@@ -274,6 +274,8 @@ namespace Client
                 {
                     if (GlobalVariables.GameLobbyOpened && GlobalVariables.gameLobbyWindow != null)
                     {
+                        if (arg1.StartsWith("-"))
+                            arg1 = (4294967295).ToString();
                         //  MessageBox.Show("Swap slot " + arg1 + " to name " + arg2);
                         if (arg3 == "1")
                         {
@@ -291,6 +293,10 @@ namespace Client
                 {
                     if (GlobalVariables.GameLobbyOpened && GlobalVariables.gameLobbyWindow != null)
                     {
+                        if (arg1.StartsWith("-"))
+                            arg1 = (4294967295).ToString();
+                        if (arg2.StartsWith("-"))
+                            arg2 = (4294967295).ToString();
                         // MessageBox.Show("setracestatus " + arg1 + " to race " + arg2);
                         if (arg3 == "1")
                         {

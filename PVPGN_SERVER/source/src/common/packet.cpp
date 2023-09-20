@@ -310,7 +310,6 @@ namespace pvpgn
 			return bn_short_get(packet->u.w3route.h.type);
 		case packet_class_wolgameres:
 			return 0; /* wolgameres packets don't have a type */
-
 		default:
 			eventlog(eventlog_level_error, __FUNCTION__, "packet has invalid class {}", (int)packet->pclass);
 			return 0;

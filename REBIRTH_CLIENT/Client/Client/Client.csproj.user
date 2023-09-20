@@ -10,4 +10,7 @@
     <FallbackCulture>ru-RU</FallbackCulture>
     <VerifyUploadedFiles>false</VerifyUploadedFiles>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <StartWorkingDirectory>C:\Projects\WAR3\war3_my_platforms2_test\</StartWorkingDirectory>
+  </PropertyGroup>
 </Project>

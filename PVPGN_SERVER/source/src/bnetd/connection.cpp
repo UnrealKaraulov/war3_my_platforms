@@ -6204,9 +6204,6 @@ lua_handle_user(c, NULL, NULL,luaevent_user_disconnect);
 				if (ahversion == ANTIHACK_VERSION)
 				{
 					c->protocol.ah_status = 1;
-				}
-				else
-				{
 					c->protocol.ah_version = ahversion;
 				}
 
@@ -6329,13 +6326,17 @@ lua_handle_user(c, NULL, NULL,luaevent_user_disconnect);
 				{
 					c->protocol.ah_status = 0;
 				}
+
+				c->protocol.launcher_version = var1;
+
 				if (var1 != LAUNCHER_VERSION)
 				{
 					c->protocol.ah_status = 3;
 				}
+
 				if (var2 != ANTIHACK_VERSION)
 				{
-					c->protocol.ah_status = 2;
+					c->protocol.ah_status = 5;
 				}
 
 				if (!IsAMHHashOkay(var3))
@@ -6472,6 +6473,16 @@ lua_handle_user(c, NULL, NULL,luaevent_user_disconnect);
 				return 0;
 			}
 			return c->protocol.ah_version;
+		}
+
+		extern int conn_get_launcher_version(t_connection* c)
+		{
+			if (!c)
+			{
+				eventlog(eventlog_level_error, __FUNCTION__, "got NULL conn");
+				return 0;
+			}
+			return c->protocol.launcher_version;
 		}
 
 		extern unsigned int* conn_get_hardwareid(t_connection* c)

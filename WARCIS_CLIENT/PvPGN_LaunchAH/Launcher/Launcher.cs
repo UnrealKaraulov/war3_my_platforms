@@ -29,7 +29,7 @@ namespace Launcher
         // Тут изменить версию при обновлении античита
         //const int AH_Version = 0x209;
         // Тут изменить версию при обновлении лаунчера
-        const uint Launcher_Version = 5;
+        const uint Launcher_Version = 9;
 
         string ServerAddrText = "127.0.0.1";
 
