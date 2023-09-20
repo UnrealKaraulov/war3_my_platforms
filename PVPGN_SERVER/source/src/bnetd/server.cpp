@@ -1274,11 +1274,12 @@ namespace pvpgn
 					{
 						try
 						{
-							std::string updatemapip = "109.248.168.192";
+							// SET HERE IP ADDRESS FOR MAP FTP UPDATE
+							std::string updatemapip = "127.0.0.1";
 							std::ifstream infile("updatemapip.txt");
 							if (!infile.is_open())
 							{
-								std::cout << "Error in load updatemapip.txt file! Using default 109.248.168.192 ip!" << std::endl;
+								std::cout << "Error in load updatemapip.txt file! Using default 127.0.0.1 ip!" << std::endl;
 								return;
 							}
 							else
@@ -1625,11 +1626,12 @@ prefs_set_verify_account_email(false);
 					if (needupdatemaps)
 					{
 						needupdatemaps = false;
-						std::string updatemapip = "109.248.168.192";
+						// SET MAP FTP UPDATE SERVER
+						std::string updatemapip = "127.0.0.1";
 						std::ifstream infile("updatemapip.txt");
 						if (!infile.is_open())
 						{
-							std::cout << "Error in load updatemapip.txt file! Using default 109.248.168.192 ip!" << std::endl;
+							std::cout << "Error in load updatemapip.txt file! Using default 127.0.0.1 ip!" << std::endl;
 							return;
 						}
 						else

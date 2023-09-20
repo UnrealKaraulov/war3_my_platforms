@@ -27,10 +27,11 @@ class MapListPrint extends AbstractController
 	protected $target_dir = __DIR__ ."".DIRECTORY_SEPARATOR."..".DIRECTORY_SEPARATOR."..".DIRECTORY_SEPARATOR."MapFiles".DIRECTORY_SEPARATOR."TempDir".DIRECTORY_SEPARATOR."";
 	protected $config_dir = __DIR__ ."".DIRECTORY_SEPARATOR."..".DIRECTORY_SEPARATOR."..".DIRECTORY_SEPARATOR."";
 	
+	// ENTER HERE MAP FTP SERVER IP WITH WRITE ACCESS
 	protected $FTP_USER="mapdatawrite";
     protected $FTP_PASSWORD="mapdatawrite223";
-    protected $FTP_IP="109.248.168.67";
-    protected $FTP_PORT=8141;
+    protected $FTP_IP="127.0.0.1";
+    protected $FTP_PORT=21;
     protected $FTP_DIR="";
 	
 	function truepath($path){

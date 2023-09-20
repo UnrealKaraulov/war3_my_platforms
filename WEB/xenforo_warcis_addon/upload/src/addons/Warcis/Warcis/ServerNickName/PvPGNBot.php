@@ -125,7 +125,8 @@ class PvPGNBot
 
 	public function SendCommand( $command )
 	{
-		$server="109.248.168.67";
+		// ENTER HERE PVPGN SERVER IP ADRESS
+		$server="127.0.0.1";
 
 		$port="6112";
 		$login='WarcisCmdBot';

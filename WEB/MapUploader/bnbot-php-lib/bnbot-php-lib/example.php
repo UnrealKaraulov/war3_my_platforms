@@ -3,7 +3,8 @@ include("bnbot.class.php");
 include("bnbot_protocol_parse.class.php");
 
 // PvPGN login information
-$host = "193.19.118.57";
+// ENTER HERE PVPGN SERVER IP!
+$host = "127.0.0.1";
 $port = 6112;
 $username = "WarcisCmdBot";
 $password = "bottest2bottest";

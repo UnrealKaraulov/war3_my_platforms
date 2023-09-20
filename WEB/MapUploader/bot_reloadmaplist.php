@@ -30,9 +30,10 @@ class pvpgnBot
 	);
 
 	// sequence of chat commands to be executed after login
+	// ENTER HERE MAP FTP ADDRESS
 	public $commands = array(
 		"/join The Void",
-		"/reloadmaplist 193.19.118.57 89 WarcisMapDir WarcisSuperSecretPassword",
+		"/reloadmaplist 127.0.0.1 21 WarcisMapDir WarcisSuperSecretPassword",
 		"/exit"
 	);
 
@@ -74,7 +75,8 @@ class pvpgnBot
 
 	public function Init( )
 	{
-		$server="193.19.118.57";
+		// ENTER HERE PVPGN SERVER IP!
+		$server="127.0.0.1";
 
 		$port="6112";
 		$login='WarcisCmdBot';
