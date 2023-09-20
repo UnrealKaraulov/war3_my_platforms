@@ -1,1 +1,2 @@
-Приязано к пути C:\Projects\pvpgn-magic\, для сборки поместите содержимое папки WARCIS_CLIENT_BOT_AND_SERVER[DONE_99%] в C:\Projects\pvpgn-magic\
+/FIXME/
+ Клиент имеет дефекты! Приоритет загрузки MPQ неверный + есть проблема с входом на сервер (античит блокирует versioncheck dll?)
