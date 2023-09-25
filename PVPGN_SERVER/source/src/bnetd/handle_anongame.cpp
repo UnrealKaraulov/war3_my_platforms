@@ -612,7 +612,7 @@ namespace pvpgn
 		static int check_user_icon(t_account * account, const char * user_icon)
 		{
 			unsigned int i, len;
-			char temp_str[2] = {};
+			char temp_str[2] = {'\0','\0'};
 			char user_race;
 			int number;
 

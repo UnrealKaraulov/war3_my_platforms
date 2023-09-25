@@ -707,7 +707,7 @@ namespace pvpgn
 				return 0;
 			}
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\0\\wins" );
 
@@ -723,7 +723,7 @@ namespace pvpgn
 				return -1;
 			}
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\0\\wins" );
 
@@ -739,7 +739,7 @@ namespace pvpgn
 				return -1;
 			}
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\0\\wins" );
@@ -756,7 +756,7 @@ namespace pvpgn
 				return 0;
 			}
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\0\\losses" );
@@ -773,7 +773,7 @@ namespace pvpgn
 				return -1;
 			}
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\0\\losses" );
@@ -790,7 +790,7 @@ namespace pvpgn
 				return -1;
 			}
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\0\\losses" );
@@ -807,7 +807,7 @@ namespace pvpgn
 				return 0;
 			}
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\0\\draws" );
@@ -824,7 +824,7 @@ namespace pvpgn
 				return -1;
 			}
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\0\\draws" );
@@ -842,7 +842,7 @@ namespace pvpgn
 			}
 
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\0\\draws" );
@@ -861,7 +861,7 @@ namespace pvpgn
 			}
 
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\0\\disconnects" );
@@ -879,7 +879,7 @@ namespace pvpgn
 			}
 
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\0\\disconnects" );
@@ -897,7 +897,7 @@ namespace pvpgn
 			}
 
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\0\\disconnects" );
@@ -915,7 +915,7 @@ namespace pvpgn
 			}
 
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\0\\last game" );
@@ -933,7 +933,7 @@ namespace pvpgn
 			}
 
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\0\\last game result" );
@@ -949,7 +949,7 @@ namespace pvpgn
 			}
 
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\0\\last game result" );
@@ -970,7 +970,7 @@ namespace pvpgn
 			}
 
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\" + std::to_string( id ) + "\\active wins" );
@@ -987,7 +987,7 @@ namespace pvpgn
 				return -1;
 			}
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 
@@ -1006,7 +1006,7 @@ namespace pvpgn
 			}
 
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\" + std::to_string( id ) + "\\active losses" );
@@ -1024,7 +1024,7 @@ namespace pvpgn
 			}
 
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\" + std::to_string( id ) + "\\active losses" );
@@ -1042,7 +1042,7 @@ namespace pvpgn
 			}
 
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\" + std::to_string( id ) + "\\active draws" );
@@ -1060,7 +1060,7 @@ namespace pvpgn
 			}
 
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\" + std::to_string( id ) + "\\active draws" );
@@ -1078,7 +1078,7 @@ namespace pvpgn
 			}
 
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\" + std::to_string( id ) + "\\active disconnects" );
@@ -1095,7 +1095,7 @@ namespace pvpgn
 				return -1;
 			}
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 
@@ -1114,7 +1114,7 @@ namespace pvpgn
 			}
 
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\" + std::to_string( id ) + "\\active rating" );
@@ -1132,7 +1132,7 @@ namespace pvpgn
 			}
 
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\" + std::to_string( id ) + "\\active rating" );
@@ -1150,7 +1150,7 @@ namespace pvpgn
 			}
 
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\" + std::to_string( id ) + "\\active rank" );
@@ -1168,7 +1168,7 @@ namespace pvpgn
 			}
 
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\" + std::to_string( id ) + "\\active rank" );
@@ -1186,7 +1186,7 @@ namespace pvpgn
 			}
 
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\" + std::to_string( id ) + "\\active last game" );
@@ -1204,7 +1204,7 @@ namespace pvpgn
 			}
 
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\" + std::to_string( id ) + "\\active last game" );
@@ -1224,7 +1224,7 @@ namespace pvpgn
 			}
 
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\" + ladder_id_str.at( static_cast< size_t >( id ) ) + "\\wins" );
@@ -1242,7 +1242,7 @@ namespace pvpgn
 			}
 
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\" + ladder_id_str.at( static_cast< size_t >( id ) ) + "\\wins" );
@@ -1260,7 +1260,7 @@ namespace pvpgn
 			}
 
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\" + ladder_id_str.at( static_cast< size_t >( id ) ) + "\\wins" );
@@ -1278,7 +1278,7 @@ namespace pvpgn
 			}
 
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\" + ladder_id_str.at( static_cast< size_t >( id ) ) + "\\losses" );
@@ -1296,7 +1296,7 @@ namespace pvpgn
 			}
 
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\" + ladder_id_str.at( static_cast< size_t >( id ) ) + "\\losses" );
@@ -1314,7 +1314,7 @@ namespace pvpgn
 			}
 
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\" + ladder_id_str.at( static_cast< size_t >( id ) ) + "\\losses" );
@@ -1332,7 +1332,7 @@ namespace pvpgn
 			}
 
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\" + ladder_id_str.at( static_cast< size_t >( id ) ) + "\\draws" );
@@ -1350,7 +1350,7 @@ namespace pvpgn
 			}
 
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\" + ladder_id_str.at( static_cast< size_t >( id ) ) + "\\draws" );
@@ -1368,7 +1368,7 @@ namespace pvpgn
 			}
 
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\" + ladder_id_str.at( static_cast< size_t >( id ) ) + "\\draws" );
@@ -1386,7 +1386,7 @@ namespace pvpgn
 			}
 
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\" + ladder_id_str.at( static_cast< size_t >( id ) ) + "\\disconnects" );
@@ -1404,7 +1404,7 @@ namespace pvpgn
 			}
 
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\" + ladder_id_str.at( static_cast< size_t >( id ) ) + "\\disconnects" );
@@ -1422,7 +1422,7 @@ namespace pvpgn
 			}
 
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\" + ladder_id_str.at( static_cast< size_t >( id ) ) + "\\disconnects" );
@@ -1440,7 +1440,7 @@ namespace pvpgn
 			}
 
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\" + std::to_string( id ) + "\\rating" );
@@ -1458,7 +1458,7 @@ namespace pvpgn
 			}
 
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\" + std::to_string( id ) + "\\rating" );
@@ -1476,7 +1476,7 @@ namespace pvpgn
 			}
 
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\" + std::to_string( id ) + "\\rating" );
@@ -1515,7 +1515,7 @@ namespace pvpgn
 			}
 
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\" + ladder_id_str.at( static_cast< size_t >( id ) ) + "\\rank" );
@@ -1533,7 +1533,7 @@ namespace pvpgn
 			}
 
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\" + ladder_id_str.at( static_cast< size_t >( id ) ) + "\\rank" );
@@ -1561,7 +1561,7 @@ namespace pvpgn
 				return 0;
 			}
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 
@@ -1580,7 +1580,7 @@ namespace pvpgn
 			}
 
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\" + std::to_string( id ) + "\\high rank" );
@@ -1598,7 +1598,7 @@ namespace pvpgn
 			}
 
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\" + std::to_string( id ) + "\\last game" );
@@ -1616,7 +1616,7 @@ namespace pvpgn
 			}
 
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\" + std::to_string( id ) + "\\last game" );
@@ -1634,7 +1634,7 @@ namespace pvpgn
 			}
 
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\" + std::to_string( id ) + "\\last game result" );
@@ -1655,7 +1655,7 @@ namespace pvpgn
 			}
 
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\0\\level" );
@@ -1673,7 +1673,7 @@ namespace pvpgn
 			}
 
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\0\\level" );
@@ -1691,7 +1691,7 @@ namespace pvpgn
 			}
 
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\0\\class" );
@@ -1709,7 +1709,7 @@ namespace pvpgn
 			}
 
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\0\\class" );
@@ -1727,7 +1727,7 @@ namespace pvpgn
 			}
 
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\0\\diablo kills" );
@@ -1745,7 +1745,7 @@ namespace pvpgn
 			}
 
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\0\\diablo kills" );
@@ -1763,7 +1763,7 @@ namespace pvpgn
 			}
 
 
-			return 0;//NORMALREMOVE
+		//	return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\0\\strength" );
@@ -1781,7 +1781,7 @@ namespace pvpgn
 			}
 
 
-			return 0;//NORMALREMOVE
+		//	return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\0\\strength" );
@@ -1799,7 +1799,7 @@ namespace pvpgn
 			}
 
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\0\\magic" );
@@ -1817,7 +1817,7 @@ namespace pvpgn
 			}
 
 
-			return 0;//NORMALREMOVE
+		//	return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\0\\magic" );
@@ -1835,7 +1835,7 @@ namespace pvpgn
 			}
 
 
-			return 0;//NORMALREMOVE
+		//	return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\0\\dexterity" );
@@ -1853,7 +1853,7 @@ namespace pvpgn
 			}
 
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\0\\dexterity" );
@@ -1871,7 +1871,7 @@ namespace pvpgn
 			}
 
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\0\\vitality" );
@@ -1888,7 +1888,7 @@ namespace pvpgn
 			}
 
 
-			return 0;//NORMALREMOVE
+		//	return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\0\\vitality" );
@@ -1906,7 +1906,7 @@ namespace pvpgn
 			}
 
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\0\\gold" );
@@ -1924,7 +1924,7 @@ namespace pvpgn
 			}
 
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\0\\gold" );
@@ -2328,7 +2328,7 @@ namespace pvpgn
 				return -1;
 
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string table( "Record\\" + tag_uint_to_str2( clienttag ) + "\\" + race + "\\wins" );
@@ -2344,7 +2344,7 @@ namespace pvpgn
 				return 0;
 
 
-			return 0;//NORMALREMOVE
+		//	return 0;//NORMALREMOVE
 
 
 			std::string table( "Record\\" + tag_uint_to_str2( clienttag ) + "\\" + race + "\\wins" );
@@ -2359,7 +2359,7 @@ namespace pvpgn
 				return -1;
 
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string table( "Record\\" + tag_uint_to_str2( clienttag ) + "\\" + race + "\\losses" );
@@ -2377,7 +2377,7 @@ namespace pvpgn
 				return 0;
 
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string table( "Record\\" + tag_uint_to_str2( clienttag ) + "\\" + race + "\\losses" );
@@ -2430,7 +2430,7 @@ namespace pvpgn
 		extern int account_get_ladder_xp( t_account * account, t_clienttag clienttag, t_ladder_id id )
 		{
 
-			return 0;//NORMALREMOVE
+		//	return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\" + ladder_id_str.at( static_cast< size_t >( id ) ) + "\\xp" );
@@ -2441,7 +2441,7 @@ namespace pvpgn
 		extern int account_set_ladder_xp( t_account * account, t_clienttag clienttag, t_ladder_id id, unsigned int xp )
 		{
 
-			return 0;//NORMALREMOVE
+		//	return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\" + ladder_id_str.at( static_cast< size_t >( id ) ) + "\\xp" );
@@ -2452,7 +2452,7 @@ namespace pvpgn
 		extern int account_get_ladder_level( t_account * account, t_clienttag clienttag, t_ladder_id id )
 		{
 
-			return 0;//NORMALREMOVE
+		//	return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\" + ladder_id_str.at( static_cast< size_t >( id ) ) + "\\level" );
@@ -2463,7 +2463,7 @@ namespace pvpgn
 		extern int account_set_ladder_level( t_account * account, t_clienttag clienttag, t_ladder_id id, unsigned int level )
 		{
 
-			return 0;//NORMALREMOVE
+		//	return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\" + ladder_id_str.at( static_cast< size_t >( id ) ) + "\\level" );
@@ -2633,7 +2633,7 @@ namespace pvpgn
 		extern int account_set_w3pgrace( t_account * account, t_clienttag clienttag, unsigned int race )
 		{
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\w3pgrace" );
@@ -2644,7 +2644,7 @@ namespace pvpgn
 		extern int account_get_w3pgrace( t_account * account, t_clienttag clienttag )
 		{
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\w3pgrace" );
@@ -2712,7 +2712,7 @@ namespace pvpgn
 		extern int account_set_user_iconstash( t_account * account, t_clienttag clienttag, char const * value )
 		{
 
-			return 0;//NORMALREMOVE
+		//	return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\iconstash" );
@@ -2725,7 +2725,7 @@ namespace pvpgn
 		extern int account_set_user_iconstash( t_account * account, t_clienttag clienttag, std::string value )
 		{
 
-			return 0;//NORMALREMOVE
+		//	return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\iconstash" );
@@ -2739,7 +2739,7 @@ namespace pvpgn
 		extern char const * account_get_user_iconstash( t_account * account, t_clienttag clienttag )
 		{
 
-			return 0;//NORMALREMOVE
+		//	return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\iconstash" );
@@ -2755,7 +2755,7 @@ namespace pvpgn
 		extern int account_set_user_icon( t_account * account, t_clienttag clienttag, char const * usericon )
 		{
 
-			return 0;//NORMALREMOVE
+		//	return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\userselected_icon" );
@@ -2768,7 +2768,7 @@ namespace pvpgn
 		extern int account_set_user_icon( t_account * account, t_clienttag clienttag, std::string usericon )
 		{
 
-			return 0;//NORMALREMOVE
+		//	return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\userselected_icon" );
@@ -2782,7 +2782,7 @@ namespace pvpgn
 		extern char const * account_get_user_icon( t_account * account, t_clienttag clienttag )
 		{
 
-			return 0;//NORMALREMOVE
+		//	return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\userselected_icon" );
@@ -3082,7 +3082,7 @@ namespace pvpgn
 				ERROR0( "got NULL account" );
 				return nullptr;
 			}
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 			return account_get_strattr( account, "WOL\\auth\\apgar" );
 		}
@@ -3099,7 +3099,7 @@ namespace pvpgn
 				ERROR0( "got NULL apgar" );
 				return -1;
 			}
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 			eventlog( eventlog_level_debug, __FUNCTION__, "[** WOL **] WOL\\auth\\apgar = {}", apgar );
 			return account_set_strattr( account, "WOL\\auth\\apgar", apgar );
@@ -3116,7 +3116,7 @@ namespace pvpgn
 				ERROR0( "got NULL apgar" );
 				return -1;
 			}
-			return 0;//NORMALREMOVE
+		//	return 0;//NORMALREMOVE
 
 			eventlog( eventlog_level_debug, __FUNCTION__, "[** WOL **] WOL\\auth\\apgar = {}", apgar.c_str( ) );
 			return account_set_strattr( account, "WOL\\auth\\apgar", apgar.c_str( ) );
@@ -3129,7 +3129,7 @@ namespace pvpgn
 				ERROR0( "got NULL account" );
 				return 0;
 			}
-			return 0;//NORMALREMOVE
+		//	return 0;//NORMALREMOVE
 
 			return account_get_numattr( account, "WOL\\acct\\locale" );
 		}
@@ -3141,7 +3141,7 @@ namespace pvpgn
 				ERROR0( "got NULL account" );
 				return -1;
 			}
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 			eventlog( eventlog_level_debug, __FUNCTION__, "[** WOL **] WOL\\acct\\locale = {}", locale );
 			return account_set_numattr( account, "WOL\\acct\\locale", locale );
@@ -3150,7 +3150,7 @@ namespace pvpgn
 		extern int account_get_ladder_points( t_account * account, t_clienttag clienttag, t_ladder_id id )
 		{
 
-			return 0;//NORMALREMOVE
+		//	return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\" + ladder_id_str.at( static_cast< size_t >( id ) ) + "\\points" );
@@ -3161,7 +3161,7 @@ namespace pvpgn
 		extern int account_set_ladder_points( t_account * account, t_clienttag clienttag, t_ladder_id id, unsigned int points )
 		{
 
-			return 0;//NORMALREMOVE
+			//return 0;//NORMALREMOVE
 
 
 			std::string key( "Record\\" + tag_uint_to_str2( clienttag ) + "\\" + ladder_id_str.at( static_cast< size_t >( id ) ) + "\\points" );

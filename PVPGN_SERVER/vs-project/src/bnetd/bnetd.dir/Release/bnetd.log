@@ -1,12 +1,13 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets(2128,5): warning : The referenced project '../vs-project/src/common/common.vcxproj' does not exist.
 C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets(2128,5): warning : The referenced project '../vs-project/src/compat/compat.vcxproj' does not exist.
 C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets(2128,5): warning : The referenced project '../vs-project/src/tinycdb/tinycdb.vcxproj' does not exist.
-  handle_bnet.cpp
-C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\handle_bnet.cpp(3100,77): warning C4244: аргумент: преобразование "time_t" в "uint32_t", возможна потеря данных
-C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\handle_bnet.cpp(3202,53): warning C4244: аргумент: преобразование "time_t" в "uint32_t", возможна потеря данных
-C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\handle_bnet.cpp(3205,53): warning C4244: аргумент: преобразование "time_t" в "uint32_t", возможна потеря данных
-C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\handle_bnet.cpp(3206,54): warning C4244: аргумент: преобразование "time_t" в "uint32_t", возможна потеря данных
-C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\handle_bnet.cpp(3253,53): warning C4244: аргумент: преобразование "time_t" в "uint32_t", возможна потеря данных
+  handle_anongame.cpp
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\handle_anongame.cpp(375,57): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\handle_anongame.cpp(858,87): warning C4244: аргумент: преобразование "time_t" в "uint16_t", возможна потеря данных
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\handle_anongame.cpp(874,85): warning C4244: аргумент: преобразование "time_t" в "uint16_t", возможна потеря данных
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\handle_anongame.cpp(890,85): warning C4244: аргумент: преобразование "time_t" в "uint16_t", возможна потеря данных
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\handle_anongame.cpp(906,83): warning C4244: аргумент: преобразование "time_t" в "uint16_t", возможна потеря данных
+C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\src\bnetd\handle_anongame.cpp(948,83): warning C4244: аргумент: преобразование "time_t" в "uint16_t", возможна потеря данных
   fmt.lib(format.obj) : найден .netmodule MSIL или модуль, откомпилированный с параметром /GL; перезапускается компоновка с параметром /LTCG; добавьте /LTCG в командную строку компоновки для повышения производительности компоновщика
 LINK : warning LNK4075: не учитывается "/INCREMENTAL" из-за спецификации "/LTCG"
   Создание кода

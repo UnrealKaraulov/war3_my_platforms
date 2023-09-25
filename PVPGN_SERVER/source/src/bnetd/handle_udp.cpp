@@ -132,9 +132,10 @@ namespace pvpgn
 			}
 
 			default:
+			{
 				eventlog(eventlog_level_debug, __FUNCTION__, "[{}] got unknown udp packet type 0x{:04x}, len {} from {}", usock, packet_get_type(packet), packet_get_size(packet), addr_num_to_addr_str(src_addr, src_port));
 				eventlog(eventlog_level_debug, __FUNCTION__, "[{}] class {} type {}", usock, packet_get_class_str(packet), packet_get_type_str(packet, packet_dir_from_client));
-				break;
+			}
 			}
 
 			return 0;

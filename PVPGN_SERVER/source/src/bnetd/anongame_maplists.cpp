@@ -379,16 +379,7 @@ namespace pvpgn
 
 		extern void anongame_tournament_maplists_destroy(void)
 		{
-			int j;
-
-			 // reset
-			 for (j =0;j<ANONGAME_TYPES;j++){
-			maplists_war3[j][0]=0;
-			maplists_w3xp[j][0]=0;
-			maplists_yuri[j][0]=0;
-			maplists_ral2[j][0]=0;
-			}
-			return;
+			return; /* nothing to destroy */
 		}
 
 	}

@@ -846,8 +846,8 @@ namespace pvpgn
 							continue;
 						}
 
-						if (md_c_vc->get_version_tag() == c_vc->get_version_tag()
-							&& (cur_prefs & md->map_prefs))
+						if (/*md_c_vc->get_version_tag() == c_vc->get_version_tag()
+							&& */(cur_prefs & md->map_prefs))
 						{
 							/* set maxlevel and minlevel to keep all players within 6 levels */
 							maxlevel = (level + delta + diff < maxlevel) ? level + delta + diff : maxlevel;

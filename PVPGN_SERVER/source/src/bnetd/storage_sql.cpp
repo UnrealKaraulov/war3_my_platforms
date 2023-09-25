@@ -186,7 +186,7 @@ namespace pvpgn
 				goto err_info;
 			}
 
-			/*std::snprintf(query, sizeof(query), "DELETE FROM %sRecord WHERE " SQL_UID_FIELD " = '%u'", tab_prefix, uid);
+			std::snprintf(query, sizeof(query), "DELETE FROM %sRecord WHERE " SQL_UID_FIELD " = '%u'", tab_prefix, uid);
 			eventlog(eventlog_level_trace, __FUNCTION__, "{}", query);
 			sql->query(query);
 			std::snprintf(query, sizeof(query), "INSERT INTO %sRecord (" SQL_UID_FIELD ") VALUES('%u')", tab_prefix, uid);
@@ -196,7 +196,7 @@ namespace pvpgn
 				eventlog(eventlog_level_error, __FUNCTION__, "user insert failed (query: '{}')", query);
 				goto err_info;
 			}
-			*/
+
 			std::snprintf(query, sizeof(query), "DELETE FROM %sfriend WHERE " SQL_UID_FIELD " = '%u'", tab_prefix, uid);
 			eventlog(eventlog_level_trace, __FUNCTION__, "{}", query);
 			sql->query(query);

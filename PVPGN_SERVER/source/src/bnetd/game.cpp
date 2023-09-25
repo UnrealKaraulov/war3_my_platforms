@@ -1202,13 +1202,13 @@ namespace pvpgn
 				eventlog(eventlog_level_error, __FUNCTION__, "got NULL game");
 				return NULL;
 			}
-
-			if (game->name && game->name[0] != '\0')
+//проверить если надо расскомментить
+			/*if (game->name && game->name[0] != '\0')
 				return game->name;
 
 			game->status = game_status_done;
-			return NULL;
-			//return game->name ? game->name : "BNet";
+			return NULL;*/
+			return game->name && game->name[0] != '\0' ? game->name : "BNet";
 		}
 
 		extern char const* game_get_visibledname(t_game const* game)

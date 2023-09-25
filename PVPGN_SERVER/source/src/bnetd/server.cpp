@@ -1773,12 +1773,12 @@ prefs_set_verify_account_email(false);
 			}
 
 			/* Append list of addresses to listen for telnet connections */
-			//if (_setup_add_addrs(&laddrs, prefs_get_telnet_addrs(), INADDR_ANY, BNETD_TELNET_PORT, laddr_type_telnet))
-			//{
-			//	eventlog(eventlog_level_error, __FUNCTION__, "could not create {} server address list from \"{}\"", laddr_type_get_str(laddr_type_telnet), prefs_get_telnet_addrs());
-			//	_shutdown_addrs(laddrs);
-			//	return -1;
-			//}
+			if (_setup_add_addrs(&laddrs, prefs_get_telnet_addrs(), INADDR_ANY, BNETD_TELNET_PORT, laddr_type_telnet))
+			{
+				eventlog(eventlog_level_error, __FUNCTION__, "could not create {} server address list from \"{}\"", laddr_type_get_str(laddr_type_telnet), prefs_get_telnet_addrs());
+				_shutdown_addrs(laddrs);
+				return -1;
+			}
 
 			if (_setup_listensock(laddrs)) {
 				_shutdown_addrs(laddrs);

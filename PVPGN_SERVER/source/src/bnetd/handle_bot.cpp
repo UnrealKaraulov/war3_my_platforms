@@ -37,8 +37,6 @@
 #ifdef WITH_LUA
 #include "luainterface.h"
 #endif
-
-#include "bcrypt.h"
 #include "common/setup_after.h"
 
 
@@ -86,48 +84,7 @@ namespace pvpgn
 					conn_set_clienttag( c, CLIENTTAG_BNCHATBOT_UINT );
 
 					{
-						char * temp = ( char * )xmalloc( MAX_MESSAGE_LEN );
-						char * temp2 = NULL;
-						memset( temp, 0, MAX_MESSAGE_LEN );
-						
-						size_t templen = linestr ? strlen( linestr ) : 0;
-
-						if ( !templen || templen >= MAX_MESSAGE_LEN )
-						{
-							conn_set_state( c, conn_state_bot_username ); /* don't look for ^D or reset tag and flags */
-							break;
-						}
-
-						for ( size_t i = 0;; i++ )
-						{
-							if ( linestr[ i ] == '\0' )
-							{
-								templen = i;
-								break;
-							}
-						}
-
-						memcpy( temp, linestr, templen );
-
-						for ( size_t i = 2; i < templen; i++ )
-						{
-							if ( temp[ i ] == '\v' )
-							{
-								temp[ i ] = '\0';
-								temp2 = &temp[ i + 1 ];
-								break;
-							}
-						}
-
-						if ( !temp2 )
-						{
-							eventlog( eventlog_level_error, __FUNCTION__, "[{}] invalid password {}  =  {} ", conn_get_socket( c ), linestr, temp );
-							conn_set_state( c, conn_state_bot_username ); /* don't look for ^D or reset tag and flags */
-							break;
-						}
-
-						conn_set_plainpassword( c, temp2 );
-						eventlog( eventlog_level_error, __FUNCTION__, "[{}] set plain password to {}  ", conn_get_socket( c ), temp2);
+						char const* temp = linestr;
 
 						if ( temp[ 0 ] == '\004' ) /* FIXME: no echo, ignore for now (we always do no echo) */
 							temp = &temp[ 1 ];
@@ -143,9 +100,6 @@ namespace pvpgn
 
 						if ( conn_set_loggeduser( c, temp ) < 0 )
 							eventlog( eventlog_level_error, __FUNCTION__, "[{}] could not set username to \"{}\"", conn_get_socket( c ), temp );
-
-						xfree( temp );
-
 
 						{
 							char const * const msg = "\r\nPassword: ";
@@ -248,13 +202,9 @@ namespace pvpgn
 						break;
 					}
 
-
-
-					if ( ( oldstrhash1 = account_get_pass( account ) ) )
+					if (account_get_auth_botlogin(account) != 1) /* default to false */
 					{
-						/*if ( hash_set_str( &oldpasshash1, oldstrhash1 ) < 0 )
-						{
-							eventlog( eventlog_level_info, __FUNCTION__, "[{}] bot login for \"{}\" refused (corrupted passhash1?)", conn_get_socket( c ), loggeduser );
+						eventlog(eventlog_level_info, __FUNCTION__, "[{}] bot login for \"{}\" refused (no bot access)", conn_get_socket(c), loggeduser);
 							conn_set_state( c, conn_state_bot_username );
 
 							if ( !( rpacket = packet_create( packet_class_raw ) ) )
@@ -263,33 +213,15 @@ namespace pvpgn
 								break;
 							}
 
-							packet_append_ntstring( rpacket, tempa );
+						packet_append_ntstring(rpacket, tempb);
 							conn_push_outqueue( c, rpacket );
 							packet_del_ref( rpacket );
 							break;
-						}*/
-
-
-						testpass = xstrdup( linestr );
-						/*{
-							strtolower( testpass );
 						}
-
-
-*/
-
-						char newhash[ 512 ];
-						const char * clienthashnew = testpass;
-						const char * plainpassword = conn_get_plainpassword( c );
-
-						if ( !oldstrhash1 || oldstrhash1[ 0 ] == '\0' || !clienthashnew || clienthashnew[ 0 ] == '\0' || !plainpassword || plainpassword[ 0 ] == '\0' )
+					else if (account_get_auth_lock(account) == 1) /* default to false */
 						{
-							//if ( bnet_hash( &trypasshash1, std::strlen( testpass ), testpass ) < 0 ) /* FIXME: force to lowercase */
-							//{
-								eventlog( eventlog_level_info, __FUNCTION__, "[{}] bot login for \"{}\" refused (unable to hash password)", conn_get_socket( c ), loggeduser );
+						eventlog(eventlog_level_info, __FUNCTION__, "[{}] bot login for \"{}\" refused (this account is locked)", conn_get_socket(c), loggeduser);
 								conn_set_state( c, conn_state_bot_username );
-
-								xfree( ( void * )testpass );
 
 								if ( !( rpacket = packet_create( packet_class_raw ) ) )
 								{
@@ -297,19 +229,17 @@ namespace pvpgn
 									break;
 								}
 
-								packet_append_ntstring( rpacket, tempa );
+						packet_append_ntstring(rpacket, tempb);
 								conn_push_outqueue( c, rpacket );
 								packet_del_ref( rpacket );
 								break;
-							//}
 						}
-						xfree( ( void * )testpass );
 
-						bcrypt_hashpw( plainpassword, oldstrhash1, newhash );
-
-						if ( strcmp( oldstrhash1, newhash ) != 0 )
+					if ((oldstrhash1 = account_get_pass(account)))
+					{
+						if (hash_set_str(&oldpasshash1, oldstrhash1) < 0)
 						{
-							eventlog( eventlog_level_info, __FUNCTION__, "[{}] bot login for \"{}\" refused (wrong password)", conn_get_socket( c ), loggeduser );
+							eventlog(eventlog_level_info, __FUNCTION__, "[{}] bot login for \"{}\" refused (corrupted passhash1?)", conn_get_socket(c), loggeduser);
 							conn_set_state( c, conn_state_bot_username );
 
 							if ( !( rpacket = packet_create( packet_class_raw ) ) )
@@ -324,11 +254,16 @@ namespace pvpgn
 							break;
 						}
 
-
-						if ( account_get_auth_botlogin( account ) != 1 ) /* default to false */
+						testpass = xstrdup(linestr);
 						{
-							eventlog( eventlog_level_info, __FUNCTION__, "[{}] bot login for \"{}\" refused (no bot access)", conn_get_socket( c ), loggeduser );
+							strtolower(testpass);
+						}
+						if (bnet_hash(&trypasshash1, std::strlen(testpass), testpass) < 0) /* FIXME: force to lowercase */
+						{
+							eventlog(eventlog_level_info, __FUNCTION__, "[{}] bot login for \"{}\" refused (unable to hash password)", conn_get_socket(c), loggeduser);
 							conn_set_state( c, conn_state_bot_username );
+
+							xfree((void*)testpass);
 
 							if ( !( rpacket = packet_create( packet_class_raw ) ) )
 							{
@@ -336,14 +271,16 @@ namespace pvpgn
 								break;
 							}
 
-							packet_append_ntstring( rpacket, tempb );
+							packet_append_ntstring(rpacket, tempa);
 							conn_push_outqueue( c, rpacket );
 							packet_del_ref( rpacket );
 							break;
 						}
-						else if ( account_get_auth_lock( account ) == 1 ) /* default to false */
+						xfree((void*)testpass);
+						if (hash_eq(trypasshash1, oldpasshash1) != 1)
 						{
-							eventlog( eventlog_level_info, __FUNCTION__, "[{}] bot login for \"{}\" refused (this account is locked)", conn_get_socket( c ), loggeduser );
+							eventlog(eventlog_level_info, __FUNCTION__, "[{}] bot login for \"{}\" refused (wrong password)", conn_get_socket(c), loggeduser);
+							conn_increment_passfail_count(c);
 							conn_set_state( c, conn_state_bot_username );
 
 							if ( !( rpacket = packet_create( packet_class_raw ) ) )
@@ -352,7 +289,7 @@ namespace pvpgn
 								break;
 							}
 
-							packet_append_ntstring( rpacket, tempb );
+							packet_append_ntstring(rpacket, tempa);
 							conn_push_outqueue( c, rpacket );
 							packet_del_ref( rpacket );
 							break;

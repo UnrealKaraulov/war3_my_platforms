@@ -423,7 +423,7 @@ int pre_server_startup(void)
 	teamlist_load();
 	if (realmlist_create(prefs_get_realmfile()) < 0)
 		eventlog(eventlog_level_error, __FUNCTION__, "could not load realm list");
-	//load_topic_conf(prefs_get_topicfile());
+	load_topic_conf(prefs_get_topicfile());
 	userlog_init();
 if(prefs_get_verify_account_email()==1)
 {
@@ -463,7 +463,7 @@ void post_server_shutdown(int status)
 	switch (status)
 	{
 	case 0:
-		//unload_topic_conf();
+		unload_topic_conf();
 		account_email_verification_unload();
 		smtp_cleanup();
 		account_email_verification_unload();
