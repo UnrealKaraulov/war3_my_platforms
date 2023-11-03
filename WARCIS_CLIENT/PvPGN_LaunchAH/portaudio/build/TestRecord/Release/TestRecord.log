@@ -1,3 +1,0 @@
-﻿  Source.cpp
-C:\Users\Karaulov\Downloads\portaudio\build\TestRecord\Source.cpp(235,49): warning C4244: =: преобразование "double" в "int", возможна потеря данных
-LINK : fatal error LNK1104: не удается открыть файл "portaudio.lib"

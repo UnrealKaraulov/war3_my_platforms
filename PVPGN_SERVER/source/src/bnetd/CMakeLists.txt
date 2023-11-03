@@ -33,6 +33,10 @@ set(BNETD_SOURCES
 	luafunctions.cpp luafunctions.h luainterface.cpp luainterface.h 
 	luaobjects.cpp luaobjects.h luawrapper.cpp luawrapper.h
 	i18n.cpp i18n.h userlog.cpp userlog.h
+	bcrypt.c bcrypt.h BlockingSocket.cpp BlockingSocket.h update_dota_stats.cpp
+	Definements.h FTPClient.cpp FTPClient.h FTPDataTypes.cpp FTPDataTypes.h
+	FTPFileStatus.cpp FTPFileStatus.h FTPListParse.cpp FTPListParse.h smart_ptr.h
+	ini.cpp ini.h
 	../win32/winmain.cpp ../win32/winmain.h
 	)
 	

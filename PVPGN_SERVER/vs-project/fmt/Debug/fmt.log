@@ -1,5 +1,0 @@
-﻿  format.cc
-C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\fmt\src\format.cc(8,10): fatal  error C1083: Не удается открыть файл включение: fmt/format-inl.h: No such file or directory,
-  os.cc
-C:\Projects\WAR3\war3_my_platforms2\PVPGN_SERVER\source\fmt\src\os.cc(13,10): fatal  error C1083: Не удается открыть файл включение: fmt/os.h: No such file or directory,
-  Создание кода...
