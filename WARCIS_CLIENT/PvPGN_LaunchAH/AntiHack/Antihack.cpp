@@ -2514,6 +2514,8 @@ UINT WINAPI GetTempFileName2_my(
 	return 0;
 }
 
+std::string LauncherPath = ".";
+
 // Запуск античита, все изменения лучше вносить в CustomFeaturesInitialize
 void InitAh( const char * launcherpath )
 {

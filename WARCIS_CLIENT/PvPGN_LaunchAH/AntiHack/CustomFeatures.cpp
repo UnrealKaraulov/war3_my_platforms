@@ -3182,7 +3182,7 @@ std::string GetObjectNameByID( int clid )
 		if ( tInfo && ( tInfo_1d = *( int * )( tInfo + 40 ) ) != 0 )
 		{
 			tInfo_2id = tInfo_1d - 1;
-			if ( tInfo_2id >= ( unsigned int )0 )
+			if (tInfo_2id < 0)
 				tInfo_2id = 0;
 			return ( const char * )*( int * )( *( int * )( tInfo + 44 ) + 4 * tInfo_2id );
 		}
@@ -6409,22 +6409,22 @@ void CustomFeaturesInitialize( const char * launcherpath )
 
 
 
-	char WarcisMpqPath[ MAX_PATH ];
-	sprintf_s( WarcisMpqPath, "%s\\%s", launcherpath, "warcis.mpq" );
+	//char WarcisMpqPath[ MAX_PATH ];
+	//sprintf_s( WarcisMpqPath, "%s\\%s", launcherpath, "warcis.mpq" );
 
-	char CustomMpqPath[ MAX_PATH ];
-	sprintf_s( CustomMpqPath, "%s\\%s", launcherpath, "custom.mpq" );
+	//char CustomMpqPath[ MAX_PATH ];
+	//sprintf_s( CustomMpqPath, "%s\\%s", launcherpath, "custom.mpq" );
 
 
-	//if ( IsKeyPressed( '5' ) )
-	//	return;
+	////if ( IsKeyPressed( '5' ) )
+	////	return;
 
-	HANDLE tmpval;
+	//HANDLE tmpval;
 
-	int outdataaddr;
-	size_t outdatasize;
+	//int outdataaddr;
+	//size_t outdatasize;
 
-	bool FoundArchives = false;
+	//bool FoundArchives = false;
 
 
 	/*	Storm::FileOpenArchive( (War3Path + "\\War3.mpq").c_str ( ), 0, 2, &tmpval );
@@ -6444,12 +6444,12 @@ void CustomFeaturesInitialize( const char * launcherpath )
 		MessageBox( 0, "W3 LOADED", " ", 0 );
 		FoundArchives = true;
 	}*/
-
+/*
 	BOOL AllOkay = TRUE;
 	BOOL custommpqloaded = TRUE;
 
 
-	//AllOkay = FALSE;
+	*///AllOkay = FALSE;
 	//custommpqloaded = Storm::FileOpenArchive( WarcisMpqPath, 11, 6, &tmpval );
 	//if ( !custommpqloaded || !tmpval )
 	//{
@@ -6647,7 +6647,7 @@ void CustomFeaturesInitialize( const char * launcherpath )
 
 	CWar3Frame::InitCallbackHook( );
 
-	Wc3SetDefaultSkinTheme( "Demon" );// "Human"  "Orc""Undead""NightElf""Demon" 
+	// Wc3SetDefaultSkinTheme( "Demon" );// "Human"  "Orc""Undead""NightElf""Demon" 
 	CONSOLE_Print( "CustomFeatureInit" );
 
 	SelectedMapCode = "dota88";

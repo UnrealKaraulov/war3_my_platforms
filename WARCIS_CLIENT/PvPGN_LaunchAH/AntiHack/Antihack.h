@@ -77,6 +77,7 @@ extern bool FoundFakeVtable;
 
 int ScanResult( );
 bool AH_Scan( void * );
+extern std::string LauncherPath;
 void InitAh( const char * launcherpath );
 bool Ah_Start_Scan_Mem( BOOL skipchecks = FALSE );
 int CheckHardwareBreakpoints( );

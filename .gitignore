@@ -2,3 +2,8 @@
 *.tlog
 *.obj
 *.tlog
+/PVPGN_SERVER/vs-project/.vs
+/WARCIS_CLIENT/PvPGN_LaunchAH/.vs
+*.obj
+*.tlog
+*.iobj

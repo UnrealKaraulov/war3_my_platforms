@@ -652,7 +652,7 @@ BOOL __stdcall DllMain(HINSTANCE Module, unsigned int reason, LPVOID)
 		auto ThreadId = GetCurrentThreadId();
 		if (ThreadId)
 		{
-			auto ThreadStartAddr = GetThreadStartAddr(ThreadId);
+			auto ThreadStartAddr = GetThreadStartAddr(ThreadId/*handle?*/);
 			if (ThreadStartAddr)
 			{
 				ThreadModule = GetModuleFromAddress(ThreadStartAddr);

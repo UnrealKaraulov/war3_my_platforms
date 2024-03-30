@@ -4,8 +4,10 @@
 #include <new>
 #include <cstdlib>
 #include "warcis_reconnector.h"
-
+#include "CustomFeatures.h"
 #include "fp_call.h"
+
+static bool CustomMpqLoaded = false;
 
 namespace Storm {
 	bool StormAvailable = false;
@@ -16,7 +18,7 @@ namespace Storm {
 	BOOL __stdcall FileOpenArchive_my( const char* mpqName, DWORD priority, DWORD flags, HANDLE *pMpqHandle )
 	{
 		char outbuftmp[ 256 ];
-		sprintf_s( outbuftmp, "Open mpq \"%s\" with priority %u and flags %u", mpqName, priority, flags );
+		sprintf_s( outbuftmp, "Open mpq \"%s\" with priority %X and flags %u", mpqName, priority, flags );
 		CONSOLE_Print( outbuftmp );
 		*pMpqHandle = NULL;
 		BOOL retval = FileOpenArchive_ptr( mpqName, priority, flags, pMpqHandle );
@@ -31,6 +33,108 @@ namespace Storm {
 			//CONSOLE_Print( "Bad path #2... New path:" + ( War3Path + "\\" + string( mpqName ) ) );
 			retval = FileOpenArchive_ptr( ( War3Path + "\\" + string( mpqName ) ).c_str( ), priority, flags, pMpqHandle );
 		}
+
+		if (!CustomMpqLoaded && flags == 6)
+		{
+			CustomMpqLoaded = true;
+			char WarcisMpqPath[MAX_PATH];
+			sprintf_s(WarcisMpqPath, "%s\\%s", LauncherPath.c_str(), "warcis.mpq");
+
+			char CustomMpqPath[MAX_PATH];
+			sprintf_s(CustomMpqPath, "%s\\%s", LauncherPath.c_str(), "custom.mpq");
+
+
+			BOOL AllOkay = TRUE;
+			BOOL custommpqloaded = TRUE;
+
+
+			HANDLE tmpval;
+
+
+			AllOkay = FALSE;
+			custommpqloaded = Storm::FileOpenArchive( WarcisMpqPath, 0x10000000, 6, &tmpval );
+			if ( !custommpqloaded || !tmpval )
+			{
+				CONSOLE_Print( "Error loading warcis.mpq at path: " + ( string )WarcisMpqPath );
+				custommpqloaded = Storm::FileOpenArchive( ( AMH_Path + "\\warcis.mpq" ).c_str( ), 0x10000000, 6, &tmpval );
+				if ( !custommpqloaded || !tmpval )
+				{
+					CONSOLE_Print( "Error loading warcis.mpq #2 at path: " + ( string )WarcisMpqPath );
+					custommpqloaded = Storm::FileOpenArchive( ( AMH_Path_old + "\\warcis.mpq" ).c_str( ), 0x10000000, 6, &tmpval );
+					if ( !custommpqloaded || !tmpval )
+					{
+						CONSOLE_Print( "Error loading warcis.mpq #3 at path: " + ( string )WarcisMpqPath );
+					}
+					else AllOkay = TRUE;
+				}
+				else AllOkay = TRUE;
+			}
+			else AllOkay = TRUE;
+
+
+
+			AllOkay = FALSE;
+			custommpqloaded = FALSE;
+
+			if ( gInfo.UseCustomMpq )
+			{
+				BOOL custommpqloaded = Storm::FileOpenArchive( CustomMpqPath, 0xF000000, 6, &tmpval );
+				if ( !custommpqloaded || !tmpval )
+				{
+					CONSOLE_Print( "Error loading custom.mpq at path: " + ( string )CustomMpqPath );
+					custommpqloaded = Storm::FileOpenArchive( ( AMH_Path + "\\custom.mpq" ).c_str( ), 0xF000000, 6, &tmpval );
+					if ( !custommpqloaded || !tmpval )
+					{
+						CONSOLE_Print( "Error loading custom.mpq #2 at path: " + ( string )CustomMpqPath );
+						custommpqloaded = Storm::FileOpenArchive( ( AMH_Path_old + "\\custom.mpq" ).c_str( ), 0xF000000, 6, &tmpval );
+						if ( !custommpqloaded || !tmpval )
+						{
+							CONSOLE_Print( "Error loading custom.mpq #3 at path: " + ( string )CustomMpqPath );
+
+
+						}
+						else AllOkay = TRUE;
+					}
+					else AllOkay = TRUE;
+				}
+				else AllOkay = TRUE;
+			}
+			else
+			{
+				//AllOkay = TRUE;
+				//custommpqloaded = TRUE;
+			}
+
+
+
+
+
+			if ( !AllOkay )
+			{
+				if ( FileExists( ( CurrentPathW + L"\\custom.mpq" ) ) )
+				{
+					DeleteFileW( ( CurrentPathW + L"\\custom.mpq" ).c_str( ) );
+				}
+
+				if ( FileExists( ( CurrentPathW + L"\\warcis.mpq" ) ) )
+				{
+					DeleteFileW( ( CurrentPathW + L"\\warcis.mpq" ).c_str( ) );
+				}
+
+				//DeleteFileW( ( CurrentPathW + L"\\warcis.mpq" ).c_str( ) );
+				CopyFileW( ( AMH_PathW + L"\\warcis.mpq" ).c_str( ), ( CurrentPathW + L"\\warcis.mpq" ).c_str( ), FALSE );
+				custommpqloaded = Storm::FileOpenArchive( "warcis.mpq", 0x10000000, 6, &tmpval );
+
+				if ( gInfo.UseCustomMpq )
+				{
+					//DeleteFileW( ( CurrentPathW + L"\\custom.mpq" ).c_str( ) );
+					CopyFileW( ( AMH_PathW + L"\\custom.mpq" ).c_str( ), ( CurrentPathW + L"\\custom.mpq" ).c_str( ), FALSE );
+					custommpqloaded = Storm::FileOpenArchive( "custom.mpq", 0x10000000, 6, &tmpval );
+				}
+
+			}
+		}
+
 		return retval;
 	}
 

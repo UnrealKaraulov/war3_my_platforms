@@ -8,3 +8,13 @@ C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\justt
 C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\justtestproject\obj\Release\justtestproject.csproj.CopyComplete
 C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\justtestproject\obj\Release\justtestproject.exe
 C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT[DONE_99%]\PvPGN_LaunchAH\justtestproject\obj\Release\justtestproject.pdb
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT\PvPGN_LaunchAH\justtestproject\bin\Release\justtestproject.exe.config
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT\PvPGN_LaunchAH\justtestproject\bin\Release\justtestproject.exe
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT\PvPGN_LaunchAH\justtestproject\bin\Release\justtestproject.pdb
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT\PvPGN_LaunchAH\justtestproject\bin\Release\INIFileParser.dll
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT\PvPGN_LaunchAH\justtestproject\bin\Release\INIFileParser.xml
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT\PvPGN_LaunchAH\justtestproject\obj\Release\justtestproject.csproj.AssemblyReference.cache
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT\PvPGN_LaunchAH\justtestproject\obj\Release\justtestproject.csproj.CoreCompileInputs.cache
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT\PvPGN_LaunchAH\justtestproject\obj\Release\justtestproject.csproj.CopyComplete
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT\PvPGN_LaunchAH\justtestproject\obj\Release\justtestproject.exe
+C:\Projects\WAR3\war3_my_platforms2\WARCIS_CLIENT\PvPGN_LaunchAH\justtestproject\obj\Release\justtestproject.pdb
